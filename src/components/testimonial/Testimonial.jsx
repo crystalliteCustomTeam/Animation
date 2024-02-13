@@ -55,9 +55,9 @@ const Testimonial = ({ content }) => {
                                         <p className="text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
                                             {testimonial.message}
                                         </p>
-                                        <h5 className="text-[20px] font-semibold font-sans leading-tight mb-3">
+                                        {/* <h5 className="text-[20px] font-semibold font-sans leading-tight mb-3">
                                             {testimonial.company}
-                                        </h5>
+                                        </h5> */}
                                     </div>
                                 </div>
                             ))}

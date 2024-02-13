@@ -74,7 +74,7 @@ function MegaMenu() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
     const renderItems = megaMenuItems.map(
         ({ icon, title, href }, key) => (
-            <a href={href} key={key}>
+            <div key={key}>
                 <MenuItem className="flex items-center gap-3 rounded-lg mb-1 lg:mb-0">
                     <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2">
                         {" "}
@@ -94,7 +94,7 @@ function MegaMenu() {
                         </Link>
                     </div>
                 </MenuItem>
-            </a>
+            </div>
         ),
     );
     // Mobile Mega Menu 
@@ -113,7 +113,7 @@ function MegaMenu() {
             >
                 <MenuHandler>
                     <Link href="#"  variant="small" className="font-medium">
-                        <ListItem
+                        <span
                             className="flex items-center px-2 gap-2 py-2 font-sans text-[14px] xl:text-[16px] font-normal leading-[20px]"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => {
@@ -135,7 +135,7 @@ function MegaMenu() {
                                 className={`block h-3 w-3 mt-1 transition-transform lg:hidden ${isMobileMenuOpen ? "rotate-180" : ""
                                     }`}
                             />
-                        </ListItem>
+                        </span>
                     </Link>
                 </MenuHandler>
                 <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
@@ -166,7 +166,7 @@ function NavList() {
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
-                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Home</ListItem>
+                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Home</span>
             </Link>
             <Link
                 href="/why-us"
@@ -174,7 +174,7 @@ function NavList() {
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
-                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Why Us</ListItem>
+                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Why Us</span>
             </Link>
             <MegaMenu />
             <Link
@@ -183,7 +183,7 @@ function NavList() {
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
-                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Portfolio</ListItem>
+                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Portfolio</span>
             </Link>
             <Link
                 href="/process"
@@ -191,7 +191,7 @@ function NavList() {
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
-                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Process</ListItem>
+                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Process</span>
             </Link>
             <Link
                 href="/pricing"
@@ -199,7 +199,7 @@ function NavList() {
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
-                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Pricing</ListItem>
+                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Pricing</span>
             </Link>
             <Link
                 href="/blog"
@@ -207,7 +207,7 @@ function NavList() {
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
-                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Blog</ListItem>
+                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Blog</span>
             </Link>
             <Link
                 href="/contact-us"
@@ -215,9 +215,9 @@ function NavList() {
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
-                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">
+                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">
                     Contact Us
-                </ListItem>
+                </span>
             </Link>
         </List>
     );
