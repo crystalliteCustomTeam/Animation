@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
 
 
 {/* Meta Pixel Code */}
-{/* 
+
             <Script>
                 {`
                    !function(f,b,e,v,n,t,s)
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
                    fbq('init', '403846962177452');
                    fbq('track', 'PageView');
                 `}
-            </Script> */}
+            </Script>
 
 
 
@@ -61,9 +61,7 @@ export default function RootLayout({ children }) {
 
         <main>{children}</main>
         <Footer />
-        {/* <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=403846962177452&ev=PageView&noscript=1"
-/></noscript> */}
+  
       </body>
  
     </html>
