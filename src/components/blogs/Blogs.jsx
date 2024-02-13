@@ -22,8 +22,8 @@ const Blogs = () => {
                     style={{
                         display: "inline-block",
                         margin: "0 5px",
-                        opacity: index === currentSlide ? 1 : 0.6,
-                        color: index === currentSlide ? 'white' : 'inherit',
+                        // opacity: index === currentSlide ? 1 : 0.6,
+                        // color: index === currentSlide ? 'white' : 'inherit',
                     }}
                 >
                     {index + 1}
