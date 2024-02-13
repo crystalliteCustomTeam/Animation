@@ -140,7 +140,7 @@ const Popup = () => {
 
     return (
         <>
-            <Dialog open={open} handler={handleOpen} className='popup h-full w-full'>
+            <Dialog open={open} handler={handleOpen} className='popup h-full w-full' style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(8px)' }}>
                 <section className='h-full lg:w-full py-12 px-6'>
                     <div className='bg-cover bg-center popupBg lg:bg-[url("../../public/video-explainer/popup-bg2.png")] max-w-5xl mx-auto relative top-0 bottom-0 left-0 right-0 pt-[40px] lg:pt-[90px] h-full w-full'>
                         <button
