@@ -1,0 +1,353 @@
+/* font family */
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  transition: all 0.3s;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  overflow-x: hidden;
+  background-color: #000;
+}
+
+.borderinset {
+  border: inset 3px black;
+}
+
+.montserrat {
+  font-family: montserrat, sans-serif;
+}
+
+.poppins {
+  font-family: poppins, sans-serif;
+}
+
+.bg-prime {
+  background: linear-gradient(90deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
+}
+
+.bg-second {
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
+}
+
+.bg-third {
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 40%);
+}
+
+.rotateY {
+  transform: rotateY(-180deg);
+}
+
+/*=============== scroll bar css start ===============*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #272727;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
+}
+
+/* ================================== */
+
+/* width */
+.buzzflick::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+.buzzflick::-webkit-scrollbar-track {
+  background: #272727;
+}
+
+/* Handle */
+.buzzflick::-webkit-scrollbar-thumb {
+  background: #f5090b;
+}
+
+/*=============== scroll bar css End ===============*/
+
+/*=============== service slider start ===============*/
+
+.servicesConcept .slick-prev {
+  left: -22px;
+  top: 103%;
+}
+
+.servicesConcept .slick-prev:before {
+  content: url(../../public/icons/arrow-left.png);
+}
+
+.servicesConcept .slick-next:before {
+  content: url(../../public/icons/arrow-right.png);
+}
+
+.servicesConcept .slick-next {
+  right: 115px;
+  top: 105%;
+  bottom: inherit;
+}
+
+/*=============== testi slider start ===============*/
+
+.testiSlider .slick-slide {
+  height: 300px;
+}
+
+.testiSlider .slick-prev {
+  left: -200px;
+  top: 35%;
+  z-index: 999;
+}
+
+.testiSlider .slick-prev:before {
+  content: url(../../public/icons/arrow-red.png);
+  opacity: 1;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  transform: rotate(180deg);
+}
+
+.testiSlider .slick-next {
+  right: -155px;
+  top: 35%;
+  z-index: 999;
+}
+
+.testiSlider .slick-next:before {
+  content: url(../../public/icons/arrow-red.png);
+  opacity: 1;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+/*=============== Blogs Slider start ===============*/
+
+.blogsSlider .slick-prev {
+  left: 0;
+  top: inherit;
+  bottom: -39px;
+}
+
+.blogsSlider .slick-prev:before {
+  content: url(../../public/icons/red-arrow-l.png);
+}
+
+.blogsSlider .slick-next {
+  right: 43px;
+  bottom: -39px;
+  top: inherit;
+}
+
+.blogsSlider .slick-next:before {
+  content: url(../../public/icons/red-arrow-r.png);
+}
+
+/*=============== Blogs Slider End ===============*/
+
+/*=============== Brands Slider start ===============*/
+
+.brandsSlider .slick-prev {
+  left: inherit;
+  right: 11%;
+  top: inherit;
+  bottom: -65px;
+}
+
+.brandsSlider .slick-prev:before {
+  content: url(../../public/icons/arrow-left.png);
+}
+
+.brandsSlider .slick-next {
+  right: 80px;
+  bottom: -65px;
+  top: inherit;
+}
+
+.brandsSlider .slick-next:before {
+  content: url(../../public/icons/arrow-right.png);
+}
+
+/* Brands Slider End */
+
+.grid.place-items-center.fixed.w-screen.h-screen.bg-black.bg-opacity-60.backdrop-blur-sm {
+  height: 100% !important;
+  background: transparent !important;
+  position: fixed;
+  width: 100% !important;
+}
+
+/* popup end */
+
+
+/* Video Explainer Animation Start */
+
+.animation {
+  animation: animated 1.5s infinite ease-in-out alternate
+}
+
+@keyframes animated {
+  0% {
+    transform: translateY(0)
+  }
+
+  100% {
+    transform: translateY(-20px)
+  }
+}
+
+.testi {
+  animation: testi 1.5s infinite ease-in-out alternate
+}
+
+@keyframes testi {
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(-20px)
+  }
+}
+
+/* Video Explainer Animation End */
+
+/*=============== Media Query Start ===============*/
+
+@media only screen and (max-width: 1920px) {
+  .blogsSlider .slick-dots {
+    position: absolute;
+    bottom: -42px;
+    display: block;
+    width: 9%;
+    padding: 0;
+    text-align: right;
+    z-index: 9999;
+    margin-right: auto;
+    right: 71px;
+    background: #000;
+    font-family: sans-serif;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .blogsSlider .slick-dots {
+    width: 9%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .blogsSlider .slick-dots {
+    width: 11%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+
+  .popupBg {
+    background: #260868;
+  }
+
+  .servicesConcept .slick-next {
+    right: 50px;
+  }
+
+  .servicesConcept .slick-prev {
+    top: 106%;
+  }
+
+  .blogsSlider .slick-dots {
+    width: 22%;
+  }
+
+  .testiSlider .slick-prev {
+    left: 120px;
+    top: inherit;
+    bottom: -90px;
+  }
+
+  .testiSlider .slick-next {
+    right: 200px;
+    top: inherit;
+    bottom: -90px;
+  }
+
+  .slideBg {
+    background-size: 550px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .wantbg {
+    background: linear-gradient(0deg,
+        rgba(245, 9, 11, 1) 0%,
+        rgba(255, 45, 75, 1) 40%);
+  }
+
+  .blogsSlider .slick-next {
+    right: 27px;
+  }
+
+  .blogsSlider .slick-prev {
+    left: 5px;
+  }
+
+  .blogsSlider .slick-dots {
+    display: none;
+  }
+
+  .testiSlider .slick-prev {
+    left: -42px;
+    top: inherit;
+    bottom: -64px;
+  }
+
+  .testiSlider .slick-next {
+    right: 20px;
+    top: inherit;
+    bottom: -64px;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+/*=============== Media Query End ===============*/
