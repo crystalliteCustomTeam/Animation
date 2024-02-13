@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
 
 
 {/* Meta Pixel Code */}
-
+{/* 
             <Script>
                 {`
                    !function(f,b,e,v,n,t,s)
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
                    fbq('init', '403846962177452');
                    fbq('track', 'PageView');
                 `}
-            </Script>
+            </Script> */}
 
 
 
