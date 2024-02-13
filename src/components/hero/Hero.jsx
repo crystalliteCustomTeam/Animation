@@ -96,6 +96,7 @@ const Hero = ({ content }) => {
                                     hover="hover:bg-transparent"
                                     href="#"
                                 />
+                                
                                 <CTA
                                     text="Live Chat"
                                     icon2={true}
