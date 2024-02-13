@@ -1,5 +1,6 @@
 "use client"
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 // Import Components
 import CTA from "@/components/cta/CTA";
@@ -83,13 +84,14 @@ function MegaMenu() {
                         })}
                     </div>
                     <div>
-                        <Typography
+                        <Link
+                        href={href}
                             variant="h6"
                             color="blue-gray"
                             className="flex items-center font-sans text-[16px] font-normal text-black h-full"
                         >
                             {title}
-                        </Typography>
+                        </Link>
                     </div>
                 </MenuItem>
             </a>
@@ -110,7 +112,7 @@ function MegaMenu() {
                 allowHover={true}
             >
                 <MenuHandler>
-                    <Typography as="div" variant="small" className="font-medium">
+                    <Link href="#"  variant="small" className="font-medium">
                         <ListItem
                             className="flex items-center px-2 gap-2 py-2 font-sans text-[14px] xl:text-[16px] font-normal leading-[20px]"
                             selected={isMenuOpen || isMobileMenuOpen}
@@ -134,7 +136,7 @@ function MegaMenu() {
                                     }`}
                             />
                         </ListItem>
-                    </Typography>
+                    </Link>
                 </MenuHandler>
                 <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
                     <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
@@ -158,63 +160,56 @@ function MegaMenu() {
 function NavList() {
     return (
         <List className="mt-4 lg:mt-0 mb-0 p-0 pb-4 lg:pb-0 lg:flex-row lg:p-1 gap-3 bg-black lg:bg-transparent border-b-2 border-[prime/100] lg:border-0">
-            <Typography
-                as="a"
+            <Link
                 href="/"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
                 <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Home</ListItem>
-            </Typography>
-            <Typography
-                as="a"
+            </Link>
+            <Link
                 href="/why-us"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
                 <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Why Us</ListItem>
-            </Typography>
+            </Link>
             <MegaMenu />
-            <Typography
-                as="a"
+            <Link
                 href="/portfolio"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
                 <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Portfolio</ListItem>
-            </Typography>
-            <Typography
-                as="a"
+            </Link>
+            <Link
                 href="/process"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
                 <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Process</ListItem>
-            </Typography>
-            <Typography
-                as="a"
+            </Link>
+            <Link
                 href="/pricing"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
                 <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Pricing</ListItem>
-            </Typography>
-            <Typography
-                as="a"
+            </Link>
+            <Link
                 href="/blog"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
                 <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Blog</ListItem>
-            </Typography>
-            <Typography
-                as="a"
+            </Link>
+            <Link
                 href="/contact-us"
                 variant="small"
                 color="white"
@@ -223,7 +218,7 @@ function NavList() {
                 <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">
                     Contact Us
                 </ListItem>
-            </Typography>
+            </Link>
         </List>
     );
 }
@@ -244,7 +239,7 @@ const Header = () => {
                 <Navbar className="max-w-none px-0 py-2 rounded-none bg-transparent shadow-none backdrop-saturate-100 backdrop-blur-none border-none">
                     <div className="flex items-center justify-between text-white relative">
                         <Typography
-                            as="a"
+        
                             href="/"
                             variant="h6"
                             className="mr-4 cursor-pointer py-1.5 lg:ml-2 lg:w-[315px]"
