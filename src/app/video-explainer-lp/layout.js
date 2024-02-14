@@ -1,15 +1,15 @@
 // Meta Data
 export const metadata = {
     // Title & Descriptions
-    title: "Video Explaiener",
+    title: "Video Explainer",
     description: "Video Explainer",
     // Canonical
-    alternates: { canonical: 'https://infinity-animation.vercel.app/video-explainer/' },
+    alternates: { canonical: 'https://infinityanimationspro.com/video-explainer/' },
     // OG Metas
     openGraph: {
-        title: 'Video Explaiener',
+        title: 'Video Explainer',
         description: 'Video Explainer',
-        url: 'https://infinity-animation.vercel.app/video-explainer/',
+        url: 'https://infinityanimationspro.com/video-explainer/',
         siteName: 'InFinity Animation',
         locale: 'en_US',
         type: 'website',

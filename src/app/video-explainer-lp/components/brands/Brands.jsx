@@ -1,9 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-
-
-
+//===== Component
+import usePopup from '@/app/configs/store/Popup';
 // ==== Images 
 import UK from "media/video-explainer/flag-icon.png"
 import CTAPart from "media/video-explainer/cta-rht-img.png"
@@ -11,7 +10,10 @@ import CTAPart from "media/video-explainer/cta-rht-img.png"
 
 const Brands = ({ content }) => {
     const { title, subTitle, desc, isBtn } = content;
-
+    const { popup, togglePopup } = usePopup()
+    const popupHandle = () => {
+        togglePopup(popup)
+    }
     return (
         <>
             <section className='py-[80px] bg-cover bg-center bg-no-repeat bg-[url("../../public/video-explainer/cta-bg.jpg")] relative'>
@@ -28,20 +30,20 @@ const Brands = ({ content }) => {
                         </div>
                         <div className="btns flex-wrap flex items-center justify-center md:justify-start gap-5 mt-6">
                             <div className="btn">
-                                <Link href="javascript:;" className='flex items-center text-[16px] text-white font-[600] montserrat bg-[#003466] py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[600] montserrat bg-[#003466] py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                     Get Started
-                                </Link>
+                                </button>
                             </div>
                             <div className="btn">
-                                <Link href="javascript:;" className='flex items-center text-[16px] text-white font-[600] montserrat bg-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[16px] text-white font-[600] montserrat bg-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                     Live Chat
-                                </Link>
+                                </a>
                             </div>
                             {isBtn ? <div className="btn">
-                                <Link href="tel:+1-716-300-1135" className='flex items-center'>
+                                <Link href="tel:+1-833-666-6689" className='flex items-center'>
                                     <Image src={UK} alt='UK' className='object-contain' />
                                     <span className='text-[20px] text-black py-[10px] px-[8px] font-bold montserrat'>
-                                        +1-716-300-1135
+                                        +1-833-666-6689
                                     </span>
                                 </Link>
                             </div> : null}

@@ -1,6 +1,6 @@
 "use client"
-
-import React from 'react'
+import React, { useCallback, useEffect, useState } from 'react';
+// Import Components
 import HeaderLP from './components/Header/Header'
 import Banner from './components/banner/Banner'
 import Partners from './components/partners/partners'
@@ -18,7 +18,6 @@ import Contact from './components/Contact/Contact'
 import Popup from './components/popup/Popup'
 
 const Video = () => {
-
   // ===== Brands Content ===== //
   const brands = {
     title: "Start Displaying Your Brand with Amazing Animated Videos",
@@ -26,7 +25,6 @@ const Video = () => {
     desc: "Spread profound message and scale up your business with our animated video services today!",
     isBtn: true,
   }
-
   //===== FAQS =====//
   const lists = [
     {
@@ -39,7 +37,6 @@ const Video = () => {
       item1: "Delivery/publication",
     }
   ]
-
   const accordionData = [
     {
       question: 'What Is The Cost Of Tech Video Production?',
@@ -59,7 +56,6 @@ const Video = () => {
       answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
     }
   ];
-
   const faqs = {
     accordionData: accordionData,
   }
@@ -73,6 +69,7 @@ const Video = () => {
   return (
     <>
       <div className='bg-white'>
+        <Popup />
         <HeaderLP />
         <Banner />
         <Partners />
@@ -88,7 +85,6 @@ const Video = () => {
         <ClientThinking />
         <Clients />
         <Contact />
-        <Popup />
       </div>
     </>
   )

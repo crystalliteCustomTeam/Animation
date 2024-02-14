@@ -1,8 +1,7 @@
 // Import Fonts
 import { primary } from "./configs/fonts";
 // Import Components
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import ConditionalLayout from "./ConditionalLayout";
 import Script from "next/script";
 // Import Css
 import "./global.css";
@@ -57,10 +56,11 @@ export default function RootLayout({ children }) {
 {/* <!-- End Meta Pixel Code --> */}
 
       <body className={`${primary.variable}`}>
-      <Header />
-
+   
+      <ConditionalLayout>
         <main>{children}</main>
-        <Footer />
+        </ConditionalLayout>
+       
   
       </body>
  

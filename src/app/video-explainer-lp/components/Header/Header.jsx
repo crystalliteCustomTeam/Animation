@@ -1,15 +1,18 @@
 import React from 'react'
-import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import { EnvelopeIcon } from '@heroicons/react/24/solid'
 //===== Images 
 import Logo from "media/video-explainer/logo.gif"
 import UK from "media/video-explainer/flag-icon.png"
 import Chat from "media/video-explainer/cht-icon.png"
-
+import usePopup from '@/app/configs/store/Popup'
 
 const HeaderLP = () => {
+    const { popup, togglePopup } = usePopup()
+    const popupHandle = () => {
+        togglePopup(popup)
+    }
     return (
         <>
             <header className='pt-5 '>
@@ -24,31 +27,31 @@ const HeaderLP = () => {
                             <div className="nav_lists">
                                 <ul className='flex items-center gap-x-4 xl:gap-x-7'>
                                     <li>
-                                        <Link href="mailto:queries@infinityanimations.com" className='flex items-center'>
-                                            <EnvelopeIcon className='w-[25px] h-[25px]' />
+                                        <a href="mailto:queries@infinityanimations.com" className='flex items-center'>
+                                            <EnvelopeIcon className='w-[25px] h-[25px] text-white' />
                                             <span className='text-[13px] text-white py-[10px] px-[8px] font-[700] font-sans'>queries@infinityanimations.com</span>
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li>
-                                        <Link href="tel:+1-716-300-1135" className='flex items-center'>
+                                        <Link href="tel:+1-833-666-6689" className='flex items-center'>
                                             <Image src={UK} alt='UK' className='w-[23px] h-[16px] object-contain' />
                                             <span className='text-[13px] text-white py-[10px] px-[8px] font-[700] font-sans'>
-                                                +1-716-300-1135
+                                                +1-833-666-6689
                                             </span>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="tel:+1-716-300-1135" className='flex items-center'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center'>
                                             <Image src={Chat} alt='UK' className='w-auto object-contain grayscale-[1] brightness-[100]' />
                                             <span className='text-[13px] text-white py-[10px] px-[8px] font-[700] font-sans'>
                                                 Live Chat
                                             </span>
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li>
-                                        <Link href="tel:+1-716-300-1135" className='flex items-center text-[13px] text-white font-[700] font-sans bg-black ml-[10px] py-[10px] px-[12px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
+                                        <button onClick={popupHandle} className='flex items-center text-[13px] text-white font-[700] font-sans bg-black ml-[10px] py-[10px] px-[12px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
                                             Get Started
-                                        </Link>
+                                        </button>
                                     </li>
                                 </ul>
                             </div>
