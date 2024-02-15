@@ -6,8 +6,10 @@ import Want from '@/components/want/Want';
 import Testimonial from '@/components/testimonial/Testimonial';
 import Contact from '@/components/contact/Contact';
 //==== StoryLine Images
-import StoryLine1 from "media/home/storyline1.png";
-import StoryLine2 from "media/home/storyline2.png";
+import StoryLine1 from "media/storyline/storyLine1.jpg";
+import StoryLine2 from "media/storyline/storyLine2.jpg";
+import StoryLine3 from "media/storyline/storyLine3.jpg";
+import StoryLine4 from "media/storyline/storyLine4.jpg";
 //==== Testimonial Images
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
@@ -24,22 +26,22 @@ export default function Page() {
         {
             question: 'Strategic Storytelling',
             answer: "Begin with a strategic approach to storytelling, ensuring that every animation project has a compelling narrative foundation that resonates with your audience.",
-            StoryLineImg: StoryLine2
+            StoryLineImg: StoryLine1
         },
         {
             question: 'Audio Excellence',
             answer: "Elevate the storytelling experience with audio mastery. Our team meticulously selects and integrates sound elements to enhance emotional connections and create a truly immersive experience.",
-            StoryLineImg: StoryLine1
+            StoryLineImg: StoryLine2
         },
         {
             question: 'Dynamic Animation',
             answer: "Infuse life into your story with dynamic animations. From 2D to 3D, our animation expertise brings characters, scenes, and concepts to vibrant existence, captivating your audience with visually stunning sequences.",
-            StoryLineImg: StoryLine2
+            StoryLineImg: StoryLine3
         },
         {
             question: 'The Midas Touch',
             answer: "Add the final touch of brilliance with our Midas Touch – a meticulous polish and refinement process that ensures your animation shines with perfection. Every detail is scrutinized to deliver an animated masterpiece that exceeds expectations.",
-            StoryLineImg: StoryLine1
+            StoryLineImg: StoryLine4
         },
     ];
     const storyLine = {

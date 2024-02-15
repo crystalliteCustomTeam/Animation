@@ -1,7 +1,5 @@
 "use client"
 import { useState } from 'react';
-// Import Components
-import CTA from '../cta/CTA';
 // Import Css
 import styles from "./PortFolio.module.css"
 
@@ -49,18 +47,6 @@ const Portfolio = ({ content }) => {
                                 </div>
                             )}
                         </div>
-                        {tabInfo ?
-                            <div className='flex items-center justify-center lg:mt-8 mt-4'>
-                                <CTA
-                                    text="View All"
-                                    icon1={true}
-                                    href="#"
-                                    css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff] sm:w-max md:w-[160px]"
-                                    bg="bg-prime"
-                                />
-                            </div>
-                            : null
-                        }
                     </div>
                 </div>
             </section>

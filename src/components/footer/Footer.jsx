@@ -63,8 +63,8 @@ const Footer = () => {
     ];
     const contactLinks = [
         {
-            text: "+18336666689",
-            link: "tel:+18336666689",
+            text: "833-666-6684",
+            link: "tel:833-666-6684",
             icon: telephone
         },
         {
@@ -74,8 +74,9 @@ const Footer = () => {
         },
         {
             text: "One World Trade Center, Suite 8500, New York, New York, 10007, United States",
-            link: "/contact-us",
-            icon: mapmarker
+            link: "https://maps.app.goo.gl/Z6w915ucDqRCyrVa8",
+            icon: mapmarker,
+            target: "_blank"
         },
     ];
     const otherLinks = [
@@ -159,9 +160,9 @@ const Footer = () => {
                                             return (
                                                 <li key={i} className="flex items-center gap-2 mb-3 last:mb-0">
                                                     <Image src={e.icon} className="w-[15px]" alt="Infinity Animation" />
-                                                    <Link href={e.link} className="text-sm xl:text-base text-white font-sans font-normal hover:opacity-50">
+                                                    <a href={e.link} target={e.target} className="text-sm xl:text-base text-white font-sans font-normal hover:opacity-50">
                                                         {e.text}
-                                                    </Link>
+                                                    </a>
                                                 </li>
                                             );
                                         })
@@ -174,7 +175,7 @@ const Footer = () => {
                                         socialLinks.map((e, i) => {
                                             return (
                                                 <li key={i} className="bg-[#22212D] hover:bg-second w-[45px] h-[45px] rounded-[5px] flex items-center justify-center p-1 hover:bg-second">
-                                                    <Link href={e.link}>
+                                                    <Link target="_blank" href={e.link}>
                                                         <Image src={e.icon} className="w-[20px]" alt="Infinity Animation" />
                                                     </Link>
                                                 </li>

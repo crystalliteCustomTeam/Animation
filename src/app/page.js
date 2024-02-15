@@ -11,13 +11,16 @@ import Contact from '@/components/contact/Contact';
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
 //==== StoryLine Images
-import StoryLine1 from "media/home/storyline1.png";
-import StoryLine2 from "media/home/storyline2.png";
-//==== Portfolio Images
-import polio1 from "media/home/portfolio1.png"
-import polio2 from "media/home/portfolio2.png"
-import polio3 from "media/home/portfolio3.png"
-import polio4 from "media/home/portfolio4.png"
+import StoryLine1 from "media/storyline/storyLine1.jpg";
+import StoryLine2 from "media/storyline/storyLine2.jpg";
+import StoryLine3 from "media/storyline/storyLine3.jpg";
+import StoryLine4 from "media/storyline/storyLine4.jpg";
+import StoryLine5 from "media/storyline/storyLine5.jpg";
+import StoryLine6 from "media/storyline/storyLine6.jpg";
+import StoryLine7 from "media/storyline/storyLine7.jpg";
+import StoryLine8 from "media/storyline/storyLine8.jpg";
+import StoryLine9 from "media/storyline/storyLine9.jpg";
+import StoryLine10 from "media/storyline/storyLine10.jpg";
 //==== Boost Images
 import BoostFlodImg from "media/images/boost-img.png";
 import boosticon1 from "media/icons/boost-icon1.png"
@@ -26,8 +29,6 @@ import boosticon3 from "media/icons/boost-icon3.png"
 //==== Testimonial Images
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -64,42 +65,42 @@ export default function Page() {
         {
             question: 'Whiteboard',
             answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
-            StoryLineImg: StoryLine1
+            StoryLineImg: StoryLine3
         },
         {
             question: 'Motion Graphics',
             answer: "Transform your content into visual masterpieces with our motion graphics. Every movement is a brushstroke of dynamic storytelling, enhancing your brand's visual appeal.",
-            StoryLineImg: StoryLine2
+            StoryLineImg: StoryLine4
         },
         {
             question: 'Video Editing',
             answer: "Refine your raw footage into cinematic brilliance with our video editing services. Every cut and transition is a stroke of storytelling precision, enhancing your visual narratives.",
-            StoryLineImg: StoryLine1
+            StoryLineImg: StoryLine5
         },
         {
             question: 'Logo Animations',
             answer: "Make your brand memorable with our logo animation services. Dynamic animations breathe life into your logo, adding a touch of sophistication to your brand identity.",
-            StoryLineImg: StoryLine2
+            StoryLineImg: StoryLine6
         },
         {
             question: 'Architectural Visualization',
             answer: "Visualize spaces in breathtaking detail with our architectural visualization services. From realistic renders to immersive walkthroughs, bring your architectural visions to life.",
-            StoryLineImg: StoryLine1
+            StoryLineImg: StoryLine7
         },
         {
             question: 'CGI-VFX',
             answer: "Experience cinematic brilliance with our CGI and VFX services. Elevate your projects with lifelike animations and visual effects that push the boundaries of imagination.",
-            StoryLineImg: StoryLine2
+            StoryLineImg: StoryLine8
         },
         {
             question: 'Infographics',
             answer: "Transform data into compelling visuals with our infographics services. Each design tells a story, making complex information accessible and visually engaging.",
-            StoryLineImg: StoryLine1
+            StoryLineImg: StoryLine9
         },
         {
             question: 'Hybrid & Cel',
             answer: "Blend tradition with innovation through our Hybrid & Cel Animation services. Each frame is a symphony of timeless artistry and contemporary brilliance, adding a unique charm to your animation.",
-            StoryLineImg: StoryLine2
+            StoryLineImg: StoryLine10
         },
     ];
     const storyLine = {
@@ -228,7 +229,7 @@ export default function Page() {
 
     return (
         <>
-            
+
             <Hero content={hero} />
             <Review />
             <Looking content={looking} />
@@ -238,7 +239,7 @@ export default function Page() {
             <Boost content={boost} />
             <Testimonial content={testimonial} />
             <Contact />
-            
+
         </>
     )
 }

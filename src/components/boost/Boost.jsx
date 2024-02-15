@@ -41,16 +41,18 @@ const Boost = ({ content }) => {
                             <div className="flex gap-6">
                                 <CTA
                                     text="Get Started"
-                                    icon1={true}
+                                    icon="/icons/arrow-red.png"
+                                    iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2"
                                     bg="bg-prime"
                                     color={`text-white`}
                                     border={`border-2 border-[#f5090b]`}
                                     hover="hover:bg-transparent"
-                                    href="#"
+                                    href="tel:833-666-6684"
                                 />
                                 <CTA
                                     text="Live Chat"
-                                    icon2={true}
+                                    icon="/icons/chat.png"
+                                    iconCss="w-[40px]"
                                     bg="bg-[#000]"
                                     color={`text-white`}
                                     border={`border-2 border-[#fff]`}

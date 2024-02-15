@@ -177,7 +177,7 @@ const Form = () => {
                             socialLinks.map((e, i) => {
                                 return (
                                     <li key={i} className="bg-second hover:bg-[#22212D] w-[45px] h-[45px] rounded-[5px] flex items-center justify-center p-1 hover:bg-second">
-                                        <Link href={e.link}>
+                                        <Link target="_blank" href={e.link}>
                                             <Image src={e.icon} className="w-[20px]" alt="Infinity Animation" />
                                         </Link>
                                     </li>

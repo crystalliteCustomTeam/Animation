@@ -85,7 +85,7 @@ function MegaMenu() {
                     </div>
                     <div>
                         <Link
-                        href={href}
+                            href={href}
                             variant="h6"
                             color="blue-gray"
                             className="flex items-center font-sans text-[16px] font-normal text-black h-full"
@@ -112,7 +112,7 @@ function MegaMenu() {
                 allowHover={true}
             >
                 <MenuHandler>
-                    <Link href="#"  variant="small" className="font-medium">
+                    <Link href="#" variant="small" className="font-medium">
                         <span
                             className="flex items-center px-2 gap-2 py-2 font-sans text-[14px] xl:text-[16px] font-normal leading-[20px]"
                             selected={isMenuOpen || isMobileMenuOpen}
@@ -239,7 +239,7 @@ const Header = () => {
                 <Navbar className="max-w-none px-0 py-2 rounded-none bg-transparent shadow-none backdrop-saturate-100 backdrop-blur-none border-none">
                     <div className="flex items-center justify-between text-white relative">
                         <Typography
-        
+
                             href="/"
                             variant="h6"
                             className="mr-4 cursor-pointer py-1.5 lg:ml-2 lg:w-[315px]"
@@ -250,16 +250,17 @@ const Header = () => {
                             <NavList />
                             <CTA
                                 text="Get Started"
-                                icon1={true}
+                                icon="/icons/arrow-red.png"
+                                iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2"
                                 bg="bg-prime"
                                 color={`text-white`}
                                 border={`border-2 border-[#f5090b]`}
                                 hover="hover:bg-transparent"
-                                href="#"
+                                href="tel:833-666-6684"
                             />
                         </div>
                         <button onClick={() => setOpenNav(!openNav)} className="block lg:hidden">
-                        {openNav ? (
+                            {openNav ? (
                                 <XMarkIcon className="h-[40px] w-[40px]" strokeWidth={2} />
                             ) : (
                                 <Bars3Icon className="h-[40px] w-[40px]" strokeWidth={2} />
