@@ -1,0 +1,77 @@
+.display{
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: url(../../../../../public/banner/banner.jpg);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: cover;
+
+}
+
+.heading {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+
+}
+.heading span{
+    color: #d50d12;
+}
+.newyo{
+    margin-bottom: 1%;
+}
+.newyo img{
+    max-width: 100%;
+    height: auto;
+}
+.newyo img{
+    width: 95%;
+    margin: 0 auto;
+}
+.tabsBtns {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid gray;
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding-bottom: 10px;
+    cursor: pointer;
+    
+}
+.tabsBtns div{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 13px;
+}
+.tabsBtns div.active{
+         font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        color: white;
+        font-size: 16px;
+        position: relative;
+    
+}
+
+.tabsBtns div.active::after {
+    position: absolute;
+    content: "";
+    background-color: #d50d12;
+    width: 100%;
+    height: 4px;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .pointer {
+        max-width: 1180px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

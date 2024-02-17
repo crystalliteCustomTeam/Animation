@@ -24,6 +24,32 @@ body {
   border: inset 3px black;
 }
 
+
+
+@font-face {
+  font-family: SF-Pro-Display;
+  src: url(../../src/fonts/SF-Pro-Display-Heavy.otf);
+  font-display: swap;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: SF-Pro-Display;
+  src: url(../../src/fonts/SF-Pro-Display-Medium.otf);
+  font-display: swap;
+  font-weight: 600;
+}
+
+.fontsfpro {
+  font-family: "SF-Pro-Display";
+  font-weight: 800;
+}
+
+.fontsfprosemi {
+  font-family: "SF-Pro-Display";
+  font-weight: 600;
+}
+
 .montserrat {
   font-family: montserrat, sans-serif;
 }
@@ -54,6 +80,118 @@ body {
   transform: rotateY(-180deg);
 }
 
+
+
+/*  animation css */
+
+#ty1 {
+  position: absolute;
+  top: 85px;
+  left: 19%;
+}
+
+#ty3 {
+  position: absolute;
+  top: 339px;
+  left: 20%;
+}
+
+div#ty4 {
+  position: absolute;
+  top: 204px;
+  left: 39%;
+}
+
+div#ty5 {
+  position: absolute;
+  left: 59%;
+  margin-top: 29%;
+}
+
+div#ty6 {
+  position: absolute;
+  top: 53%;
+  left: 59%;
+  margin-top: 7%;
+}
+
+div#ty2 {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  margin-top: 20%;
+}
+
+div#ty7 {
+  position: absolute;
+  top: 43%;
+  right: -5%;
+  margin-top: 18%;
+}
+.newreactslide .slick-slide {
+  opacity: .3;
+}
+.newreactslide .slick-current + .slick-slide {
+  opacity: unset;
+}
+
+.newreactslide .slick-current + .slick-slide svg {
+  fill: #D50D12;
+  opacity: unset;
+  color: #D50D12;
+}
+.newreactslide .slick-slide  svg {
+  fill: #707070;
+  opacity: unset;
+  color: #707070;
+}
+.newreactslide .slick-slide svg path {
+  opacity: 1;
+}
+.newreactslide .slick-dots li button:before {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0px 0px;
+  padding: 0;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50px;
+  top: -40px;
+}
+
+.newreactslide .slick-current + .slick-slide::after {
+  position: absolute;
+  content: '';
+  width: 6.5%;
+  height: 100%;
+  top: 52px;
+  z-index: -1;
+  box-shadow: #ff000040 0px 8px 24px;
+  background-color: #280d0d6e;
+}
+.newreactslide .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 0px;
+  padding: 0;
+  cursor: pointer;
+}
+.newreactslide .slick-prev {
+  left: 35px;
+  top: 87%;
+  width: 51px !important;
+    height: 51px !important;
+}
+.newreactslide .slick-next {
+  right: 38px;
+  top: 87% !important;
+  width: 51px !important;
+    height: 51px !important;
+}
 /*=============== scroll bar css start ===============*/
 
 /* width */
