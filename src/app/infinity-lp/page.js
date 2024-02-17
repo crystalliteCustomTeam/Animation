@@ -11,9 +11,9 @@ import Header from '@/app/infinity-lp/component/header/Header';
 import Footer from '@/app/infinity-lp/component/footer/Footer';
 import Clients from '@/app/infinity-lp/component/clients/Clients';
 import Work from '@/app/infinity-lp/component/work/Work';
-import Streamlined from '@/app/infinity-lp/component/Streamlined/streamlined';
-import Faqs from '@/app/infinity-lp/component/Faqs/faqs';
-import Thinking from '@/app/infinity-lp/component/Thinking/thinking';
+import Streamlined from '@/app/infinity-lp/component/streamlined/Streamlined';
+import Faqs from '@/app/infinity-lp/component/faqs/Faqs';
+import Thinking from '@/app/infinity-lp/component/thinking/Thinking';
 
 export default function Page() {
    
