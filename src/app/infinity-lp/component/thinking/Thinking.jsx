@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Components
-import styles from '@/app/infinity-lp/component/Thinking/thinking.module.css';
+import styles from '@/app/infinity-lp/component/thinking/thinking.module.css';
 import slider1 from "../../../../../public/banner/slider1.png"
 import slider2 from "../../../../../public/banner/slider2.png"
 import slider3 from "../../../../../public/banner/slider3.png"
