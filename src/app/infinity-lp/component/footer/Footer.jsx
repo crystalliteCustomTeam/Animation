@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Components
-import styles from '@/app/infinity-lp/component/Footer/footer.module.css';
+import styles from '@/app/infinity-lp/component/footer/footer.module.css';
 import payment from "../../../../../public/banner/payment.png"
 import top from "../../../../../public/banner/top.png"
 import { IoCall } from "react-icons/io5";
