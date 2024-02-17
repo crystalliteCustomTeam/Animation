@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Components
-import styles from '@/app/infinity-lp/component/Statistics/statistics.module.css';
+import styles from '@/app/infinity-lp/component/statistics/statistics.module.css';
 import proven from "../../../../../public/banner/proven.png"
 
 

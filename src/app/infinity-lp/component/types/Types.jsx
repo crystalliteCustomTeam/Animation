@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Components
-import styles from '@/app/infinity-lp/component/Types/types.module.css';
+import styles from '@/app/infinity-lp/component/types/types.module.css';
 import icon1 from "../../../../../public/banner/motion/1.png"
 import icon2 from "../../../../../public/banner/motion/2.png"
 import icon3 from "../../../../../public/banner/motion/3.png"

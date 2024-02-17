@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // Import Components
-import styles from '@/app/infinity-lp/component/Streamlined/streamlined.module.css';
+import styles from '@/app/infinity-lp/component/streamlined/streamlined.module.css';
 import Link from 'next/link'
 import { useState, useEffect } from 'react';
 import ton1 from "../../../../../public/banner/1ton.png"

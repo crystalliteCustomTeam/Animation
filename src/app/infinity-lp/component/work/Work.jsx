@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Components
-import styles from '@/app/infinity-lp/component/Work/work.module.css';
+import styles from '@/app/infinity-lp/component/work/work.module.css';
 import log1 from "../../../../../public/banner/log1.png"
 import log2 from "../../../../../public/banner/log2.png"
 import log3 from "../../../../../public/banner/log3.png"

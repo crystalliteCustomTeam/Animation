@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Components
-import styles from '@/app/infinity-lp/component/Packages/packages.module.css';
+import styles from '@/app/infinity-lp/component/packages/packages.module.css';
 import livechat from "../../../../../public/banner/livechat.png"
 import check from "../../../../../public/banner/check.png"
 import checkw from "../../../../../public/banner/checkw.png"
