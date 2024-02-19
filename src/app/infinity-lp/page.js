@@ -16,26 +16,24 @@ import Faqs from '@/app/infinity-lp/component/faqs/Faqs';
 import Thinking from '@/app/infinity-lp/component/thinking/Thinking';
 
 export default function Page() {
-   
-
 
     return (
         <>
-           <Header />
-           <Banner />
-           <Logo />
-           <Video />
-           <Streamlined />
-           <Display />
-           <Types />
-           <Packages />
-           <Statistics />
-           <Work />
-           <Faqs />
-           <Thinking />
-           <Clients />
-           <Explainer />
-           <Footer />
+            <Header />
+            <Banner />
+            <Logo />
+            <Video />
+            <Streamlined />
+            <Display />
+            <Types />
+            <Packages />
+            <Statistics />
+            <Work />
+            <Faqs />
+            <Thinking />
+            <Clients />
+            <Explainer />
+            <Footer />
         </>
     )
 }
