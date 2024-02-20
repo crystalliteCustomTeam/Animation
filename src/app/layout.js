@@ -51,7 +51,18 @@ export default function RootLayout({ children }) {
 
 
 
+            <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11475040852"></Script>
 
+            <Script>
+              {`
+               window.dataLayer = window.dataLayer || [];
+               function gtag(){dataLayer.push(arguments);}
+               gtag('js', new Date());
+             
+               gtag('config', 'AW-11475040852');
+              `}
+
+            </Script>
 
 {/* <!-- End Meta Pixel Code --> */}
 
