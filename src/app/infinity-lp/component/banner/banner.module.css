@@ -68,10 +68,10 @@
     position: absolute;
     content: "";
     background-color: #444343c2;
-    width: 69%;
+    width: 90%;
     height: 2px;
     left: 25px;
-    bottom: -6px;
+    bottom: -6px
 }
 .why p{
     font-family: "Montserrat", sans-serif;
@@ -96,7 +96,7 @@
     position: absolute;
     content: "";
     background-color: #444343c2;
-    width: 80%;
+    width: 90%;
     height: 2px;
     left: 25px;
     bottom: -6px;
