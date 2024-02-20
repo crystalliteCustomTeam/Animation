@@ -14,9 +14,9 @@ const ConditionalLayout = ({ children }) => {
     }
     return (
         <PopupProvider value={{ popup, togglePopup }}>
-            {pathname !== '/video-explainer-lp' || pathname !== '/infinity-lp' &&  <Header /> }
+            {pathname !== '/video-explainer-lp' && pathname !== '/infinity-lp' && (<Header />)}
             {children}
-            {pathname !== '/video-explainer-lp' || pathname !== '/infinity-lp' &&  <Footer /> }
+            {pathname !== '/video-explainer-lp' && pathname !== '/infinity-lp' && <Footer />}
         </PopupProvider>
     )
 }
