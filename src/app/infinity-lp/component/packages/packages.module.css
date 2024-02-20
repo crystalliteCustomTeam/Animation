@@ -123,7 +123,7 @@
     border: 0;
     border-radius: 10px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
 }
 
@@ -249,4 +249,64 @@ color: #D00D12;
         margin-right: auto;
         margin-left: auto;
     }
+}
+@media (min-width: 1400px) { 
+    .pointer {
+        max-width: 1320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+@media (max-width: 1200px) {
+
+    .pkgcard2::before {
+        display: none;
+    }
+    .pkgcard::before {
+        display: none;
+    }
+    .pkgcard, .pkgcard2 {
+        border: 0;
+        border-radius: 30px;
+        padding: 40px 25px;
+        background-color: #fff;
+        position: relative;
+        width: 98%!important;
+        margin: 0 auto;
+    }
+    .cardbef {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {  
+
+    .display{
+ 
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: url(../../../../../public/banner/banner.jpg);
+        background-repeat: no-repeat;
+        background-color: white;
+        background-size: cover;
+
+    
+    }
+}
+@media (max-width: 480px) { 
+    .speak p {
+        margin-bottom: 0;
+        color: black;
+        font-size: 15px;
+        font-family: "SF-Pro-Display";
+        font-weight: 800;
+    }
+    .pkgcta .popup{
+        padding: 0 20px;
+    }
+    .pkgcta .chat {
+        padding: 0 20px; 
+    }
+
 }

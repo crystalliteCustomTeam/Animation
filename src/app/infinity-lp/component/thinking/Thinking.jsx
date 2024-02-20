@@ -29,7 +29,19 @@ const Video = () => {
         slidesToScroll: 1,
         className: "center",
         nextArrow: <Image src={next} alt='BitsWits' />,
-        prevArrow: <Image src={prev} alt='BitsWits' />
+        prevArrow: <Image src={prev} alt='BitsWits' />,
+        responsive: [
+          
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+           
+          ],
       
     };
    

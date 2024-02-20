@@ -1,8 +1,9 @@
 "use client"
 import Image from "next/image";
-import { usePathname } from 'next/navigation';
+
 // Import Components
 
+import Axios from "axios";
 import styles from '@/app/infinity-lp/component/banner/banner.module.css';
 import icon1 from "media/banner/cut.png"
 
@@ -14,9 +15,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import { register } from "swiper/element/bundle";
 import SwiperCore, { Navigation, Autoplay } from 'swiper/core';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef,useState } from 'react';
 SwiperCore.use([Navigation, Autoplay]);
-
+import { usePathname } from 'next/navigation'
 // import icon5 from "media/banner/slide3.png"
 
 
@@ -25,9 +26,12 @@ const Banner = () => {
 
   const swiperElRef = useRef(null);
   useEffect(() => {
+
+
+    
     register();
     const params = {
-      slidesPerView: 1,
+      slidesPerView: 3,
       injectStyles: [
         `.swiper-pagination-bullet {
           width: 10px;
@@ -42,62 +46,125 @@ const Banner = () => {
     Object.assign(swiperElRef.current, params);
     swiperElRef.current.initialize();
   }, []);
-  // const slides = [
-  //   {
-  //     avatar: "https://download-video.akamaized.net/v3-1/playback/ce84c503-5544-411a-9c59-cee1dab595d5/b7b34760-70042c1c?__token__=st=1708131656~exp=1708146056~acl=%2Fv3-1%2Fplayback%2Fce84c503-5544-411a-9c59-cee1dab595d5%2Fb7b34760-70042c1c%2A~hmac=23369b3def678f5f22bbaaf191531d7f0488cc56690f0dbdd17c03d5434c8eb8&r=dXMtd2VzdDE%3D",
-  //   },
-  //   {
-  //     avatar: "https://download-video.akamaized.net/v3-1/playback/45ba671c-57d3-416d-a83c-815578a54804/8f31ee7c?__token__=st=1708131782~exp=1708146182~acl=%2Fv3-1%2Fplayback%2F45ba671c-57d3-416d-a83c-815578a54804%2F8f31ee7c%2A~hmac=bf9f15e0c0b75907bccc1b4e764239154fb97b2ed201c9184b44c304b8fe04fe&r=dXMtd2VzdDE%3D",
-  //   },
-  //   {
-  //     avatar: "https://download-video.akamaized.net/v3-1/playback/0b0ecd0d-3395-48c2-8c65-72c257babaad/0521078b-92ec0797?__token__=st=1708131900~exp=1708146300~acl=%2Fv3-1%2Fplayback%2F0b0ecd0d-3395-48c2-8c65-72c257babaad%2F0521078b-92ec0797%2A~hmac=5931b82e3b24b4f616a5512d0d430d5cffe9a7182d8489911a619d986183b256&r=dXMtd2VzdDE%3D",
-  //   },
-  //   {
-  //     avatar: "https://download-video.akamaized.net/v3-1/playback/ce84c503-5544-411a-9c59-cee1dab595d5/b7b34760-70042c1c?__token__=st=1708131656~exp=1708146056~acl=%2Fv3-1%2Fplayback%2Fce84c503-5544-411a-9c59-cee1dab595d5%2Fb7b34760-70042c1c%2A~hmac=23369b3def678f5f22bbaaf191531d7f0488cc56690f0dbdd17c03d5434c8eb8&r=dXMtd2VzdDE%3D",
-  //   },
-  //   {
-  //     avatar: "https://download-video.akamaized.net/v3-1/playback/45ba671c-57d3-416d-a83c-815578a54804/8f31ee7c?__token__=st=1708131782~exp=1708146182~acl=%2Fv3-1%2Fplayback%2F45ba671c-57d3-416d-a83c-815578a54804%2F8f31ee7c%2A~hmac=bf9f15e0c0b75907bccc1b4e764239154fb97b2ed201c9184b44c304b8fe04fe&r=dXMtd2VzdDE%3D",
-  //   },
-  //   {
-  //     avatar: "https://download-video.akamaized.net/v3-1/playback/0b0ecd0d-3395-48c2-8c65-72c257babaad/0521078b-92ec0797?__token__=st=1708131900~exp=1708146300~acl=%2Fv3-1%2Fplayback%2F0b0ecd0d-3395-48c2-8c65-72c257babaad%2F0521078b-92ec0797%2A~hmac=5931b82e3b24b4f616a5512d0d430d5cffe9a7182d8489911a619d986183b256&r=dXMtd2VzdDE%3D",
-  //   },
 
-  // ];
-
-
-
-  // const slides = [
-  // {
-  //   avatar: "media/banner/slide3.png",
-  // },
-  // {
-  //   avatar: "https://download-video.akamaized.net/v3-1/playback/45ba671c-57d3-416d-a83c-815578a54804/8f31ee7c?__token__=st=1708131782~exp=1708146182~acl=%2Fv3-1%2Fplayback%2F45ba671c-57d3-416d-a83c-815578a54804%2F8f31ee7c%2A~hmac=bf9f15e0c0b75907bccc1b4e764239154fb97b2ed201c9184b44c304b8fe04fe&r=dXMtd2VzdDE%3D",
-  // },
-  // {
-  //   avatar: "https://download-video.akamaized.net/v3-1/playback/0b0ecd0d-3395-48c2-8c65-72c257babaad/0521078b-92ec0797?__token__=st=1708131900~exp=1708146300~acl=%2Fv3-1%2Fplayback%2F0b0ecd0d-3395-48c2-8c65-72c257babaad%2F0521078b-92ec0797%2A~hmac=5931b82e3b24b4f616a5512d0d430d5cffe9a7182d8489911a619d986183b256&r=dXMtd2VzdDE%3D",
-  // },
-  // {
-  //   avatar: "https://download-video.akamaized.net/v3-1/playback/ce84c503-5544-411a-9c59-cee1dab595d5/b7b34760-70042c1c?__token__=st=1708131656~exp=1708146056~acl=%2Fv3-1%2Fplayback%2Fce84c503-5544-411a-9c59-cee1dab595d5%2Fb7b34760-70042c1c%2A~hmac=23369b3def678f5f22bbaaf191531d7f0488cc56690f0dbdd17c03d5434c8eb8&r=dXMtd2VzdDE%3D",
-  // },
-  // {
-  //   avatar: "https://download-video.akamaized.net/v3-1/playback/45ba671c-57d3-416d-a83c-815578a54804/8f31ee7c?__token__=st=1708131782~exp=1708146182~acl=%2Fv3-1%2Fplayback%2F45ba671c-57d3-416d-a83c-815578a54804%2F8f31ee7c%2A~hmac=bf9f15e0c0b75907bccc1b4e764239154fb97b2ed201c9184b44c304b8fe04fe&r=dXMtd2VzdDE%3D",
-  // },
-  // {
-  //   avatar: "https://download-video.akamaized.net/v3-1/playback/0b0ecd0d-3395-48c2-8c65-72c257babaad/0521078b-92ec0797?__token__=st=1708131900~exp=1708146300~acl=%2Fv3-1%2Fplayback%2F0b0ecd0d-3395-48c2-8c65-72c257babaad%2F0521078b-92ec0797%2A~hmac=5931b82e3b24b4f616a5512d0d430d5cffe9a7182d8489911a619d986183b256&r=dXMtd2VzdDE%3D",
-  // },
-  // ];
 
   const slides = [
-    [
-      "https://download-video.akamaized.net/v3-1/playback/45ba671c-57d3-416d-a83c-815578a54804/8f31ee7c?__token__=st=1708131782~exp=1708146182~acl=%2Fv3-1%2Fplayback%2F45ba671c-57d3-416d-a83c-815578a54804%2F8f31ee7c%2A~hmac=bf9f15e0c0b75907bccc1b4e764239154fb97b2ed201c9184b44c304b8fe04fe&r=dXMtd2VzdDE%3D",
-    ],
+    {
+      avatar: "../../banner/1.mp4",
+    },
+    {
+      avatar: "../../banner/2.mp4",
+    },
+    {
+      avatar: "../../banner/3.mp4",
+    },
+    {
+      avatar: "../../banner/2.mp4",
+    },
+   
+  
+
   ];
+
+
+  const [ip, setIP] = useState('');
+  //creating function to load ip address from the API
+  const getIPData = async () => {
+      const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+      setIP(res.data);
+  }
+  useEffect(() => {
+      getIPData()
+  }, [])
+
+
+  const [score, setScore] = useState('Submit');
+
+  const router = usePathname();
+ 
+    const currentRoute = router.pathname;
+     const [pagenewurl, setPagenewurl] = useState('');
+      useEffect(() => {
+        const pagenewurl = window.location.href;
+        console.log(pagenewurl);
+        setPagenewurl(pagenewurl);
+      }, []);
+
+  const handleSubmit = async (e) => {
+
+
+
+    e.preventDefault()
+    var currentdate = new Date().toLocaleString() + ''
+
+    const data = {
+        name: e.target.name.value,
+        email: e.target.email.value,
+        phone: e.target.phone.value,
+        message: e.target.message.value,
+        pageUrl: pagenewurl,
+        IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+        currentdate: currentdate,
+    }
+
+    const JSONdata = JSON.stringify(data)
+
+    setScore('Sending Data');
+    console.log(JSONdata);
+
+
+    fetch('/api/email', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+        },
+        body: JSONdata
+    }).then((res) => {
+        console.log(`Response received ${res}`)
+        if (res.status === 200) {
+            console.log(`Response Successed ${res}`)
+        }
+    })
+
+
+
+    let headersList = {
+        "Accept": "*/*",
+        "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+        "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+        "Content-Type": "application/json"
+    }
+
+    let bodyContent = JSON.stringify({
+        "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+        "Brand": "Infinity Animations",
+        "Page": pagenewurl,
+        "Date": currentdate,
+        "Time": currentdate,
+        "JSON": JSONdata,
+
+    });
+
+    await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+        method: "POST",
+        body: bodyContent,
+        headers: headersList
+    });
+    const { pathname } = router;
+    if (pathname == pathname) {
+        window.location.href = '/thank-you';
+    }
+
+}
+
+
 
   return (
     <>
-      <section className={`newcon ${styles.banner}`}>
-        <div class={`container mx-auto  ${styles.count}`}>
-          <div class="md:grid md:grid-cols-2">
+      <section className={`newcon ${styles.banner}`} id="newslides">
+        <div class={`container mx-auto  ${styles.count} ${styles.pointer}`}>
+          <div class="md:grid xl:grid-cols-2 lg:grid-cols-1">
             <div className={styles.condition}>
               <h1 className={`fontsfpro mb-0 ${styles.heading}`}>
                 <span class="colorred">Expand </span>
@@ -128,53 +195,64 @@ const Banner = () => {
                 </div>
               </div>
               <div className={styles.expert}>
-                <button className={styles.started}>Get Started</button>
+                <a href="tel:833-666-6684">
+                <button className={styles.started}>Get Started</button> </a>
                 <div className={styles.pot}>
                   <Image src={icon2} className={styles.ntoen} alt="" />
                   <div>
-                    <p className={styles.talktoour}>Talk to our Expert</p>
-                    <h3 className={styles.livechat}>Live Chat</h3>
+                  <a href="javascript:$zopim.livechat.window.show();">  <p className={styles.talktoour}>Talk to our Expert</p>
+                    <h3 className={styles.livechat}>Live Chat</h3> </a>
                   </div>
                 </div>
                 <Image src={icon3} className={styles.newtoen} alt="" />
               </div>
+              <form   onSubmit={handleSubmit}>
               <div className={styles.animationidea}>
                 <h3>Share Your Animation Idea</h3>
                 <div className={styles.form2}>
-                  <input type="text" name="name" class="form-control" placeholder="Enter Your Name" />
-                  <input type="email" name="email" class="form-control" placeholder="Enter Email" />
+                  <input type="text" minLength="4" required name="name" class="form-control" placeholder="Enter Your Name" />
+                
+
+                  <input type="email" name="email" required class="form-control" placeholder="Enter Email" />
+                
                 </div>
                 <div className={styles.form2}>
-                  <input type="number" class="form-control" placeholder="Enter Phone Number" />
-                  <input type="text" class="form-control" placeholder="Enter Message" />
+                  <input  type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" class="form-control" placeholder="Enter Phone Number" />
+             
+                  <input type="text" class="form-control" name="message" placeholder="Enter Message" />
                 </div>
                 <input type="submit" value="Get a Free Quote" className={styles.quote} />
                 <div className={styles.noty}>
                   <Image src={icon4} alt="" />
                 </div>
               </div>
+              </form>
             </div>
             <div>
               <div className={styles.slider}>
-                <swiper-container
+                <swiper-container className="newtranck"
+                navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
+                pagination={false}
                   init={false}
                   ref={swiperElRef}
                   centered-slides="false"
                   autoplay-delay="3000"
                   loop="true"
+                  autoplay={false}
+                  
                 >
                   {slides.map((testimonial, index) => (
                     <swiper-slide className='newfold newtown' key={index}>
                       <div>
-                        <div className="w-[90%] m-auto py-10">
+                        <div className="w-[90%] m-auto">
                           <div className="card">
-                            <video className={`w-full h-full`} muted="muted" autoPlay src={testimonial}></video>
-                            {/* <Image src={testimonial} /> */}
+                            <video controls   autoPlay="false" src={testimonial.avatar}></video>
                           </div>
                         </div>
                       </div>
                     </swiper-slide>
                   ))}
+               
                 </swiper-container>
               </div>
             </div>

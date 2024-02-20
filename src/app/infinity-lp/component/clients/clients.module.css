@@ -35,3 +35,17 @@
         margin-left: auto;
     }
 }
+@media (min-width: 1400px) { 
+    .pointer {
+        max-width: 1320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+@media (max-width: 767px) {
+    .touch {
+    
+        padding: 50px 0;
+    }
+}

@@ -83,6 +83,7 @@
     margin-top: 1%;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .copy {
@@ -133,5 +134,38 @@
         max-width: 1180px;
         margin-right: auto;
         margin-left: auto;
+    }
+}
+@media (min-width: 1400px) { 
+    .pointer {
+        max-width: 1320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .newtab {
+   
+        width: 320px;
+  
+    }
+}
+@media (max-width: 767px) {  
+
+    .touch {
+        padding: 50px 0;
+    }
+
+}
+@media (max-width: 480px) {
+    .newtab{
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .wordsmosth::after {
+        width: 100%;
     }
 }

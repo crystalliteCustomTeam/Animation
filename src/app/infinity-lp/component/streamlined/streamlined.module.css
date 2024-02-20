@@ -75,3 +75,42 @@
         margin-left: auto;
     }
 }
+
+@media (min-width: 1400px) { 
+    .pointer {
+        max-width: 1320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .tabsBtns {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) { 
+
+
+    .display{
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+      
+    
+    }
+
+}
+@media (max-width: 480px) {
+    .tabsBtns {
+        width: 100%;
+    }
+    .tabsBtns div {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        color: white;
+        font-size: 11px!important;
+    }
+}
