@@ -49,29 +49,10 @@ const Video = () => {
         rtl: true
       
     };
-    // const settings1 = {
-    //     speed: 8000,
-    //     autoplay: true,
-    //     autoplaySpeed: 0,
-    //     centerMode: false,
-    //     cssEase: 'linear',
-    //     draggable: false,
-    //     focusOnSelect: false,
-    //     pauseOnFocus: false,
-    //     pauseOnHover: false,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     variableWidth: true,
-    //     infinite: true,
-    //     initialSlide: 1,
-    //     arrows: false,
-    //     buttons: false,
-    //     rtl: true
-      
-    // };
+  
     return (
         <>
-            <section className={`newcon ${styles.display}`}>
+            <section className={`newcon sliderpost ${styles.display}`}>
                 <div class={`container mx-auto ${styles.pointer} `}>
                     <div class={`md:grid md:grid-cols-1`}>
                         <div className={styles.element}>

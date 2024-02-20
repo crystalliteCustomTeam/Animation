@@ -4,9 +4,52 @@ import { usePathname } from 'next/navigation';
 // Import Components
 import styles from '@/app/infinity-lp/component/statistics/statistics.module.css';
 import proven from "../../../../../public/banner/proven.png"
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useEffect, useState } from "react";
 
 const Video = () => {
+
+
+   // ===================================
+   const [isSliderActive, setIsSliderActive] = useState(true);
+   useEffect(() => {
+     const handleResize = () => {
+       if (window.innerWidth > 480) {
+         setIsSliderActive(false);
+       } else {
+         setIsSliderActive(true);
+       }
+     };
+     handleResize();
+     window.addEventListener("resize", handleResize);
+     return () => {
+       window.removeEventListener("resize", handleResize);
+     };
+   }, []);
+
+   // slider 
+ var awardslogo = {
+   dots: false,
+   arrows: false,
+   autoplay: false,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   responsive: [
+       
+     
+       {
+         breakpoint: 480,
+         settings: {
+           slidesToShow: 1,
+           slidesToScroll: 1,
+         },
+       },
+     ],
+  
+ };
+
    
     return (
         <>
@@ -21,9 +64,12 @@ const Video = () => {
                         </p>
                     </div>
 
-                    <div class={styles.provenbg}>
-                       <div className={styles.process}>
-                            <div className={styles.video}>
+
+{isSliderActive ? 
+
+<Slider {...awardslogo} className={` ${styles.startup1}  startposition mt-4`} >             
+                       
+                         
                                     <div className={styles.soul}>
                                         <h3>12+</h3>
                                         <p>Years Of <br></br>
@@ -34,8 +80,8 @@ const Video = () => {
                                         <p>Million <br></br>
 Views</p>
                                     </div>
-                            </div>
-                            <div className={styles.video}>
+                         
+                        
                                 <div className={styles.soul2}>
                                     <h3>1600+</h3>
                                     <p>Videos <br></br>
@@ -46,12 +92,46 @@ Delivered</p>
                                     <p> Clients <br></br>
 Across The World </p>
                                 </div>
-                            </div>
-                       </div>
-                       <div className={styles.pricing}>
-                            <Image src={proven} className={styles.newtoen} alt="" /> 
-                       </div>
-                    </div>
+                        
+                   
+                    
+                   
+                       </Slider> 
+
+:
+<div class={styles.provenbg}>
+<div className={styles.process}>
+     <div className={styles.video}>
+             <div className={styles.soul}>
+                 <h3>12+</h3>
+                 <p>Years Of <br></br>
+                 Experience</p>
+             </div>
+             <div className={styles.soul1}>
+                 <h3>15+</h3>
+                 <p>Million <br></br>
+Views</p>
+             </div>
+     </div>
+     <div className={styles.video}>
+         <div className={styles.soul2}>
+             <h3>1600+</h3>
+             <p>Videos <br></br>
+Delivered</p>
+         </div>
+         <div className={styles.soul3}>
+             <h3>1200+</h3>
+             <p> Clients <br></br>
+Across The World </p>
+         </div>
+     </div>
+</div>
+<div className={styles.pricing}>
+     <Image src={proven} className={styles.newtoen} alt="" /> 
+</div>
+</div>
+
+}
 
                     </div>
                 </div>

@@ -112,3 +112,18 @@ font-weight: 600;
         margin-left: auto;
     }
 }
+@media (min-width: 1400px) { 
+    .pointer {
+        max-width: 1320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+@media (max-width: 767px) {
+    .display{
+        background-color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

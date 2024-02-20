@@ -111,3 +111,61 @@
         margin-left: auto;
     }
 }
+@media (min-width: 1400px) { 
+    .pointer {
+        max-width: 1320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+@media (max-width: 1200px) {
+ .mot{
+    display: none;
+ }
+ .display{
+
+    padding-top: 80px;
+    padding-bottom:  80px;
+  
+
+}
+.rect1 {
+    background-color: #d50d12;
+    width: 92%;
+    text-align: center;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'SF-Pro-Display';
+    border-radius: 14px;
+}
+}
+
+@media (max-width: 767px) { 
+
+    .words{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .display{
+        background-color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    
+    
+    }
+    .rect1 { 
+
+        width: 100%;
+
+    }
+    .rect1 p{
+        font-size: 25px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+}

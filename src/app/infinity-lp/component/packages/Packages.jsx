@@ -8,9 +8,60 @@ import check from "../../../../../public/banner/check.png"
 import checkw from "../../../../../public/banner/checkw.png"
 import star from "../../../../../public/banner/star.png"
 import livechat2 from "../../../../../public/banner/livechat2.png"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useEffect, useState } from "react";
 
 
 const Video = () => {
+
+
+ 
+    // ===================================
+    const [isSliderActive, setIsSliderActive] = useState(true);
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth > 1201) {
+          setIsSliderActive(false);
+        } else {
+          setIsSliderActive(true);
+        }
+      };
+      handleResize();
+      window.addEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
+
+    // slider 
+  var awardslogo = {
+    dots: false,
+    arrows: false,
+    autoplay: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+        
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+   
+  };
    
     return (
         <>
@@ -27,7 +78,14 @@ const Video = () => {
                     </div>
                 </div>
                 <div class={`container mx-auto ${styles.pointer} `}>
-                    <div class={`md:grid md:grid-cols-3`}>
+
+
+
+                    {isSliderActive ?
+                    
+
+                        <Slider {...awardslogo} className={` ${styles.startup1}  startposition mt-4`} >
+                      
                     <div className={styles.pkgcard}>
                         <div className={styles.cardbef}>
                             <Image src={star} class="img-fluid" alt="Star" />
@@ -46,16 +104,16 @@ const Video = () => {
                         <div className={styles.pkgcta}>
                             <div className={styles.speak}>
                                 <p class="">Speak With Us</p>
-                                <a class="" href="#">+1-000-000-0000</a>
+                                <a class="" href="tel:833-666-6684">833-666-6684</a>
                             </div>
                             <div className={styles.speak}>
                                 <p class="">Want To Discuss</p>
-                                <a class="" href="#">Live Chat Now</a>
+                                <a class="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
                             </div>
                         </div>
                         <div className={styles.pkgcta}>
-                            <a href="#" className={styles.popup}>Get Started</a>
-                            <a href="#" className={styles.chat} >
+                            <a href="tel:833-666-6684" className={styles.popup}>Get Started</a>
+                            <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
                                 <span>Live Chat</span>
                                 <Image src={livechat} alt="Live_Chat" />
                             </a>
@@ -80,16 +138,16 @@ const Video = () => {
                         <div className={styles.pkgcta}>
                             <div className={styles.speak}>
                                 <p class="">Speak With Us</p>
-                                <a class="" href="#">+1-000-000-0000</a>
+                                <a class="" href="tel:833-666-6684">833-666-6684</a>
                             </div>
                             <div className={styles.speak}>
                                 <p class="">Want To Discuss</p>
-                                <a class="" href="#">Live Chat Now</a>
+                                <a class="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
                             </div>
                         </div>
                         <div className={styles.pkgcta}>
-                            <a href="#" className={styles.popup}>Get Started</a>
-                            <a href="#" className={styles.chat} >
+                            <a href="tel:833-666-6684" className={styles.popup}>Get Started</a>
+                            <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
                                 <span>Live Chat</span>
                                 <Image src={livechat2} alt="Live_Chat" />
                             </a>
@@ -115,16 +173,123 @@ const Video = () => {
                         <div className={styles.pkgcta}>
                             <div className={styles.speak}>
                                 <p class="">Speak With Us</p>
-                                <a class="" href="#">+1-000-000-0000</a>
+                                <a class="" href="tel:833-666-6684">833-666-6684</a>
                             </div>
                             <div className={styles.speak}>
                                 <p class="">Want To Discuss</p>
-                                <a class="" href="#">Live Chat Now</a>
+                                <a class="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
                             </div>
                         </div>
                         <div className={styles.pkgcta}>
-                            <a href="#" className={styles.popup}>Get Started</a>
-                            <a href="#" className={styles.chat} >
+                            <a href="tel:833-666-6684" className={styles.popup}>Get Started</a>
+                            <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
+                                <span>Live Chat</span>
+                                <Image src={livechat} alt="Live_Chat" />
+                            </a>
+                        </div>
+                    </div>
+                       
+                  
+                        </Slider>
+                        :
+                    <div class={`md:grid md:grid-cols-3`}>
+                    <div className={styles.pkgcard}>
+                        <div className={styles.cardbef}>
+                            <Image src={star} class="img-fluid" alt="Star" />
+                        </div>
+                        <h3 className={styles.startup}>Startup Package</h3>
+                        <h4 className={styles.price}>$195</h4>
+                        <ul className={styles.priceList}>
+                            <li> <Image src={check} alt="Infinity" /> 60 Seconds Duration</li>
+                            <li> <Image src={check} alt="Infinity" /> Script Writing</li>
+                            <li> <Image src={check} alt="Infinity" /> Custom Artwork</li>
+                            <li> <Image src={check} alt="Infinity" /> Background Music</li>
+                            <li> <Image src={check} alt="Infinity" /> HD Format Video</li>
+                            <li> <Image src={check} alt="Infinity" /> Dedicated Support</li>
+                            <li> <Image src={check} alt="Infinity" /> Professional Voice-over SFX</li>
+                        </ul>
+                        <div className={styles.pkgcta}>
+                            <div className={styles.speak}>
+                                <p class="">Speak With Us</p>
+                                <a class="" href="tel:833-666-6684">833-666-6684</a>
+                            </div>
+                            <div className={styles.speak}>
+                                <p class="">Want To Discuss</p>
+                                <a class="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
+                            </div>
+                        </div>
+                        <div className={styles.pkgcta}>
+                            <a href="tel:833-666-6684" className={styles.popup}>Get Started</a>
+                            <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
+                                <span>Live Chat</span>
+                                <Image src={livechat} alt="Live_Chat" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className={styles.pkgcard2}>
+                        <div className={styles.cardbef}>
+                            <Image src={star} class="img-fluid" alt="Star" />
+                            <Image src={star} class="img-fluid" alt="Star" />
+                        </div>
+                        <h3 className={styles.startup}>Classic Package</h3>
+                        <h4 className={styles.price}>$499</h4>
+                        <ul className={styles.priceList}>
+                            <li> <Image src={checkw} alt="Infinity" /> 60 Seconds Duration</li>
+                            <li> <Image src={checkw} alt="Infinity" /> Script Writing</li>
+                            <li> <Image src={checkw} alt="Infinity" /> Professional Voice-over & SFX</li>
+                            <li> <Image src={checkw} alt="Infinity" /> Hand-drawn Illustrations</li>
+                            <li> <Image src={checkw} alt="Infinity" /> Unlimited Revisions</li>
+                            <li> <Image src={checkw} alt="Infinity" /> HD Format Video</li>
+                            <li> <Image src={checkw} alt="Infinity" /> Dedicated Support</li>
+                        </ul>
+                        <div className={styles.pkgcta}>
+                            <div className={styles.speak}>
+                                <p class="">Speak With Us</p>
+                                <a class="" href="tel:833-666-6684">833-666-6684</a>
+                            </div>
+                            <div className={styles.speak}>
+                                <p class="">Want To Discuss</p>
+                                <a class="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
+                            </div>
+                        </div>
+                        <div className={styles.pkgcta}>
+                            <a href="tel:833-666-6684" className={styles.popup}>Get Started</a>
+                            <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
+                                <span>Live Chat</span>
+                                <Image src={livechat2} alt="Live_Chat" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className={styles.pkgcard}>
+                        <div className={styles.cardbef}>
+                            <Image src={star} class="img-fluid" alt="Star" />
+                            <Image src={star} class="img-fluid" alt="Star" />
+                            <Image src={star} class="img-fluid" alt="Star" />
+                        </div>
+                        <h3 className={styles.startup}>Premium Package</h3>
+                        <h4 className={styles.price}>$799</h4>
+                        <ul className={styles.priceList}>
+                            <li> <Image src={check} alt="Infinity" /> 60 Seconds Duration</li>
+                            <li> <Image src={check} alt="Infinity" /> Script Writing</li>
+                            <li> <Image src={check} alt="Infinity" /> Professional Voice-over & SFX</li>
+                            <li> <Image src={check} alt="Infinity" /> Custom 2D Character Illustration</li>
+                            <li> <Image src={check} alt="Infinity" /> Unlimited Revisions</li>
+                            <li> <Image src={check} alt="Infinity" /> HD Format Video</li>
+                            <li> <Image src={check} alt="Infinity" /> Dedicated Support</li>
+                        </ul>
+                        <div className={styles.pkgcta}>
+                            <div className={styles.speak}>
+                                <p class="">Speak With Us</p>
+                                <a class="" href="tel:833-666-6684">833-666-6684</a>
+                            </div>
+                            <div className={styles.speak}>
+                                <p class="">Want To Discuss</p>
+                                <a class="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
+                            </div>
+                        </div>
+                        <div className={styles.pkgcta}>
+                            <a href="tel:833-666-6684" className={styles.popup}>Get Started</a>
+                            <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
                                 <span>Live Chat</span>
                                 <Image src={livechat} alt="Live_Chat" />
                             </a>
@@ -132,6 +297,7 @@ const Video = () => {
                     </div>
                        
                     </div>
+                        }
                 </div>
             </section>
         </>

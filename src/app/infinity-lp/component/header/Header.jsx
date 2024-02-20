@@ -19,16 +19,16 @@ const Video = () => {
                 </div>
                 <div className={styles.poster}>
                     <div className={styles.got}>
-                    <Image src={email} />     <a href="#">  sales.infinityanimations.com</a>
+                    <Image src={email} />     <a href="mailto:info@infinityanimations.com">  info@infinityanimations.com</a>
                     </div>
                     <div className={styles.got}>
-                    <Image src={lang} />   <a href="#">  +1-000-000-0000</a>
+                    <Image src={lang} />   <a href="tel:833-666-6684">  833-666-6684</a>
                     </div>
                     <div className={styles.got}>
-                    <Image src={chat} />   <a href="#">Live Chat</a>
+                    <Image src={chat} />   <a href="javascript:$zopim.livechat.window.show();">Live Chat</a>
                     </div>
                     <div className={styles.got1}>
-                        <a href="#">Get Started</a>
+                        <a href="tel:833-666-6684">Get Started</a>
                     </div>
                 </div>
               </div>

@@ -7,6 +7,11 @@
     padding-top: 150px;
  
 }
+.banner video{
+    border-radius: 200px;
+    margin-left: auto;
+    position: relative;
+}
 .banner .count{
     width: unset;
 }
@@ -16,6 +21,7 @@
     line-height: 1;
     
 }
+
 .heading span{
     color: #f5090b;
 }
@@ -62,10 +68,10 @@
     position: absolute;
     content: "";
     background-color: #444343c2;
-    width: 69%;
+    width: 90%;
     height: 2px;
     left: 25px;
-    bottom: -6px;
+    bottom: -6px
 }
 .why p{
     font-family: "Montserrat", sans-serif;
@@ -90,7 +96,7 @@
     position: absolute;
     content: "";
     background-color: #444343c2;
-    width: 80%;
+    width: 90%;
     height: 2px;
     left: 25px;
     bottom: -6px;
@@ -188,6 +194,8 @@
     appearance: none;
     border-radius: 0.375rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: white;
+    font-family: "Montserrat", sans-serif;
 }
 .quote {
     width: 254px;
@@ -199,10 +207,12 @@
     font-size: 14px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+    cursor: pointer;
 }
 .form2 input::placeholder{
     font-size: 10px;
     font-family: montserrat, sans-serif;
+    color: white;
 }
 .noty img {
     width: 80%;
@@ -218,5 +228,97 @@
         max-width: 1180px;
         margin-right: auto;
         margin-left: auto;
+    }
+   
+}
+@media (min-width: 1400px) {
+    
+    
+    .expert {
+        display: flex;
+        gap: 47px;
+        margin-top: 40px;
+        align-items: flex-start;
+    }
+    .noty img{
+        width: 70px;
+    }
+    .noty {
+        position: absolute;
+        top: -30px;
+        right: 8px;
+    }
+    .reach::after {
+        position: absolute;
+        content: "";
+        background-color: #444343c2;
+        height: 2px;
+        width: 90%;
+        left: 0;
+        bottom: -17px;
+    }
+
+    .company {
+        max-width: 589px;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        padding-top: 3.5%;
+        line-height: 1.3;
+    }
+    .heading {
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 1;
+    }
+    .reach {
+        font-weight: 600;
+        font-size: 27.7px;
+        position: relative;
+    }
+    .pointer {
+        max-width: 1320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+@media (max-width: 1200px) {
+
+    .slider{
+        display: none;
+    }
+    .expert {
+
+        flex-wrap: wrap;
+    }
+   
+}
+@media (max-width: 767px) {
+
+    .heading {
+        font-size: 35px;
+        font-weight: 800;
+        line-height: 1.5;
+    }
+    .reach::after {
+       display: none;
+    }
+    .company{
+
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .why p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+    }
+    .newtoen {
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .noty img {
+        display: none;
     }
 }

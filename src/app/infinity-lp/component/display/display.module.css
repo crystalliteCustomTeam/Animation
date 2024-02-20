@@ -89,3 +89,71 @@
         margin-left: auto;
     }
 }
+@media (min-width: 1400px) { 
+
+    .today p {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        border-top: 1px solid gray;
+        padding-bottom: 7px;
+        padding-top: 9px;
+        margin-top: 12px;
+    }
+
+    .today h3 {
+        font-size: 34px;
+        font-family: "SF-Pro-Display";
+        font-weight: 800;
+        line-height: 1.2;
+    }
+    .pointer {
+        max-width: 1320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+@media (max-width: 1200px) {
+  
+    .today{
+        width: 100%;
+        position: unset;
+    }
+    .newyork{
+        display: none;
+    }
+    .display{
+        padding-bottom: unset;
+    }
+    .today p {
+        padding-top: 12px;
+        margin-top: 12px;
+        padding-bottom: 13px;
+    }
+
+
+}
+
+@media (max-width: 767px) { 
+
+
+    .display{
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+      
+    
+    }
+
+}
+@media (max-width: 480px) { 
+
+    .message {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-direction: column;
+    }
+}

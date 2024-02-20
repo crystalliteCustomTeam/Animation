@@ -16,7 +16,7 @@ const Video = () => {
                         <div className={styles.element}>
                         <h3 className={`fontsfpro mb-0 ${styles.heading}`}>Our  <span class="colorred2">Clients </span>
                         </h3>
-                        <Image src={log} />
+                        <Image src={log} className="d-block m-auto mt-5" />
                     </div>
                             
                     
