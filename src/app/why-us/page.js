@@ -12,8 +12,6 @@ import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
 import Features from "@/components/features/Features";
 import Partners from "@/components/partners/Partners";
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
 
 export default function Page() {
     //=====Banner Fold=====//
