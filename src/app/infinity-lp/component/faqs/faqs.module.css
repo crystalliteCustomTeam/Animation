@@ -132,3 +132,11 @@
     }
 
 }
+
+@media (max-width: 480px) { 
+    .tabsBtn {
+      
+        font-size: 10px;
+       
+    }
+ }

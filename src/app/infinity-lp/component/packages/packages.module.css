@@ -308,5 +308,9 @@ color: #D00D12;
     .pkgcta .chat {
         padding: 0 20px; 
     }
+    .pkgcta .popup{
+        padding: 0 12px;
+        font-size: 11px;
+    }
 
 }

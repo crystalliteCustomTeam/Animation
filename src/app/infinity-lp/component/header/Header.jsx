@@ -19,7 +19,7 @@ const Video = () => {
                 </div>
                 <div className={styles.poster}>
                     <div className={styles.got}>
-                    <Image src={email} />     <a href="mailto:sales.infinityanimations.com">  sales.infinityanimations.com</a>
+                    <Image src={email} />     <a href="mailto:info@infinityanimations.com">  info@infinityanimations.com</a>
                     </div>
                     <div className={styles.got}>
                     <Image src={lang} />   <a href="tel:833-666-6684">  833-666-6684</a>

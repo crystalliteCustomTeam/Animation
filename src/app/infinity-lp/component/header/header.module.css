@@ -80,3 +80,9 @@
     }
   
 }
+@media (max-width: 480px) {
+    .pointer {
+        gap: 20px;
+    }
+  
+}
