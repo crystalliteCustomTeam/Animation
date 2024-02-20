@@ -153,6 +153,9 @@
     }
 }
 @media (max-width: 767px) {  
+    .animatio{
+        display: none;
+    }
 
     .touch {
         padding: 50px 0;
