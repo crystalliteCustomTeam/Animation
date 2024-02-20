@@ -99,8 +99,8 @@ const Video = () => {
                         <div className={styles.boxpost}>
                                     <Image src={icon3} class="img-fluid mt-3 newgost" alt="" />
                                     <h4 class="fontsfpro font20 center colorblack mt-3">
-                                        Whiteboard Animation <br></br>
-                                        Video
+                                      2D Character Animation<br></br>
+                                        Videos
                                     </h4>
                         </div>
                         <div className={styles.boxpost}>
@@ -135,15 +135,15 @@ const Video = () => {
                         <div className={styles.boxpost}>
                                     <Image src={icon2} class="img-fluid mt-3 newgost" alt="" />
                                     <h4 class="fontsfpro font20 center colorblack mt-3">
-                                        Whiteboard Animation <br></br>
-                                        Video
+                                      Motion Graphics  
+                                        
                                     </h4>
                         </div>
                         <div className={styles.boxpost}>
                                     <Image src={icon3} class="img-fluid mt-3 newgost" alt="" />
                                     <h4 class="fontsfpro font20 center colorblack mt-3">
-                                        Whiteboard Animation <br></br>
-                                        Video
+                                    2D Character Animation <br></br>
+                                        Videos
                                     </h4>
                         </div>
                         <div className={styles.boxpost}>
