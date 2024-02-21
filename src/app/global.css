@@ -81,13 +81,8 @@ body {
 /*  animation css */
 
 .sliderpost .slick-prev:before,
-.slick-next:before {
-  display: none !important;
-}
-
-.sliderpost .slick-prev:before,
-.slick-next:before {
-  display: none !important;
+.sliderpost .slick-next:before {
+  display: none;
 }
 
 #ty1 {
@@ -351,8 +346,8 @@ div#ty7 {
   align-items: center;
   justify-content: center;
   line-height: 0;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
   transform: rotate(180deg);
 }
@@ -364,16 +359,16 @@ div#ty7 {
 }
 
 .testiSlider .slick-next:before {
-  content: url(../../public/icons/arrow-red.png) !important;
-  opacity: 1 !important;
-  background-color: #fff !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  line-height: 0 !important;
-  width: 70px !important;
-  height: 70px;
-  border-radius: 100% !important;
+  content: url(../../public/icons/arrow-red.png) ;
+  opacity: 1 ;
+  background-color: #fff ;
+  display: flex ;
+  align-items: center ;
+  justify-content: center ;
+  line-height: 0 ;
+  width: 60px ;
+  height: 60px;
+  border-radius: 100% ;
 }
 
 /*=============== Blogs Slider ===============*/
