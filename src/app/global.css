@@ -1,5 +1,5 @@
 /* font family */
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap';
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap";
 
 @tailwind base;
 @tailwind components;
@@ -23,8 +23,6 @@ body {
 .borderinset {
   border: inset 3px black;
 }
-
-
 
 @font-face {
   font-family: SF-Pro-Display;
@@ -80,9 +78,12 @@ body {
   transform: rotateY(-180deg);
 }
 
-
-
 /*  animation css */
+
+.sliderpost .slick-prev:before,
+.slick-next:before {
+  display: none !important;
+}
 
 .sliderpost .slick-prev:before,
 .slick-next:before {
@@ -135,7 +136,7 @@ div#ty7 {
 }
 
 .newreactslide .slick-slide {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .newreactslide .slick-current+.slick-slide {
@@ -145,7 +146,7 @@ div#ty7 {
 .newreactslide .slick-current+.slick-slide svg {
   fill: #D50D12;
   opacity: unset;
-  color: #D50D12;
+  color: #d50d12;
 }
 
 .newreactslide .slick-slide svg {
@@ -173,7 +174,7 @@ div#ty7 {
 
 .newreactslide .slick-current+.slick-slide::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 6.5%;
   height: 100%;
   top: 52px;
@@ -197,6 +198,7 @@ div#ty7 {
   top: 87%;
   width: 51px !important;
   height: 51px !important;
+  height: 51px !important;
 }
 
 .newreactslide .slick-next {
@@ -204,12 +206,12 @@ div#ty7 {
   top: 87% !important;
   width: 51px !important;
   height: 51px !important;
+  height: 51px !important;
 }
 
 #newslides video::-webkit-media-controls-panel {
   opacity: 0;
 }
-
 
 #newslides .swiper-button-prev svg {
   width: 100%;
@@ -228,7 +230,6 @@ div#ty7 {
   background: url(/banner/prev1.png);
 }
 
-
 #newslides .swiper-slide-active {
   transform: translateY(42.8%) translateX(69%) scale(1.8);
   padding-bottom: 53%;
@@ -244,6 +245,7 @@ div#ty7 {
 }
 
 #newslides .newtranck .swiper-pagination-bullet-active {
+  background: rgb(203 203 203) !important;
   background: rgb(203 203 203) !important;
 }
 
@@ -308,9 +310,7 @@ div#ty7 {
   background: #f5090b;
 }
 
-/*=============== scroll bar css End ===============*/
-
-/*=============== service slider start ===============*/
+/*=============== service slider ===============*/
 
 .servicesConcept .slick-prev {
   left: -22px;
@@ -331,7 +331,7 @@ div#ty7 {
   bottom: inherit;
 }
 
-/*=============== testi slider start ===============*/
+/*=============== testi slider ===============*/
 
 .testiSlider .slick-slide {
   height: 300px;
@@ -376,7 +376,7 @@ div#ty7 {
   border-radius: 100% !important;
 }
 
-/*=============== Blogs Slider start ===============*/
+/*=============== Blogs Slider ===============*/
 
 .blogsSlider .slick-prev {
   left: 0;
@@ -398,9 +398,7 @@ div#ty7 {
   content: url(../../public/icons/red-arrow-r.png);
 }
 
-/*=============== Blogs Slider End ===============*/
-
-/*=============== Brands Slider start ===============*/
+/*=============== Brands Slider ===============*/
 
 .brandsSlider .slick-prev {
   left: inherit;
@@ -462,40 +460,35 @@ div#ty7 {
   width: 100% !important;
 }
 
-/* popup end */
-
-
-/* Video Explainer Animation Start */
+/*=============== Video Explainer Animation ===============*/
 
 .animation {
-  animation: animated 1.5s infinite ease-in-out alternate
+  animation: animated 1.5s infinite ease-in-out alternate;
 }
 
 @keyframes animated {
   0% {
-    transform: translateY(0)
+    transform: translateY(0);
   }
 
   100% {
-    transform: translateY(-20px)
+    transform: translateY(-20px);
   }
 }
 
 .testi {
-  animation: testi 1.5s infinite ease-in-out alternate
+  animation: testi 1.5s infinite ease-in-out alternate;
 }
 
 @keyframes testi {
   0% {
-    transform: translateX(0)
+    transform: translateX(0);
   }
 
   100% {
-    transform: translateX(-20px)
+    transform: translateX(-20px);
   }
 }
-
-/* Video Explainer Animation End */
 
 /*=============== Media Query Start ===============*/
 
@@ -528,7 +521,6 @@ div#ty7 {
 }
 
 @media only screen and (max-width: 991px) {
-
   .popupBg {
     background: #260868;
   }
@@ -603,5 +595,3 @@ div#ty7 {
     opacity: 1;
   }
 }
-
-/*=============== Media Query End ===============*/
