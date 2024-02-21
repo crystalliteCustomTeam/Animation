@@ -15,20 +15,18 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import { register } from "swiper/element/bundle";
 import SwiperCore, { Navigation, Autoplay } from 'swiper/core';
-import React, { useEffect, useRef,useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 SwiperCore.use([Navigation, Autoplay]);
 import { usePathname } from 'next/navigation'
-// import icon5 from "media/banner/slide3.png"
 
+// icons
+import PlayIcon from "media/icons/video-icon.png"
+import { document } from "postcss";
 
 const Banner = () => {
 
-
   const swiperElRef = useRef(null);
   useEffect(() => {
-
-
-    
     register();
     const params = {
       slidesPerView: 3,
@@ -61,50 +59,43 @@ const Banner = () => {
     {
       avatar: "../../banner/2.mp4",
     },
-   
-  
-
   ];
-
 
   const [ip, setIP] = useState('');
   //creating function to load ip address from the API
   const getIPData = async () => {
-      const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
-      setIP(res.data);
+    const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+    setIP(res.data);
   }
   useEffect(() => {
-      getIPData()
+    getIPData()
   }, [])
-
 
   const [score, setScore] = useState('Submit');
 
   const router = usePathname();
- 
-    const currentRoute = router.pathname;
-     const [pagenewurl, setPagenewurl] = useState('');
-      useEffect(() => {
-        const pagenewurl = window.location.href;
-        console.log(pagenewurl);
-        setPagenewurl(pagenewurl);
-      }, []);
+
+  const currentRoute = router.pathname;
+  const [pagenewurl, setPagenewurl] = useState('');
+  useEffect(() => {
+    const pagenewurl = window.location.href;
+    console.log(pagenewurl);
+    setPagenewurl(pagenewurl);
+  }, []);
 
   const handleSubmit = async (e) => {
-
-
 
     e.preventDefault()
     var currentdate = new Date().toLocaleString() + ''
 
     const data = {
-        name: e.target.name.value,
-        email: e.target.email.value,
-        phone: e.target.phone.value,
-        message: e.target.message.value,
-        pageUrl: pagenewurl,
-        IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-        currentdate: currentdate,
+      name: e.target.name.value,
+      email: e.target.email.value,
+      phone: e.target.phone.value,
+      message: e.target.message.value,
+      pageUrl: pagenewurl,
+      IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+      currentdate: currentdate,
     }
 
     const JSONdata = JSON.stringify(data)
@@ -114,51 +105,64 @@ const Banner = () => {
 
 
     fetch('/api/email', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json, text/plain, */*',
-            'Content-Type': 'application/json'
-        },
-        body: JSONdata
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSONdata
     }).then((res) => {
-        console.log(`Response received ${res}`)
-        if (res.status === 200) {
-            console.log(`Response Successed ${res}`)
-        }
+      console.log(`Response received ${res}`)
+      if (res.status === 200) {
+        console.log(`Response Successed ${res}`)
+      }
     })
 
 
 
     let headersList = {
-        "Accept": "*/*",
-        "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-        "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-        "Content-Type": "application/json"
+      "Accept": "*/*",
+      "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+      "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+      "Content-Type": "application/json"
     }
 
     let bodyContent = JSON.stringify({
-        "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-        "Brand": "Infinity Animations",
-        "Page": pagenewurl,
-        "Date": currentdate,
-        "Time": currentdate,
-        "JSON": JSONdata,
+      "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+      "Brand": "Infinity Animations",
+      "Page": pagenewurl,
+      "Date": currentdate,
+      "Time": currentdate,
+      "JSON": JSONdata,
 
     });
 
     await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
-        method: "POST",
-        body: bodyContent,
-        headers: headersList
+      method: "POST",
+      body: bodyContent,
+      headers: headersList
     });
     const { pathname } = router;
     if (pathname == pathname) {
-        window.location.href = '/thank-you';
+      window.location.href = '/thank-you';
     }
 
-}
+  }
 
+  const [isIcon, setIsIcon] = useState(true)
 
+  const handleVideoPlay = (e) => {
+    const video = e.currentTarget.querySelector('video');
+    if (video) {
+      if (video.paused) {
+        video.play();
+        setIsIcon(false)
+      } else {
+        video.pause();
+        setIsIcon(true)
+      }
+    }
+  };
 
   return (
     <>
@@ -196,63 +200,66 @@ const Banner = () => {
               </div>
               <div className={styles.expert}>
                 <a href="tel:833-666-6684">
-                <button className={styles.started}>Get Started</button> </a>
+                  <button className={styles.started}>Get Started</button> </a>
                 <div className={styles.pot}>
                   <Image src={icon2} className={styles.ntoen} alt="" />
                   <div>
-                  <a href="javascript:$zopim.livechat.window.show();">  <p className={styles.talktoour}>Talk to our Expert</p>
-                    <h3 className={styles.livechat}>Live Chat</h3> </a>
+                    <a href="javascript:$zopim.livechat.window.show();">  <p className={styles.talktoour}>Talk to our Expert</p>
+                      <h3 className={styles.livechat}>Live Chat</h3> </a>
                   </div>
                 </div>
                 <Image src={icon3} className={styles.newtoen} alt="" />
               </div>
-              <form   onSubmit={handleSubmit}>
-              <div className={styles.animationidea}>
-                <h3>Share Your Animation Idea</h3>
-                <div className={styles.form2}>
-                  <input type="text" minLength="4" required name="name" class="form-control" placeholder="Enter Your Name" />
-                
+              <form onSubmit={handleSubmit}>
+                <div className={styles.animationidea}>
+                  <h3>Share Your Animation Idea</h3>
+                  <div className={styles.form2}>
+                    <input type="text" minLength="4" required name="name" class="form-control" placeholder="Enter Your Name" />
 
-                  <input type="email" name="email" required class="form-control" placeholder="Enter Email" />
-                
+
+                    <input type="email" name="email" required class="form-control" placeholder="Enter Email" />
+
+                  </div>
+                  <div className={styles.form2}>
+                    <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" class="form-control" placeholder="Enter Phone Number" />
+
+                    <input type="text" class="form-control" name="message" placeholder="Enter Message" />
+                  </div>
+                  <input type="submit" value="Get a Free Quote" className={styles.quote} />
+                  <div className={styles.noty}>
+                    <Image src={icon4} alt="" />
+                  </div>
                 </div>
-                <div className={styles.form2}>
-                  <input  type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" class="form-control" placeholder="Enter Phone Number" />
-             
-                  <input type="text" class="form-control" name="message" placeholder="Enter Message" />
-                </div>
-                <input type="submit" value="Get a Free Quote" className={styles.quote} />
-                <div className={styles.noty}>
-                  <Image src={icon4} alt="" />
-                </div>
-              </div>
               </form>
             </div>
             <div>
               <div className={styles.slider}>
                 <swiper-container className="newtranck"
-                navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
-                pagination={false}
+                  navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
+                  pagination={false}
                   init={false}
                   ref={swiperElRef}
                   centered-slides="false"
                   autoplay-delay="3000"
                   loop="true"
                   autoplay={false}
-                  
+
                 >
                   {slides.map((testimonial, index) => (
                     <swiper-slide className='newfold newtown' key={index}>
                       <div>
-                        <div className="w-[90%] m-auto">
+                        <div className="w-[90%] m-auto relative">
                           <div className="card">
-                            <video controls   autoPlay="false" src={testimonial.avatar}></video>
+                            <button onClick={handleVideoPlay}>
+                              <video controls={false} autoPlay={false} src={testimonial.avatar} id="videoPlay"></video>
+                              {isIcon ? <Image src={PlayIcon} alt="Play Icon" className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" width={35} height={35} /> : null}
+                            </button>
                           </div>
                         </div>
                       </div>
                     </swiper-slide>
                   ))}
-               
+
                 </swiper-container>
               </div>
             </div>

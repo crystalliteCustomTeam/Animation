@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useRef, useState } from 'react';
 // Import Css
-import styles from "./PortFolio.module.css"
+import styles from "./streamlined.module.css"
 import Link from 'next/link';
 
 import { Fancybox as NativeFancybox } from "@fancyapps/ui"
@@ -42,7 +42,7 @@ const Portfolio = ({ content }) => {
     }
     return (
         <>
-            <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-16`}>
+            <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-16 ${styles.display}`}>
                 <div className="container">
                     <div className='flex items-center justify-around'>
                         <div className='w-full text-center'>
