@@ -246,6 +246,10 @@
     right: -37px;
 }
 
+/* swiper slider start */
+
+/* swiper slider end */
+
 @media (min-width: 1200px) {
     .count {
         max-width: 1180px;

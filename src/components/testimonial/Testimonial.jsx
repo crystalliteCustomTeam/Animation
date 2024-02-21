@@ -7,7 +7,6 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const Testimonial = ({ content }) => {
     const { title, para, testiContent } = content;
-    // Slider Setting
     const testiSlider = {
         dots: false,
         arrows: true,

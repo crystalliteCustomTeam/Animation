@@ -14,14 +14,20 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import { register } from "swiper/element/bundle";
-import SwiperCore, { Navigation, Autoplay } from 'swiper/core';
+// import SwiperCore, { Navigation, Autoplay } from 'swiper/core';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import React, { useEffect, useRef, useState } from 'react';
-SwiperCore.use([Navigation, Autoplay]);
+// SwiperCore.use([Navigation, Autoplay]);
 import { usePathname } from 'next/navigation'
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 // icons
 import PlayIcon from "media/icons/video-icon.png"
-import { document } from "postcss";
 import usePopup from "@/app/configs/store/Popup";
 
 const Banner = () => {
@@ -238,9 +244,10 @@ const Banner = () => {
               </form>
             </div>
             <div>
-              <div className={styles.slider}>
+              <div className={`bannerSlides ${styles.slider}`}>
                 <swiper-container className="newtranck"
-                  navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
+                  // navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }} 
+                  navigation={true}
                   pagination={false}
                   init={false}
                   ref={swiperElRef}
@@ -248,7 +255,7 @@ const Banner = () => {
                   autoplay-delay="3000"
                   loop="true"
                   autoplay={false}
-
+                  modules={[EffectCoverflow, Pagination, Navigation]}
                 >
                   {slides.map((testimonial, index) => (
                     <swiper-slide className='newfold newtown' key={index}>

@@ -64,11 +64,12 @@
     justify-content: center;
 }
 .boxpost h4{
-    font-size: 20px;
+    font-size: 22px;
     color: black;
+    line-height: 28px;
     text-align: center;
     font-family: "SF-Pro-Display";
-    font-weight: 800;
+    font-weight: 600;
 }
 
 @media (min-width: 1200px) {
