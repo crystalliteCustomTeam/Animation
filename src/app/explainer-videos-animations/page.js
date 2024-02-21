@@ -1,19 +1,19 @@
 // Import Page Components
-import Banner from '@/app/infinity-lp/component/banner/Banner';
-import Logo from '@/app/infinity-lp/component/logo/Logo';
-import Video from '@/app/infinity-lp/component/video/Video';
-import Display from '@/app/infinity-lp/component/display/Display';
-import Explainer from '@/app/infinity-lp/component/explainer/Explainer';
-import Types from '@/app/infinity-lp/component/types/Types';
-import Packages from '@/app/infinity-lp/component/packages/Packages';
-import Statistics from '@/app/infinity-lp/component/statistics/Statistics';
-import Header from '@/app/infinity-lp/component/header/Header';
-import Footer from '@/app/infinity-lp/component/footer/Footer';
-import Clients from '@/app/infinity-lp/component/clients/Clients';
-import Work from '@/app/infinity-lp/component/work/Work';
-import Streamlined from '@/app/infinity-lp/component/streamlined/Streamlined';
-import Faqs from '@/app/infinity-lp/component/faqs/Faqs';
-import Thinking from '@/app/infinity-lp/component/thinking/Thinking';
+import Banner from '@/app/explainer-videos-animations/component/banner/Banner';
+import Logo from '@/app/explainer-videos-animations/component/logo/Logo';
+import Video from '@/app/explainer-videos-animations/component/video/Video';
+import Display from '@/app/explainer-videos-animations/component/display/Display';
+import Explainer from '@/app/explainer-videos-animations/component/explainer/Explainer';
+import Types from '@/app/explainer-videos-animations/component/types/Types';
+import Packages from '@/app/explainer-videos-animations/component/packages/Packages';
+import Statistics from '@/app/explainer-videos-animations/component/statistics/Statistics';
+import Header from '@/app/explainer-videos-animations/component/header/Header';
+import Footer from '@/app/explainer-videos-animations/component/footer/Footer';
+import Clients from '@/app/explainer-videos-animations/component/clients/Clients';
+import Work from '@/app/explainer-videos-animations/component/work/Work';
+import Streamlined from '@/app/explainer-videos-animations/component/streamlined/Streamlined';
+import Faqs from '@/app/explainer-videos-animations/component/faqs/Faqs';
+import Thinking from '@/app/explainer-videos-animations/component/thinking/Thinking';
 
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.jpg"
@@ -46,6 +46,7 @@ import Thumnail27 from "media/thumbnails/hybrid/3.jpg"
 import Thumnail28 from "media/thumbnails/hybrid/4.jpg"
 import Thumnail29 from "media/thumbnails/hybrid/5.jpg"
 import Thumnail30 from "media/thumbnails/hybrid/6.jpg"
+import Popup from '../video-explainer-lp/components/popup/Popup';
 
 export default function Page() {
 
@@ -207,11 +208,13 @@ export default function Page() {
         "Animation",
         "Delivery/publication",
     ]
-    const accordionData = [
+    const accordionData1 = [
         {
             question: 'How Many People Will Work On My Video?',
             lists: lists,
-        },
+        }
+    ];
+    const accordionData2 = [
         {
             question: 'How Many People Will Work On My Video?',
             lists: lists,
@@ -226,11 +229,13 @@ export default function Page() {
         }
     ];
     const faqs = {
-        accordionData: accordionData,
+        accordionData1: accordionData1,
+        accordionData2: accordionData2,
     }
 
     return (
         <>
+            <Popup />
             <Header />
             <Banner />
             <Logo />

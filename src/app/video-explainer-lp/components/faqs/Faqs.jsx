@@ -1,11 +1,6 @@
 "use client"
-
 import Image from 'next/image';
 import React, { useState } from 'react'
-
-import arrowDown from "media/icons/arrow-down.png";
-import arrowUp from "media/icons/arrow-up.png";
-import { ArrowCircleDown } from 'heroicons-react';
 import { HiChevronUp } from "react-icons/hi";
 import { HiChevronDown } from "react-icons/hi";
 
@@ -13,8 +8,7 @@ import { HiChevronDown } from "react-icons/hi";
 import Faq from "media/video-explainer/faq-side-img.png"
 
 const Faqs = ({ content }) => {
-
-    const { accordionData, lists } = content;
+    const { accordionData} = content;
     // Accordions
     const [activeIndex, setActiveIndex] = useState(0);
     const handleClick = (index) => {

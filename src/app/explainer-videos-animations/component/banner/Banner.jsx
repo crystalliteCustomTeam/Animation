@@ -4,7 +4,7 @@ import Image from "next/image";
 // Import Components
 
 import Axios from "axios";
-import styles from '@/app/infinity-lp/component/banner/banner.module.css';
+import styles from '@/app/explainer-videos-animations/component/banner/banner.module.css';
 import icon1 from "media/banner/cut.png"
 
 import icon2 from "media/banner/call.png"
@@ -22,8 +22,14 @@ import { usePathname } from 'next/navigation'
 // icons
 import PlayIcon from "media/icons/video-icon.png"
 import { document } from "postcss";
+import usePopup from "@/app/configs/store/Popup";
 
 const Banner = () => {
+
+  const { popup, togglePopup } = usePopup()
+  const popupHandle = () => {
+    togglePopup(popup)
+  }
 
   const swiperElRef = useRef(null);
   useEffect(() => {
@@ -199,8 +205,7 @@ const Banner = () => {
                 </div>
               </div>
               <div className={styles.expert}>
-                <a href="tel:833-666-6684">
-                  <button className={styles.started}>Get Started</button> </a>
+                <button onClick={popupHandle} className={styles.started}>Get Started</button>
                 <div className={styles.pot}>
                   <Image src={icon2} className={styles.ntoen} alt="" />
                   <div>

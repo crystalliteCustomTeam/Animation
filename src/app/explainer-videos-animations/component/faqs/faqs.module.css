@@ -1,25 +1,27 @@
-.display{
+.display {
     background-color: white;
     padding-top: 80px;
     padding-bottom: 80px;
-
-
 }
-.locBox{
+
+.locBox {
     background-image: linear-gradient(to right, #D50D12, #9C1418);
     margin-top: 1%;
     border-radius: 10px;
     width: 98%;
 }
+
 .heading {
     color: black;
     font-size: 35px;
     text-align: center;
 
 }
-.active{
+
+.active {
     background-color: red;
 }
+
 .wordsmost4::after {
     position: absolute;
     content: "";
@@ -31,6 +33,7 @@
     right: 0;
     margin: 0 auto;
 }
+
 .wordsmost4 {
     max-width: 905px;
     position: relative;
@@ -43,7 +46,8 @@
     font-size: 14px;
     margin-bottom: 4%;
 }
-.tabsBtn{
+
+.tabsBtn {
     background-image: linear-gradient(to right, black, #596062);
     border-radius: 11px !important;
     height: 65px;
@@ -60,12 +64,14 @@
     padding-right: 20%;
     cursor: pointer;
 }
-.tabsBtn img{
+
+.tabsBtn img {
     position: absolute;
     right: 4%;
     width: 4%;
 }
-.locBox ul li{
+
+.locBox ul li {
     color: white;
     font-family: 'Montserrat';
     font-size: 13px;
@@ -73,6 +79,7 @@
     margin-left: 7%;
     padding-bottom: 2px;
 }
+
 .locBox ul {
     padding-top: 3%;
     padding-bottom: 3%;
@@ -80,6 +87,7 @@
     width: 98%;
     margin-bottom: 1%;
 }
+
 .locBox ul li::after {
     position: absolute;
     content: '';
@@ -90,6 +98,7 @@
     margin-top: 6px;
     border-radius: 50px;
 }
+
 @media (min-width: 1200px) {
     .pointer {
         max-width: 1180px;
@@ -97,22 +106,21 @@
         margin-left: auto;
     }
 }
-@media (min-width: 1400px) { 
+
+@media (min-width: 1400px) {
     .pointer {
         max-width: 1320px;
         margin-right: auto;
         margin-left: auto;
     }
-
 }
-@media (max-width: 767px) { 
 
-    .display{
+@media (max-width: 767px) {
+
+    .display {
         background-color: white;
         padding-top: 50px;
         padding-bottom: 50px;
-    
-    
     }
 
     .wordsmost4 {
@@ -127,16 +135,15 @@
         font-size: 14px;
         margin-bottom: 6%;
     }
-    .locBox ul li::after{
+
+    .locBox ul li::after {
         display: none;
     }
 
 }
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
     .tabsBtn {
-      
         font-size: 10px;
-       
     }
- }
+}

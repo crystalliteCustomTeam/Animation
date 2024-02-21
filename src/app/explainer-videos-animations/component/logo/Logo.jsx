@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Components
-import styles from '@/app/infinity-lp/component/logo/logo.module.css';
+import styles from '@/app/explainer-videos-animations/component/logo/logo.module.css';
 import icon1 from "../../../../../public/banner/trusted.png"
 
 const Banner = () => {

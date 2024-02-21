@@ -1,21 +1,29 @@
 "use client"
 import Image from "next/image";
-import { usePathname } from 'next/navigation';
 // Import Components
-import styles from '@/app/infinity-lp/component/faqs/faqs.module.css';
+import styles from '@/app/explainer-videos-animations/component/faqs/faqs.module.css';
 import close from "../../../../../public/banner/close.png"
 import open from "../../../../../public/banner/open.png"
-import Link from 'next/link'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const Video = ({ content }) => {
-    const { accordionData, lists } = content;
+    const { accordionData1, accordionData2 } = content;
     // Accordions
-    const [activeIndex, setActiveIndex] = useState(0);
-    const handleClick = (index) => {
-        setActiveIndex((prevIndex) => (prevIndex === index ? true : index));
+    const [activeIndex1, setActiveIndex1] = useState(0);
+    const [activeIndex2, setActiveIndex2] = useState(false);
+    const handleClick1 = (index) => {
+        setActiveIndex1((prevIndex) => (prevIndex === index ? null : index));
+        if (activeIndex2 !== null) {
+            setActiveIndex2(null);
+        }
     };
 
+    const handleClick2 = (index) => {
+        setActiveIndex2((prevIndex) => (prevIndex === index ? null : index));
+        if (activeIndex1 !== null) {
+            setActiveIndex1(null);
+        }
+    };
 
     return (
         <>
@@ -35,145 +43,50 @@ const Video = ({ content }) => {
                 </div>
                 <div class={`container mx-auto ${styles.pointer} `}>
                     <div class={`md:grid md:grid-cols-2 gap-5`}>
-                        {/* <div>
-                            <div className={`${styles.tabsBtn} ${activeTab == "tab1" ? styles.active : ""}`}
-                                onClick={() => loc("tab1")}
-                                href="#">
-                                How Many People Will Work On My Video?
-
-                                {activeTab == "tab1" ?
-                                    <Image src={open} />
-                                    :
-                                    <Image src={close} />
-                                }
-                            </div>
-                            {activeTab == "tab1" && (
-                                <div className={styles.locBox}>
-                                    <ul>
-                                        <li>Understanding your business and marketing objectives</li>
-                                        <li>Story and script development</li>
-                                        <li>Storyboard</li>
-                                        <li>Voiceover</li>
-                                        <li>Illustration</li>
-                                        <li>Animation</li>
-                                        <li>Delivery/publication</li>
-                                    </ul>
-
-
+                        <div>
+                            {accordionData1.map((item, index) => (
+                                <div key={index} className={`py-1 ${activeIndex1 === index ? 'border-white' : ' border-white'} border-b-2`}>
+                                    <div className={`flex space-x-3 items-center justify-between cursor-pointer p-[15px] rounded-[10px] h-[65px] bg-gradient-to-r from-[#000] to-[#596062] ${activeIndex1 === index ? '' : ''}`}
+                                        onClick={() => handleClick1(index)}>
+                                        <h3 className={`text-[12px] w-[98%] pr-[20%] font-[600] capitalize montserrat`}>{item.question}</h3>
+                                        <span>{activeIndex1 === index ? <Image src={open} /> : <Image src={close} />}</span>
+                                    </div>
+                                    {activeIndex1 === index && (
+                                        <div className='mt-2 pt-5 px-4 pb-5 bg-gradient-to-r from-[#d50d12] to-[#9c1418] rounded-[8px]'>
+                                            <ul className="list-disc pl-[20px]">
+                                                {item.lists.map((lisItems, index) => (
+                                                    <li key={index}>
+                                                        <div className={`block text-[14px] font-normal montserrat text-white pb-1`}>{lisItems}</div>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
                                 </div>
-                            )}
+                            ))}
                         </div>
                         <div>
-
-                            <div className={`${styles.tabsBtn} ${activeTab == "tab2" ? styles.active : ""}`}
-                                onClick={() => loc("tab2")}
-                                href="#">
-                                How Many People Will Work On My Video?
-                                {activeTab == "tab2" ?
-                                    <Image src={open} />
-                                    :
-                                    <Image src={close} />
-                                }
-                            </div>
-
-                            {activeTab == "tab2" && (
-                                <div className={styles.locBox}>
-                                    <ul>
-                                        <li>Understanding your business and marketing objectives</li>
-                                        <li>Story and script development</li>
-                                        <li>Storyboard</li>
-                                        <li>Voiceover</li>
-                                        <li>Illustration</li>
-                                        <li>Animation</li>
-                                        <li>Delivery/publication</li>
-                                    </ul>
-
-
-                                </div>
-                            )}
-
-                            <div className={`${styles.tabsBtn} ${activeTab == "tab3" ? styles.active : ""}`}
-                                onClick={() => loc("tab3")}
-                                href="#">
-                                Do I Get Full Copyrights To The Video?
-
-
-                                {activeTab == "tab3" ?
-                                    <Image src={open} />
-                                    :
-                                    <Image src={close} />
-                                }
-
-
-
-                            </div>
-                            {activeTab == "tab3" && (
-                                <div className={styles.locBox}>
-                                    <ul>
-                                        <li>Understanding your business and marketing objectives</li>
-                                        <li>Story and script development</li>
-                                        <li>Storyboard</li>
-                                        <li>Voiceover</li>
-                                        <li>Illustration</li>
-                                        <li>Animation</li>
-                                        <li>Delivery/publication</li>
-                                    </ul>
-
-
-                                </div>
-                            )}
-
-
-                            <div className={`${styles.tabsBtn} ${activeTab == "tab4" ? styles.active : ""}`}
-                                onClick={() => loc("tab4")}
-                                href="#">
-                                Do You Produce All Types Of Animation Videos And Provide Video
-                                Concept Too, If I Have No Concept Idea?
-                                {activeTab == "tab4" ?
-                                    <Image src={open} />
-                                    :
-                                    <Image src={close} />
-                                }
-                            </div>
-
-                            {activeTab == "tab4" && (
-                                <div className={styles.locBox}>
-                                    <ul>
-                                        <li>Understanding your business and marketing objectives</li>
-                                        <li>Story and script development</li>
-                                        <li>Storyboard</li>
-                                        <li>Voiceover</li>
-                                        <li>Illustration</li>
-                                        <li>Animation</li>
-                                        <li>Delivery/publication</li>
-                                    </ul>
-
-
-                                </div>
-                            )}
-
-                        </div> */}
-
-                        {accordionData.map((item, index) => (
-                            <div key={index} className={`py-1 ${activeIndex === index ? 'border-white' : ' border-white'} border-b-2`}>
-                                <div className={`flex space-x-3 items-center justify-between cursor-pointer p-[15px] rounded-[10px] h-[65px] bg-gradient-to-r from-[#000] to-[#596062] ${activeIndex === index ? '' : ''}`}
-                                    onClick={() => handleClick(index)}>
-                                    <h3 className={`text-[12px] w-[98%] pr-[20%] font-[600] capitalize montserrat`}>{item.question}</h3>
-                                    <span>{activeIndex === index ? <Image src={open} /> : <Image src={close} />}</span>
-                                </div>
-                                {activeIndex === index && (
-                                    <div className='mt-3 pt-5 px-4 pb-5 bg-gradient-to-r from-[#d50d12] to-[#9c1418] rounded-[8px]'>
-                                        <ul className="list-disc pl-[20px]">
-                                            {item.lists.map((lisItems, index) => (
-                                                <li key={index}>
-                                                    <div className={`block text-[14px] font-normal montserrat text-white pb-1`}>{lisItems}</div>
-                                                </li>
-                                            ))}
-                                        </ul>
+                            {accordionData2.map((item, index) => (
+                                <div key={index} className={`py-1 ${activeIndex2 === index ? 'border-white' : ' border-white'} border-b-2`}>
+                                    <div className={`flex space-x-3 items-center justify-between cursor-pointer p-[15px] rounded-[10px] h-[65px] bg-gradient-to-r from-[#000] to-[#596062] ${activeIndex2 === index ? '' : ''}`}
+                                        onClick={() => handleClick2(index)}>
+                                        <h3 className={`text-[12px] w-[98%] pr-[20%] font-[600] capitalize montserrat`}>{item.question}</h3>
+                                        <span>{activeIndex2 === index ? <Image src={open} /> : <Image src={close} />}</span>
                                     </div>
-                                )}
-                            </div>
-                        ))}
+                                    {activeIndex2 === index && (
+                                        <div className='mt-2 pt-5 px-4 pb-5 bg-gradient-to-r from-[#d50d12] to-[#9c1418] rounded-[8px]'>
+                                            <ul className="list-disc pl-[20px]">
+                                                {item.lists.map((lisItems, index) => (
+                                                    <li key={index}>
+                                                        <div className={`block text-[14px] font-normal montserrat text-white pb-1`}>{lisItems}</div>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
 

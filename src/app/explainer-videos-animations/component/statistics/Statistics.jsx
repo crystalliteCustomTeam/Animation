@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Components
-import styles from '@/app/infinity-lp/component/statistics/statistics.module.css';
+import styles from '@/app/explainer-videos-animations/component/statistics/statistics.module.css';
 import proven from "../../../../../public/banner/proven.png"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -103,7 +103,7 @@ const Video = () => {
                 <div className={styles.process}>
                   <div className={styles.video}>
                     <div className={styles.soul}>
-                      <h3>12+</h3>
+                      <h3>4+</h3>
                       <p>Years Of <br></br>
                         Experience</p>
                     </div>
