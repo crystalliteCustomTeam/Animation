@@ -139,7 +139,7 @@ const Contact = () => {
                             <p className='text-[#231f20] text-[16px] lg:text-[18px] montserrat font-[400] py-[17px] leading-[22px] pb-[60px]'>Its High Time to Showcase Your Store to the World</p>
                             <div className="form">
                                 <form action="javascript:;">
-                                    <div className="flex-wrap flex items-center lg:gap-4 ">
+                                    <div className="flex-wrap flex items-center">
                                         <div className="name relative w-full">
                                             <User className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
                                             <input type="text" name="name" placeholder='Enter your name' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[10px] font-[500]' onChange={handleDataChange} required />
@@ -185,8 +185,8 @@ const Contact = () => {
                             <div className="address_detail">
                                 <ul>
                                     <li className='py-[10px]'>
-                                        <a href="tel:+1-833-666-6689" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
-                                            <Phone className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> +1-833-666-6689
+                                        <a href="tel:833-666-6689" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
+                                            <Phone className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> 833-666-6689
                                         </a>
                                     </li>
                                     <li className='py-[10px]'>
@@ -195,8 +195,8 @@ const Contact = () => {
                                         </a>
                                     </li>
                                     <li className='py-[10px]'>
-                                        <a href="https://infinityanimations.com" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
-                                            <Globe className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimations.com
+                                        <a href="https://infinityanimationspro.com" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
+                                            <Globe className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimationspro.com
                                         </a>
                                     </li>
                                 </ul>

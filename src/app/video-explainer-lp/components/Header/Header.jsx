@@ -33,12 +33,12 @@ const HeaderLP = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <Link href="tel:+1-833-666-6689" className='flex items-center'>
+                                        <a href="tel:833-666-6689" className='flex items-center'>
                                             <Image src={UK} alt='UK' className='w-[23px] h-[16px] object-contain' />
                                             <span className='text-[13px] text-white py-[10px] px-[8px] font-[700] font-sans'>
-                                                +1-833-666-6689
+                                                833-666-6689
                                             </span>
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li>
                                         <a href="javascript:$zopim.livechat.window.show();" className='flex items-center'>

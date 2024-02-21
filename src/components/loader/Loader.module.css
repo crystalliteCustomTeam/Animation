@@ -1,0 +1,44 @@
+.loader p {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-family: "SF-Regular", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.loader p::before {
+  content: "";
+  width: 120px;
+  height: 3px;
+  color: #fff;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  animation: move 2.5s infinite;
+}
+
+@keyframes move {
+  0% {
+    background: #f5090b;
+    left: -120px;
+  }
+
+  50% {
+    background: #ff2d4b;
+    left: 0px;
+  }
+
+  100% {
+    background: #f5090b;
+    left: -120px;
+
+  }
+}
+
+/* ==========================Media-Queries========================== */
+
+@media screen and (max-width: 767px) {
+ 
+}

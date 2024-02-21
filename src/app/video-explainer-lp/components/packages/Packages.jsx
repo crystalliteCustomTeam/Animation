@@ -52,20 +52,20 @@ const Packages = () => {
                                 </div>
                                 <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
                                     <div className="flex-wrap gap-y-3 flex items-center justify-between">
-                                        <Link href="tel:+1-833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
+                                        <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
                                             speak with us
-                                            <span className='text-[#231f20] text-[16px]'>+1-833-666-6689</span>
-                                        </Link>
-                                        <Link href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
+                                            <span className='text-[#231f20] text-[16px] pt-2'>833-666-6689</span>
+                                        </a>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
                                             Want to Discuss
-                                            <span className='text-[#231f20] text-[16px]'>Live Chat Now</span>
-                                        </Link>
+                                            <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
+                                        </a>
                                     </div>
-                                    <div className="flex-wrap gap-y-3 flex items-center justify-center md:justify-between mt-[35px] mb-[20px]">
-                                        <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[700] poppins bg-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                    <div className="flex-wrap flex items-center justify-between mt-[35px] mb-[20px]">
+                                        <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[700] poppins bg-black py-[12px] px-[20px] lg:px-[30px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                             Get Started
                                         </button>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[16px] text-black font-[700] poppins bg-transparent border border-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[16px] text-black font-[700] poppins bg-transparent border border-black py-[12px] px-[25px] lg:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                             Live Chat
                                         </a>
                                     </div>
@@ -107,20 +107,20 @@ const Packages = () => {
                                 </div>
                                 <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
                                     <div className="flex-wrap gap-y-3 flex items-center justify-between">
-                                        <Link href="tel:+1-833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
+                                        <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
                                             speak with us
-                                            <span className='text-[#231f20] text-[16px]'>+1-833-666-6689</span>
-                                        </Link>
-                                        <Link href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
+                                            <span className='text-[#231f20] text-[16px] pt-2'>833-666-6689</span>
+                                        </a>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
                                             Want to Discuss
-                                            <span className='text-[#231f20] text-[16px]'>Live Chat Now</span>
-                                        </Link>
+                                            <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
+                                        </a>
                                     </div>
-                                    <div className="flex-wrap gap-y-3 flex items-center justify-center md:justify-between mt-[35px] mb-[20px]">
-                                        <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[700] poppins bg-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                    <div className="flex-wrap flex items-center justify-between mt-[35px] mb-[20px]">
+                                        <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[700] poppins bg-black py-[12px] px-[20px] lg:px-[30px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                             Get Started
                                         </button>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[16px] text-black font-[700] poppins bg-transparent border border-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[16px] text-black font-[700] poppins bg-transparent border border-black py-[12px] px-[25px] lg:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                             Live Chat
                                         </a>
                                     </div>
@@ -162,20 +162,20 @@ const Packages = () => {
                                 </div>
                                 <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
                                     <div className="flex-wrap gap-y-3 flex items-center justify-between">
-                                        <Link href="tel:+1-833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
+                                        <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
                                             speak with us
-                                            <span className='text-[#231f20] text-[16px]'>+1-833-666-6689</span>
-                                        </Link>
-                                        <Link href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
+                                            <span className='text-[#231f20] text-[16px] pt-2'>833-666-6689</span>
+                                        </a>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
                                             Want to Discuss
-                                            <span className='text-[#231f20] text-[16px]'>Live Chat Now</span>
-                                        </Link>
+                                            <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
+                                        </a>
                                     </div>
-                                    <div className="flex-wrap gap-y-3 flex items-center justify-center md:justify-between mt-[35px] mb-[20px]">
-                                        <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[700] poppins bg-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                    <div className="flex-wrap flex items-center justify-between mt-[35px] mb-[20px]">
+                                        <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[700] poppins bg-black py-[12px] px-[20px] lg:px-[30px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                             Get Started
                                         </button>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[16px] text-black font-[700] poppins bg-transparent border border-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[16px] text-black font-[700] poppins bg-transparent border border-black py-[12px] px-[25px] lg:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                             Live Chat
                                         </a>
                                     </div>

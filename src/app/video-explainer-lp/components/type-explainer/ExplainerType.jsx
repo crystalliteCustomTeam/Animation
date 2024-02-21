@@ -13,7 +13,7 @@ import Card6 from "media/video-explainer/ty-ex-icon-6.png"
 const ExplainerType = () => {
     return (
         <>
-            <section className='py-[80px]'>
+            <section className='py-[50px] lg:py-[80px]'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-6">
                         <div className="col-span-12">

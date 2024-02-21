@@ -7,9 +7,7 @@ import { Dialog } from "@material-tailwind/react";
 import usePopup from '@/app/configs/store/Popup';
 
 const Popup = ({ }) => {
-    // popup start
-    // const [open, setOpen] = React.useState(true);
-    // const handleOpen = () => setOpen(!open);
+
     const { popup, togglePopup } = usePopup()
     const popupHandle = () => {
         togglePopup(popup)
@@ -135,7 +133,7 @@ const Popup = ({ }) => {
         <>
             <Dialog open={popup} handler={popupHandle} className='popup h-full w-full' style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(8px)' }}>
                 <section className='h-full lg:w-full py-12 px-6'>
-                    <div className='bg-cover bg-center popupBg lg:bg-[url("../../public/video-explainer/popup-bg2.png")] max-w-5xl mx-auto relative top-0 bottom-0 left-0 right-0 pt-[40px] lg:pt-[90px] h-full w-full'>
+                    <div className='bg-cover bg-center popupBg lg:bg-[url("../../public/video-explainer/popup-bg2.png")] max-w-5xl mx-auto relative top-[50px] md:top-[200px] lg:top-0 bottom-0 left-0 right-0 pt-[40px] lg:pt-[90px] pb-[50px] lg:pb-[100px] lg:h-full w-full'>
                         <button
                             variant="text"
                             onClick={popupHandle}

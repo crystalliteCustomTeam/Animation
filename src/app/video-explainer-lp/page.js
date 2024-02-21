@@ -1,5 +1,5 @@
 "use client"
-import React, { useCallback, useEffect, useState } from 'react';
+import React from 'react';
 // Import Components
 import HeaderLP from './components/Header/Header'
 import Banner from './components/banner/Banner'
@@ -44,15 +44,15 @@ const Video = () => {
       lists: lists,
     },
     {
-      question: 'What Is The BuzzFlick’s Video Delivery Timeframe?',
+      question: 'What Is The Infinity Animations Pro’s Video Delivery Timeframe?',
       answer: "Step into a realm of immersive storytelling with our cutting-edge 3D animations. Elevate your visual narratives, whether for product showcases, virtual tours, or cinematic experiences.",
     },
     {
-      question: 'What Kind Of Videos BuzzFlick Provides With Tech Video Production Services?',
+      question: 'What Kind Of Videos Infinity Animations Pro Provides With Tech Video Production Services?',
       answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
     },
     {
-      question: 'What Kind Of Videos BuzzFlick Provides With Tech Video Production Services?',
+      question: 'What Kind Of Videos Infinity Animations Pro Provides With Tech Video Production Services?',
       answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
     }
   ];

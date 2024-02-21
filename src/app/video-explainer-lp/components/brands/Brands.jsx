@@ -16,7 +16,7 @@ const Brands = ({ content }) => {
     }
     return (
         <>
-            <section className='py-[80px] bg-cover bg-center bg-no-repeat bg-[url("../../public/video-explainer/cta-bg.jpg")] relative'>
+            <section className='py-[50px] lg:py-[80px] bg-cover bg-center bg-no-repeat bg-[url("../../public/video-explainer/cta-bg.jpg")] relative'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-1">
                         <div className="content">
@@ -40,12 +40,12 @@ const Brands = ({ content }) => {
                                 </a>
                             </div>
                             {isBtn ? <div className="btn">
-                                <Link href="tel:+1-833-666-6689" className='flex items-center'>
+                                <a href="tel:833-666-6689" className='flex items-center'>
                                     <Image src={UK} alt='UK' className='object-contain' />
                                     <span className='text-[20px] text-black py-[10px] px-[8px] font-bold montserrat'>
-                                        +1-833-666-6689
+                                        833-666-6689
                                     </span>
-                                </Link>
+                                </a>
                             </div> : null}
                         </div>
                     </div>

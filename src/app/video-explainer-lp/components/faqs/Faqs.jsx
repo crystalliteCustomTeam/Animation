@@ -3,12 +3,14 @@ import Image from 'next/image';
 import React, { useState } from 'react'
 import { HiChevronUp } from "react-icons/hi";
 import { HiChevronDown } from "react-icons/hi";
-
 // Images 
 import Faq from "media/video-explainer/faq-side-img.png"
+// Import CSS
+import styles from "./faqs.module.css"
 
 const Faqs = ({ content }) => {
-    const { accordionData} = content;
+
+    const { accordionData, lists } = content;
     // Accordions
     const [activeIndex, setActiveIndex] = useState(0);
     const handleClick = (index) => {
@@ -36,7 +38,7 @@ const Faqs = ({ content }) => {
                                     </div>
                                     {activeIndex === index && (
                                         <div className='pt-5'>
-                                            <div className={` text-[14px] sm:text-[16px] font-normal montserrat text-black pb-1`}>{item.answer}</div>
+                                            <div className={` text-[14px] sm:text-[16px] font-normal montserrat text-black pb-1 ${styles.ani}`}>{item.answer}</div>
 
                                             <ul>
                                                 {accordionData.map((index) => (
