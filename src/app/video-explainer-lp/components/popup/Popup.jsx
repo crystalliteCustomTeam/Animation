@@ -1,10 +1,14 @@
 "use client"
-import React, { useEffect, useState } from 'react'
 import Axios from "axios";
+import Image from 'next/image';
 import { usePathname } from 'next/navigation'
+import React, { useEffect, useState } from 'react'
 // pupup
 import { Dialog } from "@material-tailwind/react";
 import usePopup from '@/app/configs/store/Popup';
+// Images
+import btnClose from 'media/video-explainer/popup-btn.png'
+
 
 const Popup = ({ }) => {
 
@@ -46,7 +50,7 @@ const Popup = ({ }) => {
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-    const [formStatus, setFormStatus] = useState(" Get Started");
+    const [formStatus, setFormStatus] = useState("Get Started");
     const [errors, setErrors] = useState({});
     const [isDisabled, setIsDisabled] = useState(false);
     const formValidateHandle = () => {
@@ -133,54 +137,53 @@ const Popup = ({ }) => {
         <>
             <Dialog open={popup} handler={popupHandle} className='popup h-full w-full' style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(8px)' }}>
                 <section className='h-full lg:w-full py-12 px-6'>
-                    <div className='bg-cover bg-center popupBg lg:bg-[url("../../public/video-explainer/popup-bg2.png")] max-w-5xl mx-auto relative top-[50px] md:top-[200px] lg:top-0 bottom-0 left-0 right-0 pt-[40px] lg:pt-[90px] pb-[50px] lg:pb-[100px] lg:h-full w-full'>
-                        <button
-                            variant="text"
-                            onClick={popupHandle}
-                            className='w-[45px] h-[45px] absolute top-[-17px] lg:top-[80px] right-[-8px] lg:right-[120px] text-[18px] text-black bg-[#e9e9e9] text-center montserrat rounded-[50%] flex items-center justify-center borderinset'
-                        >
-                            <span>X</span>
-                        </button>
-                        <div className="grid grid-cols-12">
+                    <div className='popupBg lg:bg-[url("../../public/video-explainer/popup-bg.png")] bg-[length:100%_100%] bg-center bg-no-repeat max-w-4xl mx-auto relative top-[50px] md:top-[200px] lg:top-0 bottom-0 left-0 right-0 lg:h-full w-full'>
+                        <div className='w-[50px] h-[50px] absolute top-[2%] right-[2%] flex items-center justify-center text-center rounded-[50%] border-0 cursor-pointer'>
+                            <Image onClick={popupHandle} src={btnClose} className="w-full" alt='Infinity Animations' />
+                        </div>
+                        <div className="grid grid-cols-12 absolute right-[5%] top-[12%]">
                             <div className="col-span-12">
-                                <h3 className='text-[20px] md:text-[26px] text-white font-[500] text-center p-0 montserrat'>Fill This Form to Avail</h3>
-                                <h2 className='text-[28px] md:text-[40px] text-white text-center font-[700] montserrat'>Amazing Discounts</h2>
-                                <h4 className='text-[20px] md:text-[26px] text-white text-center font-[700] montserrat'>on Video Animation Services</h4>
-                                <form action="javascript:;" className='mx-auto px-5 lg:w-6/12 mt-5 h-full'>
-                                    <div className="name relative w-full">
-                                        <input type="text" name="name" placeholder='Enter your name' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] lg:py-[15px] px-[18px] w-full mb-[10px] font-[500] rounded-[6px]' onChange={handleDataChange} required />
+                                <h3 className='text-[20px] text-black font-bold text-center p-0 montserrat mb-0'>Fill This Form to Avail</h3>
+                                <h2 className='text-[36px] text-[#EF0707] text-center font-bold montserrat mb-0'>Amazing Discounts</h2>
+                                <h4 className='text-[20px] text-black text-center font-bold montserrat'>on Video Animation Services</h4>
+                                <form action="javascript:;" className='mx-auto px-5 mt-5 h-full'>
+                                    <div className="name mt-1 relative w-full">
+                                        <input type="text" name="name" placeholder='Enter Your Name' className='text-[14px] text-black placeholder:text-[#D5D5D5] focus:outline-none montserrat px-[18px] h-[50px] w-full mb-[10px] font-[500] rounded-[6px] shadow-md' onChange={handleDataChange} required />
                                         {errors.name && (
-                                            <span className="text-[12px] block font-medium text-white">
+                                            <span className="absolute left-[5px] bottom-[-5px] text-[11px] block font-medium text-[#EF0707]">
                                                 {errors.name}
                                             </span>
                                         )}
                                     </div>
-                                    <div className="email relative w-full">
-                                        <input type="email" name="email" placeholder='Enter Email' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] lg:py-[15px] px-[18px] w-full mb-[10px] font-[500] rounded-[6px]' onChange={handleDataChange} required />
+                                    <div className="email mt-1 relative w-full">
+                                        <input type="email" name="email" placeholder='Enter Email Address' className='text-[14px] text-black placeholder:text-[#D5D5D5] focus:outline-none montserrat px-[18px] h-[50px] w-full mb-[10px] font-[500] rounded-[6px] shadow-md' onChange={handleDataChange} required />
                                         {errors.email && (
-                                            <span className="text-[12px] block font-medium text-white">
+                                            <span className="absolute left-[5px] bottom-[-5px] text-[11px] block font-medium text-[#EF0707]">
                                                 {errors.email}
                                             </span>
                                         )}
                                     </div>
-                                    <div className="phone relative">
-                                        <input type="phone" name="phone" minLength={7} maxLength={15} placeholder='Enter Phone Number' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] lg:py-[15px] px-[18px] w-full mb-[10px] font-[500] rounded-[6px]' onChange={handleDataChange} required />
+                                    <div className="phone mt-1 relative w-full">
+                                        <input type="phone" name="phone" placeholder='Enter Phone Number' minLength={7} maxLength={15} className='text-[14px] text-black placeholder:text-[#D5D5D5] focus:outline-none montserrat px-[18px] h-[50px] w-full mb-[10px] font-[500] rounded-[6px] shadow-md' onChange={handleDataChange} required />
                                         {errors.phone && (
-                                            <span className="text-[12px] block font-medium text-white">
+                                            <span className="absolute left-[5px] bottom-[-5px] text-[11px] block font-medium text-[#EF0707]">
                                                 {errors.phone}
                                             </span>
                                         )}
                                     </div>
-                                    <div className="message relative">
-                                        <textarea name='message' placeholder='Message' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] lg:py-[15px] px-[18px] w-full font-[500] rounded-[6px]' onChange={handleDataChange}></textarea>
+                                    <div className="message mt-1 relative w-full">
+                                        <textarea name='message' placeholder='Message' className='text-[14px] text-black placeholder:text-[#D5D5D5] focus:outline-none montserrat px-[18px] py-[12px] h-[100px] w-full font-[500] rounded-[6px] shadow-md resize-none' onChange={handleDataChange}></textarea>
                                     </div>
-                                    <div className="btn mt-3">
-                                        <button type='submit' className='py-[15px] px-[30px] border-0 text-black text-[16px] uppercase font-[600] bg-white poppins w-full rounded-[6px]' onClick={handleFormSubmit} disabled={isDisabled}>
+                                    <div className="btn mt-2 w-full text-end">
+                                        <button type='submit' className='h-[45px] w-max px-[25px] border-0 bg-black text-white text-[15px] font-[600] poppins rounded-[6px] ml-auto' onClick={handleFormSubmit} disabled={isDisabled}>
                                             {formStatus}
                                         </button>
                                     </div>
                                 </form>
                             </div>
+                        </div>
+                        <div className='w-[20%] h-[40px] absolute top-[0%] left-[65%] flex items-center justify-center text-center border-0 bg-[#EF0707] text-white text-[14px] font-bold montserrat uppercase rounded-t-none rounded-[10px]'>
+                            <span>SPECIAL OFFER</span>
                         </div>
                     </div>
                 </section>
