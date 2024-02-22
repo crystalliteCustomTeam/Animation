@@ -1,4 +1,4 @@
-import { NextResponse, NextRequest } from "next/server"
+import { NextResponse } from "next/server"
 import nodemailer from "nodemailer"
 
 export async function POST(request) {
@@ -16,7 +16,7 @@ export async function POST(request) {
         });
         const mailOptions = {
             from: "leads@infinityanimations.com",
-            to: "harrykennedy.cs@gmail.com",
+            to: ['queries@infinityanimations.com', 'harrykennedy.cs@gmail.com'],
             subject: `Infinity Animations Lead`,
             html: `
             <table>

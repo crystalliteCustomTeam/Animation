@@ -57,28 +57,34 @@ body {
 }
 
 .bg-prime {
-  background: linear-gradient(90deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 100%
+  );
 }
 
 .bg-second {
-  background: linear-gradient(0deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 100%
+  );
 }
 
 .bg-third {
-  background: linear-gradient(0deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 40%);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 40%
+  );
 }
 
 .rotateY {
   transform: rotateY(-180deg);
 }
 
-/*  animation css */
+/*=============== Animation css ===============*/
 
 .sliderpost .slick-prev:before,
 .sliderpost .slick-next:before {
@@ -134,12 +140,12 @@ div#ty7 {
   opacity: 0.3;
 }
 
-.newreactslide .slick-current+.slick-slide {
+.newreactslide .slick-current + .slick-slide {
   opacity: unset;
 }
 
-.newreactslide .slick-current+.slick-slide svg {
-  fill: #D50D12;
+.newreactslide .slick-current + .slick-slide svg {
+  fill: #d50d12;
   opacity: unset;
   color: #d50d12;
 }
@@ -167,7 +173,7 @@ div#ty7 {
   top: -40px;
 }
 
-.newreactslide .slick-current+.slick-slide::after {
+.newreactslide .slick-current + .slick-slide::after {
   position: absolute;
   content: "";
   width: 6.5%;
@@ -214,7 +220,6 @@ div#ty7 {
   object-fit: contain;
   transform-origin: center center;
   background: url(/banner/prev1.png) !important;
-
 }
 
 #newslides .swiper-button-next svg {
@@ -244,7 +249,7 @@ div#ty7 {
   background: rgb(203 203 203) !important;
 }
 
-#newslides .swiper-horizontal>.swiper-pagination-bullets,
+#newslides .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -254,22 +259,21 @@ div#ty7 {
   width: 100%;
 }
 
-#newslides .swiper-slide-active+swiper-slide {
+#newslides .swiper-slide-active + swiper-slide {
   padding-bottom: 150px;
   transform: translateY(42.8%) translateX(2%) scale(1.7);
   z-index: -1;
   position: relative;
 }
 
-#newslides .swiper-slide-active+swiper-slide+swiper-slide {
-
+#newslides .swiper-slide-active + swiper-slide + swiper-slide {
   padding-bottom: 247px;
   transform: translateY(37.8%) translateX(-65%) scale(1.6);
   z-index: -2;
   position: relative;
 }
 
-/*=============== scroll bar css start ===============*/
+/*=============== scroll bar css ===============*/
 
 /* width */
 ::-webkit-scrollbar {
@@ -283,9 +287,11 @@ div#ty7 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(0deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 100%
+  );
 }
 
 /* ================================== */
@@ -359,16 +365,16 @@ div#ty7 {
 }
 
 .testiSlider .slick-next:before {
-  content: url(../../public/icons/arrow-red.png) ;
-  opacity: 1 ;
-  background-color: #fff ;
-  display: flex ;
-  align-items: center ;
-  justify-content: center ;
-  line-height: 0 ;
-  width: 60px ;
+  content: url(../../public/icons/arrow-red.png);
+  opacity: 1;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  width: 60px;
   height: 60px;
-  border-radius: 100% ;
+  border-radius: 100%;
 }
 
 /*=============== Blogs Slider ===============*/
@@ -416,37 +422,7 @@ div#ty7 {
   content: url(../../public/icons/arrow-right.png);
 }
 
-/* Brands Slider End */
-
-
-/* swiper slider start */
-
-.swiper-button-prev {
-  left: 45% !important;
-  right: inherit !important;
-}
-
-.swiper-button-next {
-  left: inherit !important;
-  right: 40% !important;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  top: inherit !important;
-  bottom: -75px !important;
-}
-
-
-.swiper-button-prev:after {
-  content: url(../../public/icons/arrow-right.png) !important;
-}
-
-.swiper-button-next:after {
-  content: url(../../public/icons/arrow-right.png) !important;
-}
-
-/* swiper slider end */
+/*=============== Popup ===============*/
 
 .grid.place-items-center.fixed.w-screen.h-screen.bg-black.bg-opacity-60.backdrop-blur-sm {
   height: 100% !important;
@@ -551,9 +527,11 @@ div#ty7 {
 
 @media only screen and (max-width: 567px) {
   .wantbg {
-    background: linear-gradient(0deg,
-        rgba(245, 9, 11, 1) 0%,
-        rgba(255, 45, 75, 1) 40%);
+    background: linear-gradient(
+      0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 40%
+    );
   }
 
   .blogsSlider .slick-next {

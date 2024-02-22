@@ -13,7 +13,6 @@ const BuzzFlick = ({ content }) => {
     return (
         <>
             <section className='xl:pt-36 lg:pb-16 md:pb-12 pb-8 relative'>
-                {/* <Image src={foldBg} alt='Infinity Animation' className='absolute top-[-125px] right-0 w-full' /> */}
                 <div className="container">
                     <div className="grid grid-cols-12">
                         <div className="col-span-10">
@@ -81,7 +80,7 @@ const BuzzFlick = ({ content }) => {
                                 color={`text-white`}
                                 border={`border-2 border-[#f5090b]`}
                                 hover="hover:bg-transparent"
-                                href="tel:833-666-6684"
+                                href="javascript:$zopim.livechat.window.show();"
                             />
                         </div> :
                         null
