@@ -10,7 +10,7 @@ export const metadata = {
         title: 'Build Brands with Expert Explainer Video Services',
         description: 'We specialize in dynamic video animation, delivering captivating animated marketing and commercial videos for unparalleled storytelling and engagement.',
         url: 'https://infinityanimationspro.com/video-explainer-lp-new/',
-        siteName: 'InFinity Animation',
+        siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },

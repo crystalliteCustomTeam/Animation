@@ -1,16 +1,16 @@
 // Meta Data
 export const metadata = {
     // Title & Descriptions
-    title: "Thank You - Infinity Animation",
+    title: "Thank You | Infinity Animations",
     description: "Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame. ",
     // Canonical
-    alternates: { canonical: 'https://infinity-animation.vercel.app/why-us/' },
+    alternates: { canonical: 'https://infinityanimations.com/thank-you/' },
     // OG Metas
     openGraph: {
-        title: 'Thank You - Infinity Animation',
+        title: 'Thank You | Infinity Animations',
         description: 'Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame. ',
-        url: 'https://infinity-animation.vercel.app/why-us/',
-     siteName: 'InFinity Animation',
+        url: 'https://infinityanimations.com/thank-you/',
+     siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },

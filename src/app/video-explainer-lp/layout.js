@@ -10,7 +10,7 @@ export const metadata = {
         title: 'Video Explainer',
         description: 'Video Explainer',
         url: 'https://infinityanimationspro.com/video-explainer-lp/',
-        siteName: 'InFinity Animation',
+        siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },

@@ -4,13 +4,13 @@ export const metadata = {
     title: "Transforming Ideas into Visual Masterpieces Through Whiteboard Animations",
     description: "Experience the art of storytelling with depth through our Whiteboard Animation services. Every stroke adds nuance to your message.",
     // Canonical
-    alternates: { canonical: 'https://infinity-animation.vercel.app/why-us/' },
+    alternates: { canonical: 'https://infinityanimations.com/whiteboard-animation/' },
     // OG Metas
     openGraph: {
         title: 'Transforming Ideas into Visual Masterpieces Through Whiteboard Animations',
         description: 'Experience the art of storytelling with depth through our Whiteboard Animation services. Every stroke adds nuance to your message.',
-        url: 'https://infinity-animation.vercel.app/why-us/',
-     siteName: 'InFinity Animation',
+        url: 'https://infinityanimations.com/whiteboard-animation/',
+     siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },

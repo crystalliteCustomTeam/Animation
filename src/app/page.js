@@ -350,7 +350,6 @@ export default function Page() {
 
     return (
         <>
-
             <Hero content={hero} />
             <Review />
             <Looking content={looking} />
@@ -360,7 +359,6 @@ export default function Page() {
             <Boost content={boost} />
             <Testimonial content={testimonial} />
             <Contact />
-
         </>
     )
 }

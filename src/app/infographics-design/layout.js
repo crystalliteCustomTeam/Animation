@@ -4,13 +4,13 @@ export const metadata = {
     title: "Expertly Crafted Infographics Design Services – Turning Ideas into Visual Stories",
     description: "Discover the power of visual storytelling through our Infographics Design Services. From complex data to compelling narratives, our experts have your back.",
     // Canonical
-    alternates: { canonical: 'https://infinity-animation.vercel.app/infographics-design' },
+    alternates: { canonical: 'https://infinityanimations.com/infographics-design/' },
     // OG Metas
     openGraph: {
         title: "Expertly Crafted Infographics Design Services – Turning Ideas into Visual Stories",
         description: "Discover the power of visual storytelling through our Infographics Design Services. From complex data to compelling narratives, our experts have your back.",
-        url: 'https://infinity-animation.vercel.app/infographics-design',
-     siteName: 'InFinity Animation',
+        url: 'https://infinityanimations.com/infographics-design/',
+     siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },

@@ -4,13 +4,13 @@ export const metadata = {
     title: "Our Performance Driven Animation Creation Process",
     description: "Step into the behind-the-scenes magic – explore our animation creation process page. From ideation to final delivery, witness the journey of visual tales.",
     // Canonical
-    alternates: { canonical: 'https://infinity-animation.vercel.app/process/' },
+    alternates: { canonical: 'https://infinityanimations.com/process/' },
     // OG Metas
     openGraph: {
         title: 'Our Performance Driven Animation Creation Process',
         description: 'Step into the behind-the-scenes magic – explore our animation creation process page. From ideation to final delivery, witness the journey of visual tales.',
-        url: 'https://infinity-animation.vercel.app/process/',
-     siteName: 'InFinity Animation',
+        url: 'https://infinityanimations.com/process/',
+     siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },
