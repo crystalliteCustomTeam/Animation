@@ -69,7 +69,7 @@ const Looking = ({ content }) => {
                 <div className="container">
                     <div className='flex flex-col-reverse lg:flex-row items-center justify-around gap-y-7'>
                         <div className={`w-full lg:w-[500px] ${lookinImage}`}>
-                            <Image src={flodImg} className={`w-9/12 lg:w-full mx-auto ${css}`} alt="Infinity Animation" quality={85} />
+                            <Image src={flodImg} className={`w-full mx-auto ${css}`} alt="Infinity Animation" quality={85} />
                         </div>
                         <div className={`w-full lg:w-[800px] ${lookingSecCol}`}>
                             <h1 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5">

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image"
 // Import Image
-import logo from "media/images/loader-logo.png";
+import logo from "media/images/logo.png";
 // Import Css
 import styles from "./Loader.module.css"
 

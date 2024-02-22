@@ -6,7 +6,7 @@ import Icon2 from 'media/icons/core-icon2.png'
 import Icon3 from 'media/icons/core-icon3.png'
 import Icon4 from 'media/icons/core-icon4.png'
 import Icon5 from 'media/icons/core-icon5.png'
-import coreImage from 'media/why-us/core-bg.png'
+import coreImage from 'media/why-us/core-bg.gif'
 
 const Features = () => {
     return (
@@ -54,7 +54,7 @@ const Features = () => {
                         </div>
                         <div className="col-span-12 lg:col-span-6">
                             <div className="absolute right-0 lg:right-[170px] top-[18%] -z-1 md:block hidden">
-                                <Image src={coreImage} alt='Infinity Animation' width={1030} height={811} />
+                                <Image src={coreImage} alt='Infinity Animation' className='w-full' width={1263} height={800} />
                             </div>
                         </div>
                         <div className="col-span-12">

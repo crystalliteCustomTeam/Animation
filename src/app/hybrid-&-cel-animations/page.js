@@ -10,10 +10,10 @@ import Want from '@/components/want/Want';
 import Testimonial from '@/components/testimonial/Testimonial';
 import Contact from '@/components/contact/Contact';
 // Import Images
-import LookingFlodImg from "media/hybrid-cel/looking-img.png";
+import LookingFlodImg from "media/hybrid-cel/looking-img.gif";
 
 //==== Boost Images
-import BoostFlodImg from "media/images/boost-img.png";
+import BoostFlodImg from "media/images/boost-img.gif";
 import boosticon1 from "media/icons/boost-icon4.png"
 import boosticon2 from "media/icons/boost-icon5.png"
 import boosticon3 from "media/icons/boost-icon6.png"

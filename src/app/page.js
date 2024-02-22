@@ -22,7 +22,7 @@ import StoryLine8 from "media/storyline/storyLine8.jpg";
 import StoryLine9 from "media/storyline/storyLine9.jpg";
 import StoryLine10 from "media/storyline/storyLine10.jpg";
 //==== Boost Images
-import BoostFlodImg from "media/images/boost-img.png";
+import BoostFlodImg from "media/images/boost-img.gif";
 import boosticon1 from "media/icons/boost-icon1.png"
 import boosticon2 from "media/icons/boost-icon2.png"
 import boosticon3 from "media/icons/boost-icon3.png"

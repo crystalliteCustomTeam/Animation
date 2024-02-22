@@ -3,10 +3,10 @@ import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Components
 import styles from '@/app/explainer-videos-animations/component/header/header.module.css';
-import icon1 from "../../../../../public/banner/logo.png"
-import email from "../../../../../public/banner/email.png"
-import lang from "../../../../../public/banner/lang.png"
-import chat from "../../../../../public/banner/chat.png"
+import icon1 from "media/images/logo.gif"
+import email from "media/banner/email.png"
+import lang from "media/banner/lang.png"
+import chat from "media/banner/chat.png"
 import usePopup from "@/app/configs/store/Popup";
 
 const Video = () => {
@@ -18,8 +18,8 @@ const Video = () => {
         <>
             <section className={`newcon  ${styles.display}`} id="header">
                 <div className={`container ${styles.pointer}`}>
-                    <div>
-                        <Image src={icon1} />
+                    <div className="w-[12%]">
+                        <Image src={icon1}  />
                     </div>
                     <div className={styles.poster}>
                         <div className={styles.got}>

@@ -9,7 +9,7 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css"
 import Image from 'next/image';
 
 // icons
-import PlayIcon from "media/icons/video-icon.png"
+import PlayIcon from "media/icons/play.png"
 
 const Portfolio = ({ content }) => {
     const { title, para, tabInfo, tabContents, tabsInfo, tabThumbnail } = content;

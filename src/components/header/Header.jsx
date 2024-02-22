@@ -14,7 +14,7 @@ import {
     Bars4Icon, GlobeAmericasIcon, NewspaperIcon, PhoneIcon, RectangleGroupIcon, SquaresPlusIcon, SunIcon, TagIcon, UserGroupIcon,
 } from "@heroicons/react/24/solid";
 // Import Images
-import logo from "../../../public/images/logo.gif";
+import logo from "media/images/logo.gif";
 
 const megaMenuItems = [
     {

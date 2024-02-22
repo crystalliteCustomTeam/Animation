@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 //===== Images 
-import Logo from "media/video-explainer/logo.gif"
+import Logo from "media/images/logo.gif"
 import UK from "media/video-explainer/flag-icon.png"
 import Chat from "media/video-explainer/cht-icon.png"
 import usePopup from '@/app/configs/store/Popup'

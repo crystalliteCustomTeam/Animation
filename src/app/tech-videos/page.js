@@ -16,7 +16,7 @@ import LookingFlodImg from "media/tech-videos/looking-img.png";
 import ProductImg from "media/tech-videos/product-img.png";
 
 //==== Boost Images
-import BoostFlodImg from "media/images/boost-img.png";
+import BoostFlodImg from "media/images/boost-img.gif";
 //===== Tech Type Images
 import TechImage1 from "media/tech-type/techtype1.png"
 import TechImage2 from "media/tech-type/techtype2.png"

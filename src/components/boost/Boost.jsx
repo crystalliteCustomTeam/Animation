@@ -62,7 +62,7 @@ const Boost = ({ content }) => {
                             </div>
                         </div>
                         <div className="w-full sm:w-[400px] lg:w-[500px]">
-                            <Image src={flodImg} className="mx-auto" alt="Infinity Animation" />
+                            <Image src={flodImg} className="mx-auto w-full" alt="Infinity Animation" />
                         </div>
                     </div>
                 </div>
