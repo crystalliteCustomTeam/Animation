@@ -6,10 +6,10 @@ import Want from '@/components/want/Want';
 import Testimonial from '@/components/testimonial/Testimonial';
 import Contact from '@/components/contact/Contact';
 //==== StoryLine Images
-import StoryLine1 from "media/storyline/storyLine1.jpg";
-import StoryLine2 from "media/storyline/storyLine2.jpg";
-import StoryLine3 from "media/storyline/storyLine3.jpg";
-import StoryLine4 from "media/storyline/storyLine4.jpg";
+import StoryLine1 from "media/storyline/storyLine11.jpg";
+import StoryLine2 from "media/storyline/storyLine12.jpg";
+import StoryLine3 from "media/storyline/storyLine13.jpg";
+import StoryLine4 from "media/storyline/storyLine14.jpg";
 //==== Testimonial Images
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
