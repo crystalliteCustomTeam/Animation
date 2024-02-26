@@ -46,7 +46,7 @@ const Tech = ({ content }) => {
                                     <CTA
                                         text="See Portfolio"
                                         icon="/icons/arrow-red.png"
-                                        iconCss="w-[40px]"
+                                        iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2"
                                         bg="bg-[#000]"
                                         color={`text-white`}
                                         border={`border-2 border-[#fff]`}

@@ -71,7 +71,7 @@ const BuzzFlick = ({ content }) => {
                         </div>}
 
                     {isBtn ?
-                        <div className="btn mt-8">
+                        <div className="btn mt-8 w-max">
                             <CTA
                                 text="Get a Quote"
                                 icon="/icons/arrow-red.png"

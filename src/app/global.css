@@ -334,7 +334,9 @@ div#ty7 {
 
 /*=============== testi slider ===============*/
 
-.testiSlider .slick-slide {
+.testiSlider .slick-track .slick-slide {
+  display: flex;
+  align-items: center;
   height: 300px;
 }
 
