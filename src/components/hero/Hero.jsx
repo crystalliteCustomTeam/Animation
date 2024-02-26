@@ -27,7 +27,7 @@ const Hero = ({ content }) => {
             backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/process/banner-bg.gif")]'
             break;
         case '/pricing':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/pricing/banner-bg.gif")]'
+            backgroundImage = 'bg-[length:100%_140%] bg-center lg:bg-[url("../../public/pricing/banner-bg.gif")]'
             break;
         case '/blog':
             backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/blogs/banner-bg.gif")]'
@@ -54,7 +54,7 @@ const Hero = ({ content }) => {
             backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/2d-animation/banner-bg.png")]'
             break;
         case '/3d-animation':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/3d-animation/banner-bg.gif")]'
+            backgroundImage = 'bg-[length:100%_100%] bg-center lg:bg-[url("../../public/3d-animation/banner-bg.gif")]'
             break;
         case '/whiteboard-animation':
             backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/whiteboard/banner-bg.png")]'
