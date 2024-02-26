@@ -196,7 +196,7 @@ const Contact = () => {
                                     </li>
                                     <li className='py-[10px]'>
                                         <a href="https://infinityanimationspro.com" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
-                                            <Globe className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimationspro.com
+                                            <Globe className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimations.com
                                         </a>
                                     </li>
                                 </ul>
