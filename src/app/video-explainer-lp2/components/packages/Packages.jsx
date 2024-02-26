@@ -26,7 +26,7 @@ const Packages = () => {
                                     <h3 className='text-[#231f20] montserrat text-[25px] font-[700] uppercase'>STARTUP PACKAGE</h3>
                                     <Image src={Price} alt='Price_image' className='mx-auto mt-[20px] mb-[10px]' />
                                     <p className='text-[#231f20] montserrat text-[14px]'>Text & Image Compilation</p>
-                                    <h4 className='text-[#231f20] text-[50px] font-[700] poppins py-[10px]'>$1500</h4>
+                                    <h4 className='text-[#231f20] text-[50px] font-[700] poppins py-[10px]'>$1499</h4>
                                 </div>
                                 <div className="card_list bg-[#b5ce8f] py-[30px] px-[20px] relative z-1">
                                     <ul className='h-[245px] pl-[5px]'>
@@ -52,9 +52,9 @@ const Packages = () => {
                                 </div>
                                 <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
                                     <div className="flex-wrap gap-y-3 flex items-center justify-between">
-                                        <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
+                                        <a href="tel:833-666-6684" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
                                             speak with us
-                                            <span className='text-[#231f20] text-[16px] pt-2'>833-666-6689</span>
+                                            <span className='text-[#231f20] text-[16px] pt-2'>833-666-6684</span>
                                         </a>
                                         <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
                                             Want to Discuss
@@ -78,7 +78,7 @@ const Packages = () => {
                                     <h3 className='text-[#231f20] montserrat text-[25px] font-[700] uppercase'>CLASSIC PACKAGE</h3>
                                     <Image src={Price} alt='Price_image' className='mx-auto mt-[20px] mb-[10px]' />
                                     <p className='text-[#231f20] montserrat text-[14px]'>Whiteboard or Motion Graphic Animation</p>
-                                    <h4 className='text-[#231f20] text-[50px] font-[700] poppins py-[10px]'>$2500</h4>
+                                    <h4 className='text-[#231f20] text-[50px] font-[700] poppins py-[10px]'>$2499</h4>
                                 </div>
                                 <div className="card_list bg-[#ebb882] py-[30px] px-[20px] relative z-1">
                                     <ul className='h-[245px] pl-[5px]'>
@@ -107,9 +107,9 @@ const Packages = () => {
                                 </div>
                                 <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
                                     <div className="flex-wrap gap-y-3 flex items-center justify-between">
-                                        <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
+                                        <a href="tel:833-666-6684" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
                                             speak with us
-                                            <span className='text-[#231f20] text-[16px] pt-2'>833-666-6689</span>
+                                            <span className='text-[#231f20] text-[16px] pt-2'>833-666-6684</span>
                                         </a>
                                         <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
                                             Want to Discuss
@@ -133,7 +133,7 @@ const Packages = () => {
                                     <h3 className='text-[#231f20] montserrat text-[25px] font-[700] uppercase'>PREMIUM PACKAGE</h3>
                                     <Image src={Price} alt='Price_image' className='mx-auto mt-[20px] mb-[10px]' />
                                     <p className='text-[#231f20] montserrat text-[14px]'>Ultimate 2D Character Animation</p>
-                                    <h4 className='text-[#231f20] text-[50px] font-[700] poppins py-[10px]'>$3500</h4>
+                                    <h4 className='text-[#231f20] text-[50px] font-[700] poppins py-[10px]'>$3499</h4>
                                 </div>
                                 <div className="card_list bg-[#ebc100] py-[30px] px-[20px] relative z-1">
                                     <ul className='h-[245px] pl-[5px]'>
@@ -162,9 +162,9 @@ const Packages = () => {
                                 </div>
                                 <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
                                     <div className="flex-wrap gap-y-3 flex items-center justify-between">
-                                        <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
+                                        <a href="tel:833-666-6684" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
                                             speak with us
-                                            <span className='text-[#231f20] text-[16px] pt-2'>833-666-6689</span>
+                                            <span className='text-[#231f20] text-[16px] pt-2'>833-666-6684</span>
                                         </a>
                                         <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
                                             Want to Discuss
