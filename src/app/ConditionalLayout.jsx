@@ -34,12 +34,14 @@ const ConditionalLayout = ({ children }) => {
             {imagesLoaded ?
                 <>
                     {pathname !== "/video-explainer-lp" &&
+                        pathname !== "/video-explainer-lp2" &&
                         pathname !== "/video-explainer-lp-new" &&
                         pathname !== "/explainer-videos-animations" && (
                             <Header />
                         )}
                     {children}
                     {pathname !== "/video-explainer-lp" &&
+                        pathname !== "/video-explainer-lp2" &&
                         pathname !== "/video-explainer-lp-new" &&
                         pathname !== "/explainer-videos-animations" && (
                             <Footer />
