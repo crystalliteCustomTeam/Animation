@@ -1,4 +1,14 @@
-.loader p {
+.animi {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 45, 75, 1) 0%,
+    rgba(245, 9, 11, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.loader .para {
   color: #fff;
   font-size: 45px;
   font-weight: 700;
@@ -8,7 +18,7 @@
   position: relative;
 }
 
-.loader p::before {
+.loader .para::before {
   content: "";
   width: 100px;
   height: 3px;
@@ -33,12 +43,10 @@
   100% {
     background: #f5090b;
     left: -100px;
-
   }
 }
 
 /* ==========================Media-Queries========================== */
 
 @media screen and (max-width: 767px) {
- 
 }
