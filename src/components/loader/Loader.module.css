@@ -10,7 +10,7 @@
 
 .loader p::before {
   content: "";
-  width: 120px;
+  width: 100px;
   height: 3px;
   color: #fff;
   background-color: #fff;
@@ -22,7 +22,7 @@
 @keyframes move {
   0% {
     background: #f5090b;
-    left: -120px;
+    left: -100px;
   }
 
   50% {
@@ -32,7 +32,7 @@
 
   100% {
     background: #f5090b;
-    left: -120px;
+    left: -100px;
 
   }
 }

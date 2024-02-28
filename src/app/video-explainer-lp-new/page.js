@@ -1,21 +1,21 @@
 "use client"
 import React from 'react';
 // Import Components
-import HeaderLP from './components/Header/Header'
-import Banner from './components/banner/Banner'
-import Partners from './components/partners/partners'
-import Explainer from './components/explainer/Explainer'
-import Streamed from './components/streamed/Streamed'
-import Brands from './components/brands/Brands'
-import ExplainerType from './components/type-explainer/ExplainerType'
-import Packages from './components/packages/Packages'
-import Animations from './components/infinity-animation/Animations'
-import Work from './components/work/Work'
-import Faqs from './components/faqs/Faqs'
-import ClientThinking from './components/client/ClientThinking'
-import Clients from './components/OurClients/Clients'
-import Contact from './components/Contact/Contact'
-import Popup from './components/popup/Popup'
+const HeaderLP = React.lazy(() => import('./components/Header/Header'));
+const Banner = React.lazy(() => import('./components/banner/Banner'));
+const Partners = React.lazy(() => import('./components/partners/partners'));
+const Explainer = React.lazy(() => import('./components/explainer/Explainer'));
+const Streamed = React.lazy(() => import('./components/streamed/Streamed'));
+const Brands = React.lazy(() => import('./components/brands/Brands'));
+const ExplainerType = React.lazy(() => import('./components/type-explainer/ExplainerType'));
+const Packages = React.lazy(() => import('./components/packages/Packages'));
+const Animations = React.lazy(() => import('./components/infinity-animation/Animations'));
+const Work = React.lazy(() => import('./components/work/Work'));
+const Faqs = React.lazy(() => import('./components/faqs/Faqs'));
+const ClientThinking = React.lazy(() => import('./components/client/ClientThinking'));
+const Clients = React.lazy(() => import('./components/OurClients/Clients'));
+const Contact = React.lazy(() => import('./components/Contact/Contact'));
+const Popup = React.lazy(() => import('./components/popup/Popup'));
 
 const Video = () => {
   // ===== Brands Content ===== //
