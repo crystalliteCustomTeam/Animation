@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react"
 import { usePathname } from "next/navigation"
 import { PopupProvider } from "./configs/store/Popup"
+import Axios from "axios"
 //
 import Footer from "@/components/footer/Footer"
 import Header from "@/components/header/Header"
