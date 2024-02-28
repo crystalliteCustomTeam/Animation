@@ -17,42 +17,23 @@ const ConditionalLayout = ({ children }) => {
         setCountry(res.data.countryCode);
     };
     useEffect(() => {
-        getIPData();
-    }, []);
-
-    const blockedCountries = ['PK', 'IN', 'BD', 'IR', 'VN', 'PH', 'IQ', 'AF', 'KP', 'NP', 'LK', 'RU', 'CN', 'BT'];
-    const allowedIPs = ['110.93.226.77']; 
-
-    useEffect(() => {
-        if (country && !blockedCountries.includes(country)) {
+        getIPData()
+        if (country == 'PK' || country == 'IN' || country == 'BD' || country == 'IR' || country == 'VN' || country == 'PH' || country == 'IQ' || country == 'AF' || country == 'KP' || country == 'NP' || country == 'LK' || country == 'RU' || country == 'CN' || country == 'BT') {
             window.location.href = 'https://bhaooinc.com/';
         }
     }, [country]);
 
-    useEffect(() => {
-        const blockRedirect = allowedIPs.some(ip => {
-            return window.location.href.includes(ip);
-        });
-        if (blockRedirect) {
-            // Do not redirect
-        } else {
-            if (country && blockedCountries.includes(country)) {
-                window.location.href = 'https://bhaooinc.com/';
-            }
-        }
-    }, [country]);
-
-    // Loader
+    //=============== Loader ===============//
     const [imagesLoaded, setImagesLoaded] = useState(false);
     useEffect(() => {
-        const delay = 3000;
+        const delay = 2000;
         const timeoutId = setTimeout(() => {
             setImagesLoaded(true);
         }, delay);
         return () => clearTimeout(timeoutId);
     }, []);
 
-    // Popup
+    //=============== Popup ===============//
     const pathname = usePathname();
     const [popup, setPopup] = useState(false);
     useEffect(() => {
