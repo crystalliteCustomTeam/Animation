@@ -1,19 +1,18 @@
-// Import Fonts
+//===== Import Fonts =====
 import { primary } from "./configs/fonts";
-// Import Components
-import ConditionalLayout from "./ConditionalLayout";
-import Script from "next/script";
-// Import Css
-import "./global.css";
+//===== Import Components =====
 import Scripts from "./Scripts";
-// Meta Data
+import ConditionalLayout from "./ConditionalLayout";
+//===== Import Css =====
+import "./global.css";
+//===== Meta Data =====
 export const metadata = {
-  // Title & Descriptions
+  //===== Title & Descriptions =====
   title: "Your Vision Coupled with Creative Excellence",
   description: "Explore our animation studio's diverse services, where creativity meets precision, bringing your ideas to life in captivating motion.",
-  // Canonical
+  //===== Canonical =====
   alternates: { canonical: 'https://infinityanimations.com/' },
-  // OG Metas
+  //===== OG Metas =====
   openGraph: {
     title: "Your Vision Coupled with Creative Excellence",
     description: "Explore our animation studio's diverse services, where creativity meets precision, bringing your ideas to life in captivating motion.",
