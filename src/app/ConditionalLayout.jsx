@@ -8,8 +8,6 @@ import Header from "@/components/header/Header"
 import Loader from "@/components/loader/Loader"
 
 const ConditionalLayout = ({ children }) => {
-    //=============== GeoLocation ===============//
-
     //=============== Loader ===============//
     const [imagesLoaded, setImagesLoaded] = useState(false);
     useEffect(() => {
