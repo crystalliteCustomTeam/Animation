@@ -1,20 +1,22 @@
 "use client"
 import Image from "next/image";
-import Link from "next/link";
 // Import Images
 import star from "media/icons/star.png"
 import chat from "media/icons/chat.png"
-import arrow from "media/icons/arrow-w.png"
-import arrowB from "media/icons/arrow-b.png"
+import arrow from "media/icons/arrow-red.png"
+import arrowB from "media/icons/arrow.png"
 import tickP from "media/icons/tick-p.png"
 import tickW from "media/icons/tick-w.png"
 
 const packages = [
     {
         name: 'Startup Package',
-        price: '$195',
+        price: '$1499',
         backgroundColor: '#2f2f2fd1',
         tickImage: tickP,
+        color: "text-black",
+        ctaColor: "text-black",
+        titleColor: "text-black",
         features: [
             '60 Seconds Duration',
             'Script Writing',
@@ -25,16 +27,30 @@ const packages = [
             { text: 'Invisible Point', isVisible: true },
         ],
         buttons: [
-            { text: 'Get Started', color: 'bg-prime', image: arrow },
-            { text: 'Live Chat', color: 'bg-black border border-white', image: chat },
+            {
+                text: 'Get Started',
+                color: 'bg-prime text-white border-0',
+                image: arrow,
+                href: "tel:833-666-6689",
+                imgColor: "bg-white w-[25px] h-[25px] xl:w-[28px] xl:h-[28px] rounded-full p-2 ms-1"
+            },
+            {
+                text: 'Live Chat',
+                color: 'bg-black text-white border border-white',
+                image: chat,
+                href: "javascript:$zopim.livechat.window.show();"
+            },
         ],
     },
     {
         name: 'Classic Package',
-        price: '$499',
+        price: '$2499',
         backgroundColor: '#262626',
+        color: "text-white",
         tickImage: tickW,
         mblSpc: 'my-10 md:my-0',
+        ctaColor: "text-white",
+        titleColor: "text-white",
         features: [
             '60 Seconds Duration',
             'Script Writing',
@@ -45,15 +61,29 @@ const packages = [
             'Dedicated Support',
         ],
         buttons: [
-            { text: 'Get Started', color: 'bg-white text-black', image: arrowB },
-            { text: 'Live Chat', color: 'bg-black border border-white', image: chat },
+            {
+                text: 'Get Started',
+                color: 'bg-white text-black font-semibold border-0',
+                image: arrowB,
+                href: "tel:833-666-6689",
+                imgColor: "bg-black w-[25px] h-[25px] xl:w-[28px] xl:h-[28px] rounded-full p-[8.5px] rotate-[90deg]"
+            },
+            {
+                text: 'Live Chat',
+                color: 'bg-black text-white border border-white',
+                image: chat,
+                href: "javascript:$zopim.livechat.window.show();"
+            },
         ],
     },
     {
         name: 'Premium Package',
-        price: '$799',
+        price: '$3499',
         backgroundColor: '#2f2f2fd1',
+        color: "text-black",
         tickImage: tickP,
+        ctaColor: "text-black",
+        titleColor: "text-black",
         features: [
             '60 Seconds Duration',
             'Script Writing',
@@ -64,8 +94,19 @@ const packages = [
             'Dedicated Support',
         ],
         buttons: [
-            { text: 'Get Started', color: 'bg-prime', image: arrow },
-            { text: 'Live Chat', color: 'bg-black border border-white', image: chat },
+            {
+                text: 'Get Started',
+                color: 'bg-prime text-white border-0',
+                image: arrow,
+                href: "tel:833-666-6689",
+                imgColor: "bg-white w-[25px] h-[25px] xl:w-[28px] xl:h-[28px] rounded-full p-2 ms-1"
+            },
+            {
+                text: 'Live Chat',
+                color: 'bg-black text-white border border-white',
+                image: chat,
+                href: "javascript:$zopim.livechat.window.show();"
+            },
         ],
     },
 ];
@@ -117,19 +158,19 @@ const Pricing = ({ content }) => {
                                             <div className="flex justify-between px-6 mt-5 pt-4">
                                                 <div>
                                                     <p className="text-[15px] font-bold font-sans">Speak With Us</p>
-                                                    <Link href="#" className="font-sans text-[14px]">+1-000-000-0000</Link>
+                                                    <a href="tel:833-666-6689" className="font-sans text-[14px]">833-666-6689</a>
                                                 </div>
                                                 <div>
                                                     <p className="text-[15px] font-bold font-sans">Want To Discuss</p>
-                                                    <Link href="#" className="font-sans text-[14px]">Live Chat Now</Link>
+                                                    <a href="javascript:$zopim.livechat.window.show();" className="font-sans text-[14px]">Live Chat Now</a>
                                                 </div>
                                             </div>
                                             <div className="flex justify-between px-6 mt-5">
                                                 {pkg.buttons.map((button, i) => (
-                                                    <Link key={i} href="#" className={`flex items-center justify-between font-sans ${button.color} py-2 px-3 xl:px-5 w-[45%] xl:w-[40%] rounded-lg`}>
-                                                        <span>{button.text}</span>
-                                                        <Image src={button.image} className={button.text === 'Get Started' ? 'w-[30px]' : 'w-[40px]'} alt="Infinity Animation" />
-                                                    </Link>
+                                                    <a key={i} href={button.href} className={`flex items-center justify-between font-sans ${button.color} w-max py-2 px-3 xl:px-5 gap-2 rounded-lg`}>
+                                                        <span className="text-[14px] xl:text-[16px]">{button.text}</span>
+                                                        <Image src={button.image} className={`${button.imgColor} ${button.text === 'Get Started' ? '' : button.text === 'Live Chat' ? 'w-[30px]' : ''}`} alt="Infinity Animation" />
+                                                    </a>
                                                 ))}
                                             </div>
                                         </div>
