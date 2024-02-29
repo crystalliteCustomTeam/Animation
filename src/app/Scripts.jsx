@@ -51,7 +51,7 @@ const Scripts = () => {
                 fbq('track', 'PageView');
             `;
             document.head.appendChild(MetaPixelCode);
-        }, 7000);
+        }, 10000);
 
         return () => clearTimeout(timer);
     }, []);

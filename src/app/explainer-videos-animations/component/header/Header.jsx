@@ -26,7 +26,7 @@ const Video = () => {
                             <Image src={email} />     <a href="mailto:queries@infinityanimations.com">  queries@infinityanimations.com</a>
                         </div>
                         <div className={styles.got}>
-                            <Image src={lang} />   <a href="tel:833-666-6684">  833-666-6684</a>
+                            <Image src={lang} />   <a href="tel:833-666-6689">  833-666-6689</a>
                         </div>
                         <div className={styles.got}>
                             <Image src={chat} />   <a href="javascript:$zopim.livechat.window.show();">Live Chat</a>

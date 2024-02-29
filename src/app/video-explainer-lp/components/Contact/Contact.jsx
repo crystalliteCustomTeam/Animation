@@ -185,8 +185,8 @@ const Contact = () => {
                             <div className="address_detail">
                                 <ul>
                                     <li className='py-[10px]'>
-                                        <a href="tel:833-666-6684" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
-                                            <Phone className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> 833-666-6684
+                                        <a href="tel:833-666-6689" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
+                                            <Phone className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> 833-666-6689
                                         </a>
                                     </li>
                                     <li className='py-[10px]'>

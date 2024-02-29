@@ -103,7 +103,7 @@ const Video = () => {
                                 <div className={styles.pkgcta}>
                                     <div className={styles.speak}>
                                         <p class="">Speak With Us</p>
-                                        <a class="" href="tel:833-666-6684">833-666-6684</a>
+                                        <a class="" href="tel:833-666-6689">833-666-6689</a>
                                     </div>
                                     <div className={styles.speak}>
                                         <p class="">Want To Discuss</p>
@@ -111,7 +111,7 @@ const Video = () => {
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
-                                    <button onClick={popupHandle} href="tel:833-666-6684" className={styles.popup}>Get Started</button>
+                                    <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
                                     <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat} alt="Live_Chat" />
@@ -137,7 +137,7 @@ const Video = () => {
                                 <div className={styles.pkgcta}>
                                     <div className={styles.speak}>
                                         <p class="">Speak With Us</p>
-                                        <a class="" href="tel:833-666-6684">833-666-6684</a>
+                                        <a class="" href="tel:833-666-6689">833-666-6689</a>
                                     </div>
                                     <div className={styles.speak}>
                                         <p class="">Want To Discuss</p>
@@ -145,7 +145,7 @@ const Video = () => {
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
-                                    <button onClick={popupHandle} href="tel:833-666-6684" className={styles.popup}>Get Started</button>
+                                    <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
                                     <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat2} alt="Live_Chat" />
@@ -172,7 +172,7 @@ const Video = () => {
                                 <div className={styles.pkgcta}>
                                     <div className={styles.speak}>
                                         <p class="">Speak With Us</p>
-                                        <a class="" href="tel:833-666-6684">833-666-6684</a>
+                                        <a class="" href="tel:833-666-6689">833-666-6689</a>
                                     </div>
                                     <div className={styles.speak}>
                                         <p class="">Want To Discuss</p>
@@ -180,7 +180,7 @@ const Video = () => {
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
-                                    <button onClick={popupHandle} href="tel:833-666-6684" className={styles.popup}>Get Started</button>
+                                    <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
                                     <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat} alt="Live_Chat" />
@@ -210,7 +210,7 @@ const Video = () => {
                                 <div className={styles.pkgcta}>
                                     <div className={styles.speak}>
                                         <p class="">Speak With Us</p>
-                                        <a class="" href="tel:833-666-6684">833-666-6684</a>
+                                        <a class="" href="tel:833-666-6689">833-666-6689</a>
                                     </div>
                                     <div className={styles.speak}>
                                         <p class="">Want To Discuss</p>
@@ -218,7 +218,7 @@ const Video = () => {
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
-                                    <button onClick={popupHandle} href="tel:833-666-6684" className={styles.popup}>Get Started</button>
+                                    <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
                                     <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat} alt="Live_Chat" />
@@ -244,7 +244,7 @@ const Video = () => {
                                 <div className={styles.pkgcta}>
                                     <div className={styles.speak}>
                                         <p class="">Speak With Us</p>
-                                        <a class="" href="tel:833-666-6684">833-666-6684</a>
+                                        <a class="" href="tel:833-666-6689">833-666-6689</a>
                                     </div>
                                     <div className={styles.speak}>
                                         <p class="">Want To Discuss</p>
@@ -252,7 +252,7 @@ const Video = () => {
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
-                                    <button onClick={popupHandle} href="tel:833-666-6684" className={styles.popup}>Get Started</button>
+                                    <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
                                     <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat2} alt="Live_Chat" />
@@ -279,7 +279,7 @@ const Video = () => {
                                 <div className={styles.pkgcta}>
                                     <div className={styles.speak}>
                                         <p class="">Speak With Us</p>
-                                        <a class="" href="tel:833-666-6684">833-666-6684</a>
+                                        <a class="" href="tel:833-666-6689">833-666-6689</a>
                                     </div>
                                     <div className={styles.speak}>
                                         <p class="">Want To Discuss</p>
@@ -287,7 +287,7 @@ const Video = () => {
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
-                                    <button onClick={popupHandle} href="tel:833-666-6684" className={styles.popup}>Get Started</button>
+                                    <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
                                     <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat} alt="Live_Chat" />

@@ -31,7 +31,7 @@ const Video = () => {
                                     <a href="javascript:$zopim.livechat.window.show();"> <button className={styles.sefve} >Live Chat</button> </a>
                                     <div className={styles.pont}>
                                         <Image src={lang} alt="" />
-                                        <a className={styles.newlong} href="tel:833-666-6684"> 833-666-6684</a>
+                                        <a className={styles.newlong} href="tel:833-666-6689"> 833-666-6689</a>
 
                                     </div>
                                 </div>
