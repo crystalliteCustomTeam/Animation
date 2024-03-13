@@ -1,0 +1,9 @@
+{
+    "redirects": [
+      {
+        "source": "www.infinityanimations.com",
+        "destination": "https://infinityanimations.com/$1",
+        "permanent": true
+      }
+    ]
+  }
