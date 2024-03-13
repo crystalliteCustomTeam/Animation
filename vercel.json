@@ -1,8 +1,8 @@
 {
     "redirects": [
       {
-        "source": "/^www\.(.*)$/",
-        "destination": "https://infinityanimations.com/$1",
+        "source": "/www.:domain(*)",
+        "destination": "https://infinityanimations.com/:domain",
         "permanent": true
       }
     ]
