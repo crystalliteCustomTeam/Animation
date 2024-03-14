@@ -51,13 +51,11 @@ const Scripts = () => {
                 fbq('track', 'PageView');
             `;
             document.head.appendChild(MetaPixelCode);
-
             // ========= Site Verification =========
             const googleSiteVerificationTag = document.createElement("meta");
             googleSiteVerificationTag.setAttribute("name", "google-site-verification");
             googleSiteVerificationTag.setAttribute("content", "dgOXThSlUP6xd-daxjwI8uQqVYkhfbL_Ey51mNVEUzU");
             document.head.appendChild(googleSiteVerificationTag);
-
             // ========= GEO Title 1 =========
             const geoTitle1 = document.createElement("meta");
             geoTitle1.setAttribute("name", "DC.title");
@@ -75,7 +73,6 @@ const Scripts = () => {
             icbmMeta1.setAttribute("name", "ICBM");
             icbmMeta1.setAttribute("content", "39.78373, -100.445882");
             document.head.appendChild(icbmMeta1);
-
             // ========= GEO Title 2 =========
             const geoTitle2 = document.createElement("meta");
             geoTitle2.setAttribute("name", "DC.title");
@@ -93,7 +90,6 @@ const Scripts = () => {
             icbmMeta2.setAttribute("name", "ICBM");
             icbmMeta2.setAttribute("content", "39.78373, -100.445882");
             document.head.appendChild(icbmMeta2);
-
             // ========= GEO Title 3 =========
             const geoTitle3 = document.createElement("meta");
             geoTitle3.setAttribute("name", "DC.title");

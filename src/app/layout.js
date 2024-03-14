@@ -5,6 +5,7 @@ import Scripts from "./Scripts";
 import ConditionalLayout from "./ConditionalLayout";
 //===== Import Css =====
 import "./global.css";
+import Schemas from "./Schemas";
 //===== Meta Data =====
 export const metadata = {
   //===== Title & Descriptions =====
@@ -26,6 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Schemas />
       <Scripts />
       <body className={`${primary.variable}`}>
         <ConditionalLayout>
