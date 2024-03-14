@@ -40,15 +40,15 @@ const Video = () => {
   const accordionData = [
     {
       question: 'What Is The Cost Of Tech Video Production?',
-      answer: "For our customers, we create meaningful and entertaining videos at Explain Art Animation. The entire video content is produced and tailored to our client's requirements. Our team excels at creating high-quality videos, whether you need a corporate video to boost your brand awareness or a product demo to promote your services.Our process entails a series of meticulous animation and development steps, from brainstorming various concepts to the final delivery.",
+      answer: "For our customers, we create meaningful and entertaining videos at Infinity Animations. The entire video content is produced and tailored to our client's requirements. Our team excels at creating high-quality videos, whether you need a corporate video to boost your brand awareness or a product demo to promote your services.Our process entails a series of meticulous animation and development steps, from brainstorming various concepts to the final delivery.",
       lists: lists,
     },
     {
-      question: 'What Is The Infinity Animations Pro’s Video Delivery Timeframe?',
+      question: 'What Is The Infinity Animations Video Delivery Timeframe?',
       answer: "Step into a realm of immersive storytelling with our cutting-edge 3D animations. Elevate your visual narratives, whether for product showcases, virtual tours, or cinematic experiences.",
     },
     {
-      question: 'What Kind Of Videos Infinity Animations Pro Provides With Tech Video Production Services?',
+      question: 'What Kind Of Videos Infinity Animations Provides With Tech Video Production Services?',
       answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
     },
     {

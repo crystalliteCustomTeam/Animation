@@ -8,14 +8,14 @@ import "./global.css";
 //===== Meta Data =====
 export const metadata = {
   //===== Title & Descriptions =====
-  title: "Your Vision Coupled with Creative Excellence",
-  description: "Explore our animation studio's diverse services, where creativity meets precision, bringing your ideas to life in captivating motion.",
+  title: "Video Animation - Infinity Animations",
+  description: "Video Animation Services, Explore a diverse range of professional animation services to captivate your audience and convey your message effectively. ",
   //===== Canonical =====
   alternates: { canonical: 'https://infinityanimations.com/' },
   //===== OG Metas =====
   openGraph: {
-    title: "Your Vision Coupled with Creative Excellence",
-    description: "Explore our animation studio's diverse services, where creativity meets precision, bringing your ideas to life in captivating motion.",
+    title: "Video Animation - Infinity Animations",
+    description: "Video Animation Services, Explore a diverse range of professional animation services to captivate your audience and convey your message effectively. ",
     url: 'https://infinityanimations.com/',
     siteName: 'Infinity Animations',
     locale: 'en_US',

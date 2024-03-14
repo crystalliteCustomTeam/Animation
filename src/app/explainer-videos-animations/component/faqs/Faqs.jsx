@@ -33,7 +33,7 @@ const Video = ({ content }) => {
                         <div className={styles.element}>
                             <h3 className={`fontsfpro mb-0 ${styles.heading}`}>FAQS</h3>
                             <p className={styles.wordsmost4}> For our customers, we
-                                create meaningful and entertaining videos at Explain Art Animation. The entire video content is
+                                create meaningful and entertaining videos at Infinity Animations . The entire video content is
                                 produced and tailored to our client's requirements. Our team excels at creating high-quality
                                 videos, whether you need a corporate video to boost your brand awareness or a product demo to
                                 promote your services.Our process entails a series of meticulous animation and development

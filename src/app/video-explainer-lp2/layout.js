@@ -10,7 +10,7 @@ export const metadata = {
         title: 'Creative and Affordable Explainer Video Animation Company in US | Infinity Animations ',
         description: 'Video Explainer',
         url: 'https://infinityanimationspro.com/video-explainer-lp2/',
-        siteName: 'Infinity Animations Pro',
+        siteName: 'Infinity Animations ',
         locale: 'en_US',
         type: 'website',
     },

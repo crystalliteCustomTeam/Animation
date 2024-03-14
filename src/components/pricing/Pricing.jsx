@@ -171,26 +171,13 @@ const Pricing = ({ content }) => {
                                                     <a href="javascript:$zopim.livechat.window.show();" className="font-sans text-[14px]">Live Chat Now</a>
                                                 </div>
                                             </div>
-                                            <div className="flex justify-between px-6 mt-5">
-                                                {/* {pkg.buttons.map((button, i) => (
-                                                    <>
-                                                        <a key={i} href={button.href} className={`flex items-center justify-between font-sans ${button.color} w-max py-2 px-3 xl:px-5 gap-2 rounded-lg`}>
-                                                            <span className="text-[14px] xl:text-[16px]">{button.text}</span>
-                                                            <Image src={button.image} className={`${button.imgColor} w-[30px]`} alt="Infinity Animation" />
-                                                        </a>
-
-                                                        <button onClick={popupHandle} className={`flex items-center justify-between font-sans ${button.color} w-max px-3 xl:px-5 gap-2 rounded-lg`}>
-                                                            <span className="text-[16px] xl:text-[18px] font-normal font-sans">{button.text}</span>
-                                                            <Image className={`${button.imgColor}`} src={button.image} alt="Infinity Animations Pro" />
-                                                        </button>
-                                                    </>
-                                                ))} */}
+                                            <div className="flex justify-between px-6 mt-5"> 
                                                 {pkg.buttons.map((button, i) => (
                                                     <>
                                                         {button.text === "Get Started" ? (
                                                             <button key={i} onClick={popupHandle} className={`flex items-center justify-between font-sans ${button.color} w-max px-3 xl:px-5 gap-2 rounded-lg py-[7px]`}>
                                                                 <span className="text-[16px] xl:text-[18px] font-normal font-sans">{button.text}</span>
-                                                                <Image className={`${button.imgColor}`} src={button.image} alt="Infinity Animations Pro" />
+                                                                <Image className={`${button.imgColor}`} src={button.image} alt="Infinity Animations " />
                                                             </button>
                                                         ) : (
                                                             <a key={i} href={button.href} className={`flex items-center justify-between font-sans ${button.color} w-max py-2 px-3 xl:px-5 gap-2 rounded-lg`}>

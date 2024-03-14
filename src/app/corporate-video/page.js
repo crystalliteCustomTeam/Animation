@@ -404,7 +404,7 @@ export default function Page() {
     const accordionData = [
         {
             question: 'What Is The Cost Of Tech Video Production?',
-            answer: "For our customers, we create meaningful and entertaining videos atInfinity Animations . The entire video content is produced and tailored to our client's requirements. Our team excels at creating high-quality videos, whether you need a corporate video to boost your brand awareness or a product demo to promote your services. Our process entails a series of meticulous animation and development steps, from brainstorming various concepts to the final delivery.",
+            answer: "For our customers, we create meaningful and entertaining videos at Infinity Animations  . The entire video content is produced and tailored to our client's requirements. Our team excels at creating high-quality videos, whether you need a corporate video to boost your brand awareness or a product demo to promote your services. Our process entails a series of meticulous animation and development steps, from brainstorming various concepts to the final delivery.",
         },
         {
             question: 'What Is The Infinity Animations Video Delivery Timeframe?',

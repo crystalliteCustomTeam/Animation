@@ -18,7 +18,7 @@ const CTA = ({ text, icon, bg, color, border, hover, href, iconCss }) => {
                 </a>`
             }} /> : <button onClick={popupHandle} className='bg-prime text-white border-0 h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
                 <span className="text-[16px] xl:text-[18px] font-normal font-sans">Get Started</span>
-                <Image className="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2 object-contain" src={arrowRed} alt="Infinity Animations Pro" />
+                <Image className="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2 object-contain" src={arrowRed} alt="Infinity Animations " />
             </button>}
         </>
     );
