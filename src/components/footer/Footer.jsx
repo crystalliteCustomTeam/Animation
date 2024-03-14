@@ -209,7 +209,7 @@ const Footer = () => {
                             </p>
                         </div>
                         <div className="basis-full sm:basis-1/2">
-                            <ul className="flex items-center justify-center sm:justify-end md:mr-[120px] gap-4">
+                            <ul className="flex items-center justify-center sm:justify-end md:mr-[120px] 3xl:mr-0 gap-4">
                                 {
                                     otherLinks.map((e, i) => {
                                         return (
