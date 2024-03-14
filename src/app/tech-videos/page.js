@@ -435,15 +435,19 @@ export default function Page() {
     const accordionData = [
         {
             question: 'What Is The Cost Of Tech Video Production?',
-            answer: "The cost for tech video production depends on how complicated your information to be converted into video is. Usually, the cost for a 2D animated video starts from $1000, and the same goes for technology videos. But the amount may vary on length and video style.",
+            answer: "For our customers, we create meaningful and entertaining videos atInfinity Animations . The entire video content is produced and tailored to our client's requirements. Our team excels at creating high-quality videos, whether you need a corporate video to boost your brand awareness or a product demo to promote your services. Our process entails a series of meticulous animation and development steps, from brainstorming various concepts to the final delivery.",
         },
         {
-            question: 'What Is The BuzzFlick’s Video Delivery Timeframe?',
+            question: 'What Is The Infinity Animations Video Delivery Timeframe?',
             answer: "Step into a realm of immersive storytelling with our cutting-edge 3D animations. Elevate your visual narratives, whether for product showcases, virtual tours, or cinematic experiences.",
         },
         {
-            question: 'What Kind Of Videos BuzzFlick Provides With Tech Video Production Services?',
+            question: 'What Kind Of Videos Infinity Animations Provides With Tech Video Production Services?',
             answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
+        },
+        {
+            question: 'Do I get Full Copyrights to the videos?',
+            answer: "Yes, You retain full copyrights to the videos you create. When we produce content, you automatically hold the copyright to that work, granting you exclusive rights to reproduce, distribute, perform, and display the work publicly.",
         }
     ];
 

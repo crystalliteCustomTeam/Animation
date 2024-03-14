@@ -1,10 +1,10 @@
 "use client"
+import { useState } from 'react';
 import Image from "next/image";
 // Import Components
 import styles from '@/app/explainer-videos-animations/component/faqs/faqs.module.css';
-import close from "../../../../../public/banner/close.png"
-import open from "../../../../../public/banner/open.png"
-import { useState } from 'react';
+import close from "media/banner/close.png"
+import open from "media/banner/open.png"
 
 const Video = ({ content }) => {
     const { accordionData1, accordionData2 } = content;
@@ -48,18 +48,14 @@ const Video = ({ content }) => {
                                 <div key={index} className={`py-1 ${activeIndex1 === index ? 'border-white' : ' border-white'} border-b-2`}>
                                     <div className={`flex space-x-3 items-center justify-between cursor-pointer p-[15px] rounded-[10px] h-[65px] bg-gradient-to-r from-[#000] to-[#596062] ${activeIndex1 === index ? '' : ''}`}
                                         onClick={() => handleClick1(index)}>
-                                        <h3 className={`text-[12px] w-[98%] pr-[20%] font-[600] capitalize montserrat`}>{item.question}</h3>
+                                        <h3 className={`text-[12px] w-[98%] pr-[20%] font-[600] capitalize montserrat text-white`}>{item.question}</h3>
                                         <span>{activeIndex1 === index ? <Image src={open} /> : <Image src={close} />}</span>
                                     </div>
                                     {activeIndex1 === index && (
                                         <div className='mt-2 pt-5 px-4 pb-5 bg-gradient-to-r from-[#d50d12] to-[#9c1418] rounded-[8px]'>
-                                            <ul className="list-disc pl-[20px]">
-                                                {item.lists.map((lisItems, index) => (
-                                                    <li key={index}>
-                                                        <div className={`block text-[14px] font-normal montserrat text-white pb-1`}>{lisItems}</div>
-                                                    </li>
-                                                ))}
-                                            </ul>
+                                            <p className={`text-[14px] list-disc montserrat text-white ${styles.ani}`}>
+                                                {item.ans}
+                                            </p>
                                         </div>
                                     )}
                                 </div>
@@ -70,18 +66,14 @@ const Video = ({ content }) => {
                                 <div key={index} className={`py-1 ${activeIndex2 === index ? 'border-white' : ' border-white'} border-b-2`}>
                                     <div className={`flex space-x-3 items-center justify-between cursor-pointer p-[15px] rounded-[10px] h-[65px] bg-gradient-to-r from-[#000] to-[#596062] ${activeIndex2 === index ? '' : ''}`}
                                         onClick={() => handleClick2(index)}>
-                                        <h3 className={`text-[12px] w-[98%] pr-[20%] font-[600] capitalize montserrat`}>{item.question}</h3>
+                                        <h3 className={`text-[12px] w-[98%] pr-[20%] font-[600] capitalize montserrat text-white`}>{item.question}</h3>
                                         <span>{activeIndex2 === index ? <Image src={open} /> : <Image src={close} />}</span>
                                     </div>
                                     {activeIndex2 === index && (
                                         <div className='mt-2 pt-5 px-4 pb-5 bg-gradient-to-r from-[#d50d12] to-[#9c1418] rounded-[8px]'>
-                                            <ul className="list-disc pl-[20px]">
-                                                {item.lists.map((lisItems, index) => (
-                                                    <li key={index}>
-                                                        <div className={`block text-[14px] font-normal montserrat text-white pb-1`}>{lisItems}</div>
-                                                    </li>
-                                                ))}
-                                            </ul>
+                                            <p className={`text-[14px] list-disc montserrat text-white ${styles.ani}`}>
+                                                {item.ans}
+                                            </p>
                                         </div>
                                     )}
                                 </div>

@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import usePopup from "@/app/configs/store/Popup";
 // Import Images
 import star from "media/icons/star.png"
 import chat from "media/icons/chat.png"
@@ -98,7 +99,6 @@ const packages = [
                 text: 'Get Started',
                 color: 'bg-prime text-white border-0',
                 image: arrow,
-                href: "tel:833-666-6689",
                 imgColor: "bg-white w-[25px] h-[25px] xl:w-[28px] xl:h-[28px] rounded-full p-2 ms-1"
             },
             {
@@ -113,6 +113,12 @@ const packages = [
 
 const Pricing = ({ content }) => {
     const { title, para } = content;
+
+    const { popup, togglePopup } = usePopup()
+    const popupHandle = () => {
+        togglePopup(popup)
+    }
+
     return (
         <>
             <section className={`w-full flex items-center justify-start py-16`}>
@@ -166,11 +172,33 @@ const Pricing = ({ content }) => {
                                                 </div>
                                             </div>
                                             <div className="flex justify-between px-6 mt-5">
+                                                {/* {pkg.buttons.map((button, i) => (
+                                                    <>
+                                                        <a key={i} href={button.href} className={`flex items-center justify-between font-sans ${button.color} w-max py-2 px-3 xl:px-5 gap-2 rounded-lg`}>
+                                                            <span className="text-[14px] xl:text-[16px]">{button.text}</span>
+                                                            <Image src={button.image} className={`${button.imgColor} w-[30px]`} alt="Infinity Animation" />
+                                                        </a>
+
+                                                        <button onClick={popupHandle} className={`flex items-center justify-between font-sans ${button.color} w-max px-3 xl:px-5 gap-2 rounded-lg`}>
+                                                            <span className="text-[16px] xl:text-[18px] font-normal font-sans">{button.text}</span>
+                                                            <Image className={`${button.imgColor}`} src={button.image} alt="Infinity Animations Pro" />
+                                                        </button>
+                                                    </>
+                                                ))} */}
                                                 {pkg.buttons.map((button, i) => (
-                                                    <a key={i} href={button.href} className={`flex items-center justify-between font-sans ${button.color} w-max py-2 px-3 xl:px-5 gap-2 rounded-lg`}>
-                                                        <span className="text-[14px] xl:text-[16px]">{button.text}</span>
-                                                        <Image src={button.image} className={`${button.imgColor} ${button.text === 'Get Started' ? '' : button.text === 'Live Chat' ? 'w-[30px]' : ''}`} alt="Infinity Animation" />
-                                                    </a>
+                                                    <>
+                                                        {button.text === "Get Started" ? (
+                                                            <button key={i} onClick={popupHandle} className={`flex items-center justify-between font-sans ${button.color} w-max px-3 xl:px-5 gap-2 rounded-lg py-[7px]`}>
+                                                                <span className="text-[16px] xl:text-[18px] font-normal font-sans">{button.text}</span>
+                                                                <Image className={`${button.imgColor}`} src={button.image} alt="Infinity Animations Pro" />
+                                                            </button>
+                                                        ) : (
+                                                            <a key={i} href={button.href} className={`flex items-center justify-between font-sans ${button.color} w-max py-2 px-3 xl:px-5 gap-2 rounded-lg`}>
+                                                                <span className="text-[14px] xl:text-[16px]">{button.text}</span>
+                                                                <Image src={button.image} className={`${button.imgColor} w-[30px]`} alt="Infinity Animation" />
+                                                            </a>
+                                                        )}
+                                                    </>
                                                 ))}
                                             </div>
                                         </div>

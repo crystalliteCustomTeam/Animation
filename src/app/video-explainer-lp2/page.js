@@ -52,9 +52,9 @@ const Video = () => {
       answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
     },
     {
-      question: 'What Kind Of Videos Infinity Animations Pro Provides With Tech Video Production Services?',
-      answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
-    }
+      question: 'Do I get Full Copyrights to the videos?',
+      answer: "Yes, You retain full copyrights to the videos you create. When we produce content, you automatically hold the copyright to that work, granting you exclusive rights to reproduce, distribute, perform, and display the work publicly.",
+    },
   ];
   const faqs = {
     accordionData: accordionData,

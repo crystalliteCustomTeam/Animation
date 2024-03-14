@@ -7,24 +7,25 @@ import React, { useEffect, useState } from 'react'
 // Import Images
 import facebook from "media/icons/fb.png";
 import twitter from "media/icons/x.png";
+import youtube from "media/icons/youtube.png";
 import instagram from "media/icons/insta.png";
 import linkedin from "media/icons/linkedin.png";
 const socialLinks = [
     {
         icon: facebook,
-        link: "https://www.facebook.com/"
+        link: "https://www.facebook.com/infinityanimationsofficial"
     },
     {
         icon: twitter,
-        link: "https://twitter.com/_"
+        link: "https://twitter.com/infinityan_/"
     },
     {
         icon: instagram,
-        link: "https://www.instagram.com/"
+        link: "https://www.instagram.com/infinityanimationsofficials/"
     },
     {
         icon: linkedin,
-        link: "https://www.linkedin.com/"
+        link: "https://www.linkedin.com/company/infinity-animations/"
     },
 ]
 const Form = () => {

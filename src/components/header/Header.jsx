@@ -234,7 +234,7 @@ const Header = () => {
     }, []);
 
     return (
-        <header className="w-full absolute top-0 left-0 z-[9999] rounded-none bg-transparent">
+        <header className="w-full absolute top-0 left-0 z-[999] rounded-none bg-transparent">
             <div className="container">
                 <Navbar className="max-w-none px-0 py-2 rounded-none bg-transparent shadow-none backdrop-saturate-100 backdrop-blur-none border-none">
                     <div className="flex items-center justify-between text-white relative">

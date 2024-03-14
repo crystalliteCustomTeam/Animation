@@ -199,33 +199,24 @@ export default function Page() {
     };
 
     //===== FAQS =====//
-    const lists = [
-        "Understanding your business and marketing objectives",
-        "Story and script development",
-        "Storyboard",
-        "Voiceover",
-        "Illustration",
-        "Animation",
-        "Delivery/publication",
-    ]
     const accordionData1 = [
         {
-            question: 'How Many People Will Work On My Video?',
-            lists: lists,
+            question: 'What Is The Cost Of Tech Video Production?',
+            ans: "For our customers, we create meaningful and entertaining videos atInfinity Animations . The entire video content is produced and tailored to our client's requirements. Our team excels at creating high-quality videos, whether you need a corporate video to boost your brand awareness or a product demo to promote your services. Our process entails a series of meticulous animation and development steps, from brainstorming various concepts to the final delivery.",
         }
     ];
     const accordionData2 = [
         {
-            question: 'How Many People Will Work On My Video?',
-            lists: lists,
+            question: "What Is The Infinity Animations Pro's Video Delivery Timeframe?",
+            ans: "Step into a realm of immersive storytelling with our cutting-edge 3D animations. Elevate your visual narratives, whether for product showcases, virtual tours, or cinematic experiences.",
         },
         {
-            question: 'Do I Get Full Copyrights To The Video?',
-            lists: lists,
+            question: 'What Kind Of Videos Infinity Animations Pro Provides With Tech Video Production Services?',
+            ans: "Simplify the complex and engage your audience with our dynamic animation services like 2D Animations, 3D Animations, Whiteboard Animations, etc. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
         },
         {
-            question: 'Do You Produce All Types Of Animation Videos And Provide Video Concept Too, If I Have No Concept Idea?',
-            lists: lists,
+            question: 'Do I get Full Copyrights to the videos?',
+            ans: "Yes, You retain full copyrights to the videos you create. When we produce content, you automatically hold the copyright to that work, granting you exclusive rights to reproduce, distribute, perform, and display the work publicly.",
         }
     ];
     const faqs = {

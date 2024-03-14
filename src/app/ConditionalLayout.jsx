@@ -6,6 +6,7 @@ import { PopupProvider } from "./configs/store/Popup"
 import Footer from "@/components/footer/Footer"
 import Header from "@/components/header/Header"
 import Loader from "@/components/loader/Loader"
+import Popup from "@/components/popup/Popup"
 
 const ConditionalLayout = ({ children }) => {
     //=============== Loader ===============//
@@ -32,6 +33,7 @@ const ConditionalLayout = ({ children }) => {
     }
     return (
         <PopupProvider value={{ popup, togglePopup }}>
+            <Popup />
             {imagesLoaded ?
                 <>
                     {pathname !== "/video-explainer-lp" &&

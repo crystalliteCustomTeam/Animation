@@ -1,9 +1,9 @@
 // Import Page Components
 import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
-import Looking from '@/components/looking/Looking'; 
+import Looking from '@/components/looking/Looking';
 import Company from '@/components/company/Company';
-import Portfolio from '@/components/portfolio/Portfolio'; 
+import Portfolio from '@/components/portfolio/Portfolio';
 import Tech from "@/components/tech-type/Tech";
 import Production from "@/components/productionprocess/Production";
 import Brand from "@/components/branding/Brand";
@@ -18,7 +18,7 @@ import BoostFlodImg from "media/corporate-video/company-Image.png";
 //===== Tech Type Images
 import TechImage1 from "media/tech-type/techtype4.png"
 import TechImage2 from "media/tech-type/techtype5.png"
-import TechImage3 from "media/tech-type/techtype6.png"  
+import TechImage3 from "media/tech-type/techtype6.png"
 //==== Testimonial Images
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
@@ -120,7 +120,7 @@ export default function Page() {
         { label: "3D Modeling", index: 8 },
         { label: "Music Video", index: 9 },
     ];
-        const tabContents = [
+    const tabContents = [
         [
             {
                 video: "https://player.vimeo.com/progressive_redirect/playback/907828567/rendition/1080p/file.mp4?loc=external&signature=2cb0c1bd0ce7278cfcc88931f949d2a4df4a28555c8e3a5dd73de49eeb9934e9",
@@ -404,15 +404,19 @@ export default function Page() {
     const accordionData = [
         {
             question: 'What Is The Cost Of Tech Video Production?',
-            answer: "The cost for tech video production depends on how complicated your information to be converted into video is. Usually, the cost for a 2D animated video starts from $1000, and the same goes for technology videos. But the amount may vary on length and video style.",
+            answer: "For our customers, we create meaningful and entertaining videos atInfinity Animations . The entire video content is produced and tailored to our client's requirements. Our team excels at creating high-quality videos, whether you need a corporate video to boost your brand awareness or a product demo to promote your services. Our process entails a series of meticulous animation and development steps, from brainstorming various concepts to the final delivery.",
         },
         {
-            question: 'What Is The BuzzFlick’s Video Delivery Timeframe?',
+            question: 'What Is The Infinity Animations Video Delivery Timeframe?',
             answer: "Step into a realm of immersive storytelling with our cutting-edge 3D animations. Elevate your visual narratives, whether for product showcases, virtual tours, or cinematic experiences.",
         },
         {
-            question: 'What Kind Of Videos BuzzFlick Provides With Tech Video Production Services?',
+            question: 'What Kind Of Videos Infinity Animations Provides With Tech Video Production Services?',
             answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
+        },
+        {
+            question: 'Do I get Full Copyrights to the videos?',
+            answer: "Yes, You retain full copyrights to the videos you create. When we produce content, you automatically hold the copyright to that work, granting you exclusive rights to reproduce, distribute, perform, and display the work publicly.",
         }
     ];
 

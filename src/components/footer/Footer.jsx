@@ -9,8 +9,10 @@ import telephone from "media/icons/call.png";
 import envelope from "media/icons/email.png";
 import facebook from "media/icons/fb.png";
 import twitter from "media/icons/x.png";
+import youtube from "media/icons/youtube.png";
 import instagram from "media/icons/insta.png";
 import linkedin from "media/icons/linkedin.png";
+import vimeo from "media/icons/vemio.png";
 
 const Footer = () => {
     const quickLinks = [
@@ -78,6 +80,12 @@ const Footer = () => {
             icon: mapmarker,
             target: "_blank"
         },
+        {
+            text: "1024 Iron Point Rd, Folsom, CA 95630",
+            link: "https://maps.app.goo.gl/Z6w915ucDqRCyrVa8",
+            icon: mapmarker,
+            target: "_blank"
+        },
     ];
     const otherLinks = [
         {
@@ -92,19 +100,27 @@ const Footer = () => {
     const socialLinks = [
         {
             icon: facebook,
-            link: "https://www.facebook.com/"
+            link: "https://www.facebook.com/infinityanimationsofficial"
         },
         {
             icon: twitter,
-            link: "https://twitter.com/_"
+            link: "https://twitter.com/infinityan_/"
         },
         {
             icon: instagram,
-            link: "https://www.instagram.com/"
+            link: "https://www.instagram.com/infinityanimationsofficials"
         },
         {
             icon: linkedin,
-            link: "https://www.linkedin.com/"
+            link: "https://www.linkedin.com/company/infinity-animations/"
+        },
+        {
+            icon: youtube,
+            link: "https://www.youtube.com/@Infinity-Animations"
+        },
+        {
+            icon: vimeo,
+            link: "https://www.vimeo.com/infinityanimations"
         },
     ]
 
@@ -170,7 +186,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div>
-                                <ul className="flex items-center gap-4 mt-4 md:mt-0">
+                                <ul className="flex items-center gap-4 mt-4 md:mt-6">
                                     {
                                         socialLinks.map((e, i) => {
                                             return (
