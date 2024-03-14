@@ -82,7 +82,7 @@ const Footer = () => {
         },
         {
             text: "1024 Iron Point Rd, Folsom, CA 95630",
-            link: "https://maps.app.goo.gl/Z6w915ucDqRCyrVa8",
+            link: "https://maps.app.goo.gl/QYDv6abiPbW5rRoK6",
             icon: mapmarker,
             target: "_blank"
         },
