@@ -27,8 +27,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Schemas />
       <Scripts />
+      <Schemas />
       <body className={`${primary.variable}`}>
         <ConditionalLayout>
           <main>{children}</main>

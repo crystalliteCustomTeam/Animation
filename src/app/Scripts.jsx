@@ -37,7 +37,7 @@ const Scripts = () => {
             document.head.appendChild(gtmConfigScript);
             //======== Meta Pixel Code ========//
             const MetaPixelCode = document.createElement("script");
-            MetaPixelCode.id = "google-tag-manager-one";
+            MetaPixelCode.id = "meta-pixel";
             MetaPixelCode.text = `
                 !function(f,b,e,v,n,t,s)
                 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?

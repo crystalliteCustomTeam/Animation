@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 // Import Images
-import logo from "media/images/logo.png";
+import logo from "media/images/logo.gif";
 import mapmarker from "media/icons/map.png";
 import telephone from "media/icons/call.png";
 import envelope from "media/icons/email.png";
@@ -90,7 +90,7 @@ const Footer = () => {
     const otherLinks = [
         {
             text: "Terms of Services",
-            link: "/terms-co",
+            link: "/terms-and-conditions",
         },
         {
             text: "Privacy Policy",
