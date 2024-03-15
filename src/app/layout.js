@@ -9,7 +9,7 @@ import "./global.css";
 //===== Meta Data =====
 export const metadata = {
   //===== Title & Descriptions =====
-  title: "Video Animation - Infinity Animations",
+  title: "Video Animation Company - Infinity Animations",
   description: "Video Animation Services, Explore a diverse range of professional animation services to captivate your audience and convey your message effectively. ",
   //===== Google Varification =====
   verification: {
@@ -39,7 +39,7 @@ export const metadata = {
   },
   //===== OG Tags =====
   openGraph: {
-    title: "Video Animation - Infinity Animations",
+    title: "Video Animation Company - Infinity Animations",
     description: "Video Animation Services, Explore a diverse range of professional animation services to captivate your audience and convey your message effectively. ",
     url: 'https://infinityanimations.com/',
     siteName: 'Infinity Animations',
