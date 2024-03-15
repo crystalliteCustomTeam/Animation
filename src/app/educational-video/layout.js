@@ -4,12 +4,12 @@ export const metadata = {
     title: "Educational Videos | Infinity Animations",
     description: "Educational Videos | Infinity Animations",
     // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/educational-video/' },
+    alternates: { canonical: '/educational-video/' },
     // OG Metas
     openGraph: {
         title: 'Educational Videos | Infinity Animations',
         description: 'Educational Videos | Infinity Animations',
-        url: 'https://infinityanimations.com/educational-video/',
+        url: '/educational-video/',
      siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',

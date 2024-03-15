@@ -4,12 +4,12 @@ export const metadata = {
     title: "Tech Videos | Infinity Animations",
     description: "Tech Videos | Infinity Animations",
     // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/tech-videos/' },
+    alternates: { canonical: '/tech-videos/' },
     // OG Metas
     openGraph: {
         title: 'Tech Videos | Infinity Animations',
         description: 'Tech Videos | Infinity Animations',
-        url: 'https://infinityanimations.com/tech-videos/',
+        url: '/tech-videos/',
         siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',

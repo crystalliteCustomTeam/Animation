@@ -4,12 +4,12 @@ export const metadata = {
     title: "Crafting Visual Masterpieces with Our Video Editing Services ",
     description: "Our skilled editors breathe life into every frame, creating a seamless narrative. Transform your raw footage into thrilling stories with our Video Editing Services.",
     // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/video-editing/' },
+    alternates: { canonical: '/video-editing/' },
     // OG Metas
     openGraph: {
         title: 'Crafting Visual Masterpieces with Our Video Editing Services ',
         description: 'Our skilled editors breathe life into every frame, creating a seamless narrative. Transform your raw footage into thrilling stories with our Video Editing Services.',
-        url: 'https://infinityanimations.com/video-editing/',
+        url: '/video-editing/',
      siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',

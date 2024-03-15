@@ -4,12 +4,12 @@ export const metadata = {
     title: "Explore Unrivaled CGI and VFX Animation Services - Realities That Resonate",
     description: "Immerse audiences in a world where every frame is a masterpiece, and every project a triumph. Dive into a world of boundless possibilities with our CGI and VFX Animation Services.",
     // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/cgi-and-vfx/' },
+    alternates: { canonical: '/cgi-and-vfx/' },
     // OG Metas
     openGraph: {
         title: "Explore Unrivaled CGI and VFX Animation Services - Realities That Resonate",
         description: "Immerse audiences in a world where every frame is a masterpiece, and every project a triumph. Dive into a world of boundless possibilities with our CGI and VFX Animation Services.",
-        url: 'https://infinityanimations.com/cgi-and-vfx/',
+        url: '/cgi-and-vfx/',
      siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',

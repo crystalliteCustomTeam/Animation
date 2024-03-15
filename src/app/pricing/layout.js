@@ -4,12 +4,12 @@ export const metadata = {
     title: "Transparent Animation Solutions | Discover Our Pricing Plans",
     description: "Explore our straightforward pricing page to find the perfect animation solution for your needs. Our transparent pricing ensures clarity and flexibility.",
     // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/pricing/' },
+    alternates: { canonical: '/pricing/' },
     // OG Metas
     openGraph: {
         title: 'Transparent Animation Solutions | Discover Our Pricing Plans',
         description: 'Explore our straightforward pricing page to find the perfect animation solution for your needs. Our transparent pricing ensures clarity and flexibility.',
-        url: 'https://infinityanimations.com/pricing/',
+        url: '/pricing/',
      siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
