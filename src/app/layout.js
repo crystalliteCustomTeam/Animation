@@ -2,6 +2,7 @@
 import { primary } from "./configs/fonts";
 //===== Import Components =====
 import Scripts from "./Scripts";
+import Schemas from "./Schemas";
 import ConditionalLayout from "./ConditionalLayout";
 //===== Import Css =====
 import "./global.css";
@@ -17,7 +18,7 @@ export const metadata = {
     },
   },
   //===== Canonical =====
-  alternates: { canonical: '/' },
+  alternates: { canonical: 'https://infinityanimations.com/' },
   //===== GEO Tags =====
   other: {
     "DC.title": "Video Animation - Infinity Animations",
@@ -40,7 +41,7 @@ export const metadata = {
   openGraph: {
     title: "Video Animation - Infinity Animations",
     description: "Video Animation Services, Explore a diverse range of professional animation services to captivate your audience and convey your message effectively. ",
-    url: '/',
+    url: 'https://infinityanimations.com/',
     siteName: 'Infinity Animations',
     locale: 'en_US',
     type: 'website',
@@ -51,6 +52,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Scripts />
+      <Schemas />
       <body className={`${primary.variable}`}>
         <ConditionalLayout>
           <main>{children}</main>

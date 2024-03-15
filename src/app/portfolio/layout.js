@@ -4,12 +4,12 @@ export const metadata = {
     title: "Journey Through Excellence | Explore Our Diverse Animation Portfolio",
     description: "Explore the magic that unfolds when imagination meets expertise, and witness how each project tells a unique story in the language of visual brilliance.",
     // Canonical
-    alternates: { canonical: '/portfolio/' },
+    alternates: { canonical: 'https://infinityanimations.com/portfolio/' },
     // OG Metas
     openGraph: {
         title: 'Journey Through Excellence | Explore Our Diverse Animation Portfolio',
         description: 'Explore the magic that unfolds when imagination meets expertise, and witness how each project tells a unique story in the language of visual brilliance.',
-        url: '/portfolio/',
+        url: 'https://infinityanimations.com/portfolio/',
      siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',

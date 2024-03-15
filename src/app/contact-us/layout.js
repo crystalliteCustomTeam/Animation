@@ -4,12 +4,12 @@ export const metadata = {
     title: "Contact Us | Infinity Animations",
     description: "Ready to turn your ideas into reality? Reach out!",
     // Canonical
-    alternates: { canonical: '/contact-us/' },
+    alternates: { canonical: 'https://infinityanimations.com/contact-us/' },
     // OG Metas
     openGraph: {
         title: 'Contact Us | Infinity Animations',
         description: 'Ready to turn your ideas into reality? Reach out!',
-        url: '/contact-us/',
+        url: 'https://infinityanimations.com/contact-us/',
      siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',

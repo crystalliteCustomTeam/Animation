@@ -4,12 +4,12 @@ export const metadata = {
     title: "Explore Our Blog for Insights, Trends, and Creative Inspiration",
     description: "From impactful storytelling to technical mastery, our blog is your gateway to the art and innovation of video animation services.",
     // Canonical
-    alternates: { canonical: '/blog/' },
+    alternates: { canonical: 'https://infinityanimations.com/blog/' },
     // OG Metas
     openGraph: {
         title: 'Explore Our Blog for Insights, Trends, and Creative Inspiration',
         description: 'From impactful storytelling to technical mastery, our blog is your gateway to the art and innovation of video animation services.',
-        url: '/blog/',
+        url: 'https://infinityanimations.com/blog/',
      siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',

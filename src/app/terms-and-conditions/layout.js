@@ -4,12 +4,12 @@ export const metadata = {
     title: "Terms And Conditions | Infinity Animations",
     description: "Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame. ",
     // Canonical
-    alternates: { canonical: '/terms-and-conditions/' },
+    alternates: { canonical: 'https://infinityanimations.com/terms-and-conditions/' },
     // OG Metas
     openGraph: {
         title: 'Terms And Conditions | Infinity Animations',
         description: 'Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame. ',
-        url: '/terms-and-conditions/',
+        url: 'https://infinityanimations.com/terms-and-conditions/',
         siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
