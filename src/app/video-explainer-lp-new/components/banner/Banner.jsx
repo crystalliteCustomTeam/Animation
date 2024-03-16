@@ -134,7 +134,7 @@ const Banner = () => {
 
     return (
         <>
-            <section className='bg-cover bg-right bg-primary-100/60 lg:bg-[url("../../public/video-explainer2/banner.png")] h-[100%] pt-[180px] lg:pt-[190px] pb-[60px] md:pb-[100px] mt-[-85px] xl:mt-[-75px]'>
+            <section className='bg-cover bg-right bg-primary-100/60 lg:bg-[url("../../public/video-explainer2/banner.png")] h-[100%] pt-[180px] lg:pt-[190px] pb-[60px] md:pb-[100px] mt-[-85px]'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-y-12">
                         <div className="col-span-12 lg:col-span-6">

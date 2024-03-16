@@ -19,14 +19,13 @@ const ExplainerType = () => {
     // Slider Setting
     const testiSlider = {
         dots: false,
-        arrows: true,
+        arrows: false,
         infinite: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 5000,
         speed: 3000,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        // adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 600,
