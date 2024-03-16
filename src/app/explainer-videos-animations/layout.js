@@ -1,16 +1,16 @@
 // Meta Data
 export const metadata = {
     // Title & Descriptions
-    title: "Creative and Affordable Explainer Video Animation Company in US | Infinity Animations ",
+    title: "Explainer Videos Animations",
     description: "Explainer Videos Animations",
     // Canonical
     alternates: { canonical: 'https://infinityanimationspro.com/explainer-videos-animations/' },
     // OG Metas
     openGraph: {
-        title: 'Creative and Affordable Explainer Video Animation Company in US | Infinity Animations ',
+        title: 'Explainer Videos Animations',
         description: 'Explainer Videos Animations',
         url: 'https://infinityanimationspro.com/explainer-videos-animations/',
-        siteName: 'Infinity Animations',
+         siteName: 'Infinity Animations Pro',
         locale: 'en_US',
         type: 'website',
     },

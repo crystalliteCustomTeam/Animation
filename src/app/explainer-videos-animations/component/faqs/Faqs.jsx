@@ -1,10 +1,10 @@
 "use client"
-import { useState } from 'react';
 import Image from "next/image";
 // Import Components
 import styles from '@/app/explainer-videos-animations/component/faqs/faqs.module.css';
 import close from "media/banner/close.png"
 import open from "media/banner/open.png"
+import { useState } from 'react';
 
 const Video = ({ content }) => {
     const { accordionData1, accordionData2 } = content;
@@ -33,7 +33,7 @@ const Video = ({ content }) => {
                         <div className={styles.element}>
                             <h3 className={`fontsfpro mb-0 ${styles.heading}`}>FAQS</h3>
                             <p className={styles.wordsmost4}> For our customers, we
-                                create meaningful and entertaining videos at Infinity Animations . The entire video content is
+                                create meaningful and entertaining videos at Explain Art Animation. The entire video content is
                                 produced and tailored to our client's requirements. Our team excels at creating high-quality
                                 videos, whether you need a corporate video to boost your brand awareness or a product demo to
                                 promote your services.Our process entails a series of meticulous animation and development

@@ -15,7 +15,6 @@ const Work = React.lazy(() => import('@/app/explainer-videos-animations/componen
 const Streamlined = React.lazy(() => import('@/app/explainer-videos-animations/component/streamlined/Streamlined'));
 const Faqs = React.lazy(() => import('@/app/explainer-videos-animations/component/faqs/Faqs'));
 const Thinking = React.lazy(() => import('@/app/explainer-videos-animations/component/thinking/Thinking'));
-const Popup = React.lazy(() => import('../video-explainer-lp/components/popup/Popup'));
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.jpg";
 import Thumnail2 from "media/thumbnails/2d-animation/2.jpg";
@@ -202,16 +201,16 @@ export default function Page() {
     const accordionData1 = [
         {
             question: 'What Is The Cost Of Tech Video Production?',
-            ans: "For our customers, we create meaningful and entertaining videos at Infinity Animations. The entire video content is produced and tailored to our client's requirements. Our team excels at creating high-quality videos, whether you need a corporate video to boost your brand awareness or a product demo to promote your services. Our process entails a series of meticulous animation and development steps, from brainstorming various concepts to the final delivery.",
+            ans: "For our customers, we create meaningful and entertaining videos at Infinity Animations Pro. The entire video content is produced and tailored to our client's requirements. Our team excels at creating high-quality videos, whether you need a corporate video to boost your brand awareness or a product demo to promote your services. Our process entails a series of meticulous animation and development steps, from brainstorming various concepts to the final delivery.",
         }
     ];
     const accordionData2 = [
         {
-            question: "What Is The Infinity Animations Video Delivery Timeframe?",
+            question: "What Is The Infinity Animations Pro's Video Delivery Timeframe?",
             ans: "Step into a realm of immersive storytelling with our cutting-edge 3D animations. Elevate your visual narratives, whether for product showcases, virtual tours, or cinematic experiences.",
         },
         {
-            question: 'What Kind Of Videos Infinity Animations Provides With Tech Video Production Services?',
+            question: 'What Kind Of Videos Infinity Animations Pro Provides With Tech Video Production Services?',
             ans: "Simplify the complex and engage your audience with our dynamic animation services like 2D Animations, 3D Animations, Whiteboard Animations, etc. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
         },
         {
@@ -226,7 +225,6 @@ export default function Page() {
 
     return (
         <>
-            <Popup />
             <Header />
             <Banner />
             <Logo />

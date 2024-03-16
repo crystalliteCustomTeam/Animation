@@ -3,11 +3,11 @@ import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Components
 import styles from '@/app/explainer-videos-animations/component/packages/packages.module.css';
-import livechat from "../../../../../public/banner/livechat.png"
-import check from "../../../../../public/banner/check.png"
-import checkw from "../../../../../public/banner/checkw.png"
-import star from "../../../../../public/banner/star.png"
-import livechat2 from "../../../../../public/banner/livechat2.png"
+import livechat from "media/banner/livechat.png"
+import check from "media/banner/check.png"
+import checkw from "media/banner/checkw.png"
+import star from "media/banner/star.png"
+import livechat2 from "media/banner/livechat2.png"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -90,7 +90,7 @@ const Video = () => {
                                     <Image src={star} class="img-fluid" alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Startup Package</h3>
-                                <h4 className={styles.price}>$195</h4>
+                                <h4 className={styles.price}>$499</h4>
                                 <ul className={styles.priceList}>
                                     <li> <Image src={check} alt="Infinity" /> 60 Seconds Duration</li>
                                     <li> <Image src={check} alt="Infinity" /> Script Writing</li>
@@ -124,7 +124,7 @@ const Video = () => {
                                     <Image src={star} class="img-fluid" alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Classic Package</h3>
-                                <h4 className={styles.price}>$499</h4>
+                                <h4 className={styles.price}>$799</h4>
                                 <ul className={styles.priceList}>
                                     <li> <Image src={checkw} alt="Infinity" /> 60 Seconds Duration</li>
                                     <li> <Image src={checkw} alt="Infinity" /> Script Writing</li>
@@ -159,7 +159,7 @@ const Video = () => {
                                     <Image src={star} class="img-fluid" alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Premium Package</h3>
-                                <h4 className={styles.price}>$799</h4>
+                                <h4 className={styles.price}>$999</h4>
                                 <ul className={styles.priceList}>
                                     <li> <Image src={check} alt="Infinity" /> 60 Seconds Duration</li>
                                     <li> <Image src={check} alt="Infinity" /> Script Writing</li>
@@ -197,7 +197,7 @@ const Video = () => {
                                     <Image src={star} class="img-fluid" alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Startup Package</h3>
-                                <h4 className={styles.price}>$195</h4>
+                                <h4 className={styles.price}>$499</h4>
                                 <ul className={styles.priceList}>
                                     <li> <Image src={check} alt="Infinity" /> 60 Seconds Duration</li>
                                     <li> <Image src={check} alt="Infinity" /> Script Writing</li>
@@ -231,7 +231,7 @@ const Video = () => {
                                     <Image src={star} class="img-fluid" alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Classic Package</h3>
-                                <h4 className={styles.price}>$499</h4>
+                                <h4 className={styles.price}>$799</h4>
                                 <ul className={styles.priceList}>
                                     <li> <Image src={checkw} alt="Infinity" /> 60 Seconds Duration</li>
                                     <li> <Image src={checkw} alt="Infinity" /> Script Writing</li>
@@ -266,7 +266,7 @@ const Video = () => {
                                     <Image src={star} class="img-fluid" alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Premium Package</h3>
-                                <h4 className={styles.price}>$799</h4>
+                                <h4 className={styles.price}>$999</h4>
                                 <ul className={styles.priceList}>
                                     <li> <Image src={check} alt="Infinity" /> 60 Seconds Duration</li>
                                     <li> <Image src={check} alt="Infinity" /> Script Writing</li>

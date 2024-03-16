@@ -1,5 +1,5 @@
 "use client"
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 // Import Components
@@ -225,6 +225,7 @@ function NavList() {
 
 const Header = () => {
     const [openNav, setOpenNav] = React.useState(false);
+    const [isFixed, setIsFixed] = useState(true);
 
     React.useEffect(() => {
         window.addEventListener(
@@ -232,11 +233,32 @@ const Header = () => {
             () => window.innerWidth >= 960 && setOpenNav(false),
         );
     }, []);
+    const [headercolor, setHeadercolor] = useState("bg-transparent");
+    const [headerPad, setHeaderPad] = useState("py-3");
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            const scrollThreshold = 100; // Adjust this value according to your design
+            if (currentScrollY > scrollThreshold) {
+                setHeadercolor("bg-black shadow-[#f50b0dad] shadow-xl");
+                setHeaderPad("py-3");
+            } else {
+                setHeadercolor("bg-transparent");
+                setHeaderPad("py-3");
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        // Cleanup event listener on component unmount
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+    const fixedClass = isFixed ? `fixed top-0 lg:absolute top-0 lg:left-0 lg:bg-transparent ${headerPad}` : 'top-[20px]';
 
     return (
-        <header className="w-full absolute top-0 left-0 z-[999] rounded-none bg-transparent">
+        <header className={`w-full z-[999] rounded-none ${headercolor} ${fixedClass}`}>
             <div className="container">
-                <Navbar className="max-w-none px-0 py-2 rounded-none bg-transparent shadow-none backdrop-saturate-100 backdrop-blur-none border-none">
+                <Navbar className="max-w-none shadow-none px-0 py-2 rounded-none bg-transparent border-none">
                     <div className="flex items-center justify-between text-white relative">
                         <Typography
 
@@ -244,7 +266,7 @@ const Header = () => {
                             variant="h6"
                             className="mr-4 cursor-pointer py-1.5 lg:ml-2 lg:w-[315px]"
                         >
-                            <Image src={logo} className="w-[45%] xl:w-[60%]" alt="Infinity Animation" />
+                            <Image src={logo} className="w-[45%] md:w-[28%] lg:w-[50%]" alt="Infinity Animation" />
                         </Typography>
                         <div className="hidden lg:flex gap-5">
                             <NavList />

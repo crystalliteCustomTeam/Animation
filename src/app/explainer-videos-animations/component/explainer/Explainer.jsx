@@ -3,8 +3,8 @@ import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Components
 import styles from '@/app/explainer-videos-animations/component/explainer/explainer.module.css';
-import icon1 from "../../../../../public/banner/display2.jpg"
-import lang from "../../../../../public/banner/lang.png"
+import icon1 from "media/banner/display2.jpg"
+import lang from "media/banner/lang.png"
 import usePopup from "@/app/configs/store/Popup";
 
 const Video = () => {

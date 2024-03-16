@@ -196,7 +196,7 @@ const Contact = () => {
                                     </li>
                                     <li className='py-[10px]'>
                                         <a href="https://infinityanimationspro.com" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
-                                            <Globe className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimations.com
+                                            <Globe className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimationspro.com
                                         </a>
                                     </li>
                                 </ul>
@@ -208,7 +208,7 @@ const Contact = () => {
             </section>
             <div className="copyright py-[20px]">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto relative">
-                    <p className='text-[14px] pb-[12px] text-[#333] montserrat text-center'>Copyright © 2024, Infinity Animations All Rights Reserved</p>
+                    <p className='text-[14px] pb-[12px] text-[#333] montserrat text-center'>© 2024 - All Rights Reserved <Link target="_blank" className="no-underline" href="https://bhaooinc.com/">Bhaoo INC</Link></p>
                     <div className="top-icon absolute right-0 top-[-40px]">
                         <Link href="#" className='bg-[#18d689] w-[80px] h-[80px] text-center text-white font-[500] uppercase rounded-[60%] align-middle border-[5px] border-white absolute right-0 lg:flex flex-col justify-center items-center md:block hidden'>
                             <Image src={UpArrow} alt='upArrow' className='mx-auto' />

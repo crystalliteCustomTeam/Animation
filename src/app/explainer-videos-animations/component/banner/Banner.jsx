@@ -1,12 +1,9 @@
 "use client"
 import Image from "next/image";
-
 // Import Components
-
 import Axios from "axios";
 import styles from '@/app/explainer-videos-animations/component/banner/banner.module.css';
 import icon1 from "media/banner/cut.png"
-
 import icon2 from "media/banner/call.png"
 import icon3 from "media/banner/bnr-logo.png"
 import icon4 from "media/banner/off.png"
@@ -14,18 +11,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import { register } from "swiper/element/bundle";
-// import SwiperCore, { Navigation, Autoplay } from 'swiper/core';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import SwiperCore, { Navigation, Autoplay } from 'swiper/core';
 import React, { useEffect, useRef, useState } from 'react';
-// SwiperCore.use([Navigation, Autoplay]);
+SwiperCore.use([Navigation, Autoplay]);
 import { usePathname } from 'next/navigation'
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
 // icons
 import PlayIcon from "media/icons/video-icon.png"
 import usePopup from "@/app/configs/store/Popup";
@@ -221,19 +210,15 @@ const Banner = () => {
                 </div>
                 <Image src={icon3} className={styles.newtoen} alt="" />
               </div>
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} className="pt-4">
                 <div className={styles.animationidea}>
                   <h3>Share Your Animation Idea</h3>
                   <div className={styles.form2}>
                     <input type="text" minLength="4" required name="name" class="form-control" placeholder="Enter Your Name" />
-
-
                     <input type="email" name="email" required class="form-control" placeholder="Enter Email" />
-
                   </div>
                   <div className={styles.form2}>
                     <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" class="form-control" placeholder="Enter Phone Number" />
-
                     <input type="text" class="form-control" name="message" placeholder="Enter Message" />
                   </div>
                   <input type="submit" value="Get a Free Quote" className={styles.quote} />
@@ -244,10 +229,9 @@ const Banner = () => {
               </form>
             </div>
             <div>
-              <div className={`bannerSlides ${styles.slider}`}>
+              <div className={styles.slider}>
                 <swiper-container className="newtranck"
-                  // navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }} 
-                  navigation={true}
+                  navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
                   pagination={false}
                   init={false}
                   ref={swiperElRef}
@@ -255,7 +239,7 @@ const Banner = () => {
                   autoplay-delay="3000"
                   loop="true"
                   autoplay={false}
-                  modules={[EffectCoverflow, Pagination, Navigation]}
+
                 >
                   {slides.map((testimonial, index) => (
                     <swiper-slide className='newfold newtown' key={index}>

@@ -17,23 +17,24 @@ import { useEffect, useState } from "react";
 
 const Video = () => {
 
-  const [isSliderActive, setIsSliderActive] = useState(true);
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setIsSliderActive(false);
-      } else {
-        setIsSliderActive(true);
-      }
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
-  // slider 
+    const [isSliderActive, setIsSliderActive] = useState(true);
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth > 768) {
+          setIsSliderActive(false);
+        } else {
+          setIsSliderActive(true);
+        }
+      };
+      handleResize();
+      window.addEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
+
+    // slider 
   var awardslogo = {
     dots: false,
     arrows: false,
@@ -41,135 +42,135 @@ const Video = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
-
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
+        
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+          },
         },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
         },
-      },
-    ],
-
+      ],
+   
   };
+   
+    return (
+        <>
+            <section className={`newcon ${styles.display}`}>
+            <div class={`container mx-auto ${styles.pointer} `}>
+                    <div class={`md:grid md:grid-cols-1`}>
+                    <div className={styles.element}>
+                        <h3 className={`fontsfpro mb-0 ${styles.heading}`}>Types Of <span class="colorred2">Explainer </span>
+                        Videos</h3>
+                        <p className={styles.words}>
+                        Infinity Animations is a renowned name in the video animation industry. Our experts produce all types of animation videos with the usage of modern devices and techniques, some are discussed below:
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class={`container mx-auto ${styles.pointer} `}>
 
-  return (
-    <>
-      <section className={`newcon ${styles.display}`}>
-        <div class={`container mx-auto ${styles.pointer} `}>
-          <div class={`md:grid md:grid-cols-1`}>
-            <div className={styles.element}>
-              <h3 className={`fontsfpro mb-0 ${styles.heading}`}>Types Of <span class="colorred2">Explainer </span>
-                Videos</h3>
-              <p className={styles.words}>
-                Infinity Animations is a renowned name in the video animation industry. Our experts produce all types of animation videos with the usage of modern devices and techniques, some are discussed below:
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class={`container mx-auto ${styles.pointer} `}>
+                {isSliderActive ?
 
-          {isSliderActive ?
+<Slider {...awardslogo}  >
 
-            <Slider {...awardslogo}  >
+                        <div className={styles.boxpost}>
+                                    <Image src={icon1} class="img-fluid mt-3 newgost" alt="" />
+                                    <h4 class="fontsfpro font20 center colorblack mt-3">
+                                        Whiteboard Animation <br></br>
+                                        Video
+                                    </h4>
+                        </div>
+                        <div className={styles.boxpost}>
+                                    <Image src={icon2} class="img-fluid mt-3 newgost" alt="" />
+                                    <h4 class="fontsfpro font20 center colorblack mt-3">
+                                      Motion Graphics 
+              
+                                    </h4>
+                        </div>
+                        <div className={styles.boxpost}>
+                                    <Image src={icon3} class="img-fluid mt-3 newgost" alt="" />
+                                    <h4 class="fontsfpro font20 center colorblack mt-3">
+                                      2D Character Animation<br></br>
+                                        Videos
+                                    </h4>
+                        </div>
+                        <div className={styles.boxpost}>
+                                    <Image src={icon4} class="img-fluid mt-3 newgost" alt="" />
+                                    <h4 class="fontsfpro font20 center colorblack mt-3">
+                                    3D Animation Video
+                                    </h4>
+                        </div>
+                        <div className={styles.boxpost}>
+                                    <Image src={icon5} class="img-fluid mt-3 newgost" alt="" />
+                                    <h4 class="fontsfpro font20 center colorblack mt-3">
+                                    Screencast Videos
+                                    </h4>
+                        </div>
+                        <div className={styles.boxpost}>
+                                    <Image src={icon6} class="img-fluid mt-3 newgost" alt="" />
+                                    <h4 class="fontsfpro font20 center colorblack mt-3">
+                                    Typography Videos
+                                    </h4>
+                        </div>
+                
+</Slider>
+:
+                    <div class={`md:grid md:grid-cols-3`}>
+                        <div className={styles.boxpost}>
+                                    <Image src={icon1} class="img-fluid mt-3 newgost" alt="" />
+                                    <h4 class="fontsfpro font20 center colorblack mt-3">
+                                        Whiteboard Animation <br></br>
+                                        Video
+                                    </h4>
+                        </div>
+                        <div className={styles.boxpost}>
+                                    <Image src={icon2} class="img-fluid mt-3 newgost" alt="" />
+                                    <h4 class="fontsfpro font20 center colorblack mt-3">
+                                      Motion Graphics  
+                                        
+                                    </h4>
+                        </div>
+                        <div className={styles.boxpost}>
+                                    <Image src={icon3} class="img-fluid mt-3 newgost" alt="" />
+                                    <h4 class="fontsfpro font20 center colorblack mt-3">
+                                    2D Character Animation <br></br>
+                                        Videos
+                                    </h4>
+                        </div>
+                        <div className={styles.boxpost}>
+                                    <Image src={icon4} class="img-fluid mt-3 newgost" alt="" />
+                                    <h4 class="fontsfpro font20 center colorblack mt-3">
+                                    3D Animation Video
+                                    </h4>
+                        </div>
+                        <div className={styles.boxpost}>
+                                    <Image src={icon5} class="img-fluid mt-3 newgost" alt="" />
+                                    <h4 class="fontsfpro font20 center colorblack mt-3">
+                                    Screencast Videos
+                                    </h4>
+                        </div>
+                        <div className={styles.boxpost}>
+                                    <Image src={icon6} class="img-fluid mt-3 newgost" alt="" />
+                                    <h4 class="fontsfpro font20 center colorblack mt-3">
+                                    Typography Videos
+                                    </h4>
+                        </div>
+                    </div>
 
-              <div className={styles.boxpost}>
-                <Image src={icon1} class="img-fluid mt-3 newgost" alt="" />
-                <h4 class="font20 center colorblack mt-3">
-                  Whiteboard Animation <br></br>
-                  Video
-                </h4>
-              </div>
-              <div className={styles.boxpost}>
-                <Image src={icon2} class="img-fluid mt-3 newgost" alt="" />
-                <h4 class="font20 center colorblack mt-3">
-                  Motion Graphics
-
-                </h4>
-              </div>
-              <div className={styles.boxpost}>
-                <Image src={icon3} class="img-fluid mt-3 newgost" alt="" />
-                <h4 class="font20 center colorblack mt-3">
-                  2D Character Animation<br></br>
-                  Videos
-                </h4>
-              </div>
-              <div className={styles.boxpost}>
-                <Image src={icon4} class="img-fluid mt-3 newgost" alt="" />
-                <h4 class="font20 center colorblack mt-3">
-                  3D Animation Video
-                </h4>
-              </div>
-              <div className={styles.boxpost}>
-                <Image src={icon5} class="img-fluid mt-3 newgost" alt="" />
-                <h4 class="font20 center colorblack mt-3">
-                  Screencast Videos
-                </h4>
-              </div>
-              <div className={styles.boxpost}>
-                <Image src={icon6} class="img-fluid mt-3 newgost" alt="" />
-                <h4 class="font20 center colorblack mt-3">
-                  Typography Videos
-                </h4>
-              </div>
-
-            </Slider>
-            :
-            <div class={`md:grid md:grid-cols-3`}>
-              <div className={styles.boxpost}>
-                <Image src={icon1} class="img-fluid mt-3 newgost" alt="" />
-                <h4 class="font20 center colorblack mt-3">
-                  Whiteboard Animation <br></br>
-                  Video
-                </h4>
-              </div>
-              <div className={styles.boxpost}>
-                <Image src={icon2} class="img-fluid mt-3 newgost" alt="" />
-                <h4 class="font20 center colorblack mt-3">
-                  Motion Graphics
-
-                </h4>
-              </div>
-              <div className={styles.boxpost}>
-                <Image src={icon3} class="img-fluid mt-3 newgost" alt="" />
-                <h4 class="font20 center colorblack mt-3">
-                  2D Character Animation <br></br>
-                  Videos
-                </h4>
-              </div>
-              <div className={styles.boxpost}>
-                <Image src={icon4} class="img-fluid mt-3 newgost" alt="" />
-                <h4 class="font20 center colorblack mt-3">
-                  3D Animation Video
-                </h4>
-              </div>
-              <div className={styles.boxpost}>
-                <Image src={icon5} class="img-fluid mt-3 newgost" alt="" />
-                <h4 class="font20 center colorblack mt-3">
-                  Screencast Videos
-                </h4>
-              </div>
-              <div className={styles.boxpost}>
-                <Image src={icon6} class="img-fluid mt-3 newgost" alt="" />
-                <h4 class="font20 center colorblack mt-3">
-                  Typography Videos
-                </h4>
-              </div>
-            </div>
-
-          }
-        </div>
-      </section>
-    </>
-  )
+                }
+                </div>
+            </section>
+        </>
+    )
 }
 
 export default Video
