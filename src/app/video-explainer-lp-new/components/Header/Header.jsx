@@ -1,26 +1,52 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import usePopup from '@/app/configs/store/Popup'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 //===== Images 
-import Logo from "media/images/logo.gif"
+import Logo from "media/video-explainer/logo.gif"
 import UK from "media/video-explainer/flag-icon.png"
 import Chat from "media/video-explainer/cht-icon.png"
-import usePopup from '@/app/configs/store/Popup'
+import telephone from "media/icons/call.png";
 
 const HeaderLP = () => {
-    const { popup, togglePopup } = usePopup()
+    const { popup, togglePopup } = usePopup();
+    const [isFixed, setIsFixed] = useState(true);
     const popupHandle = () => {
         togglePopup(popup)
     }
+
+    const [headercolor, setHeadercolor] = useState("bg-transparent");
+    const [headerPad, setHeaderPad] = useState("py-3");
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            const scrollThreshold = 100; // Adjust this value according to your design
+            if (currentScrollY > scrollThreshold) {
+                setHeadercolor("bg-[#F16869]");
+                setHeaderPad("py-3");
+            } else {
+                setHeadercolor("bg-transparent");
+                setHeaderPad("py-3");
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        // Cleanup event listener on component unmount
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const fixedClass = isFixed ? `fixed top-0 lg:relative ${headerPad}` : 'top-[20px]';
+
     return (
         <>
-            <header className='pt-5 '>
+            <header className={`${headercolor} ${fixedClass} z-50 w-full`}>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
-                    <div className="grid grid-cols-12">
-                        <div className="col-span-12 lg:col-span-4 xl:col-span-5">
+                    <div className="grid grid-cols-12 items-center">
+                        <div className="col-span-6 lg:col-span-4 xl:col-span-5">
                             <div className="logo">
-                                <Image src={Logo} alt='logo' width={150} className='ml-auto lg:ml-0 mr-auto' />
+                                <Image src={Logo} alt='logo' width={150} className='w-[70%] md:w-[50%] lg:w-[28%]' />
                             </div>
                         </div>
                         <div className="col-span-12 lg:col-span-8 xl:col-span-7 lg:block hidden">
@@ -55,6 +81,16 @@ const HeaderLP = () => {
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+                        <div className="col-span-6 lg:hidden block">
+                            <ul>
+                                <li>
+                                    <Link href="tel:833-666-6689;" className='flex items-center justify-end gap-x-3 text-white font-sans'>
+                                        <Image src={telephone} loading="lazy" width="56" height="52" class="w-[15px]" alt='Animations Pro' />
+                                        833-666-6689
+                                    </Link>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

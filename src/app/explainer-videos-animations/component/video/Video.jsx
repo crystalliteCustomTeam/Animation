@@ -3,9 +3,9 @@ import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Components
 import styles from '@/app/explainer-videos-animations/component/video/video.module.css';
-import icon1 from "../../../../../public/banner/animate/img1.png"
-import icon2 from "../../../../../public/banner/animate/img2.png"
-import icon3 from "../../../../../public/banner/animate/img3.png"
+import icon1 from "media/banner/animate/img1.png"
+import icon2 from "media/banner/animate/img2.png"
+import icon3 from "media/banner/animate/img3.png"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

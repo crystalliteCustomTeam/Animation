@@ -3,7 +3,7 @@ import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Components
 import styles from '@/app/explainer-videos-animations/component/statistics/statistics.module.css';
-import proven from "../../../../../public/banner/proven.png"
+import proven from "media/banner/proven.png"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
