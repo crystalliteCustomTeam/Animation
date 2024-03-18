@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import usePopup from '@/app/configs/store/Popup'
 import Image from 'next/image'
-import Link from 'next/link'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 //===== Images 
 import logo from "media/images/logo.gif";
@@ -50,7 +49,7 @@ const HeaderLP = () => {
 
     return (
         <>
-            <header className={`fixed left-0 top-0 py-3 z-50 w-full ${isScrolled ? 'bg-[#003465f0] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-3' : ''}`}>
+            <header className={`fixed left-0 top-0 py-3 z-50 w-full ${isScrolled ? 'bg-[#003465] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-3' : ''}`}>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
                         <div className="col-span-6 lg:col-span-4 xl:col-span-5">
