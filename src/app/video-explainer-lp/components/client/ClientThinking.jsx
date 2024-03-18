@@ -18,19 +18,19 @@ const ClientThinking = () => {
 
     // Slider Setting
     const testiSlider = {
-        dots: false,
+        dots: true,
         arrows: false,
-        infinite: false,
+        infinite: true,
         autoplay: true,
         autoplaySpeed: 5000,
-        speed: 3000,
+        speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
     };
 
     return (
         <>
-            <section className='py-[50px] bg-cover bg-center bg-[url(../../public/video-explainer/testi-bg.jpg)] relative'>
+            <section className='pt-[50px] pb-[75px] md:py-[50px] bg-cover bg-center bg-[url(../../public/video-explainer/testi-bg.jpg)] relative'>
                 <Image src={TestiBf} alt='Particle Image' className='w-[245px] h-[585px] object-contain absolute left-[15px] bottom-0 z-0 testi lg:block hidden' />
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-4">
@@ -121,14 +121,16 @@ const ClientThinking = () => {
                         </div>
                     </div>
                     <div className="lg:hidden block">
-                        <Slider {...testiSlider} className="brandSlider">
+                        <Slider {...testiSlider} className="clientSlider">
                             <div className='px-2'>
-                                <div className="card bg-white rounded-[3px] shadow-lg md:mx-[12px] relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700">
-                                    <span className='text-[#222] text-[50px] md:text-[75px] relative left-[18px] top-[20px]'>
-                                        <FaQuoteLeft />
-                                    </span>
-                                    <p className='mb-[20px] p-[20px] text-[15px] text-[#333] montserrat lg:w-11/12 mt-[13px]'>From start to finish, the process was incredibly easy. It was a pleasure to work
-                                        with the Infinity Animations squad. </p>
+                                <div className="card bg-white h-[365px] rounded-[3px] shadow-lg md:mx-[12px] relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 flex flex-col justify-between">
+                                    <div>
+                                        <span className='text-[#222] text-[50px] md:text-[75px] relative left-[18px] top-[20px]'>
+                                            <FaQuoteLeft />
+                                        </span>
+                                        <p className='mb-[20px] p-[20px] text-[15px] text-[#333] montserrat lg:w-11/12 mt-[13px]'>From start to finish, the process was incredibly easy. It was a pleasure to work
+                                            with the Infinity Animations squad. </p>
+                                    </div>
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
@@ -148,13 +150,15 @@ const ClientThinking = () => {
                                 </div>
                             </div>
                             <div className='px-2'>
-                                <div className="card bg-white rounded-[3px] shadow-lg md:mx-[12px] relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700">
-                                    <span className='text-[#222] text-[50px] md:text-[75px] relative left-[18px] top-[20px]'>
-                                        <FaQuoteLeft />
-                                    </span>
-                                    <p className='mb-[20px] p-[20px] text-[15px] text-[#333] montserrat lg:w-11/12 mt-[13px]'>The story of the business relationship started with a 30 second video in 2019,
-                                        now Infinity Animations team has produced 27 videos for our multiple brands for
-                                        us. Glad to get a reliable company in the US</p>
+                                <div className="card bg-white h-[365px] rounded-[3px] shadow-lg md:mx-[12px] relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 flex flex-col justify-between">
+                                    <div>
+                                        <span className='text-[#222] text-[50px] md:text-[75px] relative left-[18px] top-[20px]'>
+                                            <FaQuoteLeft />
+                                        </span>
+                                        <p className='mb-[20px] p-[20px] text-[15px] text-[#333] montserrat lg:w-11/12 mt-[13px]'>The story of the business relationship started with a 30 second video in 2019,
+                                            now Infinity Animations team has produced 27 videos for our multiple brands for
+                                            us. Glad to get a reliable company in the US</p>
+                                    </div>
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
@@ -174,13 +178,15 @@ const ClientThinking = () => {
                                 </div>
                             </div>
                             <div className='px-2'>
-                                <div className="card bg-white rounded-[3px] shadow-lg md:mx-[12px] relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700">
-                                    <span className='text-[#222] text-[50px] md:text-[75px] relative left-[18px] top-[20px]'>
-                                        <FaQuoteLeft />
-                                    </span>
-                                    <p className='mb-[20px] p-[20px] text-[15px] text-[#333] montserrat lg:w-11/12 mt-[13px]'>The whole team of Infinity Animations was extremely responsive and helpful. The
-                                        videos were produced on time. The creatives were excellent and I personally
-                                        liked the concept. Highly recommended. </p>
+                                <div className="card bg-white h-[365px] rounded-[3px] shadow-lg md:mx-[12px] relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 flex flex-col justify-between">
+                                    <div>
+                                        <span className='text-[#222] text-[50px] md:text-[75px] relative left-[18px] top-[20px]'>
+                                            <FaQuoteLeft />
+                                        </span>
+                                        <p className='mb-[20px] p-[20px] text-[15px] text-[#333] montserrat lg:w-11/12 mt-[13px]'>The whole team of Infinity Animations was extremely responsive and helpful. The
+                                            videos were produced on time. The creatives were excellent and I personally
+                                            liked the concept. Highly recommended.</p>
+                                    </div>
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">

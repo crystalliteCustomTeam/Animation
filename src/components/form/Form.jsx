@@ -7,7 +7,6 @@ import React, { useEffect, useState } from 'react'
 // Import Images
 import facebook from "media/icons/fb.png";
 import twitter from "media/icons/x.png";
-import youtube from "media/icons/youtube.png";
 import instagram from "media/icons/insta.png";
 import linkedin from "media/icons/linkedin.png";
 const socialLinks = [

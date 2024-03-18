@@ -210,12 +210,12 @@ const Streamed = () => {
 
     // ====== Responsive Slider 
     const testiSlider = {
-        dots: false,
+        dots: true,
         arrows: false,
-        infinite: false,
+        infinite: true,
         autoplay: true,
         autoplaySpeed: 5000,
-        speed: 3000,
+        speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
@@ -267,7 +267,7 @@ const Streamed = () => {
                                                 infinite: false,
                                             },
                                         }}>
-                                            <Slider {...testiSlider} className="testiSlider">
+                                            <Slider {...testiSlider} className="streamedSlider">
                                                 {tabContents[activeTab].map((item, index) => (
                                                     <Link key={index} href={item.video} datafancybox="gallery" className={`${styles.shadow} w-full h-full group`}>
                                                         <div className="overlay relative">

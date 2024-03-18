@@ -525,6 +525,44 @@ div#ty7 {
   .slideBg {
     background-size: 550px;
   }
+
+  .streamedSlider .slick-arrow,
+  .typeSlider .slick-arrow,
+  .clientSlider .slick-arrow,
+  .explainSlider .slick-arrow {
+    display: none !important;
+  }
+
+  .streamedSlider .slick-dots,
+  .typeSlider .slick-dots {
+    bottom: -35px;
+  }
+
+  .clientSlider .slick-dots,
+  .explainSlider .slick-dots {
+    bottom: -50px;
+  }
+
+  .clientSlider .slick-dots li button:before {
+    color: #fff;
+    opacity: 1;
+    font-size: 10px;
+  }
+
+  .streamedSlider .slick-dots li button:before,
+  .typeSlider .slick-dots li button:before,
+  .explainSlider .slick-dots li button:before {
+    opacity: 1;
+    font-size: 10px;
+  }
+
+  .streamedSlider .slick-dots li.slick-active button:before,
+  .typeSlider .slick-dots li.slick-active button:before,
+  .clientSlider .slick-dots li.slick-active button:before,
+  .explainSlider .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #ffd504;
+  }
 }
 
 @media only screen and (max-width: 567px) {
