@@ -246,7 +246,7 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-    
+
 
     return (
         <header className={`fixed left-0 top-0 w-full z-[999] rounded-none ${isScrolled ? 'bg-black/90 border-b border-[#ff2d4b]' : 'bg-transparent'}`}>
