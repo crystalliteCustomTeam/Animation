@@ -1,3 +1,5 @@
+import React from 'react';
+import Script from 'next/script';
 // Import Page Components
 import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
@@ -10,8 +12,7 @@ import Want from '@/components/want/Want';
 import Testimonial from '@/components/testimonial/Testimonial';
 import Contact from '@/components/contact/Contact';
 // Import Images
-import LookingFlodImg from "media/cgi-and-vfx/looking-img.gif";
-
+import LookingFlodImg from "media/logo-animation/looking-img.gif";
 //==== Boost Images
 import BoostFlodImg from "media/images/boost-img.gif";
 import boosticon1 from "media/icons/boost-icon4.png"
@@ -59,23 +60,22 @@ import Thumnail27 from "media/thumbnails/hybrid/3.jpg"
 import Thumnail28 from "media/thumbnails/hybrid/4.jpg"
 import Thumnail29 from "media/thumbnails/hybrid/5.jpg"
 import Thumnail30 from "media/thumbnails/hybrid/6.jpg"
-import Script from "next/script";
 
 export default function Page() {
     //=====Banner Fold=====//
     const hero = {
-        title: (<> CGI And VFX Services </>),
-        para: "Transforming realities, crafting dreams. Services beyond imagination.",
+        title: (<> Logo Animation Services </>),
+        para: "Build a unique identity with dynamic logo animation!",
         btnBg: "bg-prime",
     };
     //=====Looking Fold=====//
     const paraArray = [
-        "Embark on a visual odyssey with our CGI and Animation services, where imagination knows no bounds. We specialize in crafting visually stunning CGI experiences that blur the lines between fiction and reality. From breathtaking landscapes to lifelike characters, our team of CGI experts brings your wildest dreams to the screen with unparalleled realism. ",
+        "Beyond mere visuals, we infuse your logo with vitality and energy, turning it into a memorable brand signature that resonates with your audience. Boost your online presence, captivate your audience, and leave a lasting imprint with logo animations that speak volumes in motion.",
 
-        "From 2D wonders to 3D spectacles, our Animation services breathe life into concepts, turning ideas into captivating visual tales. Every frame is a brushstroke in the canvas of your story, meticulously crafted to resonate with your audience. Join us on a journey where CGI and Animation converge, creating an immersive experience that transcends expectations. "
+        "It's not just about a moving logo; it's about transforming your brand into a visual story that captivates and connects. Join us on the journey where your logo becomes the star of the show, and every animation is a masterpiece that tells the tale of your brand in motion. This is more than animation; this is the art of making your brand unforgettable."
     ];
     const looking = {
-        title: (<> CGI/VFX </>),
+        title: (<> Logo Animation  </>),
         para: { paraArray },
         isCTA: true,
         isBtns: true,
@@ -233,7 +233,7 @@ export default function Page() {
         {
             icon: boosticon1,
             heading: "Strategic Conceptualization",
-            text: "We kick off by delving deep into your brand ethos, understanding your goals, and strategically conceptualizing visuals that align with your narrative. ",
+            text: " We kick off by delving deep into your brand ethos, understanding your goals, and strategically conceptualizing visuals that align with your narrative. ",
         },
         {
             icon: boosticon2,
@@ -304,22 +304,22 @@ export default function Page() {
         {
             profile: icon1,
             stars: icon2,
-            name: 'Daniel Morrison, Creative Producer',
-            message: "This team's CGI and VFX services shine bright. Their ability to seamlessly blend digital elements into our creative projects elevated the overall impact. Their innovation and dedication to excellence set a new standard for our productions.",
+            name: 'Elijah Bennett, E-commerce Entrepreneur',
+            message: 'The dynamic animation not only captured attention on our online store but also created a memorable brand moment. The commitment to brand identity and storytelling through animation sets them apart.',
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'Olivia Hayes, Brand Strategist',
-            message: "Our brand's visual identity reached new heights with the CGI and VFX services offered by this team. The dynamic visual effects created added a layer of sophistication to our campaigns, capturing the essence of our brand.",
+            name: 'Olivia Foster, Event Planner',
+            message: 'As an event planner, I wanted our logo to make a statement, and the logo animation services delivered exactly that. The animated logo became a focal point in our event promotions, adding a touch of sophistication. ',
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'Maxwell Carter, Virtual Reality Developer',
-            message: "Crafting immersive virtual experiences demands top-notch CGI and VFX, and this team delivered beyond expectations. The seamless integration of digital elements showcased their mastery in the realm of CGI and VFX.",
+            name: 'Marcus Litrell, Tech Startup Founder',
+            message: 'Collaborating with this team for our startup logo animation was a strategic decision. The animated logo became a dynamic representation of our tech-forward brand. Impressed with their technical expertise and creative approach.',
             company: 'ABC company',
         },
     ];
@@ -346,13 +346,13 @@ export default function Page() {
                     {
                         "@context": "https://schema.org/",
                         "@type": "WebSite",
-                        "name": "Professional CGI and VFX Services | Infinity Animations",
-                        "url": "https://infinityanimations.com/cgi-and-vfx-services",
+                        "name": "Custom Logo Animation Services | Infinity Animations",
+                        "url": "https://infinityanimations.com/custom-logo-animation",
                         "potentialAction": {
-                          "@type": "SearchAction",
-                          "target": "{search_term_string}",
-                          "query-input": "required name=search_term_string"
-                        }                      
+                            "@type": "SearchAction",
+                            "target": "{search_term_string}",
+                            "query-input": "required name=search_term_string"
+                        }
                     }
                 `}
             </Script>
@@ -361,9 +361,9 @@ export default function Page() {
                     {
                         "@context": "https://schema.org",
                         "@type": "Corporation",
-                        "name": "Professional CGI and VFX Services | Infinity Animations",
-                        "url": "https://infinityanimations.com/cgi-and-vfx-services",
-                        "logo": "https://infinityanimations.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.957f7aac.gif&w=828&q=75"                                        
+                        "name": "Custom Logo Animation Services | Infinity Animations",
+                        "url": "https://infinityanimations.com/custom-logo-animation",
+                        "logo": "https://infinityanimations.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.957f7aac.gif&w=828&q=75"                                                              
                     }
                 `}
             </Script>
@@ -372,10 +372,10 @@ export default function Page() {
                     {
                         "@context": "https://schema.org",
                         "@type": "ProfessionalService",
-                        "name": "Professional CGI and VFX Services | Infinity Animations",
-                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.a49cc8a4.png",
+                        "name": "Custom Logo Animation Services | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.8d34e9e1.png",
                         "@id": "",
-                        "url": "https://infinityanimations.com/cgi-and-vfx-services",
+                        "url": "https://infinityanimations.com/custom-logo-animation",
                         "telephone": "833-666-6684",
                         "address": {
                             "@type": "PostalAddress",
@@ -406,7 +406,7 @@ export default function Page() {
                         "sameAs": [
                             "https://www.facebook.com/infinityanimationsofficial",
                             "https://www.instagram.com/infinityanimationsofficials"
-                        ]  
+                        ] 
                     }
                 `}
             </Script>
@@ -415,9 +415,9 @@ export default function Page() {
                     {
                         "@context": "https://schema.org/", 
                         "@type": "Product", 
-                        "name": "Professional CGI and VFX Services | Infinity Animations",
-                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.a49cc8a4.png",
-                        "description": "CGI and VFX Services, Explore our comprehensive services to add breathtaking CGI and VFX effects to your projects.",
+                        "name": "Custom Logo Animation Services | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.8d34e9e1.png",
+                        "description": "Custom Logo Animation Services, Bring Your Brand to Life with Dynamic Animation. Elevate your brand presence with our expertise in custom logo animation.",
                         "brand": {
                             "@type": "Brand",
                             "name": "Infinity Animations"

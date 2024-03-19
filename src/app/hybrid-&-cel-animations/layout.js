@@ -1,13 +1,11 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
-    title: "Hybrid and Cel Animation Services - Infinity Animations ",
+    //===== Meta Tags =====
+    title: "Hybrid and Cel Animation Services - Infinity Animations",
     description: "Hybrid and Cel Animation Services, Explore our professional services blending traditional cel animation techniques with modern digital methods.",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/hybrid-&-cel-animations/' },
-    // OG Metas
+    //===== OG Tags =====
     openGraph: {
-        title: "Hybrid and Cel Animation Services - Infinity Animations ",
+        title: "Hybrid and Cel Animation Services - Infinity Animations",
         description: "Hybrid and Cel Animation Services, Explore our professional services blending traditional cel animation techniques with modern digital methods.",
         url: 'https://infinityanimations.com/hybrid-&-cel-animations/',
         siteName: 'Infinity Animations',

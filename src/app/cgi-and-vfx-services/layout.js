@@ -1,21 +1,19 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
-    title: "CGI and VFX Services - Infinity Animations ",
+    //===== Meta Tags =====
+    title: "CGI and VFX Services - Infinity Animations",
     description: "CGI and VFX Services, Explore our comprehensive services to add breathtaking CGI and VFX effects to your projects.",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/cgi-and-vfx/' },
-    // OG Metas
+    //===== OG Tags =====
     openGraph: {
-        title: "CGI and VFX Services - Infinity Animations ",
+        title: "CGI and VFX Services - Infinity Animations",
         description: "CGI and VFX Services, Explore our comprehensive services to add breathtaking CGI and VFX effects to your projects.",
-        url: 'https://infinityanimations.com/cgi-and-vfx/',
+        url: 'https://infinityanimations.com/cgi-and-vfx-services/',
         siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
-    }, 
+    },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/' },
+    alternates: { canonical: 'https://infinityanimations.com/cgi-and-vfx-services/' },
     //===== GEO Tags =====
     other: {
         "DC.title": "Professional CGI and VFX Services",

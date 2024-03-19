@@ -30,12 +30,12 @@ const megaMenuItems = [
     {
         title: "Architectural Services",
         icon: Bars4Icon,
-        href: "/architectural-services",
+        href: "/architectural-visualization",
     },
     {
         title: "CGI & VFX",
         icon: SunIcon,
-        href: "/cgi-and-vfx",
+        href: "/cgi-and-vfx-services",
     },
     {
         title: "Hybrid & cel Animations",
@@ -50,7 +50,7 @@ const megaMenuItems = [
     {
         title: "Logo Animation",
         icon: NewspaperIcon,
-        href: "/logo-animation",
+        href: "/custom-logo-animation",
     },
     {
         title: "Motion Graphics",
@@ -178,7 +178,7 @@ function NavList() {
             </Link>
             <MegaMenu />
             <Link
-                href="/portfolio"
+                href="video-animation-portfolio"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
@@ -186,7 +186,7 @@ function NavList() {
                 <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Portfolio</span>
             </Link>
             <Link
-                href="/process"
+                href="video-animation-process"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
@@ -194,7 +194,7 @@ function NavList() {
                 <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Process</span>
             </Link>
             <Link
-                href="/pricing"
+                href="video-animation-pricing"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"

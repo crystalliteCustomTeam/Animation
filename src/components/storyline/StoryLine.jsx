@@ -23,7 +23,7 @@ const StoryLine = ({ content }) => {
     let padding;
     let accImg;
     switch (router) {
-        case "/process":
+        case "video-animation-process":
             main = 'pt-0'
             headings = 'hidden'
             row = 'items-start'

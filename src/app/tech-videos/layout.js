@@ -1,11 +1,9 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
+    //===== Meta Tags =====
     title: "Tech Videos | Infinity Animations",
     description: "Tech Videos | Infinity Animations",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/tech-videos/' },
-    // OG Metas
+    //===== OG Tags =====
     openGraph: {
         title: 'Tech Videos | Infinity Animations',
         description: 'Tech Videos | Infinity Animations',
@@ -14,6 +12,8 @@ export const metadata = {
         locale: 'en_US',
         type: 'website',
     },
+    //===== Canonical =====
+    alternates: { canonical: 'https://infinityanimations.com/tech-videos/' },
 }
 
 export default function RootLayout({ children }) {

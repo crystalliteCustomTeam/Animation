@@ -1,3 +1,5 @@
+import React from 'react';
+import Script from 'next/script';
 // Import Page Components
 import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
@@ -5,7 +7,6 @@ import Portfolio from '@/components/portfolio/Portfolio';
 import Want from '@/components/want/Want';
 import Testimonial from '@/components/testimonial/Testimonial';
 import Contact from '@/components/contact/Contact';
-
 //==== Testimonial Images
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
@@ -40,7 +41,6 @@ import Thumnail27 from "media/thumbnails/hybrid/3.jpg"
 import Thumnail28 from "media/thumbnails/hybrid/4.jpg"
 import Thumnail29 from "media/thumbnails/hybrid/5.jpg"
 import Thumnail30 from "media/thumbnails/hybrid/6.jpg"
-import Script from "next/script";
 
 export default function Page() {
     //=====Banner Fold=====//

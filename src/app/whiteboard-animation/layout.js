@@ -1,13 +1,11 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
-    title: "Whiteboard Animation Services - Infinity Animations ",
+    //===== Meta Tags =====
+    title: "Whiteboard Animation Services - Infinity Animations",
     description: "Whiteboard Animation Services, Transform Ideas into Engaging Stories. Elevate your message with our expertise in whiteboard animation.",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/whiteboard-animation/' },
-    // OG Metas
+    //===== OG Tags =====
     openGraph: {
-        title: 'Whiteboard Animation Services - Infinity Animations ',
+        title: 'Whiteboard Animation Services - Infinity Animations',
         description: 'Whiteboard Animation Services, Transform Ideas into Engaging Stories. Elevate your message with our expertise in whiteboard animation.',
         url: 'https://infinityanimations.com/whiteboard-animation/',
         siteName: 'Infinity Animations',

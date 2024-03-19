@@ -14,8 +14,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import PlayIcon from "media/icons/play.png"
 
 const Portfolio = ({ content }) => {
-    const { title, para, tabInfo, tabContents, tabsInfo, tabThumbnail } = content;
-    console.log(tabContents)
+    const { title, para, tabInfo, tabContents } = content;
     //Tabs
     const [activeTab, setActiveTab] = useState(0);
     const handleTabClick = (index) => {

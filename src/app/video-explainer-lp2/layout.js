@@ -1,18 +1,26 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
+    //===== Meta Tags =====
     title: "Creative and Affordable Explainer Video Company in US - Infinity Animations",
-    description: "Video Explainer",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimationspro.com/video-explainer-lp2/' },
-    // OG Metas
+    description: "Animation Explainer Videos Company, Contact our team today to create captivating animated explainer videos that engage and inform your audience.",
+    //===== OG Tags =====
     openGraph: {
         title: 'Creative and Affordable Explainer Video Company in US - Infinity Animations',
-        description: 'Video Explainer',
-        url: 'https://infinityanimationspro.com/video-explainer-lp2/',
+        description: 'Animation Explainer Videos Company, Contact our team today to create captivating animated explainer videos that engage and inform your audience.',
+        url: 'https://infinityanimations.com/video-explainer-lp2/',
         siteName: 'Infinity Animations Pro',
         locale: 'en_US',
         type: 'website',
+    },
+    //===== Canonical =====
+    alternates: { canonical: 'https://infinityanimations.com/video-explainer-lp2/' },
+    //===== GEO Tags =====
+    other: {
+        "DC.title": "Animation Explainer Videos Company",
+        "geo.region": "US-NY",
+        "geo.placename": "New York",
+        "geo.position": "39.78373;-100.445882",
+        "ICBM": "39.78373, -100.445882"
     },
 }
 

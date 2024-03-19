@@ -51,7 +51,7 @@ const Tech = ({ content }) => {
                                         color={`text-white`}
                                         border={`border-2 border-[#fff]`}
                                         hover="hover:bg-prime"
-                                        href="/portfolio"
+                                        href="video-animation-portfolio"
                                     />
                                 </div>
                             </div>

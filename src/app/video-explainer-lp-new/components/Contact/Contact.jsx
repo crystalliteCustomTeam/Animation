@@ -142,18 +142,18 @@ const Contact = () => {
                                     <div className="flex flex-col lg:flex-row items-center lg:gap-4 ">
                                         <div className="name relative w-full">
                                             <User className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                            <input type="text" name="name" placeholder='Enter your name' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[10px] font-[500]' onChange={handleDataChange} required />
+                                            <input type="text" name="name" placeholder='Enter your name' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
                                             {errors.name && (
-                                                <span className="text-[12px] block p-2 font-medium text-white">
+                                                <span className="text-[11px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-15%] z-50">
                                                     {errors.name}
                                                 </span>
                                             )}
                                         </div>
                                         <div className="email relative w-full">
                                             <EnvelopeIcon className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                            <input type="email" name="email" placeholder='Enter Email' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[10px] font-[500]' onChange={handleDataChange} required />
+                                            <input type="email" name="email" placeholder='Enter Email' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
                                             {errors.email && (
-                                                <span className="text-[12px] block p-2 font-medium text-white">
+                                                <span className="text-[11px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-15%] z-50">
                                                     {errors.email}
                                                 </span>
                                             )}
@@ -161,16 +161,16 @@ const Contact = () => {
                                     </div>
                                     <div className="phone relative">
                                         <Phone className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                        <input type="phone" name="phone" minLength={7} maxLength={15} placeholder='Enter Phone Number' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[10px] font-[500]' onChange={handleDataChange} required />
+                                        <input type="phone" name="phone" minLength={7} maxLength={15} placeholder='Enter Phone Number' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
                                         {errors.phone && (
-                                            <span className="text-[12px] block p-2 font-medium text-white">
+                                            <span className="text-[11px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-15%] z-50">
                                                 {errors.phone}
                                             </span>
                                         )}
                                     </div>
                                     <div className="message relative">
                                         <ChatAlt2 className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                        <textarea name='message' placeholder='Message' rows={4} className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[10px] font-[500]' onChange={handleDataChange}></textarea>
+                                        <textarea name='message' placeholder='Message' rows={4} className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[10px] font-[500] resize-none' onChange={handleDataChange}></textarea>
                                     </div>
                                     <div className="btn mt-3">
                                         <button type='submit' className='py-[10px] px-[30px] border-0 text-white text-[16px] uppercase font-[600] bg-[#231f20] hover:bg-[#1C2A49] poppins' onClick={handleFormSubmit} disabled={isDisabled}>

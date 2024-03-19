@@ -366,7 +366,7 @@ export default function Page() {
                     {
                         "@context": "https://schema.org/",
                         "@type": "WebSite",
-                        "name": "Video Animation | Infinity Animations",
+                        "name": "Video Animation Company | Infinity Animations",
                         "url": "https://infinityanimations.com/",
                         "potentialAction": {
                             "@type": "SearchAction",
@@ -381,7 +381,7 @@ export default function Page() {
                     {
                         "@context": "https://schema.org",
                         "@type": "Corporation",
-                        "name": "Video Animation | Infinity Animations",
+                        "name": "Video Animation Company | Infinity Animations",
                         "url": "https://infinityanimations.com/",
                         "logo": "https://infinityanimations.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.957f7aac.gif&w=828&q=75"
                     }
@@ -392,7 +392,7 @@ export default function Page() {
                     {
                         "@context": "https://schema.org",
                         "@type": "ProfessionalService",
-                        "name": "Video Animation | Infinity Animations",
+                        "name": "Video Animation Company | Infinity Animations",
                         "image": "https://infinityanimations.com/_next/static/media/banner-img.648555a5.png",
                         "@id": "",
                         "url": "https://infinityanimations.com/",
@@ -435,7 +435,7 @@ export default function Page() {
                     {
                         "@context": "https://schema.org/",
                         "@type": "Product",
-                        "name": "Video Animation | Infinity Animations",
+                        "name": "Video Animation Company | Infinity Animations",
                         "image": "https://infinityanimations.com/_next/static/media/banner-img.648555a5.png",
                         "description": "Video Animation Services, Explore a diverse range of professional animation services to captivate your audience and convey your message effectively.",
                         "brand": {

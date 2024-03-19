@@ -1,11 +1,9 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
+    //===== Meta Tags =====
     title: "3D Animation Services - Infinity Animations",
     description: "3D Animation Services, Explore professional 3D animation services to bring your ideas to life with depth and realism.",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/3d-animation/' },
-    // OG Metas
+    //===== OG Tags =====
     openGraph: {
         title: "3D Animation Services - Infinity Animations",
         description: "3D Animation Services, Explore professional 3D animation services to bring your ideas to life with depth and realism.",
@@ -13,9 +11,9 @@ export const metadata = {
         siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
-    }, 
+    },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/' },
+    alternates: { canonical: 'https://infinityanimations.com/3d-animation/' },
     //===== GEO Tags =====
     other: {
         "DC.title": "3D Animation Services",
