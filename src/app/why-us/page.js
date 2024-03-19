@@ -12,6 +12,7 @@ import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
 import Features from "@/components/features/Features";
 import Partners from "@/components/partners/Partners";
+import Script from "next/script";
 
 export default function Page() {
     //=====Banner Fold=====//

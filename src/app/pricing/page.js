@@ -8,6 +8,7 @@ import Contact from '@/components/contact/Contact';
 //==== Testimonial Images
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
+import Script from "next/script";
 
 export default function Page() {
     //=====Banner Fold=====//

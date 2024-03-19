@@ -2,6 +2,7 @@
 import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
 import Contact from '@/components/contact/Contact';
+import Script from "next/script";
 
 export default function Page() {
     //=====Banner Fold=====//
