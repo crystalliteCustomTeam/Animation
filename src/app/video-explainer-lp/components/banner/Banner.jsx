@@ -25,7 +25,6 @@ const Banner = () => {
     let today = new Date();
     let setTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     let setDate = `${month < 10 ? `0${month}` : `${month}`}-${date}-${year}`;
-
     const [ip, setIP] = useState("");
     //creating function to load ip address from the API
     const getIPData = async () => {
