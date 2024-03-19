@@ -340,6 +340,95 @@ export default function Page() {
             <Want content={want} />
             <Testimonial content={testimonial} />
             <Contact />
+            <Script id="websiteSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/",
+                        "@type": "WebSite",
+                        "name": "Custom Logo Animation Services | Infinity Animations",
+                        "url": "https://infinityanimations.com/custom-logo-animation",
+                        "potentialAction": {
+                            "@type": "SearchAction",
+                            "target": "{search_term_string}",
+                            "query-input": "required name=search_term_string"
+                        }
+                    }
+                `}
+            </Script>
+            <Script id="organizationSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "Corporation",
+                        "name": "Custom Logo Animation Services | Infinity Animations",
+                        "url": "https://infinityanimations.com/custom-logo-animation",
+                        "logo": "https://infinityanimations.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.957f7aac.gif&w=828&q=75"                                                              
+                    }
+                `}
+            </Script>
+            <Script id="localBusinessSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "ProfessionalService",
+                        "name": "Custom Logo Animation Services | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.8d34e9e1.png",
+                        "@id": "",
+                        "url": "https://infinityanimations.com/custom-logo-animation",
+                        "telephone": "833-666-6684",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "One World Trade Center, Suite 8500",
+                            "addressLocality": "New York",
+                            "addressRegion": "NY",
+                            "postalCode": "10007",
+                            "addressCountry": "US"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 40.7130082,
+                            "longitude": -74.0131689
+                        },
+                        "openingHoursSpecification": {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                            ],
+                            "opens": "08:00",
+                            "closes": "21:00"
+                        },
+                        "sameAs": [
+                            "https://www.facebook.com/infinityanimationsofficial",
+                            "https://www.instagram.com/infinityanimationsofficials"
+                        ] 
+                    }
+                `}
+            </Script>
+            <Script id="productSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/", 
+                        "@type": "Product", 
+                        "name": "Custom Logo Animation Services | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.8d34e9e1.png",
+                        "description": "Custom Logo Animation Services, Bring Your Brand to Life with Dynamic Animation. Elevate your brand presence with our expertise in custom logo animation.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Infinity Animations"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1174"
+                        }
+                    }
+                `}
+            </Script>
         </>
     )
 }

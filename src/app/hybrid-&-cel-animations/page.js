@@ -342,6 +342,95 @@ export default function Page() {
             <Want content={want} />
             <Testimonial content={testimonial} />
             <Contact />
+            <Script id="websiteSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/",
+                        "@type": "WebSite",
+                        "name": "Hybrid and Cel Animation Services | Infinity Animations",
+                        "url": "https://infinityanimations.com/hybrid-and-cel-animations",
+                        "potentialAction": {
+                            "@type": "SearchAction",
+                            "target": "{search_term_string}",
+                            "query-input": "required name=search_term_string"
+                        }
+                    }
+                `}
+            </Script>
+            <Script id="organizationSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "Corporation",
+                        "name": "Hybrid and Cel Animation Services | Infinity Animations",
+                        "url": "https://infinityanimations.com/hybrid-and-cel-animations",
+                        "logo": "https://infinityanimations.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.957f7aac.gif&w=828&q=75"                                          
+                    }
+                `}
+            </Script>
+            <Script id="localBusinessSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "ProfessionalService",
+                        "name": "Hybrid and Cel Animation Services | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.c100d6a5.png",
+                        "@id": "",
+                        "url": "https://infinityanimations.com/hybrid-and-cel-animations",
+                        "telephone": "833-666-6684",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "One World Trade Center, Suite 8500",
+                            "addressLocality": "New York",
+                            "addressRegion": "NY",
+                            "postalCode": "10007",
+                            "addressCountry": "US"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 40.7130082,
+                            "longitude": -74.0131689
+                        },
+                        "openingHoursSpecification": {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                            ],
+                            "opens": "08:00",
+                            "closes": "21:00"
+                        },
+                        "sameAs": [
+                            "https://www.facebook.com/infinityanimationsofficial",
+                            "https://www.instagram.com/infinityanimationsofficials"
+                        ] 
+                    }
+                `}
+            </Script>
+            <Script id="productSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/", 
+                        "@type": "Product", 
+                        "name": "Hybrid and Cel Animation Services | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.c100d6a5.png",
+                        "description": "Hybrid and Cel Animation Services, Explore our professional services blending traditional cel animation techniques with modern digital methods.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Infinity Animations"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1174"
+                        }
+                    }
+                `}
+            </Script>
         </>
     )
 }

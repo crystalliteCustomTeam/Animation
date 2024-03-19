@@ -19,6 +19,26 @@ export default function Page() {
             <Review />
             <Blogs />
             <NewsLetter />
+            <Script id="productSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/", 
+                        "@type": "Product", 
+                        "name": "Animation Blogs | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.b24e321b.gif",
+                        "description": "From impactful storytelling to technical mastery, our blog is your gateway to the art and innovation of video animation services.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Infinity Animations"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1174"
+                        }
+                    }
+                `}
+            </Script>
         </>
     )
 }

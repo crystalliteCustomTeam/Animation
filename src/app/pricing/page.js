@@ -66,6 +66,26 @@ export default function Page() {
             <Want content={want} />
             <Testimonial content={testimonial} />
             <Contact />
+            <Script id="productSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/", 
+                        "@type": "Product", 
+                        "name": " Video Animation Pricing | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.fefdb565.gif",
+                        "description": "Explore our straightforward pricing page to find the perfect animation solution for your needs. Our transparent pricing ensures clarity and flexibility.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Infinity Animations"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1174"
+                        }
+                    }
+                `}
+            </Script>
         </>
     )
 }

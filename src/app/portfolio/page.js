@@ -239,6 +239,26 @@ export default function Page() {
             <Want content={want} />
             <Testimonial content={testimonial} />
             <Contact />
+            <Script id="productSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/", 
+                        "@type": "Product", 
+                        "name": "Video Animation Portfolio | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.2f879c43.png",
+                        "description": "Explore the magic that unfolds when imagination meets expertise, and witness how each project tells a unique story in the language of visual brilliance.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Infinity Animations"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1174"
+                        }
+                    }
+                `}
+            </Script>
         </>
     )
 }

@@ -1,18 +1,38 @@
 // Meta Data
 export const metadata = {
     // Title & Descriptions
-    title: "Expertly Crafted Infographics Design Services – Turning Ideas into Visual Stories",
-    description: "Discover the power of visual storytelling through our Infographics Design Services. From complex data to compelling narratives, our experts have your back.",
+    title: "Infographic Design Services - Infinity Animations ",
+    description: "Infographic Design Services, Elevate your communication and captivate your audience with our expertise in infographic design today!",
     // Canonical
     alternates: { canonical: 'https://infinityanimations.com/infographics-design/' },
     // OG Metas
     openGraph: {
-        title: "Expertly Crafted Infographics Design Services – Turning Ideas into Visual Stories",
-        description: "Discover the power of visual storytelling through our Infographics Design Services. From complex data to compelling narratives, our experts have your back.",
+        title: "Infographic Design Services - Infinity Animations ",
+        description: "Infographic Design Services, Elevate your communication and captivate your audience with our expertise in infographic design today!",
         url: 'https://infinityanimations.com/infographics-design/',
-     siteName: 'Infinity Animations',
+        siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
+    },
+    //===== Canonical =====
+    alternates: { canonical: 'https://infinityanimations.com/infographics-design/' },
+    //===== GEO Tags =====
+    other: {
+        "DC.title": "Infographic Design Services",
+        "geo.region": "US",
+        "geo.position": "39.78373;-100.445882",
+        "ICBM": "39.78373, -100.445882",
+        //==========
+        "DC.title": "Infographic Design Services",
+        "geo.region": "US-NY",
+        "geo.position": "39.78373;-100.445882",
+        "ICBM": "39.78373, -100.445882",
+        //==========
+        "DC.title": "Infographic Design Services",
+        "geo.region": "US-NY",
+        "geo.placename": "New York",
+        "geo.position": "39.78373;-100.445882",
+        "ICBM": "39.78373, -100.445882"
     },
 }
 

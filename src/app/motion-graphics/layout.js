@@ -1,18 +1,38 @@
 // Meta Data
 export const metadata = {
     // Title & Descriptions
-    title: "Explore Our Motion Graphics Services for Engaging and Immersive Storytelling",
-    description: "Experience the power of motion as we turn your ideas into mesmerizing visual narratives. Let's bring your story to life!.",
+    title: "Motion Graphics and Design Services - Infinity Animations ",
+    description: "Motion Graphics and Design Services, Explore our professional services to create captivating motion graphics that convey your message with impact.",
     // Canonical
     alternates: { canonical: 'https://infinityanimations.com/motion-graphics/' },
     // OG Metas
     openGraph: {
-        title: "Explore Our Motion Graphics Services for Engaging and Immersive Storytelling",
-        description: "Experience the power of motion as we turn your ideas into mesmerizing visual narratives. Let's bring your story to life!.",
+        title: "Motion Graphics and Design Services - Infinity Animations ",
+        description: "Motion Graphics and Design Services, Explore our professional services to create captivating motion graphics that convey your message with impact.",
         url: 'https://infinityanimations.com/motion-graphics/',
-     siteName: 'Infinity Animations',
+        siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
+    },
+    //===== Canonical =====
+    alternates: { canonical: 'https://infinityanimations.com/' },
+    //===== GEO Tags =====
+    other: {
+        "DC.title": "Motion Graphics and Design Services",
+        "geo.region": "US",
+        "geo.position": "39.78373;-100.445882",
+        "ICBM": "39.78373, -100.445882",
+        //==========
+        "DC.title": "Motion Graphics and Design Services",
+        "geo.region": "US-NY",
+        "geo.position": "39.78373;-100.445882",
+        "ICBM": "39.78373, -100.445882",
+        //==========
+        "DC.title": "Motion Graphics and Design Services",
+        "geo.region": "US-NY",
+        "geo.placename": "New York",
+        "geo.position": "39.78373;-100.445882",
+        "ICBM": "39.78373, -100.445882"
     },
 }
 
