@@ -12,6 +12,7 @@ import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
 import Features from "@/components/features/Features";
 import Partners from "@/components/partners/Partners";
+import Script from "next/script";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -77,7 +78,26 @@ export default function Page() {
             <Want content={want} />
             <Testimonial content={testimonial} />
             <Contact />
-
+            <Script id="productSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/", 
+                        "@type": "Product", 
+                        "name": "Why Choose Us | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.c320cad2.png",
+                        "description": "Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame. Contact Us Now!",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Infinity Animations"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1174"
+                        }
+                    }
+                `}
+            </Script>
         </>
     )
 }

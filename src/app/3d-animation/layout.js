@@ -1,18 +1,38 @@
 // Meta Data
 export const metadata = {
     // Title & Descriptions
-    title: "Unleash the Power of 3D Animation for Your Brand's Visual Triumph!",
-    description: "Experience the future of visual storytelling with our 3D animation services. Elevate your brand narrative to new dimensions with captivating and immersive visuals.",
+    title: "3D Animation Services - Infinity Animations",
+    description: "3D Animation Services, Explore professional 3D animation services to bring your ideas to life with depth and realism.",
     // Canonical
     alternates: { canonical: 'https://infinityanimations.com/3d-animation/' },
     // OG Metas
     openGraph: {
-        title: "Unleash the Power of 3D Animation for Your Brand's Visual Triumph!",
-        description: "Experience the future of visual storytelling with our 3D animation services. Elevate your brand narrative to new dimensions with captivating and immersive visuals.",
+        title: "3D Animation Services - Infinity Animations",
+        description: "3D Animation Services, Explore professional 3D animation services to bring your ideas to life with depth and realism.",
         url: 'https://infinityanimations.com/3d-animation/',
-     siteName: 'Infinity Animations',
+        siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
+    }, 
+    //===== Canonical =====
+    alternates: { canonical: 'https://infinityanimations.com/' },
+    //===== GEO Tags =====
+    other: {
+        "DC.title": "3D Animation Services",
+        "geo.region": "US",
+        "geo.position": "39.78373;-100.445882",
+        "ICBM": "39.78373, -100.445882",
+        //==========
+        "DC.title": "3D Animation Services",
+        "geo.region": "US-NY",
+        "geo.position": "39.78373;-100.445882",
+        "ICBM": "39.78373, -100.445882",
+        //==========
+        "DC.title": "3D Animation Services",
+        "geo.region": "US-NY",
+        "geo.placename": "New York",
+        "geo.position": "39.78373;-100.445882",
+        "ICBM": "39.78373, -100.445882"
     },
 }
 

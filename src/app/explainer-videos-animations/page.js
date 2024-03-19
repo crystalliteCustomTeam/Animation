@@ -46,6 +46,7 @@ import Thumnail27 from "media/thumbnails/hybrid/3.jpg";
 import Thumnail28 from "media/thumbnails/hybrid/4.jpg";
 import Thumnail29 from "media/thumbnails/hybrid/5.jpg";
 import Thumnail30 from "media/thumbnails/hybrid/6.jpg";
+import Script from 'next/script';
 
 export default function Page() {
 
@@ -240,6 +241,95 @@ export default function Page() {
             <Clients />
             <Explainer />
             <Footer />
+            <Script id="websiteSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/",
+                        "@type": "WebSite",
+                        "name": "Animation Explainer Videos Company | Infinity Animations",
+                        "url": "https://infinityanimations.com/video-explainer-lp2",
+                        "potentialAction": {
+                          "@type": "SearchAction",
+                          "target": "{search_term_string}",
+                          "query-input": "required name=search_term_string"
+                        }                      
+                    }
+                `}
+            </Script>
+            <Script id="organizationSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "Corporation",
+                        "name": "Animation Explainer Videos Company | Infinity Animations",
+                        "url": "https://infinityanimations.com/video-explainer-lp2",
+                        "logo": "https://infinityanimations.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.957f7aac.gif&w=256&q=75"
+                    }
+                `}
+            </Script>
+            <Script id="localBusinessSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "ProfessionalService",
+                        "name": "Animation Explainer Videos Company | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner.e85b7a7f.jpg",
+                        "@id": "",
+                        "url": "https://infinityanimations.com/video-explainer-lp2",
+                        "telephone": "833-666-6689",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "One World Trade Center, Suite 8500",
+                            "addressLocality": "New York",
+                            "addressRegion": "NY",
+                            "postalCode": "10007",
+                            "addressCountry": "US"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 40.7130082,
+                            "longitude": -74.0131689
+                        },
+                        "openingHoursSpecification": {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                            ],
+                            "opens": "08:00",
+                            "closes": "21:00"
+                        },
+                        "sameAs": [
+                            "https://www.facebook.com/infinityanimationsofficial",
+                            "https://www.instagram.com/infinityanimationsofficials"
+                        ] 
+                    }
+                `}
+            </Script>
+            <Script id="productSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/", 
+                        "@type": "Product", 
+                        "name": "Animation Explainer Videos Company | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner.e85b7a7f.jpg",
+                        "description": "Animated Explainer Videos Company, Contact our team today to create captivating animated explainer videos that engage and inform your audience.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Infinity Animations"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.8",
+                            "ratingCount": "1087"
+                        }
+                    }
+                `}
+            </Script>
         </>
     )
 }

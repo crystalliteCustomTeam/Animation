@@ -8,6 +8,7 @@ import Contact from '@/components/contact/Contact';
 //==== Testimonial Images
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
+import Script from "next/script";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -66,6 +67,26 @@ export default function Page() {
             <Want content={want} />
             <Testimonial content={testimonial} />
             <Contact />
+            <Script id="productSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/", 
+                        "@type": "Product", 
+                        "name": " Video Animation Pricing | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.fefdb565.gif",
+                        "description": "Explore our straightforward pricing page to find the perfect animation solution for your needs. Our transparent pricing ensures clarity and flexibility.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Infinity Animations"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1174"
+                        }
+                    }
+                `}
+            </Script>
         </>
     )
 }

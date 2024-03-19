@@ -13,6 +13,7 @@ import StoryLine4 from "media/storyline/storyLine14.png";
 //==== Testimonial Images
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
+import Script from "next/script";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -92,6 +93,26 @@ export default function Page() {
             <Want content={want} />
             <Testimonial content={testimonial} />
             <Contact />
+            <Script id="productSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/", 
+                        "@type": "Product", 
+                        "name": "Video Animation Creation Process | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.8ff46426.gif",
+                        "description": "Step into the behind-the-scenes magic – explore our animation creation process page. From ideation to final delivery, witness the journey of visual tales.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Infinity Animations"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1174"
+                        }
+                    }
+                `}
+            </Script>
         </>
     )
 }

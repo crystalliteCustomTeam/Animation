@@ -1,18 +1,38 @@
 // Meta Data
 export const metadata = {
     // Title & Descriptions
-    title: "Uplift Your Designs with Cutting-Edge Architectural Visualization Services",
-    description: "Transform your architectural visions into captivating realities with our specialized visualization services. From concept to creation, experience the future of design. ",
+    title: "Architectural Visualization & Rendering Service - Infinity Animations",
+    description: "Architectural Visualization and 3D Rendering Services, Explore our professional services to showcase your architectural projects with immersive visuals.",
     // Canonical
     alternates: { canonical: 'https://infinityanimations.com/architectural-services/' },
     // OG Metas
     openGraph: {
-        title: "Uplift Your Designs with Cutting-Edge Architectural Visualization Services",
-        description: "Transform your architectural visions into captivating realities with our specialized visualization services. From concept to creation, experience the future of design. ",
+        title: "Architectural Visualization & Rendering Service - Infinity Animations",
+        description: "Architectural Visualization and 3D Rendering Services, Explore our professional services to showcase your architectural projects with immersive visuals.",
         url: 'https://infinityanimations.com/architectural-services/',
-     siteName: 'Infinity Animations',
+        siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
+    }, 
+    //===== Canonical =====
+    alternates: { canonical: 'https://infinityanimations.com/' },
+    //===== GEO Tags =====
+    other: {
+        "DC.title": "Architectural Visualization and 3D Rendering Services",
+        "geo.region": "US",
+        "geo.position": "39.78373;-100.445882",
+        "ICBM": "39.78373, -100.445882",
+        //==========
+        "DC.title": "Architectural Visualization and 3D Rendering Services",
+        "geo.region": "US-NY",
+        "geo.position": "39.78373;-100.445882",
+        "ICBM": "39.78373, -100.445882",
+        //==========
+        "DC.title": "Architectural Visualization and 3D Rendering Services",
+        "geo.region": "US-NY",
+        "geo.placename": "New York",
+        "geo.position": "39.78373;-100.445882",
+        "ICBM": "39.78373, -100.445882"
     },
 }
 

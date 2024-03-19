@@ -1,3 +1,4 @@
+import Script from 'next/script';
 // Import Page Components
 import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
@@ -88,7 +89,7 @@ export default function Page() {
         { label: "Motion Graphics", index: 3 },
         { label: "Hybrid Animation", index: 4 },
     ];
-        const tabContents = [
+    const tabContents = [
         [
             {
                 video: "https://player.vimeo.com/progressive_redirect/playback/907828567/rendition/1080p/file.mp4?loc=external&signature=2cb0c1bd0ce7278cfcc88931f949d2a4df4a28555c8e3a5dd73de49eeb9934e9",
@@ -341,6 +342,95 @@ export default function Page() {
             <Want content={want} />
             <Testimonial content={testimonial} />
             <Contact />
+            <Script id="websiteSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/",
+                        "@type": "WebSite",
+                        "name": "2D Animation Services | Infinity Animations",
+                        "url": "https://infinityanimations.com/2d-animation",
+                        "potentialAction": {
+                            "@type": "SearchAction",
+                            "target": "{search_term_string}",
+                            "query-input": "required name=search_term_string"
+                        }
+                    }
+                `}
+            </Script>
+            <Script id="organizationSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "Corporation",
+                        "name": "2D Animation Services | Infinity Animations",
+                        "url": "https://infinityanimations.com/2d-animation",
+                        "logo": "https://infinityanimations.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.957f7aac.gif&w=828&q=75"
+                    }
+                `}
+            </Script>
+            <Script id="localBusinessSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "ProfessionalService",
+                        "name": "2D Animation Services | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.7b25047a.png",
+                        "@id": "",
+                        "url": "https://infinityanimations.com/2d-animation",
+                        "telephone": "833-666-6684",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "One World Trade Center, Suite 8500",
+                            "addressLocality": "New York",
+                            "addressRegion": "NY",
+                            "postalCode": "10007",
+                            "addressCountry": "US"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 40.7130082,
+                            "longitude": -74.0131689
+                        },
+                        "openingHoursSpecification": {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                            ],
+                            "opens": "08:00",
+                            "closes": "21:00"
+                        },
+                        "sameAs": [
+                            "https://www.facebook.com/infinityanimationsofficial",
+                            "https://www.instagram.com/infinityanimationsofficials"
+                        ] 
+                    }
+                `}
+            </Script>
+            <Script id="productSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/", 
+                        "@type": "Product", 
+                        "name": "2D Animation Services | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.7b25047a.png",
+                        "description": "2D Animation Services, Explore our professional 2D animation services to bring characters and concepts to life with creativity and precision.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Infinity Animations"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1174"
+                        }
+                    }
+                `}
+            </Script>
         </>
     )
 }

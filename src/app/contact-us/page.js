@@ -2,6 +2,7 @@
 import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
 import Contact from '@/components/contact/Contact';
+import Script from "next/script";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -15,6 +16,26 @@ export default function Page() {
             <Hero content={hero} />
             <Review />
             <Contact />
+            <Script id="productSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/", 
+                        "@type": "Product", 
+                        "name": "Contact Us | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.b05f4518.gif",
+                        "description": "Reach out to Infinity Animations today to discuss your animation project. Whether it's 2D, 3D, or motion graphics, our team is here to help you elevate your vision.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Infinity Animations"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1174"
+                        }
+                    }
+                `}
+            </Script>
         </>
     )
 }

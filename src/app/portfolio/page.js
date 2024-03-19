@@ -40,6 +40,7 @@ import Thumnail27 from "media/thumbnails/hybrid/3.jpg"
 import Thumnail28 from "media/thumbnails/hybrid/4.jpg"
 import Thumnail29 from "media/thumbnails/hybrid/5.jpg"
 import Thumnail30 from "media/thumbnails/hybrid/6.jpg"
+import Script from "next/script";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -239,6 +240,26 @@ export default function Page() {
             <Want content={want} />
             <Testimonial content={testimonial} />
             <Contact />
+            <Script id="productSchema" type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org/", 
+                        "@type": "Product", 
+                        "name": "Video Animation Portfolio | Infinity Animations",
+                        "image": "https://infinityanimations.com/_next/static/media/banner-bg.2f879c43.png",
+                        "description": "Explore the magic that unfolds when imagination meets expertise, and witness how each project tells a unique story in the language of visual brilliance.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Infinity Animations"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1174"
+                        }
+                    }
+                `}
+            </Script>
         </>
     )
 }
