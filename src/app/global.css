@@ -563,6 +563,14 @@ div#ty7 {
     opacity: 1;
     color: #ffd504;
   }
+
+  .streamedSlider2 .slick-dots li.slick-active button:before,
+  .typeSlider2 .slick-dots li.slick-active button:before,
+  .clientSlider2 .slick-dots li.slick-active button:before,
+  .explainSlider2 .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #a70a0e;
+  }
 }
 
 @media only screen and (max-width: 567px) {

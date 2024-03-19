@@ -15,12 +15,12 @@ const Explainer = () => {
 
     // Slider Setting
     const testiSlider = {
-        dots: false,
+        dots: true,
         arrows: false,
-        infinite: false,
+        infinite: true,
         autoplay: true,
         autoplaySpeed: 5000,
-        speed: 3000,
+        speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
@@ -61,7 +61,7 @@ const Explainer = () => {
                         </div>
                     </div>
                     <div className="lg:hidden block">
-                        <Slider {...testiSlider} className="brandSlider">
+                        <Slider {...testiSlider} className="explainSlider explainSlider2">
                             <div>
                                 <div className="card">
                                     <Image src={Icon1} alt='Icon 1' className='mx-auto' />

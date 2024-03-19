@@ -87,7 +87,7 @@ const Explainer = () => {
                         </Slider>
                     </div>
                 </div>
-            </section >
+            </section>
         </>
     )
 }

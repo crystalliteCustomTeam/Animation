@@ -135,7 +135,7 @@ const Banner = () => {
 
     return (
         <>
-            <section className='bg-cover bg-center bg-[#003465f0] lg:bg-[url("../../public/video-explainer/banner.jpg")] h-[100%] pt-[180px] lg:pt-[190px] pb-[60px] md:pb-[100px] mt-[-85px]'>
+            <section className='bg-cover bg-center bg-[#003465f0] lg:bg-[url("../../public/video-explainer/banner.jpg")] h-[100%] pt-[180px] lg:pt-[265px] pb-[60px] md:pb-[100px] mt-[-85px]'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-y-12">
                         <div className="col-span-12 lg:col-span-6">
@@ -162,7 +162,7 @@ const Banner = () => {
                             <Image src={BannerLogos} alt='banner-logos' className='object-contain mt-4 mb-6' />
                             <div className="flex gap-4 md:gap-2">
                                 <div className="btn">
-                                    <button onClick={popupHandle} className='flex items-center text-[16px] text-black font-[700] montserrat bg-[#f6c501] py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                    <button onClick={popupHandle} className='flex items-center text-[16px] text-black font-[700] montserrat bg-[#f6c501] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                         Get Started
                                     </button>
                                 </div>

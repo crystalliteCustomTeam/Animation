@@ -134,7 +134,7 @@ const Banner = () => {
 
     return (
         <>
-            <section className='bg-cover bg-right bg-primary-100/60 lg:bg-[url("../../public/video-explainer2/banner.png")] h-[100%] pt-[180px] lg:pt-[190px] pb-[60px] md:pb-[100px] mt-[-85px]'>
+            <section className='bg-cover bg-right bg-black/90 lg:bg-[url("../../public/video-explainer2/banner.png")] h-[100%] pt-[180px] lg:pt-[265px] pb-[60px] md:pb-[100px] mt-[-85px]'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-y-12">
                         <div className="col-span-12 lg:col-span-6">
@@ -165,7 +165,7 @@ const Banner = () => {
                             <Image src={BannerLogos} alt='banner-logos' className='object-contain mt-4 mb-6' />
                             <div className="flex gap-4 md:gap-2">
                                 <div className="btn">
-                                    <button onClick={popupHandle} className='flex items-center text-[14px] text-white font-[700] montserrat bg-[#A70A0E] py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                    <button onClick={popupHandle} className='flex items-center text-[14px] text-white font-[700] montserrat bg-[#A70A0E] py-[12px] px-[25px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                         Get Started
                                     </button>
                                 </div>
@@ -179,7 +179,7 @@ const Banner = () => {
                             </div>
                         </div>
                         <div className="col-span-12 lg:col-span-6">
-                            <form action="javascript:;" className={`${styles.banForm} pt-[20px] md:mr-[98px] md:ml-[40px] relative border-[1px] border-white lg:w-8/12`}>
+                            <form action="javascript:;" className={`${styles.banForm} pt-[20px] md:mr-[98px] md:ml-[40px] relative border-[1px] border-[#A70A0E] md:border-white lg:w-8/12`}>
                                 <h3 className='text-white text-[20px] md:text-[25px] leading-[30px] montserrat font-[700] text-left py-[10px] px-[20px]'>Share Your <br className='block' />
                                     <strong className='text-[30px] font-extrabold '>
                                         Animation Idea
@@ -187,14 +187,14 @@ const Banner = () => {
                                 </h3>
 
                                 <div className="form pt-[5px] px-[20px] pb-[30px]">
-                                    <input type="text" name="name" placeholder='Enter your name' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-black' onChange={handleDataChange} required />
+                                    <input type="text" name="name" placeholder='Enter your name' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white' onChange={handleDataChange} required />
                                     {errors.name && (
                                         <span className="text-[12px] block p-2 font-medium text-white">
                                             {errors.name}
                                         </span>
                                     )}
 
-                                    <input type="email" name='email' placeholder='Enter Email' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-black' onChange={handleDataChange} required />
+                                    <input type="email" name='email' placeholder='Enter Email' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white' onChange={handleDataChange} required />
                                     {errors.email && (
                                         <span className="text-[12px] block p-2 font-medium text-white">
                                             {errors.email}
@@ -203,14 +203,14 @@ const Banner = () => {
 
                                     <input type="tel" name='phone' minLength="10"
                                         maxLength="13"
-                                        pattern="[0-9]*" placeholder='Enter Phone Number' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-black' onChange={handleDataChange} required />
+                                        pattern="[0-9]*" placeholder='Enter Phone Number' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white' onChange={handleDataChange} required />
                                     {errors.phone && (
                                         <span className="text-[12px] block p-2 font-medium text-white">
                                             {errors.phone}
                                         </span>
                                     )}
 
-                                    <textarea name='message' type="text" placeholder='Message' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-black' required onChange={handleDataChange}></textarea>
+                                    <textarea name='message' type="text" placeholder='Message' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white resize-none' required onChange={handleDataChange}></textarea>
 
                                     <button type='submit' className='bg-[#A70A0E] hover:bg-[#1c2a49] text-white text-[16px] font-[700] montserrat uppercase mt-[10px] py-[13px] px-[8px] shadow-lg w-full duration-700 transition-all hover:duration-700 hover:transition-all' onClick={handleFormSubmit} disabled={isDisabled}>{formStatus}</button>
                                 </div>

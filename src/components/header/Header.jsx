@@ -225,7 +225,6 @@ function NavList() {
 
 const Header = () => {
     const [openNav, setOpenNav] = React.useState(false);
-    const [isFixed, setIsFixed] = useState(true);
 
     React.useEffect(() => {
         window.addEventListener(
@@ -233,30 +232,24 @@ const Header = () => {
             () => window.innerWidth >= 960 && setOpenNav(false),
         );
     }, []);
-    const [headercolor, setHeadercolor] = useState("bg-transparent");
-    const [headerPad, setHeaderPad] = useState("py-3");
-
+    // ===============================================
+    const [isScrolled, setIsScrolled] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
-            const currentScrollY = window.scrollY;
-            const scrollThreshold = 100; // Adjust this value according to your design
-            if (currentScrollY > scrollThreshold) {
-                setHeadercolor("bg-black shadow-[#f50b0dad] shadow-xl");
-                setHeaderPad("py-3");
-            } else {
-                setHeadercolor("bg-transparent");
-                setHeaderPad("py-3");
-            }
+            const scrollTop = window.scrollY;
+            setIsScrolled(scrollTop > 1);
         };
 
         window.addEventListener('scroll', handleScroll);
-        // Cleanup event listener on component unmount
-        return () => window.removeEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
-    const fixedClass = isFixed ? `fixed top-0 lg:absolute top-0 lg:left-0 lg:bg-transparent ${headerPad}` : 'top-[20px]';
+    
 
     return (
-        <header className={`w-full z-[999] rounded-none ${headercolor} ${fixedClass}`}>
+        <header className={`fixed left-0 top-0 w-full z-[999] rounded-none ${isScrolled ? 'bg-black/90 border-b border-[#ff2d4b]' : 'bg-transparent'}`}>
             <div className="container">
                 <Navbar className="max-w-none shadow-none px-0 py-2 rounded-none bg-transparent border-none">
                     <div className="flex items-center justify-between text-white relative">

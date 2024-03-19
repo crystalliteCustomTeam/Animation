@@ -27,8 +27,8 @@ const Packages = () => {
                             <div className="card bg-white rounded-[10px] py-[10px] overflow-hidden duration-700 relative z-1 cursor-pointer shadow-2xl before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:m-auto before:content-[''] before:rounded-[10px] before:translate-y-[-690px] before:duration-700 before:bg-white hover:before:bg-[#D9D9D9] before:z-0 hover:before:translate-y-[0px] group">
                                 <div className="card_top text-center pt-[15px] pb-[10px] relative z-1">
                                     <h3 className='text-[#231f20] montserrat text-[25px] font-[700] uppercase'>STARTUP PACKAGE</h3>
-                                    <Image src={Price1} alt='Price_image' className='mx-auto mt-[20px] mb-[5px]' />
-                                    <h4 className='text-[#231f20] text-[50px] font-[700] poppins py-[10px]'>$195</h4>
+                                    <Image src={Price1} alt='Price_image' className='hidden md:block mx-auto mt-[20px] mb-[5px]' />
+                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins py-0 md:py-[10px]'>$195</h4>
                                 </div>
                                 <div className="card_list bg-[#D9D9D9] py-[30px] px-[20px] relative z-1">
                                     <ul className='h-[245px] pl-[5px]'>
@@ -53,7 +53,7 @@ const Packages = () => {
                                     </ul>
                                 </div>
                                 <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
-                                    <div className="flex-wrap gap-y-3 flex items-center justify-between">
+                                    <div className="hidden md:flex flex-wrap gap-y-3 items-center justify-between">
                                         <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-black montserrat flex flex-col justify-center font-[700]'>
                                             speak with us
                                             <span className='text-[#231f20] text-[16px] pt-2'>833-666-6689</span>
@@ -63,7 +63,7 @@ const Packages = () => {
                                             <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
                                         </a>
                                     </div>
-                                    <div className="flex-wrap flex items-center justify-between mt-[35px] mb-[20px]">
+                                    <div className="flex-wrap flex items-center justify-between mt-[0px] md:mt-[35px] mb-[20px]">
                                         <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[700] poppins bg-[#A70A0E] group-hover:bg-[#1c2a49] py-[12px] px-3 xl:px-5 w-[45%] h-[50px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                             Get Started
                                         </button>
@@ -79,8 +79,8 @@ const Packages = () => {
                             <div className="card bg-white rounded-[10px] py-[10px] overflow-hidden duration-700 relative z-1 cursor-pointer shadow-2xl before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:m-auto before:content-[''] before:rounded-[10px] before:translate-y-[-690px] before:duration-700 before:bg-white hover:before:bg-[#D9D9D9] before:z-0 hover:before:translate-y-[0px] group">
                                 <div className="card_top text-center pt-[15px] pb-[10px] relative z-1">
                                     <h3 className='text-[#231f20] montserrat text-[25px] font-[700] uppercase'>CLASSIC PACKAGE</h3>
-                                    <Image src={Price2} alt='Price_image' className='mx-auto mt-[20px] mb-[5px]' />
-                                    <h4 className='text-[#231f20] text-[50px] font-[700] poppins py-[10px]'>$499</h4>
+                                    <Image src={Price2} alt='Price_image' className='hidden md:block mx-auto mt-[20px] mb-[5px]' />
+                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins py-0 md:py-[10px]'>$499</h4>
                                 </div>
                                 <div className="card_list bg-[#D9D9D9] py-[30px] px-[20px] relative z-1">
                                     <ul className='h-[245px] pl-[5px]'>
@@ -108,7 +108,7 @@ const Packages = () => {
                                     </ul>
                                 </div>
                                 <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
-                                    <div className="flex-wrap gap-y-3 flex items-center justify-between">
+                                    <div className="hidden md:flex flex-wrap gap-y-3 items-center justify-between">
                                         <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-black montserrat flex flex-col justify-center font-[700]'>
                                             speak with us
                                             <span className='text-[#231f20] text-[16px] pt-2'>833-666-6689</span>
@@ -118,7 +118,7 @@ const Packages = () => {
                                             <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
                                         </a>
                                     </div>
-                                    <div className="flex-wrap flex items-center justify-between mt-[35px] mb-[20px]">
+                                    <div className="flex-wrap flex items-center justify-between mt-[0px] md:mt-[35px] mb-[20px]">
                                         <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[700] poppins bg-[#A70A0E] group-hover:bg-[#1c2a49] py-[12px] px-3 xl:px-5 w-[45%] h-[50px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                             Get Started
                                         </button>
@@ -134,8 +134,8 @@ const Packages = () => {
                             <div className="card bg-white rounded-[10px] py-[10px] overflow-hidden duration-700 relative z-1 cursor-pointer shadow-2xl before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:m-auto before:content-[''] before:rounded-[10px] before:translate-y-[-690px] before:duration-700 before:bg-white hover:before:bg-[#D9D9D9] before:z-0 hover:before:translate-y-[0px] group">
                                 <div className="card_top text-center pt-[15px] pb-[10px] relative z-1">
                                     <h3 className='text-[#231f20] montserrat text-[25px] font-[700] uppercase'>PREMIUM PACKAGE</h3>
-                                    <Image src={Price3} alt='Price_image' className='mx-auto mt-[20px] mb-[5px]' />
-                                    <h4 className='text-[#231f20] text-[50px] font-[700] poppins py-[10px]'>$799</h4>
+                                    <Image src={Price3} alt='Price_image' className='hidden md:block mx-auto mt-[20px] mb-[5px]' />
+                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins py-0 md:py-[10px]'>$799</h4>
                                 </div>
                                 <div className="card_list bg-[#D9D9D9] py-[30px] px-[20px] relative z-1">
                                     <ul className='h-[245px] pl-[5px]'>
@@ -163,7 +163,7 @@ const Packages = () => {
                                     </ul>
                                 </div>
                                 <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
-                                    <div className="flex-wrap gap-y-3 flex items-center justify-between">
+                                    <div className="hidden md:flex flex-wrap gap-y-3 items-center justify-between">
                                         <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-black montserrat flex flex-col justify-center font-[700]'>
                                             speak with us
                                             <span className='text-[#231f20] text-[16px] pt-2'>833-666-6689</span>
@@ -173,7 +173,7 @@ const Packages = () => {
                                             <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
                                         </a>
                                     </div>
-                                    <div className="flex-wrap flex items-center justify-between mt-[35px] mb-[20px]">
+                                    <div className="flex-wrap flex items-center justify-between mt-[0px] md:mt-[35px] mb-[20px]">
                                         <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[700] poppins bg-[#A70A0E] group-hover:bg-[#1c2a49] py-[12px] px-3 xl:px-5 w-[45%] h-[50px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                             Get Started
                                         </button>

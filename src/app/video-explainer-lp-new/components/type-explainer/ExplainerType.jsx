@@ -16,12 +16,12 @@ const ExplainerType = () => {
 
     // Slider Setting
     const testiSlider = {
-        dots: false,
+        dots: true,
         arrows: false,
-        infinite: false,
+        infinite: true,
         autoplay: true,
         autoplaySpeed: 5000,
-        speed: 3000,
+        speed: 1000,
         slidesToShow: 2,
         slidesToScroll: 1,
         responsive: [
@@ -104,9 +104,9 @@ const ExplainerType = () => {
                         </div>
                     </div>
                     <div className="lg:hidden block">
-                        <Slider {...testiSlider} className="brandSlider">
+                        <Slider {...testiSlider} className="typeSlider typeSlider2">
                             <div className="px-2">
-                                <div className="card rounded-[10px] bg-[#091416] shadow-2xl pt-[25px] px-[20px] pb-[35px] h-full">
+                                <div className="card rounded-[10px] bg-[#091416] shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
                                     <Image src={Card1} alt='card-1' />
                                     <div className="content">
                                         <h3 className='text-white text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] lg:h-[96px]'>Whiteboard <br /> Animation Video</h3>
@@ -115,7 +115,7 @@ const ExplainerType = () => {
                                 </div>
                             </div>
                             <div className="px-2">
-                                <div className="card rounded-[10px] bg-[#091416] shadow-2xl pt-[25px] px-[20px] pb-[35px] h-full">
+                                <div className="card rounded-[10px] bg-[#091416] shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
                                     <Image src={Card2} alt='card-1' />
                                     <div className="content">
                                         <h3 className='text-white text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] lg:h-[96px]'>Motion <br /> Graphics</h3>
@@ -124,7 +124,7 @@ const ExplainerType = () => {
                                 </div>
                             </div>
                             <div className="px-2">
-                                <div className="card rounded-[10px] bg-[#091416] shadow-2xl pt-[25px] px-[20px] pb-[35px] h-full">
+                                <div className="card rounded-[10px] bg-[#091416] shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
                                     <Image src={Card3} alt='card-1' />
                                     <div className="content">
                                         <h3 className='text-white text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] lg:h-[96px]'>2D Character <br /> Animation Videos</h3>
@@ -133,7 +133,7 @@ const ExplainerType = () => {
                                 </div>
                             </div>
                             <div className="px-2">
-                                <div className="card rounded-[10px] bg-[#091416] shadow-2xl pt-[25px] px-[20px] pb-[35px] h-full">
+                                <div className="card rounded-[10px] bg-[#091416] shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
                                     <Image src={Card4} alt='card-1' />
                                     <div className="content">
                                         <h3 className='text-white text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] lg:h-[96px]'>3D Animation <br /> Video</h3>
@@ -142,7 +142,7 @@ const ExplainerType = () => {
                                 </div>
                             </div>
                             <div className="px-2">
-                                <div className="card rounded-[10px] bg-[#091416] shadow-2xl pt-[25px] px-[20px] pb-[35px] h-full">
+                                <div className="card rounded-[10px] bg-[#091416] shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
                                     <Image src={Card6} alt='card-1' />
                                     <div className="content">
                                         <h3 className='text-white text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] lg:h-[96px]'>Screencast <br /> Videos</h3>
@@ -151,7 +151,7 @@ const ExplainerType = () => {
                                 </div>
                             </div>
                             <div className="px-2">
-                                <div className="card rounded-[10px] bg-[#091416] shadow-2xl pt-[25px] px-[20px] pb-[35px] h-full">
+                                <div className="card rounded-[10px] bg-[#091416] shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
                                     <Image src={Card5} alt='card-1' />
                                     <div className="content">
                                         <h3 className='text-white text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] lg:h-[96px]'>Typography <br /> Videos</h3>

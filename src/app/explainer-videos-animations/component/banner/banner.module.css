@@ -347,4 +347,8 @@
   .noty img {
     display: none;
   }
+  
+  .banner {
+    padding-top: 125px;
+  }
 }

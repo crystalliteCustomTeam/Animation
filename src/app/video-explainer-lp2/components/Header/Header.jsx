@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import usePopup from '@/app/configs/store/Popup'
 import Image from 'next/image'
-import Link from 'next/link'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 //===== Images 
 import logo from "media/images/logo.gif";
@@ -10,40 +9,46 @@ import Chat from "media/video-explainer/cht-icon.png"
 import telephone from "media/icons/call.png";
 
 
-const HeaderLP = () => { 
-
+const HeaderLP = () => {
     const { popup, togglePopup } = usePopup();
-    const [isFixed, setIsFixed] = useState(true);
     const popupHandle = () => {
         togglePopup(popup);
     }
-
-    const [headercolor, setHeadercolor] = useState("bg-transparent");
-    const [headerPad, setHeaderPad] = useState("py-3");
-
+    // ===============================================
+    const [isScrolled, setIsScrolled] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
-            const currentScrollY = window.scrollY;
-            const scrollThreshold = 100; // Adjust this value according to your design
-            if (currentScrollY > scrollThreshold) {
-                setHeadercolor("bg-[#003465f0]");
-                setHeaderPad("py-3");
-            } else {
-                setHeadercolor("bg-transparent");
-                setHeaderPad("py-3");
-            }
+            const scrollTop = window.scrollY;
+            setIsScrolled(scrollTop > 1);
         };
 
         window.addEventListener('scroll', handleScroll);
-        // Cleanup event listener on component unmount
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
-    const fixedClass = isFixed ? `fixed top-0 lg:relative ${headerPad}` : 'top-[20px]';
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    // ===============================================
+    const [isScrollDown, setIsScrollDown] = useState(false);
+    const [lastScrollTop, setLastScrollTop] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            setIsScrollDown(scrollTop > 1 && scrollTop > lastScrollTop);
+            setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [lastScrollTop]);
 
     return (
         <>
-            <header className={`${headercolor} ${fixedClass} z-50 w-full`}>
+            <header className={`fixed left-0 top-0 py-3 z-50 w-full ${isScrolled ? 'bg-[#003465] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-3' : ''}`}>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
                         <div className="col-span-6 lg:col-span-4 xl:col-span-5">
