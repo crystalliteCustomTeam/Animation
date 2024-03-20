@@ -1,14 +1,46 @@
 import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 import Axios from "axios";
 import { usePathname } from 'next/navigation'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
-import Image from 'next/image'
-import Link from 'next/link'
-
 // ==== Images 
 import Payment from "media/video-explainer2/payment-img.png"
 import UpArrow from "media/video-explainer2/up-arrow.png"
+import facebook from "media/icons/fb.png";
+import twitter from "media/icons/x.png";
+import youtube from "media/icons/youtube.png";
+import instagram from "media/icons/insta.png";
+import linkedin from "media/icons/linkedin.png";
+import vimeo from "media/icons/vemio.png";
+
+const socialLinks = [
+    {
+        icon: facebook,
+        link: "https://www.facebook.com/infinityanimationsofficial"
+    },
+    {
+        icon: twitter,
+        link: "https://twitter.com/infinityan_/"
+    },
+    {
+        icon: instagram,
+        link: "https://www.instagram.com/infinityanimationsofficials"
+    },
+    {
+        icon: linkedin,
+        link: "https://www.linkedin.com/company/infinity-animations/"
+    },
+    {
+        icon: youtube,
+        link: "https://www.youtube.com/@Infinity-Animations"
+    },
+    {
+        icon: vimeo,
+        link: "https://www.vimeo.com/infinityanimations"
+    },
+]
 
 const Contact = () => {
 
@@ -200,7 +232,20 @@ const Contact = () => {
                                         </a>
                                     </li>
                                 </ul>
-                                <Image src={Payment} alt='Payment-Methods' className='w-5/12 lg:w-full mt-3 object-contain' />
+                                <Image src={Payment} alt='Payment-Methods' className='w-5/12 lg:w-full my-3 object-contain' />
+                                <ul className="flex items-center gap-4 mt-4 md:mt-6">
+                                    {
+                                        socialLinks.map((e, i) => {
+                                            return (
+                                                <li key={i} className="bg-transparent border border-[#fc0] w-[45px] h-[45px] rounded-[5px] flex items-center justify-center p-1 hover:bg-second">
+                                                    <Link target="_blank" href={e.link}>
+                                                        <Image src={e.icon} className="w-[20px]" alt="Infinity Animation" />
+                                                    </Link>
+                                                </li>
+                                            );
+                                        })
+                                    }
+                                </ul>
                             </div>
                         </div>
                     </div>
