@@ -1,13 +1,11 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
-    title: "Motion Graphics and Design Services - Infinity Animations ",
+    //===== Meta Tags =====
+    title: "Motion Graphics and Design Services - Infinity Animations",
     description: "Motion Graphics and Design Services, Explore our professional services to create captivating motion graphics that convey your message with impact.",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/motion-graphics/' },
-    // OG Metas
+    //===== OG Tags =====
     openGraph: {
-        title: "Motion Graphics and Design Services - Infinity Animations ",
+        title: "Motion Graphics and Design Services - Infinity Animations",
         description: "Motion Graphics and Design Services, Explore our professional services to create captivating motion graphics that convey your message with impact.",
         url: 'https://infinityanimations.com/motion-graphics/',
         siteName: 'Infinity Animations',
@@ -15,7 +13,7 @@ export const metadata = {
         type: 'website',
     },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/' },
+    alternates: { canonical: 'https://infinityanimations.com/motion-graphics/' },
     //===== GEO Tags =====
     other: {
         "DC.title": "Motion Graphics and Design Services",

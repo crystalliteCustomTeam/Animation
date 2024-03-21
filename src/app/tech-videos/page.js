@@ -14,7 +14,6 @@ import Contact from '@/components/contact/Contact';
 // Import Images
 import LookingFlodImg from "media/tech-videos/looking-img.png";
 import ProductImg from "media/tech-videos/product-img.png";
-
 //==== Boost Images
 import BoostFlodImg from "media/images/boost-img.gif";
 //===== Tech Type Images
@@ -68,7 +67,6 @@ import Thumnail28 from "media/thumbnails/hybrid/4.jpg"
 import Thumnail29 from "media/thumbnails/hybrid/5.jpg"
 import Thumnail30 from "media/thumbnails/hybrid/6.jpg"
 import checkIcon from 'media/icons/check-img.png'
-
 
 export default function Page() {
     //=====Banner Fold=====//

@@ -1,10 +1,10 @@
+import React from 'react';
+import Script from 'next/script';
 // Import Page Components
 import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
 import Blogs from "@/components/blogs/Blogs";
 import NewsLetter from "@/components/newsletter/NewsLetter";
-import Script from "next/script";
-
 
 export default function Page() {
     //=====Banner Fold=====//

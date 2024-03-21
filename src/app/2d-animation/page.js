@@ -1,3 +1,4 @@
+import React from 'react';
 import Script from 'next/script';
 // Import Page Components
 import Hero from "@/components/hero/Hero";
@@ -12,7 +13,6 @@ import Testimonial from '@/components/testimonial/Testimonial';
 import Contact from '@/components/contact/Contact';
 // Import Images
 import LookingFlodImg from "media/2d-animation/looking-img.gif";
-
 //==== Boost Images
 import BoostFlodImg from "media/images/boost-img.gif";
 import boosticon1 from "media/icons/boost-icon4.png"

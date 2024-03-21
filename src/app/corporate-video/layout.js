@@ -1,11 +1,9 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
+    //===== Meta Tags =====
     title: "Corporate Videos | Infinity Animations",
     description: "Corporate Videos | Infinity Animations",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/corporate-video/' },
-    // OG Metas
+    //===== OG Tags =====
     openGraph: {
         title: 'Corporate Videos | Infinity Animations',
         description: 'Corporate Videos | Infinity Animations',
@@ -14,6 +12,8 @@ export const metadata = {
         locale: 'en_US',
         type: 'website',
     },
+    //===== Canonical =====
+    alternates: { canonical: 'https://infinityanimations.com/corporate-video/' },
 }
 
 export default function RootLayout({ children }) {

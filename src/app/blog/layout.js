@@ -1,11 +1,9 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
+    //===== Meta Tags =====
     title: "Blogs - Infinity Animations",
     description: "From impactful storytelling to technical mastery, our blog is your gateway to the art and innovation of video animation services.",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/blog/' },
-    // OG Metas
+    //===== OG Tags =====
     openGraph: {
         title: 'Blogs - Infinity Animations',
         description: 'From impactful storytelling to technical mastery, our blog is your gateway to the art and innovation of video animation services.',
@@ -14,14 +12,8 @@ export const metadata = {
         locale: 'en_US',
         type: 'website',
     },
-    //===== Google Varification =====
-    verification: {
-        other: {
-            "google-site-verification": ['dgOXThSlUP6xd-daxjwI8uQqVYkhfbL_Ey51mNVEUzU'],
-        },
-    },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/blog' },
+    alternates: { canonical: 'https://infinityanimations.com/blog/' },
 }
 
 export default function RootLayout({ children }) {

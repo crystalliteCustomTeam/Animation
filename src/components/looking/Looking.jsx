@@ -23,10 +23,10 @@ const Looking = ({ content }) => {
         case '/3d-animation':
             bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
             break;
-        case '/architectural-services':
+        case '/architectural-visualization':
             bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
             break;
-        case '/cgi-and-vfx':
+        case '/cgi-and-vfx-services':
             bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
             break;
         case '/contact-us':
@@ -41,10 +41,10 @@ const Looking = ({ content }) => {
         case '/motion-graphics':
             bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
             break;
-        case '/portfolio':
+        case 'video-animation-portfolio':
             bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
             break;
-        case '/pricing':
+        case 'video-animation-pricing':
             bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
             break;
         case '/tech-videos':

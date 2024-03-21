@@ -1,13 +1,11 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
-    title: "Video Editing Services - Infinity Animations ",
+    //===== Meta Tags =====
+    title: "Video Editing Services - Infinity Animations",
     description: "Video Editing Services, Elevate Your Content with Professional Precision. Transform your raw footage into captivating content with our expertise in video editing.",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/video-editing/' },
-    // OG Metas
+    //===== OG Tags =====
     openGraph: {
-        title: 'Video Editing Services - Infinity Animations ',
+        title: 'Video Editing Services - Infinity Animations',
         description: 'Video Editing Services, Elevate Your Content with Professional Precision. Transform your raw footage into captivating content with our expertise in video editing.',
         url: 'https://infinityanimations.com/video-editing/',
         siteName: 'Infinity Animations',
@@ -15,7 +13,7 @@ export const metadata = {
         type: 'website',
     },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/' },
+    alternates: { canonical: 'https://infinityanimations.com/video-editing/' },
     //===== GEO Tags =====
     other: {
         "DC.title": "Video Editing Services",

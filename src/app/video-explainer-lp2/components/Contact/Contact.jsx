@@ -1,14 +1,46 @@
 import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 import Axios from "axios";
 import { usePathname } from 'next/navigation'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
-import Image from 'next/image'
-import Link from 'next/link'
-
 // ==== Images 
 import Payment from "media/video-explainer/payment-img.png"
 import UpArrow from "media/video-explainer/up-arrow.png"
+import facebook from "media/icons/fb.png";
+import twitter from "media/icons/x.png";
+import youtube from "media/icons/youtube.png";
+import instagram from "media/icons/insta.png";
+import linkedin from "media/icons/linkedin.png";
+import vimeo from "media/icons/vemio.png";
+
+const socialLinks = [
+    {
+        icon: facebook,
+        link: "https://www.facebook.com/infinityanimationsofficial"
+    },
+    {
+        icon: twitter,
+        link: "https://twitter.com/infinityan_/"
+    },
+    {
+        icon: instagram,
+        link: "https://www.instagram.com/infinityanimationsofficials"
+    },
+    {
+        icon: linkedin,
+        link: "https://www.linkedin.com/company/infinity-animations/"
+    },
+    {
+        icon: youtube,
+        link: "https://www.youtube.com/@Infinity-Animations"
+    },
+    {
+        icon: vimeo,
+        link: "https://www.vimeo.com/infinityanimations"
+    },
+]
 
 const Contact = () => {
 
@@ -142,18 +174,18 @@ const Contact = () => {
                                     <div className="flex-wrap flex items-center">
                                         <div className="name relative w-full">
                                             <User className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                            <input type="text" name="name" placeholder='Enter your name' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[10px] font-[500]' onChange={handleDataChange} required />
+                                            <input type="text" name="name" placeholder='Enter your name' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
                                             {errors.name && (
-                                                <span className="text-[12px] block p-2 font-medium text-white">
+                                                <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-16%]">
                                                     {errors.name}
                                                 </span>
                                             )}
                                         </div>
                                         <div className="email relative w-full">
                                             <EnvelopeIcon className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                            <input type="email" name="email" placeholder='Enter Email' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[10px] font-[500]' onChange={handleDataChange} required />
+                                            <input type="email" name="email" placeholder='Enter Email' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
                                             {errors.email && (
-                                                <span className="text-[12px] block p-2 font-medium text-white">
+                                                <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-16%]">
                                                     {errors.email}
                                                 </span>
                                             )}
@@ -161,16 +193,16 @@ const Contact = () => {
                                     </div>
                                     <div className="phone relative">
                                         <Phone className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                        <input type="phone" name="phone" minLength={7} maxLength={15} placeholder='Enter Phone Number' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[10px] font-[500]' onChange={handleDataChange} required />
+                                        <input type="phone" name="phone" minLength={7} maxLength={15} placeholder='Enter Phone Number' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
                                         {errors.phone && (
-                                            <span className="text-[12px] block p-2 font-medium text-white">
+                                            <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-16%]">
                                                 {errors.phone}
                                             </span>
                                         )}
                                     </div>
                                     <div className="message relative">
                                         <ChatAlt2 className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                        <textarea name='message' placeholder='Message' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[10px] font-[500]' onChange={handleDataChange}></textarea>
+                                        <textarea name='message' placeholder='Message' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[10px] font-[500] resize-none' onChange={handleDataChange}></textarea>
                                     </div>
                                     <div className="btn mt-3">
                                         <button type='submit' className='py-[10px] px-[30px] border-0 text-white text-[16px] uppercase font-[600] bg-[#231f20] poppins' onClick={handleFormSubmit} disabled={isDisabled}>
@@ -200,7 +232,20 @@ const Contact = () => {
                                         </a>
                                     </li>
                                 </ul>
-                                <Image src={Payment} alt='Payment-Methods' className='w-5/12 lg:w-full mt-3 object-contain' />
+                                <Image src={Payment} alt='Payment-Methods' className='w-5/12 lg:w-full my-3 object-contain' />
+                                <ul className="flex items-center gap-4 mt-4 md:mt-6">
+                                    {
+                                        socialLinks.map((e, i) => {
+                                            return (
+                                                <li key={i} className="bg-transparent border border-[#fc0] w-[45px] h-[45px] rounded-[5px] flex items-center justify-center p-1 hover:bg-second">
+                                                    <Link target="_blank" href={e.link}>
+                                                        <Image src={e.icon} className="w-[20px]" alt="Infinity Animation" />
+                                                    </Link>
+                                                </li>
+                                            );
+                                        })
+                                    }
+                                </ul>
                             </div>
                         </div>
                     </div>

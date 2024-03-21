@@ -4,16 +4,49 @@ import Axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
-// Import Components
 import styles from '@/app/explainer-videos-animations/component/footer/footer.module.css';
-import payment from "media/banner/payment.png"
-import top from "media/banner/top.png"
+// Import Components
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaGlobe } from "react-icons/fa";
+// ==== Images 
+import payment from "media/banner/payment.png"
+import top from "media/banner/top.png"
+import facebook from "media/icons/fb.png";
+import twitter from "media/icons/x.png";
+import youtube from "media/icons/youtube.png";
+import instagram from "media/icons/insta.png";
+import linkedin from "media/icons/linkedin.png";
+import vimeo from "media/icons/vemio.png";
+
+const socialLinks = [
+    {
+        icon: facebook,
+        link: "https://www.facebook.com/infinityanimationsofficial"
+    },
+    {
+        icon: twitter,
+        link: "https://twitter.com/infinityan_/"
+    },
+    {
+        icon: instagram,
+        link: "https://www.instagram.com/infinityanimationsofficials"
+    },
+    {
+        icon: linkedin,
+        link: "https://www.linkedin.com/company/infinity-animations/"
+    },
+    {
+        icon: youtube,
+        link: "https://www.youtube.com/@Infinity-Animations"
+    },
+    {
+        icon: vimeo,
+        link: "https://www.vimeo.com/infinityanimations"
+    },
+]
 
 const Video = () => {
-
     const [ip, setIP] = useState('');
     //creating function to load ip address from the API
     const getIPData = async () => {
@@ -23,7 +56,6 @@ const Video = () => {
     useEffect(() => {
         getIPData()
     }, [])
-
 
     const [score, setScore] = useState('Submit');
 
@@ -136,6 +168,19 @@ const Video = () => {
                                 <li className="fontmontserratregular text-white pb-3"><MdEmail /><a className="text-white" href="mailto:queries@infinityanimations.com">  queries@infinityanimations.com</a></li>
                                 <li className="fontmontserratregular text-white pb-3"><FaGlobe /><a className="text-white" href="https://infinityanimations.com/">  www.infinityanimationspro.com</a></li>
                                 <li><Image src={payment} className="img-fluid" alt="" /></li>
+                                <ul className="flex items-center gap-4 mt-4 md:mt-6">
+                                    {
+                                        socialLinks.map((e, i) => {
+                                            return (
+                                                <li key={i} className="bg-transparent border border-[#fc0] w-[40px] h-[40px] rounded-[5px] flex items-center justify-center p-1 hover:bg-second">
+                                                    <Link target="_blank" href={e.link}>
+                                                        <Image src={e.icon} className="w-[20px]" alt="Infinity Animation" />
+                                                    </Link>
+                                                </li>
+                                            );
+                                        })
+                                    }
+                                </ul>
                             </ul>
                         </div>
                     </div>

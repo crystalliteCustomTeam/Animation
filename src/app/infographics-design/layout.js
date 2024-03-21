@@ -1,13 +1,11 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
-    title: "Infographic Design Services - Infinity Animations ",
+    //===== Meta Tags =====
+    title: "Infographic Design Services - Infinity Animations",
     description: "Infographic Design Services, Elevate your communication and captivate your audience with our expertise in infographic design today!",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/infographics-design/' },
-    // OG Metas
+    //===== OG Tags =====
     openGraph: {
-        title: "Infographic Design Services - Infinity Animations ",
+        title: "Infographic Design Services - Infinity Animations",
         description: "Infographic Design Services, Elevate your communication and captivate your audience with our expertise in infographic design today!",
         url: 'https://infinityanimations.com/infographics-design/',
         siteName: 'Infinity Animations',

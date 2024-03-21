@@ -1,11 +1,9 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
+    //===== Meta Tags =====
     title: "Why Choose Us - Infinity Animations",
     description: "Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame. Contact Us Now!",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/why-us/' },
-    // OG Metas
+    //===== OG Tags =====
     openGraph: {
         title: 'Why Choose Us - Infinity Animations',
         description: 'Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame. Contact Us Now!',

@@ -1,19 +1,19 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
+    //===== Meta Tags =====
     title: "Educational Videos | Infinity Animations",
     description: "Educational Videos | Infinity Animations",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/educational-video/' },
-    // OG Metas
+    //===== OG Tags =====
     openGraph: {
         title: 'Educational Videos | Infinity Animations',
         description: 'Educational Videos | Infinity Animations',
         url: 'https://infinityanimations.com/educational-video/',
-     siteName: 'Infinity Animations',
+        siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },
+    //===== Canonical =====
+    alternates: { canonical: 'https://infinityanimations.com/educational-video/' },
 }
 
 export default function RootLayout({ children }) {

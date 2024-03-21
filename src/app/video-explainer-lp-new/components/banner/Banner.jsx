@@ -187,30 +187,33 @@ const Banner = () => {
                                 </h3>
 
                                 <div className="form pt-[5px] px-[20px] pb-[30px]">
-                                    <input type="text" name="name" placeholder='Enter your name' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white' onChange={handleDataChange} required />
-                                    {errors.name && (
-                                        <span className="text-[12px] block p-2 font-medium text-white">
-                                            {errors.name}
-                                        </span>
-                                    )}
-
-                                    <input type="email" name='email' placeholder='Enter Email' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white' onChange={handleDataChange} required />
-                                    {errors.email && (
-                                        <span className="text-[12px] block p-2 font-medium text-white">
-                                            {errors.email}
-                                        </span>
-                                    )}
-
-                                    <input type="tel" name='phone' minLength="10"
-                                        maxLength="13"
-                                        pattern="[0-9]*" placeholder='Enter Phone Number' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white' onChange={handleDataChange} required />
-                                    {errors.phone && (
-                                        <span className="text-[12px] block p-2 font-medium text-white">
-                                            {errors.phone}
-                                        </span>
-                                    )}
-
-                                    <textarea name='message' type="text" placeholder='Message' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white resize-none' required onChange={handleDataChange}></textarea>
+                                    <div className="relative">
+                                        <input type="text" name="name" placeholder='Enter your name' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white' onChange={handleDataChange} required />
+                                        {errors.name && (
+                                            <span className="text-[10px] block p-2 font-medium font-sans text-white tracking-wider absolute left-0 bottom-[-38%]">
+                                                {errors.name}
+                                            </span>
+                                        )}
+                                    </div>
+                                    <div className="relative">
+                                        <input type="email" name='email' placeholder='Enter Email' className='mt-[16px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white' onChange={handleDataChange} required />
+                                        {errors.email && (
+                                            <span className="text-[10px] block p-2 font-medium font-sans text-white tracking-wider absolute left-0 bottom-[-36%]">
+                                                {errors.email}
+                                            </span>
+                                        )}
+                                    </div>
+                                    <div className="relative">
+                                        <input type="tel" name='phone' minLength="10"
+                                            maxLength="13"
+                                            pattern="[0-9]*" placeholder='Enter Phone Number' className='mt-[16px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white' onChange={handleDataChange} required />
+                                        {errors.phone && (
+                                            <span className="text-[10px] block p-2 font-medium font-sans text-white tracking-wider absolute left-0 bottom-[-36%]">
+                                                {errors.phone}
+                                            </span>
+                                        )}
+                                    </div>
+                                    <textarea name='message' type="text" placeholder='Message' className='mt-[16px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white resize-none' required onChange={handleDataChange}></textarea>
 
                                     <button type='submit' className='bg-[#A70A0E] hover:bg-[#1c2a49] text-white text-[16px] font-[700] montserrat uppercase mt-[10px] py-[13px] px-[8px] shadow-lg w-full duration-700 transition-all hover:duration-700 hover:transition-all' onClick={handleFormSubmit} disabled={isDisabled}>{formStatus}</button>
                                 </div>

@@ -25,16 +25,16 @@ const Footer = () => {
             link: "/why-us"
         },
         {
-            text: "Video Animation",
-            link: "/"
-        },
-        {
-            text: "Portfolio",
-            link: "/portfolio"
+            text: "Blog",
+            link: "/blog"
         },
         {
             text: "Pricing",
-            link: "/pricing"
+            link: "video-animation-pricing"
+        },
+        {
+            text: "Portfolio",
+            link: "video-animation-portfolio"
         },
         {
             text: "Contact Us",

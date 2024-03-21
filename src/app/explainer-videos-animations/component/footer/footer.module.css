@@ -103,12 +103,11 @@
 
 .newtab {
   background-color: #565656;
-  height: 280px;
+  height: 300px;
   border-radius: 25px;
   display: flex;
-  padding-left: 10%;
-  padding-right: 10%;
-  width: 420px;
+  padding: 0 5%;
+  width: 60%;
   align-items: center;
   margin-left: auto;
 }

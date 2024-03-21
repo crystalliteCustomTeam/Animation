@@ -1,11 +1,9 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
+    //===== Meta Tags =====
     title: "2D Animation Services - Infinity Animations",
     description: "2D Animation Services, Explore our professional 2D animation services to bring characters and concepts to life with creativity and precision.",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/2d-animation/' },
-    // OG Metas
+    //===== OG Tags =====
     openGraph: {
         title: '2D Animation Services - Infinity Animations',
         description: '2D Animation Services, Explore our professional 2D animation services to bring characters and concepts to life with creativity and precision.',
@@ -13,9 +11,9 @@ export const metadata = {
         siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
-    }, 
+    },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/' },
+    alternates: { canonical: 'https://infinityanimations.com/2d-animation/' },
     //===== GEO Tags =====
     other: {
         "DC.title": "2D Animation Services",
@@ -33,7 +31,7 @@ export const metadata = {
         "geo.placename": "New York",
         "geo.position": "39.78373;-100.445882",
         "ICBM": "39.78373, -100.445882"
-    }, 
+    },
 }
 
 export default function RootLayout({ children }) {

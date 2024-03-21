@@ -1,3 +1,5 @@
+import React from 'react';
+import Script from 'next/script';
 // Import Page Components
 import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
@@ -11,7 +13,6 @@ import Testimonial from '@/components/testimonial/Testimonial';
 import Contact from '@/components/contact/Contact';
 // Import Images
 import LookingFlodImg from "media/hybrid-cel/looking-img.gif";
-
 //==== Boost Images
 import BoostFlodImg from "media/images/boost-img.gif";
 import boosticon1 from "media/icons/boost-icon4.png"
@@ -59,7 +60,6 @@ import Thumnail27 from "media/thumbnails/hybrid/3.jpg"
 import Thumnail28 from "media/thumbnails/hybrid/4.jpg"
 import Thumnail29 from "media/thumbnails/hybrid/5.jpg"
 import Thumnail30 from "media/thumbnails/hybrid/6.jpg"
-import Script from "next/script";
 
 export default function Page() {
     //=====Banner Fold=====//

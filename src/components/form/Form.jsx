@@ -139,29 +139,29 @@ const Form = () => {
     return (
         <>
             <form action="#" className="space-y-2 sm:space-y-4 md:space-y-8">
-                <div>
+                <div className="relative">
                     <label htmlFor="subject" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Full Name*</label>
                     <input type="text" id="name" name="name" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Full Name" onChange={handleDataChange} />
                     {errors.name && (
-                        <span className="text-[12px] block p-2 font-medium text-white">
+                        <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-35%]">
                             {errors.name}
                         </span>
                     )}
                 </div>
-                <div>
+                <div className="relative">
                     <label htmlFor="subject" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Phone*</label>
                     <input type="tel" id="phone" name="phone" minLength="10" maxLength="13" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="(000) 000-0000" onChange={handleDataChange} />
                     {errors.phone && (
-                        <span className="text-[12px] block p-2 font-medium text-white">
+                        <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-35%]">
                             {errors.phone}
                         </span>
                     )}
                 </div>
-                <div>
+                <div className="relative">
                     <label htmlFor="email" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Email Address*</label>
                     <input type="email" id="email" name="email" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Email" onChange={handleDataChange} />
                     {errors.email && (
-                        <span className="text-[12px] block p-2 font-medium text-white">
+                        <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-35%]">
                             {errors.email}
                         </span>
                     )}

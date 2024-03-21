@@ -1,21 +1,19 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
+    //===== Meta Tags =====
     title: "Creative and Affordable Explainer Video Company in US - Infinity Animations",
     description: "Animated Explainer Videos, Our expert team specializes in creating captivating animated explainer videos that engage and inform your audience.",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimationspro.com/video-explainer-lp/' },
-    // OG Metas
+    //===== OG Tags =====
     openGraph: {
         title: 'Creative and Affordable Explainer Video Company in US - Infinity Animations',
         description: 'Animated Explainer Videos, Our expert team specializes in creating captivating animated explainer videos that engage and inform your audience.',
-        url: 'https://infinityanimationspro.com/video-explainer-lp/',
+        url: 'https://infinityanimations.com/video-explainer-lp/',
         siteName: 'Infinity Animations Pro',
         locale: 'en_US',
         type: 'website',
-    }, 
+    },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/' },
+    alternates: { canonical: 'https://infinityanimations.com/video-explainer-lp/' },
     //===== GEO Tags =====
     other: {
         "DC.title": "Animated Explainer Videos",

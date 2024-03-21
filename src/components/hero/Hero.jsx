@@ -20,13 +20,13 @@ const Hero = ({ content }) => {
         case '/why-us':
             backgroundImage = 'bg-[length:100%_100%] bg-bottom lg:bg-[url("../../public/why-us/banner-bg.png")]'
             break;
-        case '/portfolio':
+        case '/video-animation-portfolio':
             backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/portfolio/banner-bg.png")]'
             break;
-        case '/process':
+        case '/video-animation-process':
             backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/process/banner-bg.gif")]'
             break;
-        case '/pricing':
+        case '/video-animation-pricing':
             backgroundImage = 'bg-[length:100%_140%] bg-center lg:bg-[url("../../public/pricing/banner-bg.gif")]'
             break;
         case '/blog':
@@ -35,13 +35,13 @@ const Hero = ({ content }) => {
         case '/contact-us':
             backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/contact/banner-bg.gif")]'
             break;
-        case '/logo-animation':
+        case '/custom-logo-animation':
             backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/logo-animation/banner-bg.png")]'
             break;
-        case '/architectural-services':
+        case '/architectural-visualization':
             backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/architectural-services/banner-bg.gif")]'
             break;
-        case '/cgi-and-vfx':
+        case '/cgi-and-vfx-services':
             backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/cgi-and-vfx/banner-bg.png")]'
             break;
         case '/motion-graphics':
