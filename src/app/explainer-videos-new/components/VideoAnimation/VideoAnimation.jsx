@@ -148,7 +148,7 @@ const VideoAnimation = () => {
                                     <div className="card cardSliderShadow px-2 py-5 h-full min-h-[430px] flex items-center justify-center rounded-lg relative">
                                         <div className='slide'>
                                             <div className="content">
-                                                <Image src={Slide1} alt='Infinity Animations' className='lg:min-h-auto md:min-h-[280px] lg:min-w-auto md:min-w-[280px] mx-auto w-12/12 mb-3' />
+                                                <Image src={Slide1} alt='Infinity Animations' className='lg:min-h-auto md:min-h-[280px] lg:min-w-[120px] lg:min-h-[120px] md:min-w-[280px] mx-auto w-12/12 mb-3' />
                                                 <h5 className='text-[23px] md:text-[30px] lg:text-[20px] font-[700] leading-[32px] lg:leading-[22px] tracking-normal text-[#2d3436] font-sans text-center'>
                                                     Typography <br />
                                                     Videos
@@ -161,7 +161,7 @@ const VideoAnimation = () => {
                                     <div className="card cardSliderShadow px-2 py-5 h-full min-h-[430px] flex items-center justify-center rounded-lg relative">
                                         <div className='slide'>
                                             <div className="content">
-                                                <Image src={Slide2} alt='Infinity Animations' className='lg:min-h-auto md:min-h-[280px] lg:min-w-auto md:min-w-[280px] mx-auto w-12/12 mb-3' />
+                                                <Image src={Slide2} alt='Infinity Animations' className='lg:min-h-auto md:min-h-[280px] lg:min-w-[120px] lg:min-h-[120px] md:min-w-[280px] mx-auto w-12/12 mb-3' />
                                                 <h5 className='text-[23px] md:text-[30px] lg:text-[20px] font-[700] leading-[32px] lg:leading-[22px] tracking-normal text-[#2d3436] font-sans text-center'>
                                                     Whiteboard  <br />
                                                     Animation
@@ -174,7 +174,7 @@ const VideoAnimation = () => {
                                     <div className="card cardSliderShadow px-2 py-5 h-full min-h-[430px] flex items-center justify-center rounded-lg relative">
                                         <div className='slide'>
                                             <div className="content">
-                                                <Image src={Slide3} alt='Infinity Animations' className='lg:min-h-auto md:min-h-[280px] lg:min-w-auto md:min-w-[280px] mx-auto w-12/12 mb-3' />
+                                                <Image src={Slide3} alt='Infinity Animations' className='lg:min-h-auto md:min-h-[280px] lg:min-w-[120px] lg:min-h-[120px] md:min-w-[280px] mx-auto w-12/12 mb-3' />
                                                 <h5 className='text-[23px] md:text-[30px] lg:text-[20px] font-[700] leading-[32px] lg:leading-[22px] tracking-normal text-[#2d3436] font-sans text-center'>
                                                     Explainer  <br />
                                                     Videos
@@ -187,7 +187,7 @@ const VideoAnimation = () => {
                                     <div className="card cardSliderShadow px-2 py-5 h-full min-h-[430px] flex items-center justify-center rounded-lg relative">
                                         <div className='slide'>
                                             <div className="content">
-                                                <Image src={Slide4} alt='Infinity Animations' className='lg:min-h-auto md:min-h-[280px] lg:min-w-auto md:min-w-[280px] mx-auto w-12/12 mb-3' />
+                                                <Image src={Slide4} alt='Infinity Animations' className='lg:min-h-auto md:min-h-[280px] lg:min-w-[120px] lg:min-h-[120px] md:min-w-[280px] mx-auto w-12/12 mb-3' />
                                                 <h5 className='text-[23px] md:text-[30px] lg:text-[20px] font-[700] leading-[32px] lg:leading-[22px] tracking-normal text-[#2d3436] font-sans text-center'>
                                                     3d <br />
                                                     Animations
@@ -200,7 +200,7 @@ const VideoAnimation = () => {
                                     <div className="card cardSliderShadow px-2 py-5 h-full min-h-[430px] flex items-center justify-center rounded-lg relative">
                                         <div className='slide'>
                                             <div className="content">
-                                                <Image src={Slide1} alt='Infinity Animations' className='lg:min-h-auto md:min-h-[280px] lg:min-w-auto md:min-w-[280px] mx-auto w-12/12 mb-3' />
+                                                <Image src={Slide1} alt='Infinity Animations' className='lg:min-h-auto md:min-h-[280px] lg:min-w-[120px] lg:min-h-[120px] md:min-w-[280px] mx-auto w-12/12 mb-3' />
                                                 <h5 className='text-[23px] md:text-[30px] lg:text-[20px] font-[700] leading-[32px] lg:leading-[22px] tracking-normal text-[#2d3436] font-sans text-center'>
                                                     2d <br />
                                                     Animations
