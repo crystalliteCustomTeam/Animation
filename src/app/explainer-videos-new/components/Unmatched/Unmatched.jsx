@@ -72,20 +72,20 @@ const Unmatched = () => {
                                 </div>
                                 <div className="flex items-center justify-center gap-5 lg:gap-12 relative before:content-[''] before:absolute before:w-[1px] before:bg-white before:h-full before:top-0 before:left-[54%] md:before:left-[52%] before:translate-x-[-52%] mt-[30px]">
                                     <div className="LinkOne">
-                                        <Link href="javascript:;" className='text-white text-[16px] font-[600] poppins text-right'>
+                                        <a href="tel:833-666-6689;" className='text-white text-[16px] font-[600] poppins text-right'>
                                             <span className='text-[14px] font-[400] block'>
                                                 Speak with us
                                             </span>
-                                            +1-833-666-6684
-                                        </Link>
+                                            +833-666-6689
+                                        </a>
                                     </div>
                                     <div className="LinkTwo">
-                                        <Link href="javascript:$zopim.livechat.window.show();" className='text-white text-[16px] font-[600] poppins text-left'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='text-white text-[16px] font-[600] poppins text-left'>
                                             <span className='text-[14px] font-[400] block'>
                                                 Want to discuss?
                                             </span>
                                             Live Chat Now
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="btn flex justify-center mt-[30px] pb-[30px]">
@@ -115,14 +115,14 @@ const Unmatched = () => {
                         </div>
                         <div className="col-span-12 md:col-span-6 lg:col-span-3">
                             <div className="Link">
-                                <Link href="javascript:;" className='text-white text-[14px] md:text-[16px] lg:text-[24px] leading-[1.3] poppins text-center'>
+                                <a href="tel:833-666-6689;" className='text-white text-[14px] md:text-[16px] lg:text-[24px] leading-[1.3] poppins text-center'>
                                     <span className='text-[16px] block'>
                                         Discuss with our <span className='font-[600]'>strategists</span>
                                     </span>
                                     <span className='font-[700] text-center block pt-2'>
-                                        +1-833-666-6684
+                                        +833-666-6689
                                     </span>
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>

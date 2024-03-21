@@ -76,19 +76,19 @@ const Packages = () => {
                                         </button>
                                     </div>
                                     <div className="livechat">
-                                        <Link href="javascript:$zopim.livechat.window.show();" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
                                             <span className='text-[#1c214e] group-hover:text-white duration-700 ease-in-out group-hover:duration-700 text-[12px] md:text-[14px] font-[300] font-sans flex items-center'>
                                                 Click here to
                                                 <FaRegCommentDots className='text-[#009245] ml-[5px]' />
                                             </span>
                                             Live Chat
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="card_bottom md:block hidden bg-[#eee] text-center py-[6px] rounded-b-[14px]">
-                                    <Link href="tel:;" className='text-[#333] text-[12px] md:text-[14px] font-[400] poppins'>
-                                        Call us <span className='font-[600]'>+1-833-666-6684</span>
-                                    </Link>
+                                    <a href="tel:833-666-6689;" className='text-[#333] text-[12px] md:text-[14px] font-[400] poppins'>
+                                        Call us <span className='font-[600]'>+833-666-6689</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -148,19 +148,19 @@ const Packages = () => {
                                         </button>
                                     </div>
                                     <div className="livechat">
-                                        <Link href="javascript:$zopim.livechat.window.show();" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
                                             <span className='text-[#1c214e] group-hover:text-white duration-700 ease-in-out group-hover:duration-700 text-[12px] md:text-[14px] font-[300] font-sans flex items-center'>
                                                 Click here to
                                                 <FaRegCommentDots className='text-[#009245] ml-[5px]' />
                                             </span>
                                             Live Chat
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="card_bottom md:block hidden bg-[#eee] text-center py-[6px] rounded-b-[14px]">
-                                    <Link href="tel:;" className='text-[#333] text-[12px] md:text-[14px] font-[400] poppins'>
-                                        Call us <span className='font-[600]'>+1-833-666-6684</span>
-                                    </Link>
+                                    <a href="tel:833-666-6689;" className='text-[#333] text-[12px] md:text-[14px] font-[400] poppins'>
+                                        Call us <span className='font-[600]'>+833-666-6689</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -220,19 +220,19 @@ const Packages = () => {
                                         </button>
                                     </div>
                                     <div className="livechat">
-                                        <Link href="javascript:$zopim.livechat.window.show();" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
                                             <span className='text-[#1c214e] group-hover:text-white duration-700 ease-in-out group-hover:duration-700 text-[12px] md:text-[14px] font-[300] font-sans flex items-center'>
                                                 Click here to
                                                 <FaRegCommentDots className='text-[#009245] ml-[5px]' />
                                             </span>
                                             Live Chat
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="card_bottom md:block hidden bg-[#eee] text-center py-[6px] rounded-b-[14px]">
-                                    <Link href="tel:;" className='text-[#333] text-[12px] md:text-[14px] font-[400] poppins'>
-                                        Call us <span className='font-[600]'>+1-833-666-6684</span>
-                                    </Link>
+                                    <a href="tel:833-666-6689;" className='text-[#333] text-[12px] md:text-[14px] font-[400] poppins'>
+                                        Call us <span className='font-[600]'>+833-666-6689</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>

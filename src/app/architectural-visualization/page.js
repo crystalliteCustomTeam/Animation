@@ -376,7 +376,7 @@ export default function Page() {
                         "image": "https://infinityanimations.com/_next/static/media/banner-bg.09bc1205.gif",
                         "@id": "",
                         "url": "https://infinityanimations.com/architectural-visualization",
-                        "telephone": "833-666-6684",
+                        "telephone": "833-666-6689",
                         "address": {
                             "@type": "PostalAddress",
                             "streetAddress": "One World Trade Center, Suite 8500",

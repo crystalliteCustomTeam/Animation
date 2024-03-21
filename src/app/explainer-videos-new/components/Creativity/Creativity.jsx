@@ -31,10 +31,10 @@ const Creativity = () => {
                                     </button>
                                 </div>
                                 <div className="chat">
-                                    <Link href="javascript:$zopim.livechat.window.show();" className='text-[#f36e16] font-[700] text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
+                                    <a href="javascript:$zopim.livechat.window.show();" className='text-[#f36e16] font-[700] text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
                                         <span className='text-black block text-[13px]'>24/7 Available </span>
                                         Live Chat
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>

@@ -52,15 +52,15 @@ const Testinomials = () => {
 
                             <div className="flex items-center justify-between mt-6 lg:mt-14">
                                 <div className="btn1">
-                                    <Link href="tel:;" className='text-[12px] md:text-[16px] border border-[#f36e16] rounded-[30px] text-[#282828] font-[700] poppins py-[12px] px-[18px] md:px-[35px] hover:bg-[#f36e16] hover:duration-700 duration-700 ease-in-out hover:text-white'>
+                                    <a href="tel:833-666-6689;" className='text-[12px] md:text-[16px] border border-[#f36e16] rounded-[30px] text-[#282828] font-[700] poppins py-[12px] px-[18px] md:px-[35px] hover:bg-[#f36e16] hover:duration-700 duration-700 ease-in-out hover:text-white'>
                                         CHAT NOW <span className='font-[500]'>TO AVAIL THIS OFFER</span>
-                                    </Link>
+                                    </a>
                                 </div>
                                 <div className="chat">
-                                    <Link href="javascript:$zopim.livechat.window.show();" className='text-[#261564] font-[700] text-[16px] md:text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
+                                    <a href="javascript:$zopim.livechat.window.show();" className='text-[#261564] font-[700] text-[16px] md:text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
                                         <span className='block text-[13px]'>24/7 Available </span>
                                         Live Chat
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>

@@ -136,10 +136,10 @@ const VideoAnimation = () => {
                                         </button>
                                     </div>
                                     <div className="btn1 group">
-                                        <Link href="javascript:$zopim.livechat.window.show();" className='text-[14px] md:text-[18px] rounded-[30px] text-[#282828] font-[800] font-sans group-hover:bg-[#f36e16] group-hover:duration-700 duration-700 ease-in-out group-hover:text-white py-[14px] px-[35px] group-hover:px-[35px] flex items-center relative'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='text-[14px] md:text-[18px] rounded-[30px] text-[#282828] font-[800] font-sans group-hover:bg-[#f36e16] group-hover:duration-700 duration-700 ease-in-out group-hover:text-white py-[14px] px-[35px] group-hover:px-[35px] flex items-center relative'>
                                             Live Chat
                                             <FaCaretRight className='text-[#f36e16] group-hover:text-white absolute right-0 top-[50%] translate-y-[-50%] text-[20px] duration-700 group-hover:right-[9px]' />
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

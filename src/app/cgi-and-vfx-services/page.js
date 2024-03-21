@@ -376,7 +376,7 @@ export default function Page() {
                         "image": "https://infinityanimations.com/_next/static/media/banner-bg.a49cc8a4.png",
                         "@id": "",
                         "url": "https://infinityanimations.com/cgi-and-vfx-services",
-                        "telephone": "833-666-6684",
+                        "telephone": "833-666-6689",
                         "address": {
                             "@type": "PostalAddress",
                             "streetAddress": "One World Trade Center, Suite 8500",

@@ -40,7 +40,7 @@ const Brands = ({ content }) => {
                                 </a>
                             </div>
                             {isBtn ? <div className="btn">
-                                <a href="tel:833-666-6689" className='flex items-center'>
+                                <a href="tel:833-666-6689;" className='flex items-center'>
                                     <Image src={UK} alt='UK' className='object-contain' />
                                     <span className='text-[20px] text-black py-[10px] px-[8px] font-bold montserrat'>
                                         833-666-6689

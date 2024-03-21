@@ -54,7 +54,7 @@ const Testimonial = ({ content }) => {
                             color={`text-white`}
                             border={`border-2 border-[#f5090b]`}
                             hover="hover:bg-transparent"
-                            href="tel:833-666-6689"
+                            href="tel:833-666-6689;"
                         />
                         <CTA
                             text="Live Chat"

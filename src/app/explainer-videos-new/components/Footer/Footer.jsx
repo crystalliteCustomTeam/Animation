@@ -19,7 +19,7 @@ const Footer = () => {
                         </div>
                         <div className="contact_info">
                             <p className='text-[18px] text-white mb-[25px] font-[500] poppins'> Contact Info:</p>
-                            <Link href="javascript:;" className='text-[14px] lg:text-[16px] text-white poppins'>+1-833-666-6684</Link>
+                            <a href="tel:833-666-6689;" className='text-[14px] lg:text-[16px] text-white poppins'>+833-666-6689</a>
                         </div>
                     </div>
                 </div>
