@@ -14,15 +14,18 @@ import Slide2 from "media/explainer-videos-new/slide2.gif"
 import Slide3 from "media/explainer-videos-new/slide3.gif"
 import Slide4 from "media/explainer-videos-new/slide4.gif"
 import VideoImg from "media/explainer-videos-new/videoparticle.png"
+import usePopup from '@/app/configs/store/Popup';
 
 const VideoAnimation = () => {
-
+    // Form Code Start
+    const { popup, togglePopup } = usePopup()
+    const popupHandle = () => {
+        togglePopup(popup)
+    }
     const [currentSlide, setCurrentSlide] = useState(0);
-
     const handleSlideChange = (current) => {
         setCurrentSlide(current);
     };
-
     const brandSlider = {
         dots: false,
         arrows: true,
@@ -44,7 +47,6 @@ const VideoAnimation = () => {
             }
         ]
     };
-
     const sliderContent = [
         {
             title: 'Typography',
@@ -93,7 +95,6 @@ const VideoAnimation = () => {
         },
 
     ];
-
     return (
         <>
             <section className='pt-[50px] pb-[90px] md:py-[70px] relative'>
@@ -128,12 +129,12 @@ const VideoAnimation = () => {
 
                                 <div className="flex items-center gap-x-4">
                                     <div className="btn1">
-                                        <Link href="javascript:;" className='text-[14px] md:text-[18px] border-2 border-[#f36e16] rounded-[30px] text-[#282828] font-[800] font-sans py-[14px] px-[25px] md:px-[35px] hover:bg-[#f36e16] hover:duration-700 duration-700 ease-in-out hover:text-white'>
+                                        <button onClick={popupHandle} className='text-[14px] md:text-[18px] border-2 border-[#f36e16] rounded-[30px] text-[#282828] font-[800] font-sans py-[14px] px-[25px] md:px-[35px] hover:bg-[#f36e16] hover:duration-700 duration-700 ease-in-out hover:text-white'>
                                             Let’s Get Started!
-                                        </Link>
+                                        </button>
                                     </div>
                                     <div className="btn1 group">
-                                        <Link href="javascript:;" className='text-[14px] md:text-[18px] rounded-[30px] text-[#282828] font-[800] font-sans group-hover:bg-[#f36e16] group-hover:duration-700 duration-700 ease-in-out group-hover:text-white py-[14px] px-[35px] group-hover:px-[35px] flex items-center relative'>
+                                        <Link href="javascript:$zopim.livechat.window.show();" className='text-[14px] md:text-[18px] rounded-[30px] text-[#282828] font-[800] font-sans group-hover:bg-[#f36e16] group-hover:duration-700 duration-700 ease-in-out group-hover:text-white py-[14px] px-[35px] group-hover:px-[35px] flex items-center relative'>
                                             Live Chat
                                             <FaCaretRight className='text-[#f36e16] group-hover:text-white absolute right-0 top-[50%] translate-y-[-50%] text-[20px] duration-700 group-hover:right-[9px]' />
                                         </Link>

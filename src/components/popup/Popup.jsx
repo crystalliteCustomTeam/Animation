@@ -102,17 +102,13 @@ const Popup = ({ }) => {
             setFormStatus("Failed...");
             setIsDisabled(false);
         }
-
         if (Object.keys(errors).length === 0) {
             if (data.botchecker === null) {
-
-
                 let headersList = {
                     Accept: "*/*",
                     Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
                     "Content-Type": "application/json",
                 };
-
                 let bodyContent = JSON.stringify({
                     IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
                     Brand: "Infinity ANimation",

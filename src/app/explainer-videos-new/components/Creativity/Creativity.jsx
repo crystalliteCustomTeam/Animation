@@ -1,3 +1,4 @@
+import usePopup from '@/app/configs/store/Popup'
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
@@ -9,6 +10,11 @@ import Creative2 from "media/explainer-videos-new/creative3.png"
 import CreativeBrands from "media/explainer-videos-new/creativebrands.png"
 
 const Creativity = () => {
+    // Form Code Start
+    const { popup, togglePopup } = usePopup()
+    const popupHandle = () => {
+        togglePopup(popup)
+    }
     return (
         <>
             <section className="bg-[url('../../public/explainer-videos-new/creative-bg.png')] bg-no-repeat py-[50px] md:py-[100px] ">
@@ -19,13 +25,13 @@ const Creativity = () => {
                             <p className='text-[#333] text-[16px] mb-0 poppins leading-[1.43]'>With utmost dedication to producing custom videos, Explainer Videos provides the most innovative and wholly-immersive animated content for your business. Our exceptional digital artists ensure your desired message is conveyed to your target audience on a visceral level.</p>
                             <div className="btns flex items-center justify-between md:w-9/12 mt-[55px]">
                                 <div className="btn1">
-                                    <Link href="javacript:;" className='btn_shadow text-[16px] md:text-[18px] text-[#9a9a9a] bg-white py-[10px] px-[25px] md:px-[40px] relative poppins cursor-pointer font-[700] rounded-[30px] uppercase'>
+                                    <button onClick={popupHandle} className='btn_shadow text-[16px] md:text-[18px] text-[#9a9a9a] bg-white py-[10px] px-[25px] md:px-[40px] relative poppins cursor-pointer font-[700] rounded-[30px] uppercase'>
                                         LET'S
                                         <span className='text-[#f36e16]'> ANIMATE</span>
-                                    </Link>
+                                    </button>
                                 </div>
                                 <div className="chat">
-                                    <Link href="javascript:;" className='text-[#f36e16] font-[700] text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
+                                    <Link href="javascript:$zopim.livechat.window.show();" className='text-[#f36e16] font-[700] text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
                                         <span className='text-black block text-[13px]'>24/7 Available </span>
                                         Live Chat
                                     </Link>

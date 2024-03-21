@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import usePopup from '@/app/configs/store/Popup';
 import { useEffect, useRef, useState } from 'react';
 import { Fancybox as NativeFancybox } from "@fancyapps/ui"
 import "@fancyapps/ui/dist/fancybox/fancybox.css"
@@ -185,13 +186,16 @@ const tabContents = [
 
 
 const Streamed = () => {
-
+    // Form Code Start
+    const { popup, togglePopup } = usePopup()
+    const popupHandle = () => {
+        togglePopup(popup)
+    }
     //Tabs
     const [activeTab, setActiveTab] = useState(0);
     const handleTabClick = (index) => {
         setActiveTab(index);
     };
-
     // Fancy box
     function Fancybox(props) {
         const containerRef = useRef(null);
@@ -207,7 +211,6 @@ const Streamed = () => {
         });
         return <div ref={containerRef}>{props.children}</div>;
     }
-
     // ====== Responsive Slider 
     const testiSlider = {
         dots: true,
@@ -285,9 +288,9 @@ const Streamed = () => {
                                 </div>
                             </div>
                             <div className="btn mx-auto flex items-center justify-center w-full sm:w-[50%] md:w-[40%] lg:w-[30%] 2xl:w-[20%]  mt-20">
-                                <Link href="javascript:;" className='text-[16px] border-2 border-[#f36e16] rounded-[30px] text-white font-[700] font-sans py-[12px] px-[35px] hover:bg-[#f36e16] hover:duration-700 duration-700 ease-in-out hover:text-white'>
+                                <button onClick={popupHandle} className='text-[16px] border-2 border-[#f36e16] rounded-[30px] text-white font-[700] font-sans py-[12px] px-[35px] hover:bg-[#f36e16] hover:duration-700 duration-700 ease-in-out hover:text-white'>
                                     LET'S ANIMATE YOUR VIDEO
-                                </Link>
+                                </button>
                             </div>
                         </div>
                     </div>

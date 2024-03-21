@@ -1,4 +1,9 @@
-import React from 'react'
+"use client"
+
+import React, { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
+import usePopup from '@/app/configs/store/Popup';
+import Axios from "axios";
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -17,7 +22,127 @@ import Particle9 from "media/explainer-videos-new/particle9.png"
 import Particle10 from "media/explainer-videos-new/particle10.png"
 
 const Banner = ({ content }) => {
-    const { bannerImage } = content
+    const { bannerImage } = content;
+
+    // Form Code Start
+    const { popup, togglePopup } = usePopup()
+    const popupHandle = () => {
+        togglePopup(popup)
+    }
+    // form Start 
+    let newDate = new Date();
+    let date = newDate.getDate();
+    let month = newDate.getMonth() + 1;
+    let year = newDate.getFullYear();
+    // For Time
+    let today = new Date();
+    let setTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    let setDate = `${month < 10 ? `0${month}` : `${month}`}-${date}-${year}`;
+
+    const [ip, setIP] = useState("");
+    //creating function to load ip address from the API
+    const getIPData = async () => {
+        const res = await Axios.get(
+            "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
+        );
+        setIP(res.data);
+    };
+    useEffect(() => {
+        getIPData();
+    }, []);
+    // For Page
+    let page = usePathname();
+    const [data, setData] = useState({
+        name: "",
+        phone: "",
+        email: "",
+        message: "",
+        botchecker: null,
+        pageURL: page
+    });
+    const handleDataChange = (e) => {
+        setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    };
+    const [formStatus, setFormStatus] = useState("GET IN TOUCH");
+    const [errors, setErrors] = useState({});
+    const [isDisabled, setIsDisabled] = useState(false);
+    const formValidateHandle = () => {
+        let errors = {};
+        // Name validation
+        if (!data.name.trim()) {
+            errors.name = "Name is required";
+        }
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!data.email.match(emailRegex)) {
+            errors.email = "Valid email is required";
+        }
+        // Phone validation
+        const phoneRegex = /[0-9]/i;
+        if (!data.phone.match(phoneRegex)) {
+            errors.phone = "Valid phone is required";
+        }
+        return errors;
+    };
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+        setFormStatus("Processing...");
+        setIsDisabled(true);
+
+        const errors = formValidateHandle();
+        setErrors(errors);
+
+        if (Object.keys(errors).length === 0) {
+            if (data.botchecker === null) {
+                let headersList = {
+                    Accept: "*/*",
+                    "Content-Type": "application/json",
+                };
+
+                let bodyContent = JSON.stringify(data);
+                let reqOptions = {
+                    url: "/api/email",
+                    method: "POST",
+                    headers: headersList,
+                    data: bodyContent,
+                };
+                await Axios.request(reqOptions);
+            } else {
+                setFormStatus("Failed...");
+                setIsDisabled(false);
+            }
+        } else {
+            setFormStatus("Failed...");
+            setIsDisabled(false);
+        }
+        if (Object.keys(errors).length === 0) {
+            if (data.botchecker === null) {
+                let headersList = {
+                    Accept: "*/*",
+                    Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+                    "Content-Type": "application/json",
+                };
+                let bodyContent = JSON.stringify({
+                    IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+                    Brand: "Infinity ANimation",
+                    Page: `${page}`,
+                    Date: setDate,
+                    Time: setTime,
+                    JSON: data,
+                });
+                let reqOptions = {
+                    url: "https://sheetdb.io/api/v1/1ownp6p7a9xpi",
+                    method: "POST",
+                    headers: headersList,
+                    data: bodyContent,
+                };
+                await Axios.request(reqOptions);
+                window.location.href = "/thank-you";
+            }
+        }
+    };
+
+    // Form Code End
     return (
         <>
             <section className="bg-[url('../../public/explainer-videos-new/banner-bg.png')] bg-cover bg-center bg-no-repeat relative py-[80px] xl:py-[0px] xl:h-[90vh] 2xl:h-screen flex items-center justify-center min-h-[646px] overflow-hidden mt-[60px] md:mt-[66px]">
@@ -49,13 +174,13 @@ const Banner = ({ content }) => {
                             </div>
                             <div className="btns flex items-center justify-between md:w-8/12 pt-2 mb-[35px]">
                                 <div className="btn1">
-                                    <Link href="javacript:;" className='btn_shadow text-[16px] md:text-[18px] text-[#9a9a9a] bg-white py-[10px] px-[25px] md:px-[40px] relative poppins cursor-pointer font-[700] rounded-[30px] uppercase'>
+                                    <button onClick={popupHandle} className='btn_shadow text-[16px] md:text-[18px] text-[#9a9a9a] bg-white py-[10px] px-[25px] md:px-[40px] relative poppins cursor-pointer font-[700] rounded-[30px] uppercase'>
                                         LET'S
                                         <span className='text-[#f36e16]'> ANIMATE</span>
-                                    </Link>
+                                    </button>
                                 </div>
                                 <div className="chat">
-                                    <Link href="javascript:;" className='text-[#f36e16] font-[700] text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
+                                    <Link href="javascript:$zopim.livechat.window.show();" className='text-[#f36e16] font-[700] text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
                                         <span className='text-white block text-[13px]'>24/7 Available </span>
                                         Live Chat
                                     </Link>
@@ -72,15 +197,36 @@ const Banner = ({ content }) => {
                                     <p className='text-[17px] md:text-[20px] mb-[25px] leading-[1.2] md:leading-[1.43] font-sans text-white xl:text-[#292b2c]'>Your idea and animate it with creative expertise</p>
                                 </div>
                                 <form action="javascript:;">
-                                    <input type="text" placeholder='Full Name *' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-2 md:mb-4' required />
+                                    <div className="relative">
+                                        <input type="text" name='name' placeholder='Full Name *' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-4' onChange={handleDataChange} required />
 
-                                    <input type="text" placeholder='Email Address' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-2 md:mb-4' required />
+                                        {errors.phone && (
+                                            <span className="absolute left-[5px] bottom-[-1px] text-[11px] block font-medium lg:text-[12px] text-[#EF0707] poppins">
+                                                {errors.phone}
+                                            </span>
+                                        )}
+                                    </div>
+                                    <div className="relative">
+                                        <input type="email" name="email" placeholder='Email Address' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-4' onChange={handleDataChange} required />
 
-                                    <input type="text" placeholder='Phone No' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-2 md:mb-4' required />
-
-                                    <textarea placeholder='Brief Description' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[8px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-2 md:mb-4 resize-none border'></textarea>
-
-                                    <button className='bg-[#442891] text-white rounded-[6px] md:rounded-[30px] py-[8px] px-[35px] btn_shadow border-0 text-[18px] relative poppins cursor-pointer font-[700] uppercase'>GET IN TOUCH</button>
+                                        {errors.phone && (
+                                            <span className="absolute left-[5px] bottom-[-1px] text-[11px] block font-medium lg:text-[12px] text-[#EF0707] poppins">
+                                                {errors.phone}
+                                            </span>
+                                        )}
+                                    </div>
+                                    <div className="relative">
+                                        <input type="phone" name="phone" placeholder='Phone No' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-4' onChange={handleDataChange} required />
+                                        {errors.phone && (
+                                            <span className="absolute left-[5px] bottom-[-1px] text-[11px] block font-medium lg:text-[12px] text-[#EF0707] poppins">
+                                                {errors.phone}
+                                            </span>
+                                        )}
+                                    </div>
+                                    <div className="relative">
+                                        <textarea name='message' placeholder='Brief Description' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[8px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-2 md:mb-4 resize-none border' onChange={handleDataChange}></textarea>
+                                    </div>
+                                    <button type='submit' className='bg-[#442891] text-white rounded-[6px] md:rounded-[30px] py-[8px] px-[35px] btn_shadow border-0 text-[18px] relative poppins cursor-pointer font-[700] uppercase' onClick={handleFormSubmit} disabled={isDisabled}>{formStatus}</button>
                                 </form>
                             </div>
                         </div>
@@ -95,15 +241,36 @@ const Banner = ({ content }) => {
                             <p className='text-[20px] mb-[25px] leading-[1.43] font-sans text-[#292b2c]'>Your idea and animate it with creative expertise</p>
                         </div>
                         <form action="javascript:;">
-                            <input type="text" placeholder='Full Name *' className='bg-white rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-4' required />
+                            <div className="relative">
+                                <input type="text" name='name' placeholder='Full Name *' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-2 md:mb-4' onChange={handleDataChange} required />
 
-                            <input type="text" placeholder='Email Address' className='bg-white rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-4' required />
+                                {errors.phone && (
+                                    <span className="absolute left-[17px] bottom-[-1px] text-[11px] lg:text-[13px] block font-medium text-[#EF0707] poppins">
+                                        {errors.phone}
+                                    </span>
+                                )}
+                            </div>
+                            <div className="relative">
+                                <input type="email" name="email" placeholder='Email Address' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-2 md:mb-4' onChange={handleDataChange} required />
 
-                            <input type="text" placeholder='Phone No' className='bg-white rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-4' required />
-
-                            <textarea placeholder='Brief Description' className='bg-white rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[8px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-4 resize-none border'></textarea>
-
-                            <button className='bg-[#442891] text-white rounded-[30px] py-[8px] px-[35px] btn_shadow border-0 text-[18px] relative poppins cursor-pointer font-[700] uppercase'>GET IN TOUCH</button>
+                                {errors.phone && (
+                                    <span className="absolute left-[17px] bottom-[-1px] text-[11px] lg:text-[13px] block font-medium text-[#EF0707] poppins">
+                                        {errors.phone}
+                                    </span>
+                                )}
+                            </div>
+                            <div className="relative">
+                                <input type="phone" name="phone" placeholder='Phone No' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-2 md:mb-4' onChange={handleDataChange} required />
+                                {errors.phone && (
+                                    <span className="absolute left-[17px] bottom-[-1px] text-[11px] lg:text-[13px] block font-medium text-[#EF0707] poppins">
+                                        {errors.phone}
+                                    </span>
+                                )}
+                            </div>
+                            <div className="relative">
+                                <textarea name='message' placeholder='Brief Description' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[8px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-2 md:mb-4 resize-none border' onChange={handleDataChange}></textarea>
+                            </div>
+                            <button type='submit' className='bg-[#442891] text-white rounded-[6px] md:rounded-[30px] py-[8px] px-[35px] btn_shadow border-0 text-[18px] relative poppins cursor-pointer font-[700] uppercase' onClick={handleFormSubmit} disabled={isDisabled}>{formStatus}</button>
                         </form>
                     </div>
                 </div>

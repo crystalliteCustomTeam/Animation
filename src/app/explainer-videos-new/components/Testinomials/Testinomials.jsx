@@ -57,7 +57,7 @@ const Testinomials = () => {
                                     </Link>
                                 </div>
                                 <div className="chat">
-                                    <Link href="javascript:;" className='text-[#261564] font-[700] text-[16px] md:text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
+                                    <Link href="javascript:$zopim.livechat.window.show();" className='text-[#261564] font-[700] text-[16px] md:text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
                                         <span className='block text-[13px]'>24/7 Available </span>
                                         Live Chat
                                     </Link>

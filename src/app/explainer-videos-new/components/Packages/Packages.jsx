@@ -1,3 +1,4 @@
+import usePopup from '@/app/configs/store/Popup';
 import Link from 'next/link';
 import React from 'react'
 
@@ -5,6 +6,11 @@ import React from 'react'
 import { FaCheck, FaRegCommentDots } from "react-icons/fa";
 
 const Packages = () => {
+    // Form Code Start
+    const { popup, togglePopup } = usePopup()
+    const popupHandle = () => {
+        togglePopup(popup)
+    }
     return (
         <>
             <section className="py-[50px] lg:py-[100px]">
@@ -65,12 +71,12 @@ const Packages = () => {
                                 </div>
                                 <div className="flex items-center justify-between mt-[35px] mb-[30px] px-[40px]">
                                     <div className="btnOne">
-                                        <Link href="javascript:;" className='group-hover:bg-white group-hover:translate-x-[-15px] lg:group-hover:translate-x-[-24px] group-hover:shadow-2xl group-hover:text-[#1c214e] bg-[#1c214e] duration-700 ease-in-out group-hover:duration-700 text-white text-[16px] md:text-[18px] py-[10px] px-[25px] md:px-[40px] poppins cursor-pointer rounded-[30px] font-[700]'>
+                                        <button onClick={popupHandle} className='group-hover:bg-white group-hover:translate-x-[-15px] lg:group-hover:translate-x-[-24px] group-hover:shadow-2xl group-hover:text-[#1c214e] bg-[#1c214e] duration-700 ease-in-out group-hover:duration-700 text-white text-[16px] md:text-[18px] py-[10px] px-[25px] md:px-[40px] poppins cursor-pointer rounded-[30px] font-[700]'>
                                             Order Now
-                                        </Link>
+                                        </button>
                                     </div>
                                     <div className="livechat">
-                                        <Link href="javascript:;" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
+                                        <Link href="javascript:$zopim.livechat.window.show();" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
                                             <span className='text-[#1c214e] group-hover:text-white duration-700 ease-in-out group-hover:duration-700 text-[12px] md:text-[14px] font-[300] font-sans flex items-center'>
                                                 Click here to
                                                 <FaRegCommentDots className='text-[#009245] ml-[5px]' />
@@ -80,7 +86,7 @@ const Packages = () => {
                                     </div>
                                 </div>
                                 <div className="card_bottom md:block hidden bg-[#eee] text-center py-[6px] rounded-b-[14px]">
-                                    <Link href="tel:;" className='text-[#333]text-[12px] md:text-[14px] font-[400] poppins'>
+                                    <Link href="tel:;" className='text-[#333] text-[12px] md:text-[14px] font-[400] poppins'>
                                         Call us <span className='font-[600]'>+1-833-666-6684</span>
                                     </Link>
                                 </div>
@@ -137,12 +143,12 @@ const Packages = () => {
                                 </div>
                                 <div className="flex items-center justify-between mt-[35px] mb-[30px] px-[40px]">
                                     <div className="btnOne">
-                                        <Link href="javascript:;" className='group-hover:bg-white group-hover:translate-x-[-15px] lg:group-hover:translate-x-[-24px] group-hover:shadow-2xl group-hover:text-[#1c214e] bg-[#1c214e] duration-700 ease-in-out group-hover:duration-700 text-white text-[16px] md:text-[18px] py-[10px] px-[25px] md:px-[40px] poppins cursor-pointer rounded-[30px] font-[700]'>
+                                        <button onClick={popupHandle} className='group-hover:bg-white group-hover:translate-x-[-15px] lg:group-hover:translate-x-[-24px] group-hover:shadow-2xl group-hover:text-[#1c214e] bg-[#1c214e] duration-700 ease-in-out group-hover:duration-700 text-white text-[16px] md:text-[18px] py-[10px] px-[25px] md:px-[40px] poppins cursor-pointer rounded-[30px] font-[700]'>
                                             Order Now
-                                        </Link>
+                                        </button>
                                     </div>
                                     <div className="livechat">
-                                        <Link href="javascript:;" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
+                                        <Link href="javascript:$zopim.livechat.window.show();" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
                                             <span className='text-[#1c214e] group-hover:text-white duration-700 ease-in-out group-hover:duration-700 text-[12px] md:text-[14px] font-[300] font-sans flex items-center'>
                                                 Click here to
                                                 <FaRegCommentDots className='text-[#009245] ml-[5px]' />
@@ -152,7 +158,7 @@ const Packages = () => {
                                     </div>
                                 </div>
                                 <div className="card_bottom md:block hidden bg-[#eee] text-center py-[6px] rounded-b-[14px]">
-                                    <Link href="tel:;" className='text-[#333]text-[12px] md:text-[14px] font-[400] poppins'>
+                                    <Link href="tel:;" className='text-[#333] text-[12px] md:text-[14px] font-[400] poppins'>
                                         Call us <span className='font-[600]'>+1-833-666-6684</span>
                                     </Link>
                                 </div>
@@ -209,12 +215,12 @@ const Packages = () => {
                                 </div>
                                 <div className="flex items-center justify-between mt-[35px] mb-[30px] px-[40px]">
                                     <div className="btnOne">
-                                        <Link href="javascript:;" className='group-hover:bg-white group-hover:translate-x-[-15px] lg:group-hover:translate-x-[-24px] group-hover:shadow-2xl group-hover:text-[#1c214e] bg-[#1c214e] duration-700 ease-in-out group-hover:duration-700 text-white text-[16px] md:text-[18px] py-[10px] px-[25px] md:px-[40px] poppins cursor-pointer rounded-[30px] font-[700]'>
+                                        <button onClick={popupHandle} className='group-hover:bg-white group-hover:translate-x-[-15px] lg:group-hover:translate-x-[-24px] group-hover:shadow-2xl group-hover:text-[#1c214e] bg-[#1c214e] duration-700 ease-in-out group-hover:duration-700 text-white text-[16px] md:text-[18px] py-[10px] px-[25px] md:px-[40px] poppins cursor-pointer rounded-[30px] font-[700]'>
                                             Order Now
-                                        </Link>
+                                        </button>
                                     </div>
                                     <div className="livechat">
-                                        <Link href="javascript:;" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
+                                        <Link href="javascript:$zopim.livechat.window.show();" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
                                             <span className='text-[#1c214e] group-hover:text-white duration-700 ease-in-out group-hover:duration-700 text-[12px] md:text-[14px] font-[300] font-sans flex items-center'>
                                                 Click here to
                                                 <FaRegCommentDots className='text-[#009245] ml-[5px]' />
@@ -224,7 +230,7 @@ const Packages = () => {
                                     </div>
                                 </div>
                                 <div className="card_bottom md:block hidden bg-[#eee] text-center py-[6px] rounded-b-[14px]">
-                                    <Link href="tel:;" className='text-[#333]text-[12px] md:text-[14px] font-[400] poppins'>
+                                    <Link href="tel:;" className='text-[#333] text-[12px] md:text-[14px] font-[400] poppins'>
                                         Call us <span className='font-[600]'>+1-833-666-6684</span>
                                     </Link>
                                 </div>
