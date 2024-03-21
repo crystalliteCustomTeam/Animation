@@ -39,14 +39,16 @@ const ConditionalLayout = ({ children }) => {
                     {pathname !== "/video-explainer-lp" &&
                         pathname !== "/video-explainer-lp2" &&
                         pathname !== "/video-explainer-lp-new" &&
-                        pathname !== "/explainer-videos-animations" && (
+                        pathname !== "/explainer-videos-animations" &&
+                        pathname !== "/explainer-videos-new" && (
                             <Header />
                         )}
                     {children}
                     {pathname !== "/video-explainer-lp" &&
                         pathname !== "/video-explainer-lp2" &&
                         pathname !== "/video-explainer-lp-new" &&
-                        pathname !== "/explainer-videos-animations" && (
+                        pathname !== "/explainer-videos-animations" &&
+                        pathname !== "/explainer-videos-new" && (
                             <Footer />
                         )}
                 </>
