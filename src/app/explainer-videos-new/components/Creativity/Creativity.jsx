@@ -11,15 +11,15 @@ import CreativeBrands from "media/explainer-videos-new/creativebrands.png"
 const Creativity = () => {
     return (
         <>
-            <section className="bg-[url('../../public/explainer-videos-new/creative-bg.png')] bg-no-repeat py-[100px] ">
-                <div className="max-w-7xl mx-auto relative z-[999]">
-                    <div className="grid grid-cols-12">
-                        <div className="col-span-5">
-                            <h2 className='text-[#333] font-[700] text-[40px] lg:text-[50px] capitalize mb-[13px] leading-[1.1] font-sans'>Let The <span className='text-[#f36e16]'> Creativity Flow</span> And Do Wonders</h2>
+            <section className="bg-[url('../../public/explainer-videos-new/creative-bg.png')] bg-no-repeat py-[50px] md:py-[100px] ">
+                <div className="px-5 lg:px-8 xl:px-0 max-w-7xl mx-auto relative z-[999]">
+                    <div className="grid grid-cols-12 gap-y-7">
+                        <div className="col-span-12 lg:col-span-5">
+                            <h2 className='text-[#333] font-[700] text-[30px] md:text-[40px] lg:text-[50px] capitalize mb-[13px] leading-[1.1] font-sans'>Let The <span className='text-[#f36e16]'> Creativity Flow</span> And Do Wonders</h2>
                             <p className='text-[#333] text-[16px] mb-0 poppins leading-[1.43]'>With utmost dedication to producing custom videos, Explainer Videos provides the most innovative and wholly-immersive animated content for your business. Our exceptional digital artists ensure your desired message is conveyed to your target audience on a visceral level.</p>
-                            <div className="btns flex items-center justify-between w-9/12 mt-[55px]">
+                            <div className="btns flex items-center justify-between md:w-9/12 mt-[55px]">
                                 <div className="btn1">
-                                    <Link href="javacript:;" className='btn_shadow text-[18px] text-[#9a9a9a] bg-white py-[10px] px-[40px] relative poppins cursor-pointer font-[700] rounded-[30px] uppercase'>
+                                    <Link href="javacript:;" className='btn_shadow text-[16px] md:text-[18px] text-[#9a9a9a] bg-white py-[10px] px-[25px] md:px-[40px] relative poppins cursor-pointer font-[700] rounded-[30px] uppercase'>
                                         LET'S
                                         <span className='text-[#f36e16]'> ANIMATE</span>
                                     </Link>
@@ -32,13 +32,13 @@ const Creativity = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-7">
+                        <div className="col-span-12 lg:col-span-7">
                             <div className="text-right relative">
-                                <Image src={CreativeMain} alt='Infinity Animations' className='ml-[220px]' />
-                                <Image src={Creative1} alt='Infinity Animations' className='absolute left-[30px] bottom-[-5px]' />
-                                <Image src={Creative2} alt='Infinity Animations' className='absolute right-[-115px] bottom-[-5px] h-full ' />
+                                <Image src={CreativeMain} alt='Infinity Animations' className='md:ml-[220px]' />
+                                <Image src={Creative1} alt='Infinity Animations' className='absolute left-[30px] bottom-[-5px] md:block hidden' />
+                                <Image src={Creative2} alt='Infinity Animations' className='absolute right-[-115px] bottom-[-5px] h-full 2xl:block hidden' />
                             </div>
-                            <Image src={CreativeBrands} alt='Infinity Animations' className='ml-[30%] mt-5' />
+                            <Image src={CreativeBrands} alt='Infinity Animations' className='ml-[30%] mt-5 md:block hidden' />
 
                         </div>
                     </div>

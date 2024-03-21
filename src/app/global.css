@@ -563,7 +563,6 @@ div#ty7 {
 
 .explainerTestinomials .slick-prev {
   left: -75px;
-  background: #000;
   z-index: 999;
   /* background: #e7e7e7; */
   border: 2px solid black;
@@ -683,6 +682,31 @@ div#ty7 {
   .blogsSlider .slick-dots {
     width: 11%;
   }
+
+  .explainerTestinomials .slick-next {
+    right: -20px;
+    top: inherit;
+    bottom: -91px;
+  }
+
+
+  .explainerTestinomials .slick-prev {
+    left: -75px;
+    top: inherit;
+    bottom: -91px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .explainerTestinomials .slick-next {
+    right: 33px;
+    bottom: -105px;
+  }
+
+  .explainerTestinomials .slick-prev {
+    left: 0px;
+    bottom: -105px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -763,6 +787,27 @@ div#ty7 {
     opacity: 1;
     color: #a70a0e;
   }
+
+  .slick-prev,
+  .slick-next {
+    top: inherit !important;
+    bottom: -95px !important;
+  }
+
+  .expaliner_brandslider .slick-prev {
+    left: 35%;
+    bottom: -109px !important;
+  }
+
+  .expaliner_brandslider .slick-next {
+    right: 35%;
+    bottom: -109px !important;
+  }
+
+  .explainerTestinomials .slick-next,
+  .explainerTestinomials .slick-prev {
+    bottom: -77px !important;
+  }
 }
 
 @media only screen and (max-width: 567px) {
@@ -798,6 +843,24 @@ div#ty7 {
 
   br {
     display: none;
+  }
+
+  .expaliner_brandslider .slick-next {
+    right: 25%;
+    bottom: -97px !important;
+  }
+
+  .expaliner_brandslider .slick-prev {
+    bottom: -97px !important;
+  }
+
+  .explainerTestinomials .slick-next,
+  .explainerTestinomials .slick-prev {
+    bottom: -64px !important;
+  }
+
+  .explainerTestinomials .slick-next {
+    right: 5px;
   }
 }
 

@@ -40,11 +40,11 @@ const Testinomials = () => {
     return (
         <>
             <section className="py-[50px] lg:py-[100px] bg-[url('../../public/explainer-videos-new/testinomials-bg.png')] bg-cover bg-no-repeat">
-                <div className="max-w-7xl mx-auto">
-                    <div className="grid grid-cols-12 items-center">
-                        <div className="col-span-5">
-                            <span className='text-[#333] text-[24px] font-[400] font-sans mb-[4px]'>TESTIMONIALS</span>
-                            <h2 className='text-[#333] text-[40px] mb-[13px] font-[700] poppins leading-[1.1]'>What Our Valuable
+                <div className="px-5 lg:px-8 xl:px-0 max-w-7xl mx-auto">
+                    <div className="grid grid-cols-12 gap-y-7 items-center">
+                        <div className="col-span-12 lg:col-span-5">
+                            <span className='text-[#333] text-[18px] md:text-[24px] font-[400] font-sans mb-[4px]'>TESTIMONIALS</span>
+                            <h2 className='text-[#333] text-[30px] md:text-[40px] mb-[13px] font-[700] poppins leading-[1.1]'>What Our Valuable
                                 Clients Say</h2>
                             <p className='text-[#333] text-[18px] font-sans leading-[1.43] lg:w-10/12'>We have proudly served an awesome client base by
                                 delivering comprehensive design solutions. Our clients'
@@ -52,23 +52,23 @@ const Testinomials = () => {
 
                             <div className="flex items-center justify-between mt-6 lg:mt-14">
                                 <div className="btn1">
-                                    <Link href="tel:;" className='text-[16px] border border-[#f36e16] rounded-[30px] text-[#282828] font-[700] poppins py-[12px] px-[35px] hover:bg-[#f36e16] hover:duration-700 duration-700 ease-in-out hover:text-white'>
+                                    <Link href="tel:;" className='text-[12px] md:text-[16px] border border-[#f36e16] rounded-[30px] text-[#282828] font-[700] poppins py-[12px] px-[18px] md:px-[35px] hover:bg-[#f36e16] hover:duration-700 duration-700 ease-in-out hover:text-white'>
                                         CHAT NOW <span className='font-[500]'>TO AVAIL THIS OFFER</span>
                                     </Link>
                                 </div>
                                 <div className="chat">
-                                    <Link href="javascript:;" className='text-[#261564] font-[700] text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
+                                    <Link href="javascript:;" className='text-[#261564] font-[700] text-[16px] md:text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
                                         <span className='block text-[13px]'>24/7 Available </span>
                                         Live Chat
                                     </Link>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-7">
+                        <div className="col-span-12 lg:col-span-7">
                             <div className="slides lg:w-10/12 ml-auto">
                                 <Slider {...explainerTestinomials} className="explainerTestinomials">
                                     <div className='px-4'>
-                                        <div className="grid grid-cols-2 gap-x-5">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5 gap-x-5">
                                             <div className='group'>
                                                 <div className="testicard bg-white border-[#d5d5d5] border pt-[1.5rem] px-[1.5rem] pb-[2rem] shadow-md mb-[3.5rem] group-hover:bg-[#261564] group-hover:duration-700 duration-700 ease-in-out relative before:content-[''] before:absolute before:left-0 before:right-0 before:m-auto before:bottom-[-30px] before:w-0 before:h-0">
                                                     <p className='text-[16px] leading-[1.5] font-sans text-black group-hover:text-[#938ab2] group-hover:duration-700 duration-700 ease-in-out mb-4'>
@@ -100,7 +100,7 @@ const Testinomials = () => {
                                         </div>
                                     </div>
                                     <div className='px-4'>
-                                        <div className="grid grid-cols-2 gap-x-5">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5 gap-x-5">
                                             <div className='group'>
                                                 <div className="testicard bg-white border-[#d5d5d5] border pt-[1.5rem] px-[1.5rem] pb-[2rem] shadow-md mb-[3.5rem] group-hover:bg-[#261564] group-hover:duration-700 duration-700 ease-in-out relative before:content-[''] before:absolute before:left-0 before:right-0 before:m-auto before:bottom-[-30px] before:w-0 before:h-0">
                                                     <p className='text-[16px] leading-[1.5] font-sans text-black group-hover:text-[#938ab2] group-hover:duration-700 duration-700 ease-in-out mb-4'>
@@ -132,7 +132,7 @@ const Testinomials = () => {
                                         </div>
                                     </div>
                                     <div className='px-4'>
-                                        <div className="grid grid-cols-2 gap-x-5">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5 gap-x-5">
                                             <div className='group'>
                                                 <div className="testicard bg-white border-[#d5d5d5] border pt-[1.5rem] px-[1.5rem] pb-[2rem] shadow-md mb-[3.5rem] group-hover:bg-[#261564] group-hover:duration-700 duration-700 ease-in-out relative before:content-[''] before:absolute before:left-0 before:right-0 before:m-auto before:bottom-[-30px] before:w-0 before:h-0">
                                                     <p className='text-[16px] leading-[1.5] font-sans text-black group-hover:text-[#938ab2] group-hover:duration-700 duration-700 ease-in-out mb-4'>

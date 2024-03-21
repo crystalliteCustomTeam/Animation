@@ -9,8 +9,8 @@ const Footer = () => {
     return (
         <>
             <footer className="pt-[40px] pb-[30px] bg-[url('../../public/explainer-videos-new/footer-bg.png')] bg-center bg-no-repeat bg-cover">
-                <div className="max-w-7xl mx-auto">
-                    <div className="flex items-center justify-between lg:w-11/12 mx-auto">
+                <div className="px-5 lg:px-8 xl:px-0 max-w-7xl mx-auto">
+                    <div className="flex md:flex-row flex-col gap-y-6 items-center justify-between lg:w-11/12 mx-auto">
                         <div className="links">
                             <Link href="javascript:;" className='text-[14px] lg:text-[16px] text-white poppins'>Privacy and Policy</Link>
                         </div>

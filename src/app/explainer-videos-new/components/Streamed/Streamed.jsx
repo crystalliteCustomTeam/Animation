@@ -284,7 +284,7 @@ const Streamed = () => {
                                     )}
                                 </div>
                             </div>
-                            <div className="btn mx-auto block lg:w-[20%] mt-8 lg:mt-20">
+                            <div className="btn mx-auto flex items-center justify-center w-full sm:w-[50%] md:w-[40%] lg:w-[30%] 2xl:w-[20%]  mt-20">
                                 <Link href="javascript:;" className='text-[16px] border-2 border-[#f36e16] rounded-[30px] text-white font-[700] font-sans py-[12px] px-[35px] hover:bg-[#f36e16] hover:duration-700 duration-700 ease-in-out hover:text-white'>
                                     LET'S ANIMATE YOUR VIDEO
                                 </Link>

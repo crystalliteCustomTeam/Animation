@@ -20,36 +20,36 @@ const Banner = ({ content }) => {
     const { bannerImage } = content
     return (
         <>
-            <section className="bg-[url('../../public/explainer-videos-new/banner-bg.png')] bg-cover bg-center bg-no-repeat relative h-screen flex items-center justify-center min-h-[646px] overflow-hidden mt-[66px]">
+            <section className="bg-[url('../../public/explainer-videos-new/banner-bg.png')] bg-cover bg-center bg-no-repeat relative py-[80px] xl:py-[0px] xl:h-[90vh] 2xl:h-screen flex items-center justify-center min-h-[646px] overflow-hidden mt-[60px] md:mt-[66px]">
                 <div className="particals">
                     <Image src={Particle1} alt='Infinity Animations' className='absolute top-[4rem] left-[4rem] z-[999] rotate' />
                     <Image src={Particle2} alt='Infinity Animations' className='absolute top-[4rem] left-0 right-0 m-auto z-[999] rotate' />
                     <Image src={Particle3} alt='Infinity Animations' className='absolute left-[2rem] z-[999] rotate' />
-                    <Image src={Particle4} alt='Infinity Animations' className='absolute left-0 bottom-0 z-[999]' />
+                    <Image src={Particle4} alt='Infinity Animations' className='absolute left-0 bottom-0 z-[999] md:block hidden' />
                     <Image src={Particle5} alt='Infinity Animations' className='absolute left-0 right-[10rem] bottom-[1rem] m-auto z-[999] rotate' />
                     <Image src={Particle6} alt='Infinity Animations' className='absolute right-[4rem] bottom-[3rem] z-[999] rotate' />
                     <Image src={Particle7} alt='Infinity Animations' className='absolute right-[-16rem] left-0 bottom-[70px] m-auto z-[999] rotate' />
                     <Image src={Particle8} alt='Infinity Animations' className='absolute left-[53rem] top-[4rem] z-[999] rotate' />
-                    <Image src={Particle9} alt='Infinity Animations' className='absolute right-[70px] top-[1rem] z-[9991] rotate' />
+                    <Image src={Particle9} alt='Infinity Animations' className='absolute right-[13px] lg:right-[70px] top-[1rem] z-[999] lg:z-[9991] rotate md:block hidden' />
                     <Image src={Particle10} alt='Infinity Animations' className='absolute bottom-[30%] right-[45rem] z-[999] rotate' />
                 </div>
-                <div className="video-div w-full h-auto absolute z-[9] overflow-hidden before:content-[''] before:bg-[#442891] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[90] before:opacity-[0.7]">
-                    <video src={bannerImage} autoPlay={true} loop={true} muted={true} className='relative left-[-37%] inline-block'>
+                <div className="lg:block hidden video-div w-full h-auto absolute z-[9] overflow-hidden before:content-[''] before:bg-[#442891] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[90] before:opacity-[0.7]">
+                    <video src={bannerImage} autoPlay={true} loop={true} muted={true} className='relative h-full xl:left-0 inline-block'>
                     </video>
                 </div>
-                <div className="max-w-7xl mx-auto relative z-[999]">
-                    <div className="grid grid-cols-12">
-                        <div className="col-span-6">
+                <div className="xxl:container max-w-7xl mx-auto px-5 lg:px-8 xl:px-0 relative z-[999]">
+                    <div className="grid grid-cols-12 gap-y-6">
+                        <div className="col-span-12 lg:col-span-6">
                             <div className='lg:mt-[50px]'>
                                 <span className='text-[20px] font-[700] font-sans text-white bg-[#f36e16] py-[5px] px-[10px] inline-block'>GET 60 SECONDS</span>
-                                <h1 className='text-[70px] font-[700] text-white poppins leading-[1.1] lg:w-8/12 mb-2'>Animated
-                                    Video <span className='bg-[#f36e16] px-[10px] relative font-[600] inline-block h-[75px]'>$165</span>
+                                <h1 className='text-[50px] md:text-[70px] font-[700] text-white poppins leading-[1.1] lg:w-8/12 mb-2'>Animated
+                                    Video <span className='bg-[#f36e16] px-[10px] relative font-[600] inline-block h-[55px] md:h-[75px]'>$165</span>
                                 </h1>
-                                <p className='text-white text-[19px] mb-[20px] poppins'>We Deliver Professional Video Solutions and production strategies to deliver impactful and eye-catching videos</p>
+                                <p className='text-white text-[16px] md:text-[19px] mb-[20px] poppins xl:w-10/12 2xl:w-full'>We Deliver Professional Video Solutions and production strategies to deliver impactful and eye-catching videos</p>
                             </div>
-                            <div className="btns flex items-center justify-between w-8/12 pt-2 mb-[35px]">
+                            <div className="btns flex items-center justify-between md:w-8/12 pt-2 mb-[35px]">
                                 <div className="btn1">
-                                    <Link href="javacript:;" className='btn_shadow text-[18px] text-[#9a9a9a] bg-white py-[10px] px-[40px] relative poppins cursor-pointer font-[700] rounded-[30px] uppercase'>
+                                    <Link href="javacript:;" className='btn_shadow text-[16px] md:text-[18px] text-[#9a9a9a] bg-white py-[10px] px-[25px] md:px-[40px] relative poppins cursor-pointer font-[700] rounded-[30px] uppercase'>
                                         LET'S
                                         <span className='text-[#f36e16]'> ANIMATE</span>
                                     </Link>
@@ -65,34 +65,54 @@ const Banner = ({ content }) => {
                                 <Image src={Brands} alt='' />
                             </div>
                         </div>
-                        <div className="col-span-6">
-                            <div className="form_bg bg-[url('../../public/explainer-videos-new/form-bg.png')] bg-cover bg-center w-[755px] h-screen absolute right-[-124px] top-[-128px] z-[999]">
-                                <div className="form_wrapper pt-[11rem] pr-[7rem] pb-[6rem] pl-[14rem]">
-                                    <div className="content">
-                                        <h2 className='text-[42px] font-[700] text-black poppins leading-[42px] mb-3'>Let’s <br /> Conceptualize</h2>
-                                        <p className='text-[20px] mb-[25px] leading-[1.43] font-sans text-[#292b2c]'>Your idea and animate it with creative expertise</p>
-                                    </div>
-                                    <form action="javascript:;">
-                                        <input type="text" placeholder='Full Name *' className='bg-white rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-4' required />
-
-                                        <input type="text" placeholder='Email Address' className='bg-white rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-4' required />
-
-                                        <input type="text" placeholder='Phone No' className='bg-white rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-4' required />
-
-                                        <textarea placeholder='Brief Description' className='bg-white rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[8px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-4 resize-none border'></textarea>
-
-                                        <button className='bg-[#442891] text-white rounded-[30px] py-[8px] px-[35px] btn_shadow border-0 text-[18px] relative poppins cursor-pointer font-[700] uppercase'>GET IN TOUCH</button>
-                                    </form>
+                        <div className="col-span-12 lg:col-span-6">
+                            <div className="form_wrapper px-4 md:px-6 py-6 lg:py-14 rounded-2xl xl:hidden block bg-[#f36e16]">
+                                <div className="content">
+                                    <h2 className='text-[33px] md:text-[42px] font-[700] text-white xl:text-black poppins leading-[35px] md:leading-[42px] mb-3'>Let’s <br /> Conceptualize</h2>
+                                    <p className='text-[17px] md:text-[20px] mb-[25px] leading-[1.2] md:leading-[1.43] font-sans text-white xl:text-[#292b2c]'>Your idea and animate it with creative expertise</p>
                                 </div>
+                                <form action="javascript:;">
+                                    <input type="text" placeholder='Full Name *' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-2 md:mb-4' required />
+
+                                    <input type="text" placeholder='Email Address' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-2 md:mb-4' required />
+
+                                    <input type="text" placeholder='Phone No' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-2 md:mb-4' required />
+
+                                    <textarea placeholder='Brief Description' className='bg-white rounded-[6px] md:rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[8px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-2 md:mb-4 resize-none border'></textarea>
+
+                                    <button className='bg-[#442891] text-white rounded-[6px] md:rounded-[30px] py-[8px] px-[35px] btn_shadow border-0 text-[18px] relative poppins cursor-pointer font-[700] uppercase'>GET IN TOUCH</button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                {/* Form Part Start */}
+                <div className="form_bg bg-[url('../../public/explainer-videos-new/form-bg.png')] bg-cover bg-center w-[755px] xl:w-[805px] 3xl:w-[955px] h-screen absolute right-0 top-0 z-[999] xl:block hidden">
+                    <div className="form_wrapper pt-[11rem] xxl:pt-[15rem] 3xl:pt-[20rem] pr-[7rem] pb-[6rem] pl-[14rem]">
+                        <div className="content">
+                            <h2 className='text-[42px] font-[700] text-black poppins leading-[42px] mb-3'>Let’s <br /> Conceptualize</h2>
+                            <p className='text-[20px] mb-[25px] leading-[1.43] font-sans text-[#292b2c]'>Your idea and animate it with creative expertise</p>
+                        </div>
+                        <form action="javascript:;">
+                            <input type="text" placeholder='Full Name *' className='bg-white rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-4' required />
+
+                            <input type="text" placeholder='Email Address' className='bg-white rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-4' required />
+
+                            <input type="text" placeholder='Phone No' className='bg-white rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[13px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-4' required />
+
+                            <textarea placeholder='Brief Description' className='bg-white rounded-[30px] border-none w-full text-[14px] text-[#999] pt-[15px] pr-[15px] pb-[8px] pl-[25px] poppins focus:outline-none placeholder:text-[#3b3b3b] mb-4 resize-none border'></textarea>
+
+                            <button className='bg-[#442891] text-white rounded-[30px] py-[8px] px-[35px] btn_shadow border-0 text-[18px] relative poppins cursor-pointer font-[700] uppercase'>GET IN TOUCH</button>
+                        </form>
+                    </div>
+                </div>
+                {/* Form Part End */}
             </section>
             {/* Brands Section */}
             <section className='py-[50px]'>
                 <div className="max-w-7xl mx-auto">
-                    <Image src={Partners} alt='Infinity Animations'  className='mx-auto'/>
+                    <Image src={Partners} alt='Infinity Animations' className='mx-auto' />
                 </div>
             </section>
             {/* Brands Section */}
