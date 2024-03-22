@@ -1,11 +1,10 @@
 import React from 'react'
+import Image from 'next/image';
 import usePopup from '@/app/configs/store/Popup';
 // icons 
 import { FaPaperPlane } from "react-icons/fa";
 // Images 
-import logo from "media/images/logo.gif";
-import Image from 'next/image';
-import Link from 'next/link';
+import logo from "media/images/black-logo.gif";
 
 const Header = () => {
     // Form Code Start
