@@ -8,7 +8,7 @@ const StoryLine = React.lazy(() => import('@/components/storyline/StoryLine'));
 const Portfolio = React.lazy(() => import('@/components/portfolio/Portfolio'));
 const Concept = React.lazy(() => import('@/components/concept/Concept'));
 const Boost = React.lazy(() => import('@/components/boost/Boost'));
-const Testimonial = React.lazy(() => import('@/components/testimonial/Testimonial'));
+const VideoTestimonial = React.lazy(() => import('@/components/videoTestimonial/videoTestimonial'));
 const Contact = React.lazy(() => import('@/components/contact/Contact'));
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
@@ -62,6 +62,9 @@ import Thumnail27 from "media/thumbnails/hybrid/3.jpg";
 import Thumnail28 from "media/thumbnails/hybrid/4.jpg";
 import Thumnail29 from "media/thumbnails/hybrid/5.jpg";
 import Thumnail30 from "media/thumbnails/hybrid/6.jpg";
+import Mathew from "media/thumbnails/mathew.jpg";
+import Gary from "media/thumbnails/gary.jpg";
+import Matt from "media/thumbnails/matt.jpg";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -321,25 +324,40 @@ export default function Page() {
     //=====Testimonial Fold=====//
     const testiContent = [
         {
-            profile: icon1,
             stars: icon2,
-            name: 'Grace Turner, Marketing Strategist',
+            name: 'Mathew',
+            video: "https://youtu.be/elOXjok2nWU?si=YoauMkUQvublB-V5",
+            thumbnail: Mathew,
+        },
+        {
+            stars: icon2,
+            name: 'Gary Wilson',
+            video: "https://youtu.be/gQt3RKFwaqQ?si=jGBKle6DJhd1Lvdn",
+            thumbnail: Gary,
+        },
+        {
+            stars: icon2,
+            name: 'Matt Evans',
+            video: "https://youtu.be/8c0pcN-OQGI?si=3i-Td6-MD9gwl3FZ",
+            thumbnail: Matt,
+        },
+        {
+            stars: icon2,
+            name: 'Grace Turner',
+            position: 'Marketing Strategist',
             message: 'Choosing this animation team was a game-changer for our marketing campaigns. Their creativity and attention to detail brought our brand stories to life in ways we never imagined. Exceptional work!',
-            company: 'ABC company',
         },
         {
-            profile: icon1,
             stars: icon2,
-            name: 'Alex Mitchell, Educational Content Creator',
+            name: 'Alex Mitchell',
+            position: 'Educational Content Creator',
             message: 'Working with this animation team elevated the educational content on my platform. The animations were not only visually engaging but also simplified complex concepts for my audience. Highly recommend for anyone in the education space.',
-            company: 'ABC company',
         },
         {
-            profile: icon1,
             stars: icon2,
-            name: 'Olivia Bennett, Architectural Designer',
+            name: 'Olivia Bennett',
+            position: 'Architectural Designer',
             message: "The architectural visualization provided by this team surpassed our expectations. The animations brought our designs to life with incredible detail and realism. A fantastic experience from start to finish!",
-            company: 'ABC company',
         },
     ];
     const testimonial = {
@@ -359,7 +377,7 @@ export default function Page() {
             <Portfolio content={portfolio} />
             <Concept content={concept} />
             <Boost content={boost} />
-            <Testimonial content={testimonial} />
+            <VideoTestimonial content={testimonial} />
             <Contact />
             <Script id="websiteSchema" type="application/ld+json">
                 {`
