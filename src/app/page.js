@@ -366,7 +366,6 @@ export default function Page() {
         btnBg: "bg-prime",
         testiContent: testiContent
     };
-    //=====Connect Fold=====//
 
     return (
         <>
