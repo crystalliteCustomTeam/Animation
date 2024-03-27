@@ -11,6 +11,7 @@ import { Fancybox as NativeFancybox } from "@fancyapps/ui"
 import "@fancyapps/ui/dist/fancybox/fancybox.css"
 // Icon
 import playMini from "media/icons/playMini.png"
+import quote from "media/icons/quote.png"
 
 const videoTestimonial = ({ content }) => {
     const { title, para, testiContent } = content;
@@ -64,7 +65,8 @@ const videoTestimonial = ({ content }) => {
                             </p>
                         </div>
                     </div>
-                    <div className={`lg:w-[55%] mx-auto mt-8 py-[40px] pr-[30px] pl-[8px] rounded-3xl bg-primary-100 slideBg videoSlide`}>
+                    <div className={`lg:w-[55%] mx-auto mt-8 py-[40px] pr-[30px] pl-[8px] rounded-3xl slideBg videoSlide`}>
+                        <Image src={quote} className="quote hidden lg:block" alt='Infinity Animation' />
                         <Slider {...testiSlider} className="testiSlider">
                             {testiContent.map((testimonial, index) => (
                                 <div key={index} className="h-full overflow-hidden">

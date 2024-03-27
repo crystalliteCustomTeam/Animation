@@ -660,6 +660,28 @@ div#ty7 {
 
 /*=============== Media Query Start ===============*/
 
+.videoSlide {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(38, 1, 1, 1) 100%
+  );
+  position: relative;
+}
+
+.videoSlide .slick-prev {
+  left: -165px;
+}
+
+.quote {
+  position: absolute;
+  left: 0;
+  width: 10%;
+  bottom: -50px;
+}
+
+/*=============== Media Query Start ===============*/
+
 @media only screen and (max-width: 1920px) {
   .blogsSlider .slick-dots {
     position: absolute;
@@ -900,7 +922,7 @@ div#ty7 {
     margin: 0 auto;
   }
 
-  .videoSlide .slick-prev{
+  .videoSlide .slick-prev {
     left: -10px;
   }
 
