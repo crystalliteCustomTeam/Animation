@@ -64,12 +64,12 @@ const videoTestimonial = ({ content }) => {
                             </p>
                         </div>
                     </div>
-                    <div className={`w-full md:w-[75%] lg:w-[55%] 3xl:w-[50%] mx-auto bg-[url("../../public/images/testimonial-bg.png")] bg-no-repeat bg-center bg-cover p-[30px] lg:py-[60px] xl:py-[90px] 2xl:pt-[75px] 2xl:pb-[115px] 3xl:p-[71px] pb-[70px] slideBg`}>
+                    <div className={`lg:w-[55%] mx-auto mt-8 py-[40px] pr-[30px] pl-[8px] rounded-3xl bg-primary-100 slideBg videoSlide`}>
                         <Slider {...testiSlider} className="testiSlider">
                             {testiContent.map((testimonial, index) => (
                                 <div key={index} className="h-full overflow-hidden">
                                     {testimonial.video ? (
-                                        <div className="flex justify-between items-end lg:w-[820px] lg:ml-[20px]">
+                                        <div className="flex justify-between items-end lg:w-[755px] xl:w-[800px] lg:ml-[35px] xl:ml-[50px] fancy">
                                             <div>
                                                 <Fancybox options={{
                                                     Carousel: {
@@ -77,21 +77,23 @@ const videoTestimonial = ({ content }) => {
                                                     },
                                                 }}>
                                                     <Link key={index} href={testimonial.video} datafancybox="gallery" className={` w-full h-full group`}>
-                                                        <Image src={testimonial.thumbnail} alt="Infinity Animations" width={468} height={263} className='min-h-[263px]' />
+                                                        <Image src={testimonial.thumbnail} alt="Infinity Animations" width={468} height={263} className='min-h-[230px] xl:min-h-[263px]' />
                                                     </Link>
                                                 </Fancybox>
                                             </div>
-                                            <div className="flex flex-col items-start">
-                                                <Image src={testimonial.stars} className="w-[40%]" alt='Infinity Animation' />
-                                                <h3 className="text-[24px] font-semibold font-sans leading-tight my-3">
-                                                    {testimonial.name}
-                                                </h3>
+                                            <div className="w-full lg:w-auto flex flex-row justify-between lg:flex-col items-start">
+                                                <div>
+                                                    <Image src={testimonial.stars} className="w-[40%]" alt='Infinity Animation' />
+                                                    <h3 className="text-[20px] font-semibold font-sans leading-tight mt-2 mb-5 lg:my-3">
+                                                        {testimonial.name}
+                                                    </h3>
+                                                </div>
                                                 <Fancybox options={{
                                                     Carousel: {
                                                         infinite: false,
                                                     },
                                                 }}>
-                                                    <Link href={testimonial.video} datafancybox="gallery" className="h-[40px] xl:h-[45px] px-3 2xl:px-6 rounded-md text-[16px] xl:text-[18px] font-normal font-sans bg-prime text-white flex items-center gap-x-2">
+                                                    <Link href={testimonial.video} datafancybox="gallery" className="w-[115px] md:w-auto h-[40px] xl:h-[45px] px-3 2xl:px-6 rounded-md text-[16px] xl:text-[18px] font-normal font-sans bg-prime text-white flex items-center gap-x-2">
                                                         <span className="text-[16px] font-normal font-sans">Play Now</span>
                                                         <Image className="w-[12px] h-[12px] object-contain" src={playMini} alt="Infinity Animations" />
                                                     </Link>
@@ -99,9 +101,9 @@ const videoTestimonial = ({ content }) => {
                                             </div>
                                         </div>
                                     ) : (
-                                        <div key={index} className="h-full">
+                                        <div key={index} className="h-full w-[90%] mx-auto">
                                             <div className="flex flex-col items-center">
-                                                <Image src={testimonial.stars} className="w-[15%] mb-2" alt='Infinity Animation' />
+                                                <Image src={testimonial.stars} className="w-[30%] md:w-[15%] mb-2" alt='Infinity Animation' />
                                                 <h3 className="text-[24px] font-semibold font-sans leading-tight mb-2">
                                                     {testimonial.name}
                                                 </h3>
