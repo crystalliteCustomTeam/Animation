@@ -5,20 +5,9 @@ import { PopupProvider } from "./configs/store/Popup"
 //
 import Footer from "@/components/footer/Footer"
 import Header from "@/components/header/Header"
-import Loader from "@/components/loader/Loader"
 import Popup from "@/components/popup/Popup"
 
 const ConditionalLayout = ({ children }) => {
-    //=============== Loader ===============//
-    const [imagesLoaded, setImagesLoaded] = useState(false);
-    useEffect(() => {
-        const delay = 1000;
-        const timeoutId = setTimeout(() => {
-            setImagesLoaded(true);
-        }, delay);
-        return () => clearTimeout(timeoutId);
-    }, []);
-
     //=============== Popup ===============//
     const pathname = usePathname();
     const [popup, setPopup] = useState(false);
@@ -34,26 +23,23 @@ const ConditionalLayout = ({ children }) => {
     return (
         <PopupProvider value={{ popup, togglePopup }}>
             <Popup />
-            {imagesLoaded ?
-                <>
-                    {pathname !== "/video-explainer-lp" &&
-                        pathname !== "/video-explainer-lp2" &&
-                        pathname !== "/video-explainer-lp-new" &&
-                        pathname !== "/explainer-videos-animations" &&
-                        pathname !== "/explainer-videos-new" && (
-                            <Header />
-                        )}
-                    {children}
-                    {pathname !== "/video-explainer-lp" &&
-                        pathname !== "/video-explainer-lp2" &&
-                        pathname !== "/video-explainer-lp-new" &&
-                        pathname !== "/explainer-videos-animations" &&
-                        pathname !== "/explainer-videos-new" && (
-                            <Footer />
-                        )}
-                </>
-                : <Loader />
-            }
+            <>
+                {pathname !== "/video-explainer-lp" &&
+                    pathname !== "/video-explainer-lp2" &&
+                    pathname !== "/video-explainer-lp-new" &&
+                    pathname !== "/explainer-videos-animations" &&
+                    pathname !== "/explainer-videos-new" && (
+                        <Header />
+                    )}
+                {children}
+                {pathname !== "/video-explainer-lp" &&
+                    pathname !== "/video-explainer-lp2" &&
+                    pathname !== "/video-explainer-lp-new" &&
+                    pathname !== "/explainer-videos-animations" &&
+                    pathname !== "/explainer-videos-new" && (
+                        <Footer />
+                    )}
+            </>
         </PopupProvider>
     )
 }
