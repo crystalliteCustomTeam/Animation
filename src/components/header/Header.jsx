@@ -114,7 +114,7 @@ function MegaMenu() {
                 <MenuHandler>
                     <Link href="#" variant="small" className="font-medium">
                         <span
-                            className="flex items-center px-2 gap-2 py-2 font-sans text-[14px] xl:text-[16px] font-normal leading-[20px]"
+                            className="flex items-center px-2 gap-2 py-2 font-sans text-[14px] xl:text-[16px] font-normal leading-[20px] xl:leading-[24px]"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => {
                                 if (window.innerWidth <= 991) {
