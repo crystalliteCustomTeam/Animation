@@ -27,8 +27,10 @@ import conceptIcon2 from "media/icons/concept-icon2.png"
 import conceptIcon3 from "media/icons/concept-icon3.png"
 import conceptIcon4 from "media/icons/concept-icon4.png"
 //==== Testimonial Images
-import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
+import Mathew from "media/thumbnails/mathew.jpg";
+import Gary from "media/thumbnails/gary.jpg";
+import Matt from "media/thumbnails/matt.jpg";
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.jpg"
 import Thumnail2 from "media/thumbnails/2d-animation/2.jpg"
@@ -59,7 +61,7 @@ import Thumnail26 from "media/thumbnails/hybrid/2.jpg"
 import Thumnail27 from "media/thumbnails/hybrid/3.jpg"
 import Thumnail28 from "media/thumbnails/hybrid/4.jpg"
 import Thumnail29 from "media/thumbnails/hybrid/5.jpg"
-import Thumnail30 from "media/thumbnails/hybrid/6.jpg"
+import Thumnail30 from "media/thumbnails/hybrid/6.jpg";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -303,25 +305,40 @@ export default function Page() {
     //=====Testimonial Fold=====//
     const testiContent = [
         {
-            profile: icon1,
             stars: icon2,
-            name: 'Rebecca Turner, Creative Director',
+            name: 'Mathew',
+            video: "https://youtu.be/elOXjok2nWU?si=YoauMkUQvublB-V5",
+            thumbnail: Mathew,
+        },
+        {
+            stars: icon2,
+            name: 'Gary Wilson',
+            video: "https://youtu.be/gQt3RKFwaqQ?si=jGBKle6DJhd1Lvdn",
+            thumbnail: Gary,
+        },
+        {
+            stars: icon2,
+            name: 'Matt Evans',
+            video: "https://youtu.be/8c0pcN-OQGI?si=3i-Td6-MD9gwl3FZ",
+            thumbnail: Matt,
+        },
+        {
+            stars: icon2,
+            name: 'Rebecca Turner',
+            position: 'Creative Director',
             message: 'Mind-blown by the 3D animations created for our brand! The level of detail and realism brought our product showcase to a whole new level. Exceptional work, exceeded expectations!',
-            company: 'ABC company',
         },
         {
-            profile: icon1,
             stars: icon2,
-            name: 'Daniel Martinez, Marketing Manager',
+            name: 'Daniel Martinez',
+            position: 'Marketing Manager',
             message: 'Our brand story was transformed into a visual spectacle with the 3D animation services. The immersive experience captivated our audience, leaving a lasting impact. Truly remarkable!',
-            company: 'ABC company',
         },
         {
-            profile: icon1,
             stars: icon2,
-            name: 'Sophia Reynolds, Product Manager',
+            name: 'Sophia Reynolds',
+            position: 'Product Manager',
             message: "The 3D animations brought our new product to life in ways we couldn't have imagined. The team's creativity and technical prowess delivered visuals that not only wowed our customers but also drove conversions. Highly recommended!",
-            company: 'ABC company',
         },
     ];
     const testimonial = {

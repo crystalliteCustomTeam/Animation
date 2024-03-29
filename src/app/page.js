@@ -1,15 +1,15 @@
 import React from 'react';
 import Script from 'next/script';
 // Import Page Components
-const Hero = React.lazy(() => import('@/components/hero/Hero'));
-const Review = React.lazy(() => import('@/components/review/Review'));
-const Looking = React.lazy(() => import('@/components/looking/Looking'));
-const StoryLine = React.lazy(() => import('@/components/storyline/StoryLine'));
-const Portfolio = React.lazy(() => import('@/components/portfolio/Portfolio'));
-const Concept = React.lazy(() => import('@/components/concept/Concept'));
-const Boost = React.lazy(() => import('@/components/boost/Boost'));
-const VideoTestimonial = React.lazy(() => import('@/components/videoTestimonial/videoTestimonial'));
-const Contact = React.lazy(() => import('@/components/contact/Contact'));
+import Hero from '@/components/hero/Hero';
+import Review from '@/components/review/Review';
+import Looking from '@/components/looking/Looking';
+import StoryLine from '@/components/storyline/StoryLine';
+import Portfolio from '@/components/portfolio/Portfolio';
+import Concept from '@/components/concept/Concept';
+import Boost from '@/components/boost/Boost';
+import Testimonial from '@/components/testimonial/Testimonial';
+import Contact from '@/components/contact/Contact';
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
 //==== StoryLine Images
@@ -29,8 +29,10 @@ import boosticon1 from "media/icons/boost-icon1.png";
 import boosticon2 from "media/icons/boost-icon2.png";
 import boosticon3 from "media/icons/boost-icon3.png";
 //==== Testimonial Images
-import icon1 from "media/images/client.png";
 import icon2 from "media/icons/stars.png";
+import Mathew from "media/thumbnails/mathew.jpg";
+import Gary from "media/thumbnails/gary.jpg";
+import Matt from "media/thumbnails/matt.jpg";
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.jpg";
 import Thumnail2 from "media/thumbnails/2d-animation/2.jpg";
@@ -62,9 +64,6 @@ import Thumnail27 from "media/thumbnails/hybrid/3.jpg";
 import Thumnail28 from "media/thumbnails/hybrid/4.jpg";
 import Thumnail29 from "media/thumbnails/hybrid/5.jpg";
 import Thumnail30 from "media/thumbnails/hybrid/6.jpg";
-import Mathew from "media/thumbnails/mathew.jpg";
-import Gary from "media/thumbnails/gary.jpg";
-import Matt from "media/thumbnails/matt.jpg";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -376,7 +375,7 @@ export default function Page() {
             <Portfolio content={portfolio} />
             <Concept content={concept} />
             <Boost content={boost} />
-            <VideoTestimonial content={testimonial} />
+            <Testimonial content={testimonial} />
             <Contact />
             <Script id="websiteSchema" type="application/ld+json">
                 {`

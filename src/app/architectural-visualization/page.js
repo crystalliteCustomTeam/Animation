@@ -27,8 +27,10 @@ import conceptIcon2 from "media/icons/concept-icon2.png"
 import conceptIcon3 from "media/icons/concept-icon3.png"
 import conceptIcon4 from "media/icons/concept-icon4.png"
 //==== Testimonial Images
-import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
+import Mathew from "media/thumbnails/mathew.jpg";
+import Gary from "media/thumbnails/gary.jpg";
+import Matt from "media/thumbnails/matt.jpg";
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.jpg"
 import Thumnail2 from "media/thumbnails/2d-animation/2.jpg"
@@ -59,7 +61,7 @@ import Thumnail26 from "media/thumbnails/hybrid/2.jpg"
 import Thumnail27 from "media/thumbnails/hybrid/3.jpg"
 import Thumnail28 from "media/thumbnails/hybrid/4.jpg"
 import Thumnail29 from "media/thumbnails/hybrid/5.jpg"
-import Thumnail30 from "media/thumbnails/hybrid/6.jpg"
+import Thumnail30 from "media/thumbnails/hybrid/6.jpg";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -300,28 +302,43 @@ export default function Page() {
         wantDesc: "Have questions? We have answers, Call Now!"
     }
     //=====Testimonial Fold=====//
-    const testiContent = [
+     const testiContent = [
         {
-            profile: icon1,
             stars: icon2,
-            name: 'Emily Lewis, Architectural Firm Partner',
+            name: 'Mathew',
+            video: "https://youtu.be/elOXjok2nWU?si=YoauMkUQvublB-V5",
+            thumbnail: Mathew,
+        },
+        {
+            stars: icon2,
+            name: 'Gary Wilson',
+            video: "https://youtu.be/gQt3RKFwaqQ?si=jGBKle6DJhd1Lvdn",
+            thumbnail: Gary,
+        },
+        {
+            stars: icon2,
+            name: 'Matt Evans',
+            video: "https://youtu.be/8c0pcN-OQGI?si=3i-Td6-MD9gwl3FZ",
+            thumbnail: Matt,
+        },
+         {
+            stars: icon2,
+            name: 'Emily Lewis',
+            position: 'Architectural Firm Partner',
             message: 'Our design concepts truly came to life with the architectural visualization services. The attention to detail and realism exceeded our expectations. ',
-            company: 'ABC company',
-        },
-        {
-            profile: icon1,
+             },
+         {
             stars: icon2,
-            name: 'Michael Chen, Real Estate Developer',
+            name: 'Michael Chen',
+            position: 'Real Estate Developer',
             message: "The architectural visualizations provided by this team played a pivotal role in our project's success. Prospective buyers were not just shown spaces; they were taken on a visual journey through their future homes. ",
-            company: 'ABC company',
-        },
-        {
-            profile: icon1,
+             },
+         {
             stars: icon2,
-            name: 'Isabella Rodriguez, Interior Designer',
+            name: 'Isabella Rodriguez',
+            position: 'Interior Designer',
             message: 'Working with this team on our interior design projects was a game-changer. The architectural visualizations allowed us to fine-tune details, ensuring our designs translated seamlessly from concept to reality. ',
-            company: 'ABC company',
-        },
+             },
     ];
     const testimonial = {
         title: (<> An Who’s Who of Industry Leading Clients </>),

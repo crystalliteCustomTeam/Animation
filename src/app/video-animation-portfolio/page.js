@@ -8,8 +8,10 @@ import Want from '@/components/want/Want';
 import Testimonial from '@/components/testimonial/Testimonial';
 import Contact from '@/components/contact/Contact';
 //==== Testimonial Images
-import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
+import Mathew from "media/thumbnails/mathew.jpg";
+import Gary from "media/thumbnails/gary.jpg";
+import Matt from "media/thumbnails/matt.jpg";
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.jpg"
 import Thumnail2 from "media/thumbnails/2d-animation/2.jpg"
@@ -40,7 +42,7 @@ import Thumnail26 from "media/thumbnails/hybrid/2.jpg"
 import Thumnail27 from "media/thumbnails/hybrid/3.jpg"
 import Thumnail28 from "media/thumbnails/hybrid/4.jpg"
 import Thumnail29 from "media/thumbnails/hybrid/5.jpg"
-import Thumnail30 from "media/thumbnails/hybrid/6.jpg"
+import Thumnail30 from "media/thumbnails/hybrid/6.jpg";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -204,21 +206,36 @@ export default function Page() {
     //=====Testimonial Fold=====//
     const testiContent = [
         {
-            profile: icon1,
+            stars: icon2,
+            name: 'Mathew',
+            video: "https://youtu.be/elOXjok2nWU?si=YoauMkUQvublB-V5",
+            thumbnail: Mathew,
+        },
+        {
+            stars: icon2,
+            name: 'Gary Wilson',
+            video: "https://youtu.be/gQt3RKFwaqQ?si=jGBKle6DJhd1Lvdn",
+            thumbnail: Gary,
+        },
+        {
+            stars: icon2,
+            name: 'Matt Evans',
+            video: "https://youtu.be/8c0pcN-OQGI?si=3i-Td6-MD9gwl3FZ",
+            thumbnail: Matt,
+        },
+        {
             stars: icon2,
             name: 'Sophie Miller',
             message: 'Browsing through the portfolio of this animation studio was an absolute delight. Each piece tells a unique story, and the diversity of their work showcases their versatility and mastery of the craft.',
             company: 'Content Creator',
         },
         {
-            profile: icon1,
             stars: icon2,
             name: 'Elijah Mitchell',
             message: "This animation studio's portfolio is a visual feast for anyone seeking innovation. The CGI and VFX projects are particularly outstanding, demonstrating a perfect blend of technical prowess and artistic creativity.",
             company: 'Tech Entrepreneur',
         },
         {
-            profile: icon1,
             stars: icon2,
             name: 'Ava Turner',
             message: 'The attention to detail and realism in each project are remarkable. The animations effectively capture the essence of spaces, making them an ideal choice for event promotions.',

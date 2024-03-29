@@ -13,8 +13,10 @@ import StoryLine2 from "media/storyline/storyLine12.png";
 import StoryLine3 from "media/storyline/storyLine13.png";
 import StoryLine4 from "media/storyline/storyLine14.png";
 //==== Testimonial Images
-import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
+import Mathew from "media/thumbnails/mathew.jpg";
+import Gary from "media/thumbnails/gary.jpg";
+import Matt from "media/thumbnails/matt.jpg";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -58,25 +60,37 @@ export default function Page() {
     //=====Testimonial Fold=====//
     const testiContent = [
         {
-            profile: icon1,
+            stars: icon2,
+            name: 'Mathew',
+            video: "https://youtu.be/elOXjok2nWU?si=YoauMkUQvublB-V5",
+            thumbnail: Mathew,
+        },
+        {
+            stars: icon2,
+            name: 'Gary Wilson',
+            video: "https://youtu.be/gQt3RKFwaqQ?si=jGBKle6DJhd1Lvdn",
+            thumbnail: Gary,
+        },
+        {
+            stars: icon2,
+            name: 'Matt Evans',
+            video: "https://youtu.be/8c0pcN-OQGI?si=3i-Td6-MD9gwl3FZ",
+            thumbnail: Matt,
+        },
+        {
             stars: icon2,
             name: 'Michael Gardner',
             message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
-            company: 'ABC company',
         },
         {
-            profile: icon1,
             stars: icon2,
             name: 'Sarah',
             message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
-            company: 'ABC company',
         },
         {
-            profile: icon1,
             stars: icon2,
             name: 'John',
             message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
-            company: 'ABC company',
         },
     ];
     const testimonial = {

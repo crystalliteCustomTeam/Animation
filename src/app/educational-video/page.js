@@ -27,8 +27,10 @@ import conceptIcon7 from "media/icons/bizz7.png"
 import conceptIcon8 from "media/icons/bizz8.png"
 import conceptIcon9 from "media/icons/bizz9.png"
 //==== Testimonial Images
-import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
+import Mathew from "media/thumbnails/mathew.jpg";
+import Gary from "media/thumbnails/gary.jpg";
+import Matt from "media/thumbnails/matt.jpg";
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.jpg"
 import Thumnail2 from "media/thumbnails/2d-animation/2.jpg"
@@ -59,7 +61,7 @@ import Thumnail26 from "media/thumbnails/hybrid/2.jpg"
 import Thumnail27 from "media/thumbnails/hybrid/3.jpg"
 import Thumnail28 from "media/thumbnails/hybrid/4.jpg"
 import Thumnail29 from "media/thumbnails/hybrid/5.jpg"
-import Thumnail30 from "media/thumbnails/hybrid/6.jpg"
+import Thumnail30 from "media/thumbnails/hybrid/6.jpg";
 import checkIcon from 'media/icons/check-img.png'
 
 
@@ -383,27 +385,43 @@ export default function Page() {
         otherCards: otherCards,
     }
     //=====Testimonial Fold=====//
-    const testiContent = [
+     const testiContent = [
         {
-            profile: icon1,
             stars: icon2,
-            name: 'Emma Thompson, Marketing Manager',
+            name: 'Mathew',
+            video: "https://youtu.be/elOXjok2nWU?si=YoauMkUQvublB-V5",
+            thumbnail: Mathew,
+        },
+        {
+            stars: icon2,
+            name: 'Gary Wilson',
+            video: "https://youtu.be/gQt3RKFwaqQ?si=jGBKle6DJhd1Lvdn",
+            thumbnail: Gary,
+        },
+        {
+            stars: icon2,
+            name: 'Matt Evans',
+            video: "https://youtu.be/8c0pcN-OQGI?si=3i-Td6-MD9gwl3FZ",
+            thumbnail: Matt,
+        },
+         {
+            stars: icon2,
+            name: 'Emma Thompson',
+            position: 'Marketing Manager',
             message: 'Mind-blowing creativity! The 2D animation for our product launch was a game-changer. Our audience loved the visual storytelling, and it translated into tangible engagement and sales. Kudos! ',
         },
-        {
-            profile: icon1,
+         {
             stars: icon2,
-            name: 'Samuel Rodriguez, CEO',
+            name: 'Samuel Rodriguez',
+            position: 'CEO',
             message: 'Working with this team was a breeze! They took our concepts and turned them into visually stunning 2D animations. Our brand message was conveyed with charm and simplicity, captivating our audience.',
-            company: 'ABC company',
-        },
-        {
-            profile: icon1,
+             },
+         {
             stars: icon2,
-            name: 'Megan Harper, Creative Director',
+            name: 'Megan Harper',
+            position: 'Creative Director',
             message: "Incredible attention to detail! The 2D animation service brought our brand's story to life in ways we hadn't imagined. The creativity and precision in each frame left us thoroughly impressed.",
-            company: 'ABC company',
-        },
+             },
     ];
     const testimonial = {
         title: (<> The Ultimate Collection Of <br />
