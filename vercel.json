@@ -4,6 +4,22 @@
         "source": "/^www\\.(.*)$/",
         "destination": "https://infinityanimations.com/$1",
         "permanent": true
+      },
+      {
+        "source": "/cgi-and-vfx",
+        "destination": "/cgi-and-vfx-services"
+      },
+      {
+        "source": "/portfolio",
+        "destination": "/video-animation-portfolio"
+      },
+      {
+        "source": "/logo-animation",
+        "destination": "/custom-logo-animation"
+      },
+      {
+        "source": "/architectural-services",
+        "destination": "/architectural-visualization"
       }
     ]
   }
