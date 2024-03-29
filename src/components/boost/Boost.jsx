@@ -46,7 +46,7 @@ const Boost = ({ content }) => {
                                     bg="bg-prime"
                                     color={`text-white`}
                                     border={`border-2 border-[#f5090b]`}
-                                    hover="hover:bg-transparent" 
+                                    hover="hover:bg-transparent"
                                 />
                                 <CTA
                                     text="Live Chat"
