@@ -725,6 +725,11 @@ div#ty7 {
     width: 60% !important;
     padding-left: 15px;
   }
+
+  .popupBg {
+    height: 100% !important;
+    top: 5px !important;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -746,6 +751,9 @@ div#ty7 {
 @media only screen and (max-width: 991px) {
   .popupBg {
     background: #ffcc00;
+    height: auto !important;
+    top: 100px !important;
+    padding-bottom: 20px;
   }
 
   .servicesConcept .slick-next {
@@ -859,6 +867,10 @@ div#ty7 {
 }
 
 @media only screen and (max-width: 567px) {
+  .popupBg {
+    top: 50px !important;
+  }
+
   .wantbg {
     background: linear-gradient(
       0deg,
