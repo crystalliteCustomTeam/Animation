@@ -20,6 +20,14 @@
       {
         "source": "/architectural-services",
         "destination": "/architectural-visualization"
+      },
+      {
+        "source": "/pricing",
+        "destination": "/video-animation-pricing"
+      },
+      {
+        "source": "/process",
+        "destination": "/video-animation-process"
       }
     ]
   }
