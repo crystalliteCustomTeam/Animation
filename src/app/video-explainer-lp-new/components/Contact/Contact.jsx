@@ -227,8 +227,8 @@ const Contact = () => {
                                         </a>
                                     </li>
                                     <li className='py-[10px]'>
-                                        <a href="https://infinityanimationspro.com" className='text-[16px] text-white montserrat flex items-center gap-2'>
-                                            <Globe className='bg-[#fc0] text-[#000] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimationspro.com
+                                        <a href="https://infinityanimations.com" className='text-[16px] text-white montserrat flex items-center gap-2'>
+                                            <Globe className='bg-[#fc0] text-[#000] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimations.com
                                         </a>
                                     </li>
                                 </ul>
