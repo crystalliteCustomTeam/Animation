@@ -4,12 +4,12 @@ export const metadata = {
     title: "Explainer Videos New",
     description: "Explainer Videos New",
     // Canonical
-    alternates: { canonical: 'https://infinityanimationspro.com/explainer-videos-new/' },
+    alternates: { canonical: 'https://infinityanimations.com/explainer-videos-new/' },
     // OG Metas
     openGraph: {
         title: 'Explainer Videos New',
         description: 'Explainer Videos New',
-        url: 'https://infinityanimationspro.com/explainer-videos-new/',
+        url: 'https://infinityanimations.com/explainer-videos-new/',
         siteName: 'Infinity Animations Pro',
         locale: 'en_US',
         type: 'website',
