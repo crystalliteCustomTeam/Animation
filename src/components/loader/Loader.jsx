@@ -9,7 +9,7 @@ const Loader = () => {
     return (
         <>
             <section className={`${styles.loader} fixed left-0 top-0 w-[100%] h-[100vh] z-50 flex flex-col items-center justify-center`}>
-                <Image src={logo} alt="Infinity Animations" className="w-[50%] md:w-[15%]" />
+                {/* <Image src={logo} alt="Infinity Animations" className="w-[50%] md:w-[15%]" /> */}
             </section>
         </>
     )
