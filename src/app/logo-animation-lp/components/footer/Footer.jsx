@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { FaEnvelope, FaFacebookF, FaGooglePlusG, FaInstagram, FaPhoneAlt, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaEnvelope, FaFacebookF, FaGooglePlusG, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaPinterest, FaTwitter, FaVimeoV, FaYoutube } from 'react-icons/fa'
 
 const Footer = () => {
     return (
@@ -9,22 +9,22 @@ const Footer = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-1">
                         <div className="socials_icons flex items-center justify-center gap-x-1 border-t border-[#888888] pt-[30px]">
-                            <Link href="javascript:;" className="facebook bg-[#676767] rounded-[50px] text-white h-[45px]  sm:h-[60px] w-[45px] sm:w-[60px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#6078ab] flex items-center justify-center">
+                            <Link href="https://www.facebook.com/infinityanimationsofficial" className="facebook bg-[#676767] rounded-[50px] text-white h-[45px]  sm:h-[60px] w-[45px] sm:w-[60px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#6078ab] flex items-center justify-center">
                                 <FaFacebookF className='text-[23px] sm:text-[32px]' />
                             </Link>
-                            <Link href="javascript:;" className="twitter bg-[#676767] rounded-[50px] text-white h-[45px]  sm:h-[60px] w-[45px] sm:w-[60px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#31bbef] flex items-center justify-center">
+                            <Link href="https://twitter.com/infinityan_/" className="twitter bg-[#676767] rounded-[50px] text-white h-[45px]  sm:h-[60px] w-[45px] sm:w-[60px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#31bbef] flex items-center justify-center">
                                 <FaTwitter className='text-[23px] sm:text-[32px]' />
                             </Link>
-                            <Link href="javascript:;" className="google bg-[#676767] rounded-[50px] text-white h-[45px]  sm:h-[60px] w-[45px] sm:w-[60px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#e26d5f] flex items-center justify-center ">
-                                <FaGooglePlusG className='text-[32px] sm:text-[42px]' />
+                            <Link href="https://www.linkedin.com/company/infinity-animations/" className="google bg-[#676767] rounded-[50px] text-white h-[45px]  sm:h-[60px] w-[45px] sm:w-[60px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#e26d5f] flex items-center justify-center ">
+                                <FaLinkedinIn className='text-[23px] sm:text-[32px]' />
                             </Link>
-                            <Link href="javascript:;" className="youtube bg-[#676767] rounded-[50px] text-white h-[45px]  sm:h-[60px] w-[45px] sm:w-[60px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#b00] flex items-center justify-center">
+                            <Link href="https://www.youtube.com/@Infinity-Animations" className="youtube bg-[#676767] rounded-[50px] text-white h-[45px]  sm:h-[60px] w-[45px] sm:w-[60px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#b00] flex items-center justify-center">
                                 <FaYoutube className='text-[23px] sm:text-[32px]' />
                             </Link>
-                            <Link href="javascript:;" className="printerest bg-[#676767] rounded-[50px] text-white h-[45px]  sm:h-[60px] w-[45px] sm:w-[60px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#cb2027] flex items-center justify-center">
-                                <FaPinterest className='text-[23px] sm:text-[32px]' />
+                            <Link href="https://www.vimeo.com/infinityanimations" className="printerest bg-[#676767] rounded-[50px] text-white h-[45px]  sm:h-[60px] w-[45px] sm:w-[60px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#cb2027] flex items-center justify-center">
+                                <FaVimeoV className='text-[23px] sm:text-[32px]' />
                             </Link>
-                            <Link href="javascript:;" className="instagram bg-[#676767] rounded-[50px] text-white h-[45px]  sm:h-[60px] w-[45px] sm:w-[60px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#517fa4] flex items-center justify-center">
+                            <Link href="https://www.instagram.com/infinityanimationsofficials" className="instagram bg-[#676767] rounded-[50px] text-white h-[45px]  sm:h-[60px] w-[45px] sm:w-[60px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#517fa4] flex items-center justify-center">
                                 <FaInstagram className='text-[23px] sm:text-[32px]' />
                             </Link>
                         </div>
