@@ -28,7 +28,8 @@ const ConditionalLayout = ({ children }) => {
                     pathname !== "/video-explainer-lp2" &&
                     pathname !== "/video-explainer-lp-new" &&
                     pathname !== "/explainer-videos-animations" &&
-                    pathname !== "/explainer-videos-new" && (
+                    pathname !== "/explainer-videos-new" &&
+                    pathname !== "/logo-animation-lp" && (
                         <Header />
                     )}
                 {children}
@@ -36,7 +37,8 @@ const ConditionalLayout = ({ children }) => {
                     pathname !== "/video-explainer-lp2" &&
                     pathname !== "/video-explainer-lp-new" &&
                     pathname !== "/explainer-videos-animations" &&
-                    pathname !== "/explainer-videos-new" && (
+                    pathname !== "/explainer-videos-new" &&
+                    pathname !== "/logo-animation-lp" && (
                         <Footer />
                     )}
             </>

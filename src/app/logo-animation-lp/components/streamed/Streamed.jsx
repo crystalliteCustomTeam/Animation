@@ -183,7 +183,6 @@ const tabContents = [
     ]
 ];
 const Streamed = () => {
-
     //Tabs
     const [activeTab, setActiveTab] = useState(0);
     const handleTabClick = (index) => {
@@ -218,16 +217,16 @@ const Streamed = () => {
     };
     return (
         <>
-            <section className='py-[50px] lg:py-[100px]'>
+            <section className="py-[50px] lg:py-[100px] bg-[url('../../public/logo-animation-lp/portfolio-bg.jpg')] bg-no-repeat">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
-                            <h2 className='text-[#231f20] text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Our Impactful Offerings</h2>
+                            <h2 className='text-white text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Our Impactful Offerings</h2>
                             <div className={`mt-8 md:mt-12`}>
                                 <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-5 lg:w-11/12 mx-auto">
                                     {tabInfo.map((tab, index) => (
                                         <li key={index}
-                                            className={`inline-block px-5 md:px-8 py-3 text-[15px] lg:text-[18px] font-[300] montserrat cursor-pointer ${activeTab === index ? "text-primary-100 border-b-2 border-primary-100" : "text-[#000]"}`}
+                                            className={`inline-block px-5 md:px-8 py-3 text-[15px] lg:text-[18px] font-[300] montserrat cursor-pointer ${activeTab === index ? "text-[#00ce7d] border-b-2 border-[#00ce7d]" : "text-white"}`}
                                             onClick={() => handleTabClick(index)}>
                                             {tab.label}
                                         </li>

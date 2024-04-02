@@ -11,8 +11,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 // Images 
 import Slide1 from "media/explainer-videos-new/testi1.png"
-import Slide2 from "media/explainer-videos-new/testi2.png"
-// import Slide1 from "media/explainer-videos-new/testi1.png"
+import Slide2 from "media/explainer-videos-new/testi2.png" 
 
 const Testinomials = () => {
 

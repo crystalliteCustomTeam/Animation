@@ -57,27 +57,21 @@ body {
 }
 
 .bg-prime {
-  background: linear-gradient(
-    90deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
 }
 
 .bg-second {
-  background: linear-gradient(
-    0deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
 }
 
 .bg-third {
-  background: linear-gradient(
-    0deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 40%
-  );
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 40%);
 }
 
 .testicard::before {
@@ -92,6 +86,11 @@ body {
 
 .btn_shadow {
   box-shadow: 0 5px 10px 0 #21134e;
+}
+
+.logoCardShadow:hover {
+  box-shadow: 0 0 2px #000;
+  transform: scale(1.01);
 }
 
 .cardSliderShadow {
@@ -117,6 +116,7 @@ body {
 }
 
 @keyframes transform-scale-item {
+
   0%,
   100% {
     transform: scale(1);
@@ -132,6 +132,57 @@ body {
     -moz-transform: scale(1.5);
     -ms-transform: scale(1.5);
     -o-transform: scale(1.5);
+  }
+}
+
+.lpbannerBtn:hover .lpHover {
+  transition: all .2s cubic-bezier(0.68, -0.55, 0.465, 1.55) .2s, border-width .4s cubic-bezier(0.68, -0.55, 0.465, 1.55);
+  animation: playJump 0.5s linear infinite;
+}
+
+@keyframes playJump {
+  0% {
+    transform: translate(-37%, 60%) scale(1.1, 0.7);
+  }
+
+  10% {
+    transform: translate(-37%, 30%) scale(0.9, 1.2);
+  }
+
+  20% {
+    transform: translate(-37%, 15%);
+  }
+
+  40% {
+    transform: translate(-37%, 10%);
+  }
+
+  50% {
+    transform: translate(-37%, 10%);
+  }
+
+  55% {
+    transform: translate(-37%, 18%);
+  }
+
+  60% {
+    transform: translate(-37%, 20%);
+  }
+
+  65% {
+    transform: translate(-37%, 25%);
+  }
+
+  70% {
+    transform: translate(-37%, 30%);
+  }
+
+  90% {
+    transform: translate(-37%, 60%) scale(1.2, 0.7);
+  }
+
+  100% {
+    transform: translate(-37%, 60%) scale(1.4, 0.7);
   }
 }
 
@@ -191,11 +242,11 @@ div#ty7 {
   opacity: 0.3;
 }
 
-.newreactslide .slick-current + .slick-slide {
+.newreactslide .slick-current+.slick-slide {
   opacity: unset;
 }
 
-.newreactslide .slick-current + .slick-slide svg {
+.newreactslide .slick-current+.slick-slide svg {
   fill: #d50d12;
   opacity: unset;
   color: #d50d12;
@@ -224,7 +275,7 @@ div#ty7 {
   top: -40px;
 }
 
-.newreactslide .slick-current + .slick-slide::after {
+.newreactslide .slick-current+.slick-slide::after {
   position: absolute;
   content: "";
   width: 6.5%;
@@ -300,7 +351,7 @@ div#ty7 {
   background: rgb(203 203 203) !important;
 }
 
-#newslides .swiper-horizontal > .swiper-pagination-bullets,
+#newslides .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -310,14 +361,14 @@ div#ty7 {
   width: 100%;
 }
 
-#newslides .swiper-slide-active + swiper-slide {
+#newslides .swiper-slide-active+swiper-slide {
   padding-bottom: 150px;
   transform: translateY(42.8%) translateX(2%) scale(1.7);
   z-index: -1;
   position: relative;
 }
 
-#newslides .swiper-slide-active + swiper-slide + swiper-slide {
+#newslides .swiper-slide-active+swiper-slide+swiper-slide {
   padding-bottom: 247px;
   transform: translateY(37.8%) translateX(-65%) scale(1.6);
   z-index: -2;
@@ -338,11 +389,9 @@ div#ty7 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    0deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
 }
 
 .packagesScroll::-webkit-scrollbar {
@@ -619,6 +668,11 @@ div#ty7 {
 
 /* ============== Explainer Videos New Page Second Slider End */
 
+
+.logoTestimonials .slick-list {
+  overflow: visible !important;
+}
+
 /*=============== Popup ===============*/
 
 .grid.place-items-center.fixed.w-screen.h-screen.bg-black.bg-opacity-60.backdrop-blur-sm {
@@ -661,11 +715,9 @@ div#ty7 {
 /*=============== Media Query Start ===============*/
 
 .videoSlide {
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(38, 1, 1, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(38, 1, 1, 1) 100%);
   position: relative;
 }
 
@@ -872,11 +924,9 @@ div#ty7 {
   }
 
   .wantbg {
-    background: linear-gradient(
-      0deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 40%
-    );
+    background: linear-gradient(0deg,
+        rgba(245, 9, 11, 1) 0%,
+        rgba(255, 45, 75, 1) 40%);
   }
 
   .blogsSlider .slick-next {
