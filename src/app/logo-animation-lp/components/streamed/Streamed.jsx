@@ -217,7 +217,7 @@ const Streamed = () => {
     };
     return (
         <>
-            <section className="py-[50px] lg:py-[100px] bg-[url('../../public/logo-animation-lp/portfolio-bg.jpg')] bg-no-repeat">
+            <section className="py-[50px] lg:py-[100px] bg-[url('../../public/logo-animation-lp/portfolio-bg.jpg')] bg-no-repeat bg-center bg-cover">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">

@@ -5,7 +5,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa'
 const SmallBanner = () => {
     return (
         <>
-            <section className="md:mt-[70px] bg-[url('../../public/logo-animation-lp/small-banner.jpg')] bg-no-repeat py-[60px]">
+            <section className="md:mt-[70px] bg-[url('../../public/logo-animation-lp/small-banner.jpg')] bg-no-repeat bg-center bg-cover py-[60px]">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-1">
                         <div className="txt">
