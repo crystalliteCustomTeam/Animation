@@ -1,9 +1,15 @@
 import Link from 'next/link'
 import React from 'react'
+import usePopup from '@/app/configs/store/Popup';
 // icons
 import { FaExternalLinkAlt, FaPlay } from "react-icons/fa";
+import CTA from '@/components/cta/CTA';
 
 const Banner = () => {
+    const { popup, togglePopup } = usePopup();
+    const popupHandle = () => {
+        togglePopup(popup);
+    }
     return (
         <>
             <section className='relative pt-[140px] pb-[100px] lg:pb-[0] sm:pt-[200px] h-full lg:h-screen lg:max-h-[600px] overflow-hidden'>
@@ -18,11 +24,23 @@ const Banner = () => {
                                     <span className='text-primary-100 block'> Starring Your Brand!</span>
                                 </h1>
                                 <p className='text-[18px] mt-[17px] w-[475px] leading-[24px] font-sans'>Are you ready to handle fame? We will make your brand a star in the digital world through our vivid animated logos.</p>
-                                <div className="btn group">
-                                    <Link href="javascript:;" className='text-[17px] font-bold poppins group-hover:text-white text-[#f5090b] border-[#f5090b] border-2 rounded-[5px] leading-[19px] mt-[20px] py-[10px] px-[35px] w-[50%] lg:w-[36%] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
-                                        <FaExternalLinkAlt className='absolute top-[50%] translate-y-[-50%] ml-[-110%] group-hover:ml-[-60%] duration-700 group-hover:duration-700 ease-in-out text-[17px] font-bold poppins group-hover:text-white' />
-                                        <span>See Pricing</span>
-                                    </Link>
+                                <div className="flex items-center gap-x-4 mt-[20px]">
+                                    <div className="btn group">
+                                        <button onClick={popupHandle} className='text-[17px] font-bold poppins group-hover:text-white text-[#f5090b] border-[#f5090b] border-2 rounded-[5px] leading-[19px] px-[35px] h-[50px] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
+                                            <FaExternalLinkAlt className='absolute top-[50%] translate-y-[-50%] ml-[-110%] group-hover:ml-[-77%] duration-700 group-hover:duration-700 ease-in-out text-[17px] font-bold poppins group-hover:text-white' />
+                                            <span>Get A Quote</span>
+                                        </button>
+                                    </div>
+                                    <CTA
+                                        text="Live Chat"
+                                        icon="/icons/chat.png"
+                                        iconCss="w-[40px]"
+                                        bg=""
+                                        color={`text-white`}
+                                        border={`border-2 border-[#fff]`}
+                                        hover="hover:bg-prime"
+                                        href="javascript:$zopim.livechat.window.show();"
+                                    />
                                 </div>
                             </div>
                         </div>

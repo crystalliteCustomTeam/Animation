@@ -1,3 +1,5 @@
+import usePopup from '@/app/configs/store/Popup';
+import CTA from '@/components/cta/CTA';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react'
@@ -5,6 +7,10 @@ import React, { useState } from 'react'
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Startups = ({ content }) => {
+    const { popup, togglePopup } = usePopup();
+    const popupHandle = () => {
+        togglePopup(popup);
+    }
     const { tabInfo, tabContents } = content;
     const [activeTab, setActiveTab] = useState(0);
     const handleTabClick = (index) => {
@@ -23,7 +29,7 @@ const Startups = ({ content }) => {
                             <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-5 lg:w-11/12 mx-auto mb-[25px] md:mb-0">
                                 {tabInfo.map((tab, index) => (
                                     <li key={index}
-                                        className={`inline-block p-[12px] text-[14px] font-[600] font-sans rounded-[6px] cursor-pointer hover:border-[#f5090b] border-2 ${activeTab === index ? 'bg-[#f5090b] text-white border-[#f5090b]'  : 'border-[#f5090b]'}`}
+                                        className={`inline-block p-[12px] text-[14px] font-[600] font-sans rounded-[6px] cursor-pointer hover:border-[#f5090b] border-2 ${activeTab === index ? 'bg-[#f5090b] text-white border-[#f5090b]' : 'border-[#f5090b]'}`}
                                         onClick={() => handleTabClick(index)}>
                                         {tab.label}
                                     </li>
@@ -31,15 +37,27 @@ const Startups = ({ content }) => {
                             </ul>
                             <div className="tabs-content pt-7 hidden md:block">
                                 {tabContents[activeTab].map((item, index) => (
-                                    <div key={index} className='grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8'>
+                                    <div key={index} className='grid grid-cols-1 md:grid-cols-2 items-center gap-3 md:gap-8'>
                                         <div className='pl-[22px]'>
                                             <h3 className='text-primary-100 lg:text-[37px] font-sans leading-[45px] font-[700] px-[15px] mb-[25px]'>{item.tabTxt}</h3>
                                             <p className=' text-[16px] px-[15px] leading-[20px] text-justify font-light poppins mb-[35px]'>{item.tabDesc}</p>
-                                            <div className="btn group px-[15px]">
-                                                <Link href="javascript:;" className='text-[17px] font-bold poppins group-hover:text-white text-primary-100 border-[#f5090b] border-2 rounded-[5px] leading-[19px] mt-[20px] py-[10px] px-[35px] w-[50%] md:w-[70%] lg:w-[36%] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
-                                                    <FaExternalLinkAlt className='absolute top-[50%] translate-y-[-50%] ml-[-110%] group-hover:ml-[-68%] duration-700 group-hover:duration-700 ease-in-out text-[17px] font-bold poppins group-hover:text-white' />
-                                                    <span>See Pricing</span>
-                                                </Link>
+                                            <div className="flex items-center gap-x-4 mt-[20px] pl-[22px]">
+                                                <div className="btn group">
+                                                    <button onClick={popupHandle} className='text-[17px] font-bold poppins group-hover:text-white text-[#f5090b] border-[#f5090b] border-2 rounded-[5px] leading-[19px] px-[35px] h-[50px] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
+                                                        <FaExternalLinkAlt className='absolute top-[50%] translate-y-[-50%] ml-[-110%] group-hover:ml-[-77%] duration-700 group-hover:duration-700 ease-in-out text-[17px] font-bold poppins group-hover:text-white' />
+                                                        <span>Get A Quote</span>
+                                                    </button>
+                                                </div>
+                                                <CTA
+                                                    text="Live Chat"
+                                                    icon="/icons/chat.png"
+                                                    iconCss="w-[40px]"
+                                                    bg=""
+                                                    color={`text-white`}
+                                                    border={`border-2 border-[#fff]`}
+                                                    hover="hover:bg-prime"
+                                                    href="javascript:$zopim.livechat.window.show();"
+                                                />
                                             </div>
                                         </div>
                                         <div>
@@ -61,7 +79,7 @@ const Startups = ({ content }) => {
                                             <div className="btn group px-[15px]">
                                                 <Link href="javascript:;" className='text-[17px] font-bold poppins group-hover:text-white text-primary-100 border-[#f5090b] border-2 rounded-[5px] leading-[19px] mt-[20px] py-[10px] px-[35px] md:w-[50%] lg:w-[36%] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
                                                     <FaExternalLinkAlt className='absolute top-[50%] translate-y-[-50%] ml-[-110%] group-hover:ml-[-60%] duration-700 group-hover:duration-700 ease-in-out text-[17px] font-bold poppins group-hover:text-white' />
-                                                    <span>See Pricing</span>
+                                                    <span>Get A Quote</span>
                                                 </Link>
                                             </div>
                                         </div>
