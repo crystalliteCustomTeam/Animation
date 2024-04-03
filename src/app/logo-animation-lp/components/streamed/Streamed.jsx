@@ -280,7 +280,7 @@ const Streamed = () => {
                                         </Fancybox>
                                     )}
                                 </div>
-                                <div className="block md:hidden">
+                                <div className="block md:hidden mt-5 md:mt-0">
                                     {tabContents[activeTab] && (
                                         <Fancybox options={{
                                             Carousel: {
@@ -289,12 +289,9 @@ const Streamed = () => {
                                         }}>
                                             <Slider {...testiSlider} className="streamedSlider">
                                                 {tabContents[activeTab].map((item, index) => (
-                                                    <Link key={index} href={item.video} datafancybox="gallery" className={`${styles.shadow} w-full h-full group`}>
-                                                        <div className="overlay relative">
-                                                            <Image src={item.thumbnail} alt="Infinity Animations" width={468} height={263} className='min-h-[263px]' />
-                                                            <div className="bg-secondary-100/70 h-full w-full absolute left-[50%] top-[50%] translate-x-[-50%] group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center ">
-                                                                <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0' />
-                                                            </div>
+                                                    <Link key={index} href={item.video} datafancybox="gallery" className={`${styles.shadow} w-[31%] rounded-none`}>
+                                                        <div className="">
+                                                            <Image src={item.thumbnail} alt="Infinity Animations" className='h-auto' />
                                                         </div>
                                                     </Link>
                                                 ))}

@@ -40,7 +40,8 @@ const ConditionalLayout = ({ children }) => {
                     pathname !== "/explainer-videos-animations" &&
                     pathname !== "/explainer-videos-new" &&
                     pathname !== "/logo-animation-lp" &&
-                    pathname !== "/logo-animation-lp-copy" && (
+                    pathname !== "/logo-animation-lp-copy" &&
+                    pathname !== "/logo-animation-lp-black" && (
                         <Footer />
                     )}
             </>
