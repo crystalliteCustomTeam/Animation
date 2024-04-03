@@ -248,14 +248,14 @@ const Streamed = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
-                            <h2 className="text-[#00ce7d] text-[25px] md:text-[40px] font-[700] mb-0 text-center leading-[30px] font-sans relative before:absolute before:content-[''] before:top-[-20px] before:left-0 before:right-[35px] before:mx-auto before:h-[8px] before:w-[70px] before:bg-[#00ce7d]">
+                            <h2 className="text-[#f5090b] text-[25px] md:text-[40px] font-[700] mb-0 text-center leading-[30px] font-sans relative before:absolute before:content-[''] before:top-[-20px] before:left-0 before:right-[35px] before:mx-auto before:h-[8px] before:w-[70px] before:bg-[#f5090b]">
                                 OUR AWESOME WORKS
                             </h2>
                             <div className={`mt-8 md:mt-12`}>
                                 <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-5 lg:w-11/12 mx-auto">
                                     {tabInfo.map((tab, index) => (
                                         <li key={index}
-                                            className={`inline-block px-5 md:px-6 py-2 text-[13px] font-[600] montserrat cursor-pointer border-2 border-[#00ce7d] rounded-[50px] text-white ${activeTab === index ? "bg-[#00ce7d]" : "bg-transparent"}`}
+                                            className={`inline-block px-5 md:px-6 py-2 text-[13px] font-[600] montserrat cursor-pointer border-2 border-[#f5090b] rounded-[50px] text-white ${activeTab === index ? "bg-[#f5090b]" : "bg-transparent"}`}
                                             onClick={() => handleTabClick(index)}>
                                             {tab.label}
                                         </li>

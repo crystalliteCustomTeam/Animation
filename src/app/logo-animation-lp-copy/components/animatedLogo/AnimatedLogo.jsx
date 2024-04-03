@@ -9,7 +9,7 @@ const AnimatedLogo = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-1">
                         <div className="txt">
-                            <h2 className="text-[#00ce7d] text-[25px] md:text-[40px] font-[700] mb-[45px] text-center leading-[30px] font-sans relative before:absolute before:content-[''] before:top-[-15px] before:left-0 before:right-[35px] before:mx-auto before:h-[5px] before:w-[60px] before:bg-[#00ce7d]">
+                            <h2 className="text-[#f5090b] text-[25px] md:text-[40px] font-[700] mb-[45px] text-center leading-[30px] font-sans relative before:absolute before:content-[''] before:top-[-15px] before:left-0 before:right-[35px] before:mx-auto before:h-[5px] before:w-[60px] before:bg-[#f5090b]">
                                 ANIMATED LOGO
                             </h2>
                         </div>
@@ -58,7 +58,7 @@ const AnimatedLogo = () => {
                                                 <span>
                                                     <FaCheck className='text-[#a06b43] pr-[8px] text-[22px] font-[600]' />
                                                 </span>
-                                                <span className='text-[#00ce7d] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/o4jdybe127mxbhr/option%202%20final.mp4?dl=0</span>
+                                                <span className='text-[#f5090b] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/o4jdybe127mxbhr/option%202%20final.mp4?dl=0</span>
                                             </Link>
                                         </li>
                                         <li className='border-b border-[#d9c4b4] min-h-[22px] py-[2px]'>
@@ -66,7 +66,7 @@ const AnimatedLogo = () => {
                                                 <span>
                                                     <FaCheck className='text-[#a06b43] pr-[8px] text-[22px] font-[600]' />
                                                 </span>
-                                                <span className='text-[#00ce7d] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/4zeiplmcqq1sr57/The%20Living%20Logo%20Option%202%20HD%201080.mp4?dl=0</span>
+                                                <span className='text-[#f5090b] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/4zeiplmcqq1sr57/The%20Living%20Logo%20Option%202%20HD%201080.mp4?dl=0</span>
                                             </Link>
                                         </li>
                                     </ul>
@@ -127,7 +127,7 @@ const AnimatedLogo = () => {
                                                 <span>
                                                     <FaCheck className='text-[#a06b43] pr-[8px] text-[22px] font-[600]' />
                                                 </span>
-                                                <span className='text-[#00ce7d] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/o4jdybe127mxbhr/option%202%20final.mp4?dl=0</span>
+                                                <span className='text-[#f5090b] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/o4jdybe127mxbhr/option%202%20final.mp4?dl=0</span>
                                             </Link>
                                         </li>
                                         <li className='border-b border-[#d9c4b4] min-h-[22px] py-[2px]'>
@@ -135,7 +135,7 @@ const AnimatedLogo = () => {
                                                 <span>
                                                     <FaCheck className='text-[#a06b43] pr-[8px] text-[22px] font-[600]' />
                                                 </span>
-                                                <span className='text-[#00ce7d] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/4zeiplmcqq1sr57/The%20Living%20Logo%20Option%202%20HD%201080.mp4?dl=0</span>
+                                                <span className='text-[#f5090b] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/4zeiplmcqq1sr57/The%20Living%20Logo%20Option%202%20HD%201080.mp4?dl=0</span>
                                             </Link>
                                         </li>
                                     </ul>
@@ -196,7 +196,7 @@ const AnimatedLogo = () => {
                                                 <span>
                                                     <FaCheck className='text-[#a06b43] pr-[8px] text-[22px] font-[600]' />
                                                 </span>
-                                                <span className='text-[#00ce7d] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/o4jdybe127mxbhr/option%202%20final.mp4?dl=0</span>
+                                                <span className='text-[#f5090b] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/o4jdybe127mxbhr/option%202%20final.mp4?dl=0</span>
                                             </Link>
                                         </li>
                                         <li className='border-b border-[#d9c4b4] min-h-[22px] py-[2px]'>
@@ -204,7 +204,7 @@ const AnimatedLogo = () => {
                                                 <span>
                                                     <FaCheck className='text-[#a06b43] pr-[8px] text-[22px] font-[600]' />
                                                 </span>
-                                                <span className='text-[#00ce7d] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/4zeiplmcqq1sr57/The%20Living%20Logo%20Option%202%20HD%201080.mp4?dl=0</span>
+                                                <span className='text-[#f5090b] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/4zeiplmcqq1sr57/The%20Living%20Logo%20Option%202%20HD%201080.mp4?dl=0</span>
                                             </Link>
                                         </li>
                                     </ul>
@@ -259,7 +259,7 @@ const AnimatedLogo = () => {
                                                 <span>
                                                     <FaCheck className='text-[#a06b43] pr-[8px] text-[22px] font-[600]' />
                                                 </span>
-                                                <span className='text-[#00ce7d] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/o4jdybe127mxbhr/option%202%20final.mp4?dl=0</span>
+                                                <span className='text-[#f5090b] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/o4jdybe127mxbhr/option%202%20final.mp4?dl=0</span>
                                             </Link>
                                         </li>
                                         <li className='border-b border-[#d9c4b4] min-h-[22px] py-[2px]'>
@@ -267,7 +267,7 @@ const AnimatedLogo = () => {
                                                 <span>
                                                     <FaCheck className='text-[#a06b43] pr-[8px] text-[22px] font-[600]' />
                                                 </span>
-                                                <span className='text-[#00ce7d] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/4zeiplmcqq1sr57/The%20Living%20Logo%20Option%202%20HD%201080.mp4?dl=0</span>
+                                                <span className='text-[#f5090b] text-[14px] poppins font-[300]'>https://www.dropbox.com/s/4zeiplmcqq1sr57/The%20Living%20Logo%20Option%202%20HD%201080.mp4?dl=0</span>
                                             </Link>
                                         </li>
                                     </ul>
