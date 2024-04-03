@@ -19,7 +19,7 @@ const SmallBanner = () => {
                             <p className='text-center text-[17px] md:text-[20px] tracking-[1px] leading-[22px] uppercase font-[300] font-sans mt-[1%] '>ORDER DIRECTLY OR CONTACT US FOR A QUOTE.</p>
                             <div className="flex items-center justify-center gap-x-4 pt-[3%]">
                                 <div className="btn group">
-                                    <button onClick={popupHandle} className='text-[17px] font-bold poppins group-hover:text-white text-[#f5090b] border-[#f5090b] border-2 rounded-[5px] leading-[19px] px-[35px] h-[50px] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
+                                    <button onClick={popupHandle} className='text-[17px] font-bold poppins group-hover:text-white text-[#f5090b] border-[#f5090b] border-2 rounded-[5px] leading-[19px] px-[35px] h-[40px] xl:h-[50px] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
                                         <FaExternalLinkAlt className='absolute top-[50%] translate-y-[-50%] ml-[-110%] group-hover:ml-[-77%] duration-700 group-hover:duration-700 ease-in-out text-[17px] font-bold poppins group-hover:text-white' />
                                         <span>Get A Quote</span>
                                     </button>

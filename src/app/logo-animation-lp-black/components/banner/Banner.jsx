@@ -26,7 +26,7 @@ const Banner = () => {
                                 <p className='text-[18px] mt-[17px] w-[475px] leading-[24px] font-sans'>Are you ready to handle fame? We will make your brand a star in the digital world through our vivid animated logos.</p>
                                 <div className="flex items-center gap-x-4 mt-[20px]">
                                     <div className="btn group">
-                                        <button onClick={popupHandle} className='text-[17px] font-bold poppins group-hover:text-white text-[#f5090b] border-[#f5090b] border-2 rounded-[5px] leading-[19px] px-[35px] h-[50px] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
+                                        <button onClick={popupHandle} className='text-[17px] font-bold poppins group-hover:text-white text-[#f5090b] border-[#f5090b] border-2 rounded-[5px] leading-[19px] px-[35px] h-[40px] xl:h-[50px] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
                                             <FaExternalLinkAlt className='absolute top-[50%] translate-y-[-50%] ml-[-110%] group-hover:ml-[-77%] duration-700 group-hover:duration-700 ease-in-out text-[17px] font-bold poppins group-hover:text-white' />
                                             <span>Get A Quote</span>
                                         </button>

@@ -43,7 +43,7 @@ const Startups = ({ content }) => {
                                             <p className=' text-[16px] px-[15px] leading-[20px] text-justify font-light poppins mb-[35px]'>{item.tabDesc}</p>
                                             <div className="flex items-center gap-x-4 mt-[20px] pl-[22px]">
                                                 <div className="btn group">
-                                                    <button onClick={popupHandle} className='text-[17px] font-bold poppins group-hover:text-white text-[#f5090b] border-[#f5090b] border-2 rounded-[5px] leading-[19px] px-[35px] h-[50px] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
+                                                    <button onClick={popupHandle} className='text-[17px] font-bold poppins group-hover:text-white text-[#f5090b] border-[#f5090b] border-2 rounded-[5px] leading-[19px] px-[35px] h-[40px] xl:h-[50px] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
                                                         <FaExternalLinkAlt className='absolute top-[50%] translate-y-[-50%] ml-[-110%] group-hover:ml-[-77%] duration-700 group-hover:duration-700 ease-in-out text-[17px] font-bold poppins group-hover:text-white' />
                                                         <span>Get A Quote</span>
                                                     </button>
