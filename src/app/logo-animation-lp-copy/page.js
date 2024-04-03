@@ -78,7 +78,7 @@ const LogoAnimations = () => {
   return (
     <>
       <div className='bg-white'>
-        <HeaderLP />
+        {/* <HeaderLP /> */}
         <Banner />
         <LogoAnimation />
         <Startups content={startups} />
