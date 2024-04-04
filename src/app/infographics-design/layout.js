@@ -7,13 +7,13 @@ export const metadata = {
     openGraph: {
         title: "Infographic Design Services - Infinity Animations",
         description: "Infographic Design Services, Elevate your communication and captivate your audience with our expertise in infographic design today!",
-        url: 'https://infinityanimations.com/infographics-design/',
+        url: '/infographics-design/',
         siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/infographics-design/' },
+    alternates: { canonical: '/infographics-design/' },
     //===== GEO Tags =====
     other: {
         "DC.title": "Infographic Design Services",

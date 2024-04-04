@@ -7,13 +7,13 @@ export const metadata = {
     openGraph: {
         title: "3D Animation Services - Infinity Animations",
         description: "3D Animation Services, Explore professional 3D animation services to bring your ideas to life with depth and realism.",
-        url: 'https://infinityanimations.com/3d-animation/',
+        url: '/3d-animation/',
         siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/3d-animation/' },
+    alternates: { canonical: '/3d-animation/' },
     //===== GEO Tags =====
     other: {
         "DC.title": "3D Animation Services",

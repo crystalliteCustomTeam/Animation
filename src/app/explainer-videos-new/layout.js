@@ -1,21 +1,19 @@
-// Meta Data
+//===== Meta Data =====
 export const metadata = {
-    // Title & Descriptions
+    //===== Meta Tags =====
     title: "Explainer Videos New",
     description: "Explainer Videos New",
-    // Canonical
-    alternates: { canonical: 'https://infinityanimations.com/explainer-videos-new/' },
-    // OG Metas
+    //===== OG Tags =====
     openGraph: {
         title: 'Explainer Videos New',
         description: 'Explainer Videos New',
-        url: 'https://infinityanimations.com/explainer-videos-new/',
+        url: '/explainer-videos-new/',
         siteName: 'Infinity Animations Pro',
         locale: 'en_US',
         type: 'website',
     },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/explainer-videos-new/' },
+    alternates: { canonical: '/explainer-videos-new/' },
 }
 
 export default function RootLayout({ children }) {

@@ -15,13 +15,13 @@ export const metadata = {
   openGraph: {
     title: "Video Animation Company - Infinity Animations",
     description: "Video Animation Services, Explore a diverse range of professional animation services to captivate your audience and convey your message effectively.",
-    url: 'https://infinityanimations.com/',
+    url: '/',
     siteName: 'Infinity Animations',
     locale: 'en_US',
     type: 'website',
   },
   //===== Canonical =====
-  alternates: { canonical: 'https://infinityanimations.com/' },
+  alternates: { canonical: '/' },
   //===== GEO Tags =====
   other: {
     "DC.title": "Video Animation Company - Infinity Animations",

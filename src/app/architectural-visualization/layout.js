@@ -7,13 +7,13 @@ export const metadata = {
     openGraph: {
         title: "Architectural Visualization & Rendering Service - Infinity Animations",
         description: "Architectural Visualization and 3D Rendering Services, Explore our professional services to showcase your architectural projects with immersive visuals.",
-        url: 'https://infinityanimations.com/architectural-visualization/',
+        url: '/architectural-visualization/',
         siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/architectural-visualization/' },
+    alternates: { canonical: '/architectural-visualization/' },
     //===== GEO Tags =====
     other: {
         "DC.title": "Architectural Visualization and 3D Rendering Services",

@@ -7,13 +7,13 @@ export const metadata = {
     openGraph: {
         title: 'Whiteboard Animation Services - Infinity Animations',
         description: 'Whiteboard Animation Services, Transform Ideas into Engaging Stories. Elevate your message with our expertise in whiteboard animation.',
-        url: 'https://infinityanimations.com/whiteboard-animation/',
+        url: '/whiteboard-animation/',
         siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/whiteboard-animation/' },
+    alternates: { canonical: '/whiteboard-animation/' },
     //===== GEO Tags =====
     other: {
         "DC.title": "Whiteboard Animation Services",

@@ -7,13 +7,13 @@ export const metadata = {
     openGraph: {
         title: "CGI and VFX Services - Infinity Animations",
         description: "CGI and VFX Services, Explore our comprehensive services to add breathtaking CGI and VFX effects to your projects.",
-        url: 'https://infinityanimations.com/cgi-and-vfx-services/',
+        url: '/cgi-and-vfx-services/',
         siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/cgi-and-vfx-services/' },
+    alternates: { canonical: '/cgi-and-vfx-services/' },
     //===== GEO Tags =====
     other: {
         "DC.title": "Professional CGI and VFX Services",

@@ -7,13 +7,13 @@ export const metadata = {
     openGraph: {
         title: "Custom Logo Animation - Infinity Animations",
         description: "Custom Logo Animation Services, Bring Your Brand to Life with Dynamic Animation. Elevate your brand presence with our expertise in custom logo animation.",
-        url: 'https://infinityanimations.com/custom-logo-animation/',
+        url: '/custom-logo-animation/',
         siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/custom-logo-animation/' },
+    alternates: { canonical: '/custom-logo-animation/' },
     //===== GEO Tags =====
     other: {
         "DC.title": "Custom Logo Animation Services",

@@ -7,13 +7,13 @@ export const metadata = {
     openGraph: {
         title: 'Thank You | Infinity Animations',
         description: 'Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame.',
-        url: 'https://infinityanimations.com/thank-you/',
+        url: '/thank-you/',
         siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/thank-you/' },
+    alternates: { canonical: '/thank-you/' },
 }
 
 export default function RootLayout({ children }) {

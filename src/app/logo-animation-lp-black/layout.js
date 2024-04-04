@@ -7,13 +7,13 @@ export const metadata = {
     openGraph: {
         title: 'Logo Animations - Infinity Animations',
         description: 'Logo Animations.',
-        url: 'https://infinityanimations.com/video-explainer-lp/',
+        url: '/video-explainer-lp/',
         siteName: 'Infinity Animations Pro',
         locale: 'en_US',
         type: 'website',
     },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/video-explainer-lp/' },
+    alternates: { canonical: '/video-explainer-lp/' },
     //===== GEO Tags =====
     other: {
         "DC.title": "Animated Explainer Videos",

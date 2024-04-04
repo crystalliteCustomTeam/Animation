@@ -7,13 +7,13 @@ export const metadata = {
     openGraph: {
         title: "Motion Graphics and Design Services - Infinity Animations",
         description: "Motion Graphics and Design Services, Explore our professional services to create captivating motion graphics that convey your message with impact.",
-        url: 'https://infinityanimations.com/motion-graphics/',
+        url: '/motion-graphics/',
         siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/motion-graphics/' },
+    alternates: { canonical: '/motion-graphics/' },
     //===== GEO Tags =====
     other: {
         "DC.title": "Motion Graphics and Design Services",

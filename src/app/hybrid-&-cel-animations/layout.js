@@ -7,13 +7,13 @@ export const metadata = {
     openGraph: {
         title: "Hybrid and Cel Animation Services - Infinity Animations",
         description: "Hybrid and Cel Animation Services, Explore our professional services blending traditional cel animation techniques with modern digital methods.",
-        url: 'https://infinityanimations.com/hybrid-&-cel-animations/',
+        url: '/hybrid-&-cel-animations/',
         siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },
     //===== Canonical =====
-    alternates: { canonical: 'https://infinityanimations.com/hybrid-&-cel-animations/' },
+    alternates: { canonical: '/hybrid-&-cel-animations/' },
     //===== GEO Tags =====
     other: {
         "DC.title": "Hybrid and Cel Animation Services",
