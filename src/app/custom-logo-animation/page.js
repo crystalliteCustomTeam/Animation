@@ -28,8 +28,11 @@ import conceptIcon3 from "media/icons/concept-icon3.png"
 import conceptIcon4 from "media/icons/concept-icon4.png"
 //==== Testimonial Images
 import icon2 from "media/icons/stars.png"
+import Emily from "media/thumbnails/emily.jpg";
 import Mathew from "media/thumbnails/mathew.jpg";
+import Helen from "media/thumbnails/helen.jpg";
 import Gary from "media/thumbnails/gary.jpg";
+import Sylvia from "media/thumbnails/sylvia.jpg";
 import Matt from "media/thumbnails/matt.jpg";
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.jpg"
@@ -303,6 +306,12 @@ export default function Page() {
     }
     //=====Testimonial Fold=====//
      const testiContent = [
+{
+            stars: icon2,
+            name: 'Emily Margolis',
+            video: "https://youtu.be/NfhGVS6thtM?si=qKGBKPRdLj_8onVy",
+            thumbnail: Emily,
+        },
         {
             stars: icon2,
             name: 'Mathew',
@@ -311,9 +320,21 @@ export default function Page() {
         },
         {
             stars: icon2,
+            name: 'Helen Brooks',
+            video: "https://youtu.be/e5GWTWd4k7U?si=OXc3_K1kpo7OxOQE",
+            thumbnail: Helen,
+        },
+        {
+            stars: icon2,
             name: 'Gary Wilson',
             video: "https://youtu.be/gQt3RKFwaqQ?si=jGBKle6DJhd1Lvdn",
             thumbnail: Gary,
+        },
+        {
+            stars: icon2,
+            name: 'Sylvia David',
+            video: "https://youtu.be/UU3BQAt7hlg?si=jiE_E2Hci-xeq1GQ",
+            thumbnail: Sylvia,
         },
         {
             stars: icon2,

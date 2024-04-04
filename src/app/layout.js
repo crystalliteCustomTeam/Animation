@@ -7,6 +7,7 @@ import ConditionalLayout from "./ConditionalLayout";
 import "./global.css";
 //===== Meta Data =====
 export const metadata = {
+  metadataBase: new URL('https://infinityanimations.com/'),
   //===== Meta Tags =====
   title: "Video Animation Company - Infinity Animations",
   description: "Video Animation Services, Explore a diverse range of professional animation services to captivate your audience and convey your message effectively.",
