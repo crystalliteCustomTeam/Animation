@@ -4,6 +4,7 @@ import Script from 'next/script';
 import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
 import Contact from '@/components/contact/Contact';
+import Location from '@/components/location/Location';
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -17,6 +18,7 @@ export default function Page() {
             <Hero content={hero} />
             <Review />
             <Contact />
+            <Location />
             <Script id="productSchema" type="application/ld+json">
                 {`
                     {

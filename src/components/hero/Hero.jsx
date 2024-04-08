@@ -14,7 +14,7 @@ const Hero = ({ content }) => {
     let margin;
     switch (router) {
         case "/":
-            backgroundImage = 'bg-[length:100%_70%] bg-bottom lg:items-end xxl:items-center lg:bg-[url("../../public/home/banner-img.png")]'
+            backgroundImage = 'bg-[length:100%_90%] bg-bottom lg:items-end xxl:items-center lg:bg-[url("../../public/home/banner-bg.gif")]'
             margin = 'mt-0'
             break;
         case '/why-us':
