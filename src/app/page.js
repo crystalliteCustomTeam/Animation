@@ -10,7 +10,6 @@ import Concept from '@/components/concept/Concept';
 import Boost from '@/components/boost/Boost';
 import Testimonial from '@/components/testimonial/Testimonial';
 import Contact from '@/components/contact/Contact';
-import Location from '@/components/location/Location';
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
 //==== StoryLine Images
@@ -399,7 +398,6 @@ export default function Page() {
             <Boost content={boost} />
             <Testimonial content={testimonial} />
             <Contact />
-            <Location />
             <Script id="websiteSchema" type="application/ld+json">
                 {`
                     {
