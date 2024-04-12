@@ -25,7 +25,7 @@ const Packages = () => {
                                     <h3 className='text-[#231f20] montserrat text-[25px] font-[700] uppercase'>STARTUP PACKAGE</h3>
                                     <Image src={Price} alt='Price_image' className='hidden md:block mx-auto mt-[20px] mb-[10px]' />
                                     <p className='text-[#231f20] montserrat text-[14px]'>Text & Image Compilation</p>
-                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins py-0 md:py-[10px]'>$195</h4>
+                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins py-0 md:py-[10px]'>$399</h4>
                                 </div>
                                 <div className="card_list bg-[#b5ce8f] py-[30px] px-[20px] relative z-1">
                                     <ul className='h-[245px] pl-[5px]'>
@@ -77,7 +77,7 @@ const Packages = () => {
                                     <h3 className='text-[#231f20] montserrat text-[25px] font-[700] uppercase'>CLASSIC PACKAGE</h3>
                                     <Image src={Price} alt='Price_image' className='hidden md:block mx-auto mt-[20px] mb-[10px]' />
                                     <p className='text-[#231f20] montserrat text-[14px]'>Whiteboard or Motion Graphic Animation</p>
-                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins py-0 md:py-[10px]'>$499</h4>
+                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins py-0 md:py-[10px]'>$899</h4>
                                 </div>
                                 <div className="card_list bg-[#ebb882] py-[30px] px-[20px] relative z-1">
                                     <ul className='h-[245px] pl-[5px]'>
@@ -132,7 +132,7 @@ const Packages = () => {
                                     <h3 className='text-[#231f20] montserrat text-[25px] font-[700] uppercase'>PREMIUM PACKAGE</h3>
                                     <Image src={Price} alt='Price_image' className='hidden md:block mx-auto mt-[20px] mb-[10px]' />
                                     <p className='text-[#231f20] montserrat text-[14px]'>Ultimate 2D Character Animation</p>
-                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins py-0 md:py-[10px]'>$799</h4>
+                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins py-0 md:py-[10px]'>$1499</h4>
                                 </div>
                                 <div className="card_list bg-[#ebc100] py-[30px] px-[20px] relative z-1">
                                     <ul className='h-[245px] pl-[5px]'>
