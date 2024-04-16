@@ -12,14 +12,14 @@ import tickW from "media/icons/tick-w.png"
 const packages = [
     {
         name: 'Startup Package',
-        price: '$1499',
+        price: '$499',
         backgroundColor: '#2f2f2fd1',
         tickImage: tickP,
         color: "text-black",
         ctaColor: "text-black",
         titleColor: "text-black",
         features: [
-            '60 Seconds Duration',
+            '30 Seconds Duration',
             'Script Writing',
             'Custom Artwork',
             'Background Music',
@@ -45,7 +45,7 @@ const packages = [
     },
     {
         name: 'Classic Package',
-        price: '$2499',
+        price: '$799',
         backgroundColor: '#262626',
         color: "text-white",
         tickImage: tickW,
@@ -53,7 +53,7 @@ const packages = [
         ctaColor: "text-white",
         titleColor: "text-white",
         features: [
-            '60 Seconds Duration',
+            '30 Seconds Duration',
             'Script Writing',
             'Professional Voice-over & SFX',
             'Hand-drawn Illustrations',
@@ -79,14 +79,14 @@ const packages = [
     },
     {
         name: 'Premium Package',
-        price: '$3499',
+        price: '$999',
         backgroundColor: '#2f2f2fd1',
         color: "text-black",
         tickImage: tickP,
         ctaColor: "text-black",
         titleColor: "text-black",
         features: [
-            '60 Seconds Duration',
+            '30 Seconds Duration',
             'Script Writing',
             'Professional Voice-over & SFX',
             'Custom 2D Character Illustration',

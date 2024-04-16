@@ -92,7 +92,7 @@ const Video = () => {
                                 <h3 className={styles.startup}>Startup Package</h3>
                                 <h4 className={styles.price}>$499</h4>
                                 <ul className={styles.priceList}>
-                                    <li> <Image src={check} alt="Infinity" /> 60 Seconds Duration</li>
+                                    <li> <Image src={check} alt="Infinity" /> 30 Seconds Duration</li>
                                     <li> <Image src={check} alt="Infinity" /> Script Writing</li>
                                     <li> <Image src={check} alt="Infinity" /> Custom Artwork</li>
                                     <li> <Image src={check} alt="Infinity" /> Background Music</li>
@@ -126,7 +126,7 @@ const Video = () => {
                                 <h3 className={styles.startup}>Classic Package</h3>
                                 <h4 className={styles.price}>$799</h4>
                                 <ul className={styles.priceList}>
-                                    <li> <Image src={checkw} alt="Infinity" /> 60 Seconds Duration</li>
+                                    <li> <Image src={checkw} alt="Infinity" /> 30 Seconds Duration</li>
                                     <li> <Image src={checkw} alt="Infinity" /> Script Writing</li>
                                     <li> <Image src={checkw} alt="Infinity" /> Professional Voice-over & SFX</li>
                                     <li> <Image src={checkw} alt="Infinity" /> Hand-drawn Illustrations</li>
@@ -161,7 +161,7 @@ const Video = () => {
                                 <h3 className={styles.startup}>Premium Package</h3>
                                 <h4 className={styles.price}>$999</h4>
                                 <ul className={styles.priceList}>
-                                    <li> <Image src={check} alt="Infinity" /> 60 Seconds Duration</li>
+                                    <li> <Image src={check} alt="Infinity" /> 30 Seconds Duration</li>
                                     <li> <Image src={check} alt="Infinity" /> Script Writing</li>
                                     <li> <Image src={check} alt="Infinity" /> Professional Voice-over & SFX</li>
                                     <li> <Image src={check} alt="Infinity" /> Custom 2D Character Illustration</li>
@@ -199,7 +199,7 @@ const Video = () => {
                                 <h3 className={styles.startup}>Startup Package</h3>
                                 <h4 className={styles.price}>$499</h4>
                                 <ul className={styles.priceList}>
-                                    <li> <Image src={check} alt="Infinity" /> 60 Seconds Duration</li>
+                                    <li> <Image src={check} alt="Infinity" /> 30 Seconds Duration</li>
                                     <li> <Image src={check} alt="Infinity" /> Script Writing</li>
                                     <li> <Image src={check} alt="Infinity" /> Custom Artwork</li>
                                     <li> <Image src={check} alt="Infinity" /> Background Music</li>
@@ -233,7 +233,7 @@ const Video = () => {
                                 <h3 className={styles.startup}>Classic Package</h3>
                                 <h4 className={styles.price}>$799</h4>
                                 <ul className={styles.priceList}>
-                                    <li> <Image src={checkw} alt="Infinity" /> 60 Seconds Duration</li>
+                                    <li> <Image src={checkw} alt="Infinity" /> 30 Seconds Duration</li>
                                     <li> <Image src={checkw} alt="Infinity" /> Script Writing</li>
                                     <li> <Image src={checkw} alt="Infinity" /> Professional Voice-over & SFX</li>
                                     <li> <Image src={checkw} alt="Infinity" /> Hand-drawn Illustrations</li>
@@ -268,7 +268,7 @@ const Video = () => {
                                 <h3 className={styles.startup}>Premium Package</h3>
                                 <h4 className={styles.price}>$999</h4>
                                 <ul className={styles.priceList}>
-                                    <li> <Image src={check} alt="Infinity" /> 60 Seconds Duration</li>
+                                    <li> <Image src={check} alt="Infinity" /> 30 Seconds Duration</li>
                                     <li> <Image src={check} alt="Infinity" /> Script Writing</li>
                                     <li> <Image src={check} alt="Infinity" /> Professional Voice-over & SFX</li>
                                     <li> <Image src={check} alt="Infinity" /> Custom 2D Character Illustration</li>

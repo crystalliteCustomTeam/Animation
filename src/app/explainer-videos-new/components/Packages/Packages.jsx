@@ -1,7 +1,5 @@
 import usePopup from '@/app/configs/store/Popup';
-import Link from 'next/link';
 import React from 'react'
-
 // icons
 import { FaCheck, FaRegCommentDots } from "react-icons/fa";
 
@@ -27,7 +25,7 @@ const Packages = () => {
                         <div className="col-span-12 lg:col-span-4 group">
                             <div className="card relative border-[#ccc] border rounded-[15px] pt-[25px] mb-[1.5rem] group-hover:bg-gradient-to-t from-[#5c1dff] to-[#1f0c4a] duration-700 ease-in-out group-hover:duration-700 ">
                                 <div className="header border-b-2 border-[#ccc] mb-[20px] pb-[20px] mx-[25px]">
-                                    <h2 className='text-[#333] text-[28px] md:text-[35px] md:leading-[40px] font-[700] poppins group-hover:text-white'>$165 <br />
+                                    <h2 className='text-[#333] text-[28px] md:text-[35px] md:leading-[40px] font-[700] poppins group-hover:text-white'>$499 <br />
                                         Basic Videos</h2>
                                     <p className='text-[#666] text-[16px] lg:text-[18px] font-sans group-hover:text-white'>Text & Image Compilation</p>
                                 </div>
@@ -36,7 +34,7 @@ const Packages = () => {
                                         <ul className='max-h-[271px] overflow-hidden group-hover:overflow-y-scroll overflow-x-hidden packagesScroll pr-[0] group-hover:pr-[35px] group-hover:duration-700 duration-700 ease-in-out pb-[20px]'>
                                             <li className='text-[#171b41] text-[16px] md:text-[18px] mb-[10px] font-[400] poppins flex'>
                                                 <FaCheck className='text-[#F36E21] mr-[8px] font-[900]' />
-                                                <span className='inline'>60 Seconds Duration </span>
+                                                <span className='inline'>30 Seconds Duration </span>
                                             </li>
                                             <li className='text-[#171b41] text-[16px] md:text-[18px] mb-[10px] font-[400] poppins flex'>
                                                 <FaCheck className='text-[#F36E21] mr-[8px] font-[900]' />
@@ -95,7 +93,7 @@ const Packages = () => {
                         <div className="col-span-12 lg:col-span-4 group">
                             <div className="card relative border-[#ccc] border rounded-[15px] pt-[25px] mb-[1.5rem] group-hover:bg-gradient-to-t from-[#5c1dff] to-[#1f0c4a] duration-700 ease-in-out group-hover:duration-700">
                                 <div className="header border-b-2 border-[#ccc] mb-[20px] pb-[20px] mx-[25px]">
-                                    <h2 className='text-[#333] text-[28px] md:text-[35px] md:leading-[40px] font-[700] poppins group-hover:text-white'>$499 <br />
+                                    <h2 className='text-[#333] text-[28px] md:text-[35px] md:leading-[40px] font-[700] poppins group-hover:text-white'>$799 <br />
                                         Premium Videos</h2>
                                     <p className='text-[#666] text-[16px] lg:text-[18px] font-sans group-hover:text-white'>Whiteboard or Motion Graphic Animation</p>
                                 </div>
@@ -104,7 +102,7 @@ const Packages = () => {
                                         <ul className='max-h-[271px] overflow-hidden group-hover:overflow-y-scroll overflow-x-hidden packagesScroll pr-[0] group-hover:pr-[35px] group-hover:duration-700 duration-700 ease-in-out pb-[20px]'>
                                             <li className='text-[#171b41] text-[16px] md:text-[18px] mb-[10px] font-[400] poppins flex'>
                                                 <FaCheck className='text-[#F36E21] mr-[8px] font-[900]' />
-                                                <span className='inline'>60 Seconds Duration </span>
+                                                <span className='inline'>30 Seconds Duration </span>
                                             </li>
                                             <li className='text-[#171b41] text-[16px] md:text-[18px] mb-[10px] font-[400] poppins flex'>
                                                 <FaCheck className='text-[#F36E21] mr-[8px] font-[900]' />
@@ -167,7 +165,7 @@ const Packages = () => {
                         <div className="col-span-12 lg:col-span-4 group">
                             <div className="card relative border-[#ccc] border rounded-[15px] pt-[25px] mb-[1.5rem] group-hover:bg-gradient-to-t from-[#5c1dff] to-[#1f0c4a] duration-700 ease-in-out group-hover:duration-700">
                                 <div className="header border-b-2 border-[#ccc] mb-[20px] pb-[20px] mx-[25px]">
-                                    <h2 className='text-[#333] text-[28px] md:text-[35px] md:leading-[40px] font-[700] poppins group-hover:text-white'>$165 <br />
+                                    <h2 className='text-[#333] text-[28px] md:text-[35px] md:leading-[40px] font-[700] poppins group-hover:text-white'>$999 <br />
                                         Basic Videos</h2>
                                     <p className='text-[#666] text-[16px] lg:text-[18px] font-sans group-hover:text-white'>Text & Image Compilation</p>
                                 </div>
@@ -176,7 +174,7 @@ const Packages = () => {
                                         <ul className='max-h-[271px] overflow-hidden group-hover:overflow-y-scroll overflow-x-hidden packagesScroll pr-[0] group-hover:pr-[35px] group-hover:duration-700 duration-700 ease-in-out pb-[20px]'>
                                             <li className='text-[#171b41] text-[16px] md:text-[18px] mb-[10px] font-[400] poppins flex'>
                                                 <FaCheck className='text-[#F36E21] mr-[8px] font-[900]' />
-                                                <span className='inline'>60 Seconds Duration </span>
+                                                <span className='inline'>30 Seconds Duration </span>
                                             </li>
                                             <li className='text-[#171b41] text-[16px] md:text-[18px] mb-[10px] font-[400] poppins flex'>
                                                 <FaCheck className='text-[#F36E21] mr-[8px] font-[900]' />
