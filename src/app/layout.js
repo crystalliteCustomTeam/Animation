@@ -44,7 +44,6 @@ export const metadata = {
   verification: {
     other: {
       "google-site-verification": ['dgOXThSlUP6xd-daxjwI8uQqVYkhfbL_Ey51mNVEUzU'],
-      "google-site-verification": ['8zgIMarAcPsyxlkOXxHX0YhOrkiQKnShqfIJYka2Vqo'],
     },
   },
 }
