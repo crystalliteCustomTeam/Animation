@@ -76,7 +76,7 @@ const Footer = () => {
         },
         {
             text: "One World Trade Center, Suite 8500, New York, New York, 10007, United States",
-            link: "https://maps.app.goo.gl/Z6w915ucDqRCyrVa8",
+            link: "https://maps.app.goo.gl/MMSpTgmKj73FCL9V7",
             icon: mapmarker,
             target: "_blank"
         },
