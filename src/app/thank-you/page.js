@@ -1,14 +1,30 @@
+"use client"
+import React, { useEffect, useState } from "react";
 // Import Components
 import CTA from "@/components/cta/CTA";
 
 export default function Page() {
-    //=====Banner Fold=====//
-    const hero = {
-        title: (<> Thank You </>),
-    };
+
+    const [pageLoaded, setPageLoaded] = useState(false);
+    useEffect(() => {
+        const delay = 10000;
+        const timeoutId = setTimeout(() => {
+            setPageLoaded(true);
+        }, delay);
+        return () => clearTimeout(timeoutId);
+    }, []);
 
     return (
         <>
+            {pageLoaded &&
+                <>
+                    {/* <!-- Event snippet for Website lead conversion page --> */}
+                    <Script>
+                        {`gtag('event', 'conversion', {'send_to': 'AW-11475040852/9LYyCK-D1qcZENT03N8q'});`}
+                    </Script>
+                </>
+            }
+
             <section className={`w-full h-[100vh] flex items-center justify-start sm:pb-5`}>
                 <div className="container">
                     <div className='flex flex-col items-center justify-center'>
