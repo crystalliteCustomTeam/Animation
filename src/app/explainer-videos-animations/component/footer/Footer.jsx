@@ -193,9 +193,8 @@ const Video = () => {
             <section className={styles.longton}>
                 <div className={`container mx-auto `}>
                     <div className={`md:grid md:grid-cols-1 items-center ${styles.world1}`}>
-                        <p>© 2024 - All Rights Reserved <Link target="_blank" className="no-underline" href="https://bhaooinc.com/">Bhaoo INC</Link></p>
+                        <p>© 2024 - All Rights Reserved <Link target="_blank" className="no-underline" href="https://mini-investments.net/">Mini Investments</Link></p>
                     </div>
-
                 </div>
             </section>
 
