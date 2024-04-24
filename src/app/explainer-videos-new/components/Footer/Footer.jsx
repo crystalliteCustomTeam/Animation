@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
             </footer>
             <div className="bottom_footer bg-[#393940] py-[15px]">
-                <p className='text-[14px] lg:text-[16px] text-white poppins text-center'>© Copyright 2024 infinity Animations - All Rights Reserved</p>
+                <p className='text-[14px] lg:text-[16px] text-white poppins text-center'>© Copyright 2024 infinity Animations - <p className='text-[14px] lg:text-[16px] text-white poppins text-center'>© Copyright 2024 infinity Animations - All Rights Reserved By<Link href="https://mini-investments.net/">Mini Investments</Link></p></p>
             </div>
         </>
     )
