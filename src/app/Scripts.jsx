@@ -5,12 +5,12 @@ const Scripts = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             //======== Lucky Oragne ========//
-            const luckyOrange = document.createElement("script");
-            luckyOrange.id = "luckyOrange";
-            luckyOrange.src = "https://tools.luckyorange.com/core/lo.js?site-id=1cfb1cde";
-            luckyOrange.async = true;
-            luckyOrange.defer = true;
-            document.body.appendChild(luckyOrange);
+            // const luckyOrange = document.createElement("script");
+            // luckyOrange.id = "luckyOrange";
+            // luckyOrange.src = "https://tools.luckyorange.com/core/lo.js?site-id=1cfb1cde";
+            // luckyOrange.async = true;
+            // luckyOrange.defer = true;
+            // document.body.appendChild(luckyOrange);
             //======== zenDesk ========//
             const zenDesk = document.createElement("script");
             zenDesk.id = "ze-snippet";

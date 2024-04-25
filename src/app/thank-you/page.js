@@ -17,6 +17,15 @@ export default function Page() {
 
     return (
         <>
+            <Script src="https://www.googletagmanager.com/gtag/js?id=AW-11475040852" id="gtagCode"></Script>
+            <Script id="gtagCode2">
+                {
+                    ` window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'AW-11475040852');`
+                }
+            </Script>
            <Script>
                         {`gtag('event', 'conversion', {'send_to': 'AW-11475040852/9LYyCK-D1qcZENT03N8q'});`}
             </Script>
