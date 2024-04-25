@@ -41,7 +41,7 @@ const Scripts = () => {
             NumberConverstionCode.text `gtag('config', 'AW-11475040852/d8ZeCOHomaoZENT03N8q', {
                 'phone_conversion_number': '(833) 666-6689'
               });`
-              document.head.appendChild(NumberConverstionCode);
+            document.head.appendChild(NumberConverstionCode);
             //======== Meta Pixel Code ========//
             const MetaPixelCode = document.createElement("script");
             MetaPixelCode.id = "meta-pixel";
