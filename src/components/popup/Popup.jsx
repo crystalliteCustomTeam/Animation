@@ -39,13 +39,14 @@ const Popup = ({ }) => {
     }, []);
     // For Page
     let page = usePathname();
+    let browserURL = window.location.href
     const [data, setData] = useState({
         name: "",
         phone: "",
         email: "",
         message: "",
         botchecker: null,
-        pageURL: page
+        pageURL: browserURL
     });
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
