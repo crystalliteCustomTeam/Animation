@@ -6,25 +6,20 @@ import CTA from "@/components/cta/CTA";
 
 export default function Page() {
 
-    const [pageLoaded, setPageLoaded] = useState(false);
-    useEffect(() => {
-        const delay = 10000;
-        const timeoutId = setTimeout(() => {
-            setPageLoaded(true);
-        }, delay);
-        return () => clearTimeout(timeoutId);
-    }, []);
+    // const [pageLoaded, setPageLoaded] = useState(false);
+    // useEffect(() => {
+    //     const delay = 10000;
+    //     const timeoutId = setTimeout(() => {
+    //         setPageLoaded(true);
+    //     }, delay);
+    //     return () => clearTimeout(timeoutId);
+    // }, []);
 
     return (
         <>
-            {pageLoaded &&
-                <>
-                    {/* <!-- Event snippet for Website lead conversion page --> */}
-                    <Script>
+           <Script>
                         {`gtag('event', 'conversion', {'send_to': 'AW-11475040852/9LYyCK-D1qcZENT03N8q'});`}
-                    </Script>
-                </>
-            }
+            </Script>
 
             <section className={`w-full h-[100vh] flex items-center justify-start sm:pb-5`}>
                 <div className="container">
