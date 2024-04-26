@@ -38,13 +38,18 @@ const Banner = () => {
     }, []);
     // For Page
     let page = usePathname();
+    const [pagenewurl, setPagenewurl] = useState('');
+    useEffect(() => {
+      const pagenewurl = window.location.href;
+      setPagenewurl(pagenewurl);
+    }, []);
     const [data, setData] = useState({
         name: "",
         phone: "",
         email: "",
         message: "",
         botchecker: null,
-        pageURL: page
+        pageURL: pagenewurl
     });
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
