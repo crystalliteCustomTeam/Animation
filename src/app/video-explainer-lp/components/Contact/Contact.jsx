@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Axios from "axios";
-import { usePathname } from 'next/navigation'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
 // ==== Images 
@@ -65,14 +64,16 @@ const Contact = () => {
         getIPData();
     }, []);
     // For Page
-    let page = usePathname();
+     const [pagenewurl, setPagenewurl] = useState(null);
+    useEffect(() => {
+        setPagenewurl(window.location.href);
+    }, [setPagenewurl]);
     const [data, setData] = useState({
         name: "",
         phone: "",
         email: "",
         message: "",
         botchecker: null,
-        pageURL: page
     });
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -113,7 +114,7 @@ const Contact = () => {
                     "Content-Type": "application/json",
                 };
 
-                let bodyContent = JSON.stringify(data);
+                let bodyContent = JSON.stringify({ ...data, pageURL: pagenewurl });
                 let reqOptions = {
                     url: "/api/email",
                     method: "POST",
@@ -141,12 +142,12 @@ const Contact = () => {
                 };
 
                 let bodyContent = JSON.stringify({
-                    IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-                    Brand: "Infinity Animation",
-                    Page: `${page}`,
-                    Date: setDate,
-                    Time: setTime,
-                    JSON: data,
+                    "IP": `${ip.ip} - ${ip.country_name} - ${ip.city_name}`,
+                    "Brand": "Infinity Animations",
+                    "Page": pagenewurl,
+                    "Date": setDate,
+                    "Time": setTime,
+                    "JSON": { ...data, pageURL: pagenewurl },
                 });
                 let reqOptions = {
                     url: "https://sheetdb.io/api/v1/1ownp6p7a9xpi",

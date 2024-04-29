@@ -4,13 +4,6 @@ import { useEffect } from 'react'
 const Scripts = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
-            //======== Lucky Oragne ========//
-            // const luckyOrange = document.createElement("script");
-            // luckyOrange.id = "luckyOrange";
-            // luckyOrange.src = "https://tools.luckyorange.com/core/lo.js?site-id=1cfb1cde";
-            // luckyOrange.async = true;
-            // luckyOrange.defer = true;
-            // document.body.appendChild(luckyOrange);
             //======== zenDesk ========//
             const zenDesk = document.createElement("script");
             zenDesk.id = "ze-snippet";
@@ -36,12 +29,13 @@ const Scripts = () => {
             `;
             document.head.appendChild(gtmConfigScript);
              //======== Number Convertion  ========//
-            const NumberConverstionCode = document.createElement("script");
-            NumberConverstionCode.id = "phone_conversion_number"
-            NumberConverstionCode.text `gtag('config', 'AW-11475040852/d8ZeCOHomaoZENT03N8q', {
-                'phone_conversion_number': '(833) 666-6689'
-              });`
-            document.head.appendChild(NumberConverstionCode);
+            const numberConverstionCode = document.createElement("script");
+            numberConverstionCode.id = "phone_conversion_number"
+            numberConverstionCode.text = `
+                gtag('config', 'AW-11475040852/d8ZeCOHomaoZENT03N8q', 
+                {'phone_conversion_number': '(833) 666-6689'});
+              `
+            document.head.appendChild(numberConverstionCode);
             //======== Meta Pixel Code ========//
             const MetaPixelCode = document.createElement("script");
             MetaPixelCode.id = "meta-pixel";

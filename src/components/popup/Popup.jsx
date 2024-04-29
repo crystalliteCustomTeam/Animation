@@ -1,7 +1,6 @@
 "use client"
 import Axios from "axios";
 import Image from 'next/image';
-import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 // pupup
 import { Dialog } from "@material-tailwind/react";
@@ -38,19 +37,16 @@ const Popup = ({ }) => {
         getIPData();
     }, []);
     // For Page
-    let page = usePathname();
-    const [pagenewurl, setPagenewurl] = useState('');
-      useEffect(() => {
-        const pagenewurl = window.location.href;
-        setPagenewurl(pagenewurl);
-      }, []);
+    const [pagenewurl, setPagenewurl] = useState(null);
+    useEffect(() => {
+        setPagenewurl(window.location.href);
+    }, [setPagenewurl]);
     const [data, setData] = useState({
         name: "",
         phone: "",
         email: "",
         message: "",
         botchecker: null,
-        pageURL: pagenewurl
     });
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -91,7 +87,7 @@ const Popup = ({ }) => {
                     "Content-Type": "application/json",
                 };
 
-                let bodyContent = JSON.stringify(data);
+                let bodyContent = JSON.stringify({ ...data, pageURL: pagenewurl });
                 let reqOptions = {
                     url: "/api/email",
                     method: "POST",
@@ -115,12 +111,12 @@ const Popup = ({ }) => {
                     "Content-Type": "application/json",
                 };
                 let bodyContent = JSON.stringify({
-                    IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-                    Brand: "Infinity ANimation",
-                    Page: `${page}`,
-                    Date: setDate,
-                    Time: setTime,
-                    JSON: data,
+                    "IP": `${ip.ip} - ${ip.country_name} - ${ip.city_name}`,
+                    "Brand": "Infinity Animations",
+                    "Page": pagenewurl,
+                    "Date": setDate,
+                    "Time": setTime,
+                    "JSON": { ...data, pageURL: pagenewurl },
                 });
                 let reqOptions = {
                     url: "https://sheetdb.io/api/v1/1ownp6p7a9xpi",

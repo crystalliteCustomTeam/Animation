@@ -6,15 +6,6 @@ import CTA from "@/components/cta/CTA";
 
 export default function Page() {
 
-    // const [pageLoaded, setPageLoaded] = useState(false);
-    // useEffect(() => {
-    //     const delay = 10000;
-    //     const timeoutId = setTimeout(() => {
-    //         setPageLoaded(true);
-    //     }, delay);
-    //     return () => clearTimeout(timeoutId);
-    // }, []);
-
     return (
         <>
             <Script src="https://www.googletagmanager.com/gtag/js?id=AW-11475040852" id="gtagCode"></Script>
@@ -26,8 +17,8 @@ export default function Page() {
                     gtag('config', 'AW-11475040852');`
                 }
             </Script>
-           <Script>
-                        {`gtag('event', 'conversion', {'send_to': 'AW-11475040852/9LYyCK-D1qcZENT03N8q'});`}
+            <Script>
+                {`gtag('event', 'conversion', {'send_to': 'AW-11475040852/9LYyCK-D1qcZENT03N8q'});`}
             </Script>
 
             <section className={`w-full h-[100vh] flex items-center justify-start sm:pb-5`}>
