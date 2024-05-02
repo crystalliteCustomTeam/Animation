@@ -28,7 +28,7 @@ const Scripts = () => {
                 gtag('config', 'AW-11475040852');
             `;
             document.head.appendChild(gtmConfigScript);
-             //======== Number Convertion  ========//
+            //======== Number Convertion  ========//
             const numberConverstionCode = document.createElement("script");
             numberConverstionCode.id = "phone_conversion_number"
             numberConverstionCode.text = `
@@ -52,6 +52,23 @@ const Scripts = () => {
                 fbq('track', 'PageView');
             `;
             document.head.appendChild(MetaPixelCode);
+            //======== GATG2 ========//
+            const gtmScript2 = document.createElement("script");
+            gtmScript2.id = "google-tag-manager";
+            gtmScript2.src = "https://www.googletagmanager.com/gtag/js?id=G-NTFT6HEZCW";
+            gtmScript2.async = true;
+            gtmScript2.defer = true;
+            document.head.appendChild(gtmScript2);
+            //======== Google Tag Manager2 ========//
+            const gtmConfigScript2 = document.createElement("script");
+            gtmConfigScript2.id = "google-tag-manager-one";
+            gtmConfigScript2.text = `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-NTFT6HEZCW');
+            `;
+            document.head.appendChild(gtmConfigScript2);
         }, 5000);
 
         return () => clearTimeout(timer);
