@@ -29,7 +29,8 @@ const ConditionalLayout = ({ children }) => {
                     pathname !== "/video-explainer-lp-new" &&
                     pathname !== "/explainer-videos-animations" &&
                     pathname !== "/explainer-videos-new" &&
-                    pathname !== "/logo-animation-lp" && (
+                    pathname !== "/logo-animation-lp" &&
+                    pathname !== "/illustration-experts-lp" && (
                         <Header />
                     )}
                 {children}
