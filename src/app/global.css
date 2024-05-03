@@ -729,6 +729,10 @@ div#ty7 {
   border: 1px solid #efefef;
 }
 
+#testimonialsCMP .swiper-pagination {
+  display: none;
+}
+
 .Illustrative .slick-track .slick-slide {
   display: flex;
   align-items: center;
