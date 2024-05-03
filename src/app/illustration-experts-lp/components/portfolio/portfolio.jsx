@@ -94,8 +94,8 @@ const Portfolio = () => {
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 justify-content-center ">
-                            <h2 className='text-[#333] text-center font-[700] montserrat text-[25px] text-[35px] pb-3'>Our Portfolio</h2>
-                            <p className='text-[#333] text-center text-[14px] sm:text-[15px] montserrat text-[#5b5b5b] leading-[1.5]'>Whether you're preparing for new advertising materials or looking to upgrade your book covers, we’ve got you covered! Check out our exciting illustration portfolio for book covers, cartoons, children books, mascots, storyboards, and more.</p>
+                            <h2 className='text-[#333] text-center font-[700] montserrat text-[30px] lg:text-[35px] pb-3'>Our Portfolio</h2>
+                            <p className='text-[#333] text-center text-[16px] lg:text-[15px] montserrat leading-[1.5]'>Whether you're preparing for new advertising materials or looking to upgrade your book covers, we’ve got you covered! Check out our exciting illustration portfolio for book covers, cartoons, children books, mascots, storyboards, and more.</p>
                             <div className={styles.folioBox}>
                                 <div className="tabs-content pt-7 md:pt-12 ">
                                     <Fancybox options={{
@@ -119,7 +119,7 @@ const Portfolio = () => {
                         </div>
                     </div>
 
-                    <div className="flex gap-4 md:gap-8 justify-center py-[35px]">
+                    <div className="flex gap-4 md:gap-8 justify-center py-0 lg:py-[35px]">
                         <div className="btn">
                             <button onClick={popupHandle} className='flex items-center text-[16px] text-white hover:text-black font-[700] montserrat bg-[#fa690c] hover:bg-[#ffffff] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-full leading-[20px] shadow-2xl border-[1.5px] border-[#fa690c]  hover:border-black'>
                                 Get Started
@@ -130,7 +130,6 @@ const Portfolio = () => {
                                 Live Chat
                             </a>
                         </div>
-
                     </div>
                 </div>
             </section>

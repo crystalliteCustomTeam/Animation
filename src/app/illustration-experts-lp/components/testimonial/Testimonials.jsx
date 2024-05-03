@@ -5,14 +5,14 @@ import TestiImg from 'media/illustration-experts/testi-img.png'
 
 const Testimonials = () => {
     return (
-        <section id="testimonialsCMP" className="hidden md:block">
+        <section id="testimonialsCMP">
             <div>
                 <div className="container">
-                    <div className="grid grid-cols-1  md:grid-cols-2 gap-x-5 items-center">
-                        <div className="md:block hidden">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 items-center">
+                        <div className="lg:block hidden">
                             <Image src={TestiImg} alt="testimonialImg" className="block mx-auto " height={450} />
                         </div>
-                        <div className="w-[95%] md:w-[90%] ">
+                        <div className="w-[95%] lg:w-[90%] mx-auto">
                             <TestimonialSlider />
                         </div>
                     </div>

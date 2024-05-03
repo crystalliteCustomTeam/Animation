@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 // Import Css
-import  "./Illustrative.module.css"
+import "./Illustrative.module.css"
 // Import Component
 import usePopup from '@/app/configs/store/Popup';
 // Import Images
@@ -144,27 +144,38 @@ const Illustrative = () => {
     const testiSlider = {
         dots: false,
         arrows: true,
-        infinite: true,
-        focusOnSelect: true,
+        loop: true,
         speed: 1000,
+        autoplay: true,
+        cssEase: "linear",
+        autoplaySpeed: 2000,
         slidesToShow: 4,
         slidesToScroll: 1,
+        focusOnSelect: true,
         adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }
+        ]
     };
 
     return (
         <>
-            <section className='py-[50px] hidden md:block bg-[url("../../public/illustration-experts/illus-tab-sec-bg.png")] h-[100%] bg-cover bg-center'>
-            <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
+            <section className='py-[50px] block bg-[url("../../public/illustration-experts/illus-tab-sec-bg.png")] h-[100%] bg-cover bg-center'>
+                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
-                            <h2 className='text-[#333] text-center font-[700] montserrat text-[25px] text-[35px] pb-3'>Our Best Illustrative Design Types</h2>
-                            <p className='text-[#333] text-center text-[14px] sm:text-[15px] montserrat text-[#5b5b5b] leading-[1.5]'>From custom book cover illustrations to mascot logos, we’ve
+                            <h2 className='text-[#333] text-center font-[700] montserrat text-[30px] lg:text-[35px] leading-[40px] pb-3'>Our Best Illustrative Design Types</h2>
+                            <p className='text-[#333] text-center text-[16px] lg:text-[15px] montserrat leading-[1.5]'>From custom book cover illustrations to mascot logos, we’ve
                                 been providing our clients with a range of illustration design services.</p>
 
 
-                            <div className={``}>
-                                <Slider {...testiSlider} className="border-b border-gray-200 pb-[10px] slick-slider Illustrative ">
+                            <div className={`mt-6 lg:mt-0`}>
+                                <Slider {...testiSlider} className="border-b border-gray-200 pb-[10px] slick-slider Illustrative">
                                     {tabInfo.map((item, index) => (
                                         <div key={index}
                                             className={`flex justify-center  px-5 md:px-8 py-3 text-[15px] lg:text-[18px] montserrat cursor-pointer text-center   ${activeTab === index ? "text-primary-100 border-b-2 border-primary-100" : "text-[#898989]"}`}
@@ -175,34 +186,32 @@ const Illustrative = () => {
                                     ))}
                                 </Slider>
 
-                                <div className="grid grid-cols-12 gap-y-12 justify-content-center py-[40px]">
+                                <div className="grid grid-cols-12 gap-y-8 justify-content-center py-0 lg:py-[40px]">
                                     {tabContents[activeTab].map((item, index) => (
                                         <>
-                                            <div
-                                                key={index}
-                                                className={`col-span-12 lg:col-span-6 content-center px-[15px] relative `}
-                                            >
-                                                <div
-                                                    className={`flex justify-center`}
-                                                >
-                                                    <Image src={item.image}
-                                                        height={300}
-                                                        alt="Infinity Animation" quality={85} />
+                                            <div key={index} className={`col-span-12 lg:col-span-6 content-center px-[15px] relative`}>
+                                                <div className={`flex justify-center mt-16 lg:mt-0`}>
+                                                    <Image
+                                                        src={item.image}
+                                                        alt="Infinity Animation"
+                                                        quality={85}
+                                                        className='w-[40%] h-auto'
+                                                    />
                                                 </div>
                                             </div>
                                             <div
                                                 className={`col-span-12 lg:col-span-6 `}
                                             >
-                                                <h2 className=" text-[#685edd] text-[36px] font-[700] montserrat mb-5">
+                                                <h2 className=" text-[#685edd] text-[28px] lg:text-[36px] font-[700] montserrat mb-2 lg:mb-5">
                                                     {item.title}
                                                 </h2>
-                                                <p className="text-[15px] text-[#606060] font-extralight montserrat font-sans leading-snug tracking-wider text-justify mb-5">
+                                                <p className="text-[16px] lg:text-[15px] text-[#000] font-[400] montserrat font-sans tracking-wider text-justify mb-2 lg:mb-5">
                                                     {item.desc}
                                                 </p>
                                                 <div className='grid grid-cols-12 gap-y-4 content-start justify-items-stretch border-t border-gray-200 py-[20px]'>
                                                     <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
                                                         <div
-                                                            className="flex justify-center items-center text-[15px] text-[#606060] font-extralight montserrat font-sans leading-snug tracking-wider text-justify"
+                                                            className="flex justify-center items-center text-[16px] lg:text-[15px] text-[#000] font-[400] montserrat font-sans leading-snug tracking-wider text-justify"
                                                         >
                                                             <div className='pe-2'>
                                                                 <Image src={CheckIcon} width={20} />
@@ -211,7 +220,7 @@ const Illustrative = () => {
                                                     </div>
                                                     <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
                                                         <div
-                                                            className="flex justify-center items-center text-[15px] text-[#606060] font-extralight montserrat font-sans leading-snug tracking-wider text-justify"
+                                                            className="flex justify-center items-center text-[16px] lg:text-[15px] text-[#000] font-[400] montserrat font-sans leading-snug tracking-wider text-justify"
                                                         >
                                                             <div className='pe-2'>
                                                                 <Image src={CheckIcon} width={20} />
@@ -220,7 +229,7 @@ const Illustrative = () => {
                                                     </div>
                                                     <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
                                                         <div
-                                                            className="flex justify-center items-center text-[15px] text-[#606060] font-extralight montserrat font-sans leading-snug tracking-wider text-justify"
+                                                            className="flex justify-center items-center text-[16px] lg:text-[15px] text-[#000] font-[400] montserrat font-sans leading-snug tracking-wider text-justify"
                                                         >
                                                             <div className='pe-2'>
                                                                 <Image src={CheckIcon} width={20} />
@@ -229,7 +238,7 @@ const Illustrative = () => {
                                                     </div>
                                                     <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
                                                         <div
-                                                            className="flex justify-center items-center text-[15px] text-[#606060] font-extralight montserrat font-sans leading-snug tracking-wider text-justify"
+                                                            className="flex justify-center items-center text-[16px] lg:text-[15px] text-[#000] font-[400] montserrat font-sans leading-snug tracking-wider text-justify"
                                                         >
                                                             <div className='pe-2'>
                                                                 <Image src={CheckIcon} width={20} />

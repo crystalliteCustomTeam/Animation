@@ -10,7 +10,6 @@ import TreeStep from './components/tree-step/treeStep';
 import LookingFor from './components/looking-for/lookingFor';
 import Testimonials from './components/testimonial/Testimonials';
 import Contact from './components/Contact/Contact';
-import Review from './components/review/review';
 
 const Illustration = () => {
   // ===== Brands 1 Content ===== //
@@ -29,7 +28,7 @@ const Illustration = () => {
     subTitle: "",
     desc: <> Share your exciting ideas with our illustration <br /> experts. </>,
     isBtn: true,
-    backgroundImage: 'bg-[url("../../public/illustration-experts/cta-bg-1.jpg")] hidden md:block'
+    backgroundImage: 'bg-[url("../../public/illustration-experts/cta-bg-1.jpg")]'
   }
 
 
@@ -46,7 +45,6 @@ const Illustration = () => {
         <LookingFor />
         <Brands content={brands2} />
         <Testimonials />
-        <Review />
         <Contact />
       </div>
     </>

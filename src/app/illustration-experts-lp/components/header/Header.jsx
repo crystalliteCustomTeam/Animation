@@ -4,8 +4,6 @@ import Image from 'next/image'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 //===== Images 
 import logo from "media/images/black-logo.gif";
-import UK from "media/video-explainer/flag-icon.png"
-import Chat from "media/video-explainer/cht-icon.png"
 import telephone from "media/icons/call.png";
 
 

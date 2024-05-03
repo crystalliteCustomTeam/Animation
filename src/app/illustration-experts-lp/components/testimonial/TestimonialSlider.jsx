@@ -4,7 +4,6 @@ import { useEffect, useRef } from 'react';
 // Components
 import TestimonialCard from './TestimonialCard'
 import { register } from 'swiper/element/bundle'
-import styles from './Testimonials.module.css'
 
 
 const TestimonialSlider = () => {
@@ -26,14 +25,6 @@ const TestimonialSlider = () => {
             autoplay: {
                 delay: 0,
                 disableOnInteraction: "false"
-            },
-            breakpoints: {
-                576: {
-                    slidesPerView: 3,
-                },
-                300: {
-                    slidesPerView: 2,
-                },
             },
         };
         Object.assign(swiperRef.current, params);
@@ -58,7 +49,7 @@ const TestimonialSlider = () => {
         },
     ]
     return (
-        <swiper-container ref={swiperRef} init={false} class="md:h-[700px] sm:h-[600px] xs:h-[400px]">
+        <swiper-container ref={swiperRef} init={false} class="md:h-[700px] h-[800px]">
             {
                 testiCard && testiCard.map((e, i) => (
                     <swiper-slide key={i}>
@@ -69,7 +60,6 @@ const TestimonialSlider = () => {
                     </swiper-slide>
                 ))
             }
-            {/* <div class="swiper-pagination"></div> */}
             <swiper-pagination className="hidden"></swiper-pagination>
         </swiper-container>
     )

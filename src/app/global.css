@@ -729,6 +729,54 @@ div#ty7 {
   border: 1px solid #efefef;
 }
 
+.Illustrative .slick-track .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.Illustrative .slick-prev {
+  left: 0;
+  top: 35%;
+}
+
+.Illustrative .slick-prev:before {
+  content: url(../../public/illustration-experts/arrow.png);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  opacity: 1;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  transform: rotate(180deg);
+}
+
+.Illustrative .slick-next {
+  right: 35px;
+  top: 35%;
+}
+
+.Illustrative .slick-next:before {
+  content: url(../../public/illustration-experts/arrow.png);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  opacity: 1;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+
 /*=============== Media Query Start ===============*/
 
 @media only screen and (max-width: 1920px) {
@@ -914,6 +962,21 @@ div#ty7 {
     gap: 15px;
   }
 
+  .Illustrative .slick-prev,
+  .Illustrative .slick-next {
+    bottom: -40px !important;
+  }
+
+  .Illustrative .slick-next:before,
+  .Illustrative .slick-prev:before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .Illustrative .slick-track .slick-slide {
+    height: 150px;
+  }
+
   /*=============== ===============*/
 
   .locationSlider .slick-prev {
@@ -1053,54 +1116,4 @@ div#ty7 {
   .newreactslide .slick-slide {
     opacity: 1;
   }
-}
-
-/*=============== Illustrative slider ===============*/
-
-.Illustrative .slick-track .slick-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-}
-
-.Illustrative .slick-prev {
-  left: 0 ;
-  top: 35%;
-  /* z-index: 999; */
-}
-
-.Illustrative .slick-prev:before {
-  content: url(../../public/illustration-experts/arrow.png);
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-  opacity: 1;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
-  transform: rotate(180deg);
-}
-
-.Illustrative .slick-next {
-  right: 35px;
-  top: 35%;
-  /* z-index: 999; */
-}
-
-.Illustrative .slick-next:before {
-  content: url(../../public/illustration-experts/arrow.png);
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-  opacity: 1;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
 }
