@@ -6,6 +6,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 // Import Css
 import styles from "./Illustrative.module.css"
+// Import Component
+import usePopup from '@/app/configs/store/Popup';
 // Import Images
 import IlluImage1 from "media/illustration-experts/illu-img-li-1.png"
 import IlluImage2 from "media/illustration-experts/illu-img-2d-2.png"
@@ -128,7 +130,11 @@ const tabContents = [
 
 ];
 const Illustrative = () => {
-
+    // Popup
+    const { popup, togglePopup } = usePopup()
+    const popupHandle = () => {
+        togglePopup(popup)
+    }
     //Tabs
     const [activeTab, setActiveTab] = useState(0);
     const handleTabClick = (index) => {
@@ -150,7 +156,7 @@ const Illustrative = () => {
 
     return (
         <>
-            <section className='py-[50px] lg:py-[100px] hidden md:block bg-[url("../../public/illustration-experts/illus-tab-sec-bg.png")] h-[100%] bg-cover bg-center'>
+            <section className='py-[50px] hidden md:block bg-[url("../../public/illustration-experts/illus-tab-sec-bg.png")] h-[100%] bg-cover bg-center'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
@@ -198,7 +204,7 @@ const Illustrative = () => {
                                                 <div className='grid grid-cols-12 gap-y-4 content-start justify-items-stretch border-t border-gray-200 py-[20px]'>
                                                     <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
                                                         <div
-                                                            className="flex justify-center items-center text-[15px] text-[#606060] font-extralight montserrat font-sans font-sans leading-snug tracking-wider text-justify"
+                                                            className="flex justify-center items-center text-[15px] text-[#606060] font-extralight montserrat font-sans leading-snug tracking-wider text-justify"
                                                         >
                                                             <div className='pe-2'>
                                                                 <Image src={CheckIcon} width={20} />
@@ -207,7 +213,7 @@ const Illustrative = () => {
                                                     </div>
                                                     <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
                                                         <div
-                                                            className="flex justify-center items-center text-[15px] text-[#606060] font-extralight montserrat font-sans font-sans leading-snug tracking-wider text-justify"
+                                                            className="flex justify-center items-center text-[15px] text-[#606060] font-extralight montserrat font-sans leading-snug tracking-wider text-justify"
                                                         >
                                                             <div className='pe-2'>
                                                                 <Image src={CheckIcon} width={20} />
@@ -216,7 +222,7 @@ const Illustrative = () => {
                                                     </div>
                                                     <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
                                                         <div
-                                                            className="flex justify-center items-center text-[15px] text-[#606060] font-extralight montserrat font-sans font-sans leading-snug tracking-wider text-justify"
+                                                            className="flex justify-center items-center text-[15px] text-[#606060] font-extralight montserrat font-sans leading-snug tracking-wider text-justify"
                                                         >
                                                             <div className='pe-2'>
                                                                 <Image src={CheckIcon} width={20} />
@@ -225,7 +231,7 @@ const Illustrative = () => {
                                                     </div>
                                                     <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
                                                         <div
-                                                            className="flex justify-center items-center text-[15px] text-[#606060] font-extralight montserrat font-sans font-sans leading-snug tracking-wider text-justify"
+                                                            className="flex justify-center items-center text-[15px] text-[#606060] font-extralight montserrat font-sans leading-snug tracking-wider text-justify"
                                                         >
                                                             <div className='pe-2'>
                                                                 <Image src={CheckIcon} width={20} />
@@ -235,23 +241,20 @@ const Illustrative = () => {
                                                 </div>
                                                 <div className="flex gap-4 md:gap-8 py-[10px]">
                                                     <div className="btn">
-                                                        <button className='flex items-center text-[16px] text-white hover:text-black font-[700] montserrat bg-[#fa690c] hover:bg-[#ffffff] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-full leading-[20px] shadow-2xl-[1.5px]-[#fa690c]  hover:border-black'>
+                                                        <button onClick={popupHandle} className='flex items-center text-[16px] text-white hover:text-black font-[700] montserrat bg-[#fa690c] hover:bg-[#ffffff] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-full leading-[20px] shadow-2xl-[1.5px]-[#fa690c]  hover:border-black'>
                                                             Get Started
                                                         </button>
                                                     </div>
                                                     <div className="btn">
-                                                        <button className='flex items-center text-[16px] text-black hover:text-white font-[700] montserrat bg-[#ffffff] hover:bg-[#fa690c] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-full leading-[20px] shadow-2xl border-[1.5px] border-[#000000] hover:border-[#fa690c]'>
+                                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[16px] text-black hover:text-white font-[700] montserrat bg-[#ffffff] hover:bg-[#fa690c] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-full leading-[20px] shadow-2xl border-[1.5px] border-[#000000] hover:border-[#fa690c]'>
                                                             Live Chat
-                                                        </button>
+                                                        </a>
                                                     </div>
                                                 </div>
-
-                                                {/* </div> */}
                                             </div>
                                         </>
                                     ))}
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -262,3 +265,4 @@ const Illustrative = () => {
 }
 
 export default Illustrative
+

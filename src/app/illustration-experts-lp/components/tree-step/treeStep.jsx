@@ -1,18 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
-
-// Import Slick Slider
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
 // ===== Images 
 import Card1 from "media/illustration-experts/how-img-1.png"
 import Card2 from "media/illustration-experts/how-img-2.png"
 import Card3 from "media/illustration-experts/how-img-3.png"
 
 const TreeStep = () => {
-
 
     return (
         <>
@@ -21,7 +14,7 @@ const TreeStep = () => {
                     <div className="grid grid-cols-12 gap-6">
                         <div className="col-span-12">
                             <h2 className='text-[#231f20] text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px] mb-3'>Three Simple Steps To Get A Charming Illustrative Design!</h2>
-                            <p className='text-[#231f20] text-[16px] montserrat font-[400] text-center lg:w-10/12 mx-auto leading-[22px]'>We are known for our outstanding, extraordinary quality illustrations and our dependable services at extremely affordable prices.</p>
+                            <p className='text-[#231f20] text-[15px] montserrat font-[400] text-center lg:w-10/12 mx-auto leading-[22px]'>We are known for our outstanding, extraordinary quality illustrations and our dependable services at extremely affordable prices.</p>
                         </div>
                     </div>
                     <div className="mt-8">

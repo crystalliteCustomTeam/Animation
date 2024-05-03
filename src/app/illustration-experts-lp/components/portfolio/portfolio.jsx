@@ -3,10 +3,8 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { Fancybox as NativeFancybox } from "@fancyapps/ui"
 import "@fancyapps/ui/dist/fancybox/fancybox.css"
-// Import Slick Slider
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+// Import Component
+import usePopup from '@/app/configs/store/Popup';
 // Import Css
 import styles from "./portfolio.module.css"
 // Import Images
@@ -19,7 +17,6 @@ import Thumbnail6 from "media/illustration-experts/profolio-img-6.png"
 import Thumbnail7 from "media/illustration-experts/profolio-img-7.png"
 import Thumbnail8 from "media/illustration-experts/profolio-img-8.png"
 import Thumbnail9 from "media/illustration-experts/profolio-img-9.png"
-import PlayIcon from "media/icons/play.png"
 import { FaEye } from "react-icons/fa";
 
 
@@ -65,7 +62,11 @@ const tabContents = [
 
 ];
 const Portfolio = () => {
-
+    // Popup
+    const { popup, togglePopup } = usePopup()
+    const popupHandle = () => {
+        togglePopup(popup)
+    }
     //Tabs
     const [activeTab, setActiveTab] = useState(0);
     const handleTabClick = (index) => {
@@ -86,18 +87,7 @@ const Portfolio = () => {
         });
         return <div ref={containerRef}>{props.children}</div>;
     }
-    // ====== Responsive Slider 
-    const testiSlider = {
-        dots: true,
-        arrows: false,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        speed: 1000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        adaptiveHeight: true,
-    };
+
     return (
         <>
             <section className={` ${styles.portfolioSec} py-[50px] lg:pt-[100px] lg:pb-[40px]`}>
@@ -131,14 +121,14 @@ const Portfolio = () => {
 
                     <div className="flex gap-4 md:gap-8 justify-center py-[35px]">
                         <div className="btn">
-                            <button className='flex items-center text-[16px] text-white hover:text-black font-[700] montserrat bg-[#fa690c] hover:bg-[#ffffff] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-full leading-[20px] shadow-2xl border-[1.5px] border-[#fa690c]  hover:border-black'>
+                            <button onClick={popupHandle} className='flex items-center text-[16px] text-white hover:text-black font-[700] montserrat bg-[#fa690c] hover:bg-[#ffffff] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-full leading-[20px] shadow-2xl border-[1.5px] border-[#fa690c]  hover:border-black'>
                                 Get Started
                             </button>
                         </div>
                         <div className="btn">
-                            <button className='flex items-center text-[16px] text-black hover:text-white font-[700] montserrat bg-[#ffffff] hover:bg-[#fa690c] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-full leading-[20px] shadow-2xl border-[1.5px] border-[#000000] hover:border-[#fa690c]'>
+                            <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[16px] text-black hover:text-white font-[700] montserrat bg-[#ffffff] hover:bg-[#fa690c] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-full leading-[20px] shadow-2xl border-[1.5px] border-[#000000] hover:border-[#fa690c]'>
                                 Live Chat
-                            </button>
+                            </a>
                         </div>
 
                     </div>

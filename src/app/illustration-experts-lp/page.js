@@ -1,13 +1,15 @@
 "use client"
 import React from 'react';
 // Import Components
-const HeaderLP = React.lazy(() => import('./components/header/Header'));
-const Banner = React.lazy(() => import('./components/banner/Banner'));
+import HeaderLP from './components/header/Header';
+import Banner from './components/banner/Banner';
 import Portfolio from './components/portfolio/portfolio';
-const Brands = React.lazy(() => import('./components/brands/Brands'));
-const Illustrative = React.lazy(() => import('./components/Illustrative/Illustrative'));
+import Brands from './components/brands/Brands';
+import Illustrative from './components/Illustrative/Illustrative';
 import TreeStep from './components/tree-step/treeStep';
 import LookingFor from './components/looking-for/lookingFor';
+import Testimonials from './components/testimonial/Testimonials';
+import Contact from './components/Contact/Contact';
 
 const Illustration = () => {
   // ===== Brands 1 Content ===== //
@@ -29,6 +31,7 @@ const Illustration = () => {
     backgroundImage: 'bg-[url("../../public/illustration-experts/cta-bg-1.jpg")]'
   }
 
+
   return (
     <>
       <div className='bg-white'>
@@ -41,6 +44,8 @@ const Illustration = () => {
         <TreeStep />
         <LookingFor />
         <Brands content={brands2} />
+        <Testimonials />
+        <Contact />
       </div>
     </>
   )

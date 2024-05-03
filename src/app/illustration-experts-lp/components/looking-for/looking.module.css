@@ -3,14 +3,15 @@
   padding: 50px 0 100px;
 }
 
-.whatFro{
+.whatFro {
   z-index: 3;
   position: relative;
 }
 
 .whatLookingFor::before {
-  content: '';
-  background: url(../../../../../public/illustration-experts/looking-bf.png) center center/cover no-repeat;
+  content: "";
+  background: url(../../../../../public/illustration-experts/looking-bf.png)
+    center center/cover no-repeat;
   width: 237px;
   height: 517px;
   position: absolute;
@@ -22,13 +23,14 @@
 }
 
 .whatLookingFor::after {
-  content: '';
-  background: url(../../../../../public/illustration-experts/looking-af.png) center center/cover no-repeat;
-  width: 272px;
-  height: 272px;
+  content: "";
+  background: url(../../../../../public/illustration-experts/looking-af.png)
+    center center/cover no-repeat;
+  width: 240px;
+  height: 240px;
   position: absolute;
   right: 25px;
-  top: 22px;
+  top: 20px;
   margin: auto;
   z-index: 1;
 }
