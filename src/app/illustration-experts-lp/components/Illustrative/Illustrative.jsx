@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 // Import Css
-import styles from "./Illustrative.module.css"
+import  "./Illustrative.module.css"
 // Import Component
 import usePopup from '@/app/configs/store/Popup';
 // Import Images
@@ -145,8 +145,6 @@ const Illustrative = () => {
         dots: false,
         arrows: true,
         infinite: true,
-        // autoplay: true,
-        // autoplaySpeed: 5000,
         focusOnSelect: true,
         speed: 1000,
         slidesToShow: 4,
@@ -157,16 +155,16 @@ const Illustrative = () => {
     return (
         <>
             <section className='py-[50px] hidden md:block bg-[url("../../public/illustration-experts/illus-tab-sec-bg.png")] h-[100%] bg-cover bg-center'>
-                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
+            <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
-                            <h2 className='text-[#231f20] text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Our Best Illustrative Design Types</h2>
-                            <p className='text-[#231f20] text-center text-[15px] font-[300] montserrat leading-[25px] py-[25px]'>From custom book cover illustrations to mascot logos, we’ve
+                            <h2 className='text-[#333] text-center font-[700] montserrat text-[25px] text-[35px] pb-3'>Our Best Illustrative Design Types</h2>
+                            <p className='text-[#333] text-center text-[14px] sm:text-[15px] montserrat text-[#5b5b5b] leading-[1.5]'>From custom book cover illustrations to mascot logos, we’ve
                                 been providing our clients with a range of illustration design services.</p>
 
 
                             <div className={``}>
-                                <Slider {...testiSlider} className="streamedSlider border-b border-gray-200 pb-[10px]">
+                                <Slider {...testiSlider} className="border-b border-gray-200 pb-[10px] slick-slider Illustrative ">
                                     {tabInfo.map((item, index) => (
                                         <div key={index}
                                             className={`flex justify-center  px-5 md:px-8 py-3 text-[15px] lg:text-[18px] montserrat cursor-pointer text-center   ${activeTab === index ? "text-primary-100 border-b-2 border-primary-100" : "text-[#898989]"}`}

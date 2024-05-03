@@ -10,11 +10,11 @@ const TreeStep = () => {
     return (
         <>
             <section className='py-16 bg-[#fffbfb]'>
-                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
+            <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-6">
                         <div className="col-span-12">
-                            <h2 className='text-[#231f20] text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px] mb-3'>Three Simple Steps To Get A Charming Illustrative Design!</h2>
-                            <p className='text-[#231f20] text-[15px] montserrat font-[400] text-center lg:w-10/12 mx-auto leading-[22px]'>We are known for our outstanding, extraordinary quality illustrations and our dependable services at extremely affordable prices.</p>
+                            <h2 className='text-[#333] text-center font-[700] montserrat text-[25px] text-[35px] pb-3'>Three Simple Steps To Get A Charming Illustrative Design!</h2>
+                            <p className='text-[#333] text-center text-[14px] sm:text-[15px] montserrat text-[#5b5b5b] leading-[1.5]'>We are known for our outstanding, extraordinary quality illustrations and our dependable services at extremely affordable prices.</p>
                         </div>
                     </div>
                     <div className="mt-8">

@@ -4,9 +4,12 @@ import { useEffect, useRef } from 'react';
 // Components
 import TestimonialCard from './TestimonialCard'
 import { register } from 'swiper/element/bundle'
+import styles from './Testimonials.module.css'
+
 
 const TestimonialSlider = () => {
     const swiperRef = useRef(null);
+
     useEffect(() => {
         register();
         const params = {
@@ -66,6 +69,8 @@ const TestimonialSlider = () => {
                     </swiper-slide>
                 ))
             }
+            {/* <div class="swiper-pagination"></div> */}
+            <swiper-pagination className="hidden"></swiper-pagination>
         </swiper-container>
     )
 }

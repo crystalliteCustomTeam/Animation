@@ -7,7 +7,7 @@ import styles from "./looking.module.css"
 function LookingFor() {
     return (
 
-        <section className={` ${styles.whatLookingFor}`}>
+        <section className={` ${styles.whatLookingFor} hidden md:block`}>
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 {/* <div className='bg-red-300 h-full w-full absolute -z-50 flex justify-between'>
                     <div>
@@ -18,8 +18,8 @@ function LookingFor() {
                 </div> */}
                 <div className={`grid grid-cols-12 ${styles.whatFro}`}>
                     <div className="col-span-12 justify-content-center mb-8">
-                        <h2 className='text-[#231f20] text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px] mb-3'>What’re You Looking For?</h2>
-                        <p className='text-[#231f20] text-center text-[15px] font-[300] montserrat leading-[25px]'>We exude passion in each project we take on. Our process is simple and the result of coordination, creative genius and professionalism of our creatives.</p>
+                        <h2 className='text-[#333] text-center font-[700] montserrat text-[25px] text-[35px] pb-3'>What’re You Looking For?</h2>
+                        <p className='text-[#333] text-center text-[14px] sm:text-[15px] montserrat text-[#5b5b5b] leading-[1.5]'>We exude passion in each project we take on. Our process is simple and the result of coordination, creative genius and professionalism of our creatives.</p>
                     </div>
                     <div className="col-span-12 md:col-span-3 flex justify-center relative">
                         <div className=' w-1/2'>

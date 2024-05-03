@@ -10,7 +10,7 @@ const Contact = () => {
     return (
         <>
             <section className='py-[20px] bg-[#f4f5f8]'>
-                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
+            <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <Image src={listLogo} alt='Infinity Animations' className='mx-auto' />
                 </div>
             </section>
