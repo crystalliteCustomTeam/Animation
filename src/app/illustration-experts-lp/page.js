@@ -1,7 +1,6 @@
 "use client"
 import React from 'react';
 // Import Components
-import HeaderLP from './components/header/Header';
 import Banner from './components/banner/Banner';
 import Portfolio from './components/portfolio/portfolio';
 import Brands from './components/brands/Brands';
@@ -9,7 +8,6 @@ import Illustrative from './components/Illustrative/Illustrative';
 import TreeStep from './components/tree-step/treeStep';
 import LookingFor from './components/looking-for/lookingFor';
 import Testimonials from './components/testimonial/Testimonials';
-import Contact from './components/Contact/Contact';
 
 const Illustration = () => {
   // ===== Brands 1 Content ===== //
@@ -35,7 +33,6 @@ const Illustration = () => {
   return (
     <>
       <div className='bg-white'>
-        <HeaderLP />
         <Banner />
         <Portfolio />
         <Brands content={brands1} />
@@ -45,7 +42,6 @@ const Illustration = () => {
         <LookingFor />
         <Brands content={brands2} />
         <Testimonials />
-        <Contact />
       </div>
     </>
   )
