@@ -35,36 +35,36 @@ import Gary from "media/thumbnails/gary.jpg";
 import Sylvia from "media/thumbnails/sylvia.jpg";
 import Matt from "media/thumbnails/matt.jpg";
 // ==== Thumnail Image
-import Thumnail1 from "media/thumbnails/2d-animation/1.jpg"
-import Thumnail2 from "media/thumbnails/2d-animation/2.jpg"
-import Thumnail3 from "media/thumbnails/2d-animation/3.jpg"
-import Thumnail4 from "media/thumbnails/2d-animation/4.jpg"
-import Thumnail5 from "media/thumbnails/2d-animation/5.jpg"
-import Thumnail6 from "media/thumbnails/2d-animation/6.jpg"
-import Thumnail7 from "media/thumbnails/3d-animation/1.jpg"
-import Thumnail8 from "media/thumbnails/3d-animation/2.jpg"
-import Thumnail9 from "media/thumbnails/3d-animation/3.jpg"
-import Thumnail10 from "media/thumbnails/3d-animation/4.jpg"
-import Thumnail11 from "media/thumbnails/3d-animation/5.jpg"
-import Thumnail12 from "media/thumbnails/3d-animation/6.jpg"
-import Thumnail13 from "media/thumbnails/whiteboard/1.jpg"
-import Thumnail14 from "media/thumbnails/whiteboard/2.jpg"
-import Thumnail15 from "media/thumbnails/whiteboard/3.jpg"
-import Thumnail16 from "media/thumbnails/whiteboard/4.jpg"
-import Thumnail17 from "media/thumbnails/whiteboard/5.jpg"
-import Thumnail18 from "media/thumbnails/whiteboard/6.jpg"
-import Thumnail19 from "media/thumbnails/motion-graphics/1.jpg"
-import Thumnail20 from "media/thumbnails/motion-graphics/2.jpg"
-import Thumnail21 from "media/thumbnails/motion-graphics/3.jpg"
-import Thumnail22 from "media/thumbnails/motion-graphics/4.jpg"
-import Thumnail23 from "media/thumbnails/motion-graphics/5.jpg"
-import Thumnail24 from "media/thumbnails/motion-graphics/6.jpg"
-import Thumnail25 from "media/thumbnails/hybrid/1.jpg"
-import Thumnail26 from "media/thumbnails/hybrid/2.jpg"
-import Thumnail27 from "media/thumbnails/hybrid/3.jpg"
-import Thumnail28 from "media/thumbnails/hybrid/4.jpg"
-import Thumnail29 from "media/thumbnails/hybrid/5.jpg"
-import Thumnail30 from "media/thumbnails/hybrid/6.jpg";
+import Thumnail1 from "media/thumbnails/2d-animation/1.png";
+import Thumnail2 from "media/thumbnails/2d-animation/2.png";
+import Thumnail3 from "media/thumbnails/2d-animation/3.png";
+import Thumnail4 from "media/thumbnails/2d-animation/4.png";
+import Thumnail5 from "media/thumbnails/2d-animation/5.png";
+import Thumnail6 from "media/thumbnails/2d-animation/6.png";
+import Thumnail7 from "media/thumbnails/3d-animation/1.png";
+import Thumnail8 from "media/thumbnails/3d-animation/2.png";
+import Thumnail9 from "media/thumbnails/3d-animation/3.png";
+import Thumnail10 from "media/thumbnails/3d-animation/4.png";
+import Thumnail11 from "media/thumbnails/3d-animation/5.png";
+import Thumnail12 from "media/thumbnails/3d-animation/6.png";
+import Thumnail13 from "media/thumbnails/whiteboard/1.png";
+import Thumnail14 from "media/thumbnails/whiteboard/2.png";
+import Thumnail15 from "media/thumbnails/whiteboard/3.png";
+import Thumnail16 from "media/thumbnails/whiteboard/4.png";
+import Thumnail17 from "media/thumbnails/whiteboard/5.png";
+import Thumnail18 from "media/thumbnails/whiteboard/6.png";
+import Thumnail19 from "media/thumbnails/motion-graphics/1.png";
+import Thumnail20 from "media/thumbnails/motion-graphics/2.png";
+import Thumnail21 from "media/thumbnails/motion-graphics/3.png";
+import Thumnail22 from "media/thumbnails/motion-graphics/4.png";
+import Thumnail23 from "media/thumbnails/motion-graphics/5.png";
+import Thumnail24 from "media/thumbnails/motion-graphics/6.png";
+import Thumnail25 from "media/thumbnails/hybrid/1.png";
+import Thumnail26 from "media/thumbnails/hybrid/2.png";
+import Thumnail27 from "media/thumbnails/hybrid/3.png";
+import Thumnail28 from "media/thumbnails/hybrid/4.png";
+import Thumnail29 from "media/thumbnails/hybrid/5.png";
+import Thumnail30 from "media/thumbnails/hybrid/6.png";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -187,7 +187,7 @@ export default function Page() {
                 thumbnail: Thumnail21,
             },
             {
-                video: "https://player.vimeo.com/progressive_redirect/playback/907667958/rendition/1080p/file.mp4?loc=external&signature=a3502c5e8ab318001eebdb072c17871dd6d561ebb9f922a08ef03dc6ffd35fe4",
+                video: "https://player.vimeo.com/progressive_redirect/playback/911724985/rendition/1080p/file.mp4?loc=external&signature=df10cc62ec59a62f54069b460626dcb1c6bdfa84519f840c75a06dba68ed5ba6",
                 thumbnail: Thumnail22,
             },
             {
