@@ -201,14 +201,14 @@ function NavList() {
             >
                 <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Pricing</span>
             </Link>
-            <Link
+            {/* <Link
                 href="/blog"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
                 <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Blog</span>
-            </Link>
+            </Link> */}
             <Link
                 href="/contact-us"
                 variant="small"
