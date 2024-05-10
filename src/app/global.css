@@ -722,11 +722,16 @@ div#ty7 {
 /*=============== Illustrative lp ===============*/
 
 #testimonialsCMP .swiper-slide-active {
-  background-color: #fff;
+  /* background-color: #fff; */
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(38, 1, 1, 1) 100%
+  );
   box-shadow: 0 0 68.62px 4.38px rgba(0, 0, 0, 0.09);
   opacity: 1;
   border-radius: 8px;
-  border: 1px solid #efefef;
+  /* border: 1px solid #efefef; */
 }
 
 #testimonialsCMP .swiper-pagination {

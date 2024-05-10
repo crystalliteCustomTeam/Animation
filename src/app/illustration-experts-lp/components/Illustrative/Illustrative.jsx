@@ -165,108 +165,110 @@ const Illustrative = () => {
 
     return (
         <>
-            <section className='py-[50px] block bg-[url("../../public/illustration-experts/illus-tab-sec-bg.png")] h-[100%] bg-cover bg-center'>
-                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
-                    <div className="grid grid-cols-12">
-                        <div className="col-span-12">
-                            <h2 className='text-[#333] text-center font-[700] montserrat text-[30px] lg:text-[35px] leading-[40px] pb-3'>Our Best Illustrative Design Types</h2>
-                            <p className='text-[#333] text-center text-[16px] lg:text-[15px] montserrat leading-[1.5]'>From custom book cover illustrations to mascot logos, we’ve
-                                been providing our clients with a range of illustration design services.</p>
+            <div className='bg-[#000000] '>
+                <div className='py-[80px] block bg-[url("../../public/illustration-experts/illus-tab-sec-bg.png")] h-[100%] bg-cover bg-center' >
+                    <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto ">
+                        <div className="grid grid-cols-12">
+                            <div className="col-span-12">
+                                <h2 className='text-[#fff] text-center font-[700] montserrat text-[30px] lg:text-[35px] leading-[40px] pb-3'>Our Best Illustrative Design Types</h2>
+                                <p className='text-[#f2f2f2] text-center text-[16px] lg:text-[15px] montserrat leading-[1.5]'>From custom book cover illustrations to mascot logos, we’ve
+                                    been providing our clients with a range of illustration design services.</p>
 
 
-                            <div className={`mt-6 lg:mt-0`}>
-                                <Slider {...testiSlider} className="border-b border-gray-200 pb-[10px] slick-slider Illustrative">
-                                    {tabInfo.map((item, index) => (
-                                        <div key={index}
-                                            className={`flex justify-center  px-5 md:px-8 py-3 text-[15px] lg:text-[18px] montserrat cursor-pointer text-center   ${activeTab === index ? "text-primary-100 border-b-2 border-primary-100" : "text-[#898989]"}`}
-                                            onClick={() => handleTabClick(index)}>
-                                            <div className='flex justify-center'> <Image src={item.image} /></div>
-                                            {item.label}
-                                        </div>
-                                    ))}
-                                </Slider>
-
-                                <div className="grid grid-cols-12 gap-y-8 justify-content-center py-0 lg:py-[40px]">
-                                    {tabContents[activeTab].map((item, index) => (
-                                        <>
-                                            <div key={index} className={`col-span-12 lg:col-span-6 content-center px-[15px] relative`}>
-                                                <div className={`flex justify-center mt-16 lg:mt-0`}>
-                                                    <Image
-                                                        src={item.image}
-                                                        alt="Infinity Animation"
-                                                        quality={85}
-                                                        className='w-[40%] h-auto'
-                                                    />
-                                                </div>
+                                <div className={`mt-6 lg:mt-0`}>
+                                    <Slider {...testiSlider} className="border-b border-gray-200 pb-[10px] slick-slider Illustrative">
+                                        {tabInfo.map((item, index) => (
+                                            <div key={index}
+                                                className={`flex justify-center  px-5 md:px-8 py-3 text-[15px] lg:text-[18px] montserrat cursor-pointer text-center   ${activeTab === index ? "text-primary-100 border-b-2 border-primary-100" : "text-[#898989]"}`}
+                                                onClick={() => handleTabClick(index)}>
+                                                <div className='flex justify-center'> <Image src={item.image} /></div>
+                                                {item.label}
                                             </div>
-                                            <div
-                                                className={`col-span-12 lg:col-span-6 `}
-                                            >
-                                                <h2 className=" text-[#685edd] text-[28px] lg:text-[36px] font-[700] montserrat mb-2 lg:mb-5">
-                                                    {item.title}
-                                                </h2>
-                                                <p className="text-[16px] lg:text-[15px] text-[#000] font-[400] montserrat font-sans tracking-wider text-justify mb-2 lg:mb-5">
-                                                    {item.desc}
-                                                </p>
-                                                <div className='grid grid-cols-12 gap-y-4 content-start justify-items-stretch border-t border-gray-200 py-[20px]'>
-                                                    <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
-                                                        <div
-                                                            className="flex justify-center items-center text-[16px] lg:text-[15px] text-[#000] font-[400] montserrat font-sans leading-snug tracking-wider text-justify"
-                                                        >
-                                                            <div className='pe-2'>
-                                                                <Image src={CheckIcon} width={20} />
-                                                            </div>{item.features.list1}
+                                        ))}
+                                    </Slider>
+
+                                    <div className="grid grid-cols-12 gap-y-8 justify-content-center py-0 lg:py-[40px]">
+                                        {tabContents[activeTab].map((item, index) => (
+                                            <>
+                                                <div key={index} className={`col-span-12 lg:col-span-6 content-center px-[15px] relative`}>
+                                                    <div className={`flex justify-center mt-16 lg:mt-0`}>
+                                                        <Image
+                                                            src={item.image}
+                                                            alt="Infinity Animation"
+                                                            quality={85}
+                                                            className='w-[40%] h-auto'
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className={`col-span-12 lg:col-span-6 `}
+                                                >
+                                                    <h2 className=" text-[#ffffff] text-[28px] lg:text-[36px] font-[700] montserrat mb-2 lg:mb-5">
+                                                        {item.title}
+                                                    </h2>
+                                                    <p className="text-[16px] lg:text-[15px] text-[#f2f2f2] font-[400] montserrat font-sans tracking-wider text-justify mb-2 lg:mb-5">
+                                                        {item.desc}
+                                                    </p>
+                                                    <div className='grid grid-cols-12 gap-y-4 content-start justify-items-stretch border-t border-gray-200 py-[20px]'>
+                                                        <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
+                                                            <div
+                                                                className="flex justify-center items-center text-[16px] lg:text-[15px] text-[#f2f2f2] font-[400] montserrat font-sans leading-snug tracking-wider text-justify"
+                                                            >
+                                                                <div className='pe-2'>
+                                                                    <Image src={CheckIcon} width={20} />
+                                                                </div>{item.features.list1}
+                                                            </div>
+                                                        </div>
+                                                        <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
+                                                            <div
+                                                                className="flex justify-center items-center text-[16px] lg:text-[15px] text-[#f2f2f2] font-[400] montserrat font-sans leading-snug tracking-wider text-justify"
+                                                            >
+                                                                <div className='pe-2'>
+                                                                    <Image src={CheckIcon} width={20} />
+                                                                </div>{item.features.list1}
+                                                            </div>
+                                                        </div>
+                                                        <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
+                                                            <div
+                                                                className="flex justify-center items-center text-[16px] lg:text-[15px] text-[#f2f2f2] font-[400] montserrat font-sans leading-snug tracking-wider text-justify"
+                                                            >
+                                                                <div className='pe-2'>
+                                                                    <Image src={CheckIcon} width={20} />
+                                                                </div>{item.features.list1}
+                                                            </div>
+                                                        </div>
+                                                        <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
+                                                            <div
+                                                                className="flex justify-center items-center text-[16px] lg:text-[15px] text-[#f2f2f2] font-[400] montserrat font-sans leading-snug tracking-wider text-justify"
+                                                            >
+                                                                <div className='pe-2'>
+                                                                    <Image src={CheckIcon} width={20} />
+                                                                </div>{item.features.list1}
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
-                                                        <div
-                                                            className="flex justify-center items-center text-[16px] lg:text-[15px] text-[#000] font-[400] montserrat font-sans leading-snug tracking-wider text-justify"
-                                                        >
-                                                            <div className='pe-2'>
-                                                                <Image src={CheckIcon} width={20} />
-                                                            </div>{item.features.list1}
+                                                    <div className="flex gap-4 md:gap-8 py-[10px]">
+                                                        <div className="btn">
+                                                            <button onClick={popupHandle} className='flex items-center text-[16px] text-white hover:text-black font-[700] montserrat bg-[#fa690c] hover:bg-[#ffffff] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-full leading-[20px] shadow-2xl-[1.5px]-[#fa690c]  hover:border-[#ffffff]'>
+                                                                Get Started
+                                                            </button>
                                                         </div>
-                                                    </div>
-                                                    <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
-                                                        <div
-                                                            className="flex justify-center items-center text-[16px] lg:text-[15px] text-[#000] font-[400] montserrat font-sans leading-snug tracking-wider text-justify"
-                                                        >
-                                                            <div className='pe-2'>
-                                                                <Image src={CheckIcon} width={20} />
-                                                            </div>{item.features.list1}
-                                                        </div>
-                                                    </div>
-                                                    <div className='col-span-12 lg:col-span-6 relative justify-self-start'>
-                                                        <div
-                                                            className="flex justify-center items-center text-[16px] lg:text-[15px] text-[#000] font-[400] montserrat font-sans leading-snug tracking-wider text-justify"
-                                                        >
-                                                            <div className='pe-2'>
-                                                                <Image src={CheckIcon} width={20} />
-                                                            </div>{item.features.list1}
+                                                        <div className="btn">
+                                                            <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[16px] text-black hover:text-white font-[700] montserrat bg-[#ffffff] hover:bg-[#fa690c] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-full leading-[20px] shadow-2xl border-[1.5px] border-[#ffffff] hover:border-[#fa690c]'>
+                                                                Live Chat
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-4 md:gap-8 py-[10px]">
-                                                    <div className="btn">
-                                                        <button onClick={popupHandle} className='flex items-center text-[16px] text-white hover:text-black font-[700] montserrat bg-[#fa690c] hover:bg-[#ffffff] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-full leading-[20px] shadow-2xl-[1.5px]-[#fa690c]  hover:border-black'>
-                                                            Get Started
-                                                        </button>
-                                                    </div>
-                                                    <div className="btn">
-                                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[16px] text-black hover:text-white font-[700] montserrat bg-[#ffffff] hover:bg-[#fa690c] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-full leading-[20px] shadow-2xl border-[1.5px] border-[#000000] hover:border-[#fa690c]'>
-                                                            Live Chat
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </>
-                                    ))}
+                                            </>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     )
 }

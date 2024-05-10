@@ -5,7 +5,7 @@ import TestiImg from 'media/illustration-experts/testi-img.png'
 
 const Testimonials = () => {
     return (
-        <section id="testimonialsCMP">
+        <section id="testimonialsCMP" className="bg-[#000]">
             <div>
                 <div className="container">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 items-center">

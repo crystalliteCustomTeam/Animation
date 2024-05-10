@@ -20,7 +20,7 @@ const Banner = () => {
                     <div className="grid grid-cols-12 gap-y-2 justify-content-center">
                         <div className="col-span-12 lg:col-span-6 content-center px-[15px]">
                             <h1 className='text-[#ffffff] text-center sm:text-start text-[30px] lg:text-[50px] font-[700] uppercase montserrat lg:w-11/12 leading-[1.2] md:leading-[60px]'>TRANSLATE YOUR VISION INTO CAPTIVATING ILLUSTRATIONS .</h1>
-                            <p className='text-[#ffffff] font-normal text-center sm:text-start text-[16px] lg:text-[15px] montserrat lg:w-11/12 leading-[25px] py-[25px]'>We make your illustrations with much precision, and our process is simple, fast, and affordable. Check out our custom illustration design packages now!</p>
+                            <p className='text-[#f2f2f2] font-normal text-center sm:text-start text-[16px] lg:text-[15px] montserrat lg:w-11/12 leading-[25px] py-[25px]'>We make your illustrations with much precision, and our process is simple, fast, and affordable. Check out our custom illustration design packages now!</p>
 
                             <div className="flex justify-center sm:justify-start gap-4 md:gap-6">
                                 <div className="btn">
