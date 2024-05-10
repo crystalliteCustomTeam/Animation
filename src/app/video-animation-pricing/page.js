@@ -9,6 +9,7 @@ import Testimonial from '@/components/testimonial/Testimonial';
 import Contact from '@/components/contact/Contact';
 //==== Testimonial Images
 import icon2 from "media/icons/stars.png"
+import EddLockWood from "media/thumbnails/Edd-Lockwood.jpg";
 import Emily from "media/thumbnails/emily.jpg";
 import Mathew from "media/thumbnails/mathew.jpg";
 import Helen from "media/thumbnails/helen.jpg";
@@ -35,8 +36,14 @@ export default function Page() {
         bgPrime: true,
     }
     //=====Testimonial Fold=====//
-    const testiContent = [
-{
+     const testiContent = [
+        {
+            stars: icon2,
+            name: 'Edd Lockwood',
+            video: "https://youtu.be/1ab6famvBmE?si=lWPOQck-AXmKdBfe",
+            thumbnail: EddLockWood,
+        },
+        {
             stars: icon2,
             name: 'Emily Margolis',
             video: "https://youtu.be/NfhGVS6thtM?si=qKGBKPRdLj_8onVy",

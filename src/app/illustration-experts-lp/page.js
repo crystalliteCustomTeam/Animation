@@ -8,6 +8,7 @@ import Illustrative from './components/Illustrative/Illustrative';
 import TreeStep from './components/tree-step/treeStep';
 import LookingFor from './components/looking-for/lookingFor';
 import Testimonials from './components/testimonial/Testimonials';
+import Pricing from '@/components/pricing/Pricing';
 
 const Illustration = () => {
   // ===== Brands 1 Content ===== //
@@ -19,6 +20,11 @@ const Illustration = () => {
     isBtn: true,
     backgroundImage: 'bg-[url("../../public/illustration-experts/cta-bg-2.webp")]'
   }
+  //=====Pricing Fold=====//
+  const pricing = {
+    title: (<> Pricing Plans </>),
+    para: (<> Easy on the pocket and the eyes. </>),
+};
   // ===== Brands 2 Content ===== //
   const brands2 = {
     // image : Brand1,
@@ -32,13 +38,14 @@ const Illustration = () => {
 
   return (
     <>
-      <div className='bg-white'>
+      <div className='bg-dark'>
         <Banner />
         <Portfolio />
         <Brands content={brands1} />
         <Illustrative />
         <Brands content={brands2} />
         <TreeStep />
+        <Pricing content={pricing} />
         <LookingFor />
         <Brands content={brands2} />
         <Testimonials />

@@ -30,6 +30,7 @@ import boosticon2 from "media/icons/boost-icon2.png";
 import boosticon3 from "media/icons/boost-icon3.png";
 //==== Testimonial Images
 import icon2 from "media/icons/stars.png";
+import EddLockWood from "media/thumbnails/Edd-Lockwood.jpg";
 import Emily from "media/thumbnails/emily.jpg";
 import Mathew from "media/thumbnails/mathew.jpg";
 import Helen from "media/thumbnails/helen.jpg";
@@ -325,6 +326,12 @@ export default function Page() {
     };
     //=====Testimonial Fold=====//
     const testiContent = [
+        {
+            stars: icon2,
+            name: 'Edd Lockwood',
+            video: "https://youtu.be/1ab6famvBmE?si=lWPOQck-AXmKdBfe",
+            thumbnail: EddLockWood,
+        },
         {
             stars: icon2,
             name: 'Emily Margolis',

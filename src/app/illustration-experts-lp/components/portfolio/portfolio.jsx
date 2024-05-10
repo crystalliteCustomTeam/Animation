@@ -18,6 +18,7 @@ import Thumbnail7 from "media/illustration-experts/profolio-img-7.png"
 import Thumbnail8 from "media/illustration-experts/profolio-img-8.png"
 import Thumbnail9 from "media/illustration-experts/profolio-img-9.png"
 import { FaEye } from "react-icons/fa";
+import CTA from '@/components/cta/CTA';
 
 
 const tabContents = [
@@ -120,16 +121,27 @@ const Portfolio = () => {
                     </div>
 
                     <div className="flex gap-4 md:gap-8 justify-center py-0 lg:py-[35px]">
-                        <div className="btn">
-                            <button onClick={popupHandle} className='flex items-center text-[16px] text-white hover:text-black font-[700] montserrat bg-[#fa690c] hover:bg-[#ffffff] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-full leading-[20px] shadow-2xl border-[1.5px] border-[#fa690c]  hover:border-white'>
-                                Get Started
-                            </button>
-                        </div>
-                        <div className="btn">
-                            <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[16px] text-black hover:text-white font-[700] montserrat bg-[#ffffff] hover:bg-[#fa690c] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-full leading-[20px] shadow-2xl border-[1.5px] border-[#ffffff] hover:border-[#fa690c]'>
-                                Live Chat
-                            </a>
-                        </div>
+                    <div className="flex gap-6">
+                                <CTA
+                                    text="Get Started"
+                                    icon="/icons/arrow-red.png"
+                                    iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2"
+                                    bg="bg-prime"
+                                    color={`text-white`}
+                                    border={`border-2 border-[#f5090b]`}
+                                    hover="hover:bg-transparent"
+                                />
+                                <CTA
+                                    text="Live Chat"
+                                    icon="/icons/chat.png"
+                                    iconCss="w-[40px]"
+                                    bg="bg-[#000]"
+                                    color={`text-white`}
+                                    border={`border-2 border-[#fff]`}
+                                    hover="hover:bg-prime"
+                                    href="javascript:$zopim.livechat.window.show();"
+                                />
+                            </div>
                     </div>
                 </div>
             </section>

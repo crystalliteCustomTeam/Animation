@@ -9,7 +9,7 @@ const TreeStep = () => {
 
     return (
         <>
-            <section className='py-16 bg-[#000000]'>
+            <section className='pb-3 pt-16 bg-[#000000]'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-6">
                         <div className="col-span-12">
