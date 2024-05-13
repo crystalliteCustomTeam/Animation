@@ -26,3 +26,9 @@
         transform: scale(1.1)
     }
 }
+
+.bannerImage {
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
