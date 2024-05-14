@@ -40,11 +40,12 @@ const Banner = () => {
             slidesPerView: 'auto',
             freeMode: true,
             grabCursor: true,
-            centeredSlides: "true",
+            // centeredSlides: "true",
             spaceBetween: "20",
             autoplay: {
-                delay: 2000,
-                disableOnInteraction: "false"
+                delay: 3000,
+                disableOnInteraction: "false",
+                stopOnLastSlide:'false'
             },
         };
         Object.assign(swiperRef.current, params);
@@ -115,10 +116,10 @@ const Banner = () => {
 
                         {/* swiper slider */}
                         <div className="col-span-12 lg:col-span-6 flex justify-center ">
-                            <swiper-container ref={swiperRef} init={false} class="md:h-[700px] h-[800px]">
+                            <swiper-container ref={swiperRef} init={false} className="sm:h-[400px] md:h-[700px] h-[800px]">
                                 {
                                     testiCard && testiCard.map((e, i) => (
-                                        <swiper-slide key={i}>
+                                        <swiper-slide key={i} >
                                             <div className={styles.bannerImage} >
                                                 <Image src={e.imageSrc} alt='banner-logos'  className='object-contain mt-4 img-fluid' />
                                             </div>
