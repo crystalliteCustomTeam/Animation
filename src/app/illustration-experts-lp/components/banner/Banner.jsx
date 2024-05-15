@@ -20,19 +20,6 @@ const Banner = () => {
         togglePopup(popup)
     }
 
-
-    // const testiSlider = {
-    //     dots: false,
-    //     arrows: false,
-    //     infinite: true,
-    //     autoplay: true,
-    //     autoplaySpeed: 2000,
-    //     speed: 1000,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     adaptiveHeight: true,
-    // };
-
     useEffect(() => {
         register();
         const params = {
@@ -45,7 +32,7 @@ const Banner = () => {
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: "false",
-                stopOnLastSlide:'false'
+                stopOnLastSlide: 'false'
             },
         };
         Object.assign(swiperRef.current, params);
@@ -98,21 +85,6 @@ const Banner = () => {
 
                             </div>
                         </div>
-                        {/* <div className="col-span-12 lg:col-span-6 flex justify-center ">
-                            <Image src={BannerLogos} alt='banner-logos' className='object-contain mt-4' />
-
-                        </div> */}
-
-                        {/* slick slider */}
-                        {/* <div className="col-span-12 lg:col-span-6 flex justify-center ">
-                            <Slider {...testiSlider} className={styles.slickSlider}>
-                                {tabInfo.map((item, index) => (
-                                    <div className={styles.bannerImage} key={index}>
-                                    <Image src={item.imageSrc} alt='banner-logos'  />
-                                    </div>
-                                ))}
-                            </Slider>
-                        </div> */}
 
                         {/* swiper slider */}
                         <div className="col-span-12 lg:col-span-6 flex justify-center ">
@@ -121,7 +93,7 @@ const Banner = () => {
                                     testiCard && testiCard.map((e, i) => (
                                         <swiper-slide key={i} >
                                             <div className={styles.bannerImage} >
-                                                <Image src={e.imageSrc} alt='banner-logos'  className='object-contain mt-4 img-fluid' />
+                                                <Image src={e.imageSrc} alt='banner-logos' className='object-contain mt-4 img-fluid' />
                                             </div>
                                         </swiper-slide>
                                     ))
