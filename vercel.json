@@ -3,7 +3,7 @@
       {
         "source": "/^www\\.(.*)$/",
         "destination": "https://infinityanimations.com/$1",
-        "permanent": true
+        "permanent": false
       },
       {
         "source": "/cgi-and-vfx",
