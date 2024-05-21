@@ -68,6 +68,7 @@ import Thumnail27 from "media/thumbnails/hybrid/3.png";
 import Thumnail28 from "media/thumbnails/hybrid/4.png";
 import Thumnail29 from "media/thumbnails/hybrid/5.png";
 import Thumnail30 from "media/thumbnails/hybrid/6.png";
+import TestimonialCopy from '@/components/testimonial-copy/Testimonial';
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -387,12 +388,88 @@ export default function Page() {
             message: "The architectural visualization provided by this team surpassed our expectations. The animations brought our designs to life with incredible detail and realism. A fantastic experience from start to finish!",
         },
     ];
+
     const testimonial = {
         title: (<> An Who’s Who of Industry Leading Clients </>),
         para: (<> If you can’t trust us, try trusting them.</>),
         btnBg: "bg-prime",
         testiContent: testiContent
     };
+
+    //=====Testimonial Fold=====//
+    const testiContentCopy = [
+        {
+            stars: icon2,
+            name: 'Edd Lockwood',
+            para: `“Cloud Animation services earned my respect by providing high-quality,
+            aesthetically pleasing animated content. The group executed my project in a
+            unique and impressive manner.”`,
+            video: "https://youtu.be/1ab6famvBmE?si=lWPOQck-AXmKdBfe",
+            thumbnail: EddLockWood,
+        },
+        {
+            stars: icon2,
+            name: 'Emily Margolis',
+            para: `“Cloud Animation services earned my respect by providing high-quality,
+            aesthetically pleasing animated content. The group executed my project in a
+            unique and impressive manner.”`,
+            video: "https://youtu.be/NfhGVS6thtM?si=qKGBKPRdLj_8onVy",
+            thumbnail: Emily,
+        },
+        {
+            stars: icon2,
+            name: 'Mathew',
+            para: `“Cloud Animation services earned my respect by providing high-quality,
+            aesthetically pleasing animated content. The group executed my project in a
+            unique and impressive manner.”`,
+            video: "https://youtu.be/elOXjok2nWU?si=YoauMkUQvublB-V5",
+            thumbnail: Mathew,
+        },
+        {
+            stars: icon2,
+            name: 'Helen Brooks',
+            para: `“Cloud Animation services earned my respect by providing high-quality,
+            aesthetically pleasing animated content. The group executed my project in a
+            unique and impressive manner.”`,
+            video: "https://youtu.be/e5GWTWd4k7U?si=OXc3_K1kpo7OxOQE",
+            thumbnail: Helen,
+        },
+        {
+            stars: icon2,
+            name: 'Gary Wilson',
+            para: `“Cloud Animation services earned my respect by providing high-quality,
+            aesthetically pleasing animated content. The group executed my project in a
+            unique and impressive manner.”`,
+            video: "https://youtu.be/gQt3RKFwaqQ?si=jGBKle6DJhd1Lvdn",
+            thumbnail: Gary,
+        },
+        {
+            stars: icon2,
+            name: 'Sylvia David',
+            para: `“Cloud Animation services earned my respect by providing high-quality,
+            aesthetically pleasing animated content. The group executed my project in a
+            unique and impressive manner.”`,
+            video: "https://youtu.be/UU3BQAt7hlg?si=jiE_E2Hci-xeq1GQ",
+            thumbnail: Sylvia,
+        },
+        {
+            stars: icon2,
+            name: 'Matt Evans',
+            para: `“Cloud Animation services earned my respect by providing high-quality,
+            aesthetically pleasing animated content. The group executed my project in a
+            unique and impressive manner.”`,
+            video: "https://youtu.be/8c0pcN-OQGI?si=3i-Td6-MD9gwl3FZ",
+            thumbnail: Matt,
+        },
+    ];
+
+
+    const testimonialCopy = {
+        title: (<> We Love Getting Feedback </>),
+        testiContentCopy: testiContentCopy
+    };
+
+
 
     return (
         <>
@@ -404,6 +481,7 @@ export default function Page() {
             <Concept content={concept} />
             <Boost content={boost} />
             <Testimonial content={testimonial} />
+            <TestimonialCopy content={testimonialCopy} />
             <Contact />
             <Script id="websiteSchema" type="application/ld+json">
                 {`

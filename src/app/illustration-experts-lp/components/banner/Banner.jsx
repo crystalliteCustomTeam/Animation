@@ -5,7 +5,10 @@ import usePopup from '@/app/configs/store/Popup';
 //===== CSS
 import styles from './banner.module.css'
 // ===== Images
-import BannerLogos from "media/illustration-experts/banner-side-img.svg"
+import BannerLogos1 from "media/illustration-experts/banner-side-img-1.svg"
+import BannerLogos2 from "media/illustration-experts/banner-side-img-2.png"
+import BannerLogos3 from "media/illustration-experts/banner-side-img-3.png"
+import BannerLogos4 from "media/illustration-experts/banner-side-img-4.png"
 import CTA from '@/components/cta/CTA';
 // Import Slick Slider
 import Slider from 'react-slick';
@@ -27,8 +30,8 @@ const Banner = () => {
             slidesPerView: 'auto',
             freeMode: true,
             grabCursor: true,
-            // centeredSlides: "true",
-            spaceBetween: "20",
+            centeredSlides: true,
+            // spaceBetween: "20",
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: "false",
@@ -41,13 +44,16 @@ const Banner = () => {
 
     const testiCard = [
         {
-            imageSrc: BannerLogos,
+            imageSrc: BannerLogos1,
         },
         {
-            imageSrc: BannerLogos,
+            imageSrc: BannerLogos2,
         },
         {
-            imageSrc: BannerLogos,
+            imageSrc: BannerLogos3,
+        },
+        {
+            imageSrc: BannerLogos4,
         },
 
     ]
@@ -55,7 +61,7 @@ const Banner = () => {
         <>
             <section className='bg-fixed bg-cover bg-right-bottom sm:bg-center bg-[#000000] bg-[url("../../public/illustration-experts/main-banner-bg.webp")] h-[100%] pt-[200px] md:pt-[160px]  pb-[30px] md:pb-[50px] mt-[-85px]'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
-                    <div className="grid grid-cols-12 gap-y-2 justify-content-center">
+                    <div className="grid grid-cols-12 justify-content-center">
                         <div className="col-span-12 lg:col-span-6 content-center px-[15px]">
                             <h1 className='text-[#ffffff] text-center sm:text-start text-[30px] lg:text-[50px] font-[700] uppercase montserrat lg:w-11/12 leading-[1.2] md:leading-[60px]'>TRANSLATE YOUR VISION INTO CAPTIVATING ILLUSTRATIONS .</h1>
                             <p className='text-[#f2f2f2] font-normal text-center sm:text-start text-[16px] lg:text-[15px] montserrat lg:w-11/12 leading-[25px] py-[25px]'>We make your illustrations with much precision, and our process is simple, fast, and affordable. Check out our custom illustration design packages now!</p>
@@ -87,13 +93,13 @@ const Banner = () => {
                         </div>
 
                         {/* swiper slider */}
-                        <div className="col-span-12 lg:col-span-6 flex justify-center ">
-                            <swiper-container ref={swiperRef} init={false} className="sm:h-[400px] md:h-[700px] h-[800px]">
+                        <div className="col-span-12 lg:col-span-6 content-center px-[15px] Banner">
+                            <swiper-container ref={swiperRef} init={false} class={`${styles.Banner} `}>
                                 {
                                     testiCard && testiCard.map((e, i) => (
-                                        <swiper-slide key={i} >
-                                            <div className={styles.bannerImage} >
-                                                <Image src={e.imageSrc} alt='banner-logos' className='object-contain mt-4 img-fluid' />
+                                        <swiper-slide key={i} class={`${styles.BannerDiv} `}>
+                                            <div className={`${styles.bannerImage}`} >
+                                                <Image src={e.imageSrc} alt='banner-logos' className=' img-fluid' />
                                             </div>
                                         </swiper-slide>
                                     ))

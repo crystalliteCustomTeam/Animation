@@ -24,6 +24,14 @@ body {
   border: inset 3px black;
 }
 
+.Banner .swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
 @font-face {
   font-family: SF-Pro-Display;
   src: url(../../src/fonts/SF-Pro-Display-Heavy.otf);
@@ -740,7 +748,7 @@ div.swiper-button-prev {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   opacity: 1;
-  background-color: #fff  !important;
+  background-color: #fff !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -756,7 +764,7 @@ div.swiper-button-prev {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   opacity: 1;
-  background-color: #fff  !important;
+  background-color: #fff !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1128,3 +1136,64 @@ div.swiper-button-prev {
     opacity: 1;
   }
 }
+
+/* testmonial - copy */
+.testimonial-copy::before {
+  content: "";
+  width: 110%;
+  height: 1050px;
+  background: url(../../public/testimonial-copy/sec2-bg.webp) 0 0 / contain no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transform: rotateX(0);
+
+}
+
+.testmonial-copy-para {
+  height: 80px;
+  overflow: auto;
+  background: #fff0f1;
+  padding-right: 5px;
+  text-align: start;
+}
+
+.testimonialBg {
+  filter: invert(1);
+}
+
+.overlay-div {
+  position: relative;
+  overflow: hidden;
+}
+
+/* .overlay-div .overlay:before {
+	content: url(../../public/testimonial-copy/port-cloud-icon.webp);
+  
+} */
+
+.overlay-div .overlay {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: #f1f1f15c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(0);
+  transition: .9s linear;
+}
+.testi-icon-video {
+  filter: brightness(0.6);
+}
+
+.box:hover .overlay {
+  border-radius: 50%;
+  transform: rotate(360deg);
+  right: -100%;
+}
+
