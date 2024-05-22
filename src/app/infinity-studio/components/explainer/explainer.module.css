@@ -1,0 +1,92 @@
+.card1:hover {
+    background: #003262;
+}
+
+.iconImg1 {
+    background-image: url(../../../../../public/infinity-studio/ex-icon1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    transition: background-image 0.5s ease-in-out;
+}
+.card1:hover .iconImg1 {
+    background-image: url(../../../../../public/infinity-studio/ex-iconHvr1.png) !important;
+    
+}
+
+.card1:hover h3 {
+    color: white !important;
+}
+
+.card1:hover p {
+    color: white !important;
+}
+
+.card1:hover button {
+    background: white !important;
+}
+
+
+.card2:hover {
+    background: #003262;
+}
+
+.iconImg2 {
+    background-image: url(../../../../../public/infinity-studio/ex-icon2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    transition: background-image 0.5s ease-in-out;
+}
+.card2:hover .iconImg2 {
+    background-image: url(../../../../../public/infinity-studio/ex-iconHvr2.png) !important;
+    
+}
+
+.card2:hover h3 {
+    color: white !important;
+}
+
+.card2:hover p {
+    color: white !important;
+}
+
+.card2:hover button {
+    background: white !important;
+}
+
+
+.card3:hover {
+    background: #003262;
+}
+
+.iconImg3 {
+    background-image: url(../../../../../public/infinity-studio/ex-icon3.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    transition: background-image 0.5s ease-in-out;
+}
+.card3:hover .iconImg3 {
+    background-image: url(../../../../../public/infinity-studio/ex-iconHvr3.png) !important;
+    
+}
+
+.card3:hover h3 {
+    color: white !important;
+}
+
+.card3:hover p {
+    color: white !important;
+}
+
+.card3:hover button {
+    background: white !important;
+}
+

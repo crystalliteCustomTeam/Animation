@@ -16,4 +16,11 @@
       transform: scaleY(1);
     }
   }
+
+  .list {
+    list-style-position: outside;
+  }
+  .list::marker {
+    color: #003262;
+  }
   

@@ -9,7 +9,7 @@ import ClientLogo from "media/video-explainer/ftr-cl-logo-img.png"
 const Clients = () => {
     return (
         <>
-            <section className='py-[50px] bg-cover bg-center bg-[url("../../public/video-explainer/clinet-logo-bg.jpg")]'>
+            <section className='py-[50px] '>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-col-1">
                         <div className="txt">

@@ -7,6 +7,9 @@ import usePopup from '@/app/configs/store/Popup';
 import styles from './banner.module.css'
 // ===== Images
 import BannerLogos from "media/video-explainer/bnr-logo.png"
+import BannerLogosReel from "media/infinity-studio/play.png"
+import Discount from "media/infinity-studio/offer.png"
+import Check from "media/infinity-studio/check.png"
 import chatIcon from "media/video-explainer/chat-icon.png"
 import { CheckCircle } from 'heroicons-react'
 
@@ -135,32 +138,55 @@ const Banner = () => {
 
     return (
         <>
-            <section className='bg-[#003465f0] lg:bg-[url("../../public/infinity-studio/banner.png")] bg-[length:100%_100%] bg-center bg-no-repeat h-[100%] pt-[180px] lg:pt-[265px] pb-[60px] md:pb-[100px] mt-[-85px]'>
+            <section className='bg-[#003465f0] lg:bg-[url("../../public/infinity-studio/banner.png")] bg-[length:100%_100%] bg-center bg-no-repeat h-[100%] pt-[180px] lg:pt-[230px] pb-[60px] md:pb-[100px] mt-[-85px]'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
-                    <div className="grid grid-cols-12 gap-y-12 items-end">
+                    <div className="grid grid-cols-12 gap-y-12 items-end ">
                         <div className="col-span-12 lg:col-span-8">
-                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[30px] font-[700] uppercase montserrat lg:w-10/12 md:leading-[35px] '>EXPAND YOUR BRAND’S REACH WITH AN ENGAGING CUSTOM EXPLAINER VIDEO</h1>
-                            <p className='text-white text-[18px] font-[400] montserrat lg:w-11/12 leading-[25px] py-[25px]'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.</p>
-                            <ul>
-                                <li className='flex items-start gap-x-2'>
-                                    <CheckCircle className='text-white' />
-                                    <span className='text-white font-[400] pb-[10px] montserrat'> Full HD Animations</span>
-                                </li>
-                                <li className='flex items-start gap-x-2'>
-                                    <CheckCircle className='text-white' />
-                                    <span className='text-white font-[400] pb-[10px] montserrat'>Appealing Designs</span>
-                                </li>
-                                <li className='flex items-start gap-x-2'>
-                                    <CheckCircle className='text-white' />
-                                    <span className='text-white font-[400] pb-[10px] montserrat'>Latest Technology</span>
-                                </li>
-                                <li className='flex items-start gap-x-2'>
-                                    <CheckCircle className='text-white' />
-                                    <span className='text-white font-[400] pb-[10px] montserrat'>Award-Winning Agency</span>
-                                </li>
-                            </ul>
-                            <Image src={BannerLogos} alt='banner-logos' className='object-contain mt-4 mb-6' />
-                            <div className="flex gap-4 md:gap-2">
+                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[32px] font-[500] uppercase montserrat lg:w-10/12 md:leading-[48px] '>EXPAND YOUR BRAND’S REACH WITH AN ENGAGING CUSTOM <span className='text-[#f6c501] '> EXPLAINER VIDEO </span></h1>
+                            <p className='text-white text-[15px] font-[300] montserrat lg:w-11/12 leading-[25px] py-[20px]'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.</p>
+                            <div className="grid grid-cols-12 gap-y-6 items-end py-[25px]">
+                                <div className="col-span-12 sm:col-span-6 lg:col-span-5">
+                                    <div className='flex items-center gap-x-2 border-2  rounded-full w-[250px] h-[35px] '>
+                                        <div className='w-[37px] h-[37px]'>
+                                            <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                        </div>
+                                        <span className='text-white font-[400] pb-[10px] montserrat pt-[8px]'> Full HD Animations</span>
+                                    </div>
+                                </div>
+                                <div className="col-span-12 sm:col-span-6 lg:col-span-5">
+                                    <div className='flex items-center gap-x-2 border-2  rounded-full w-[250px] h-[35px] '>
+                                        <div className='w-[37px] h-[37px]'>
+                                            <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                        </div>
+                                        <span className='text-white font-[400] pb-[10px] montserrat pt-[8px]'> Appealing Designs</span>
+                                    </div>
+                                </div>
+                                <div className="col-span-12 sm:col-span-6 lg:col-span-5">
+                                    <div className='flex items-center gap-x-2 border-2  rounded-full w-[250px] h-[35px] '>
+                                        <div className='w-[37px] h-[37px]'>
+                                            <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                        </div>
+                                        <span className='text-white font-[400] pb-[10px] montserrat pt-[8px]'> Latest Technology</span>
+                                    </div>
+                                </div>
+                                <div className="col-span-12 sm:col-span-6 lg:col-span-5">
+                                    <div className='flex items-center gap-x-2 border-2  rounded-full w-[250px] h-[35px] '>
+                                        <div className='w-[37px] h-[37px]'>
+                                            <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                        </div>
+                                        <span className='text-white font-[400] pb-[10px] montserrat pt-[8px]'> Award-Winning Agency</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className="flex gap-4 md:gap-2 mt-4 mb-6">
+                            <Image src={BannerLogos} alt='banner-logos' className='img-fluid  w-[55%]' />
+                            <div className='w-[100px] h-[80px] text-center ms-[10px]'>
+                            <Image src={BannerLogosReel} alt='banner-logos' className='img-fluid mb-2 w-[80%] mx-auto' />
+                            <span className='text-white font-normal montserrat pt-[8px]'>Play Reels</span>
+                            </div>
+                            </div>
+                            {/* <div className="flex gap-4 md:gap-2">
                                 <div className="btn">
                                     <button onClick={popupHandle} className='flex items-center text-[16px] text-black font-[700] montserrat bg-[#f6c501] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                         Get Started
@@ -173,14 +199,14 @@ const Banner = () => {
                                         <span className='text-white text-[16px] montserrat font-[700]'>Live Chat</span>
                                     </div>
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="col-span-12 lg:col-span-4">
-                            <form action="javascript:;" className='bg-[#003465] pt-[20px] relative border-[3px] rounded-xl border-white w-full h-full mx-auto'>
-                                <h3 className='text-white text-[20px] md:text-[25px] leading-[30px] montserrat font-[700] text-left py-[10px] px-[20px]'>Share Your <br className='block' />
-                                    <strong className='text-[30px] text-[#f6c501] md:ml-[2rem] font-extrabold '>
-                                        Animation Idea
-                                    </strong>
+                            <form action="javascript:;" className='bg-[#003465] relative border-[3.5px] rounded-xl border-white w-full h-full mx-auto  sm:w-[450px]'>
+                                <div className=' w-[70%] top-0 mx-auto '>
+                                    <Image src={Discount} className='img-fluid' />
+                                </div>
+                                <h3 className='text-white text-[20px] md:text-[25px] leading-[30px] montserrat font-[700] text-center pt-[20px] pb-[10px] px-[20px]'>Share Your <span className='text-[#f6c501] '> Animation Idea </span>
                                 </h3>
                                 <div className="form pt-[5px] px-[20px] pb-[30px]">
                                     <div className="relative">
@@ -213,11 +239,11 @@ const Banner = () => {
 
                                     <button type='submit' className='bg-[#ffcb05] text-black text-[16px] font-[700] rounded-md montserrat uppercase mt-[10px] py-[13px] px-[8px] shadow-lg w-full duration-700 transition-all hover:duration-700 hover:transition-all' onClick={handleFormSubmit} disabled={isDisabled}>{formStatus}</button>
                                 </div>
-                                <div className={`form_partical absolute top-[-7px] right-[42px] md:right-[12px] ${styles.discountbg}`}>
+                                {/* <div className={`form_partical absolute top-[-7px] right-[42px] md:right-[12px] ${styles.discountbg}`}>
                                     <h6 className={`absolute font-[700] text-right uppercase left-[-33px] m-auto text-white top-[-20px] z-[1] text-[13px] rotate-[-8deg] right-[-58px] montserrat before:content-[''] before:absolute before:w-[135px] before:h-[52px] before:top-[-15px] before:left-[-17px] before:right-0 ${styles.headingParticle} before:rotate-[10deg] before:bg-cover before:bg-center before:z-[-1] w-[110px]`}>Special Offer</h6>
                                     <h4 className={`text-black relative m-0 top-[-2px] text-[30px] font-[700] right-[-32px] rotate-[-18deg] montserrat`}>50%</h4>
                                     <h5 className='m-0 text-black relative z-1 top-[-13px] text-[11px] montserrat font-[700] right-[-42px] rotate-[-18deg]'>Discount</h5>
-                                </div>
+                                </div> */}
                             </form>
                         </div>
                     </div>

@@ -4,3 +4,7 @@
   border-radius: 10px;
   overflow: hidden;
 }
+.background {
+  background: url(../../../../../public/infinity-studio/Section.png);
+  background-repeat: no-repeat;
+}
