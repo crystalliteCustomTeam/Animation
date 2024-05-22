@@ -8,7 +8,7 @@ export const metadata = {
         title: 'Explainer Videos New',
         description: 'Explainer Videos New',
         url: '/explainer-videos-new/',
-        siteName: 'Infinity Animations Pro',
+        siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },

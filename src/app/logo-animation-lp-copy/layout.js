@@ -8,7 +8,7 @@ export const metadata = {
         title: 'Logo Animations - Infinity Animations',
         description: 'Logo Animations.',
         url: '/video-explainer-lp/',
-        siteName: 'Infinity Animations Pro',
+        siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },

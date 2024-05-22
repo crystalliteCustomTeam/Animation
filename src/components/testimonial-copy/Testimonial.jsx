@@ -15,23 +15,28 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css"
 
 
 function TestimonialCopy({ content }) {
-    const { title, testiContentCopy } = content;
+    const { title, para, testiContentCopy } = content;
     const testiSlider = {
         dots: false,
-        arrows: true,
+        arrows: false,
         infinite: false,
         autoplay: false,
         autoplaySpeed: 2000,
         speed: 3000,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         adaptiveHeight: true,
         responsive: [
             {
-                breakpoint: 600,
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 1024,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true,
                 }
             }
         ]
@@ -61,6 +66,9 @@ function TestimonialCopy({ content }) {
                         <h1 className="text-[30px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-3">
                             {title}
                         </h1>
+                        <p className="text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
+                            {para}
+                        </p>
                     </div>
                 </div>
                 <div className={`py-5`}>
@@ -76,9 +84,9 @@ function TestimonialCopy({ content }) {
                                         <Link key={index} href={testimonial.video} datafancybox="gallery" >
                                             <div className='w-[180px] h-[184px] overlay-div'>
                                                 <Image
-                                                src={testimonial.thumbnail}
-                                                alt="Infinity Animations"
-                                                className='w-full h-full rounded-full ' />
+                                                    src={testimonial.thumbnail}
+                                                    alt="Infinity Animations"
+                                                    className='w-full h-full rounded-full ' />
                                                 <div className="overlay">
                                                     <Image src={testimonialIcon} width="45" height="45" className="img-fuild" />
                                                 </div>

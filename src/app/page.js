@@ -9,6 +9,7 @@ import Portfolio from '@/components/portfolio/Portfolio';
 import Concept from '@/components/concept/Concept';
 import Boost from '@/components/boost/Boost';
 import Testimonial from '@/components/testimonial/Testimonial';
+// import TestimonialCopy from '@/components/testimonial-copy/Testimonial';
 import Contact from '@/components/contact/Contact';
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
@@ -68,7 +69,6 @@ import Thumnail27 from "media/thumbnails/hybrid/3.png";
 import Thumnail28 from "media/thumbnails/hybrid/4.png";
 import Thumnail29 from "media/thumbnails/hybrid/5.png";
 import Thumnail30 from "media/thumbnails/hybrid/6.png";
-import TestimonialCopy from '@/components/testimonial-copy/Testimonial';
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -463,13 +463,11 @@ export default function Page() {
         },
     ];
 
-
     const testimonialCopy = {
-        title: (<> We Love Getting Feedback </>),
+        title: (<> An Who’s Who of Industry Leading Clients </>),
+        para: (<> If you can’t trust us, try trusting them.</>),
         testiContentCopy: testiContentCopy
     };
-
-
 
     return (
         <>
@@ -481,7 +479,7 @@ export default function Page() {
             <Concept content={concept} />
             <Boost content={boost} />
             <Testimonial content={testimonial} />
-            <TestimonialCopy content={testimonialCopy} />
+            {/* <TestimonialCopy content={testimonialCopy} /> */}
             <Contact />
             <Script id="websiteSchema" type="application/ld+json">
                 {`

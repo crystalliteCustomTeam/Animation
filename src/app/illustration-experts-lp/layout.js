@@ -8,7 +8,7 @@ export const metadata = {
         title: '',
         description: '',
         url: '/illustration-experts-lp/',
-        siteName: 'Infinity Animations Pro',
+        siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },

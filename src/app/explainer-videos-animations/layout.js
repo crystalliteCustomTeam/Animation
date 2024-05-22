@@ -8,7 +8,7 @@ export const metadata = {
         title: 'Creative and Affordable Explainer Video Company in US - Infinity Animations',
         description: 'Explainer Videos Animations',
         url: '/explainer-videos-animations/',
-        siteName: 'Infinity Animations Pro',
+        siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },

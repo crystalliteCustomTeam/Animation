@@ -8,7 +8,7 @@ export const metadata = {
         title: 'Creative and Affordable Explainer Video Company in US - Infinity Animations',
         description: 'Animated Explainer Videos, Our expert team specializes in creating captivating animated explainer videos that engage and inform your audience.',
         url: '/video-explainer-lp/',
-        siteName: 'Infinity Animations Pro',
+        siteName: 'Infinity Animations',
         locale: 'en_US',
         type: 'website',
     },
