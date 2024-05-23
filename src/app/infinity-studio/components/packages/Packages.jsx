@@ -19,16 +19,16 @@ const Packages = () => {
     return (
         <>
             <section className='py-[80px] packages'>
-                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
+                <div className="lg:max-w-7xl mx-auto">
                     <div className="mb-[30px]">
                         <h2 className='text-[#A70A0E] text-center font-[600] poppins text-[15px] md:text-[20px] lg:text-[25px]'>Pricing </h2>
                         <h3 className='text-[#003262] text-center font-[600] poppins text-[20px] md:text-[30px] lg:text-[36px]'>Types of Explainer Videos</h3>
                         <p className='text-[#231F20] text-[16px] poppins font-[400] py-[17px] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-0'>Infinity Animations is a renowned name in the video animation industry. Our experts produce all <br /> types of animation videos with the usage of modern devices and techniques, some are <br /> discussed below:</p>
                     </div>
-                </div>
-                <div className="grid grid-cols-12 gap-6 px-4 sm:px-8 lg:max-w-7xl mx-auto">
-                        <div className="col-span-12 md:col-span-6 lg:col-span-4 px-[15px] md:px-auto">
-                            <div className={`sm:max-w-[420px] ${styles.borderTrans}`}>
+
+                    <div className="grid grid-cols-12 gap-8">
+                        <div className="col-span-12 lg:col-span-4">
+                            <div className={styles.borderTrans}>
                                 <div className="card bg-[#ffffff] rounded-[10px] py-[10px] ">
                                     <div className="card_top  text-start relative z-1">
                                         <Image src={pkgIcon} alt='pkgIcon_image' className='img-fluid w-[100px] mx-3 my-5' />
@@ -115,8 +115,8 @@ const Packages = () => {
                             </div>
                         </div>
 
-                        <div className="col-span-12 md:col-span-6 lg:col-span-4 px-[15px] md:px-auto">
-                            <div className={`sm:max-w-[420px] ${styles.borderTrans}`}>
+                        <div className="col-span-12 lg:col-span-4 ">
+                            <div className={styles.borderTrans}>
                                 <div className="card bg-[#ffffff] rounded-[10px] py-[10px] ">
                                     <div className="card_top  text-start relative z-1">
                                         <Image src={pkgIcon2} alt='pkgIcon_image' className='img-fluid w-[100px] mx-3 my-5' />
@@ -211,8 +211,8 @@ const Packages = () => {
                             </div>
                         </div>
 
-                        <div className="col-span-12 md:col-span-6 lg:col-span-4 px-[15px] md:px-auto">
-                            <div className={`sm:max-w-[420px] ${styles.borderTrans}`}>
+                        <div className="col-span-12 lg:col-span-4 ">
+                            <div className={styles.borderTrans}>
                                 <div className="card bg-[#ffffff] rounded-[10px] py-[10px] ">
                                     <div className="card_top  text-start relative z-1">
                                         <Image src={pkgIcon3} alt='pkgIcon_image' className='img-fluid w-[100px] mx-3 my-5' />
@@ -307,6 +307,7 @@ const Packages = () => {
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
         </>
     )

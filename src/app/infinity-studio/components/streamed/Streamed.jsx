@@ -186,7 +186,6 @@ const tabContents = [
 const Streamed = () => {
 
     //Tabs
-    const [activeIndex, setActiveIndex] = useState(null);
     const [activeTab, setActiveTab] = useState(0);
     const handleTabClick = (index) => {
         setActiveTab(index);
@@ -219,10 +218,6 @@ const Streamed = () => {
         adaptiveHeight: true,
     };
 
-    const handleCardHover = (index) => {
-        setActiveIndex(index);
-    };
-
     return (
         <>
             <section className={`border border-indigo-300 relative z-1 py-[50px] lg:py-[80px] ${styles.background}`}>
@@ -249,14 +244,14 @@ const Streamed = () => {
                                         }}>
                                             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 relative'>
                                                 {tabContents[activeTab].map((item, index) => (
-                                                    <Link key={index}  href={item.video} datafancybox="gallery" className={`${styles.shadow} w-full h-full `} onMouseEnter={() => handleCardHover(index)}>
-                                                    <div className="overlay relative">
-                                                        <Image src={item.thumbnail} alt="Infinity Animations"  className='w-full h-full ' />
-                                                        <div className={`bg-slate-700/75 h-full w-full absolute left-[50%] top-[50%] translate-x-[-50%] ${index === activeIndex ? 'translate-y-[-50%]' : 'translate-y-[100%]'}   flex items-center justify-center `}>
-                                                            <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0 w-[55px]' />
+                                                    <Link key={index} href={item.video} datafancybox="gallery" className={`${styles.shadow} w-full h-full group`}>
+                                                        <div className="overlay relative">
+                                                            <Image src={item.thumbnail} alt="Infinity Animations" width={468} height={263} className='min-h-[263px]' />
+                                                            <div className="bg-slate-700/75 h-full w-full absolute left-[50%] top-[50%] translate-x-[-50%] group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center">
+                                                                <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0 w-[55px]' />
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </Link>
+                                                    </Link>
                                                 ))}
                                             </div>
                                         </Fancybox>
@@ -272,15 +267,15 @@ const Streamed = () => {
                                             <Slider {...testiSlider} className="streamedSlider pt-3">
                                                 {tabContents[activeTab].map((item, index) => (
                                                     <div className={`py-[25px] px-3 rounded-[20px] relative`} >
-                                                        <Link key={index}  href={item.video} datafancybox="gallery" className={`${styles.shadow} w-full h-full `} onMouseEnter={() => handleCardHover(index)}>
+                                                        <Link key={index} href={item.video} datafancybox="gallery" className={`${styles.shadow} w-full h-full group`}>
                                                             <div className="overlay relative">
-                                                                <Image src={item.thumbnail} alt="Infinity Animations"  className='w-full h-full ' />
-                                                                <div className={`bg-slate-700/75 h-full w-full absolute left-[50%] top-[50%] translate-x-[-50%] ${index === activeIndex ? 'translate-y-[-50%]' : 'translate-y-[100%]'}   flex items-center justify-center `}>
+                                                                <Image src={item.thumbnail} alt="Infinity Animations" width={468} height={263} className='min-h-[263px]' />
+                                                                <div className="bg-slate-700/75 h-full w-full absolute left-[50%] top-[50%] translate-x-[-50%] group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center ">
                                                                     <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0 w-[55px]' />
                                                                 </div>
                                                             </div>
                                                         </Link>
-                                                        </div>
+                                                    </div>
                                                 ))}
                                             </Slider>
                                         </Fancybox>

@@ -141,7 +141,7 @@ const Banner = () => {
                     <div className="grid grid-cols-12 gap-y-12 items-end ">
                         <div className="col-span-12 lg:col-span-8">
                             <h1 className='text-white text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-[600] poppins lg:w-10/12 md:leading-[50px]'>Expand Your Brand’s Reach With An Engaging Custom <span className='text-[#f6c501] '> Explainer Video</span></h1>
-                            <p className='text-white text-[16px] font-[400] poppins lg:w-11/12 leading-[25px] py-[20px]'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.</p>
+                            <p className='text-white text-[16px] font-[400] poppins lg:w-11/12 leading-[25px] py-[20px]'>A leading Video Animation Production Company that helped thousands of Brands to broaden their product reach by Top Notch Custom Explainer Animated Videos.</p>
                             <div className="grid grid-cols-12 gap-y-6 items-end py-[25px]">
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
                                     <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[250px] h-[35px]'>
