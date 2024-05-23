@@ -40,9 +40,9 @@ const Faqs = ({ content }) => {
                                                 {item.answer}
                                             </div>
                                             {item.list && (
-                                                <ul className='ps-4'>
+                                                <ul className='ps-4 pb-2'>
                                                     {item.list.map((listItem, listIndex) => (
-                                                        <li key={listIndex} className={styles.list}>
+                                                        <li key={listIndex} className={`${styles.list} sm:h-[20px]`}>
                                                             <div className={`block text-[14px] font-normal poppins text-black pb-1`}>
                                                                 {listItem}
                                                             </div>

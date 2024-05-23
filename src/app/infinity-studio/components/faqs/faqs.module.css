@@ -19,6 +19,8 @@
 
 .list {
   list-style-type: disc;
+  padding-left: 3px;
+  margin-left: 8px;
 }
 .list::marker {
   color: #003262;

@@ -29,30 +29,36 @@ const partners = () => {
     useEffect(() => {
         const swiperContainer = swiperRef.current;
         const params = {
-            navigation: {
-                nextEl: `.swiper-button-next`,
-                prevEl: `.swiper-button-prev`
-            },
             loop: 'true',
             speed: 400,
             pagination: "false",
-            slidesPerView: 'auto',
             freeMode: true,
             grabCursor: true,
+            slidesPerView: 6,
             spaceBetween: "20",
             autoplay: {
                 delay: 1500,
                 disableOnInteraction: "false",
                 stopOnLastSlide: 'false'
             },
-            slidesPerView: 6,
-            spaceBetween: 10,
             breakpoints: {
-                480: {
+                270:{
+                    slidesPerView: "1",
+                },
+                400:{
+                    slidesPerView: "2",
+                },
+                640: {
                     slidesPerView: "3",
                 },
-                780: {
-                    slidesPerView: "5",
+                768: {
+                    slidesPerView: "3",
+                },
+                1024: {
+                    slidesPerView: "4",
+                },
+                1300: {
+                    slidesPerView: "6",
                 },
 
             }
@@ -61,6 +67,11 @@ const partners = () => {
         Object.assign(swiperContainer, params);
         swiperContainer.initialize();
     }, []);
+
+    // 'sm': '640px',
+    //     'md': '768px',
+    //     'lg': '1024px', 
+    //     'xl': '1300px',
 
     return (
         <>

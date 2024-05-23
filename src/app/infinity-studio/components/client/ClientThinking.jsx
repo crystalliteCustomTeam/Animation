@@ -53,7 +53,7 @@ const ClientThinking = () => {
                                     </div>
 
 
-                                    <div className="card-bottom flex items-center p-[20px] pt-[55px]">
+                                    <div className="card-bottom flex items-center p-[20px] pt-0 sm:pt-[50px] xl:pt-[70px]">
                                         <div className="img">
                                             <Image src={Play} alt='play' className='img-fluid w-[55px]' />
                                         </div>
@@ -82,7 +82,7 @@ const ClientThinking = () => {
                                     </div>
 
 
-                                    <div className="card-bottom flex items-center p-[20px] pt-[35px]">
+                                    <div className="card-bottom flex items-center p-[20px] pt-0 sm:pt-[30px] xl:pt-[50px]">
                                         <div className="img">
                                             <Image src={Play} alt='play' className='img-fluid w-[55px]' />
                                         </div>
@@ -111,7 +111,7 @@ const ClientThinking = () => {
                                     </div>
 
 
-                                    <div className="card-bottom flex items-center p-[20px] pt-[15px]">
+                                    <div className="card-bottom flex items-center p-[20px] pt-0 sm:pt-[5px] xl:pt-[25px]">
                                         <div className="img">
                                             <Image src={Play} alt='play' className='img-fluid w-[55px]' />
                                         </div>
@@ -145,7 +145,7 @@ const ClientThinking = () => {
                                     </div>
 
 
-                                    <div className="card-bottom flex items-center p-[20px] pt-[55px]">
+                                    <div className="card-bottom flex items-center p-[20px] pt-[35px]">
                                         <div className="img">
                                             <Image src={Play} alt='play' className='img-fluid w-[55px]' />
                                         </div>
@@ -174,7 +174,7 @@ const ClientThinking = () => {
                                     </div>
 
 
-                                    <div className="card-bottom flex items-center p-[20px] pt-[35px]">
+                                    <div className="card-bottom flex items-center p-[20px] pt-[15px]">
                                         <div className="img">
                                             <Image src={Play} alt='play' className='img-fluid w-[55px]' />
                                         </div>
@@ -203,7 +203,7 @@ const ClientThinking = () => {
                                     </div>
 
 
-                                    <div className="card-bottom flex items-center p-[20px] pt-[15px]">
+                                    <div className="card-bottom flex items-center p-[20px] pt-0">
                                         <div className="img">
                                             <Image src={Play} alt='play' className='img-fluid w-[55px]' />
                                         </div>

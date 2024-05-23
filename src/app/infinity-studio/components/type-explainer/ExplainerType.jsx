@@ -36,12 +36,31 @@ const ExplainerType = () => {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 600,
+                breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true,
                 }
-            }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            
+            
         ]
     };
 
@@ -63,7 +82,7 @@ const ExplainerType = () => {
                                     <Image src={Card1} alt='card-1' />
                                     <div className="content px-[25px]">
                                         <h3 className='text-black text-[18px] md:text-[22px] font-bold poppins pt-[10px] pb-[10px] leading-[23px] md:leading-[33px] '>board Animation Video</h3>
-                                        <p className='text-[14px] sm:text-[15px] poppins text-[#000] h-[105px] leading-[1.42857143] md:pr-[17px] '>board videos entail simulating black-line graphics on a background while guiding viewers through the entire concept or idea.</p>
+                                        <p className='text-[14px] sm:text-[15px] poppins text-[#000] min-h-[105px] leading-[1.42857143] md:pr-[17px] '>board videos entail simulating black-line graphics on a background while guiding viewers through the entire concept or idea.</p>
                                         <button onClick={popupHandle} className='flex items-center text-[15px] text-[#000] font-[500] poppins py-[10px] tracking-[.3px] leading-[20px] duration-700 transition-all'>
                                             Get Started <span className='ps-2'><HiOutlineArrowLongRight size={28} /></span>
                                         </button>
@@ -75,7 +94,7 @@ const ExplainerType = () => {
                                     <Image src={Card2} alt='card-1' />
                                     <div className="content px-[25px]">
                                         <h3 className='text-[#fff] text-[18px] md:text-[22px] font-bold poppins pt-[10px] pb-[10px] leading-[23px] md:leading-[33px] '>Motion Graphics</h3>
-                                        <p className='text-[14px] sm:text-[15px] poppins text-[#fff] h-[105px] leading-[1.42857143] md:pr-[17px] '>Again, motion graphics animation videos are known for being simple and engaging. It's the perfect animation style for businesses looking to show off a wide variety of goods or services.</p>
+                                        <p className='text-[14px] sm:text-[15px] poppins text-[#fff] min-h-[105px] leading-[1.42857143] md:pr-[17px] '>Again, motion graphics animation videos are known for being simple and engaging. It's the perfect animation style for businesses looking to show off a wide variety of goods or services.</p>
                                         <button onClick={popupHandle} className='flex items-center text-[15px] text-[#FFCC00] font-[500] poppins py-[10px] tracking-[.3px] leading-[20px] duration-700 transition-all'>
                                             Get Started <span className='ps-2'><HiOutlineArrowLongRight size={28} /></span>
                                         </button>
@@ -87,7 +106,7 @@ const ExplainerType = () => {
                                     <Image src={Card3} alt='card-1' />
                                     <div className="content px-[25px]">
                                         <h3 className='text-[#fff] text-[18px] md:text-[22px] font-bold poppins pt-[10px] pb-[10px] leading-[23px] md:leading-[33px] '>2D Character Animation Videos</h3>
-                                        <p className='text-[14px] sm:text-[15px] poppins text-[#fff] h-[105px] leading-[1.42857143] md:pr-[17px] '>2D animation is one of the most widely used and common animation forms today. Because of its versatility, 2D animation allows for a lot of artistic freedom when it comes to adding the next stage of customization.</p>
+                                        <p className='text-[14px] sm:text-[15px] poppins text-[#fff] min-h-[105px] leading-[1.42857143] md:pr-[17px] '>2D animation is one of the most widely used and common animation forms today. Because of its versatility, 2D animation allows for a lot of artistic freedom when it comes to adding the next stage of customization.</p>
                                         <button onClick={popupHandle} className='flex items-center text-[15px] text-[#FFCC00] font-[500] poppins py-[10px] tracking-[.3px] leading-[20px] duration-700 transition-all'>
                                             Get Started <span className='ps-2'><HiOutlineArrowLongRight size={28} /></span>
                                         </button>
@@ -99,7 +118,7 @@ const ExplainerType = () => {
                                     <Image src={Card4} alt='card-1' />
                                     <div className="content px-[25px]">
                                         <h3 className='text-black text-[18px] md:text-[22px] font-bold poppins pt-[10px] pb-[10px] leading-[23px] md:leading-[33px] '>3D Animation Video</h3>
-                                        <p className='text-[14px] sm:text-[15px] poppins text-[#000] h-[105px] leading-[1.42857143] pr-[10px] '>Because of its high-end and high-quality finish, 3D animation has carved out a niche for itself. With a narrative focus on the action, the distinctive aesthetics of 3D animation make it easier for viewers to interact with what is being seen in the video.</p>
+                                        <p className='text-[14px] sm:text-[15px] poppins text-[#000] min-h-[105px] leading-[1.42857143] pr-[10px] '>Because of its high-end and high-quality finish, 3D animation has carved out a niche for itself. With a narrative focus on the action, the distinctive aesthetics of 3D animation make it easier for viewers to interact with what is being seen in the video.</p>
                                         <button onClick={popupHandle} className='flex items-center text-[15px] text-[#000] font-[500] poppins py-[10px] tracking-[.3px] leading-[20px] duration-700 transition-all'>
                                             Get Started <span className='ps-2'><HiOutlineArrowLongRight size={28} /></span>
                                         </button>
@@ -111,7 +130,7 @@ const ExplainerType = () => {
                                     <Image src={Card6} alt='card-1' />
                                     <div className="content px-[25px]">
                                         <h3 className='text-[#fff] text-[18px] md:text-[22px] font-bold poppins pt-[10px] pb-[10px] leading-[23px] md:leading-[33px] '>Screencast Videos</h3>
-                                        <p className='text-[14px] sm:text-[15px] poppins text-[#fff] h-[105px] leading-[1.42857143] md:pr-[17px] '>It is a popular tool for startups in the technology world. It's a fantastic way to explain a procedure or film a demo video.</p>
+                                        <p className='text-[14px] sm:text-[15px] poppins text-[#fff] min-h-[105px] leading-[1.42857143] md:pr-[17px] '>It is a popular tool for startups in the technology world. It's a fantastic way to explain a procedure or film a demo video.</p>
                                         <button onClick={popupHandle} className='flex items-center text-[15px] text-[#FFCC00] font-[500] poppins py-[10px] tracking-[.3px] leading-[20px] duration-700 transition-all'>
                                             Get Started <span className='ps-2'><HiOutlineArrowLongRight size={28} /></span>
                                         </button>
@@ -123,7 +142,7 @@ const ExplainerType = () => {
                                     <Image src={Card5} alt='card-1' />
                                     <div className="content px-[25px]">
                                         <h3 className='text-[#fff] text-[18px] md:text-[22px] font-bold poppins pt-[10px] pb-[10px] leading-[23px] md:leading-[33px] '>Typography Videos</h3>
-                                        <p className='text-[14px] sm:text-[15px] poppins text-[#fff] h-[105px] leading-[1.42857143] md:pr-[17px] '>Typography animation can render a video by effectively underlining and memorably reinforcing the message with the use of clever fonts and animation.</p>
+                                        <p className='text-[14px] sm:text-[15px] poppins text-[#fff] min-h-[105px] leading-[1.42857143] md:pr-[17px] '>Typography animation can render a video by effectively underlining and memorably reinforcing the message with the use of clever fonts and animation.</p>
                                         <button onClick={popupHandle} className='flex items-center text-[15px] text-[#FFCC00] font-[500] poppins py-[10px] tracking-[.3px] leading-[20px] duration-700 transition-all'>
                                             Get Started <span className='ps-2'><HiOutlineArrowLongRight size={28} /></span>
                                         </button>

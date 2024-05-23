@@ -144,33 +144,33 @@ const Banner = () => {
                             <p className='text-white text-[16px] font-[400] poppins lg:w-11/12 leading-[25px] py-[20px]'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.</p>
                             <div className="grid grid-cols-12 gap-y-6 items-end py-[25px]">
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-2  rounded-full w-[250px] h-[35px]'>
-                                        <div className='w-[37px] h-[37px]'>
-                                            <Image src={Check} alt='banner-logos' />
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[250px] h-[35px]'>
+                                        <div className='w-[38px] h-[37px]'>
+                                            <Image src={Check} alt='banner-logos' className='img-fuild'/>
                                         </div>
                                         <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Full HD Animations</span>
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-2  rounded-full w-[250px] h-[35px] '>
-                                        <div className='w-[37px] h-[37px]'>
-                                            <Image src={Check} alt='banner-logos' />
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[250px] h-[35px] '>
+                                        <div className='w-[38px] h-[37px]'>
+                                            <Image src={Check} alt='banner-logos' className='img-fuild'/>
                                         </div>
                                         <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Appealing Designs</span>
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-2  rounded-full w-[250px] h-[35px] '>
-                                        <div className='w-[37px] h-[37px]'>
-                                            <Image src={Check} alt='banner-logos' />
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[250px] h-[35px] '>
+                                        <div className='w-[38px] h-[37px]'>
+                                            <Image src={Check} alt='banner-logos' className='img-fuild'/>
                                         </div>
                                         <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Latest Technology</span>
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-2  rounded-full w-[250px] h-[35px] '>
-                                        <div className='w-[37px] h-[37px]'>
-                                            <Image src={Check} alt='banner-logos' />
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[250px] h-[35px] '>
+                                        <div className='w-[38px] h-[37px]'>
+                                            <Image src={Check} alt='banner-logos' className='img-fuild'/>
                                         </div>
                                         <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Award-Winning Agency</span>
                                     </div>
