@@ -218,17 +218,16 @@ const Streamed = () => {
     };
     return (
         <>
-            <section className={`border border-indigo-300 relative z-1 ${styles.background}`}>
-                {/* <Image src={background} className='img-fluid absolute' /> */}
-                <div className={`px-4 sm:px-8  py-[50px] lg:py-[100px] `}>
+            <section className={`border border-indigo-300 relative z-1 py-[50px] lg:py-[80px] ${styles.background}`}>
+                <div className={`px-4 sm:px-8`}>
                     <div className="grid grid-cols-12 lg:max-w-7xl mx-auto">
                         <div className="col-span-12">
-                        <h2 className='text-[#fff] text-center font-[500] montserrat text-[20px] md:text-[30px] lg:text-[35px]'>Our Streamlined Projects</h2>
-                            <div className={`mt-8 md:mt-12`}>
+                        <h2 className='text-[#fff] text-center font-[600] poppins text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px]'>Our Streamlined Projects</h2>
+                            <div className={`mt-4`}>
                                 <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-5 lg:w-11/12 mx-auto border-b py-[25px]">
                                     {tabInfo.map((tab, index) => (
                                         <li key={index}
-                                            className={`inline-block px-5 md:px-8 py-3 text-[14px] lg:text-[17px] font-[300] montserrat cursor-pointer  ${activeTab === index ? "bg-[#FFCC00] rounded-[5px] text-[#003262]" : "text-[#fff]"}`}
+                                            className={`inline-block px-5 md:px-8 py-3 text-[14px] lg:text-[17px] font-[500] poppins cursor-pointer  ${activeTab === index ? "bg-[#FFCC00] rounded-[5px] text-[#003262]" : "text-[#fff]"}`}
                                             onClick={() => handleTabClick(index)}>
                                             {tab.label}
                                         </li>
@@ -246,7 +245,7 @@ const Streamed = () => {
                                                     <Link key={index} href={item.video} datafancybox="gallery" className={`${styles.shadow} w-full h-full group`}>
                                                         <div className="overlay relative">
                                                             <Image src={item.thumbnail} alt="Infinity Animations" width={468} height={263} className='min-h-[263px]' />
-                                                            <div className="bg-slate-100/50 h-full w-full absolute left-[50%] top-[50%] translate-x-[-50%] group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center ">
+                                                            <div className="bg-slate-700/75 h-full w-full absolute left-[50%] top-[50%] translate-x-[-50%] group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center ">
                                                                 <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0 w-[55px]' />
                                                             </div>
                                                         </div>

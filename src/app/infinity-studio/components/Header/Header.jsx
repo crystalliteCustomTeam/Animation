@@ -47,7 +47,7 @@ const HeaderLP = () => {
 
     return (
         <>
-            <header className={`fixed left-0 top-0 py-4 z-50 w-full ${isScrolled ? 'bg-[#003465] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-3' : 'lg:pt-[30px]'}`}>
+            <header className={`fixed left-0 top-0 py-5 z-50 w-full ${isScrolled ? 'bg-[#003465] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-3' : ''}`}>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
                         <div className="col-span-6 lg:col-span-4 xl:col-span-5">
@@ -61,13 +61,13 @@ const HeaderLP = () => {
                                     <li>
                                         <a href="javascript:$zopim.livechat.window.show();" className='flex items-center gap-3 rounded-[5px] shadow-xl ml-[10px] py-[10px] px-[35px] bg-transparent border'>
                                             <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100]' />
-                                            <span className='font-[400] text-[15px] text-white font-sans tracking-[.3px] leading-[20px]'>
+                                            <span className='font-[400] text-[15px] text-white poppins tracking-[.3px] leading-[20px]'>
                                                 Live Chat
                                             </span>
                                         </a>
                                     </li>
                                     <li>
-                                        <button onClick={popupHandle} className='flex items-center text-[15px] text-[#003262] font-[500] font-sans bg-[#FFCC00] ml-[10px] py-[10px] px-[40px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all'>
+                                        <button onClick={popupHandle} className='flex items-center text-[15px] text-[#003262] font-[700] poppins bg-[#FFCC00] ml-[10px] py-[10px] px-[40px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all'>
                                             Get Started
                                         </button>
                                     </li>

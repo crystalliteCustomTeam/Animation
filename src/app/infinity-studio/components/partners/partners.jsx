@@ -20,8 +20,8 @@ const tabInfo = [
     { image: Partners4 },
     { image: Partners5 },
     { image: Partners6 },
+    { image: Partners7 },
 ];
-
 
 const partners = () => {
     const swiperRef = useRef(null);
@@ -45,7 +45,7 @@ const partners = () => {
                 disableOnInteraction: "false",
                 stopOnLastSlide: 'false'
             },
-            slidesPerView: 5,
+            slidesPerView: 6,
             spaceBetween: 10,
             breakpoints: {
                 480: {
@@ -64,14 +64,14 @@ const partners = () => {
 
     return (
         <>
-            <section className='bg-white shadow-lg relative '>
+            <section className='bg-white shadow-lg relative partners py-6'>
                 <div className="px-2 mx-auto ">
                     <swiper-container ref={swiperRef} init="false" >
                         {
                             tabInfo && tabInfo.map((item, index) => (
                                 <>
                                     <swiper-slide key={index}>
-                                        <div className='w-[200px] py-[25px]'>
+                                        <div className='w-[200px] mx-auto'>
                                             <Image src={item.image} alt='Partners' className='img-fluid ' />
                                         </div>
                                     </swiper-slide>
@@ -80,13 +80,6 @@ const partners = () => {
                         }
                         <swiper-pagination className="hidden"></swiper-pagination>
                     </swiper-container>
-                    {/* <Image src={Partners} alt='Partners' className='w-full' />
-                        <Image src={Partners} alt='Partners' className='w-full' />
-                        <Image src={Partners} alt='Partners' className='w-full' />
-                        <Image src={Partners} alt='Partners' className='w-full' />
-                        <Image src={Partners} alt='Partners' className='w-full' />
-                        <Image src={Partners} alt='Partners' className='w-full' />
-                        <Image src={Partners} alt='Partners' className='w-full' /> */}
                 </div>
             </section>
         </>

@@ -64,7 +64,7 @@ const Contact = () => {
         getIPData();
     }, []);
     // For Page
-     const [pagenewurl, setPagenewurl] = useState(null);
+    const [pagenewurl, setPagenewurl] = useState(null);
     useEffect(() => {
         setPagenewurl(window.location.href);
     }, [setPagenewurl]);
@@ -163,18 +163,18 @@ const Contact = () => {
 
     return (
         <>
-            <section className='py-[50px] bg-cover bg-center bg-[url("../../public/video-explainer/footer-bg.jpg")]'>
+            <section className='mt-[80px] py-[50px] bg-black'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-4">
                         <div className="col-span-12 lg:col-span-6">
-                            <h2 className='text-[#231f20] font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Get in Touch Now!</h2>
-                            <p className='text-[#231f20] text-[16px] lg:text-[18px] montserrat font-[400] py-[17px] leading-[22px] pb-[60px]'>Its High Time to Showcase Your Store to the World</p>
-                            <div className="form">
+                            <h2 className='text-white font-[700] poppins text-[20px] md:text-[25px] lg:text-[30px]'>Get in Touch Now!</h2>
+                            <p className='text-white text-[16px] lg:text-[18px] poppins font-[400] py-[17px] leading-[22px]'>Its High Time to Showcase Your Store to the World</p>
+                            <div className="form mt-[15px]">
                                 <form action="javascript:;">
-                                    <div className="flex-wrap flex items-center">
+                                    <div className="flex items-center gap-3">
                                         <div className="name relative w-full">
                                             <User className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                            <input type="text" name="name" placeholder='Enter your name' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
+                                            <input type="text" name="name" placeholder='Enter your name' className='bg-[#171717] text-[14px] text-white placeholder:text-white poppins py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
                                             {errors.name && (
                                                 <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-16%]">
                                                     {errors.name}
@@ -183,7 +183,7 @@ const Contact = () => {
                                         </div>
                                         <div className="email relative w-full">
                                             <EnvelopeIcon className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                            <input type="email" name="email" placeholder='Enter Email' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
+                                            <input type="email" name="email" placeholder='Enter Email' className='bg-[#171717] text-[14px] text-white placeholder:text-white poppins py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
                                             {errors.email && (
                                                 <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-16%]">
                                                     {errors.email}
@@ -193,7 +193,7 @@ const Contact = () => {
                                     </div>
                                     <div className="phone relative">
                                         <Phone className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                        <input type="phone" name="phone" minLength={7} maxLength={15} placeholder='Enter Phone Number' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
+                                        <input type="phone" name="phone" minLength={7} maxLength={15} placeholder='Enter Phone Number' className='bg-[#171717] text-[14px] text-white placeholder:text-white poppins py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
                                         {errors.phone && (
                                             <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-16%]">
                                                 {errors.phone}
@@ -202,10 +202,10 @@ const Contact = () => {
                                     </div>
                                     <div className="message relative">
                                         <ChatAlt2 className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                        <textarea name='message' placeholder='Message' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[10px] font-[500] resize-none' onChange={handleDataChange}></textarea>
+                                        <textarea name='message' placeholder='Message' className='bg-[#171717] text-[14px] text-white placeholder:text-white poppins py-[10px] px-[35px] w-full mb-[10px] font-[500] resize-none' onChange={handleDataChange}></textarea>
                                     </div>
                                     <div className="btn mt-3">
-                                        <button type='submit' className='py-[10px] px-[30px] border-0 text-white text-[16px] uppercase font-[600] bg-[#231f20] poppins' onClick={handleFormSubmit} disabled={isDisabled}>
+                                        <button type='submit' className='py-[10px] px-[30px] border-0 text-white text-[16px] uppercase font-[600] bg-[#004E98] poppins rounded-md' onClick={handleFormSubmit} disabled={isDisabled}>
                                             {formStatus}
                                         </button>
                                     </div>
@@ -214,27 +214,27 @@ const Contact = () => {
                         </div>
                         <div className=" lg:col-span-2"></div>
                         <div className="col-span-12 lg:col-span-4">
-                            <div className="address_detail">
+                            <div className="address_detail formBef">
                                 <ul>
                                     <li className='py-[10px]'>
-                                        <a href="tel:833-666-6689" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
+                                        <a href="tel:833-666-6689" className='text-[15px] md:text-[20px] text-white poppins flex items-center gap-2'>
                                             <Phone className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> 833-666-6689
                                         </a>
                                     </li>
                                     <li className='py-[10px]'>
-                                        <a href="mailto:queries@infinityanimations.com" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
+                                        <a href="mailto:queries@infinityanimations.com" className='text-[15px] md:text-[20px] text-white poppins flex items-center gap-2'>
                                             <EnvelopeIcon className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> queries@infinityanimations.com
                                         </a>
                                     </li>
                                     <li className='py-[10px]'>
-                                        <a href="https://infinityanimations.com" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
+                                        <a href="https://infinityanimations.com" className='text-[15px] md:text-[20px] text-white poppins flex items-center gap-2'>
                                             <Globe className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimations.com
                                         </a>
                                     </li>
                                 </ul>
                                 <Image src={Payment} alt='Payment-Methods' className='w-5/12 lg:w-full my-3 object-contain' />
                                 <div>
-                                <ul className="flex items-center gap-4 mt-4 md:mt-6">
+                                    {/* <ul className="flex items-center gap-4 mt-4 md:mt-6">
                                     {
                                         socialLinks.map((e, i) => {
                                             return (
@@ -246,18 +246,18 @@ const Contact = () => {
                                             );
                                         })
                                     }
-                                </ul>
-                            </div>
+                                </ul> */}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div className="copyright py-[20px]">
+            <div className="copyright py-[20px] bg-black mt-1">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto relative">
-                    <p className='text-[14px] pb-[12px] text-[#333] montserrat text-center'>© 2024 <p className='text-[14px] text-[#333] montserrat text-center inline'> - All Rights Reserved By</p> <Link target="_blank" className="no-underline" href="https://mini-investments.net/">Mini Investments</Link></p>
-                    <div className="top-icon absolute right-0 top-[-40px]">
-                        <Link href="#" className='bg-[#18d689] w-[80px] h-[80px] text-center text-[#333] font-[500] uppercase rounded-[60%] align-middle border-[5px] border-white absolute right-0 lg:flex flex-col justify-center items-center md:block hidden'>
+                    <p className='text-[14px] text-[#fff] poppins text-center'>© 2024 <p className='text-[14px] text-[#fff] poppins text-center inline'> - All Rights Reserved By</p> <Link target="_blank" className="no-underline" href="https://mini-investments.net/">Mini Investments</Link></p>
+                    <div className="top-icon absolute right-0 top-[-60px]">
+                        <Link href="#" className='bg-black w-[80px] h-[80px] text-center text-[#fff] font-[500] uppercase rounded-[60%] align-middle border-[5px] border-[#FFCC00] absolute right-0 lg:flex flex-col justify-center items-center md:block hidden'>
                             <Image src={UpArrow} alt='upArrow' className='mx-auto' />
                             <p className='text-[14px] text-center poppins'>Top</p>
                         </Link>

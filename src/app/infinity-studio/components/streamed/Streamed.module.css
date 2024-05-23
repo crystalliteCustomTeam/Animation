@@ -7,4 +7,6 @@
 .background {
   background: url(../../../../../public/infinity-studio/section.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

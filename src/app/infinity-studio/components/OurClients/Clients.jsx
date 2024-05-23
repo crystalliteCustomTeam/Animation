@@ -3,20 +3,20 @@ import React from 'react'
 
 
 // Images 
-import ClientLogo from "media/video-explainer/ftr-cl-logo-img.png"
+import ClientLogo from "media/infinity-studio/footerLogos.png"
 
 
 const Clients = () => {
     return (
         <>
-            <section className='py-[50px] '>
+            <section className='pb-[50px] '>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-col-1">
-                        <div className="txt">
-                            <h2 className='text-[#231f20] text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px] pb-[30px] lg:pb--[60px]'>Our Clients</h2>
+                        <div className="txt mb-[20px]">
+                            <h3 className='text-[#003262] text-center font-[600] poppins text-[20px] md:text-[30px] lg:text-[36px]'>Our Clients</h3>
                         </div>
                         <div className="image">
-                            <Image src={ClientLogo} alt='client-logo ' className='w-8/12 mx-auto' />
+                            <Image src={ClientLogo} alt='client-logo' className='w-full' />
                         </div>
                     </div>
                 </div>
