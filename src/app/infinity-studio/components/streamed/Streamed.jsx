@@ -186,7 +186,7 @@ const tabContents = [
 const Streamed = () => {
 
     //Tabs
-    const [activeIndex, setActiveIndex] = useState(1);
+    const [activeIndex, setActiveIndex] = useState(null);
     const [activeTab, setActiveTab] = useState(0);
     const handleTabClick = (index) => {
         setActiveTab(index);
