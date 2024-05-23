@@ -31,7 +31,7 @@ const partners = () => {
         const params = {
             loop: 'true',
             speed: 400,
-            pagination: "false",
+            pagination: false,
             freeMode: true,
             grabCursor: true,
             slidesPerView: 6,
