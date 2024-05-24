@@ -81,7 +81,7 @@ const Hero = ({ content }) => {
             <section className={`w-full lg:h-[100vh] flex items-center justify-start sm:pb-5 bg-none bg-no-repeat relative overflow-hidden z-1 ${backgroundVideo} top-[97px] lg:top-auto`}>
                 {video ?
                     <div className="video-div w-full h-[480px] md:h-auto absolute z-[-1] before:content-[''] before:bg-[#000] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[90] before:opacity-[0.7]">
-                        <video src={backgroundVideo} autoPlay={true} loop={true} muted={true} className='relative h-full xl:left-0 w-full'>
+                        <video src={backgroundVideo} autoPlay={true} loop={true} muted={true} className='relative h-full xl:left-0 w-full object-cover'>
                         </video>
                     </div> : null}
                 <div className="container">
