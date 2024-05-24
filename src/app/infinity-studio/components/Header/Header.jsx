@@ -5,6 +5,7 @@ import Image from 'next/image'
 // import logo from "media/images/logo.gif";
 import logo from "media/infinity-studio/logo.png";
 import Chat from "media/video-explainer/cht-icon.png"
+import telephone from "media/icons/call.png";
 
 
 const HeaderLP = () => {
@@ -74,6 +75,16 @@ const HeaderLP = () => {
 
                                 </ul>
                             </div>
+                        </div>
+                        <div className="col-span-6 lg:hidden block">
+                            <ul>
+                                <li>
+                                    <a href="tel:833-666-6689" className='flex items-center justify-end gap-x-3 text-white font-sans'>
+                                        <Image src={telephone} loading="lazy" width="56" height="52" class="w-[15px]" alt='Infinity Animations' />
+                                        833-666-6689
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
