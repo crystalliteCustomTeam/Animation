@@ -7,76 +7,83 @@ import CTA from "@/components/cta/CTA";
 import trustPlatforms from "media/icons/trust.png";
 
 const Hero = ({ content }) => {
-    const { title, para, } = content;
+    const { title, para, video } = content;
     // Set Bg-Image
     const router = usePathname();
-    let backgroundImage;
+    let backgroundVideo;
     let margin;
     switch (router) {
         case "/":
-            backgroundImage = 'bg-cover bg-bottom lg:items-end xxl:items-center lg:bg-[url("../../public/home/banner-img.gif")]'
+            // backgroundVideo = 'bg-cover bg-bottom lg:items-end xxl:items-center lg:bg-[url("../../public/home/banner-img.gif")]'
+            backgroundVideo = 'https://player.vimeo.com/progressive_redirect/playback/950015917/rendition/720p/file.mp4?loc=external&log_user=0&signature=e0789e199bc0374e4971e5fc0b408a23ea883170eeb1fa2500dbaf2d0117d095'
             margin = 'mt-0'
             break;
         case '/why-us':
-            backgroundImage = 'bg-[length:100%_100%] bg-bottom lg:bg-[url("../../public/why-us/banner-bg.png")]'
+            backgroundVideo = 'bg-[length:100%_100%] bg-bottom lg:bg-[url("../../public/why-us/banner-bg.png")]'
             break;
         case '/video-animation-portfolio':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/portfolio/banner-bg.png")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/portfolio/banner-bg.png")]'
             break;
         case '/video-animation-process':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/process/banner-bg.gif")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/process/banner-bg.gif")]'
             break;
         case '/video-animation-pricing':
-            backgroundImage = 'bg-[length:100%_140%] bg-center lg:bg-[url("../../public/pricing/banner-bg.gif")]'
+            backgroundVideo = 'bg-[length:100%_140%] bg-center lg:bg-[url("../../public/pricing/banner-bg.gif")]'
             break;
         case '/blog':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/blogs/banner-bg.gif")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/blogs/banner-bg.gif")]'
             break;
         case '/contact-us':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/contact/banner-bg.gif")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/contact/banner-bg.gif")]'
             break;
         case '/custom-logo-animation':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/logo-animation/banner-bg.png")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/logo-animation/banner-bg.png")]'
             break;
         case '/architectural-visualization':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/architectural-services/banner-bg.gif")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/architectural-services/banner-bg.gif")]'
             break;
         case '/cgi-and-vfx-services':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/cgi-and-vfx/banner-bg.png")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/cgi-and-vfx/banner-bg.png")]'
             break;
         case '/motion-graphics':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/motion-graphics/banner-bg.png")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/motion-graphics/banner-bg.png")]'
             break;
         case '/video-editing':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/video-editing/banner-bg.png")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/video-editing/banner-bg.png")]'
             break;
         case '/2d-animation':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/2d-animation/banner-bg.png")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/2d-animation/banner-bg.png")]'
+            // backgroundVideo = 'https://player.vimeo.com/progressive_redirect/playback/950010334/rendition/720p/file.mp4?loc=external&log_user=0&signature=a761e4cb6edbbad24b418c5e42ebcc25598aa36503bb5e3f218b69efbb9a666b'
             break;
         case '/3d-animation':
-            backgroundImage = 'bg-[length:100%_100%] bg-center lg:bg-[url("../../public/3d-animation/banner-bg.gif")]'
+            backgroundVideo = 'bg-[length:100%_100%] bg-center lg:bg-[url("../../public/3d-animation/banner-bg.gif")]'
             break;
         case '/whiteboard-animation':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/whiteboard/banner-bg.png")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/whiteboard/banner-bg.png")]'
             break;
         case '/infographics-design':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/infographics/banner-bg.png")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/infographics/banner-bg.png")]'
             break;
         case '/hybrid-&-cel-animations':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/hybrid-cel/banner-bg.png")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/hybrid-cel/banner-bg.png")]'
             break;
         case '/tech-videos':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/tech-videos/banner-bg.png")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/tech-videos/banner-bg.png")]'
             break;
         case '/corporate-video':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/corporate-video/banner-bg.png")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/corporate-video/banner-bg.png")]'
             break;
         default:
             break;
     }
     return (
         <>
-            <section className={`w-full h-[100vh] flex items-center justify-start sm:pb-5 bg-none bg-no-repeat ${backgroundImage}`}>
+            <section className={`w-full h-[100vh] flex items-center justify-start sm:pb-5 bg-none bg-no-repeat relative overflow-hidden z-1 ${backgroundVideo}`}>
+                {video ?
+                    <div className="lg:block hidden video-div w-full h-auto absolute z-[-1] before:content-[''] before:bg-[#000] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[90] before:opacity-[0.7]">
+                        <video src={backgroundVideo} autoPlay={true} loop={true} muted={true} className='relative h-full xl:left-0 w-full'>
+                        </video>
+                    </div> : null}
                 <div className="container">
                     <div className='flex'>
                         <div className='w-full lg:w-[550px] xl:w-[600px]'>

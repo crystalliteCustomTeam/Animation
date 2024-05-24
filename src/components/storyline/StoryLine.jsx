@@ -52,7 +52,7 @@ const StoryLine = ({ content }) => {
                         </div>
                     </div>
                     <div className={`flex flex-col lg:flex-row items-center gap-y-8 justify-between mt-7 sm:mt-12 ${row}`}>
-                        <div className="w-full md:w-[700px]">
+                        <div className="w-full md:w-[70%]">
                             <div className="grid">
                                 {accordionData.map((item, index) => (
                                     <div key={index} className={`py-4 ${padding} ${activeIndex === index ? 'border-primary-100' : ' border-white'} border-b-2`}>
@@ -78,13 +78,11 @@ const StoryLine = ({ content }) => {
                                 ))}
                             </div>
                         </div>
-                        <div>
+                        <div className="w-full md:w-[70%] 220px sm:h-[740px]">
                             {activeIndex !== null && (
-                                <figure className="relative">
-                                    <Image className={`w-full lg:w-[90%] lg:ml-auto ${accImg}`} src={accordionData[activeIndex].StoryLineImg} alt="Infinity Animation" />
-                                    <figcaption className={`w-[90%] ml-auto text-[30px] font-normal font-sans tracking-wider text-center mt-[-75px] ${headings}`}>
-                                        {accordionData[activeIndex].question}
-                                    </figcaption>
+                                <figure className="relative h-full">
+                                    {/* <Image className={`w-full lg:w-[90%] lg:ml-auto ${accImg}`} src={accordionData[activeIndex].StoryLineImg} alt="Infinity Animation" /> */}
+                                    <video src={accordionData[activeIndex].StoryLineImg} autoPlay={true} loop={true} muted={true} className='relative w-full lg:w-[95%] lg:ml-auto md:h-full object-cover'></video> 
                                 </figure>
                             )}
                         </div>
