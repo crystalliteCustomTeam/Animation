@@ -8,8 +8,8 @@ import StoryLine from '@/components/storyline/StoryLine';
 import Portfolio from '@/components/portfolio/Portfolio';
 import Concept from '@/components/concept/Concept';
 import Boost from '@/components/boost/Boost';
-import Testimonial from '@/components/testimonial/Testimonial';
-// import TestimonialNew from '@/components/testimonialNew/Testimonial';
+// import Testimonial from '@/components/testimonial/Testimonial';
+import TestimonialNew from '@/components/testimonialNew/Testimonial';
 import Contact from '@/components/contact/Contact';
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
@@ -487,8 +487,8 @@ export default function Page() {
             <Portfolio content={portfolio} />
             <Concept content={concept} />
             <Boost content={boost} />
-            <Testimonial content={testimonial} />
-            {/* <TestimonialNew content={testimonialNew} /> */}
+            {/* <Testimonial content={testimonial} /> */}
+            <TestimonialNew content={testimonialNew} />
             <Contact />
             <Script id="websiteSchema" type="application/ld+json">
                 {`

@@ -61,7 +61,7 @@ function TestimonialNew({ content }) {
         <section className="w-full py-8 mb-24 lg:mb-32 md:py-12 lg:py-16 justify-center relative">
             <Image src={testimonialBg} className="absolute w-full sm:block hidden -z-1 testimonialBg" alt="Infinity Animation" />
             <div className="relative z-50">
-                <div className='flex items-center justify-center py-[55px]'>
+                <div className='flex items-center justify-center pb-[55px]'>
                     <div className='w-full text-center'>
                         <h1 className="text-[30px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-3">
                             {title}
