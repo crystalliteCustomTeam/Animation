@@ -6,9 +6,9 @@ import Link from "next/link";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import quote from "media/testimonial-copy/testi-colon.webp";
-import testimonialBg from "media/testimonial-copy/sec2-bg.webp";
-import testimonialIcon from "media/testimonial-copy/port-cloud-icon.webp";
+import quote from "media/testimonial/testi-colon.webp";
+import testimonialBg from "media/testimonial/sec2-bg.webp";
+import play from "media/testimonial/play.png";
 // Fancybox
 import { Fancybox as NativeFancybox } from "@fancyapps/ui"
 import "@fancyapps/ui/dist/fancybox/fancybox.css"
@@ -17,7 +17,7 @@ function TestimonialNew({ content }) {
     const { title, para, testiContentNew, testiContentNew2 } = content;
     const testiSlider = {
         dots: false,
-        arrows: true,
+        arrows: false,
         infinite: false,
         autoplay: false,
         autoplaySpeed: 2000,
@@ -40,7 +40,7 @@ function TestimonialNew({ content }) {
             }
         ]
     };
-    
+
     // ======== FancyBox
     function Fancybox(props) {
         const containerRef = useRef(null);
@@ -71,7 +71,7 @@ function TestimonialNew({ content }) {
                         </p>
                     </div>
                 </div>
-                <div className="mb-28">
+                <div>
                     <Slider {...testiSlider} className="videoSlider">
                         {testiContentNew.map((testimonial, index) => (
                             <Fancybox options={{ Carousel: { infinite: false } }} key={index}>
@@ -80,12 +80,13 @@ function TestimonialNew({ content }) {
                                         {testimonial.video ? (
                                             <Link href={testimonial.video} datafancybox="gallery">
                                                 <div className='w-[155px] h-[155px] md:w-[180px] md:h-[184px] overlay-div'>
-                                                    <Image
-                                                        src={testimonial.thumbnail}
-                                                        alt="Infinity Animations"
-                                                        className='w-full h-full rounded-full' />
+                                                    <div className='w-full h-full rounded-full border border-[#00000033]'>
+                                                        <video loading="lazy" playsinline="" muted loop="" preload="auto" autoplay="" poster="#" className="w-full h-full object-cover rounded-full" >
+                                                            <source src={testimonial.thumbnail} type="video/mp4" />
+                                                        </video>
+                                                    </div>
                                                     <div className="overlay">
-                                                        <Image src={testimonialIcon} width="45" height="45" className="img-fuild" />
+                                                        <Image src={play} className="w-[18%]" />
                                                     </div>
                                                 </div>
                                             </Link>
@@ -102,17 +103,17 @@ function TestimonialNew({ content }) {
                                                 <Image
                                                     src={quote}
                                                     alt="Infinity Animations"
-                                                    className='rounded-full w-[30px] h-[30px]' />
+                                                    className='rounded-full w-[25px] h-[25px]' />
                                                 <h3 className="w-[70%] md:w-auto text-[18px] md:text-[20px] leading-[24px] font-semibold font-sans ps-3 text-black">
                                                     {testimonial.name}
                                                 </h3>
                                             </div>
-                                            <div className=''>
+                                            <div>
                                                 <p className="text-[11px] xl:text-[14px] font-sans font-light text-black testmonial-copy-para">
                                                     {testimonial.para}
                                                 </p>
                                             </div>
-                                            <div className=''>
+                                            <div>
                                                 <Image
                                                     src={testimonial.stars}
                                                     className="w-[30%]" alt='Infinity Animation' />
@@ -124,7 +125,7 @@ function TestimonialNew({ content }) {
                         ))}
                     </Slider>
                 </div>
-                <div className="mt-28">
+                <div className="mt-12">
                     <Slider {...testiSlider} className="videoSlider">
                         {testiContentNew2.map((testimonial, index) => (
                             <Fancybox options={{ Carousel: { infinite: false } }} key={index}>
@@ -133,12 +134,13 @@ function TestimonialNew({ content }) {
                                         {testimonial.video ? (
                                             <Link href={testimonial.video} datafancybox="gallery">
                                                 <div className='w-[155px] h-[155px] md:w-[180px] md:h-[184px] overlay-div'>
-                                                    <Image
-                                                        src={testimonial.thumbnail}
-                                                        alt="Infinity Animations"
-                                                        className='w-full h-full rounded-full' />
+                                                    <div className='w-full h-full rounded-full border border-[#00000033]'>
+                                                        <video loading="lazy" playsinline="" muted loop="" preload="auto" autoplay="" poster="#" className="w-full h-full object-cover rounded-full" >
+                                                            <source src={testimonial.thumbnail} type="video/mp4" />
+                                                        </video>
+                                                    </div>
                                                     <div className="overlay">
-                                                        <Image src={testimonialIcon} width="45" height="45" className="img-fuild" />
+                                                        <Image src={play} className="w-[18%]" />
                                                     </div>
                                                 </div>
                                             </Link>
@@ -155,17 +157,17 @@ function TestimonialNew({ content }) {
                                                 <Image
                                                     src={quote}
                                                     alt="Infinity Animations"
-                                                    className='rounded-full w-[30px] h-[30px]' />
+                                                    className='rounded-full w-[25px] h-[25px]' />
                                                 <h3 className="w-[70%] md:w-auto text-[18px] md:text-[20px] leading-[24px] font-semibold font-sans ps-3 text-black">
                                                     {testimonial.name}
                                                 </h3>
                                             </div>
-                                            <div className=''>
+                                            <div>
                                                 <p className="text-[11px] xl:text-[14px] font-sans font-light text-black testmonial-copy-para">
                                                     {testimonial.para}
                                                 </p>
                                             </div>
-                                            <div className=''>
+                                            <div>
                                                 <Image
                                                     src={testimonial.stars}
                                                     className="w-[30%]" alt='Infinity Animation' />
