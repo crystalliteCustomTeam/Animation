@@ -78,16 +78,16 @@ const Hero = ({ content }) => {
     }
     return (
         <>
-            <section className={`w-full h-[100vh] flex items-center justify-start sm:pb-5 bg-none bg-no-repeat relative overflow-hidden z-1 ${backgroundVideo}`}>
+            <section className={`w-full lg:h-[100vh] flex items-center justify-start sm:pb-5 bg-none bg-no-repeat relative overflow-hidden z-1 ${backgroundVideo} top-[97px] lg:top-auto`}>
                 {video ?
-                    <div className="lg:block hidden video-div w-full h-auto absolute z-[-1] before:content-[''] before:bg-[#000] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[90] before:opacity-[0.7]">
+                    <div className="video-div w-full h-[480px] md:h-auto absolute z-[-1] before:content-[''] before:bg-[#000] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[90] before:opacity-[0.7]">
                         <video src={backgroundVideo} autoPlay={true} loop={true} muted={true} className='relative h-full xl:left-0 w-full'>
                         </video>
                     </div> : null}
                 <div className="container">
                     <div className='flex'>
                         <div className='w-full lg:w-[550px] xl:w-[600px]'>
-                            <h1 className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-5 mt-32 ${margin}`}>
+                            <h1 className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-5 mt-4 lg:mt-32 ${margin}`}>
                                 {title}
                             </h1>
                             <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
@@ -114,7 +114,7 @@ const Hero = ({ content }) => {
                                     href="javascript:$zopim.livechat.window.show();"
                                 />
                             </div>
-                            <Image src={trustPlatforms} className="mt-10 md:mt-20" alt="Infinity Animation" />
+                            <Image src={trustPlatforms} className=" w-[60%] lg:w-auto mt-10 lg:mt-20 " alt="Infinity Animation" />
                         </div>
                     </div>
                 </div>

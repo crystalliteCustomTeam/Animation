@@ -19,7 +19,7 @@ function TestimonialNew({ content }) {
         dots: false,
         arrows: false,
         infinite: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         speed: 3000,
         slidesToShow: 3,
@@ -81,7 +81,7 @@ function TestimonialNew({ content }) {
                                             <Link href={testimonial.video} datafancybox="gallery">
                                                 <div className='w-[155px] h-[155px] md:w-[180px] md:h-[184px] overlay-div'>
                                                     <div className='w-full h-full rounded-full border border-[#00000033]'>
-                                                        <video loading="lazy" playsinline="" muted loop="" preload="auto" autoplay="" poster="#" className="w-full h-full object-cover rounded-full" >
+                                                        <video loading="lazy" playsinline="" muted loop="" preload="auto" autoPlay={false} poster="#" className="w-full h-full object-cover rounded-full" >
                                                             <source src={testimonial.thumbnail} type="video/mp4" />
                                                         </video>
                                                     </div>
