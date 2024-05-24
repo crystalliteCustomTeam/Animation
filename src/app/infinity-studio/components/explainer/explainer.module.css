@@ -1,3 +1,6 @@
+.card1 {
+    background: #fff;
+}
 .card1:hover {
     background: #003262;
 }
@@ -6,6 +9,15 @@
     background: #003262;
 }
 
+.iconImg {
+    background-image: url(../../../../../public/infinity-studio/ex-icon1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    transition: background-image 0.5s ease-in-out;
+}
 .iconImg1 {
     background-image: url(../../../../../public/infinity-studio/ex-icon1.png);
     background-position: center;
@@ -45,8 +57,8 @@
     background: white !important;
 }
 
-.cardActive .iconImg1 {
-    background-image: url(../../../../../public/infinity-studio/ex-iconHvr1.png) !important;
+.cardActive .iconImg2 {
+    background-image: url(../../../../../public/infinity-studio/ex-iconHvr2.png) !important;
 }
 
 .card2:hover {

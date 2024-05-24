@@ -144,7 +144,7 @@ const Banner = () => {
                             <p className='text-white text-[16px] font-[400] poppins lg:w-11/12 leading-[25px] py-[20px]'>A leading Video Animation Production Company that helped thousands of Brands to broaden their product reach by Top Notch Custom Explainer Animated Videos.</p>
                             <div className="grid grid-cols-12 gap-y-6 items-end py-[25px]">
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[250px] h-[35px]'>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[250px] h-[35px]'>
                                         <div className='w-[38px] h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild'/>
                                         </div>
@@ -152,7 +152,7 @@ const Banner = () => {
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[250px] h-[35px] '>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[250px] h-[35px] '>
                                         <div className='w-[38px] h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild'/>
                                         </div>
@@ -160,7 +160,7 @@ const Banner = () => {
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[250px] h-[35px] '>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[250px] h-[35px] '>
                                         <div className='w-[38px] h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild'/>
                                         </div>
@@ -168,7 +168,7 @@ const Banner = () => {
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[250px] h-[35px] '>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[250px] h-[35px] '>
                                         <div className='w-[38px] h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild'/>
                                         </div>
