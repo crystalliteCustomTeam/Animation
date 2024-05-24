@@ -9,7 +9,7 @@ import Portfolio from '@/components/portfolio/Portfolio';
 import Concept from '@/components/concept/Concept';
 import Boost from '@/components/boost/Boost';
 import Testimonial from '@/components/testimonial/Testimonial';
-// import TestimonialCopy from '@/components/testimonial-copy/Testimonial';
+// import TestimonialNew from '@/components/testimonialNew/Testimonial';
 import Contact from '@/components/contact/Contact';
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
@@ -38,6 +38,9 @@ import Helen from "media/thumbnails/helen.jpg";
 import Gary from "media/thumbnails/gary.jpg";
 import Sylvia from "media/thumbnails/sylvia.jpg";
 import Matt from "media/thumbnails/matt.jpg";
+import Grace from "media/thumbnails/grace.png";
+import Alex from "media/thumbnails/alex.png";
+import Olivia from "media/thumbnails/olivia.png";
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.png";
 import Thumnail2 from "media/thumbnails/2d-animation/2.png";
@@ -388,85 +391,91 @@ export default function Page() {
             message: "The architectural visualization provided by this team surpassed our expectations. The animations brought our designs to life with incredible detail and realism. A fantastic experience from start to finish!",
         },
     ];
-
     const testimonial = {
         title: (<> An Who’s Who of Industry Leading Clients </>),
         para: (<> If you can’t trust us, try trusting them.</>),
         btnBg: "bg-prime",
         testiContent: testiContent
     };
-
     //=====Testimonial Fold=====//
-    const testiContentCopy = [
-        {
-            stars: icon2,
-            name: 'Edd Lockwood',
-            para: `“Cloud Animation services earned my respect by providing high-quality,
-            aesthetically pleasing animated content. The group executed my project in a
-            unique and impressive manner.”`,
-            video: "https://youtu.be/1ab6famvBmE?si=lWPOQck-AXmKdBfe",
-            thumbnail: EddLockWood,
-        },
+    const testiContentNew = [
         {
             stars: icon2,
             name: 'Emily Margolis',
-            para: `“Cloud Animation services earned my respect by providing high-quality,
-            aesthetically pleasing animated content. The group executed my project in a
-            unique and impressive manner.”`,
+            para: `We approached Infinity Animations, a leading video animation agency, for a short explainer video. Their team provided exceptional video animation services and delivered a high-quality 2D animation right on time. Highly recommended!`,
             video: "https://youtu.be/NfhGVS6thtM?si=qKGBKPRdLj_8onVy",
             thumbnail: Emily,
         },
         {
             stars: icon2,
-            name: 'Mathew',
-            para: `“Cloud Animation services earned my respect by providing high-quality,
-            aesthetically pleasing animated content. The group executed my project in a
-            unique and impressive manner.”`,
-            video: "https://youtu.be/elOXjok2nWU?si=YoauMkUQvublB-V5",
-            thumbnail: Mathew,
-        },
-        {
-            stars: icon2,
             name: 'Helen Brooks',
-            para: `“Cloud Animation services earned my respect by providing high-quality,
-            aesthetically pleasing animated content. The group executed my project in a
-            unique and impressive manner.”`,
+            para: `Huge thanks to Infinity Animations for their incredible video production service. They made the entire process seamless and produced a visually stunning animation that perfectly matched our brand.`,
             video: "https://youtu.be/e5GWTWd4k7U?si=OXc3_K1kpo7OxOQE",
             thumbnail: Helen,
         },
         {
             stars: icon2,
+            name: 'Mathew',
+            para: `A big thank you to Infinity Animations, a top-notch video animation company, for delivering an outstanding explainer video. The team was responsive, creative, and quick to complete the project.`,
+            video: "https://youtu.be/elOXjok2nWU?si=YoauMkUQvublB-V5",
+            thumbnail: Mathew,
+        },
+        {
+            stars: icon2,
             name: 'Gary Wilson',
-            para: `“Cloud Animation services earned my respect by providing high-quality,
-            aesthetically pleasing animated content. The group executed my project in a
-            unique and impressive manner.”`,
+            para: `I highly recommend Infinity Animations, a premier animation agency, for their excellent video animation services. They created a high-quality animation for our campaign and were a pleasure to work with throughout the process.`,
             video: "https://youtu.be/gQt3RKFwaqQ?si=jGBKle6DJhd1Lvdn",
             thumbnail: Gary,
         },
         {
             stars: icon2,
+            name: 'Grace Turner',
+            para: 'Choosing this animation team was a game-changer for our marketing campaigns. Their creativity and attention to detail brought our brand stories to life in ways we never imagined. Exceptional work!',
+            thumbnail: Grace,
+        },
+    ];
+    // =========================
+    const testiContentNew2 = [
+        {
+            stars: icon2,
             name: 'Sylvia David',
-            para: `“Cloud Animation services earned my respect by providing high-quality,
-            aesthetically pleasing animated content. The group executed my project in a
-            unique and impressive manner.”`,
+            para: `I wanted to give a big shout-out to Infinity Animations, a top video animation company, for their outstanding work on our promotional video. Their team was easy to work with and delivered the project quickly and efficiently.`,
             video: "https://youtu.be/UU3BQAt7hlg?si=jiE_E2Hci-xeq1GQ",
             thumbnail: Sylvia,
         },
         {
             stars: icon2,
+            name: 'Edd Lockwood',
+            para: `Kudos to Infinity Animations, a fantastic video marketing agency, for creating an engaging and visually appealing animated video. Their team’s creativity and professionalism made our project a huge success.`,
+            video: "https://youtu.be/1ab6famvBmE?si=lWPOQck-AXmKdBfe",
+            thumbnail: EddLockWood,
+        },
+        {
+            stars: icon2,
             name: 'Matt Evans',
-            para: `“Cloud Animation services earned my respect by providing high-quality,
-            aesthetically pleasing animated content. The group executed my project in a
-            unique and impressive manner.”`,
+            para: `We needed a compelling video for our new product launch, and Infinity Animations, as a video animation agency, exceeded our expectations. Their video production service was exceptional, delivering a high-quality animation in a timely manner.`,
             video: "https://youtu.be/8c0pcN-OQGI?si=3i-Td6-MD9gwl3FZ",
             thumbnail: Matt,
         },
+        {
+            stars: icon2,
+            name: 'Alex Mitchell',
+            para: 'Working with this animation team elevated the educational content on my platform. The animations were not only visually engaging but also simplified complex concepts for my audience. Highly recommend for anyone in the education space.',
+            thumbnail: Alex,
+        },
+        {
+            stars: icon2,
+            name: 'Olivia Bennett',
+            para: "The architectural visualization provided by this team surpassed our expectations. The animations brought our designs to life with incredible detail and realism. A fantastic experience from start to finish!",
+            thumbnail: Olivia,
+        },
     ];
 
-    const testimonialCopy = {
+    const testimonialNew = {
         title: (<> An Who’s Who of Industry Leading Clients </>),
         para: (<> If you can’t trust us, try trusting them.</>),
-        testiContentCopy: testiContentCopy
+        testiContentNew: testiContentNew,
+        testiContentNew2: testiContentNew2
     };
 
     return (
@@ -479,7 +488,7 @@ export default function Page() {
             <Concept content={concept} />
             <Boost content={boost} />
             <Testimonial content={testimonial} />
-            {/* <TestimonialCopy content={testimonialCopy} /> */}
+            {/* <TestimonialNew content={testimonialNew} /> */}
             <Contact />
             <Script id="websiteSchema" type="application/ld+json">
                 {`
