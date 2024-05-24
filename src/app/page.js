@@ -79,6 +79,7 @@ export default function Page() {
         title: (<> Let Our <span className='text-primary-100'>Animations</span><br /> Tell Your Story </>),
         para: "Whether you're a brand seeking to captivate your audience, an educator aiming to simplify complex concepts, or a content creator in pursuit of visual brilliance, our animation services are designed to elevate your storytelling. With a perfect blend of technical expertise and artistic flair, we breathe life into every frame, crafting animations that transcend the ordinary. ",
         btnBg: "bg-prime",
+        video: true,
     };
     //=====Looking Fold=====//
     const paraArray = [
@@ -98,52 +99,62 @@ export default function Page() {
         {
             question: '2D Animations',
             answer: "Bring your ideas to life with our dynamic 2D animations. From character-driven stories to engaging motion graphics, our animations captivate and convey your message with vibrant visuals.",
-            StoryLineImg: StoryLine1,
+            // StoryLineImg: StoryLine1,
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950010334/rendition/720p/file.mp4?loc=external&log_user=0&signature=a761e4cb6edbbad24b418c5e42ebcc25598aa36503bb5e3f218b69efbb9a666b",
         },
         {
             question: '3D Animations',
             answer: "Step into a realm of immersive storytelling with our cutting-edge 3D animations. Elevate your visual narratives, whether for product showcases, virtual tours, or cinematic experiences.",
-            StoryLineImg: StoryLine2
+            // StoryLineImg: StoryLine2
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950011852/rendition/720p/file.mp4?loc=external&log_user=0&signature=15e9c340553571fedce72842f58c3e0af4fcafb7bbda0938d479a2246d9f7e06"
         },
         {
             question: 'Whiteboard',
             answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
-            StoryLineImg: StoryLine3
+            // StoryLineImg: StoryLine3
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950016751/rendition/720p/file.mp4?loc=external&log_user=0&signature=029bced4bb0cb9e41cb9accc4e9c35fc8abd08ce894378fd6764f648b8a20a72"
         },
         {
             question: 'Motion Graphics',
             answer: "Transform your content into visual masterpieces with our motion graphics. Every movement is a brushstroke of dynamic storytelling, enhancing your brand's visual appeal.",
-            StoryLineImg: StoryLine4
+            // StoryLineImg: StoryLine4
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950015871/rendition/720p/file.mp4?loc=external&log_user=0&signature=c5d9400c52dea49465f643fde173da06371fde9a7a0b971d4d549c53d301beba"
         },
         {
             question: 'Video Editing',
             answer: "Refine your raw footage into cinematic brilliance with our video editing services. Every cut and transition is a stroke of storytelling precision, enhancing your visual narratives.",
-            StoryLineImg: StoryLine5
+            // StoryLineImg: StoryLine5
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88"
         },
         {
             question: 'Logo Animations',
             answer: "Make your brand memorable with our logo animation services. Dynamic animations breathe life into your logo, adding a touch of sophistication to your brand identity.",
-            StoryLineImg: StoryLine6
+            // StoryLineImg: StoryLine6
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950015817/rendition/720p/file.mp4?loc=external&log_user=0&signature=c60df41646f601d81fa4c987188c8e103f416d393f8ec1f9270e7114e4f0b3ed"
         },
         {
             question: 'Architectural Visualization',
             answer: "Visualize spaces in breathtaking detail with our architectural visualization services. From realistic renders to immersive walkthroughs, bring your architectural visions to life.",
-            StoryLineImg: StoryLine7
+            // StoryLineImg: StoryLine7
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950012916/rendition/720p/file.mp4?loc=external&log_user=0&signature=345a1d1cf22f09b27dcd52b4b62ba7fe2ec9ffb8667e9b0f9f2686db45377f88"
         },
         {
             question: 'CGI-VFX',
             answer: "Experience cinematic brilliance with our CGI and VFX services. Elevate your projects with lifelike animations and visual effects that push the boundaries of imagination.",
-            StoryLineImg: StoryLine8
+            // StoryLineImg: StoryLine8
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950013729/rendition/720p/file.mp4?loc=external&log_user=0&signature=dc0b60052c9254433445dab7bbd7e44d7df58cb701acbc8dd39dcb6d2c87e915"
         },
         {
             question: 'Infographics',
             answer: "Transform data into compelling visuals with our infographics services. Each design tells a story, making complex information accessible and visually engaging.",
-            StoryLineImg: StoryLine9
+            // StoryLineImg: StoryLine9
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950014871/rendition/720p/file.mp4?loc=external&log_user=0&signature=223ea2a487684e4b66df4c2943d4206227cdaca18e0f427c495f710e9f01cb44"
         },
         {
             question: 'Hybrid & Cel',
             answer: "Blend tradition with innovation through our Hybrid & Cel Animation services. Each frame is a symphony of timeless artistry and contemporary brilliance, adding a unique charm to your animation.",
-            StoryLineImg: StoryLine10
+            // StoryLineImg: StoryLine10
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202"
         },
     ];
     const storyLine = {
