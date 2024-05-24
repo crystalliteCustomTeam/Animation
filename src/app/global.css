@@ -618,7 +618,6 @@ div#ty7 {
   right: -100%;
 }
 
-
 /*=============== Blogs Slider ===============*/
 
 .blogsSlider .slick-prev {
@@ -917,6 +916,10 @@ div.swiper-button-prev {
   width: 45px;
   height: 45px;
   border-radius: 100%;
+}
+
+.infinityPartnersSlider .swiper-wrapper {
+  align-items: center !important;
 }
 
 /*=============== Media Query Start ===============*/
@@ -1277,4 +1280,3 @@ div.swiper-button-prev {
     opacity: 1;
   }
 }
-

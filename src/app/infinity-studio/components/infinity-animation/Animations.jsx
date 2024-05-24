@@ -63,10 +63,10 @@ const Animations = () => {
 
     return (
         <>
-            <section className='pb-[120px] relative ' ref={sectionRef}>
+            <section className='pb-[40px] lg:pb-[120px] relative ' ref={sectionRef}>
                 <div className='px-4 sm:px-8 lg:max-w-7xl mx-auto '>
                     <div className="grid grid-cols-12">
-                        <div className="col-span-12 mb-[40px]">
+                        <div className="col-span-12 md:mb-[40px]">
                             <h2 className='text-[#003262] text-center font-[600] poppins text-[20px] md:text-[30px] lg:text-[36px]'>Proven Statistics of Infinity Animations</h2>
                             <p className='text-[#231F20] text-[16px] poppins font-[400] py-[17px] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-0'>There is an immense amount of product animation & graphic content out there but here at Video Explain Art, <br /> we make sure our animation service & work stands out.</p>
                             {/* <p className='text-[#231f20] text-[16px] lg:text-[18px] montserrat font-[400] py-[17px] text-center lg:w-11/12 mx-auto leading-[22px]'>There is an immense amount of product animation & graphic content out there but here at Video Explain Art, <br /> we make sure our animation service & work stands out.</p> */}

@@ -15,15 +15,15 @@ const Brands = ({ content }) => {
     }
     return (
         <>
-            <section className='pt-[50px] lg:pt-[80px] lg:relative'>
-                <div className='px-5 sm:px-8 lg:max-w-7xl mx-auto bg-cover bg-center bg-no-repeat bg-[url("../../public/infinity-studio/brand.png")] rounded-xl pt-[25px]  '>
+            <section className='pt-0 md:pt-[50px] lg:pt-[80px] lg:relative px-4 xl:px-0'>
+                <div className='px-5 sm:px-8 xl:max-w-7xl mx-auto bg-cover bg-center bg-no-repeat bg-[url("../../public/infinity-studio/brand.png")] rounded-xl pt-[25px]  '>
                     <div className="grid grid-cols-12">
                         <div className='col-span-12 lg:col-span-6 pb-4 pt-2 lg:py-[25px] xl:py-[50px]'>
                             <div className="content">
-                                <h2 className='text-[#fff] font-[700] poppins text-[20px] lg:text-[25px] lg:text-[36px] leading-[28px] lg:leading-[56px]'>
+                                <h2 className='text-[#fff] font-[700] poppins text-[20px] lg:text-[25px] xl:text-[36px] leading-[28px] lg:leading-[35px] xl:leading-[56px]'>
                                     {title} <br />
                                 </h2>
-                                <p className='text-[#fff] text-[16px] lg:text-[18px] poppins font-[400] py-[20px] leading-[28px]'>
+                                <p className='text-[#fff] text-[16px] xl:text-[18px] poppins font-[400] pt-[13px] pb-[20px] xl:py-[20px] leading-[25px]'>
                                     {desc}
                                 </p>
                             </div>
@@ -36,7 +36,7 @@ const Brands = ({ content }) => {
                             </div>
                         </div>
                         <div className='col-span-12 lg:col-span-6 flex justify-center'>
-                            <div className='lg:absolute lg:top-[1%] w-[450px] lg:w-[50%] xl:w-[44%] h-full lg:h-auto mb-0 flex items-end bottom-0 right-0 xl:right-auto'>
+                            <div className='lg:absolute lg:top-[1%] w-[450px] lg:w-[50%] xl:w-[50%] 2xl:w-[44%] xxl:w -[39%] 3xl:w-[36%] h-full lg:h-auto mb-0 flex items-end bottom-0 right-0 xl:right-auto'>
                                 <Image src={ctaImg} alt='Infinity Animations ' className='img-fluid mb-0' />
                             </div>
                         </div>

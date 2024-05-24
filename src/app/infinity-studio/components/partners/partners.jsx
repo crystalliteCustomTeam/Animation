@@ -31,36 +31,29 @@ const partners = () => {
         const params = {
             loop: 'true',
             speed: 400,
-            pagination: false,
+            pagination: "false",
             freeMode: true,
             grabCursor: true,
             slidesPerView: 6,
-            spaceBetween: "20",
+            spaceBetween: 20,
             autoplay: {
                 delay: 1500,
                 disableOnInteraction: "false",
                 stopOnLastSlide: 'false'
             },
             breakpoints: {
-                270:{
-                    slidesPerView: "1",
-                },
-                400:{
-                    slidesPerView: "2",
-                },
                 640: {
-                    slidesPerView: "3",
+                    slidesPerView: 2,
+                    spaceBetween: 20,
                 },
                 768: {
-                    slidesPerView: "3",
+                    slidesPerView: 4,
+                    spaceBetween: 40,
                 },
                 1024: {
-                    slidesPerView: "4",
+                    slidesPerView: 5,
+                    spaceBetween: 50,
                 },
-                1300: {
-                    slidesPerView: "6",
-                },
-
             }
 
         };
@@ -75,9 +68,9 @@ const partners = () => {
 
     return (
         <>
-            <section className='bg-white shadow-lg relative partners py-6'>
+            <section className='bg-[#F3F3F3] relative partners py-6'>
                 <div className="px-2 mx-auto ">
-                    <swiper-container ref={swiperRef} init="false" >
+                    <swiper-container className="infinityPartnersSlider" ref={swiperRef} init="false" >
                         {
                             tabInfo && tabInfo.map((item, index) => (
                                 <>

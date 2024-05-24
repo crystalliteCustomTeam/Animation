@@ -136,7 +136,7 @@ const Banner = () => {
 
     return (
         <>
-            <section className='bg-[#003465f0] lg:bg-[url("../../public/infinity-studio/banner.png")] bg-[length:100%_100%] bg-center bg-no-repeat h-full 3xl:h-[100vh] pt-[150px] 3xl:pt-[230px] pb-[60px] md:pb-[100px]'>
+            <section className='bg-[#003465f0] lg:bg-[url("../../public/infinity-studio/banner.png")] bg-[length:100%_100%] bg-center bg-no-repeat h-full 3xl:h-[100vh] pt-[115px] md:pt-[150px] 3xl:pt-[230px] pb-[60px] md:pb-[100px]'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-y-12 items-end ">
                         <div className="col-span-12 lg:col-span-8">

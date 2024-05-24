@@ -22,8 +22,7 @@ const Work = () => {
                         <h3 className='text-[#003262] font-[600] poppins text-[20px] md:text-[30px] lg:text-[36px]'>How We Work</h3>
                         <p className='text-[#231F20] text-[16px] poppins font-[400] py-[17px] lg:w-[90%] leading-[20px] md:leading-[22px] mb-0'>There is an immense amount of product animation & graphic content out there but here at Video Explain Art , we make sure our animation service & work stands out.</p>
                             {/* <p className='text-[#231f20] text-justify text-[16px] lg:text-[18px] poppins font-[400] py-[17px] leading-[30px]'>There is an immense amount of product animation & graphic content out there but here at Video Explain Art , we make sure our animation service & work stands out.</p> */}
-                            <div className="grid grid-cols-12 gap-y-8 lg:gap-y-4 xl:gap-y-8 gap-x-16 lg:gap-x-12 items-end py-[25px]">
-
+                            <div className="grid grid-cols-12 gap-y-8 lg:gap-y-4 xl:gap-y-8 gap-x-16 lg:gap-x-12 items-end pb-0 md:pb-[25px] pt-[25px]">
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-10 xl:col-span-6">
                                     <div className='flex items-center gap-x-2  h-[35px]'>
                                         <div className='w-[38px] h-[37px]'>
