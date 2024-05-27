@@ -18,9 +18,8 @@ import play from "media/testimonial/play.png";
 import { Fancybox as NativeFancybox } from "@fancyapps/ui"
 import "@fancyapps/ui/dist/fancybox/fancybox.css"
 
-function TestimonialNew({ content, poster  }) {
+function TestimonialNew({ content, poster }) {
     const { title, para, testiContentNew, testiContentNew2 } = content;
-    const videoRef = useRef(null);
 
     // ======== FancyBox
     function Fancybox(props) {
@@ -75,27 +74,21 @@ function TestimonialNew({ content, poster  }) {
             Object.assign(swiperRef2.current, params);
             swiperRef2.current.initialize();
         }
-
-        // Video Code
-        const videoElement = videoRef.current;
-
-        const handleMouseEnter = () => {
-            videoElement.play();
-        };
-
-        const handleMouseLeave = () => {
-            videoElement.pause();
-        };
-
-        videoElement.addEventListener('mouseenter', handleMouseEnter);
-        videoElement.addEventListener('mouseleave', handleMouseLeave);
-
-        // Clean up event listeners on component unmount
-        return () => {
-            videoElement.removeEventListener('mouseenter', handleMouseEnter);
-            videoElement.removeEventListener('mouseleave', handleMouseLeave);
-        };
     }, []);
+
+    // video code start
+    const handleVideoPlay = (e) => {
+        const video = e.currentTarget.querySelector('video');
+        if (video) {
+            if (video.paused) {
+                video.play();
+                setIsIcon(false)
+            } else {
+                video.pause();
+                setIsIcon(true)
+            }
+        }
+    };
 
     return (
         <section className="w-full py-8 mb-24 lg:mb-32 md:py-12 lg:py-16 justify-center relative">
@@ -117,12 +110,12 @@ function TestimonialNew({ content, poster  }) {
                             <swiper-slide key={index}>
                                 <Fancybox>
                                     <div className="w-full h-full group flex justify-center">
-                                        <div className='flex bg-[#fff0f1] w-[520px] h-[185px] rounded-full mx-4 box'>
+                                        <div className='flex bg-[#fff0f1] w-[520px] h-[185px] rounded-full mx-4 box' onMouseEnter={handleVideoPlay}>
                                             {testimonial.video ? (
                                                 <Link href={testimonial.video} datafancybox="gallery">
                                                     <div className='w-[155px] h-[155px] md:w-[180px] md:h-[184px] overlay-div'>
                                                         <div className='w-full h-full rounded-full border border-[#00000033]'>
-                                                            <video loading="lazy" muted loop preload="auto" poster={poster} ref={videoRef} autoPlay={false} className="w-full h-full object-cover rounded-full" >
+                                                            <video loading="lazy" muted loop preload="auto" poster={poster} autoPlay={false} className="w-full h-full object-cover rounded-full" >
                                                                 <source src={testimonial.thumbnail} type="video/mp4" />
                                                             </video>
                                                         </div>
@@ -173,12 +166,12 @@ function TestimonialNew({ content, poster  }) {
                             <swiper-slide key={index}>
                                 <Fancybox>
                                     <div className="w-full h-full group flex justify-center">
-                                        <div className='flex bg-[#fff0f1] w-[520px] h-[185px] rounded-full mx-4 box'>
+                                        <div className='flex bg-[#fff0f1] w-[520px] h-[185px] rounded-full mx-4 box' onMouseEnter={handleVideoPlay}>
                                             {testimonial.video ? (
                                                 <Link href={testimonial.video} datafancybox="gallery">
                                                     <div className='w-[155px] h-[155px] md:w-[180px] md:h-[184px] overlay-div'>
                                                         <div className='w-full h-full rounded-full border border-[#00000033]'>
-                                                            <video loading="lazy" muted loop preload="auto" poster={poster} ref={videoRef} autoPlay={false} className="w-full h-full object-cover rounded-full" >
+                                                            <video loading="lazy" muted loop preload="auto" poster={poster} autoPlay={false} className="w-full h-full object-cover rounded-full" >
                                                                 <source src={testimonial.thumbnail} type="video/mp4" />
                                                             </video>
                                                         </div>
