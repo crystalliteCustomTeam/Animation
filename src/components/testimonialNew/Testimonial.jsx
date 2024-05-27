@@ -79,15 +79,11 @@ function TestimonialNew({ content, poster }) {
     // video code start
     const handleVideoPlay = (e) => {
         const video = e.currentTarget.querySelector('video');
-        if (video) {
-            if (video.paused) {
-                video.play();
-                setIsIcon(false)
-            } else {
-                video.pause();
-                setIsIcon(true)
-            }
-        }
+        video.play();
+    };
+    const handleVideoPause = (e) => {
+        const video = e.currentTarget.querySelector('video');
+        video.pause();
     };
 
     return (
@@ -110,7 +106,7 @@ function TestimonialNew({ content, poster }) {
                             <swiper-slide key={index}>
                                 <Fancybox>
                                     <div className="w-full h-full group flex justify-center">
-                                        <div className='flex bg-[#fff0f1] w-[520px] h-[185px] rounded-full mx-4 box' onMouseEnter={handleVideoPlay}>
+                                        <div className='flex bg-[#fff0f1] w-[520px] h-[185px] rounded-full mx-4 box' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                                             {testimonial.video ? (
                                                 <Link href={testimonial.video} datafancybox="gallery">
                                                     <div className='w-[155px] h-[155px] md:w-[180px] md:h-[184px] overlay-div'>
