@@ -162,7 +162,7 @@ function TestimonialNew({ content, poster }) {
                             <swiper-slide key={index}>
                                 <Fancybox>
                                     <div className="w-full h-full group flex justify-center">
-                                        <div className='flex bg-[#fff0f1] w-[520px] h-[185px] rounded-full mx-4 box' onMouseEnter={handleVideoPlay}>
+                                        <div className='flex bg-[#fff0f1] w-[520px] h-[185px] rounded-full mx-4 box' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                                             {testimonial.video ? (
                                                 <Link href={testimonial.video} datafancybox="gallery">
                                                     <div className='w-[155px] h-[155px] md:w-[180px] md:h-[184px] overlay-div'>
