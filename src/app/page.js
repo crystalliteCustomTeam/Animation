@@ -8,8 +8,8 @@ import StoryLine from '@/components/storyline/StoryLine';
 import Portfolio from '@/components/portfolio/Portfolio';
 import Concept from '@/components/concept/Concept';
 import Boost from '@/components/boost/Boost';
-import Testimonial from '@/components/testimonial/Testimonial';
-// import TestimonialNew from '@/components/testimonialNew/Testimonial';
+// import Testimonial from '@/components/testimonial/Testimonial'; 
+import TestimonialNew from '@/components/testimonialNew/Testimonial';
 import Contact from '@/components/contact/Contact';
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
@@ -79,6 +79,7 @@ export default function Page() {
         title: (<> Let Our <span className='text-primary-100'>Animations</span><br /> Tell Your Story </>),
         para: "Whether you're a brand seeking to captivate your audience, an educator aiming to simplify complex concepts, or a content creator in pursuit of visual brilliance, our animation services are designed to elevate your storytelling. With a perfect blend of technical expertise and artistic flair, we breathe life into every frame, crafting animations that transcend the ordinary. ",
         btnBg: "bg-prime",
+        video: true,
     };
     //=====Looking Fold=====//
     const paraArray = [
@@ -98,52 +99,62 @@ export default function Page() {
         {
             question: '2D Animations',
             answer: "Bring your ideas to life with our dynamic 2D animations. From character-driven stories to engaging motion graphics, our animations captivate and convey your message with vibrant visuals.",
-            StoryLineImg: StoryLine1,
+            // StoryLineImg: StoryLine1,
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950010334/rendition/720p/file.mp4?loc=external&log_user=0&signature=a761e4cb6edbbad24b418c5e42ebcc25598aa36503bb5e3f218b69efbb9a666b",
         },
         {
             question: '3D Animations',
             answer: "Step into a realm of immersive storytelling with our cutting-edge 3D animations. Elevate your visual narratives, whether for product showcases, virtual tours, or cinematic experiences.",
-            StoryLineImg: StoryLine2
+            // StoryLineImg: StoryLine2
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950011852/rendition/720p/file.mp4?loc=external&log_user=0&signature=15e9c340553571fedce72842f58c3e0af4fcafb7bbda0938d479a2246d9f7e06"
         },
         {
             question: 'Whiteboard',
             answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
-            StoryLineImg: StoryLine3
+            // StoryLineImg: StoryLine3
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950016751/rendition/720p/file.mp4?loc=external&log_user=0&signature=029bced4bb0cb9e41cb9accc4e9c35fc8abd08ce894378fd6764f648b8a20a72"
         },
         {
             question: 'Motion Graphics',
             answer: "Transform your content into visual masterpieces with our motion graphics. Every movement is a brushstroke of dynamic storytelling, enhancing your brand's visual appeal.",
-            StoryLineImg: StoryLine4
+            // StoryLineImg: StoryLine4
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950015871/rendition/720p/file.mp4?loc=external&log_user=0&signature=c5d9400c52dea49465f643fde173da06371fde9a7a0b971d4d549c53d301beba"
         },
         {
-            question: 'Video Editing',
+            question: 'Video Editing & Compositing',
             answer: "Refine your raw footage into cinematic brilliance with our video editing services. Every cut and transition is a stroke of storytelling precision, enhancing your visual narratives.",
-            StoryLineImg: StoryLine5
+            // StoryLineImg: StoryLine5
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88"
         },
         {
             question: 'Logo Animations',
             answer: "Make your brand memorable with our logo animation services. Dynamic animations breathe life into your logo, adding a touch of sophistication to your brand identity.",
-            StoryLineImg: StoryLine6
+            // StoryLineImg: StoryLine6
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950015817/rendition/720p/file.mp4?loc=external&log_user=0&signature=c60df41646f601d81fa4c987188c8e103f416d393f8ec1f9270e7114e4f0b3ed"
         },
         {
             question: 'Architectural Visualization',
             answer: "Visualize spaces in breathtaking detail with our architectural visualization services. From realistic renders to immersive walkthroughs, bring your architectural visions to life.",
-            StoryLineImg: StoryLine7
+            // StoryLineImg: StoryLine7
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950012916/rendition/720p/file.mp4?loc=external&log_user=0&signature=345a1d1cf22f09b27dcd52b4b62ba7fe2ec9ffb8667e9b0f9f2686db45377f88"
         },
         {
             question: 'CGI-VFX',
             answer: "Experience cinematic brilliance with our CGI and VFX services. Elevate your projects with lifelike animations and visual effects that push the boundaries of imagination.",
-            StoryLineImg: StoryLine8
+            // StoryLineImg: StoryLine8
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950013729/rendition/720p/file.mp4?loc=external&log_user=0&signature=dc0b60052c9254433445dab7bbd7e44d7df58cb701acbc8dd39dcb6d2c87e915"
         },
         {
             question: 'Infographics',
             answer: "Transform data into compelling visuals with our infographics services. Each design tells a story, making complex information accessible and visually engaging.",
-            StoryLineImg: StoryLine9
+            // StoryLineImg: StoryLine9
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950014871/rendition/720p/file.mp4?loc=external&log_user=0&signature=223ea2a487684e4b66df4c2943d4206227cdaca18e0f427c495f710e9f01cb44"
         },
         {
             question: 'Hybrid & Cel',
             answer: "Blend tradition with innovation through our Hybrid & Cel Animation services. Each frame is a symphony of timeless artistry and contemporary brilliance, adding a unique charm to your animation.",
-            StoryLineImg: StoryLine10
+            // StoryLineImg: StoryLine10
+            StoryLineImg: "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202"
         },
     ];
     const storyLine = {
@@ -403,29 +414,29 @@ export default function Page() {
             stars: icon2,
             name: 'Emily Margolis',
             para: `We approached Infinity Animations, a leading video animation agency, for a short explainer video. Their team provided exceptional video animation services and delivered a high-quality 2D animation right on time. Highly recommended!`,
-            video: "https://youtu.be/NfhGVS6thtM?si=qKGBKPRdLj_8onVy",
-            thumbnail: Emily,
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045464/rendition/720p/file.mp4?loc=external&log_user=0&signature=06fddc742a45b3eff983a4e5a207a5ff2d1ae71a328b1c14056b1bcc152a9800",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045464/rendition/720p/file.mp4?loc=external&log_user=0&signature=06fddc742a45b3eff983a4e5a207a5ff2d1ae71a328b1c14056b1bcc152a9800",
         },
         {
             stars: icon2,
             name: 'Helen Brooks',
             para: `Huge thanks to Infinity Animations for their incredible video production service. They made the entire process seamless and produced a visually stunning animation that perfectly matched our brand.`,
-            video: "https://youtu.be/e5GWTWd4k7U?si=OXc3_K1kpo7OxOQE",
-            thumbnail: Helen,
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045568/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6ed32074656bcaa25e810119398883ade800b3fd2c5eed96b1eff541e57f5bca",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045568/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6ed32074656bcaa25e810119398883ade800b3fd2c5eed96b1eff541e57f5bca",
         },
         {
             stars: icon2,
             name: 'Mathew',
             para: `A big thank you to Infinity Animations, a top-notch video animation company, for delivering an outstanding explainer video. The team was responsive, creative, and quick to complete the project.`,
-            video: "https://youtu.be/elOXjok2nWU?si=YoauMkUQvublB-V5",
-            thumbnail: Mathew,
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045615/rendition/720p/file.mp4?loc=external&log_user=0&signature=8256b0e38317771b8db2d8959dc6d54ee41dd6c7a847875437dde63ea45333f2",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045615/rendition/720p/file.mp4?loc=external&log_user=0&signature=8256b0e38317771b8db2d8959dc6d54ee41dd6c7a847875437dde63ea45333f2",
         },
         {
             stars: icon2,
             name: 'Gary Wilson',
             para: `I highly recommend Infinity Animations, a premier animation agency, for their excellent video animation services. They created a high-quality animation for our campaign and were a pleasure to work with throughout the process.`,
-            video: "https://youtu.be/gQt3RKFwaqQ?si=jGBKle6DJhd1Lvdn",
-            thumbnail: Gary,
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
         },
         {
             stars: icon2,
@@ -440,22 +451,22 @@ export default function Page() {
             stars: icon2,
             name: 'Sylvia David',
             para: `I wanted to give a big shout-out to Infinity Animations, a top video animation company, for their outstanding work on our promotional video. Their team was easy to work with and delivered the project quickly and efficiently.`,
-            video: "https://youtu.be/UU3BQAt7hlg?si=jiE_E2Hci-xeq1GQ",
-            thumbnail: Sylvia,
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Edd Lockwood',
             para: `Kudos to Infinity Animations, a fantastic video marketing agency, for creating an engaging and visually appealing animated video. Their team’s creativity and professionalism made our project a huge success.`,
-            video: "https://youtu.be/1ab6famvBmE?si=lWPOQck-AXmKdBfe",
-            thumbnail: EddLockWood,
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045397/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5eb15a8721a49d21ead978545b43276c59608470ad55c3677e62e1fe88d8edfc",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045397/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5eb15a8721a49d21ead978545b43276c59608470ad55c3677e62e1fe88d8edfc",
         },
         {
             stars: icon2,
             name: 'Matt Evans',
             para: `We needed a compelling video for our new product launch, and Infinity Animations, as a video animation agency, exceeded our expectations. Their video production service was exceptional, delivering a high-quality animation in a timely manner.`,
-            video: "https://youtu.be/8c0pcN-OQGI?si=3i-Td6-MD9gwl3FZ",
-            thumbnail: Matt,
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045706/rendition/1080p/file.mp4?loc=external&log_user=0&signature=2b0144629d6bc9649580afa809527d09e6528f656a1c76a1b59408367879c24e",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045706/rendition/1080p/file.mp4?loc=external&log_user=0&signature=2b0144629d6bc9649580afa809527d09e6528f656a1c76a1b59408367879c24e",
         },
         {
             stars: icon2,
@@ -487,8 +498,8 @@ export default function Page() {
             <Portfolio content={portfolio} />
             <Concept content={concept} />
             <Boost content={boost} />
-            <Testimonial content={testimonial} />
-            {/* <TestimonialNew content={testimonialNew} /> */}
+            {/* <Testimonial content={testimonial} /> */}
+            <TestimonialNew content={testimonialNew} />
             <Contact />
             <Script id="websiteSchema" type="application/ld+json">
                 {`

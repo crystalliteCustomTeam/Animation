@@ -2,7 +2,7 @@ import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import Thumnail29 from "media/thumbnails/hybrid/5.png";
-import quote from "media/testimonial-copy/testi-colon.webp";
+import quote from "media/testimonial/testi-colon.webp";
 import icon2 from "media/icons/stars.png";
 
 export default function TestimonialCard() {
