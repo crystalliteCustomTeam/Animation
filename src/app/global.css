@@ -585,6 +585,14 @@ div#ty7 {
   text-align: start;
 }
 
+
+.testmonial-location {
+  height: 80px;
+  overflow: auto;
+  padding-right: 5px;
+  text-align: start;
+}
+
 .testimonialBg {
   filter: invert(1);
 }
@@ -1266,6 +1274,14 @@ div.swiper-button-prev {
   }
 
   .testmonial-copy-para {
+    background: transparent;
+    padding-right: 10px;
+  }
+
+  /* loction-page */
+
+
+  .testmonial-location {
     background: transparent;
     padding-right: 10px;
   }

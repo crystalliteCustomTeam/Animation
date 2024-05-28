@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import CTA from "@/components/cta/CTA";
 
 const Looking = ({ content }) => {
-    const { title, para: { paraArray }, isCTA, flodImg, css, isBtns } = content;
+    const { main, title, para: { paraArray }, isCTA, flodImg, css, isBtns } = content;
     // set fold Image
     const router = usePathname();
     let lookinImage;
@@ -66,17 +66,22 @@ const Looking = ({ content }) => {
     return (
         <>
             <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative ${bgTransparent}`}>
-                <div className="container">
-                    <div className='flex flex-col-reverse lg:flex-row items-center justify-around gap-y-7'>
-                        <div className={`w-full lg:w-[500px] ${lookinImage}`}>
-                            <Image src={flodImg} className={`w-full mx-auto ${css}`} alt="Infinity Animation" quality={85} />
+                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
+                    <div className='grid grid-cols-12 flex flex-col-reverse lg:flex-row items-end justify-around gap-y-7'>
+                        <div className="col-span-12 lg:col-span-5 flex flex-col items-start ">
+                            <h1 className={`text-[40px] md:text-[50px] xl:text-[55px] font-semibold font-sans leading-none  mt-5 mb-4 text-start me-auto`}>
+                                {main}
+                            </h1>
+                            <div className={`w-full lg:w-[500px] ${lookinImage} `}>
+                                <Image src={flodImg} className={`w-full mx-auto ${css}`} alt="Infinity Animation" quality={85} />
+                            </div>
                         </div>
-                        <div className={`w-full lg:w-[800px] ${lookingSecCol}`}>
-                            <h1 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5">
+                        <div className={`col-span-12 lg:col-span-7  ${lookingSecCol} lg:ps-[35px]`}>
+                            <h1 className="text-[15px] sm:text-[20px] lg:text-[25px] xl:text-[30px] font-semibold font-sans leading-tight mb-5">
                                 {title}
                             </h1>
                             {paraArray.map((para, index) => (
-                                <p key={index} className="text-[16px] font-normal font-sans leading-snug tracking-wider text-justify mb-5">
+                                <p key={index} className="text-[16px] font-[400] font-sans leading-snug tracking-wider text-justify mb-5">
                                     {para}
                                 </p>
                             ))}
@@ -90,7 +95,7 @@ const Looking = ({ content }) => {
                                         bg="bg-prime"
                                         color={`text-white`}
                                         border={`border-2 border-[#f5090b]`}
-                                        hover="hover:bg-transparent" 
+                                        hover="hover:bg-transparent"
                                     />
                                     {isCTA ?
                                         <CTA

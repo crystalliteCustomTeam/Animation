@@ -5,6 +5,32 @@ import { usePathname } from 'next/navigation';
 import CTA from "@/components/cta/CTA";
 // Import Images
 import trustPlatforms from "media/icons/trust.png";
+import topLeft from "media/location-page/top-left.png"
+import topRight from "media/location-page/top-right.png"
+import bottomRight from "media/location-page/bottom-right.png"
+import BannerLogo1 from "media/location-page/banner-logo-1.png"
+import BannerLogo2 from "media/location-page/banner-logo-2.png"
+import BannerLogo3 from "media/location-page/banner-logo-3.png"
+import BannerLogo4 from "media/location-page/banner-logo-4.png"
+import BannerLogo5 from "media/location-page/banner-logo-5.png"
+import styles from "./hero.module.css"
+// Import Slick Slider
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const tabInfo = [
+    { image: BannerLogo1 },
+    { image: BannerLogo2 },
+    { image: BannerLogo3 },
+    { image: BannerLogo4 },
+    { image: BannerLogo5 },
+    { image: BannerLogo1 },
+    { image: BannerLogo2 },
+    { image: BannerLogo3 },
+    { image: BannerLogo4 },
+    { image: BannerLogo5 },
+];
 
 const Hero = ({ content }) => {
     const { title, para, } = content;
@@ -74,42 +100,115 @@ const Hero = ({ content }) => {
         default:
             break;
     }
+    const testiSlider = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        speed: 400,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        
+        className: "center",
+        responsive: [
+
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                },
+            },
+            // {
+            //     breakpoint: 1300,
+            //     settings: {
+            //         slidesToShow: 6,
+            //         slidesToScroll: 1,
+            //         infinite: true,
+            //     },
+            // },
+
+        ],
+    };
+    
     return (
         <>
-            <section className={`w-full h-[100vh] flex items-center justify-start sm:pb-5 bg-none bg-no-repeat ${backgroundImage}`}>
-                <div className="container">
-                    <div className='flex'>
-                        <div className='w-full lg:w-[550px] xl:w-[600px]'>
-                            <h1 className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-5 mt-32 ${margin}`}>
-                                {title}
-                            </h1>
-                            <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
-                                {para}
-                            </p>
-                            <div className="flex gap-6">
-                                <CTA
-                                    text="Get Started"
-                                    icon="/icons/arrow-red.png"
-                                    iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2"
-                                    bg="bg-prime"
-                                    color={`text-white`}
-                                    border={`border-2 border-[#f5090b]`}
-                                    hover="hover:bg-transparent"
-                                />
-                                <CTA
-                                    text="Live Chat"
-                                    icon="/icons/chat.png"
-                                    iconCss="w-[40px]"
-                                    bg="bg-[#000]"
-                                    color={`text-white`}
-                                    border={`border-2 border-[#fff]`}
-                                    hover="hover:bg-prime"
-                                    href="javascript:$zopim.livechat.window.show();"
-                                />
+            <section className={`w-full h-[100vh] flex items-center justify-start px-[25px] sm:pb-5 pt-[200px] lg:pt-[120px] mt-[30px]`}>
+
+                <div className='grid grid-cols-1 lg:grid-cols-2  justify-items-center w-full'>
+                    <div className='w-full lg:w-[550px] xl:w-[600px] ms-auto pe-5 mb-32'>
+                        <h1 className={`text-[40px] md:text-[50px] xl:text-[55px] font-semibold font-sans leading-none  mt-5 mb-4 ${margin}`}>
+                            {title}
+                        </h1>
+                        <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
+                            {para}
+                        </p>
+                        <div className="flex gap-6">
+                            <CTA
+                                text="Get Started"
+                                icon="/icons/arrow-red.png"
+                                iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2"
+                                bg="bg-prime"
+                                color={`text-white`}
+                                border={`border-2 border-[#f5090b]`}
+                                hover="hover:bg-transparent"
+                            />
+                            <CTA
+                                text="Live Chat"
+                                icon="/icons/chat.png"
+                                iconCss="w-[40px]"
+                                bg="bg-[#000]"
+                                color={`text-white`}
+                                border={`border-2 border-[#fff]`}
+                                hover="hover:bg-prime"
+                                href="javascript:$zopim.livechat.window.show();"
+                            />
+                        </div>
+                        {/* <Slider {...testiSlider} className="flex items-center h-[250px] ">
+                        {tabInfo.map((item, index) => (
+                            <div className='mx-[45px] px-[15px] my-auto h-full'>
+                                <Image src={item.image} alt='BannerLogo' className='img-fluid h-full w-full px-3 border' />
                             </div>
-                            <Image src={trustPlatforms} className="mt-10 md:mt-20" alt="Infinity Animation" />
+                        ))}
+                    </Slider> */}
+                        <Image src={trustPlatforms} className="mt-10 md:mt-20" alt="Infinity Animation" />
+                    </div>
+                    <div className={`${styles.bannerImg} my-auto flex flex-col justify-between lg:h-full`}>
+                        {/* <Image src={bannerImg} className={`${styles.bannerImg}`}/> */}
+                        <div className="flex justify-between">
+                            <div>
+                                <Image src={topLeft} className={`${styles.topLeft}`} />
+                            </div>
+                            <div>
+                                <Image src={topRight} className={`${styles.topRight}`} />
+                            </div>
+                        </div>
+                        <div className="flex justify-end">
+                            <div>
+                                <Image src={bottomRight} className={`${styles.bottomRight}`} />
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </section>
         </>
