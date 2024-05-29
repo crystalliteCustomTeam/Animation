@@ -107,23 +107,21 @@ const Hero = ({ content }) => {
         autoplay: true,
         autoplaySpeed: 1500,
         speed: 400,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         adaptiveHeight: true,
-        
-        className: "center",
         responsive: [
-
             {
-                breakpoint: 640,
+                breakpoint: 300,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     infinite: true,
                 },
             },
+
             {
-                breakpoint: 768,
+                breakpoint: 640,
                 settings: {
                     slidesToShow: 4,
                     slidesToScroll: 1,
@@ -131,28 +129,36 @@ const Hero = ({ content }) => {
                 },
             },
             {
-                breakpoint: 1024,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 5,
                     slidesToScroll: 1,
                     infinite: true,
                 },
             },
-            // {
-            //     breakpoint: 1300,
-            //     settings: {
-            //         slidesToShow: 6,
-            //         slidesToScroll: 1,
-            //         infinite: true,
-            //     },
-            // },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                },
+            },
 
         ],
     };
     
     return (
         <>
-            <section className={`w-full h-[100vh] flex items-center justify-start px-[25px] sm:pb-5 pt-[200px] lg:pt-[120px] mt-[30px]`}>
+            <section className={`w-full md:h-[100vh] flex items-center justify-start px-[25px] sm:pb-5 pt-[100px] xl:pt-[200px] lg:pt-[120px] mt-[30px]`}>
 
                 <div className='grid grid-cols-1 lg:grid-cols-2  justify-items-center w-full'>
                     <div className='w-full lg:w-[550px] xl:w-[600px] ms-auto pe-5 mb-32'>
@@ -183,14 +189,14 @@ const Hero = ({ content }) => {
                                 href="javascript:$zopim.livechat.window.show();"
                             />
                         </div>
-                        {/* <Slider {...testiSlider} className="flex items-center h-[250px] ">
+                        <Slider {...testiSlider} className="mt-[40px] h-[130px] md:h-[150px] border-t-2 border-gray-500">
                         {tabInfo.map((item, index) => (
-                            <div className='mx-[45px] px-[15px] my-auto h-full'>
-                                <Image src={item.image} alt='BannerLogo' className='img-fluid h-full w-full px-3 border' />
+                            <div className='h-[130px] md:h-[150px] w-[100%] mx-[45px] content-center '>
+                                <Image src={item.image} alt='BannerLogo' className='object-contain  px-3 mx-auto' />
                             </div>
                         ))}
-                    </Slider> */}
-                        <Image src={trustPlatforms} className="mt-10 md:mt-20" alt="Infinity Animation" />
+                    </Slider>
+                        {/* <Image src={trustPlatforms} className="mt-10 md:mt-20" alt="Infinity Animation" />/ */}
                     </div>
                     <div className={`${styles.bannerImg} my-auto flex flex-col justify-between lg:h-full`}>
                         {/* <Image src={bannerImg} className={`${styles.bannerImg}`}/> */}

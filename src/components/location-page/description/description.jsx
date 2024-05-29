@@ -1,20 +1,12 @@
 import { usePathname } from 'next/navigation';
 // Import Components
-import CTA from "@/components/cta/CTA";
-// Import Images
-import trustPlatforms from "media/icons/trust.png";
-import topLeft from "media/location-page/top-left.png"
-import topRight from "media/location-page/top-right.png"
-import bottomRight from "media/location-page/bottom-right.png"
-import BannerLogo1 from "media/location-page/banner-logo-1.png"
-import BannerLogo2 from "media/location-page/banner-logo-2.png"
-import BannerLogo3 from "media/location-page/banner-logo-3.png"
-import BannerLogo4 from "media/location-page/banner-logo-4.png"
-import BannerLogo5 from "media/location-page/banner-logo-5.png"
 import Image from 'next/image';
+// Import Images
+import DescDot from "media/location-page/desc-dot.png"
+
 
 function Description({ content }) {
-    const { title, para,bannerLeft, bannerRight } = content;
+    const { title, para, bannerLeft, bannerRight, downArrow } = content;
     // Set Bg-Image
     const router = usePathname();
     let backgroundImage;
@@ -82,25 +74,31 @@ function Description({ content }) {
             break;
     }
     return (
-        <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative `}>
-            <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
+        <section className={`w-full flex items-center justify-start py-6 md:py-12 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative `}>
+            <div className="px-[35px] sm:px-8 lg:max-w-7xl mx-auto">
                 <div className='grid grid-cols-12   justify-items-center w-full '>
-                {bannerLeft && <div className={`col-span-12 lg:col-span-6 my-auto flex flex-col justify-between lg:h-full`}>
+                    {bannerLeft && <div className={`order-last lg:order-first  col-span-12 lg:col-span-6 flex flex-col justify-between lg:h-full`}>
                         <Image src={bannerLeft} />
                     </div>
                     }
-                    <div className={`${bannerLeft && "lg:ps-[55px] "}col-span-12 lg:col-span-6 ms-auto pe-5 mb-32 flex flex-col justify-center h-full`}>
+                    <div className={`${bannerLeft && "lg:ps-[55px]"} col-span-12 lg:col-span-6 ms-auto pe-5 flex flex-col justify-center `}>
                         <h1 className={`text-[#fff] text-[25px] md:text-[35px] font-[800] montserrat font-sans leading-[45px]  mt-5 mb-4 text-start`}>
                             {title}
                         </h1>
-                        <p className="text-[12px] sm:text-[15px] montserrat text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-start mb-5">
+                        <p className="text-[12px] sm:text-[15px] montserrat text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-start ">
                             {para}
                         </p>
+                        {downArrow &&
+                            <div className={`flex items-center h-[70px] ${downArrow === 'start' &&  'justify-start border-l-2 mt-3' } ${downArrow === 'end' &&  'justify-end border-r-2 mt-3' }  border-gray-500`}>
+                                <Image src={DescDot} width='25px' height='25px' className={`${downArrow === 'start' &&  'ms-[-18px]' } ${downArrow === 'end' &&  'me-[-18px]' }`} />
+                            </div>
+                        }
                     </div>
                     {bannerRight && <div className={`col-span-12 lg:col-span-6 my-auto flex flex-col justify-between lg:h-full`}>
                         <Image src={bannerRight} />
                     </div>
                     }
+
                 </div>
             </div>
         </section>

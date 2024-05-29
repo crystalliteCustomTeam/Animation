@@ -13,7 +13,7 @@ import testimonialIcon from "media/location-page/port-cloud-icon.png";
 import { Fancybox as NativeFancybox } from "@fancyapps/ui"
 import "@fancyapps/ui/dist/fancybox/fancybox.css"
 
-function TestimonialNew({ content }) {
+function TestimonialNew({ content, poster }) {
     const { title, para, testiContentNew, testiContentNew2 } = content;
     const testiSlider = {
         dots: false,
@@ -57,87 +57,100 @@ function TestimonialNew({ content }) {
         return <div ref={containerRef}>{props.children}</div>;
     }
 
+    // video code start
+    const handleVideoPlay = (e) => {
+        const video = e.currentTarget.querySelector('video');
+        video.play();
+    };
+    const handleVideoPause = (e) => {
+        const video = e.currentTarget.querySelector('video');
+        video.pause();
+    };
+
     return (
-        <section className="w-full py-4 mb-24 lg:mb-32 md:py-6 lg:py-8 justify-center relative">
+        <section className="w-full mb-[50px] lg:mb-16 py-6 md:py-12 lg:py-16 justify-center relative">
             {/* <Image src={testimonialBg} className="absolute w-full sm:block hidden -z-1 testimonialBg" alt="Infinity Animation" /> */}
             <div className="relative z-50">
                 <div className='flex items-center justify-center py-[25px]'>
                     <div className='w-full text-center'>
-                        <h1 className="text-[15px] sm:text-[25px] lg:text-[35px] xl:text-[50px] font-semibold font-sans leading-none mb-3">
-                            {title}
-                        </h1>
-                        <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3 text-center mb-0 lg:mb-5">
+                    <h1 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight my-2">
+                                {title}
+                            </h1>
+                        <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3 text-center mb-[35px]">
                             {para}
                         </p>
                     </div>
                 </div>
-                {/* <div className="mb-28">
-                    <Slider {...testiSlider} className="videoSlider">
+                <div className="mb-[25px]">
+                    <Slider {...testiSlider} >
                         {testiContentNew.map((testimonial, index) => (
                             <Fancybox options={{ Carousel: { infinite: false } }} key={index}>
-                                <div className="w-full h-full group flex justify-center">
-                                    <div className='flex bg-[#fff0f1] w-[520px] h-[185px] rounded-full mx-4 box'>
-                                        {testimonial.video ? (
-                                            <Link href={testimonial.video} datafancybox="gallery">
-                                                <div className='w-[155px] h-[155px] md:w-[175px] md:h-[184px] overlay-div'>
-                                                    <Image
-                                                        src={testimonial.thumbnail}
-                                                        alt="Infinity Animations"
-                                                        className='w-full h-full rounded-full' />
-                                                    <div className="overlay">
-                                                        <Image src={testimonialIcon} width="45" height="45" className="img-fuild" />
-                                                    </div>
+                            <div className="w-full h-full group flex justify-center">
+                                <div className='flex bg-[#D60925]  rounded-[25px] mx-4 p-[25px] ' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
+                                    {testimonial.video ? (
+                                        <Link href={testimonial.video} datafancybox="gallery">
+                                            <div className='w-[155px] h-[155px] md:w-[180px] md:h-[184px] overlay-div'>
+                                                <div className='w-[145px] h-[150px] md:w-[175px] md:h-[180px]  flex justify-center items-center'>
+                                                    <video loading="lazy" muted loop preload="auto" poster={poster} autoPlay={false} className="rounded-[12px] w-[150px] h-full object-cover " >
+                                                        <source src={testimonial.video} type="video/mp4" />
+                                                    </video>
                                                 </div>
-                                            </Link>
-                                        ) : (
-                                            <div className='w-[85%] h-[170px] md:w-[275px] md:h-[175px] lg:w-[180px] lg:h-[184px] mt-[7px] md:mt-[5px] lg:mt-0'>
-                                                <Image
-                                                    src={testimonial.thumbnail}
-                                                    alt="Infinity Animations"
-                                                    className='w-full h-full rounded-full' />
                                             </div>
-                                        )}
-                                        <div className='w-full lg:w-[320px] ps-2 md:ps-4 pe-[15px] flex flex-col justify-between py-3'>
-                                            <div className='flex '>
-                                                <Image
-                                                    src={quote}
-                                                    alt="Infinity Animations"
-                                                    className='rounded-full w-[30px] h-[30px]' />
-                                                <h3 className="w-[70%] md:w-auto text-[18px] md:text-[20px] leading-[24px] font-semibold font-sans ps-3 text-black">
+                                        </Link>
+                                    ) : (
+                                        <div className='w-[155px] h-full md:w-[175px] md:h-[200px]  flex justify-center items-center'>
+                                            <Image
+                                                src={testimonial.thumbnail}
+                                                alt="Infinity Animations"
+                                                className='rounded-[12px] h-full' />
+                                        </div>
+                                    )}
+                                    <div className='w-full lg:w-[320px] ps-2 md:ps-4 pe-[15px] flex flex-col justify-between py-3'>
+                                        <div className='flex '>
+                                            <Image
+                                                src={quote}
+                                                alt="Infinity Animations"
+                                                className=' w-[40px] h-[40px]' />
+                                            <div>
+                                                <h3 className=" text-[18px] md:text-[20px] leading-[24px] font-semibold font-sans ps-3 text-[#fff]">
                                                     {testimonial.name}
                                                 </h3>
+                                                <h3 className=" text-[13px] italic  font-semibold font-sans ps-3 text-white-600/[.06]">
+                                                    {testimonial.company}
+                                                </h3>
                                             </div>
-                                            <div className=''>
-                                                <p className="text-[11px] xl:text-[14px] font-sans font-light text-black testmonial-copy-para">
-                                                    {testimonial.para}
-                                                </p>
-                                            </div>
-                                            <div className=''>
-                                                <Image
-                                                    src={testimonial.stars}
-                                                    className="w-[30%]" alt='Infinity Animation' />
-                                            </div>
+                                        </div>
+                                        <div className='my-3'>
+                                            <p className="text-[11px] xl:text-[14px] font-sans font-light text-white testmonial-location">
+                                                {testimonial.para}
+                                            </p>
+                                        </div>
+                                        <div className=''>
+                                            <Image
+                                                src={testimonial.stars}
+                                                className="w-[30%]" alt='Infinity Animation' />
                                         </div>
                                     </div>
                                 </div>
-                            </Fancybox>
+                            </div>
+                        </Fancybox>
                         ))}
                     </Slider>
-                </div> */}
-                <div className="mt-28">
+                </div>
+                <div className="mt-[25px]">
                     <Slider {...testiSlider} className="videoSlider">
                         {testiContentNew2.map((testimonial, index) => (
                             <Fancybox options={{ Carousel: { infinite: false } }} key={index}>
                                 <div className="w-full h-full group flex justify-center">
-                                    <div className='flex bg-[#D60925]  rounded-[25px] mx-4 p-[25px]'>
+                                    <div className='flex bg-[#D60925]  rounded-[25px] mx-4 p-[25px] ' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                                         {testimonial.video ? (
                                             <Link href={testimonial.video} datafancybox="gallery">
-                                                <div className='w-[145px] h-full md:w-[175px] md:h-[200px]  flex justify-center items-center'>
-                                                    <Image
-                                                        src={testimonial.thumbnail}
-                                                        alt="Infinity Animations"
-                                                        className='rounded-[12px] h-full ' />
-        
+                                                <div className='w-[155px] h-[155px] md:w-[180px] md:h-[184px] overlay-div'>
+                                                    <div className='w-[145px] h-[150px] md:w-[175px] md:h-[180px]  flex justify-center items-center'>
+                                                        <video loading="lazy" muted loop preload="auto" poster={poster} autoPlay={false} className="rounded-[12px] w-[150px] h-full object-cover " >
+                                                            <source src={testimonial.video} type="video/mp4" />
+                                                        </video>
+                                                    </div>
                                                 </div>
                                             </Link>
                                         ) : (
@@ -155,16 +168,16 @@ function TestimonialNew({ content }) {
                                                     alt="Infinity Animations"
                                                     className=' w-[40px] h-[40px]' />
                                                 <div>
-                                                    <h3 className="w-[70%] md:w-auto text-[18px] md:text-[20px] leading-[24px] font-semibold font-sans ps-3 text-[#fff]">
+                                                    <h3 className=" text-[18px] md:text-[20px] leading-[24px] font-semibold font-sans ps-3 text-[#fff]">
                                                         {testimonial.name}
                                                     </h3>
-                                                    <h3 className="w-[70%] md:w-auto text-[13px] italic  font-semibold font-sans ps-3 text-white-600/[.06]">
+                                                    <h3 className=" text-[13px] italic  font-semibold font-sans ps-3 text-white-600/[.06]">
                                                         {testimonial.company}
                                                     </h3>
                                                 </div>
                                             </div>
-                                            <div className=''>
-                                                <p className="text-[11px] xl:text-[14px] font-sans font-light text-black testmonial-location">
+                                            <div className='my-3'>
+                                                <p className="text-[11px] xl:text-[14px] font-sans font-light text-white testmonial-location">
                                                     {testimonial.para}
                                                 </p>
                                             </div>

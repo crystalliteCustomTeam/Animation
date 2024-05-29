@@ -9,7 +9,7 @@ import Portfolio from '@/components/location-page/portfolio/Portfolio';
 import Concept from '@/components/location-page/concept/Concept';
 import TestimonialNew from '@/components/location-page/testimonialNew/Testimonial';
 import Contact from '@/components/location-page/contact/Contact';
-import Services from '@/components/location-page/services/services';
+import Services from '@/components/location-page/services/Services';
 import Brands from '@/components/location-page/brands/Brands';
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
@@ -41,7 +41,7 @@ import Matt from "media/thumbnails/matt.jpg";
 import Grace from "media/thumbnails/grace.png";
 import Alex from "media/thumbnails/alex.png";
 import Olivia from "media/thumbnails/olivia.png";
-import TestiImg from "media/location-page/testi-img.png"
+
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.png";
 import Thumnail2 from "media/thumbnails/2d-animation/2.png";
@@ -73,10 +73,12 @@ import Thumnail27 from "media/thumbnails/hybrid/3.png";
 import Thumnail28 from "media/thumbnails/hybrid/4.png";
 import Thumnail29 from "media/thumbnails/hybrid/5.png";
 import Thumnail30 from "media/thumbnails/hybrid/6.png";
-import Description from '@/components/location-page/description/description';
+import Description from '@/components/location-page/description/Description';
 import DescImg1 from "media/location-page/desc-1.png"
 import DescImg2 from "media/location-page/desc-2.png"
 import DescImg3 from "media/location-page/desc-3.png"
+import BannerContact from '@/components/location-page/contact-banner/bannercontact';
+import Want from '@/components/location-page/want/Want';
 
 
 const LocationPage = () => {
@@ -92,18 +94,26 @@ const LocationPage = () => {
             from <br /><span className='text-[#FF2D4A]'>Houston Animation Studios</span></>),
         para: "In the dynamic landscape of animation, Austin animation studios often seek ways to enhance their creative output. Cloud Animations offers a solution through resource augmentation, providing skilled animators to elevate Austin animation projects for businesses. By collaborating with our experienced team, our Austin animation studio can seamlessly augment its workforce, ensuring projects are executed with precision and creativity. Our dedicated animators bring fresh perspectives and technical expertise, enhancing the overall quality of animations produced in the vibrant hub of animation in Austin, TX.",
         bannerRight: DescImg1,
+        downArrow: 'start'
     };
     const Desc2 = {
-        title: (<>Resource Augmentation
-            from <br /><span className='text-[#FF2D4A]'>Houston Animation Studios</span></>),
-        para: "In the dynamic landscape of animation, Austin animation studios often seek ways to enhance their creative output. Cloud Animations offers a solution through resource augmentation, providing skilled animators to elevate Austin animation projects for businesses. By collaborating with our experienced team, our Austin animation studio can seamlessly augment its workforce, ensuring projects are executed with precision and creativity. Our dedicated animators bring fresh perspectives and technical expertise, enhancing the overall quality of animations produced in the vibrant hub of animation in Austin, TX.",
+        title: (<>Comprehensive
+            <br /><span className='text-[#FF2D4A]'>Animation Solutions </span></>),
+        para: "At Cloud Animation, we pride ourselves on offering a diverse range of innovative animation solutions tailored to meet the unique needs of our clients in Austin and beyond. Our expertise spans various animation styles, from captivating 2D animation in Austin and immersive 3D animation in Austin to engaging whiteboard presentations and dynamic motion graphics. We excel in precise 2D video animations in Austin, which includes video editing and logo animations. At our 2D animation studio in Austin, we breathe life into architectural concepts through detailed architectural visualizations. Our mastery extends to the realms of cutting-edge CGI-VFX, informative infographics, and the unique charm of hybrid & and cel animations. With our skilled team and state-of-the-art studio, Cloud Animation delivers unmatched creativity and professionalism in every animation project, making us the top choice for animation solutions in Austin.",
         bannerLeft: DescImg2,
+        downArrow: 'end'
     };
     const Desc3 = {
-        title: (<>Resource Augmentation
-            from <br /><span className='text-[#FF2D4A]'>Houston Animation Studios</span></>),
-        para: "In the dynamic landscape of animation, Austin animation studios often seek ways to enhance their creative output. Cloud Animations offers a solution through resource augmentation, providing skilled animators to elevate Austin animation projects for businesses. By collaborating with our experienced team, our Austin animation studio can seamlessly augment its workforce, ensuring projects are executed with precision and creativity. Our dedicated animators bring fresh perspectives and technical expertise, enhancing the overall quality of animations produced in the vibrant hub of animation in Austin, TX.",
+        title: (<>Elevating Your Project's Visuals
+         <br /><span className='text-[#FF2D4A]'>Partner with Houston Animation</span></>),
+        para: "In the heart of Austin, Cloud Animation leads the way among animation production companies in Austin, offering top-tier services that redefine visual storytelling. Our engaging animation workshops in Austin provide hands-on learning experiences, nurturing talent for the future. With cutting-edge video animation services for social media in Austin, we elevate your brand's presence online and propel it to new heights like before. As one of the premier Austin – Texas animation studios, Cloud Animation blends expertise with creativity, making us the pinnacle choice for captivating animations in the vibrant Texan city.",
         bannerRight: DescImg3,
+    };
+    // banner Ribon
+    const bannerContact = {
+        title: (<>Be the First to
+            Hire Our Professional Animators</>),
+        para: "In the dynamic landscape of animation, Austin animation studios often seek ways to enhance their creative output. Cloud Animations offers a solution through resource augmentation, providing skilled animators to elevate Austin animation projects for businesses. By collaborating with our experienced team, our Austin animation studio can seamlessly augment its workforce, ensuring projects are executed with precision and creativity. Our dedicated animators bring fresh perspectives and technical expertise, enhancing the overall quality of animations produced in the vibrant hub of animation in Austin, TX.",
     };
     //=====Looking Fold=====//
     const paraArray = [
@@ -358,50 +368,50 @@ const LocationPage = () => {
             stars: icon2,
             name: 'Edd Lockwood',
             company: "ABC company",
-            video: "https://youtu.be/1ab6famvBmE?si=lWPOQck-AXmKdBfe",
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Emily Margolis',
             company: "ABC company",
-            video: "https://youtu.be/NfhGVS6thtM?si=qKGBKPRdLj_8onVy",
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Mathew',
             company: "ABC company",
-            video: "https://youtu.be/elOXjok2nWU?si=YoauMkUQvublB-V5",
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Helen Brooks',
             company: "ABC company",
-            video: "https://youtu.be/e5GWTWd4k7U?si=OXc3_K1kpo7OxOQE",
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Gary Wilson',
             company: "ABC company",
-            video: "https://youtu.be/gQt3RKFwaqQ?si=jGBKle6DJhd1Lvdn",
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Sylvia David',
             company: "ABC company",
-            video: "https://youtu.be/UU3BQAt7hlg?si=jiE_E2Hci-xeq1GQ",
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Matt Evans',
             company: "ABC company",
-            video: "https://youtu.be/8c0pcN-OQGI?si=3i-Td6-MD9gwl3FZ",
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
@@ -431,6 +441,14 @@ const LocationPage = () => {
         btnBg: "bg-prime",
         testiContent: testiContent
     };
+
+    //=====Want Fold=====//
+    const want = {
+        title: "Want to Talk ?",
+        wantDesc: "Have questions? We have answers, Call Now!",
+        bgPrime: true,
+    }
+
     //=====Testimonial Fold=====//
     const testiContentNew = [
         {
@@ -438,39 +456,40 @@ const LocationPage = () => {
             name: 'Emily Margolis',
             company: "ABC company",
             para: `We approached Infinity Animations, a leading video animation agency, for a short explainer video. Their team provided exceptional video animation services and delivered a high-quality 2D animation right on time. Highly recommended!`,
-            video: "https://youtu.be/NfhGVS6thtM?si=qKGBKPRdLj_8onVy",
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Helen Brooks',
             company: "ABC company",
             para: `Huge thanks to Infinity Animations for their incredible video production service. They made the entire process seamless and produced a visually stunning animation that perfectly matched our brand.`,
-            video: "https://youtu.be/e5GWTWd4k7U?si=OXc3_K1kpo7OxOQE",
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Mathew',
             company: "ABC company",
             para: `A big thank you to Infinity Animations, a top-notch video animation company, for delivering an outstanding explainer video. The team was responsive, creative, and quick to complete the project.`,
-            video: "https://youtu.be/elOXjok2nWU?si=YoauMkUQvublB-V5",
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Gary Wilson',
             company: "ABC company",
             para: `I highly recommend Infinity Animations, a premier animation agency, for their excellent video animation services. They created a high-quality animation for our campaign and were a pleasure to work with throughout the process.`,
-            video: "https://youtu.be/gQt3RKFwaqQ?si=jGBKle6DJhd1Lvdn",
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Grace Turner',
             company: "ABC company",
             para: 'Choosing this animation team was a game-changer for our marketing campaigns. Their creativity and attention to detail brought our brand stories to life in ways we never imagined. Exceptional work!',
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
     ];
     // =========================
@@ -480,38 +499,40 @@ const LocationPage = () => {
             name: 'Sylvia David',
             company: "ABC company",
             para: `I wanted to give a big shout-out to Infinity Animations, a top video animation company, for their outstanding work on our promotional video. Their team was easy to work with and delivered the project quickly and efficiently.`,
-            video: "https://youtu.be/UU3BQAt7hlg?si=jiE_E2Hci-xeq1GQ",
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Edd Lockwood',
             company: "ABC company",
             para: `Kudos to Infinity Animations, a fantastic video marketing agency, for creating an engaging and visually appealing animated video. Their team’s creativity and professionalism made our project a huge success.`,
-            video: "https://youtu.be/1ab6famvBmE?si=lWPOQck-AXmKdBfe",
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Matt Evans',
             company: "ABC company",
             para: `We needed a compelling video for our new product launch, and Infinity Animations, as a video animation agency, exceeded our expectations. Their video production service was exceptional, delivering a high-quality animation in a timely manner.`,
-            video: "https://youtu.be/8c0pcN-OQGI?si=3i-Td6-MD9gwl3FZ",
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Alex Mitchell',
             company: "ABC company",
             para: 'Working with this animation team elevated the educational content on my platform. The animations were not only visually engaging but also simplified complex concepts for my audience. Highly recommend for anyone in the education space.',
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Olivia Bennett',
             company: "ABC company",
             para: "The architectural visualization provided by this team surpassed our expectations. The animations brought our designs to life with incredible detail and realism. A fantastic experience from start to finish!",
-            thumbnail: TestiImg,
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
     ];
 
@@ -537,12 +558,14 @@ const LocationPage = () => {
         <>
             <div className='bg-black'>
                 <Hero content={hero} />
+                <BannerContact content={bannerContact} />
                 <Services />
                 <Description content={Desc1} />
                 <Portfolio content={portfolio} />
                 <Description content={Desc2} />
                 <Description content={Desc3} />
-                <Brands content={brands1} />
+                <Want content={want} />
+                {/* <Brands content={brands1} /> */}
                 <Concept content={concept} />
                 {/* <Testimonial content={testimonial} /> */}
                 <TestimonialNew content={testimonialNew} />

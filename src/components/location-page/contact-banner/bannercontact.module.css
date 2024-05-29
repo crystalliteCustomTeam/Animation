@@ -1,0 +1,69 @@
+.paraBg {
+  background: url(../../../../public/location-page/bg-para.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.paraBg::before {
+  background-image: url(/_next/static/media/target.e4491f21.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: -27px;
+  top: -27px;
+  content: '';
+  width: 55px;
+  height: 55px;
+  z-index: 0;
+}
+
+  .ribbon {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    background: #fff;
+    background-size: cover;
+    text-transform: uppercase;
+    color: white;
+  }
+
+
+  .ribbon5 {
+    display: block;
+    /* width: 550px; */
+    height: 70px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: -11px;
+    margin-right: -11px;
+    background: url(../../../../public/location-page/ribbon-bg.png);
+    background-size: 350px 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #D60925;
+    position: relative;
+    top: 20px;
+  }
+  .ribbon5:before, .ribbon5:after {
+    content: "";
+    position: absolute;
+  }
+  .ribbon5:before {
+    height: 0;
+    width: 0;
+    bottom: -9px;
+    left: 0;
+    border-top: 10px solid #D60925;
+    border-left: 10px solid transparent;
+  }
+  .ribbon5:after {
+    height: 0;
+    width: 0;
+    right: 0;
+    bottom: -9px;
+    border-top: 10px solid #D60925;
+    border-right: 10px solid transparent;
+  }
+  

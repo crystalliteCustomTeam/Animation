@@ -55,7 +55,7 @@ const Portfolio = ({ content }) => {
     };
     return (
         <>
-            <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-16`}>
+            <section className={`w-full flex items-center justify-start py-6 md:py-12 lg:py-16`}>
                 <div className="container">
                     <div className='flex items-center justify-around'>
                         <div className='w-full text-center'>
@@ -99,7 +99,7 @@ const Portfolio = ({ content }) => {
                                 </Fancybox>
                             )}
                         </div>
-                        <div className="block md:hidden">
+                        <div className="block md:hidden mt-4">
                             {tabContents[activeTab] && (
                                 <Fancybox options={{
                                     Carousel: {
@@ -111,7 +111,7 @@ const Portfolio = ({ content }) => {
                                             <Link key={index} href={item.video} datafancybox="gallery" className={`${styles.shadow} w-full h-full group`}>
                                                 <div className="overlay relative">
                                                     <Image src={item.thumbnail} alt="Infinity Animations" width={468} height={263} className='min-h-[263px]' />
-                                                    <div className="bg-secondary-100/70 h-full w-full absolute left-[50%] top-[50%] translate-x-[-50%] group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center ">
+                                                    <div className="bg-black/[0.2] h-full w-full absolute left-[50%] top-[50%] translate-x-[-50%] group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center ">
                                                         <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0' />
                                                     </div>
                                                 </div>

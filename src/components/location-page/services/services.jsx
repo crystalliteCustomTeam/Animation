@@ -44,7 +44,7 @@ const Services = () => {
 
     return (
         <>
-            <section className=' py-[50px] lg:py-[80px]'>
+            <section className='py-6 md:py-12 lg:py-16'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-6">
                         <div className="col-span-12 text-center">
@@ -76,7 +76,7 @@ const Services = () => {
                                     <div className="card rounded-[10px] bg-black shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
                                         <Image src={items.image} alt='card-1' />
                                         <div className="content">
-                                            <h3 className='text-[#fff] text-[20px] md:text-[27px] font-[900] montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] text-center lg:h-[96px]'>{items.title}</h3>
+                                            <h3 className='text-[#fff] text-[20px] md:text-[27px] font-[900] montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] text-center lg:h-[96px] hover:text-[#FF2D4A]'>{items.title}</h3>
                                             <p className='text-[11px] sm:text-[13px] montserrat text-[#fff] font-light h-[125px] leading-[1.42857143] md:pr-[17px] lg:h-[125px] text-center '>{items.para}</p>
                                         </div>
                                     </div>

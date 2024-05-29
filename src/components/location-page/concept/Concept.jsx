@@ -13,7 +13,7 @@ const Concept = ({ content }) => {
     const { btnBg, btnColor, btnBorder, btnHover, } = content;
     return (
         <>
-            <section className={`w-full h-full flex items-center justify-star bg-none lg:bg-[url("../../public/home/concept-bg.gif")] bg-no-repeat bg-center bg-[length:100%_90%]`}>
+            <section className={`w-full h-full py-6 md:py-12 lg:py-16 flex items-center justify-star bg-none lg:bg-[url("../../public/home/concept-bg.gif")] bg-no-repeat bg-center bg-[length:100%_90%]`}>
                 <div className="container">
                     <div className='lg:w-[550px] xl:w-[650px] ml-auto mt-0 lg:mt-48 pb-8 md:pb-16 lg:pb-20'>
                         <div className="grid grid-cols-2 gap-12 relative">
