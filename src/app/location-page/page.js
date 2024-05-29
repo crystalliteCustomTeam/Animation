@@ -1,16 +1,16 @@
 "use client"
 import React from 'react';
 // Import Components
-// import Hero from '@/components/location-page/hero/Hero';
-// Import Page Components
 import Hero from '@/components/location-page/hero/Hero';
 import Looking from '@/components/location-page/looking/Looking';
 import Portfolio from '@/components/location-page/portfolio/Portfolio';
 import Concept from '@/components/location-page/concept/Concept';
+import BannerContact from '@/components/location-page/contact-banner/bannercontact';
+import Want from '@/components/location-page/want/Want';
 import TestimonialNew from '@/components/location-page/testimonialNew/Testimonial';
 import Contact from '@/components/location-page/contact/Contact';
+import Description from '@/components/location-page/description/Description';
 import Services from '@/components/location-page/services/Services';
-import Brands from '@/components/location-page/brands/Brands';
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
 //==== StoryLine Images
@@ -41,7 +41,6 @@ import Matt from "media/thumbnails/matt.jpg";
 import Grace from "media/thumbnails/grace.png";
 import Alex from "media/thumbnails/alex.png";
 import Olivia from "media/thumbnails/olivia.png";
-
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.png";
 import Thumnail2 from "media/thumbnails/2d-animation/2.png";
@@ -73,13 +72,9 @@ import Thumnail27 from "media/thumbnails/hybrid/3.png";
 import Thumnail28 from "media/thumbnails/hybrid/4.png";
 import Thumnail29 from "media/thumbnails/hybrid/5.png";
 import Thumnail30 from "media/thumbnails/hybrid/6.png";
-import Description from '@/components/location-page/description/Description';
 import DescImg1 from "media/location-page/desc-1.png"
 import DescImg2 from "media/location-page/desc-2.png"
 import DescImg3 from "media/location-page/desc-3.png"
-import BannerContact from '@/components/location-page/contact-banner/bannercontact';
-import Want from '@/components/location-page/want/Want';
-
 
 const LocationPage = () => {
     //=====Banner Fold=====//
