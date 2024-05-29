@@ -9,8 +9,8 @@ import BannerContact from '@/components/location-page/contact-banner/bannerconta
 import Want from '@/components/location-page/want/Want';
 import TestimonialNew from '@/components/location-page/testimonialNew/Testimonial';
 import Contact from '@/components/location-page/contact/Contact';
-import Description from '@/components/location-page/description/Description';
-import Services from '@/components/location-page/services/Services';
+// import Description from '@/components/location-page/description/Description';
+// import Services from '@/components/location-page/services/Services';
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
 //==== StoryLine Images
@@ -554,11 +554,11 @@ const LocationPage = () => {
             <div className='bg-black'>
                 <Hero content={hero} />
                 <BannerContact content={bannerContact} />
-                <Services />
-                <Description content={Desc1} />
+                {/* <Services /> */}
+                {/* <Description content={Desc1} /> */}
                 <Portfolio content={portfolio} />
-                <Description content={Desc2} />
-                <Description content={Desc3} />
+                {/* <Description content={Desc2} /> */}
+                {/* <Description content={Desc3} /> */}
                 <Want content={want} />
                 {/* <Brands content={brands1} /> */}
                 <Concept content={concept} />
