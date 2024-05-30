@@ -193,7 +193,6 @@ function BannerContact({ content }) {
       <section className={`w-full flex items-center justify-start py-6 md:py-12 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative `}>
         <div className="px-4 sm:px-[60px]  mx-auto">
           <div className='grid grid-cols-12 lg:pt-[55px]  justify-items-around w-full '>
-
             <div className={`col-span-12 lg:col-span-5 flex flex-col`}>
             <div className={`lg:h-full ${styles.sectionRibbon} bg-[#D60925] rounded-[4px]  `}>
               <div className={`${styles.ribbon} bg-white border py-[20px] `}>
@@ -209,7 +208,6 @@ function BannerContact({ content }) {
                 <div className="form pt-[55px] px-[15px] sm:px-[25px] md:px-[35px] pb-[30px]">
                   <div className="relative">
                     <div className='flex mt-[10px] py-[13px] px-[8px] rounded-[4px] w-full border-none bg-[#E6E6E6] mb-[25px]'>
-                      {/* <BsPerson size={24} color='#858585' /> */}
                       <Image src={Profile} height='15px' width='15px' />
                       <input type="text" name="name" placeholder='Enter your name' className='mx-3 w-full bg-transparent montserrat placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
                     </div>
@@ -221,7 +219,6 @@ function BannerContact({ content }) {
                   </div>
                   <div className="relative">
                     <div className='flex mt-[10px] py-[13px] px-[8px] rounded-[4px] w-full border-none bg-[#E6E6E6] mb-[25px]'>
-                      {/* <BsPerson size={24} color='#858585' /> */}
                       <Image src={message} height='15px' width='15px' />
                       <input type="email" name='email' placeholder='Enter Email' className='mx-3 w-full bg-transparent montserrat placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
                     </div>
@@ -233,7 +230,6 @@ function BannerContact({ content }) {
                   </div>
                   <div className="relative">
                     <div className='flex mt-[10px] py-[13px] px-[8px] rounded-[4px] w-full border-none bg-[#E6E6E6] mb-[25px]'>
-                      {/* <BsPerson size={24} color='#858585' /> */}
                       <Image src={phone} height='15px' width='15px' />
                       <input type="tel" name='phone' minLength="10"
                         maxLength="13"
@@ -257,7 +253,7 @@ function BannerContact({ content }) {
             </div>
 
             <div className={`  col-span-12 lg:col-span-7 flex flex-col justify-center h-full px-[15px] lg:ps-[15%] mx-[15px] sm:mx-[35px] md:mx-0 mt-[55px] lg:mt-5  ${styles.paraBg}`}>
-              <h3 className={`text-[#fff] text-[25px]  md:text-[25px] font-semibold montserrat font-sans leading-[45px]  mt-5 mb-4 text-center lg:text-start`}>
+              <h3 className={`text-[#fff] text-[35px] sm:text-[40px] font-semibold font-sans leading-tight mt-5 mb-5 text-center lg:text-start`}>
                 {title}
               </h3>
               <p className="text-[12px] sm:text-[15px] montserrat text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-center lg:text-start mb-5">

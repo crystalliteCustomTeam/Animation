@@ -2,33 +2,33 @@
   background: url(/_next/static/media/banner-img.bf692222.png);
   background-size: 85%;
   background-position: center;
-  /* background-position-x: center; */
   transition: transform 0.2s;
   padding: 50px;
   padding-bottom: 0;
-  width: 100%;
+  width: 85%;
   background-repeat: no-repeat;
   position: relative;
 }
 
 .bannerImg:hover {
   transform: scale(1.1);
-
 }
 
 .topLeft {
-  width: 150px;
-  top: 35px;
+  width: 120px;
+  top: 25px;
+  left: -5px;
   position: absolute;
 }
 
 .bannerImg:hover .topLeft {
-  transform: translate(-42px, 28px);
+  transform: translate(-40px, 5px);
 }
 
 .topRight {
+  width: 80px;
   top: 85px;
-  right: 30px;
+  right: 20px;
   position: absolute;
 }
 

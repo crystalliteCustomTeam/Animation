@@ -13,7 +13,7 @@ const Looking = ({ content }) => {
         <>
             <section className={`w-full flex items-center justify-start py-6 md:py-12 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative `}>
                 <div className="px-[35px] sm:px-8 lg:px-16 mx-auto">
-                    <div className='grid grid-cols-12 flex '>
+                    <div className='grid grid-cols-12 '>
                         <div className="col-span-12 lg:col-span-5 flex flex-col items-start ">
                             <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5 capitalize`}>
                                 {main}

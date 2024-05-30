@@ -49,7 +49,7 @@ const Services = () => {
                     <div className="grid grid-cols-12 gap-6 mt-[35px] md:mt-0">
                         <div className="col-span-12 text-center">
                             <p className='w-full md:w-[70%] lg:w-[60%] mx-auto text-[16px] sm:text-[18px] font-normal font-sans leading-[10px] tracking-wider text-center my-2 '>Visuals to Entice & Excite</p>
-                            <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans text-[#FF2D4A] leading-tight mb-5 capitalize`}>
+                            <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans text-[#FF2D4A] leading-tight mb-8 capitalize`}>
                                 our service
                             </h2>
                         </div>
@@ -61,7 +61,7 @@ const Services = () => {
                                     <div className="card rounded-[10px] bg-black shadow-2xl pt-[5px] px-[20px] pb-[35px] h-full">
                                         <Image src={items.image} alt='card' />
                                         <div className="content">
-                                            <h3 className='text-[#fff] text-[20px] md:text-[25px] font-bold montserrat py-[20px] leading-[23px] md:leading-[33px] text-center hover:text-[#FF2D4A]'>{items.title}</h3>
+                                            <h3 className='text-[#fff] text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] text-center hover:text-[#FF2D4A]'>{items.title}</h3>
                                             <p className='text-[11px] sm:text-[14px] montserrat text-[#fff] font-normal leading-[1.52857143] md:px-[10px] text-center '>{items.para}</p>
                                         </div>
                                     </div>

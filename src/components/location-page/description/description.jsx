@@ -38,9 +38,9 @@ function Description({ content, poster }) {
                     )} */}
 
                     <div className={` col-span-12 lg:col-span-6 ms-auto pe-5 flex flex-col justify-center `}>
-                        <h1 className={`text-[#fff] text-[25px] md:text-[35px] font-semibold montserrat font-sans leading-[45px]  mt-5 mb-4 text-start`}>
+                        <h2 className={`text-[#fff] text-[35px] sm:text-[40px] font-semibold font-sans leading-tight mt-5 mb-5 text-start`}>
                             {title}
-                        </h1>
+                        </h2>
                         <p className="text-[12px] sm:text-[15px] montserrat text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-start ">
                             {para}
                         </p>

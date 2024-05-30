@@ -526,7 +526,7 @@ div#ty7 {
 
 .videoSlider .slick-next {
   right: 45%;
-  top: 115%;
+  top: 110%;
   z-index: 999;
 }
 
@@ -545,7 +545,7 @@ div#ty7 {
 
 .videoSlider .slick-prev {
   left: 45%;
-  top: 115%;
+  top: 110%;
   z-index: 999;
 }
 
@@ -1189,11 +1189,9 @@ div.swiper-button-prev {
 
   .videoSlider .slick-next {
     right: 40%;
-    top: 115% !important;
   }
   .videoSlider .slick-prev {
     left: 40%;
-    top: 115% !important;
   }
 }
 
