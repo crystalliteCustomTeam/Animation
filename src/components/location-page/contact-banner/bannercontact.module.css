@@ -31,8 +31,7 @@
 
 .ribbon5 {
   display: block;
-  /* width: 550px; */
-  height: 70px;
+  height: 75px;
   line-height: 50px;
   text-align: center;
   margin-left: -11px;
@@ -65,4 +64,10 @@
   bottom: -9px;
   border-top: 10px solid #d60925;
   border-right: 10px solid transparent;
+}
+
+@media only screen and (max-width: 1599px) {
+  .padding {
+    padding-top: 80px;
+  }
 }

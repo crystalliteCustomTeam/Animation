@@ -190,17 +190,17 @@ function BannerContact({ content }) {
 
   return (
     <>
-      <section className={`w-full flex items-center justify-start py-6 md:py-12 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative `}>
-        <div className="px-4 sm:px-[60px]  mx-auto">
-          <div className='grid grid-cols-12 lg:pt-[55px]  justify-items-around w-full '>
+      <section className={`w-full flex items-center justify-start pb-6 md:pb-12 lg:pb-20 bg-none bg-no-repeat bg-center bg-cover relative ${styles.padding}`}>
+        <div className="container">
+          <div className='grid grid-cols-12 justify-items-around w-full'>
             <div className={`col-span-12 lg:col-span-5 flex flex-col`}>
-            <div className={`lg:h-full ${styles.sectionRibbon} bg-[#D60925] rounded-[4px]  `}>
+            <div className={`lg:h-full ${styles.sectionRibbon} bg-[#D60925] rounded-[4px]`}>
               <div className={`${styles.ribbon} bg-white border py-[20px] `}>
                 <span className={` py-3 ${styles.ribbon5} `}>
-                  <h4 className={`text-[#fff] text-[25px] md:text-[30px] font-[550] montserrat font-sans leading-[30px] text-center`}>
+                  <h4 className={`text-[#fff] text-[25px] md:text-[30px] font-[550] font-sans leading-[30px] text-center mb-2`}>
                     Contact us
                   </h4>
-                  <p className="text-[11px] sm:text-[12px] montserrat text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-center mb-5">
+                  <p className="text-[11px] sm:text-[12px] text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-center mb-5">
                     We are always here to help what you need.
                   </p>
                 </span>
@@ -209,7 +209,7 @@ function BannerContact({ content }) {
                   <div className="relative">
                     <div className='flex mt-[10px] py-[13px] px-[8px] rounded-[4px] w-full border-none bg-[#E6E6E6] mb-[25px]'>
                       <Image src={Profile} height='15px' width='15px' />
-                      <input type="text" name="name" placeholder='Enter your name' className='mx-3 w-full bg-transparent montserrat placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
+                      <input type="text" name="name" placeholder='Enter your name' className='mx-3 w-full bg-transparent font-sans placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
                     </div>
                     {errors.name && (
                       <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-40%] z-50">
@@ -220,7 +220,7 @@ function BannerContact({ content }) {
                   <div className="relative">
                     <div className='flex mt-[10px] py-[13px] px-[8px] rounded-[4px] w-full border-none bg-[#E6E6E6] mb-[25px]'>
                       <Image src={message} height='15px' width='15px' />
-                      <input type="email" name='email' placeholder='Enter Email' className='mx-3 w-full bg-transparent montserrat placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
+                      <input type="email" name='email' placeholder='Enter Email' className='mx-3 w-full bg-transparent font-sans placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
                     </div>
                     {errors.email && (
                       <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-38%] z-50">
@@ -233,7 +233,7 @@ function BannerContact({ content }) {
                       <Image src={phone} height='15px' width='15px' />
                       <input type="tel" name='phone' minLength="10"
                         maxLength="13"
-                        pattern="[0-9]*" placeholder='Enter Phone Number' className='mx-3 w-full bg-transparent montserrat placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
+                        pattern="[0-9]*" placeholder='Enter Phone Number' className='mx-3 w-full bg-transparent font-sans placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
                     </div>
                     {errors.phone && (
                       <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-38%] z-50">
@@ -256,7 +256,7 @@ function BannerContact({ content }) {
               <h3 className={`text-[#fff] text-[35px] sm:text-[40px] font-semibold font-sans leading-tight mt-5 mb-5 text-center lg:text-start`}>
                 {title}
               </h3>
-              <p className="text-[12px] sm:text-[15px] montserrat text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-center lg:text-start mb-5">
+              <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
                 {para}
               </p>
               <div className='grid grid-cols-1 '>

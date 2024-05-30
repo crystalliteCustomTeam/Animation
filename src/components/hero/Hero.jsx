@@ -14,7 +14,6 @@ const Hero = ({ content }) => {
     let margin;
     switch (router) {
         case "/":
-            // backgroundVideo = 'bg-cover bg-bottom lg:items-end xxl:items-center lg:bg-[url("../../public/home/banner-img.gif")]'
             backgroundVideo = 'https://player.vimeo.com/progressive_redirect/playback/950015917/rendition/720p/file.mp4?loc=external&log_user=0&signature=e0789e199bc0374e4971e5fc0b408a23ea883170eeb1fa2500dbaf2d0117d095'
             margin = 'mt-0'
             break;
@@ -53,7 +52,6 @@ const Hero = ({ content }) => {
             break;
         case '/2d-animation':
             backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/2d-animation/banner-bg.png")]'
-            // backgroundVideo = 'https://player.vimeo.com/progressive_redirect/playback/950010334/rendition/720p/file.mp4?loc=external&log_user=0&signature=a761e4cb6edbbad24b418c5e42ebcc25598aa36503bb5e3f218b69efbb9a666b'
             break;
         case '/3d-animation':
             backgroundVideo = 'bg-[length:100%_100%] bg-center lg:bg-[url("../../public/3d-animation/banner-bg.gif")]'

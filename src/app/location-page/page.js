@@ -13,31 +13,8 @@ import Looking from '@/components/location-page/looking/Looking';
 import Contact from '@/components/location-page/contact/Contact';
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
-//==== StoryLine Images
-import StoryLine1 from "media/storyline/storyLine1.jpg";
-import StoryLine2 from "media/storyline/storyLine2.jpg";
-import StoryLine3 from "media/storyline/storyLine3.jpg";
-import StoryLine4 from "media/storyline/storyLine4.jpg";
-import StoryLine5 from "media/storyline/storyLine5.jpg";
-import StoryLine6 from "media/storyline/storyLine6.jpg";
-import StoryLine7 from "media/storyline/storyLine7.jpg";
-import StoryLine8 from "media/storyline/storyLine8.jpg";
-import StoryLine9 from "media/storyline/storyLine9.jpg";
-import StoryLine10 from "media/storyline/storyLine10.jpg";
-//==== Boost Images
-import BoostFlodImg from "media/images/boost-img.gif";
-import boosticon1 from "media/icons/boost-icon1.png";
-import boosticon2 from "media/icons/boost-icon2.png";
-import boosticon3 from "media/icons/boost-icon3.png";
 //==== Testimonial Images
 import icon2 from "media/icons/stars.png";
-import EddLockWood from "media/thumbnails/Edd-Lockwood.jpg";
-import Emily from "media/thumbnails/emily.jpg";
-import Mathew from "media/thumbnails/mathew.jpg";
-import Helen from "media/thumbnails/helen.jpg";
-import Gary from "media/thumbnails/gary.jpg";
-import Sylvia from "media/thumbnails/sylvia.jpg";
-import Matt from "media/thumbnails/matt.jpg";
 import Grace from "media/thumbnails/grace.png";
 import Alex from "media/thumbnails/alex.png";
 import Olivia from "media/thumbnails/olivia.png";
@@ -72,9 +49,6 @@ import Thumnail27 from "media/thumbnails/hybrid/3.png";
 import Thumnail28 from "media/thumbnails/hybrid/4.png";
 import Thumnail29 from "media/thumbnails/hybrid/5.png";
 import Thumnail30 from "media/thumbnails/hybrid/6.png";
-import DescImg1 from "media/location-page/desc-1.png"
-import DescImg2 from "media/location-page/desc-2.png"
-import DescImg3 from "media/location-page/desc-3.png"
 
 const LocationPage = () => {
     //=====Banner Fold=====//
@@ -88,22 +62,21 @@ const LocationPage = () => {
         title: (<>Resource Augmentation
             from <br /><span className='text-[#FF2D4A]'>Houston Animation Studios</span></>),
         para: "In the dynamic landscape of animation, Austin animation studios often seek ways to enhance their creative output. Cloud Animations offers a solution through resource augmentation, providing skilled animators to elevate Austin animation projects for businesses. By collaborating with our experienced team, our Austin animation studio can seamlessly augment its workforce, ensuring projects are executed with precision and creativity. Our dedicated animators bring fresh perspectives and technical expertise, enhancing the overall quality of animations produced in the vibrant hub of animation in Austin, TX.",
-        bannerRight: DescImg1,
+        bannerRight: "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
         downArrow: 'start'
     };
     const Desc2 = {
         title: (<>Comprehensive
             <br /><span className='text-[#FF2D4A]'>Animation Solutions </span></>),
         para: "At Cloud Animation, we pride ourselves on offering a diverse range of innovative animation solutions tailored to meet the unique needs of our clients in Austin and beyond. Our expertise spans various animation styles, from captivating 2D animation in Austin and immersive 3D animation in Austin to engaging whiteboard presentations and dynamic motion graphics. We excel in precise 2D video animations in Austin, which includes video editing and logo animations. At our 2D animation studio in Austin, we breathe life into architectural concepts through detailed architectural visualizations. Our mastery extends to the realms of cutting-edge CGI-VFX, informative infographics, and the unique charm of hybrid & and cel animations. With our skilled team and state-of-the-art studio, Cloud Animation delivers unmatched creativity and professionalism in every animation project, making us the top choice for animation solutions in Austin.",
-        bannerLeft: DescImg2,
-        // bannerLeft: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+        bannerLeft: "https://player.vimeo.com/progressive_redirect/playback/950015817/rendition/720p/file.mp4?loc=external&log_user=0&signature=c60df41646f601d81fa4c987188c8e103f416d393f8ec1f9270e7114e4f0b3ed",
         downArrow: 'end'
     };
     const Desc3 = {
         title: (<>Elevating Your Project's Visuals
             <br /><span className='text-[#FF2D4A]'>Partner with Houston Animation</span></>),
         para: "In the heart of Austin, Cloud Animation leads the way among animation production companies in Austin, offering top-tier services that redefine visual storytelling. Our engaging animation workshops in Austin provide hands-on learning experiences, nurturing talent for the future. With cutting-edge video animation services for social media in Austin, we elevate your brand's presence online and propel it to new heights like before. As one of the premier Austin – Texas animation studios, Cloud Animation blends expertise with creativity, making us the pinnacle choice for captivating animations in the vibrant Texan city.",
-        bannerRight: DescImg3,
+        bannerRight: "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
     };
     // banner Ribon
     const bannerContact = {
@@ -122,65 +95,6 @@ const LocationPage = () => {
         isCTA: true,
         isBtns: true,
         flodImg: LookingFlodImg
-    };
-    //=====StoryLine Fold=====//
-    const accordionData = [
-        {
-            question: '2D Animations',
-            answer: "Bring your ideas to life with our dynamic 2D animations. From character-driven stories to engaging motion graphics, our animations captivate and convey your message with vibrant visuals.",
-            StoryLineImg: StoryLine1,
-        },
-        {
-            question: '3D Animations',
-            answer: "Step into a realm of immersive storytelling with our cutting-edge 3D animations. Elevate your visual narratives, whether for product showcases, virtual tours, or cinematic experiences.",
-            StoryLineImg: StoryLine2
-        },
-        {
-            question: 'Whiteboard',
-            answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
-            StoryLineImg: StoryLine3
-        },
-        {
-            question: 'Motion Graphics',
-            answer: "Transform your content into visual masterpieces with our motion graphics. Every movement is a brushstroke of dynamic storytelling, enhancing your brand's visual appeal.",
-            StoryLineImg: StoryLine4
-        },
-        {
-            question: 'Video Editing',
-            answer: "Refine your raw footage into cinematic brilliance with our video editing services. Every cut and transition is a stroke of storytelling precision, enhancing your visual narratives.",
-            StoryLineImg: StoryLine5
-        },
-        {
-            question: 'Logo Animations',
-            answer: "Make your brand memorable with our logo animation services. Dynamic animations breathe life into your logo, adding a touch of sophistication to your brand identity.",
-            StoryLineImg: StoryLine6
-        },
-        {
-            question: 'Architectural Visualization',
-            answer: "Visualize spaces in breathtaking detail with our architectural visualization services. From realistic renders to immersive walkthroughs, bring your architectural visions to life.",
-            StoryLineImg: StoryLine7
-        },
-        {
-            question: 'CGI-VFX',
-            answer: "Experience cinematic brilliance with our CGI and VFX services. Elevate your projects with lifelike animations and visual effects that push the boundaries of imagination.",
-            StoryLineImg: StoryLine8
-        },
-        {
-            question: 'Infographics',
-            answer: "Transform data into compelling visuals with our infographics services. Each design tells a story, making complex information accessible and visually engaging.",
-            StoryLineImg: StoryLine9
-        },
-        {
-            question: 'Hybrid & Cel',
-            answer: "Blend tradition with innovation through our Hybrid & Cel Animation services. Each frame is a symphony of timeless artistry and contemporary brilliance, adding a unique charm to your animation.",
-            StoryLineImg: StoryLine10
-        },
-    ];
-    const storyLine = {
-        subtitle: (<> Visuals to Entice & Excite </>),
-        title: (<> Unparalleled Storytelling with Visual Mastery </>),
-        para: "As a premier video animation company, we specialize in transforming concepts into captivating visual narratives that defy the ordinary, and formulaic. We are not afraid to push the envelope!",
-        accordionData: accordionData
     };
     //=====Portfilio Fold=====// 
     const tabInfo = [
@@ -333,120 +247,13 @@ const LocationPage = () => {
     const concept = {
         btnBg: "bg-prime",
     };
-    //=====Boost Fold=====//
-    const boostContent = [
-        {
-            icon: boosticon1,
-            heading: "Strategic Conceptualization",
-            text: "We kick off by delving deep into your brand ethos, understanding your goals, and strategically conceptualizing visuals that align with your narrative. ",
-        },
-        {
-            icon: boosticon2,
-            heading: "Creative Mastery",
-            text: "Our team of seasoned creatives then breathe life into these concepts, leveraging cutting-edge techniques and artistic finesse. ",
-        },
-        {
-            icon: boosticon3,
-            heading: "Audience Connection",
-            text: "Impact isn't just about visuals; it's about connection. We ensure that every animation, every narrative beat, is a bridge between your brand and your audience. ",
-        },
-    ];
-    const boost = {
-        title: (<> Get Them Talking </>),
-        para: (<> Leave an indelible mark on your audience's consciousness. We craft impactful visual experiences that resonate. </>),
-        btnBg: "bg-prime",
-        boostContent: boostContent,
-        flodImg: BoostFlodImg
-    };
-    //=====Testimonial Fold=====//
-    const testiContent = [
-        {
-            stars: icon2,
-            name: 'Edd Lockwood',
-            company: "ABC company",
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-        },
-        {
-            stars: icon2,
-            name: 'Emily Margolis',
-            company: "ABC company",
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-        },
-        {
-            stars: icon2,
-            name: 'Mathew',
-            company: "ABC company",
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-        },
-        {
-            stars: icon2,
-            name: 'Helen Brooks',
-            company: "ABC company",
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-        },
-        {
-            stars: icon2,
-            name: 'Gary Wilson',
-            company: "ABC company",
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-        },
-        {
-            stars: icon2,
-            name: 'Sylvia David',
-            company: "ABC company",
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-        },
-        {
-            stars: icon2,
-            name: 'Matt Evans',
-            company: "ABC company",
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-        },
-        {
-            stars: icon2,
-            name: 'Grace Turner',
-            company: "ABC company",
-            position: 'Marketing Strategist',
-            message: 'Choosing this animation team was a game-changer for our marketing campaigns. Their creativity and attention to detail brought our brand stories to life in ways we never imagined. Exceptional work!',
-        },
-        {
-            stars: icon2,
-            name: 'Alex Mitchell',
-            company: "ABC company",
-            position: 'Educational Content Creator',
-            message: 'Working with this animation team elevated the educational content on my platform. The animations were not only visually engaging but also simplified complex concepts for my audience. Highly recommend for anyone in the education space.',
-        },
-        {
-            stars: icon2,
-            name: 'Olivia Bennett',
-            company: "ABC company",
-            position: 'Architectural Designer',
-            message: "The architectural visualization provided by this team surpassed our expectations. The animations brought our designs to life with incredible detail and realism. A fantastic experience from start to finish!",
-        },
-    ];
-    const testimonial = {
-        title: (<> An Who’s Who of Industry Leading Clients </>),
-        para: (<> If you can’t trust us, try trusting them.</>),
-        btnBg: "bg-prime",
-        testiContent: testiContent
-    };
-
     //=====Want Fold=====//
     const want = {
         title: "Want to Talk ?",
         wantDesc: "Have questions? We have answers, Call Now!",
         bgPrime: true,
     }
-
     //=====Testimonial Fold=====//
-
     const testiContentNew2 = [
         {
             stars: icon2,
@@ -526,23 +333,12 @@ const LocationPage = () => {
             thumbnail: Alex,
         },
     ]
-
     const testimonialNew = {
         title: (<> The Ultimate Collection Of <br />
             Our Incredible Customer Experiences </>),
         para: (<> If you can’t trust us, try trusting them.</>),
         testiContentNew2: testiContentNew2
     };
-
-    // ===== Brands 1 Content ===== //
-    const brands1 = {
-        title: <>Reserve <br /> Your Spot!</>,
-        subTitle: "",
-        desc: <> Our custom logo animation services are accessible to all.
-            <br /> Contact today and get the ball rolling! </>,
-        isBtn: true,
-        backgroundImage: 'bg-[url("../../public/location-page/bg-brands.png")]'
-    }
 
     return (
         <>
