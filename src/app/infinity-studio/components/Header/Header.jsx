@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import usePopup from '@/app/configs/store/Popup'
 import Image from 'next/image'
 //===== Images 
-// import logo from "media/images/logo.gif";
-import logo from "media/infinity-studio/logo.svg";
+import logo from "media/images/logo.gif";
+// import logo from "media/infinity-studio/logo.svg";
 import Chat from "media/video-explainer/cht-icon.png"
 import telephone from "media/icons/call.png";
 
