@@ -15,16 +15,15 @@ const Contact = () => {
     return (
         <>
             <section className={`w-full h-full mt-8 md:mt-16 mb-10 flex items-center justify-start `}>
-                {/* <Image src={contactBg} className="absolute w-full top-[-12%] left-[-12%] sm:block hidden -z-1" alt="Infinity Animation" /> */}
                 <div className="container">
                     <div className='flex items-center justify-around'>
-                        <div className='w-full text-center'>
-                        <h1 className="text-[15px] sm:text-[25px] lg:text-[35px] xl:text-[50px] font-semibold font-sans leading-none mb-3">
-                        Connect With Us
-                        </h1>
-                        <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3 text-center mb-0 lg:mb-5">
-                        Let’s engage, share ideas, and explore together
-                        </p>
+                        <div className='w-full text-center mb-6'>
+                            <h1 className="text-[15px] sm:text-[25px] lg:text-[35px] xl:text-[50px] font-semibold font-sans leading-none mb-3">
+                                Connect With Us
+                            </h1>
+                            <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3 text-center mb-0 lg:mb-5">
+                                Let’s engage, share ideas, and explore together
+                            </p>
                         </div>
                     </div>
                     <div className='grid grid-cols-1 lg:grid-cols-2 mt-6 md:mt-4 bg-transparent relative z-50 mx-auto'>

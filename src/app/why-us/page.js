@@ -5,7 +5,6 @@ import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
 import Looking from '@/components/looking/Looking';
 import Want from '@/components/want/Want';
-// import Testimonial from '@/components/testimonial/Testimonial';
 import TestimonialNew from '@/components/testimonialNew/Testimonial';
 import Contact from '@/components/contact/Contact';
 import Features from "@/components/features/Features";

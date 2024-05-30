@@ -2,23 +2,6 @@
   transition: all 0.1s ease-in-out;
 }
 
-.imgBefore::before {
-  content: url(../../../../public/contact/contact-hvr1.png);
-  position: absolute;
-  top: -20%;
-  right: 8%;
-  opacity: 0.8;
-  display: none;
-}
-
-.imgBefore::after {
-  content: url(../../../../public/contact/contact-hvr2.png);
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  opacity: 0.8;
-  display: none;
-}
 
 .imgBefore:hover::after,
 .imgBefore:hover::before {

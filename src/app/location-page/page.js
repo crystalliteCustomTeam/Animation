@@ -2,15 +2,15 @@
 import React from 'react';
 // Import Components
 import Hero from '@/components/location-page/hero/Hero';
-import Looking from '@/components/location-page/looking/Looking';
-import Portfolio from '@/components/location-page/portfolio/Portfolio';
-import Concept from '@/components/location-page/concept/Concept';
 import BannerContact from '@/components/location-page/contact-banner/bannercontact';
+import Services from '@/components/location-page/services/Services';
+import Description from '@/components/location-page/description/Description';
+import Portfolio from '@/components/location-page/portfolio/Portfolio';
 import Want from '@/components/location-page/want/Want';
+import Concept from '@/components/location-page/concept/Concept';
 import TestimonialNew from '@/components/location-page/testimonialNew/Testimonial';
+import Looking from '@/components/location-page/looking/Looking';
 import Contact from '@/components/location-page/contact/Contact';
-// import Description from '@/components/location-page/description/Description';
-// import Services from '@/components/location-page/services/Services';
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
 //==== StoryLine Images
@@ -100,7 +100,7 @@ const LocationPage = () => {
     };
     const Desc3 = {
         title: (<>Elevating Your Project's Visuals
-         <br /><span className='text-[#FF2D4A]'>Partner with Houston Animation</span></>),
+            <br /><span className='text-[#FF2D4A]'>Partner with Houston Animation</span></>),
         para: "In the heart of Austin, Cloud Animation leads the way among animation production companies in Austin, offering top-tier services that redefine visual storytelling. Our engaging animation workshops in Austin provide hands-on learning experiences, nurturing talent for the future. With cutting-edge video animation services for social media in Austin, we elevate your brand's presence online and propel it to new heights like before. As one of the premier Austin – Texas animation studios, Cloud Animation blends expertise with creativity, making us the pinnacle choice for captivating animations in the vibrant Texan city.",
         bannerRight: DescImg3,
     };
@@ -554,15 +554,13 @@ const LocationPage = () => {
             <div className='bg-black'>
                 <Hero content={hero} />
                 <BannerContact content={bannerContact} />
-                {/* <Services /> */}
-                {/* <Description content={Desc1} /> */}
+                <Services />
+                <Description content={Desc1} />
                 <Portfolio content={portfolio} />
-                {/* <Description content={Desc2} /> */}
-                {/* <Description content={Desc3} /> */}
+                <Description content={Desc2} />
+                <Description content={Desc3} />
                 <Want content={want} />
-                {/* <Brands content={brands1} /> */}
                 <Concept content={concept} />
-                {/* <Testimonial content={testimonial} /> */}
                 <TestimonialNew content={testimonialNew} />
                 <Looking content={looking} />
                 <Contact />

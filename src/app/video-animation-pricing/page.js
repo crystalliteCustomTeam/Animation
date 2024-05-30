@@ -5,7 +5,6 @@ import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
 import Pricing from "@/components/pricing/Pricing";
 import Want from '@/components/want/Want';
-// import Testimonial from '@/components/testimonial/Testimonial';
 import TestimonialNew from '@/components/testimonialNew/Testimonial';
 import Contact from '@/components/contact/Contact';
 //==== Testimonial Images

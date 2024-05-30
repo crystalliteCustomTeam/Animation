@@ -8,7 +8,6 @@ import Tech from "@/components/tech-type/Tech";
 import Production from "@/components/productionprocess/Production";
 import Brand from "@/components/branding/Brand";
 import Want from "@/components/want/Want";
-// import Testimonial from '@/components/testimonial/Testimonial';
 import TestimonialNew from '@/components/testimonialNew/Testimonial';
 import Faqs from "@/components/faqs/Faqs";
 import Contact from '@/components/contact/Contact';

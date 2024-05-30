@@ -8,7 +8,6 @@ import Portfolio from '@/components/portfolio/Portfolio';
 import BuzzFlick from "@/components/buzzflick/Buzzflick";
 import Tech from "@/components/tech-type/Tech";
 import Production from "@/components/productionprocess/Production";
-// import Testimonial from '@/components/testimonial/Testimonial';
 import TestimonialNew from '@/components/testimonialNew/Testimonial';
 import Faqs from "@/components/faqs/Faqs";
 import Contact from '@/components/contact/Contact';

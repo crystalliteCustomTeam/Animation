@@ -8,22 +8,10 @@ import StoryLine from '@/components/storyline/StoryLine';
 import Portfolio from '@/components/portfolio/Portfolio';
 import Concept from '@/components/concept/Concept';
 import Boost from '@/components/boost/Boost';
-// import Testimonial from '@/components/testimonial/Testimonial'; 
 import TestimonialNew from '@/components/testimonialNew/Testimonial';
 import Contact from '@/components/contact/Contact';
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
-//==== StoryLine Images
-import StoryLine1 from "media/storyline/storyLine1.jpg";
-import StoryLine2 from "media/storyline/storyLine2.jpg";
-import StoryLine3 from "media/storyline/storyLine3.jpg";
-import StoryLine4 from "media/storyline/storyLine4.jpg";
-import StoryLine5 from "media/storyline/storyLine5.jpg";
-import StoryLine6 from "media/storyline/storyLine6.jpg";
-import StoryLine7 from "media/storyline/storyLine7.jpg";
-import StoryLine8 from "media/storyline/storyLine8.jpg";
-import StoryLine9 from "media/storyline/storyLine9.jpg";
-import StoryLine10 from "media/storyline/storyLine10.jpg";
 //==== Boost Images
 import BoostFlodImg from "media/images/boost-img.gif";
 import boosticon1 from "media/icons/boost-icon1.png";
@@ -31,13 +19,6 @@ import boosticon2 from "media/icons/boost-icon2.png";
 import boosticon3 from "media/icons/boost-icon3.png";
 //==== Testimonial Images
 import icon2 from "media/icons/stars.png";
-import EddLockWood from "media/thumbnails/Edd-Lockwood.jpg";
-import Emily from "media/thumbnails/emily.jpg";
-import Mathew from "media/thumbnails/mathew.jpg";
-import Helen from "media/thumbnails/helen.jpg";
-import Gary from "media/thumbnails/gary.jpg";
-import Sylvia from "media/thumbnails/sylvia.jpg";
-import Matt from "media/thumbnails/matt.jpg";
 import Grace from "media/thumbnails/grace.png";
 import Alex from "media/thumbnails/alex.png";
 import Olivia from "media/thumbnails/olivia.png";
@@ -340,75 +321,6 @@ export default function Page() {
         flodImg: BoostFlodImg
     };
     //=====Testimonial Fold=====//
-    const testiContent = [
-        {
-            stars: icon2,
-            name: 'Edd Lockwood',
-            video: "https://youtu.be/1ab6famvBmE?si=lWPOQck-AXmKdBfe",
-            thumbnail: EddLockWood,
-        },
-        {
-            stars: icon2,
-            name: 'Emily Margolis',
-            video: "https://youtu.be/NfhGVS6thtM?si=qKGBKPRdLj_8onVy",
-            thumbnail: Emily,
-        },
-        {
-            stars: icon2,
-            name: 'Mathew',
-            video: "https://youtu.be/elOXjok2nWU?si=YoauMkUQvublB-V5",
-            thumbnail: Mathew,
-        },
-        {
-            stars: icon2,
-            name: 'Helen Brooks',
-            video: "https://youtu.be/e5GWTWd4k7U?si=OXc3_K1kpo7OxOQE",
-            thumbnail: Helen,
-        },
-        {
-            stars: icon2,
-            name: 'Gary Wilson',
-            video: "https://youtu.be/gQt3RKFwaqQ?si=jGBKle6DJhd1Lvdn",
-            thumbnail: Gary,
-        },
-        {
-            stars: icon2,
-            name: 'Sylvia David',
-            video: "https://youtu.be/UU3BQAt7hlg?si=jiE_E2Hci-xeq1GQ",
-            thumbnail: Sylvia,
-        },
-        {
-            stars: icon2,
-            name: 'Matt Evans',
-            video: "https://youtu.be/8c0pcN-OQGI?si=3i-Td6-MD9gwl3FZ",
-            thumbnail: Matt,
-        },
-        {
-            stars: icon2,
-            name: 'Grace Turner',
-            position: 'Marketing Strategist',
-            message: 'Choosing this animation team was a game-changer for our marketing campaigns. Their creativity and attention to detail brought our brand stories to life in ways we never imagined. Exceptional work!',
-        },
-        {
-            stars: icon2,
-            name: 'Alex Mitchell',
-            position: 'Educational Content Creator',
-            message: 'Working with this animation team elevated the educational content on my platform. The animations were not only visually engaging but also simplified complex concepts for my audience. Highly recommend for anyone in the education space.',
-        },
-        {
-            stars: icon2,
-            name: 'Olivia Bennett',
-            position: 'Architectural Designer',
-            message: "The architectural visualization provided by this team surpassed our expectations. The animations brought our designs to life with incredible detail and realism. A fantastic experience from start to finish!",
-        },
-    ];
-    const testimonial = {
-        title: (<> An Who’s Who of Industry Leading Clients </>),
-        para: (<> If you can’t trust us, try trusting them.</>),
-        btnBg: "bg-prime",
-        testiContent: testiContent
-    };
-    //=====Testimonial Fold=====//
     const testiContentNew = [
         {
             stars: icon2,
@@ -498,7 +410,6 @@ export default function Page() {
             <Portfolio content={portfolio} />
             <Concept content={concept} />
             <Boost content={boost} />
-            {/* <Testimonial content={testimonial} /> */}
             <TestimonialNew content={testimonialNew} />
             <Contact />
             <Script id="websiteSchema" type="application/ld+json">

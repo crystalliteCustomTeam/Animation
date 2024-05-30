@@ -9,7 +9,6 @@ import Boost from '@/components/boost/Boost';
 import Servicesconcept from '@/components/servicesconcept/Servicesconcept';
 import Pricing from "@/components/pricing/Pricing";
 import Want from '@/components/want/Want';
-// import Testimonial from '@/components/testimonial/Testimonial';
 import TestimonialNew from '@/components/testimonialNew/Testimonial';
 import Contact from '@/components/contact/Contact';
 // Import Images

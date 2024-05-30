@@ -167,55 +167,25 @@ function BannerContact({ content }) {
     autoplay: true,
     autoplaySpeed: 1500,
     speed: 400,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     adaptiveHeight: true,
-
-    className: "center",
     responsive: [
-      {
-        breakpoint: 300,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 6,
+          slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
-        },
+        }
       },
       {
-        breakpoint: 1300,
+        breakpoint: 480,
         settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-
-    ],
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   return (
@@ -275,15 +245,7 @@ function BannerContact({ content }) {
                       </span>
                     )}
                   </div>
-                  {/* <CTA
-                                text="Get Started"
-                                icon="/icons/arrow-red.png"
-                                iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2"
-                                bg="bg-prime"
-                                color={`text-white`}
-                                border={`border-2 border-[#f5090b]`}
-                                hover="hover:bg-transparent"
-                            /> */}
+                  
                   <button type='submit' className='bg-prime text-white border-0 h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center justify-between gap-x-2 w-full' onClick={handleFormSubmit} disabled={isDisabled}>
                     <span className="text-[16px] xl:text-[18px] font-normal font-sans">{formStatus}</span>
                     <Image src={btnIcon} className="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2 object-contain" />
@@ -303,8 +265,8 @@ function BannerContact({ content }) {
               <div className='grid grid-cols-1 '>
                 <Slider {...testiSlider} >
                   {tabInfo.map((item, index) => (
-                    <div className='h-[80px] mx-[45px] content-center'>
-                      <Image src={item.image} alt='BrandsLogo' className='img-fluid  px-3 mx-auto' />
+                    <div className='h-[80px] content-center'>
+                      <Image src={item.image} alt='BrandsLogo' className='mx-auto' />
                     </div>
                   ))}
                 </Slider>
