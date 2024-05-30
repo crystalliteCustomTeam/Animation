@@ -1,87 +1,36 @@
 "use client"
 import Image from "next/image";
-import { usePathname } from 'next/navigation';
+import flodImg from "media/location-page/looking-img.png"
 
 // Import Components
 import CTA from "@/components/cta/CTA";
 
 const Looking = ({ content }) => {
-    const { main, title, para: { paraArray }, isCTA, flodImg, css, isBtns } = content;
-    // set fold Image
-    const router = usePathname();
-    let lookinImage;
-    let lookingSecCol;
-    let bgTransparent;
-    switch (router) {
-        case '/why-us':
-            lookinImage = 'lg:min-w-[1000px] mr-auto'
-            lookingSecCol = 'md:absolute right-[54px] top-[18%]'
-            break;
-        case '/2d-animation':
-            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
-            break;
-        case '/3d-animation':
-            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
-            break;
-        case '/architectural-visualization':
-            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
-            break;
-        case '/cgi-and-vfx-services':
-            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
-            break;
-        case '/contact-us':
-            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
-            break;
-        case '/hybrid-&-cel-animations':
-            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
-            break;
-        case '/infographics-design':
-            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
-            break;
-        case '/motion-graphics':
-            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
-            break;
-        case 'video-animation-portfolio':
-            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
-            break;
-        case 'video-animation-pricing':
-            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
-            break;
-        case '/tech-videos':
-            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
-            break;
-        case '/video-editing':
-            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
-            break;
-        case '/whiteboard-animation':
-            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
-            break;
-        case '/why-us':
-            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
-            break;
-        default:
-            break;
-    }
+    const { main, title, para: { paraArray }, isCTA, isBtns } = content;
+    
 
     return (
         <>
-            <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative ${bgTransparent}`}>
-                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
-                    <div className='grid grid-cols-12 flex flex-col-reverse lg:flex-row items-end justify-around gap-y-7'>
+            <section className={`w-full flex items-center justify-start py-6 md:py-12 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative `}>
+                <div className="px-[35px] sm:px-8 lg:px-16 mx-auto">
+                    <div className='grid grid-cols-12 flex '>
                         <div className="col-span-12 lg:col-span-5 flex flex-col items-start ">
-                            <h1 className={`text-[40px] md:text-[50px] xl:text-[55px] font-semibold font-sans leading-none  mt-5 mb-4 text-start me-auto`}>
+                            <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5 capitalize`}>
                                 {main}
-                            </h1>
-                            <div className={`w-full lg:w-[500px] ${lookinImage} `}>
-                                <Image src={flodImg} className={`w-full mx-auto ${css}`} alt="Infinity Animation" quality={85} />
+                            </h2>
+                            {/* <h1 className={`text-[40px] md:text-[50px] xl:text-[55px] font-semibold font-sans leading-none  mt-5 mb-4 text-start me-auto`}>
+                                {main}
+                            </h1> */}
+                            <div className={`w-full   `}>
+                                <Image src={flodImg} className={`lg:w-[300px] mx-auto img-fluid`} alt="Infinity Animation" />
                             </div>
                         </div>
-                        <div className={`col-span-12 lg:col-span-7  ${lookingSecCol} lg:ps-[35px]`}>
-                            <h1 className="text-[15px] sm:text-[20px] lg:text-[25px] xl:text-[30px] font-semibold font-sans leading-tight mb-5">
+                        <div className={`col-span-12 lg:col-span-7 flex flex-col justify-end lg:ms-[15%] xl:ms-[12%] lg:pe-[35px] mt-[35px] md:mt-0`}>
+                            <h4 className="text-[22px] lg:text-[28px] font-bold font-sans leading-tight mb-5">
                                 {title}
-                            </h1>
+                            </h4>
                             {paraArray.map((para, index) => (
-                                <p key={index} className="text-[16px] font-[400] font-sans leading-snug tracking-wider text-justify mb-5">
+                                <p key={index} className="text-[16px] font-[300] font-sans leading-snug tracking-wider text-start mb-5">
                                     {para}
                                 </p>
                             ))}

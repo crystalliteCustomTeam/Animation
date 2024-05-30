@@ -191,16 +191,16 @@ function BannerContact({ content }) {
   return (
     <>
       <section className={`w-full flex items-center justify-start py-6 md:py-12 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative `}>
-        <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
-          <div className='grid grid-cols-12 lg:pt-[55px]  justify-items-center w-full '>
+        <div className="px-4 sm:px-[60px]  mx-auto">
+          <div className='grid grid-cols-12 lg:pt-[55px]  justify-items-around w-full '>
 
-
-            <div className={`col-span-12 lg:col-span-6 lg:h-full ${styles.sectionRibbon} bg-[#D60925] rounded-[4px] `}>
-              <div className={`${styles.ribbon} bg-white border py-[20px] px-`}>
-                <span className={` py-3 ${styles.ribbon5} w-[380px] sm:w-[550px]`}>
-                  <h1 className={`text-[#fff] text-[25px] md:text-[30px] font-[550] montserrat font-sans leading-[30px] text-center`}>
+            <div className={`col-span-12 lg:col-span-5 flex flex-col`}>
+            <div className={`lg:h-full ${styles.sectionRibbon} bg-[#D60925] rounded-[4px]  `}>
+              <div className={`${styles.ribbon} bg-white border py-[20px] `}>
+                <span className={` py-3 ${styles.ribbon5} `}>
+                  <h4 className={`text-[#fff] text-[25px] md:text-[30px] font-[550] montserrat font-sans leading-[30px] text-center`}>
                     Contact us
-                  </h1>
+                  </h4>
                   <p className="text-[11px] sm:text-[12px] montserrat text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-center mb-5">
                     We are always here to help what you need.
                   </p>
@@ -254,11 +254,12 @@ function BannerContact({ content }) {
               </div>
 
             </div>
+            </div>
 
-            <div className={`  col-span-12 lg:col-span-6 flex flex-col justify-center h-full px-[15px] lg:ps-[55px] mt-5 ${styles.paraBg}`}>
-              <h1 className={`text-[#fff] text-[25px] md:text-[35px] font-[800] montserrat font-sans leading-[45px]  mt-5 mb-4 text-center lg:text-start`}>
+            <div className={`  col-span-12 lg:col-span-7 flex flex-col justify-center h-full px-[15px] lg:ps-[15%] mx-[15px] sm:mx-[35px] md:mx-0 mt-[55px] lg:mt-5  ${styles.paraBg}`}>
+              <h3 className={`text-[#fff] text-[25px]  md:text-[25px] font-semibold montserrat font-sans leading-[45px]  mt-5 mb-4 text-center lg:text-start`}>
                 {title}
-              </h1>
+              </h3>
               <p className="text-[12px] sm:text-[15px] montserrat text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-center lg:text-start mb-5">
                 {para}
               </p>

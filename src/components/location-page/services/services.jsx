@@ -44,14 +44,14 @@ const Services = () => {
 
     return (
         <>
-            <section className='py-6 md:py-12 lg:py-16'>
-                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
-                    <div className="grid grid-cols-12 gap-6">
+            <section className={`w-full flex items-center justify-start py-6 md:py-12 lg:py-16`}>
+                <div className="container">
+                    <div className="grid grid-cols-12 gap-6 mt-[35px] md:mt-0">
                         <div className="col-span-12 text-center">
-                        <p className='text-[#fff] text-[16px] lg:text-[30px] montserrat font-[400] py-[12px] text-center lg:w-10/12 mx-auto leading-none '>Visuals to Entice & Excite</p>
-                            <h1 className={`leading-[6rem] text-[40px] md:text-[50px] xl:text-[75px] text-[#FF2D4A] font-bold font-sans  pb-[20px] sm:pb-[40px] capitalize`}>
+                            <p className='w-full md:w-[70%] lg:w-[60%] mx-auto text-[16px] sm:text-[18px] font-normal font-sans leading-[10px] tracking-wider text-center my-2 '>Visuals to Entice & Excite</p>
+                            <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans text-[#FF2D4A] leading-tight mb-5 capitalize`}>
                                 our service
-                            </h1>
+                            </h2>
                         </div>
                     </div>
                     <div className="lg:block hidden">
@@ -61,8 +61,8 @@ const Services = () => {
                                     <div className="card rounded-[10px] bg-black shadow-2xl pt-[5px] px-[20px] pb-[35px] h-full">
                                         <Image src={items.image} alt='card' />
                                         <div className="content">
-                                            <h3 className='text-[#fff] text-[20px] md:text-[25px] font-[800] montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] text-center lg:h-[76px] hover:text-[#FF2D4A]'>{items.title}</h3>
-                                            <p className='text-[11px] sm:text-[14px] montserrat text-[#fff] font-[300] h-[125px] leading-[1.52857143] md:pr-[17px] lg:h-[125px] text-center '>{items.para}</p>
+                                            <h3 className='text-[#fff] text-[20px] md:text-[25px] font-bold montserrat py-[20px] leading-[23px] md:leading-[33px] text-center hover:text-[#FF2D4A]'>{items.title}</h3>
+                                            <p className='text-[11px] sm:text-[14px] montserrat text-[#fff] font-normal leading-[1.52857143] md:px-[10px] text-center '>{items.para}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -76,8 +76,8 @@ const Services = () => {
                                     <div className="card rounded-[10px] bg-black shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
                                         <Image src={items.image} alt='card-1' />
                                         <div className="content">
-                                            <h3 className='text-[#fff] text-[20px] md:text-[27px] font-[900] montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] text-center lg:h-[96px] hover:text-[#FF2D4A]'>{items.title}</h3>
-                                            <p className='text-[11px] sm:text-[13px] montserrat text-[#fff] font-light h-[125px] leading-[1.42857143] md:pr-[17px] lg:h-[125px] text-center '>{items.para}</p>
+                                        <h3 className='text-[#fff] text-[20px] md:text-[25px] font-bold montserrat py-[20px] leading-[23px] md:leading-[33px] text-center hover:text-[#FF2D4A]'>{items.title}</h3>
+                                            <p className='text-[11px] sm:text-[14px] montserrat text-[#fff] font-normal leading-[1.52857143] md:px-[10px] text-center '>{items.para}</p>
                                         </div>
                                     </div>
                                 </div>

@@ -37,7 +37,7 @@ const Hero = ({ content }) => {
     const router = usePathname();
     let backgroundImage;
     let margin;
-   
+
     const testiSlider = {
         dots: false,
         arrows: false,
@@ -49,20 +49,20 @@ const Hero = ({ content }) => {
         slidesToScroll: 1,
         adaptiveHeight: true,
     };
-    
+
     return (
         <>
-            <section className={`w-full md:h-[100vh] flex items-center justify-start px-[25px] sm:pb-5 pt-[100px] xl:pt-[200px] lg:pt-[120px] mt-[30px]`}>
+            <section className={`w-full md:h-[100vh] flex justify-start px-[25px] sm:pb-5 mt-[30px] `}>
 
-                <div className='grid grid-cols-1 lg:grid-cols-2  justify-items-center w-full'>
-                    <div className='w-full lg:w-[550px] xl:w-[600px] ms-auto pe-5 mb-32'>
-                        <h1 className={`text-[40px] md:text-[50px] xl:text-[55px] font-semibold font-sans leading-none  mt-5 mb-4 ${margin}`}>
+                <div className='grid grid-cols-12 w-full'>
+                    <div className='col-span-12 lg:col-span-5 mt-[85px] md:mt-0 my-auto px-5 flex flex-col justify-center'>
+                        <h1 className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-5 mt-4 lg:mt-32 `}>
                             {title}
                         </h1>
                         <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
                             {para}
                         </p>
-                        <div className="flex gap-6">
+                        <div className="flex gap-6 ">
                             <CTA
                                 text="Get Started"
                                 icon="/icons/arrow-red.png"
@@ -83,16 +83,18 @@ const Hero = ({ content }) => {
                                 href="javascript:$zopim.livechat.window.show();"
                             />
                         </div>
-                        <Slider {...testiSlider} className="mt-[40px] h-[130px] md:h-[150px] border-t-2 border-gray-500">
-                        {tabInfo.map((item, index) => (
-                            <div className='h-[130px] md:h-[150px] w-[100%] content-center '>
-                                <Image src={item.image} alt='BannerLogo' className="mx-auto" />
-                            </div>
-                        ))}
-                    </Slider>
+                        <div className="grid grid-cols-1 ">
+                            <Slider {...testiSlider} className="mt-[40px] h-[130px] md:h-[150px] border-t-2 border-gray-500">
+                                {tabInfo.map((item, index) => (
+                                    <div className='h-[130px] md:h-[150px] w-[100%] content-center '>
+                                        <Image src={item.image} alt='BannerLogo' className="mx-auto" />
+                                    </div>
+                                ))}
+                            </Slider>
+                        </div>
                     </div>
-                    <div className={`${styles.bannerImg} my-auto flex flex-col justify-between lg:h-full`}>
-                        <div className="flex justify-between">
+                    <div className={`${styles.bannerImg} col-span-12 lg:col-span-7 flex flex-col justify-between lg:h-full mt-[50px]`}>
+                        <div className="flex justify-between relative">
                             <div>
                                 <Image src={topLeft} className={`${styles.topLeft}`} />
                             </div>
@@ -100,7 +102,7 @@ const Hero = ({ content }) => {
                                 <Image src={topRight} className={`${styles.topRight}`} />
                             </div>
                         </div>
-                        <div className="flex justify-end">
+                        <div className="flex justify-end relative">
                             <div>
                                 <Image src={bottomRight} className={`${styles.bottomRight}`} />
                             </div>

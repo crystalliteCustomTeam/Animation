@@ -3,8 +3,8 @@ import React from 'react';
 // Import Components
 import Hero from '@/components/location-page/hero/Hero';
 import BannerContact from '@/components/location-page/contact-banner/bannercontact';
-import Services from '@/components/location-page/services/services';
-import Description from '@/components/location-page/description/description';
+import Services from '@/components/location-page/services/Services';
+import Description from '@/components/location-page/description/Description';
 import Portfolio from '@/components/location-page/portfolio/Portfolio';
 import Want from '@/components/location-page/want/Want';
 import Concept from '@/components/location-page/concept/Concept';
@@ -79,7 +79,7 @@ import DescImg3 from "media/location-page/desc-3.png"
 const LocationPage = () => {
     //=====Banner Fold=====//
     const hero = {
-        title: (<> <span className='text-primary-100 font-bold leading-[6rem] text-[40px] md:text-[50px] xl:text-[75px]'>Houston</span><br /> Animation Studio </>),
+        title: (<> <span className='text-primary-100'>Houston</span><br /> Animation Studio </>),
         para: "A top-notch video animation production company in Austin helping brands to grow their business and drive more conversion with interactive animated videos.",
         btnBg: "bg-prime",
     };
@@ -96,6 +96,7 @@ const LocationPage = () => {
             <br /><span className='text-[#FF2D4A]'>Animation Solutions </span></>),
         para: "At Cloud Animation, we pride ourselves on offering a diverse range of innovative animation solutions tailored to meet the unique needs of our clients in Austin and beyond. Our expertise spans various animation styles, from captivating 2D animation in Austin and immersive 3D animation in Austin to engaging whiteboard presentations and dynamic motion graphics. We excel in precise 2D video animations in Austin, which includes video editing and logo animations. At our 2D animation studio in Austin, we breathe life into architectural concepts through detailed architectural visualizations. Our mastery extends to the realms of cutting-edge CGI-VFX, informative infographics, and the unique charm of hybrid & and cel animations. With our skilled team and state-of-the-art studio, Cloud Animation delivers unmatched creativity and professionalism in every animation project, making us the top choice for animation solutions in Austin.",
         bannerLeft: DescImg2,
+        // bannerLeft: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         downArrow: 'end'
     };
     const Desc3 = {
@@ -106,7 +107,7 @@ const LocationPage = () => {
     };
     // banner Ribon
     const bannerContact = {
-        title: (<>Be the First to
+        title: (<>Be the First to <br />
             Hire Our Professional Animators</>),
         para: "In the dynamic landscape of animation, Austin animation studios often seek ways to enhance their creative output. Cloud Animations offers a solution through resource augmentation, providing skilled animators to elevate Austin animation projects for businesses. By collaborating with our experienced team, our Austin animation studio can seamlessly augment its workforce, ensuring projects are executed with precision and creativity. Our dedicated animators bring fresh perspectives and technical expertise, enhancing the overall quality of animations produced in the vibrant hub of animation in Austin, TX.",
     };
@@ -445,48 +446,47 @@ const LocationPage = () => {
     }
 
     //=====Testimonial Fold=====//
-    const testiContentNew = [
-        {
-            stars: icon2,
-            name: 'Emily Margolis',
-            company: "ABC company",
-            para: `We approached Infinity Animations, a leading video animation agency, for a short explainer video. Their team provided exceptional video animation services and delivered a high-quality 2D animation right on time. Highly recommended!`,
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-        },
-        {
-            stars: icon2,
-            name: 'Helen Brooks',
-            company: "ABC company",
-            para: `Huge thanks to Infinity Animations for their incredible video production service. They made the entire process seamless and produced a visually stunning animation that perfectly matched our brand.`,
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-        },
-        {
-            stars: icon2,
-            name: 'Mathew',
-            company: "ABC company",
-            para: `A big thank you to Infinity Animations, a top-notch video animation company, for delivering an outstanding explainer video. The team was responsive, creative, and quick to complete the project.`,
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-        },
-        {
-            stars: icon2,
-            name: 'Gary Wilson',
-            company: "ABC company",
-            para: `I highly recommend Infinity Animations, a premier animation agency, for their excellent video animation services. They created a high-quality animation for our campaign and were a pleasure to work with throughout the process.`,
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-        },
-        {
-            stars: icon2,
-            name: 'Grace Turner',
-            company: "ABC company",
-            para: 'Choosing this animation team was a game-changer for our marketing campaigns. Their creativity and attention to detail brought our brand stories to life in ways we never imagined. Exceptional work!',
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-        },
-    ];
+    // const testiContentNew = [
+    //     {
+    //         stars: icon2,
+    //         name: 'Emily Margolis',
+    //         company: "ABC company",
+    //         para: `We approached Infinity Animations, a leading video animation agency, for a short explainer video. Their team provided exceptional video animation services and delivered a high-quality 2D animation right on time. Highly recommended!`,
+    //         video: "https://player.vimeo.com/progressive_redirect/playback/950045464/rendition/720p/file.mp4?loc=external&log_user=0&signature=06fddc742a45b3eff983a4e5a207a5ff2d1ae71a328b1c14056b1bcc152a9800",
+    //         thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045464/rendition/720p/file.mp4?loc=external&log_user=0&signature=06fddc742a45b3eff983a4e5a207a5ff2d1ae71a328b1c14056b1bcc152a9800",
+    //     },
+    //     {
+    //         stars: icon2,
+    //         name: 'Helen Brooks',
+    //         company: "ABC company",
+    //         para: `Huge thanks to Infinity Animations for their incredible video production service. They made the entire process seamless and produced a visually stunning animation that perfectly matched our brand.`,
+    //         video: "https://player.vimeo.com/progressive_redirect/playback/950045568/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6ed32074656bcaa25e810119398883ade800b3fd2c5eed96b1eff541e57f5bca",
+    //         thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045568/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6ed32074656bcaa25e810119398883ade800b3fd2c5eed96b1eff541e57f5bca",
+    //     },
+    //     {
+    //         stars: icon2,
+    //         name: 'Mathew',
+    //         company: "ABC company",
+    //         para: `A big thank you to Infinity Animations, a top-notch video animation company, for delivering an outstanding explainer video. The team was responsive, creative, and quick to complete the project.`,
+    //         video: "https://player.vimeo.com/progressive_redirect/playback/950045615/rendition/720p/file.mp4?loc=external&log_user=0&signature=8256b0e38317771b8db2d8959dc6d54ee41dd6c7a847875437dde63ea45333f2",
+    //         thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045615/rendition/720p/file.mp4?loc=external&log_user=0&signature=8256b0e38317771b8db2d8959dc6d54ee41dd6c7a847875437dde63ea45333f2",
+    //     },
+    //     {
+    //         stars: icon2,
+    //         name: 'Gary Wilson',
+    //         company: "ABC company",
+    //         para: `I highly recommend Infinity Animations, a premier animation agency, for their excellent video animation services. They created a high-quality animation for our campaign and were a pleasure to work with throughout the process.`,
+    //         video: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
+    //         thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
+    //     },
+    //     {
+    //         stars: icon2,
+    //         name: 'Grace Turner',
+    //         company: "ABC company",
+    //         para: 'Choosing this animation team was a game-changer for our marketing campaigns. Their creativity and attention to detail brought our brand stories to life in ways we never imagined. Exceptional work!',
+    //         thumbnail: Grace,
+    //     },
+    // ]
     // =========================
     const testiContentNew2 = [
         {
@@ -494,47 +494,85 @@ const LocationPage = () => {
             name: 'Sylvia David',
             company: "ABC company",
             para: `I wanted to give a big shout-out to Infinity Animations, a top video animation company, for their outstanding work on our promotional video. Their team was easy to work with and delivered the project quickly and efficiently.`,
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
             video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
             name: 'Edd Lockwood',
             company: "ABC company",
             para: `Kudos to Infinity Animations, a fantastic video marketing agency, for creating an engaging and visually appealing animated video. Their team’s creativity and professionalism made our project a huge success.`,
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045397/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5eb15a8721a49d21ead978545b43276c59608470ad55c3677e62e1fe88d8edfc",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045397/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5eb15a8721a49d21ead978545b43276c59608470ad55c3677e62e1fe88d8edfc",
         },
         {
             stars: icon2,
             name: 'Matt Evans',
             company: "ABC company",
             para: `We needed a compelling video for our new product launch, and Infinity Animations, as a video animation agency, exceeded our expectations. Their video production service was exceptional, delivering a high-quality animation in a timely manner.`,
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045706/rendition/1080p/file.mp4?loc=external&log_user=0&signature=2b0144629d6bc9649580afa809527d09e6528f656a1c76a1b59408367879c24e",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045706/rendition/1080p/file.mp4?loc=external&log_user=0&signature=2b0144629d6bc9649580afa809527d09e6528f656a1c76a1b59408367879c24e",
         },
         {
             stars: icon2,
             name: 'Alex Mitchell',
             company: "ABC company",
             para: 'Working with this animation team elevated the educational content on my platform. The animations were not only visually engaging but also simplified complex concepts for my audience. Highly recommend for anyone in the education space.',
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            thumbnail: Alex,
         },
         {
             stars: icon2,
             name: 'Olivia Bennett',
             company: "ABC company",
             para: "The architectural visualization provided by this team surpassed our expectations. The animations brought our designs to life with incredible detail and realism. A fantastic experience from start to finish!",
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            thumbnail: Olivia,
         },
-    ];
+        {
+            stars: icon2,
+            name: 'Emily Margolis',
+            company: "ABC company",
+            para: `We approached Infinity Animations, a leading video animation agency, for a short explainer video. Their team provided exceptional video animation services and delivered a high-quality 2D animation right on time. Highly recommended!`,
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045464/rendition/720p/file.mp4?loc=external&log_user=0&signature=06fddc742a45b3eff983a4e5a207a5ff2d1ae71a328b1c14056b1bcc152a9800",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045464/rendition/720p/file.mp4?loc=external&log_user=0&signature=06fddc742a45b3eff983a4e5a207a5ff2d1ae71a328b1c14056b1bcc152a9800",
+        },
+        {
+            stars: icon2,
+            name: 'Helen Brooks',
+            company: "ABC company",
+            para: `Huge thanks to Infinity Animations for their incredible video production service. They made the entire process seamless and produced a visually stunning animation that perfectly matched our brand.`,
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045568/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6ed32074656bcaa25e810119398883ade800b3fd2c5eed96b1eff541e57f5bca",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045568/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6ed32074656bcaa25e810119398883ade800b3fd2c5eed96b1eff541e57f5bca",
+        },
+        {
+            stars: icon2,
+            name: 'Mathew',
+            company: "ABC company",
+            para: `A big thank you to Infinity Animations, a top-notch video animation company, for delivering an outstanding explainer video. The team was responsive, creative, and quick to complete the project.`,
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045615/rendition/720p/file.mp4?loc=external&log_user=0&signature=8256b0e38317771b8db2d8959dc6d54ee41dd6c7a847875437dde63ea45333f2",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045615/rendition/720p/file.mp4?loc=external&log_user=0&signature=8256b0e38317771b8db2d8959dc6d54ee41dd6c7a847875437dde63ea45333f2",
+        },
+        {
+            stars: icon2,
+            name: 'Gary Wilson',
+            company: "ABC company",
+            para: `I highly recommend Infinity Animations, a premier animation agency, for their excellent video animation services. They created a high-quality animation for our campaign and were a pleasure to work with throughout the process.`,
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
+        },
+        {
+            stars: icon2,
+            name: 'Grace Turner',
+            company: "ABC company",
+            para: 'Choosing this animation team was a game-changer for our marketing campaigns. Their creativity and attention to detail brought our brand stories to life in ways we never imagined. Exceptional work!',
+            thumbnail: Grace,
+        },
+    ]
 
     const testimonialNew = {
-        title: (<> An Who’s Who of Industry Leading Clients </>),
+        title: (<> The Ultimate Collection Of <br />
+            Our Incredible Customer Experiences </>),
         para: (<> If you can’t trust us, try trusting them.</>),
-        testiContentNew: testiContentNew,
+        // testiContentNew: testiContentNew,
         testiContentNew2: testiContentNew2
     };
 
