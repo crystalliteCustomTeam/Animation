@@ -3,8 +3,8 @@ import React from 'react';
 // Import Components
 import Hero from '@/components/location-page/hero/Hero';
 import BannerContact from '@/components/location-page/contact-banner/bannercontact';
-import Services from '@/components/location-page/services/Services';
-import Description from '@/components/location-page/description/Description';
+import Services from '@/components/location-page/services/services';
+import Description from '@/components/location-page/description/description';
 import Portfolio from '@/components/location-page/portfolio/Portfolio';
 import Want from '@/components/location-page/want/Want';
 import Concept from '@/components/location-page/concept/Concept';
