@@ -1,5 +1,5 @@
 "use client"
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 // Import Components
 const HeaderLP = React.lazy(() => import('./components/Header/Header'));
 const Banner = React.lazy(() => import('./components/banner/Banner'));
@@ -60,24 +60,38 @@ const Video = () => {
     desc: "Spread profound message and scale up your business with our animated video services today!",
     isBtn: false,
   }
+
+  const [showDelayedSections, setShowDelayedSections] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowDelayedSections(true);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
       <div className='bg-white'>
         <HeaderLP />
         <Banner />
-        <Partners />
-        <Explainer />
-        <Streamed />
-        <ExplainerType />
-        <Brands content={brands} />
-        <Packages />
-        <Animations />
-        <Work />
-        <Faqs content={faqs} />
-        <ClientThinking />
-        <Clients />
-        <Brands content={brandsTwo} />
-        <Contact />
+        {showDelayedSections && (
+          <>
+            <Partners />
+            <Explainer />
+            <Streamed />
+            <ExplainerType />
+            <Brands content={brands} />
+            <Packages />
+            <Animations />
+            <Work />
+            <Faqs content={faqs} />
+            <ClientThinking />
+            <Clients />
+            <Brands content={brandsTwo} />
+            <Contact />
+          </>
+        )}
       </div>
     </>
   )

@@ -1,13 +1,13 @@
 "use client"
 import Image from "next/image";
-import flodImg from "media/location-page/looking-img.png"
+import flodImg from "media/home/looking-img.gif"
 
 // Import Components
 import CTA from "@/components/cta/CTA";
 
 const Looking = ({ content }) => {
     const { main, title, para: { paraArray }, isCTA, isBtns } = content;
-    
+
 
     return (
         <>
@@ -18,11 +18,8 @@ const Looking = ({ content }) => {
                             <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5 capitalize`}>
                                 {main}
                             </h2>
-                            {/* <h1 className={`text-[40px] md:text-[50px] xl:text-[55px] font-semibold font-sans leading-none  mt-5 mb-4 text-start me-auto`}>
-                                {main}
-                            </h1> */}
-                            <div className={`w-full   `}>
-                                <Image src={flodImg} className={`lg:w-[300px] mx-auto img-fluid`} alt="Infinity Animation" />
+                            <div className={`w-full`}>
+                                <Image src={flodImg} className={`mx-auto`} alt="Infinity Animation" />
                             </div>
                         </div>
                         <div className={`col-span-12 lg:col-span-7 flex flex-col justify-end lg:ms-[15%] xl:ms-[12%] lg:pe-[35px] mt-[35px] md:mt-0`}>

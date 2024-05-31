@@ -11,7 +11,7 @@ import Boost from '@/components/boost/Boost';
 import TestimonialNew from '@/components/testimonialNew/Testimonial';
 import Contact from '@/components/contact/Contact';
 //==== Looking Images
-import LookingFlodImg from "media/home/looking-img.png";
+import LookingFlodImg from "media/home/looking-img.gif";
 //==== Boost Images
 import BoostFlodImg from "media/images/boost-img.gif";
 import boosticon1 from "media/icons/boost-icon1.png";

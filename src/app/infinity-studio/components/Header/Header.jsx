@@ -53,7 +53,7 @@ const HeaderLP = () => {
                     <div className="grid grid-cols-12 items-center">
                         <div className="col-span-6 lg:col-span-4 xl:col-span-5">
                             <div className="logo">
-                                <Image src={logo} alt='logo' width={150} className='w-[70%] md:w-[50%] lg:w-[28%]' />
+                                <Image priority src={logo} alt='logo' width={150} className='w-[70%] md:w-[50%] lg:w-[28%]' />
                             </div>
                         </div>
                         <div className="col-span-12 lg:col-span-8 xl:col-span-7 lg:block hidden">

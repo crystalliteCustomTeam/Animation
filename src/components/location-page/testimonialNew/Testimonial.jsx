@@ -20,7 +20,7 @@ function TestimonialNew({ content, poster }) {
         autoplay: false,
         autoplaySpeed: 2000,
         speed: 3000,
-        slidesToShow: 3,
+        slidesToShow: 2,
         rows: 1,
         slidesPerRow: 2,
         adaptiveHeight: true,
