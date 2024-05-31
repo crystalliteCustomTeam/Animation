@@ -19,7 +19,7 @@ function Description({ content }) {
         <section className={`w-full flex items-center justify-start py-6 md:py-12 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative `}>
             <div className="container">
                 <div className='grid grid-cols-12 w-full'>
-                    {bannerLeft && <div className={`order-last lg:order-first mt-[25px] lg:mt-0  col-span-12 lg:col-span-6 w-[80%]`} >
+                    {bannerLeft && <div className={`order-last lg:order-first mt-[25px] lg:mt-0  col-span-12 lg:col-span-6 lg:w-[80%]`} >
                         <div className="w-full h-full" onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                             <video loading="lazy" muted loop preload="auto" autoPlay={false} className="w-full h-full object-cover rounded-lg">
                                 <source src={bannerLeft} type="video/mp4" />
@@ -29,7 +29,7 @@ function Description({ content }) {
                     }
 
                     <div className={` col-span-12 lg:col-span-6 ms-auto pe-5 flex flex-col justify-center `}>
-                        <h2 className={`text-[#fff] text-[35px] sm:text-[40px] xl:text-[50px] font-semibold font-sans leading-tight mt-5 mb-5 text-start`}>
+                        <h2 className={`text-[#fff] text-[35px] sm:text-[40px] font-semibold font-sans leading-tight mt-5 mb-5 text-start`}>
                             {title}
                         </h2>
                         <p className="text-[14px] sm:text-[16px] text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-start ">
@@ -41,7 +41,7 @@ function Description({ content }) {
                             </div>
                         }
                     </div>
-                    {bannerRight && <div className={`col-span-12 lg:col-span-6 lg:ms-auto my-auto mt-[25px] lg:mt-0 w-[80%]`}>
+                    {bannerRight && <div className={`col-span-12 lg:col-span-6 lg:ms-auto my-auto mt-[25px] lg:mt-0 lg:w-[80%]`}>
                         <div className="w-full h-full" onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                             <video loading="lazy" muted loop preload="auto" autoPlay={false} className="w-full h-full object-cover rounded-lg" >
                                 <source src={bannerRight} type="video/mp4" />

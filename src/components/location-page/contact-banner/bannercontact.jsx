@@ -35,7 +35,7 @@ const tabInfo = [
 ];
 
 function BannerContact({ content }) {
-  const { title, para } = content;
+  const { title, para: { paraArrayBanner } } = content;
 
   const { popup, togglePopup } = usePopup()
   const popupHandle = () => {
@@ -194,71 +194,73 @@ function BannerContact({ content }) {
         <div className="container">
           <div className='grid grid-cols-12 justify-items-around w-full'>
             <div className={`col-span-12 lg:col-span-5 flex flex-col`}>
-            <div className={`lg:h-full ${styles.sectionRibbon} bg-[#D60925] rounded-[4px]`}>
-              <div className={`${styles.ribbon} bg-white border py-[20px] `}>
-                <span className={` py-3 ${styles.ribbon5} `}>
-                  <h4 className={`text-[#fff] text-[25px] md:text-[30px] font-[550] font-sans leading-[30px] text-center mb-2`}>
-                    Contact us
-                  </h4>
-                  <p className="text-[11px] sm:text-[12px] text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-center mb-5">
-                    We are always here to help what you need.
-                  </p>
-                </span>
+              <div className={`lg:h-full ${styles.sectionRibbon} bg-[#D60925] rounded-[4px] mt-[65px] md:mt-0`}>
+                <div className={`${styles.ribbon} bg-white border py-[20px] `}>
+                  <span className={` py-3 ${styles.ribbon5} `}>
+                    <h4 className={`text-[#fff] text-[25px] md:text-[30px] font-[550] font-sans leading-[30px] text-center mb-2`}>
+                      Contact us
+                    </h4>
+                    <p className="text-[11px] sm:text-[12px] text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-center mb-5">
+                      We are always here to help what you need.
+                    </p>
+                  </span>
 
-                <div className="form pt-[55px] px-[15px] sm:px-[25px] md:px-[35px] pb-[30px]">
-                  <div className="relative">
-                    <div className='flex mt-[10px] py-[13px] px-[8px] rounded-[4px] w-full border-none bg-[#E6E6E6] mb-[25px]'>
-                      <Image src={Profile} height='15px' width='15px' />
-                      <input type="text" name="name" placeholder='Enter your name' className='mx-3 w-full bg-transparent font-sans placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
+                  <div className="form pt-[55px] px-[15px] sm:px-[25px] md:px-[35px] pb-[30px]">
+                    <div className="relative">
+                      <div className='flex mt-[10px] py-[13px] px-[8px] rounded-[4px] w-full border-none bg-[#E6E6E6] mb-[25px]'>
+                        <Image src={Profile} height='15px' width='15px' />
+                        <input type="text" name="name" placeholder='Enter your name' className='mx-3 w-full bg-transparent font-sans placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
+                      </div>
+                      {errors.name && (
+                        <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-40%] z-50">
+                          {errors.name}
+                        </span>
+                      )}
                     </div>
-                    {errors.name && (
-                      <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-40%] z-50">
-                        {errors.name}
-                      </span>
-                    )}
-                  </div>
-                  <div className="relative">
-                    <div className='flex mt-[10px] py-[13px] px-[8px] rounded-[4px] w-full border-none bg-[#E6E6E6] mb-[25px]'>
-                      <Image src={message} height='15px' width='15px' />
-                      <input type="email" name='email' placeholder='Enter Email' className='mx-3 w-full bg-transparent font-sans placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
+                    <div className="relative">
+                      <div className='flex mt-[10px] py-[13px] px-[8px] rounded-[4px] w-full border-none bg-[#E6E6E6] mb-[25px]'>
+                        <Image src={message} height='15px' width='15px' />
+                        <input type="email" name='email' placeholder='Enter Email' className='mx-3 w-full bg-transparent font-sans placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
+                      </div>
+                      {errors.email && (
+                        <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-38%] z-50">
+                          {errors.email}
+                        </span>
+                      )}
                     </div>
-                    {errors.email && (
-                      <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-38%] z-50">
-                        {errors.email}
-                      </span>
-                    )}
-                  </div>
-                  <div className="relative">
-                    <div className='flex mt-[10px] py-[13px] px-[8px] rounded-[4px] w-full border-none bg-[#E6E6E6] mb-[25px]'>
-                      <Image src={phone} height='15px' width='15px' />
-                      <input type="tel" name='phone' minLength="10"
-                        maxLength="13"
-                        pattern="[0-9]*" placeholder='Enter Phone Number' className='mx-3 w-full bg-transparent font-sans placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
+                    <div className="relative">
+                      <div className='flex mt-[10px] py-[13px] px-[8px] rounded-[4px] w-full border-none bg-[#E6E6E6] mb-[25px]'>
+                        <Image src={phone} height='15px' width='15px' />
+                        <input type="tel" name='phone' minLength="10"
+                          maxLength="13"
+                          pattern="[0-9]*" placeholder='Enter Phone Number' className='mx-3 w-full bg-transparent font-sans placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
+                      </div>
+                      {errors.phone && (
+                        <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-38%] z-50">
+                          {errors.phone}
+                        </span>
+                      )}
                     </div>
-                    {errors.phone && (
-                      <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-38%] z-50">
-                        {errors.phone}
-                      </span>
-                    )}
+
+                    <button type='submit' className='bg-prime text-white border-0 h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center justify-between gap-x-2 w-full' onClick={handleFormSubmit} disabled={isDisabled}>
+                      <span className="text-[16px] xl:text-[18px] font-normal font-sans">{formStatus}</span>
+                      <Image src={btnIcon} className="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2 object-contain" />
+                    </button>
                   </div>
-                  
-                  <button type='submit' className='bg-prime text-white border-0 h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center justify-between gap-x-2 w-full' onClick={handleFormSubmit} disabled={isDisabled}>
-                    <span className="text-[16px] xl:text-[18px] font-normal font-sans">{formStatus}</span>
-                    <Image src={btnIcon} className="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2 object-contain" />
-                  </button>
                 </div>
-              </div>
 
-            </div>
+              </div>
             </div>
 
             <div className={`  col-span-12 lg:col-span-7 flex flex-col justify-center h-full px-[15px] lg:ps-[15%] mx-[15px] sm:mx-[35px] md:mx-0 mt-[55px] lg:mt-5  ${styles.paraBg}`}>
-              <h3 className={`text-[#fff] text-[35px] sm:text-[40px] font-semibold font-sans leading-tight mt-5 mb-5 text-center lg:text-start`}>
+              <h2 className={`text-[#fff] text-[35px] sm:text-[40px] font-semibold font-sans leading-tight mt-5 mb-5 text-center lg:text-start`}>
                 {title}
-              </h3>
-              <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
+              </h2>
+              {paraArrayBanner.map((para, index) => (
+                <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
                 {para}
               </p>
+              ))}
               <div className='grid grid-cols-1 '>
                 <Slider {...testiSlider} >
                   {tabInfo.map((item, index) => (

@@ -11,8 +11,8 @@ import quote from "media/location-page/testi-colon.png";
 import { Fancybox as NativeFancybox } from "@fancyapps/ui"
 import "@fancyapps/ui/dist/fancybox/fancybox.css"
 
-function TestimonialNew({ content, poster }) {
-    const { title, para, testiContentNew, testiContentNew2 } = content;
+function TestimonialNew({ content }) {
+    const { title, para, testiContentNew2 } = content;
     const testiSlider = {
         dots: false,
         arrows: true,
@@ -67,7 +67,7 @@ function TestimonialNew({ content, poster }) {
     };
 
     return (
-        <section className="w-full mb-[50px] lg:mb-16 py-6 md:py-12 lg:py-16 justify-center relative">
+        <section className="w-full mb-[75px] md:mb-[50px] lg:mb-16 py-6 md:py-12 lg:py-16 justify-center relative">
             <div className="container">
                 <div className="relative z-50">
                     <div className='flex items-center justify-center py-[25px]'>
@@ -81,20 +81,20 @@ function TestimonialNew({ content, poster }) {
                         </div>
                     </div>
 
-                    <div className="mt-[25px]">
+                    <div className="mt-[25px] md:mx-[25px]">
                         <Slider {...testiSlider} className="videoSlider">
                             {testiContentNew2.map((testimonial, index) => (
                                 <Fancybox options={{ Carousel: { infinite: false } }} key={index}>
-                                    <div className="w-full h-full group flex justify-center mb-8">
-                                        <div className='flex bg-[#D60925]  rounded-[25px] mx-4 p-[25px] ' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
+                                    <div className=" h-full group mb-8 mx-2">
+                                        <div className='flex bg-[#D60925]  rounded-[25px] mx-4 ps-[15px] pe-[10px] pt-[15px] md:px-[25px] md:py-[35px]' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                                             {testimonial.video ? (
                                                 <Link href={testimonial.video} datafancybox="gallery">
-                                                    <div className='w-[155px] h-[155px] md:w-[180px] md:h-[184px] box-testi '>
-                                                        <div className='w-[145px] h-[150px] md:w-[175px] md:h-[180px]  flex justify-center items-center  overlay-div-testi '>
-                                                            <video loading="lazy" muted loop preload="auto" poster={poster} autoPlay={false} className="rounded-[12px] w-[150px] h-full object-cover " >
+                                                    <div className='w-[100px] sm:w-[155px] h-[155px] md:w-[180px] md:h-[184px] box-testi '>
+                                                        <div className='w-[100px] sm:w-[145px] h-[150px] md:w-[175px] md:h-[180px]  flex justify-center items-center  overlay-div-testi '>
+                                                            <video loading="lazy" muted loop preload="auto" autoPlay={false} className="rounded-[12px] w-[150px] h-full object-cover " >
                                                                 <source src={testimonial.video} type="video/mp4" />
                                                             </video>
-                                                            <div className="overlay-testi rounded-[12px] w-[150px] h-full">
+                                                            <div className="overlay-testi rounded-[12px] w-[100px] sm:w-[150px] h-full">
                                                             </div>
                                                         </div>
 
@@ -110,8 +110,8 @@ function TestimonialNew({ content, poster }) {
                                                     </div>
                                                 </div>
                                             )}
-                                            <div className='w-full lg:w-[320px] ps-2 md:ps-4 pe-[15px] flex flex-col justify-between py-3'>
-                                                <div className='flex '>
+                                            <div className='w-full lg:w-[90%] ps-2 md:ps-4 pe-[15px] flex flex-col justify-between py-3'>
+                                                <div className='flex mb-1'>
                                                     <Image
                                                         src={quote}
                                                         alt="Infinity Animations"

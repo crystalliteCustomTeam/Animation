@@ -51,51 +51,69 @@ import Thumnail29 from "media/thumbnails/hybrid/5.png";
 import Thumnail30 from "media/thumbnails/hybrid/6.png";
 
 const LocationPage = () => {
+
     //=====Banner Fold=====//
     const hero = {
-        title: (<> <span className='text-primary-100'>Houston</span><br /> Animation Studio </>),
-        para: "A top-notch video animation production company in Austin helping brands to grow their business and drive more conversion with interactive animated videos.",
+        title: (<> Top <span className='text-primary-100'>Animation <br /> Studio </span> in NYC </>),
+        para: "As one of the top animation studios in NYC, Infinity Animations specializes in bringing your ideas to life with vibrant and innovative animation. Whether you need 2D Animation, 3D Animation, or Motion Graphics, we are your go-to animation studio in New York City. Let's create something extraordinary together.",
         btnBg: "bg-prime",
     };
+
     //=====Description Fold=====//
     const Desc1 = {
-        title: (<>Resource Augmentation
-            from <br /><span className='text-[#FF2D4A]'>Houston Animation Studios</span></>),
-        para: "In the dynamic landscape of animation, Austin animation studios often seek ways to enhance their creative output. Cloud Animations offers a solution through resource augmentation, providing skilled animators to elevate Austin animation projects for businesses. By collaborating with our experienced team, our Austin animation studio can seamlessly augment its workforce, ensuring projects are executed with precision and creativity. Our dedicated animators bring fresh perspectives and technical expertise, enhancing the overall quality of animations produced in the vibrant hub of animation in Austin, TX.",
+        title: (<>NYC Animation Studio
+            <br /><span className='text-[#FF2D4A]'>
+                With Expert Animation and Visual Effects</span></>),
+        para: "Our Animators specialize in creating vibrant and captivating animations and visual effects that bring characters and stories to life. Whether it’s for commercials, explainer videos, or entertainment, our animations are designed to engage and inspire your audience. With Infinity Animations, you get top-notch quality and creativity that stands out in the competitive landscape of animation studios in NYC.",
         bannerRight: "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
         downArrow: 'start'
     };
     const Desc2 = {
-        title: (<>Comprehensive
-            <br /><span className='text-[#FF2D4A]'>Animation Solutions </span></>),
-        para: "At Cloud Animation, we pride ourselves on offering a diverse range of innovative animation solutions tailored to meet the unique needs of our clients in Austin and beyond. Our expertise spans various animation styles, from captivating 2D animation in Austin and immersive 3D animation in Austin to engaging whiteboard presentations and dynamic motion graphics. We excel in precise 2D video animations in Austin, which includes video editing and logo animations. At our 2D animation studio in Austin, we breathe life into architectural concepts through detailed architectural visualizations. Our mastery extends to the realms of cutting-edge CGI-VFX, informative infographics, and the unique charm of hybrid & and cel animations. With our skilled team and state-of-the-art studio, Cloud Animation delivers unmatched creativity and professionalism in every animation project, making us the top choice for animation solutions in Austin.",
+        title: (<>New York City Animation Studio
+            <br /><span className='text-[#FF2D4A]'>With Professional Animation Production </span></>),
+        para: "Take your visuals to the next level with our Professional Animation Production. Our team is skilled in creating lifelike animations that provide a dynamic and immersive experience. From character modeling to full-scale animated features, our professional animator are perfect for making a lasting impression. Trust Infinity Animations, a leading NYC animation studio, to deliver stunning video production services.",
         bannerLeft: "https://player.vimeo.com/progressive_redirect/playback/950015817/rendition/720p/file.mp4?loc=external&log_user=0&signature=c60df41646f601d81fa4c987188c8e103f416d393f8ec1f9270e7114e4f0b3ed",
         downArrow: 'end'
     };
     const Desc3 = {
-        title: (<>Elevating Your Project's Visuals
-            <br /><span className='text-[#FF2D4A]'>Partner with Houston Animation</span></>),
-        para: "In the heart of Austin, Cloud Animation leads the way among animation production companies in Austin, offering top-tier services that redefine visual storytelling. Our engaging animation workshops in Austin provide hands-on learning experiences, nurturing talent for the future. With cutting-edge video animation services for social media in Austin, we elevate your brand's presence online and propel it to new heights like before. As one of the premier Austin – Texas animation studios, Cloud Animation blends expertise with creativity, making us the pinnacle choice for captivating animations in the vibrant Texan city.",
+        title: (<>NYC’s Premier Animation Studio
+            <br /><span className='text-[#FF2D4A]'> With Custom Animation Services</span></>),
+        para: "Simplify complex concepts with our engaging and custom animation services. Ideal for educational content or corporate presentations, our custom animations make information easy to understand and remember. Our creative approach ensures that your message is delivered clearly and effectively. Choose Infinity Animations, one of the top animation companies in NYC, for your custom animation needs.",
         bannerRight: "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
     };
+
+
     // banner Ribon
+    const paraArrayBanner = [
+        "Discover creativity at Infinity Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in NYC, we redefine narratives through innovative animations and cutting-edge technology. Our dedicated team, comprised of the finest talents in the industry, elevates ideas into captivating animations that leave a lasting impact.",
+
+        "Infinity Animations stands out among the top animation companies in NYC, offering a seamless blend of technical expertise and imaginative flair. Our commitment to excellence ensures that your project receives the attention and detail it deserves. Partnering with Infinity Animations means choosing quality, reliability, and creativity.",
+    ];
+
     const bannerContact = {
-        title: (<>Be the First to <br />
-            Hire Our Professional Animators</>),
-        para: "In the dynamic landscape of animation, Austin animation studios often seek ways to enhance their creative output. Cloud Animations offers a solution through resource augmentation, providing skilled animators to elevate Austin animation projects for businesses. By collaborating with our experienced team, our Austin animation studio can seamlessly augment its workforce, ensuring projects are executed with precision and creativity. Our dedicated animators bring fresh perspectives and technical expertise, enhancing the overall quality of animations produced in the vibrant hub of animation in Austin, TX.",
+        title: (<>Best Animation Company
+            <br /> In New York with Diverse Services</>),
+        para: { paraArrayBanner },
     };
+
     //=====Looking Fold=====//
     const paraArray = [
-        "In the heart of Austin, Cloud Animation leads the way among animation production companies in Austin, offering top-tier services that redefine visual storytelling. Our engaging animation workshops in Austin provide hands-on learning experiences, nurturing talent for the future. With cutting-edge video animation services for social media in Austin, we elevate your brand's presence online and propel it to new heights like before. As one of the premier Austin – Texas animation studios, Cloud Animation blends expertise with creativity, making us the pinnacle choice for captivating animations in the vibrant Texan city.",
+        `Infinity Animations creates videos that bring your brand’s vision to life through research, strategy, copywriting, and custom visuals.`,
+        `Our personalized and collaborative approach ensures that your video is truly one of a kind.
+        As an end-to-end service solution, we’ll guide you through every step – from our streamlined discovery process, through key points in production, to final delivery.
+        `,
+        `As a leading animation studio, we pride ourselves on delivering high-quality, innovative animations that exceed our clients' expectations, making us the go-to choice for businesses seeking top-notch animation companies.`,
     ];
+
     const looking = {
-        main: (<> Why <br /><span className='text-[#FF2D4A]'>Choose </span> US </>),
-        title: (<> Our mission is to help our clients uncover the essence of their brand story to drive sales, influence decisions, and promote understanding. </>),
+        main: (<> Why <span className='text-[#FF2D4A]'>Choose </span> <br /> Infinity Animations  </>),
+        title: (<> Our Mission is to help our clients uncover the essence of their brand story to drive sales, influence decisions and promote understanding.  </>),
         para: { paraArray },
         isCTA: true,
         isBtns: true,
         flodImg: LookingFlodImg
     };
+
     //=====Portfilio Fold=====// 
     const tabInfo = [
         { label: "2D Animations", index: 0 },
@@ -104,6 +122,7 @@ const LocationPage = () => {
         { label: "Explainer Videos", index: 3 },
         { label: "Typographic", index: 4 },
     ];
+
     const tabContents = [
         [
             {
@@ -236,23 +255,29 @@ const LocationPage = () => {
             }
         ],
     ];
+
     const portfolio = {
-        title: (<> Our Portfolio of Creative Video Animations </>),
-        para: (<> We take pride in crafting stunning 2D animation videos, whiteboard animations, 3D animations, typographic animations, and more for our valued clientele. </>),
+        title: (<> Our Exceptional Portfolio of Creative Video Animations </>),
+        para: (<> Why we are a Top Animation studio in NYC, we take pride in creating stunning 2D Animations, 3D Animations, Whiteboard Animations, Motion Graphics Animations, Hybrid Animations, and more videos for our Valued Clientele. </>),
         tabContents: tabContents,
         tabsInfo: true,
         tabInfo: tabInfo
     };
+
     //=====Concept Fold=====//
     const concept = {
+        title: (<> Design Process at Infinity Animations </>),
+        para: (<>  At Infinity Animations, we follow a comprehensive and detailed process to ensure the highest quality of work. Here’s how we bring your ideas to life as one of the leading animation studios in NYC. </>),
         btnBg: "bg-prime",
     };
+
     //=====Want Fold=====//
     const want = {
         title: "Want to Talk ?",
         wantDesc: "Have questions? We have answers, Call Now!",
         bgPrime: true,
     }
+
     //=====Testimonial Fold=====//
     const testiContentNew2 = [
         {
@@ -333,10 +358,11 @@ const LocationPage = () => {
             thumbnail: Alex,
         },
     ]
+
     const testimonialNew = {
-        title: (<> The Ultimate Collection Of <br />
-            Our Incredible Customer Experiences </>),
-        para: (<> If you can’t trust us, try trusting them.</>),
+        title: (<> The Ultimate Collection of Our<br />
+            Incredible Customer Experience </>),
+        para: (<> Achieved 1000+ Impactful Results That Speak our Credibility</>),
         testiContentNew2: testiContentNew2
     };
 

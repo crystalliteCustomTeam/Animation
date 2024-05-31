@@ -10,10 +10,22 @@ import icon4 from "media/icons/concept-icon4.png"
 
 
 const Concept = ({ content }) => {
-    const { btnBg, btnColor, btnBorder, btnHover, } = content;
+    const { title, para } = content;
     return (
         <>
-            <section className={`w-full h-full py-6 md:py-12 lg:py-16 flex items-center justify-star bg-none lg:bg-[url("../../public/home/concept-bg.gif")] bg-no-repeat bg-center bg-[length:100%_90%]`}>
+            <section className="pt-6 md:pt-12 lg:pt-20 mb-[50px] lg:mb-[-40px]">
+                <div className='flex items-center justify-around'>
+                    <div className='w-full text-center'>
+                        <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5 capitalize`}>
+                           {title} 
+                        </h2>
+                        <p className="w-full md:w-[70%] lg:w-[60%] mx-auto text-[14px] sm:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
+                          {para} 
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section className={`w-full h-full pb-6 md:pb-12 lg:pb-16 flex items-center justify-star bg-none lg:bg-[url("../../public/home/concept-bg.gif")] bg-no-repeat bg-center bg-[length:100%_90%]`}>
                 <div className="container">
                     <div className='lg:w-[550px] xl:w-[650px] ml-auto mt-0 lg:mt-48 pb-8 md:pb-16 lg:pb-20'>
                         <div className="grid grid-cols-2 gap-12 relative">
@@ -27,8 +39,8 @@ const Concept = ({ content }) => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Consultation </h3>
-                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Our process begins with a thorough consultation to understand your vision and goals. We delve into the intricacies of your project, gathering insights that guide the creative direction. </p>
+                                    <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Concept </h3>
+                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">We begin by brainstorming and refining your ideas into a solid concept, ensuring a strong narrative foundation. Our team of experts works closely with you to understand your vision and objectives. This stage sets the groundwork for the entire project, distinguishing us as a premier animation studio in New York.</p>
                                 </div>
                             </div>
                             <div className="sm:p-4">
@@ -40,7 +52,7 @@ const Concept = ({ content }) => {
                                 </div>
                                 <div>
                                     <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Storyboarding </h3>
-                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Once the concept is crystallized, we move to the storyboard phase. Our expert team crafts a visual roadmap, outlining each scene and transition. </p>
+                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Next, we create storyboards that visually map out your video, displaying the sequence of animation events. This step is crucial for planning and visualizing the project before moving into production. Our meticulous storyboarding process ensures that every detail is considered, showcasing why we are a top choice among NYC animation studios.</p>
                                 </div>
                             </div>
                             <div className="sm:p-4">
@@ -51,8 +63,8 @@ const Concept = ({ content }) => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Animation </h3>
-                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">With a solid plan in place, our skilled animators bring your project to life. Whether it's 2D or 3D animation, whiteboard sketches, or motion graphics, our team executes with precision and creativity.</p>
+                                    <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Creation </h3>
+                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Using the storyboard as our guide, our animators bring your story to life with engaging visuals. Whether it’s 2D Animation, 3D Animation, or Motion Graphics, our creative team employs the latest techniques and tools to produce stunning animations. Our expertise in various animation styles makes us one of the best animation companies in NYC.</p>
                                 </div>
                             </div>
                             <div className="sm:p-4">
@@ -63,8 +75,8 @@ const Concept = ({ content }) => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Review </h3>
-                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Before finalizing the project, we invite you to review the animation in detail. This step allows for any necessary adjustments or fine-tuning to guarantee the end result meets your expectations.</p>
+                                    <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Delivery </h3>
+                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Lastly, we perfect and polish the animation through editing and deliver you the best result on time. Our commitment to quality and punctuality has earned us a reputation as one of the most reliable animation studios in NYC and Brooklyn. We ensure that your project not only meets but exceeds your expectations.</p>
                                 </div>
                             </div>
                         </div>
@@ -77,7 +89,7 @@ const Concept = ({ content }) => {
                                 bg="bg-prime"
                                 color={`text-white`}
                                 border={`border-2 border-[#f5090b]`}
-                                hover="hover:bg-transparent" 
+                                hover="hover:bg-transparent"
                             />
                             <CTA
                                 text="Live Chat"

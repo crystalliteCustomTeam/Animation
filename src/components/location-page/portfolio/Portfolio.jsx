@@ -59,9 +59,6 @@ const Portfolio = ({ content }) => {
                 <div className="container">
                     <div className='flex items-center justify-around'>
                         <div className='w-full text-center'>
-                            {/* <h2 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight my-2">
-                                {title}
-                            </h2> */}
                             <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5 capitalize`}>
                             {title}
                             </h2>

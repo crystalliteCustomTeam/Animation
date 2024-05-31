@@ -585,7 +585,7 @@ div#ty7 {
 }
 
 .testmonial-location {
-  height: 80px;
+  height: 60px;
   overflow: auto;
   padding-right: 5px;
   text-align: start;
@@ -1338,4 +1338,8 @@ div.swiper-button-prev {
   .newreactslide .slick-slide {
     opacity: 1;
   }
+}
+
+.W100 {
+  width: 100% !important;
 }
