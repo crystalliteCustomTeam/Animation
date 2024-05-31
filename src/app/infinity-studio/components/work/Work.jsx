@@ -13,7 +13,7 @@ import icon7 from "media/infinity-studio/icons-07.png"
 const Work = () => {
     return (
         <>
-            <section className='relative bg-[#F2F2F2] '>
+            <section className='relative bg-[#F2F2F2] overflow-hidden'>
                 <div className="grid grid-cols-12 border h-full">
                     <div className="col-span-12 lg:col-span-6 px-[15px] lg:pe-[5px] lg:ps-[25px] xl:ps-[85px]  xl:pe-[5px] py-[45px]">
                         <h3 className='text-[#003262] font-[600] poppins text-[20px] md:text-[30px] lg:text-[36px]'>How We Work</h3>
