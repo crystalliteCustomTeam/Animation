@@ -71,3 +71,22 @@
     padding-top: 80px;
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .paraBg::before {
+    right: -10px;
+    top: -10px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .padding {
+    padding: 100px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .padding {
+    padding: 80px 0 20px;
+  }
+}

@@ -67,22 +67,22 @@ function TestimonialNew({ content }) {
     };
 
     return (
-        <section className="w-full mb-[75px] md:mb-[50px] lg:mb-16 py-6 md:py-12 lg:py-16 justify-center relative">
+        <section className="w-full mb-10 md:mb-0 py-6 md:py-12 lg:py-16 justify-center relative">
             <div className="container">
                 <div className="relative z-50">
-                    <div className='flex items-center justify-center py-[25px]'>
+                    <div className='flex items-center justify-center py-0 md:py-[25px]'>
                         <div className='w-full text-center'>
                             <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5 capitalize`}>
                                 {title}
                             </h2>
-                            <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3 text-center mb-[35px]">
+                            <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3 text-center mb-0">
                                 {para}
                             </p>
                         </div>
                     </div>
 
                     <div className="mt-[25px] md:mx-[25px]">
-                        <Slider {...testiSlider} className="videoSlider">
+                        <Slider {...testiSlider} className="newvideoSlider">
                             {testiContentNew2.map((testimonial, index) => (
                                 <Fancybox options={{ Carousel: { infinite: false } }} key={index}>
                                     <div className=" h-full group mb-8 mx-2">

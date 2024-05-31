@@ -61,9 +61,7 @@ const LocationPage = () => {
 
     //=====Description Fold=====//
     const Desc1 = {
-        title: (<>NYC Animation Studio
-            <br /><span className='text-[#FF2D4A]'>
-                With Expert Animation and Visual Effects</span></>),
+        title: (<>NYC Animation Studio <br /> <span className='text-[#FF2D4A]'> With Expert Animation and Visual Effects</span></>),
         para: "Our Animators specialize in creating vibrant and captivating animations and visual effects that bring characters and stories to life. Whether it’s for commercials, explainer videos, or entertainment, our animations are designed to engage and inspire your audience. With Infinity Animations, you get top-notch quality and creativity that stands out in the competitive landscape of animation studios in NYC.",
         bannerRight: "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
         downArrow: 'start'

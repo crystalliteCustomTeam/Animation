@@ -71,7 +71,7 @@ const Services = () => {
 
     return (
         <>
-            <section className={`w-full flex items-center justify-start py-6 md:py-12 lg:py-16`}>
+            <section className={`w-full flex items-center justify-start py-6 md:py-16`}>
                 <div className="container">
                     <div className="grid grid-cols-12 gap-6 mt-[65px] md:mt-0">
                         <div className="col-span-12 text-center">
@@ -101,7 +101,7 @@ const Services = () => {
                         </div>
                     </div>
                     <div className="lg:hidden block">
-                        <Slider {...testiSlider} className="typeSlider">
+                        <Slider {...testiSlider} className="typeSlider servicSlider">
                             {tabInfo.map((items, i) => (
                                 <div className='p-3'>
                                     <div className="card rounded-[10px] bg-black shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">

@@ -28,11 +28,11 @@ function Description({ content }) {
                     </div>
                     }
 
-                    <div className={` col-span-12 lg:col-span-6 ms-auto pe-5 flex flex-col justify-center `}>
-                        <h2 className={`text-[#fff] text-[35px] sm:text-[40px] font-semibold font-sans leading-tight mt-5 mb-5 text-start`}>
+                    <div className={` col-span-12 lg:col-span-6 ms-auto pe-0 md:pe-5 flex flex-col justify-center`}>
+                        <h2 className={`text-[#fff] text-[35px] sm:text-[40px] font-semibold font-sans leading-tight md:mt-5 mb-5 text-start`}>
                             {title}
                         </h2>
-                        <p className="text-[14px] sm:text-[16px] text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-start ">
+                        <p className="text-[15px] sm:text-[16px] text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-start ">
                             {para}
                         </p>
                         {downArrow &&

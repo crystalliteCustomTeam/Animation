@@ -11,7 +11,7 @@ const Want = ({ content }) => {
 
     return (
         <>
-            <section className={`pt-10 md:mt-20 wantbg md:bg-[url('../../public/images/talk-bg.png')] bg-no-repeat bg-[length:100%] md:h-[30vh] lg:h-[80vh] relative py-7 md:py-0`}>
+            <section className={`my-8 md:mb-0 md:mt-20 wantbg md:bg-[url('../../public/images/talk-bg.png')] bg-no-repeat bg-[length:100%] md:h-[30vh] lg:h-[80vh] relative py-7 md:py-0`}>
                 <div className='hidden md:grid grid-cols-2'>
                     <Image src={Car} className='w-[48%] rotate-[5deg] absolute left-[2%] bottom-[25%] lg:bottom-[16%]' alt='Infinity Animation' />
                 </div>
