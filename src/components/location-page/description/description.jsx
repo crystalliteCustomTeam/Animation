@@ -18,7 +18,7 @@ function Description({ content }) {
     return (
         <section className={`w-full flex items-center justify-start py-6 md:py-12 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative `}>
             <div className="container">
-                <div className='grid grid-cols-12   justify-items-center w-full'>
+                <div className='grid grid-cols-12 w-full'>
                     {bannerLeft && <div className={`order-last lg:order-first mt-[25px] lg:mt-0  col-span-12 lg:col-span-6 w-[80%]`} >
                         <div className="w-full h-full" onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                             <video loading="lazy" muted loop preload="auto" autoPlay={false} className="w-full h-full object-cover rounded-lg">
