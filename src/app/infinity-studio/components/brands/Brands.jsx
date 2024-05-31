@@ -16,7 +16,7 @@ const Brands = ({ content }) => {
     return (
         <>
             <section className='pt-0 md:pt-[50px] lg:pt-[80px] lg:relative px-4 xl:px-0'>
-                <div className='px-5 sm:px-8 xl:max-w-7xl mx-auto bg-cover bg-center bg-no-repeat bg-[url("../../public/infinity-studio/brand.png")] rounded-xl pt-[25px]  '>
+                <div className='px-5 sm:px-8 xl:max-w-7xl mx-auto bg-cover bg-center bg-no-repeat bg-[url("../../public/infinity-studio/brand.svg")] rounded-xl pt-[25px]  '>
                     <div className="grid grid-cols-12">
                         <div className='col-span-12 lg:col-span-6 pb-4 pt-2 lg:py-[25px] xl:py-[50px]'>
                             <div className="content">

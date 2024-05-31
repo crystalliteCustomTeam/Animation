@@ -44,7 +44,7 @@ const ClientThinking = () => {
                     <div className="lg:block hidden">
                         <div className="grid grid-cols-12 gap-4 items-end ">
                             <div className="col-span-12 lg:col-span-4 ">
-                                <div className='card rounded-[15px] shadow-lg relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.png")] pt-[15px] px-[10px] w-[90%] h-[450px] mx-auto'>
+                                <div className='card rounded-[15px] shadow-lg relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.svg")] pt-[15px] px-[10px] w-[90%] h-[450px] mx-auto'>
                                     <div className='flex text-end justify-end px-3 py-1'>
                                         <Image src={quote} className='w-[75px]' />
                                     </div>
@@ -73,7 +73,7 @@ const ClientThinking = () => {
                                 </div>
                             </div>
                             <div className="col-span-12 lg:col-span-4">
-                                <div className='card rounded-[15px] shadow-lg relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.png")] pt-[15px] px-[10px] w-[85%] h-[425px] mx-auto'>
+                                <div className='card rounded-[15px] shadow-lg relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.svg")] pt-[15px] px-[10px] w-[85%] h-[425px] mx-auto'>
                                     <div className='flex text-end justify-end px-3 py-1'>
                                         <Image src={quote} className='w-[75px]' />
                                     </div>
@@ -102,7 +102,7 @@ const ClientThinking = () => {
                                 </div>
                             </div>
                             <div className="col-span-12 lg:col-span-4">
-                                <div className='card rounded-[15px] shadow-lg relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.png")] pt-[15px] px-[10px] w-[85%] h-[395px] mx-auto'>
+                                <div className='card rounded-[15px] shadow-lg relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.svg")] pt-[15px] px-[10px] w-[85%] h-[395px] mx-auto'>
                                     <div className='flex text-end justify-end px-3 py-1'>
                                         <Image src={quote} className='w-[75px]' />
                                     </div>
@@ -136,7 +136,7 @@ const ClientThinking = () => {
                     <div className="lg:hidden block">
                         <Slider {...testiSlider} className="clientSlider">
                             <div className='px-2'>
-                                <div className='card rounded-[15px] shadow-lg lg:mx-[12px] relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.png")] pt-[15px] px-[10px] m-auto w-full h-full lg:h-[430px]'>
+                                <div className='card rounded-[15px] shadow-lg lg:mx-[12px] relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.svg")] pt-[15px] px-[10px] m-auto w-full h-full lg:h-[430px]'>
                                     <div className='flex text-end justify-end px-3 py-1'>
                                         <Image src={quote} className='w-[75px]' />
                                     </div>
@@ -165,7 +165,7 @@ const ClientThinking = () => {
                                 </div>
                             </div>
                             <div className='px-2'>
-                                <div className='card rounded-[15px] shadow-lg lg:mx-[12px] relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.png")] pt-[15px] px-[10px] m-auto w-full h-full lg:h-[400px]'>
+                                <div className='card rounded-[15px] shadow-lg lg:mx-[12px] relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.svg")] pt-[15px] px-[10px] m-auto w-full h-full lg:h-[400px]'>
                                     <div className='flex text-end justify-end px-3 py-1'>
                                         <Image src={quote} className='w-[75px]' />
                                     </div>
@@ -194,7 +194,7 @@ const ClientThinking = () => {
                                 </div>
                             </div>
                             <div className='px-2'>
-                                <div className='card rounded-[15px] shadow-lg lg:mx-[12px] relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.png")] pt-[15px] px-[10px] m-auto w-full h-full lg:h-[370px]'>
+                                <div className='card rounded-[15px] shadow-lg lg:mx-[12px] relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.svg")] pt-[15px] px-[10px] m-auto w-full h-full lg:h-[370px]'>
                                     <div className='flex text-end justify-end px-3 py-1'>
                                         <Image src={quote} className='w-[75px]' />
                                     </div>

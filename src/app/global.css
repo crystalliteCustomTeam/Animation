@@ -568,8 +568,7 @@ div#ty7 {
   content: "";
   width: 110%;
   height: 1050px;
-  background: url(../../public/testimonial/sec2-bg.webp) 0 0 / contain
-    no-repeat;
+  background: url(../../public/testimonial/sec2-bg.webp) 0 0 / contain no-repeat;
   position: absolute;
   right: 0;
   top: 0;
@@ -584,7 +583,6 @@ div#ty7 {
   padding-right: 5px;
   text-align: start;
 }
-
 
 .testmonial-location {
   height: 80px;
@@ -638,8 +636,12 @@ div#ty7 {
 .overlay-div-testi .overlay-testi {
   position: absolute;
   background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 53%, rgba(0, 0, 0, 1) 99%);
-  
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 53%,
+    rgba(0, 0, 0, 1) 99%
+  );
 }
 
 /*=============== Blogs Slider ===============*/
@@ -944,6 +946,34 @@ div.swiper-button-prev {
 
 .infinityPartnersSlider .swiper-wrapper {
   align-items: center !important;
+}
+
+.studioexplainSlider .slick-slide.slick-active.slick-current .card {
+  background: #003262;
+}
+
+.studioexplainSlider .slick-slide.slick-active.slick-current .card h3 {
+  color: white;
+}
+
+.studioexplainSlider .slick-slide.slick-active.slick-current .card p {
+  color: white;
+}
+
+.studioexplainSlider .slick-slide.slick-active.slick-current .card button {
+  background: white;
+}
+
+.studioexplainSlider .card .ActiveImg {
+  display: none;
+}
+
+.studioexplainSlider .slick-slide.slick-active.slick-current .card .ActiveImg {
+  display: block;
+}
+
+.studioexplainSlider .slick-slide.slick-active.slick-current .card .nonActiveImg {
+  display: none;
 }
 
 /*=============== Media Query Start ===============*/
@@ -1293,7 +1323,6 @@ div.swiper-button-prev {
   }
 
   /* loction-page */
-
 
   .testmonial-location {
     background: transparent;
