@@ -21,7 +21,7 @@ const Contact = () => {
                             <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-3 capitalize`}>
                                 Connect With Us
                             </h2>
-                            <p className="w-full md:w-[70%] lg:w-[60%] mx-auto text-[14px] sm:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
+                            <p className="w-full md:w-[70%] lg:w-[60%] mx-auto text-[15px] lg:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
                             Let’s engage, share ideas, and explore together
                             </p>
                         </div>

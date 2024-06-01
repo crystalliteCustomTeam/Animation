@@ -7,7 +7,7 @@ import CTA from '../../cta/CTA'
 import Car from "media/images/talk-bg.gif"
 
 const Want = ({ content }) => {
-    const { title, wantDesc, btnBg, btnColor, btnBorder, btnHover, } = content;
+    const { title, wantDesc} = content;
 
     return (
         <>

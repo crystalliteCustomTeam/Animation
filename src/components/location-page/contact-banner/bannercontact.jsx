@@ -257,7 +257,7 @@ function BannerContact({ content }) {
                 {title}
               </h2>
               {paraArrayBanner.map((para, index) => (
-                <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
+                <p className="text-[15px] lg:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
                 {para}
               </p>
               ))}

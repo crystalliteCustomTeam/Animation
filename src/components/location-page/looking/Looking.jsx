@@ -27,7 +27,7 @@ const Looking = ({ content }) => {
                                 {title}
                             </h3>
                             {paraArray.map((para, index) => (
-                                <p key={index} className="text-[16px] font-[300] font-sans leading-snug tracking-wider text-start mb-5">
+                                <p key={index} className="text-[15px] lg:text-[16px] font-[300] font-sans leading-snug tracking-wider text-start mb-5">
                                     {para}
                                 </p>
                             ))}

@@ -93,7 +93,7 @@ const Services = () => {
                                         </div>
                                         <div className="content">
                                             <h3 className='text-[#fff] text-[20px] md:text-[25px] font-bold font-sans pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] text-center hover:text-[#FF2D4A]'>{items.title}</h3>
-                                            <p className='text-[14px] xl:text-[16px] font-sans text-[#fff] font-normal leading-[1.52857143] md:px-[10px] text-center '>{items.para}</p>
+                                            <p className='text-[15px] lg:text-[16px] font-sans text-[#fff] font-normal leading-[1.52857143] md:px-[10px] text-center '>{items.para}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -112,7 +112,7 @@ const Services = () => {
                                         </div>
                                         <div className="content">
                                             <h3 className='text-[#fff] text-[20px] md:text-[25px] font-bold font-sans py-[20px] leading-[23px] md:leading-[33px] text-center hover:text-[#FF2D4A]'>{items.title}</h3>
-                                            <p className='text-[14px] xl:text-[16px] font-sans text-[#fff] font-normal leading-[1.52857143] md:px-[10px] text-center '>{items.para}</p>
+                                            <p className='text-[15px] lg:text-[16px] font-sans text-[#fff] font-normal leading-[1.52857143] md:px-[10px] text-center '>{items.para}</p>
                                         </div>
                                     </div>
                                 </div>

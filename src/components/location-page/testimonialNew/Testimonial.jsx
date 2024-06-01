@@ -75,7 +75,7 @@ function TestimonialNew({ content }) {
                             <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5 capitalize`}>
                                 {title}
                             </h2>
-                            <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3 text-center mb-0">
+                            <p className="text-[15px] lg:text-[16px] font-sans font-normal tracking-wider line-clamp-3 text-center mb-0">
                                 {para}
                             </p>
                         </div>
