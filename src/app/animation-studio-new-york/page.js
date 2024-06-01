@@ -18,6 +18,10 @@ import icon2 from "media/icons/stars.png";
 import Grace from "media/thumbnails/grace.png";
 import Alex from "media/thumbnails/alex.png";
 import Olivia from "media/thumbnails/olivia.png";
+import David from "media/thumbnails/david.jpg";
+import Emma from "media/thumbnails/emma.jpg";
+import Michael from "media/thumbnails/michael.jpg";
+import Sarah from "media/thumbnails/sarah.png";
 
 const LocationPage = () => {
 
@@ -165,6 +169,34 @@ const LocationPage = () => {
             company: "ABC company",
             para: 'Choosing this animation team was a game-changer for our marketing campaigns. Their creativity and attention to detail brought our brand stories to life in ways we never imagined. Exceptional work!',
             thumbnail: Grace,
+        },
+        {
+            stars: icon2,
+            name: 'Sarah L.',
+            company: "Product Manager",
+            para: "Infinity Animations transformed our vision into a stunning reality with their exceptional 3D animation skills. We needed a lifelike and immersive animation for our product launch, and their team delivered beyond our expectations. Their expertise and attention to detail were evident in every frame. The result was a dynamic and engaging animation that captivated our audience. Working with such a talented and dedicated team reaffirmed their position as a top animation studio in New York. I wouldn't hesitate to work with them again.",
+            thumbnail: Sarah,
+        },
+        {
+            stars: icon2,
+            name: 'Emma R.',
+            company: "Social Media Manager",
+            para: "Our experience with Infinity Animations for our motion graphics project was nothing short of amazing. We needed high-quality promotional videos for our social media campaigns, and their team delivered spectacular results. The animations were visually striking and perfectly aligned with our brand's messaging. Their innovative techniques and creativity made our content stand out, significantly boosting our online engagement. Choosing Infinity Animations, a leading NYC animation studio, was one of the best decisions for our marketing efforts. Their professionalism and dedication are truly commendable.",
+            thumbnail: Emma,
+        },
+        {
+            stars: icon2,
+            name: 'David H.',
+            company: "Educational Coordinator",
+            para: "Our experience with Infinity Animations for our motion graphics project was nothing short of amazing. We needed high-quality promotional videos for our social media campaigns, and their team delivered spectacular results. The animations were visually striking and perfectly aligned with our brand's messaging. Their innovative techniques and creativity made our content stand out, significantly boosting our online engagement. Choosing Infinity Animations, a leading NYC animation studio, was one of the best decisions for our marketing efforts. Their professionalism and dedication are truly commendable.",
+            thumbnail: David,
+        },
+        {
+            stars: icon2,
+            name: 'Michael J.',
+            company: "Marketing Director",
+            para: "Infinity Animations transformed our vision into a stunning reality with their exceptional 3D animation skills. We needed a lifelike and immersive animation for our product launch, and their team delivered beyond our expectations. Their expertise and attention to detail were evident in every frame. The result was a dynamic and engaging animation that captivated our audience. Working with such a talented and dedicated team reaffirmed their position as a top animation studio in New York. I wouldn't hesitate to work with them again.",
+            thumbnail: Michael,
         },
         {
             stars: icon2,
