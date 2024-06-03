@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import usePopup from "@/app/configs/store/Popup";
+import styles from "./packages.module.css";
 // Import Images
 import star from "media/icons/star.png"
 import chat from "media/icons/chat.png"
@@ -11,20 +12,20 @@ import tickW from "media/icons/tick-w.png"
 
 const packages = [
     {
-        name: 'Startup Package',
-        price: '$499',
+        name: 'Basic',
+        price: '$49',
         backgroundColor: '#2f2f2fd1',
         tickImage: tickP,
         color: "text-black",
         ctaColor: "text-black",
         titleColor: "text-black",
         features: [
-            '30 Seconds Duration',
-            'Script Writing',
-            'Custom Artwork',
-            'Background Music',
-            'HD Format Video',
-            'Dedicated Support',
+            '1 Illustration Design',
+            '1 Creative Designer',
+            '1 Revision',
+            'Money Back Guarantee',
+            'Full Ownership',
+            'Dedicated Project Manager',
             { text: 'Invisible Point', isVisible: true },
         ],
         buttons: [
@@ -44,8 +45,8 @@ const packages = [
         ],
     },
     {
-        name: 'Classic Package',
-        price: '$799',
+        name: 'Silver',
+        price: '$179',
         backgroundColor: '#262626',
         color: "text-white",
         tickImage: tickW,
@@ -53,13 +54,12 @@ const packages = [
         ctaColor: "text-white",
         titleColor: "text-white",
         features: [
-            '30 Seconds Duration',
-            'Script Writing',
-            'Professional Voice-over & SFX',
-            'Hand-drawn Illustrations',
-            'Unlimited Revisions',
-            'HD Format Video',
-            'Dedicated Support',
+            '4 Illustration Designs',
+            '2 Creative Designer',
+            '5 Revisions',
+            'Money Back Guarantee',
+            'Full Ownership',
+            'Dedicated Project Manager',
         ],
         buttons: [
             {
@@ -78,21 +78,24 @@ const packages = [
         ],
     },
     {
-        name: 'Premium Package',
-        price: '$999',
+        name: 'Gold',
+        price: '$399',
         backgroundColor: '#2f2f2fd1',
         color: "text-black",
         tickImage: tickP,
         ctaColor: "text-black",
         titleColor: "text-black",
         features: [
-            '30 Seconds Duration',
-            'Script Writing',
-            'Professional Voice-over & SFX',
-            'Custom 2D Character Illustration',
+            '10 Illustration Designs',
+            '4 Creative Designer',
+            '100% vector based work',
             'Unlimited Revisions',
-            'HD Format Video',
-            'Dedicated Support',
+            'FREE Color Options',
+            'File Format (JPEG, PNG, Ai, PSD, PDF)',
+            'Money Back Guarantee',
+            'Full Ownership',
+            'Dedicated Project Manager',
+            'Prioritized Support',
         ],
         buttons: [
             {
@@ -100,6 +103,43 @@ const packages = [
                 color: 'bg-prime text-white border-0',
                 image: arrow,
                 imgColor: "bg-white w-[25px] h-[25px] xl:w-[28px] xl:h-[28px] rounded-full p-2 ms-1"
+            },
+            {
+                text: 'Live Chat',
+                color: 'bg-black text-white border border-white',
+                image: chat,
+                href: "javascript:$zopim.livechat.window.show();"
+            },
+        ],
+    },
+    {
+        name: 'Platinum',
+        price: '$799',
+        backgroundColor: '#262626',
+        color: "text-white",
+        tickImage: tickW,
+        mblSpc: 'my-10 md:my-0',
+        ctaColor: "text-white",
+        titleColor: "text-white",
+        features: [
+            '20 Illustration Designs',
+            '6 Creative Designer',
+            '100% vector based work',
+            'Unlimited Revisions',
+            'FREE Color Options',
+            'File Format (JPEG, PNG, Ai, PSD, PDF)',
+            'Money Back Guarantee',
+            'Full Ownership',
+            'Dedicated Project Manager',
+            'Prioritized Support',
+        ],
+        buttons: [
+            {
+                text: 'Get Started',
+                color: 'bg-white text-black font-semibold border-0',
+                image: arrowB,
+                href: "tel:833-666-6689",
+                imgColor: "bg-black w-[25px] h-[25px] xl:w-[28px] xl:h-[28px] rounded-full p-[8.5px] rotate-[90deg]"
             },
             {
                 text: 'Live Chat',
@@ -121,20 +161,21 @@ const Pricing = ({ content }) => {
 
     return (
         <>
-            <section className={`w-full flex items-center justify-start py-16`}>
+            <section className={`w-full flex items-center justify-start pt-16 pb-3`}>
                 <div className="container">
                     <div className='flex items-center justify-center'>
                         <div className='w-full'>
                             <h1 className="text-[40px] md:text-[50px] font-semibold font-sans text-center leading-tight mb-3">
                                 {title}
                             </h1>
-                            <p className="text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
+                            <p className="text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5 pb-[80px]">
                                 {para}
                             </p>
-                            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-20 md:mt-32">
+                            <div className={`${styles.cardsMainDiv}`}>
                                 {packages.map((pkg, index) => (
-                                    <div key={index} className={`relative ${pkg.mblSpc}`}>
-                                        <div key={index} className={`absolute top-[-7%] md:top-[-10%] lg:top-[-7%] xl:top-[-8%] left-[12%] h-[115px] w-[75%] -z-10 rounded-3xl flex items-start justify-center pt-4 gap-2 ${index === 1 ? 'bg-[#262626]' : 'bg-third'}`}>
+                                    <div key={index} className={`relative ${pkg.mblSpc} h-full ${styles.cards}`}>
+                                        <div key={index} className={`absolute top-[-7%] md:top-[-10%] lg:top-[-7%] xl:top-[-8%] left-[12%] h-[115px] w-[75%] -z-10 rounded-3xl flex items-start justify-center pt-4 gap-2 
+  ${(index === 1 || index === 3) ? 'bg-[#262626]' : 'bg-third'}`}>
                                             {Array.from({ length: index + 1 }).map((_, i) => (
                                                 <Image key={i} src={star} className="w-[6%]" alt="Infinity Animation" />
                                             ))}
@@ -144,7 +185,7 @@ const Pricing = ({ content }) => {
                                                 <h3 className="text-[30px] font-extrabold font-sans leading-tight mb-2">{pkg.name}</h3>
                                                 <h4 className={`text-[60px] font-extrabold font-sans ${pkg.backgroundColor === '#2f2f2fd1' ? 'text-secondary-100' : ''}`}>{pkg.price}</h4>
                                             </div>
-                                            <ul className="pt-4 px-6">
+                                            <ul className="pt-4 px-6 max-h-[230px] overflow-y-scroll">
                                                 {pkg.features.map((feature, i) => (
                                                     typeof feature === 'string' ? (
                                                         <li key={i} className="flex items-center gap-3 my-2 xl:my-3 text-[16px] font-normal font-sans leading-snug tracking-wider">
@@ -171,7 +212,7 @@ const Pricing = ({ content }) => {
                                                     <a href="javascript:$zopim.livechat.window.show();" className="font-sans text-[14px]">Live Chat Now</a>
                                                 </div>
                                             </div>
-                                            <div className="flex justify-between px-6 mt-5"> 
+                                            <div className="flex justify-between px-6 mt-5">
                                                 {pkg.buttons.map((button, i) => (
                                                     <>
                                                         {button.text === "Get Started" ? (
