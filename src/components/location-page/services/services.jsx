@@ -71,12 +71,12 @@ const Services = () => {
 
     return (
         <>
-            <section className={`w-full flex items-center justify-start py-6 md:py-16`}>
+            <section className={`w-full flex items-center justify-start pb-10 pt-6 md:py-16`}>
                 <div className="container">
                     <div className="grid grid-cols-12 gap-6 mt-[65px] md:mt-0">
                         <div className="col-span-12 text-center">
                             <h2 className='w-full md:w-[70%] lg:w-[60%] mx-auto text-[16px] sm:text-[18px] font-normal font-sans leading-[10px] tracking-wider text-center my-2 '>Partner with NYC's Leading Animation Experts</h2>
-                            <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans text-[#FF2D4A] leading-tight mb-8 capitalize`}>
+                            <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans text-[#FF2D4A] leading-tight mb-0 md:mb-8 capitalize`}>
                                 Our Services
                             </h2>
                         </div>
@@ -104,7 +104,7 @@ const Services = () => {
                         <Slider {...testiSlider} className="typeSlider servicSlider">
                             {tabInfo.map((items, i) => (
                                 <div className='p-3'>
-                                    <div className="card rounded-[10px] bg-black shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
+                                    <div className="card rounded-[10px] bg-black shadow-2xl pt-4 h-[375px]">
                                         <div onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                                             <video loading="lazy" muted loop preload="auto" autoPlay={false} className="w-full h-full object-cover rounded-lg" >
                                                 <source src={items.image} type="video/mp4" />
