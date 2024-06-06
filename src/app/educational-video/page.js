@@ -28,16 +28,13 @@ import conceptIcon8 from "media/icons/bizz8.png"
 import conceptIcon9 from "media/icons/bizz9.png"
 //==== Testimonial Images
 import icon2 from "media/icons/stars.png";
-import EddLockWood from "media/thumbnails/Edd-Lockwood.jpg";
-import Emily from "media/thumbnails/emily.jpg";
-import Mathew from "media/thumbnails/mathew.jpg";
-import Helen from "media/thumbnails/helen.jpg";
-import Gary from "media/thumbnails/gary.jpg";
-import Sylvia from "media/thumbnails/sylvia.jpg";
-import Matt from "media/thumbnails/matt.jpg";
 import Grace from "media/thumbnails/grace.png";
 import Alex from "media/thumbnails/alex.png";
 import Olivia from "media/thumbnails/olivia.png";
+import David from "media/thumbnails/david.jpg";
+import Emma from "media/thumbnails/emma.jpg";
+import Michael from "media/thumbnails/michael.jpg";
+import Sarah from "media/thumbnails/sarah.png";
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.png";
 import Thumnail2 from "media/thumbnails/2d-animation/2.png";
@@ -392,77 +389,14 @@ export default function Page() {
         otherCards: otherCards,
     }
     //=====Testimonial Fold=====//
-    const testiContent = [
-        {
-            stars: icon2,
-            name: 'Edd Lockwood',
-            video: "https://youtu.be/1ab6famvBmE?si=lWPOQck-AXmKdBfe",
-            thumbnail: EddLockWood,
-        },
-        {
-            stars: icon2,
-            name: 'Emily Margolis',
-            video: "https://youtu.be/NfhGVS6thtM?si=qKGBKPRdLj_8onVy",
-            thumbnail: Emily,
-        },
-        {
-            stars: icon2,
-            name: 'Mathew',
-            video: "https://youtu.be/elOXjok2nWU?si=YoauMkUQvublB-V5",
-            thumbnail: Mathew,
-        },
-        {
-            stars: icon2,
-            name: 'Helen Brooks',
-            video: "https://youtu.be/e5GWTWd4k7U?si=OXc3_K1kpo7OxOQE",
-            thumbnail: Helen,
-        },
-        {
-            stars: icon2,
-            name: 'Gary Wilson',
-            video: "https://youtu.be/gQt3RKFwaqQ?si=jGBKle6DJhd1Lvdn",
-            thumbnail: Gary,
-        },
+    const testiContentNew2 = [
         {
             stars: icon2,
             name: 'Sylvia David',
-            video: "https://youtu.be/UU3BQAt7hlg?si=jiE_E2Hci-xeq1GQ",
-            thumbnail: Sylvia,
+            para: `I wanted to give a big shout-out to Infinity Animations, a top video animation company, for their outstanding work on our promotional video. Their team was easy to work with and delivered the project quickly and efficiently.`,
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
-        {
-            stars: icon2,
-            name: 'Matt Evans',
-            video: "https://youtu.be/8c0pcN-OQGI?si=3i-Td6-MD9gwl3FZ",
-            thumbnail: Matt,
-        },
-        {
-            stars: icon2,
-            name: 'Emma Thompson',
-            position: 'Marketing Manager',
-            message: 'Mind-blowing creativity! The 2D animation for our product launch was a game-changer. Our audience loved the visual storytelling, and it translated into tangible engagement and sales. Kudos! ',
-        },
-        {
-            stars: icon2,
-            name: 'Samuel Rodriguez',
-            position: 'CEO',
-            message: 'Working with this team was a breeze! They took our concepts and turned them into visually stunning 2D animations. Our brand message was conveyed with charm and simplicity, captivating our audience.',
-        },
-        {
-            stars: icon2,
-            name: 'Megan Harper',
-            position: 'Creative Director',
-            message: "Incredible attention to detail! The 2D animation service brought our brand's story to life in ways we hadn't imagined. The creativity and precision in each frame left us thoroughly impressed.",
-        },
-    ];
-    const testimonial = {
-        title: (<> The Ultimate Collection Of <br />
-            Our Incredible Customer Experiences </>),
-        para: (<> Achieved 1000+ Impactful Results That Speak Volumes </>),
-        btnBg: "bg-prime",
-        testiContent: testiContent
-    };
-    //=====Testimonial Fold=====//
-    const testiContentNew = [
         {
             stars: icon2,
             name: 'Emily Margolis',
@@ -476,36 +410,6 @@ export default function Page() {
             para: `Huge thanks to Infinity Animations for their incredible video production service. They made the entire process seamless and produced a visually stunning animation that perfectly matched our brand.`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045568/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6ed32074656bcaa25e810119398883ade800b3fd2c5eed96b1eff541e57f5bca",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045568/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6ed32074656bcaa25e810119398883ade800b3fd2c5eed96b1eff541e57f5bca",
-        },
-        {
-            stars: icon2,
-            name: 'Mathew',
-            para: `A big thank you to Infinity Animations, a top-notch video animation company, for delivering an outstanding explainer video. The team was responsive, creative, and quick to complete the project.`,
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045615/rendition/720p/file.mp4?loc=external&log_user=0&signature=8256b0e38317771b8db2d8959dc6d54ee41dd6c7a847875437dde63ea45333f2",
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045615/rendition/720p/file.mp4?loc=external&log_user=0&signature=8256b0e38317771b8db2d8959dc6d54ee41dd6c7a847875437dde63ea45333f2",
-        },
-        {
-            stars: icon2,
-            name: 'Gary Wilson',
-            para: `I highly recommend Infinity Animations, a premier animation agency, for their excellent video animation services. They created a high-quality animation for our campaign and were a pleasure to work with throughout the process.`,
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
-        },
-        {
-            stars: icon2,
-            name: 'Grace Turner',
-            para: 'Choosing this animation team was a game-changer for our marketing campaigns. Their creativity and attention to detail brought our brand stories to life in ways we never imagined. Exceptional work!',
-            thumbnail: Grace,
-        },
-    ];
-    // =========================
-    const testiContentNew2 = [
-        {
-            stars: icon2,
-            name: 'Sylvia David',
-            para: `I wanted to give a big shout-out to Infinity Animations, a top video animation company, for their outstanding work on our promotional video. Their team was easy to work with and delivered the project quickly and efficiently.`,
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             stars: icon2,
@@ -523,9 +427,17 @@ export default function Page() {
         },
         {
             stars: icon2,
-            name: 'Alex Mitchell',
-            para: 'Working with this animation team elevated the educational content on my platform. The animations were not only visually engaging but also simplified complex concepts for my audience. Highly recommend for anyone in the education space.',
-            thumbnail: Alex,
+            name: 'Mathew',
+            para: `A big thank you to Infinity Animations, a top-notch video animation company, for delivering an outstanding explainer video. The team was responsive, creative, and quick to complete the project.`,
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045615/rendition/720p/file.mp4?loc=external&log_user=0&signature=8256b0e38317771b8db2d8959dc6d54ee41dd6c7a847875437dde63ea45333f2",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045615/rendition/720p/file.mp4?loc=external&log_user=0&signature=8256b0e38317771b8db2d8959dc6d54ee41dd6c7a847875437dde63ea45333f2",
+        },
+        {
+            stars: icon2,
+            name: 'Gary Wilson',
+            para: `I highly recommend Infinity Animations, a premier animation agency, for their excellent video animation services. They created a high-quality animation for our campaign and were a pleasure to work with throughout the process.`,
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
         },
         {
             stars: icon2,
@@ -533,12 +445,51 @@ export default function Page() {
             para: "The architectural visualization provided by this team surpassed our expectations. The animations brought our designs to life with incredible detail and realism. A fantastic experience from start to finish!",
             thumbnail: Olivia,
         },
-    ];
+        {
+            stars: icon2,
+            name: 'Grace Turner',
+            para: 'Choosing this animation team was a game-changer for our marketing campaigns. Their creativity and attention to detail brought our brand stories to life in ways we never imagined. Exceptional work!',
+            thumbnail: Grace,
+        },
+        {
+            stars: icon2,
+            name: 'Sarah L.',
+            company: "Product Manager",
+            para: "Infinity Animations transformed our vision into a stunning reality with their exceptional 3D animation skills. We needed a lifelike and immersive animation for our product launch, and their team delivered beyond our expectations. Their expertise and attention to detail were evident in every frame. The result was a dynamic and engaging animation that captivated our audience. Working with such a talented and dedicated team reaffirmed their position as a top animation studio in New York. I wouldn't hesitate to work with them again.",
+            thumbnail: Sarah,
+        },
+        {
+            stars: icon2,
+            name: 'Emma R.',
+            company: "Social Media Manager",
+            para: "Our experience with Infinity Animations for our motion graphics project was nothing short of amazing. We needed high-quality promotional videos for our social media campaigns, and their team delivered spectacular results. The animations were visually striking and perfectly aligned with our brand's messaging. Their innovative techniques and creativity made our content stand out, significantly boosting our online engagement. Choosing Infinity Animations, a leading NYC animation studio, was one of the best decisions for our marketing efforts. Their professionalism and dedication are truly commendable.",
+            thumbnail: Emma,
+        },
+        {
+            stars: icon2,
+            name: 'David H.',
+            company: "Educational Coordinator",
+            para: "Our experience with Infinity Animations for our motion graphics project was nothing short of amazing. We needed high-quality promotional videos for our social media campaigns, and their team delivered spectacular results. The animations were visually striking and perfectly aligned with our brand's messaging. Their innovative techniques and creativity made our content stand out, significantly boosting our online engagement. Choosing Infinity Animations, a leading NYC animation studio, was one of the best decisions for our marketing efforts. Their professionalism and dedication are truly commendable.",
+            thumbnail: David,
+        },
+        {
+            stars: icon2,
+            name: 'Michael J.',
+            company: "Marketing Director",
+            para: "Infinity Animations transformed our vision into a stunning reality with their exceptional 3D animation skills. We needed a lifelike and immersive animation for our product launch, and their team delivered beyond our expectations. Their expertise and attention to detail were evident in every frame. The result was a dynamic and engaging animation that captivated our audience. Working with such a talented and dedicated team reaffirmed their position as a top animation studio in New York. I wouldn't hesitate to work with them again.",
+            thumbnail: Michael,
+        },
+        {
+            stars: icon2,
+            name: 'Alex Mitchell',
+            para: 'Working with this animation team elevated the educational content on my platform. The animations were not only visually engaging but also simplified complex concepts for my audience. Highly recommend for anyone in the education space.',
+            thumbnail: Alex,
+        },
+    ]
 
     const testimonialNew = {
-        title: (<> An Who’s Who of Industry Leading Clients </>),
+        title: (<> Our Animation Videos Made Their Product <br /> Look Easy & Exciting </>),
         para: (<> If you can’t trust us, try trusting them.</>),
-        testiContentNew: testiContentNew,
         testiContentNew2: testiContentNew2
     };
     //===== FAQS =====//
@@ -576,7 +527,6 @@ export default function Page() {
             <BuzzFlick content={buzzflick} />
             <Portfolio content={portfolio} />
             <Production content={production} />
-            {/* <Testimonial content={testimonial} /> */}
             <TestimonialNew content={testimonialNew} />
             <Faqs content={faqs} />
             <Contact />

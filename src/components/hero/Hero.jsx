@@ -1,13 +1,15 @@
 "use client"
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
+// Import Css
+import styles from "./Hero.module.css"
 // Import Components
 import CTA from "@/components/cta/CTA";
 // Import Images
 import trustPlatforms from "media/icons/trust.png";
 
 const Hero = ({ content }) => {
-    const { title, para, video } = content;
+    const { title, para, video, dynamic } = content;
     // Set Bg-Image
     const router = usePathname();
     let backgroundVideo;
@@ -30,7 +32,7 @@ const Hero = ({ content }) => {
             backgroundVideo = 'bg-[length:100%_140%] bg-center lg:bg-[url("../../public/pricing/banner-bg.gif")]'
             break;
         case '/blog':
-            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/blogs/banner-bg.gif")]'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/blogs/blog-bg.png")]'
             break;
         case '/contact-us':
             backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/contact/banner-bg.gif")]'
@@ -85,9 +87,31 @@ const Hero = ({ content }) => {
                 <div className="container">
                     <div className='flex'>
                         <div className='w-full lg:w-[550px] xl:w-[600px]'>
-                            <h1 className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-5 mt-4 lg:mt-32 ${margin}`}>
-                                {title}
-                            </h1>
+                            {dynamic ?
+                                <h1 className={`text-[40px] md:text-[45px] xl:text-[50px] font-semibold font-sans leading-none mb-5 mt-4 lg:mt-32 ${margin}`}>
+                                    <div className={styles.sliderWrapper}>
+                                        <div className={styles.slider}>
+                                            <div className={styles.sliderText1}>
+                                                Pitch Efficiently
+                                            </div>
+                                            <div className={styles.sliderText2}>
+                                                Launch Successfully
+                                            </div>
+                                            <div className={styles.sliderText3}>
+                                                Promote Better
+                                            </div>
+                                            <div className={styles.sliderText4}>
+                                                Increase Sales
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span className="d-block">With Our Explainer Videos</span>
+                                </h1>
+                                :
+                                <h1 className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-5 mt-4 lg:mt-32 ${margin}`}>
+                                    {title}
+                                </h1>
+                            }
                             <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
                                 {para}
                             </p>
@@ -112,7 +136,7 @@ const Hero = ({ content }) => {
                                     href="javascript:$zopim.livechat.window.show();"
                                 />
                             </div>
-                            <Image src={trustPlatforms} className=" w-[60%] lg:w-auto mt-10 lg:mt-20 " alt="Infinity Animation" />
+                            <Image src={trustPlatforms} className=" w-[60%] lg:w-auto mt-10 lg:mt-16 " alt="Infinity Animation" />
                         </div>
                     </div>
                 </div>

@@ -2,24 +2,20 @@ import React from 'react';
 import Script from 'next/script';
 // Import Page Components
 import Hero from "@/components/hero/Hero";
-import Review from "@/components/review/Review";
 import Blogs from "@/components/blogs/Blogs";
-import NewsLetter from "@/components/newsletter/NewsLetter";
 
 export default function Page() {
     //=====Banner Fold=====//
     const hero = {
-        title: (<> Infinity Animations Blog </>),
-        para: "Offering a visual journey into the dynamic realm of animation excellence",
+        title: (<> <span className='text-primary-100'>Our</span> Blogs </>),
+        para: "A top-notch video animation production company in Austin helping brands to grow their business and drive more conversion with interactive animated videos.",
         btnBg: "bg-prime",
     };
 
     return (
         <>
             <Hero content={hero} />
-            <Review />
             <Blogs />
-            <NewsLetter />
             <Script id="productSchema" type="application/ld+json">
                 {`
                     {

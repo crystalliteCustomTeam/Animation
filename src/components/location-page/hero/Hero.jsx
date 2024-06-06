@@ -75,7 +75,7 @@ const Hero = ({ content }) => {
                 <div className="container">
                     <div className='grid grid-cols-12'>
                         <div className='col-span-12 lg:col-span-5'>
-                            <h1 className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5 mt-4 lg:mt-32 ${margin}`}>
+                            <h1 className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-5 mt-4 lg:mt-32 ${margin}`}>
                                 {title}
                             </h1>
                             <p className="text-[15px] lg:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
