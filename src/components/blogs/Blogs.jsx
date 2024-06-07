@@ -2,296 +2,298 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from 'next/link'
-// Import Slick Slider
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import styles from "./blog.module.css"
 //===== Images 
-import Blog1 from "media/blogs/blog-1.png"
+import author from "media/blogs/author.png"
+import verified from "media/blogs/verified.png"
+import arrow from "media/blogs/arrow.png"
+import Blog1 from "media/blogs/blog1.png"
+import Blog2 from "media/blogs/blog2.png"
+import Blog3 from "media/blogs/blog3.png"
+
+const tabInfo = [
+    { label: "2D Animations", index: 0 },
+    { label: "3D Animation", index: 1 },
+    { label: "Architectural Animation", index: 2 },
+    { label: "CGI & VFX", index: 3 },
+    { label: "Infographics", index: 4 },
+    { label: "Motion Graphics", index: 5 },
+];
 
 const Blogs = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const handleBeforeChange = (oldIndex, newIndex) => {
-        setCurrentSlide(newIndex);
-    };
-    const renderDots = (dots, slider) => (
-        <ul className="absolute right-0 bottom-0 z-50">
-            {dots.map((dot, index) => (
-                <li
-                    key={index}
-                    style={{
-                        display: "inline-block",
-                        margin: "0 5px",
-                        opacity: index === currentSlide ? 1 : 0.6,
-                        color: index === currentSlide ? 'white' : 'inherit',
-                    }}
-                >
-                    {index + 1}
-                </li>
-            ))}
-        </ul>
-    );
 
-    // Slider Setting
-    const blogsSlider = {
-        rows: 2,
-        dots: true,
-        arrows: true,
-        infinite: false,
-        autoplay: false,
-        autoplaySpeed: 5000,
-        speed: 3000,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        beforeChange: handleBeforeChange,
-        appendDots: renderDots,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 567,
-                settings: {
-                    slidesToShow: 1,
-                    rows: 1,
-                }
-            }
-        ]
-    };
     return (
         <>
-            <section className={`w-full flex py-8 lg:py-16 relative`}>
+            <section className={`w-full flex py-8 lg:py-16 mt-[125px] lg:mt-0`}>
                 <div className="container">
-                    <div className="grid grid-cols-12">
-                        <div className="col-span-12">
-                            <div className="col-span-12">
-                                <h2 className='text-[45px] font-bold font-sans text-center mb-3 xl:mb-6'>Latest Posts</h2>
+                    <div className="w-full lg:w-[90%] mx-auto">
+                        <ul className="bg-[#4A4A4A] h-full lg:h-[50px] flex flex-wrap justify-around text-sm font-medium text-center gap-3 md:gap-5 rounded-xl">
+                            {tabInfo.map((tab, index) => (
+                                <li key={index}
+                                    className={`flex items-center py-3 h-full text-[15px] font-normal font-sans text-white cursor-pointer hover:bg-primary-100 px-5 rounded-lg`}>
+                                    {tab.label}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="w-full">
+                        <div className="flex flex-col  md:grid grid-cols-12 gap-10 mt-10 md:mt-16 lg:mt-20">
+                            <div className="w-full md:col-span-6 lg:col-span-4">
+                                <div className="bg-[#262626] rounded-2xl flex flex-col gap-[28px]">
+                                    <div className="blogImg">
+                                        <Image src={Blog1} alt="Infinity Animations" />
+                                    </div>
+                                    <div className={`${styles.blogContent} px-5 flex flex-col gap-2`}>
+                                        <h5 className="text-[18px] text-primary-100 font-normal font-sans mb-0">Architectural Animation</h5>
+                                        <h4 className="text-[20px] md:text-[24px] xl:text-[28px] text-white leading-tight font-bold font-sans mb-0">Be the First to Hire Our Professional Animators</h4>
+                                        <p className="text-[16px] text-white font-normal font-sans mb-0">Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin,</p>
+                                    </div>
+                                    <div className="aboutBlog flex flex-row items-center justify-between px-5 pb-5">
+                                        <div className="author flex flex-row items-center w-full gap-3">
+                                            <div className="w-[20%]">
+                                                <Image src={author} alt="Infinity Animations" />
+                                            </div>
+                                            <div className="relative">
+                                                <Image src={verified} alt="Infinity Animations" className="absolute right-[-18%] top-[14%] w-[10%]" />
+                                                <h4 className="text-[15px] xl:text-[20px] text-white font-semibold font-sans mb-0">James D. Surratt</h4>
+                                                <h5 className="text-[12px] xl:text-[15px] text-white font-normal font-sans mb-0">Animation Manager</h5>
+                                            </div>
+                                        </div>
+                                        <Link href="javascript:;" className={`${styles.readMore} flex flex-row items-center justify-end gap-3 pb-2`}>
+                                            <span className="text-[16px] text-white font-normal font-sans mb-0">Read More</span>
+                                            <Image src={arrow} alt="Infinity Animations" className="w-[20%]" />
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-full md:col-span-6 lg:col-span-4">
+                                <div className="bg-[#262626] rounded-2xl flex flex-col gap-[28px]">
+                                    <div className="blogImg">
+                                        <Image src={Blog2} alt="Infinity Animations" />
+                                    </div>
+                                    <div className={`${styles.blogContent} px-5 flex flex-col gap-2`}>
+                                        <h5 className="text-[18px] text-primary-100 font-normal font-sans mb-0">Architectural Animation</h5>
+                                        <h4 className="text-[20px] md:text-[24px] xl:text-[28px] text-white leading-tight font-bold font-sans mb-0">Be the First to Hire Our Professional Animators</h4>
+                                        <p className="text-[16px] text-white font-normal font-sans mb-0">Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin,</p>
+                                    </div>
+                                    <div className="aboutBlog flex flex-row items-center justify-between px-5 pb-5">
+                                        <div className="author flex flex-row items-center w-full gap-3">
+                                            <div className="w-[20%]">
+                                                <Image src={author} alt="Infinity Animations" />
+                                            </div>
+                                            <div className="relative">
+                                                <Image src={verified} alt="Infinity Animations" className="absolute right-[-18%] top-[14%] w-[10%]" />
+                                                <h4 className="text-[15px] xl:text-[20px] text-white font-semibold font-sans mb-0">James D. Surratt</h4>
+                                                <h5 className="text-[12px] xl:text-[15px] text-white font-normal font-sans mb-0">Animation Manager</h5>
+                                            </div>
+                                        </div>
+                                        <Link href="javascript:;" className={`${styles.readMore} flex flex-row items-center justify-end gap-3 pb-2`}>
+                                            <span className="text-[16px] text-white font-normal font-sans mb-0">Read More</span>
+                                            <Image src={arrow} alt="Infinity Animations" className="w-[20%]" />
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-full md:col-span-6 lg:col-span-4">
+                                <div className="bg-[#262626] rounded-2xl flex flex-col gap-[28px]">
+                                    <div className="blogImg">
+                                        <Image src={Blog3} alt="Infinity Animations" />
+                                    </div>
+                                    <div className={`${styles.blogContent} px-5 flex flex-col gap-2`}>
+                                        <h5 className="text-[18px] text-primary-100 font-normal font-sans mb-0">Architectural Animation</h5>
+                                        <h4 className="text-[20px] md:text-[24px] xl:text-[28px] text-white leading-tight font-bold font-sans mb-0">Be the First to Hire Our Professional Animators</h4>
+                                        <p className="text-[16px] text-white font-normal font-sans mb-0">Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin,</p>
+                                    </div>
+                                    <div className="aboutBlog flex flex-row items-center justify-between px-5 pb-5">
+                                        <div className="author flex flex-row items-center w-full gap-3">
+                                            <div className="w-[20%]">
+                                                <Image src={author} alt="Infinity Animations" />
+                                            </div>
+                                            <div className="relative">
+                                                <Image src={verified} alt="Infinity Animations" className="absolute right-[-18%] top-[14%] w-[10%]" />
+                                                <h4 className="text-[15px] xl:text-[20px] text-white font-semibold font-sans mb-0">James D. Surratt</h4>
+                                                <h5 className="text-[12px] xl:text-[15px] text-white font-normal font-sans mb-0">Animation Manager</h5>
+                                            </div>
+                                        </div>
+                                        <Link href="javascript:;" className={`${styles.readMore} flex flex-row items-center justify-end gap-3 pb-2`}>
+                                            <span className="text-[16px] text-white font-normal font-sans mb-0">Read More</span>
+                                            <Image src={arrow} alt="Infinity Animations" className="w-[20%]" />
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-full md:col-span-6 lg:col-span-4">
+                                <div className="bg-[#262626] rounded-2xl flex flex-col gap-[28px]">
+                                    <div className="blogImg">
+                                        <Image src={Blog3} alt="Infinity Animations" />
+                                    </div>
+                                    <div className={`${styles.blogContent} px-5 flex flex-col gap-2`}>
+                                        <h5 className="text-[18px] text-primary-100 font-normal font-sans mb-0">Architectural Animation</h5>
+                                        <h4 className="text-[20px] md:text-[24px] xl:text-[28px] text-white leading-tight font-bold font-sans mb-0">Be the First to Hire Our Professional Animators</h4>
+                                        <p className="text-[16px] text-white font-normal font-sans mb-0">Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin,</p>
+                                    </div>
+                                    <div className="aboutBlog flex flex-row items-center justify-between px-5 pb-5">
+                                        <div className="author flex flex-row items-center w-full gap-3">
+                                            <div className="w-[20%]">
+                                                <Image src={author} alt="Infinity Animations" />
+                                            </div>
+                                            <div className="relative">
+                                                <Image src={verified} alt="Infinity Animations" className="absolute right-[-18%] top-[14%] w-[10%]" />
+                                                <h4 className="text-[15px] xl:text-[20px] text-white font-semibold font-sans mb-0">James D. Surratt</h4>
+                                                <h5 className="text-[12px] xl:text-[15px] text-white font-normal font-sans mb-0">Animation Manager</h5>
+                                            </div>
+                                        </div>
+                                        <Link href="javascript:;" className={`${styles.readMore} flex flex-row items-center justify-end gap-3 pb-2`}>
+                                            <span className="text-[16px] text-white font-normal font-sans mb-0">Read More</span>
+                                            <Image src={arrow} alt="Infinity Animations" className="w-[20%]" />
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-full md:col-span-6 lg:col-span-4">
+                                <div className="bg-[#262626] rounded-2xl flex flex-col gap-[28px]">
+                                    <div className="blogImg">
+                                        <Image src={Blog1} alt="Infinity Animations" />
+                                    </div>
+                                    <div className={`${styles.blogContent} px-5 flex flex-col gap-2`}>
+                                        <h5 className="text-[18px] text-primary-100 font-normal font-sans mb-0">Architectural Animation</h5>
+                                        <h4 className="text-[20px] md:text-[24px] xl:text-[28px] text-white leading-tight font-bold font-sans mb-0">Be the First to Hire Our Professional Animators</h4>
+                                        <p className="text-[16px] text-white font-normal font-sans mb-0">Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin,</p>
+                                    </div>
+                                    <div className="aboutBlog flex flex-row items-center justify-between px-5 pb-5">
+                                        <div className="author flex flex-row items-center w-full gap-3">
+                                            <div className="w-[20%]">
+                                                <Image src={author} alt="Infinity Animations" />
+                                            </div>
+                                            <div className="relative">
+                                                <Image src={verified} alt="Infinity Animations" className="absolute right-[-18%] top-[14%] w-[10%]" />
+                                                <h4 className="text-[15px] xl:text-[20px] text-white font-semibold font-sans mb-0">James D. Surratt</h4>
+                                                <h5 className="text-[12px] xl:text-[15px] text-white font-normal font-sans mb-0">Animation Manager</h5>
+                                            </div>
+                                        </div>
+                                        <Link href="javascript:;" className={`${styles.readMore} flex flex-row items-center justify-end gap-3 pb-2`}>
+                                            <span className="text-[16px] text-white font-normal font-sans mb-0">Read More</span>
+                                            <Image src={arrow} alt="Infinity Animations" className="w-[20%]" />
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-full md:col-span-6 lg:col-span-4">
+                                <div className="bg-[#262626] rounded-2xl flex flex-col gap-[28px]">
+                                    <div className="blogImg">
+                                        <Image src={Blog2} alt="Infinity Animations" />
+                                    </div>
+                                    <div className={`${styles.blogContent} px-5 flex flex-col gap-2`}>
+                                        <h5 className="text-[18px] text-primary-100 font-normal font-sans mb-0">Architectural Animation</h5>
+                                        <h4 className="text-[20px] md:text-[24px] xl:text-[28px] text-white leading-tight font-bold font-sans mb-0">Be the First to Hire Our Professional Animators</h4>
+                                        <p className="text-[16px] text-white font-normal font-sans mb-0">Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin,</p>
+                                    </div>
+                                    <div className="aboutBlog flex flex-row items-center justify-between px-5 pb-5">
+                                        <div className="author flex flex-row items-center w-full gap-3">
+                                            <div className="w-[20%]">
+                                                <Image src={author} alt="Infinity Animations" />
+                                            </div>
+                                            <div className="relative">
+                                                <Image src={verified} alt="Infinity Animations" className="absolute right-[-18%] top-[14%] w-[10%]" />
+                                                <h4 className="text-[15px] xl:text-[20px] text-white font-semibold font-sans mb-0">James D. Surratt</h4>
+                                                <h5 className="text-[12px] xl:text-[15px] text-white font-normal font-sans mb-0">Animation Manager</h5>
+                                            </div>
+                                        </div>
+                                        <Link href="javascript:;" className={`${styles.readMore} flex flex-row items-center justify-end gap-3 pb-2`}>
+                                            <span className="text-[16px] text-white font-normal font-sans mb-0">Read More</span>
+                                            <Image src={arrow} alt="Infinity Animations" className="w-[20%]" />
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-full md:col-span-6 lg:col-span-4">
+                                <div className="bg-[#262626] rounded-2xl flex flex-col gap-[28px]">
+                                    <div className="blogImg">
+                                        <Image src={Blog1} alt="Infinity Animations" />
+                                    </div>
+                                    <div className={`${styles.blogContent} px-5 flex flex-col gap-2`}>
+                                        <h5 className="text-[18px] text-primary-100 font-normal font-sans mb-0">Architectural Animation</h5>
+                                        <h4 className="text-[20px] md:text-[24px] xl:text-[28px] text-white leading-tight font-bold font-sans mb-0">Be the First to Hire Our Professional Animators</h4>
+                                        <p className="text-[16px] text-white font-normal font-sans mb-0">Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin,</p>
+                                    </div>
+                                    <div className="aboutBlog flex flex-row items-center justify-between px-5 pb-5">
+                                        <div className="author flex flex-row items-center w-full gap-3">
+                                            <div className="w-[20%]">
+                                                <Image src={author} alt="Infinity Animations" />
+                                            </div>
+                                            <div className="relative">
+                                                <Image src={verified} alt="Infinity Animations" className="absolute right-[-18%] top-[14%] w-[10%]" />
+                                                <h4 className="text-[15px] xl:text-[20px] text-white font-semibold font-sans mb-0">James D. Surratt</h4>
+                                                <h5 className="text-[12px] xl:text-[15px] text-white font-normal font-sans mb-0">Animation Manager</h5>
+                                            </div>
+                                        </div>
+                                        <Link href="javascript:;" className={`${styles.readMore} flex flex-row items-center justify-end gap-3 pb-2`}>
+                                            <span className="text-[16px] text-white font-normal font-sans mb-0">Read More</span>
+                                            <Image src={arrow} alt="Infinity Animations" className="w-[20%]" />
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-full md:col-span-6 lg:col-span-4">
+                                <div className="bg-[#262626] rounded-2xl flex flex-col gap-[28px]">
+                                    <div className="blogImg">
+                                        <Image src={Blog2} alt="Infinity Animations" />
+                                    </div>
+                                    <div className={`${styles.blogContent} px-5 flex flex-col gap-2`}>
+                                        <h5 className="text-[18px] text-primary-100 font-normal font-sans mb-0">Architectural Animation</h5>
+                                        <h4 className="text-[20px] md:text-[24px] xl:text-[28px] text-white leading-tight font-bold font-sans mb-0">Be the First to Hire Our Professional Animators</h4>
+                                        <p className="text-[16px] text-white font-normal font-sans mb-0">Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin,</p>
+                                    </div>
+                                    <div className="aboutBlog flex flex-row items-center justify-between px-5 pb-5">
+                                        <div className="author flex flex-row items-center w-full gap-3">
+                                            <div className="w-[20%]">
+                                                <Image src={author} alt="Infinity Animations" />
+                                            </div>
+                                            <div className="relative">
+                                                <Image src={verified} alt="Infinity Animations" className="absolute right-[-18%] top-[14%] w-[10%]" />
+                                                <h4 className="text-[15px] xl:text-[20px] text-white font-semibold font-sans mb-0">James D. Surratt</h4>
+                                                <h5 className="text-[12px] xl:text-[15px] text-white font-normal font-sans mb-0">Animation Manager</h5>
+                                            </div>
+                                        </div>
+                                        <Link href="javascript:;" className={`${styles.readMore} flex flex-row items-center justify-end gap-3 pb-2`}>
+                                            <span className="text-[16px] text-white font-normal font-sans mb-0">Read More</span>
+                                            <Image src={arrow} alt="Infinity Animations" className="w-[20%]" />
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-full md:col-span-6 lg:col-span-4">
+                                <div className="bg-[#262626] rounded-2xl flex flex-col gap-[28px]">
+                                    <div className="blogImg">
+                                        <Image src={Blog3} alt="Infinity Animations" />
+                                    </div>
+                                    <div className={`${styles.blogContent} px-5 flex flex-col gap-2`}>
+                                        <h5 className="text-[18px] text-primary-100 font-normal font-sans mb-0">Architectural Animation</h5>
+                                        <h4 className="text-[20px] md:text-[24px] xl:text-[28px] text-white leading-tight font-bold font-sans mb-0">Be the First to Hire Our Professional Animators</h4>
+                                        <p className="text-[16px] text-white font-normal font-sans mb-0">Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin,</p>
+                                    </div>
+                                    <div className="aboutBlog flex flex-row items-center justify-between px-5 pb-5">
+                                        <div className="author flex flex-row items-center w-full gap-3">
+                                            <div className="w-[20%]">
+                                                <Image src={author} alt="Infinity Animations" />
+                                            </div>
+                                            <div className="relative">
+                                                <Image src={verified} alt="Infinity Animations" className="absolute right-[-18%] top-[14%] w-[10%]" />
+                                                <h4 className="text-[15px] xl:text-[20px] text-white font-semibold font-sans mb-0">James D. Surratt</h4>
+                                                <h5 className="text-[12px] xl:text-[15px] text-white font-normal font-sans mb-0">Animation Manager</h5>
+                                            </div>
+                                        </div>
+                                        <Link href="javascript:;" className={`${styles.readMore} flex flex-row items-center justify-end gap-3 pb-2`}>
+                                            <span className="text-[16px] text-white font-normal font-sans mb-0">Read More</span>
+                                            <Image src={arrow} alt="Infinity Animations" className="w-[20%]" />
+                                        </Link>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <Slider {...blogsSlider} className="blogsSlider">
-                            <div className="my-2 px-2">
-                                <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
-                                    <div className="img">
-                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
-                                    </div>
-                                    <div className="content p-4">
-                                        <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
-                                            Inspire Audiences</h3>
-                                        <p className='text-[13px] sm:text-[14px] font-light font-sans leading-[18px] pt-3 xl:w-8/12'>How Whiteboard Explainer Videos Inspire Audiences In today’s fast-paced world, capturing and keeping your audience’s</p>
-                                    </div>
-                                    <div className="card_bottom bg-second px-5 pt-5 pb-5 rounded-b-[30px] border-t border-white flex flex-wrap gap-4 justify-center sm:justify-between items-center">
-                                        <p className='text-[13px] font-sans font-light'>December 13, 2023 </p>
-                                        <div className="btn">
-                                            <Link href="javascript:;" className='bg-primary-100 text-[16px] px-7 py-2 border-2 border-white font-sans rounded-[5px] shadow-2xl'>Read More</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="my-2 px-2">
-                                <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
-                                    <div className="img">
-                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
-                                    </div>
-                                    <div className="content p-4">
-                                        <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
-                                            Inspire Audiences</h3>
-                                        <p className='text-[13px] sm:text-[14px] font-light font-sans leading-[18px] pt-3 xl:w-8/12'>How Whiteboard Explainer Videos Inspire Audiences In today’s fast-paced world, capturing and keeping your audience’s</p>
-                                    </div>
-                                    <div className="card_bottom bg-second px-5 pt-5 pb-5 rounded-b-[30px] border-t border-white flex flex-wrap gap-4 justify-center sm:justify-between items-center">
-                                        <p className='text-[13px] font-sans font-light'>December 13, 2023 </p>
-                                        <div className="btn">
-                                            <Link href="javascript:;" className='bg-primary-100 text-[16px] px-7 py-2 border-2 border-white font-sans rounded-[5px] shadow-2xl'>Read More</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="my-2 px-2">
-                                <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
-                                    <div className="img">
-                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
-                                    </div>
-                                    <div className="content p-4">
-                                        <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
-                                            Inspire Audiences</h3>
-                                        <p className='text-[13px] sm:text-[14px] font-light font-sans leading-[18px] pt-3 xl:w-8/12'>How Whiteboard Explainer Videos Inspire Audiences In today’s fast-paced world, capturing and keeping your audience’s</p>
-                                    </div>
-                                    <div className="card_bottom bg-second px-5 pt-5 pb-5 rounded-b-[30px] border-t border-white flex flex-wrap gap-4 justify-center sm:justify-between items-center">
-                                        <p className='text-[13px] font-sans font-light'>December 13, 2023 </p>
-                                        <div className="btn">
-                                            <Link href="javascript:;" className='bg-primary-100 text-[16px] px-7 py-2 border-2 border-white font-sans rounded-[5px] shadow-2xl'>Read More</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="my-2 px-2">
-                                <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
-                                    <div className="img">
-                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
-                                    </div>
-                                    <div className="content p-4">
-                                        <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
-                                            Inspire Audiences</h3>
-                                        <p className='text-[13px] sm:text-[14px] font-light font-sans leading-[18px] pt-3 xl:w-8/12'>How Whiteboard Explainer Videos Inspire Audiences In today’s fast-paced world, capturing and keeping your audience’s</p>
-                                    </div>
-                                    <div className="card_bottom bg-second px-5 pt-5 pb-5 rounded-b-[30px] border-t border-white flex flex-wrap gap-4 justify-center sm:justify-between items-center">
-                                        <p className='text-[13px] font-sans font-light'>December 13, 2023 </p>
-                                        <div className="btn">
-                                            <Link href="javascript:;" className='bg-primary-100 text-[16px] px-7 py-2 border-2 border-white font-sans rounded-[5px] shadow-2xl'>Read More</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="my-2 px-2">
-                                <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
-                                    <div className="img">
-                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
-                                    </div>
-                                    <div className="content p-4">
-                                        <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
-                                            Inspire Audiences</h3>
-                                        <p className='text-[13px] sm:text-[14px] font-light font-sans leading-[18px] pt-3 xl:w-8/12'>How Whiteboard Explainer Videos Inspire Audiences In today’s fast-paced world, capturing and keeping your audience’s</p>
-                                    </div>
-                                    <div className="card_bottom bg-second px-5 pt-5 pb-5 rounded-b-[30px] border-t border-white flex flex-wrap gap-4 justify-center sm:justify-between items-center">
-                                        <p className='text-[13px] font-sans font-light'>December 13, 2023 </p>
-                                        <div className="btn">
-                                            <Link href="javascript:;" className='bg-primary-100 text-[16px] px-7 py-2 border-2 border-white font-sans rounded-[5px] shadow-2xl'>Read More</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="my-2 px-2">
-                                <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
-                                    <div className="img">
-                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
-                                    </div>
-                                    <div className="content p-4">
-                                        <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
-                                            Inspire Audiences</h3>
-                                        <p className='text-[13px] sm:text-[14px] font-light font-sans leading-[18px] pt-3 xl:w-8/12'>How Whiteboard Explainer Videos Inspire Audiences In today’s fast-paced world, capturing and keeping your audience’s</p>
-                                    </div>
-                                    <div className="card_bottom bg-second px-5 pt-5 pb-5 rounded-b-[30px] border-t border-white flex flex-wrap gap-4 justify-center sm:justify-between items-center">
-                                        <p className='text-[13px] font-sans font-light'>December 13, 2023 </p>
-                                        <div className="btn">
-                                            <Link href="javascript:;" className='bg-primary-100 text-[16px] px-7 py-2 border-2 border-white font-sans rounded-[5px] shadow-2xl'>Read More</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="my-2 px-2">
-                                <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
-                                    <div className="img">
-                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
-                                    </div>
-                                    <div className="content p-4">
-                                        <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
-                                            Inspire Audiences</h3>
-                                        <p className='text-[13px] sm:text-[14px] font-light font-sans leading-[18px] pt-3 xl:w-8/12'>How Whiteboard Explainer Videos Inspire Audiences In today’s fast-paced world, capturing and keeping your audience’s</p>
-                                    </div>
-                                    <div className="card_bottom bg-second px-5 pt-5 pb-5 rounded-b-[30px] border-t border-white flex flex-wrap gap-4 justify-center sm:justify-between items-center">
-                                        <p className='text-[13px] font-sans font-light'>December 13, 2023 </p>
-                                        <div className="btn">
-                                            <Link href="javascript:;" className='bg-primary-100 text-[16px] px-7 py-2 border-2 border-white font-sans rounded-[5px] shadow-2xl'>Read More</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="my-2 px-2">
-                                <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
-                                    <div className="img">
-                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
-                                    </div>
-                                    <div className="content p-4">
-                                        <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
-                                            Inspire Audiences</h3>
-                                        <p className='text-[13px] sm:text-[14px] font-light font-sans leading-[18px] pt-3 xl:w-8/12'>How Whiteboard Explainer Videos Inspire Audiences In today’s fast-paced world, capturing and keeping your audience’s</p>
-                                    </div>
-                                    <div className="card_bottom bg-second px-5 pt-5 pb-5 rounded-b-[30px] border-t border-white flex flex-wrap gap-4 justify-center sm:justify-between items-center">
-                                        <p className='text-[13px] font-sans font-light'>December 13, 2023 </p>
-                                        <div className="btn">
-                                            <Link href="javascript:;" className='bg-primary-100 text-[16px] px-7 py-2 border-2 border-white font-sans rounded-[5px] shadow-2xl'>Read More</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="my-2 px-2">
-                                <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
-                                    <div className="img">
-                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
-                                    </div>
-                                    <div className="content p-4">
-                                        <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
-                                            Inspire Audiences</h3>
-                                        <p className='text-[13px] sm:text-[14px] font-light font-sans leading-[18px] pt-3 xl:w-8/12'>How Whiteboard Explainer Videos Inspire Audiences In today’s fast-paced world, capturing and keeping your audience’s</p>
-                                    </div>
-                                    <div className="card_bottom bg-second px-5 pt-5 pb-5 rounded-b-[30px] border-t border-white flex flex-wrap gap-4 justify-center sm:justify-between items-center">
-                                        <p className='text-[13px] font-sans font-light'>December 13, 2023 </p>
-                                        <div className="btn">
-                                            <Link href="javascript:;" className='bg-primary-100 text-[16px] px-7 py-2 border-2 border-white font-sans rounded-[5px] shadow-2xl'>Read More</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="my-2 px-2">
-                                <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
-                                    <div className="img">
-                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
-                                    </div>
-                                    <div className="content p-4">
-                                        <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
-                                            Inspire Audiences</h3>
-                                        <p className='text-[13px] sm:text-[14px] font-light font-sans leading-[18px] pt-3 xl:w-8/12'>How Whiteboard Explainer Videos Inspire Audiences In today’s fast-paced world, capturing and keeping your audience’s</p>
-                                    </div>
-                                    <div className="card_bottom bg-second px-5 pt-5 pb-5 rounded-b-[30px] border-t border-white flex flex-wrap gap-4 justify-center sm:justify-between items-center">
-                                        <p className='text-[13px] font-sans font-light'>December 13, 2023 </p>
-                                        <div className="btn">
-                                            <Link href="javascript:;" className='bg-primary-100 text-[16px] px-7 py-2 border-2 border-white font-sans rounded-[5px] shadow-2xl'>Read More</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="my-2 px-2">
-                                <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
-                                    <div className="img">
-                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
-                                    </div>
-                                    <div className="content p-4">
-                                        <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
-                                            Inspire Audiences</h3>
-                                        <p className='text-[13px] sm:text-[14px] font-light font-sans leading-[18px] pt-3 xl:w-8/12'>How Whiteboard Explainer Videos Inspire Audiences In today’s fast-paced world, capturing and keeping your audience’s</p>
-                                    </div>
-                                    <div className="card_bottom bg-second px-5 pt-5 pb-5 rounded-b-[30px] border-t border-white flex flex-wrap gap-4 justify-center sm:justify-between items-center">
-                                        <p className='text-[13px] font-sans font-light'>December 13, 2023 </p>
-                                        <div className="btn">
-                                            <Link href="javascript:;" className='bg-primary-100 text-[16px] px-7 py-2 border-2 border-white font-sans rounded-[5px] shadow-2xl'>Read More</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="my-2 px-2">
-                                <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
-                                    <div className="img">
-                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
-                                    </div>
-                                    <div className="content p-4">
-                                        <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
-                                            Inspire Audiences</h3>
-                                        <p className='text-[13px] sm:text-[14px] font-light font-sans leading-[18px] pt-3 xl:w-8/12'>How Whiteboard Explainer Videos Inspire Audiences In today’s fast-paced world, capturing and keeping your audience’s</p>
-                                    </div>
-                                    <div className="card_bottom bg-second px-5 pt-5 pb-5 rounded-b-[30px] border-t border-white flex flex-wrap gap-4 justify-center sm:justify-between items-center">
-                                        <p className='text-[13px] font-sans font-light'>December 13, 2023 </p>
-                                        <div className="btn">
-                                            <Link href="javascript:;" className='bg-primary-100 text-[16px] px-7 py-2 border-2 border-white font-sans rounded-[5px] shadow-2xl'>Read More</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Slider>
-                        <hr className="border border-[#707070] absolute bottom-[34px] left-[46%] 2xl:left-[48%] translate-x-[-48%] w-[75%] xl:w-[85%] 3xl:w-[68%] mx-auto z-0 sm:block hidden" />
+                        <div className="mt-12 text-center">
+                            <button className="text-[16px] font-sans bg-prime text-white w-max px-12 py-3 rounded-lg">Load More</button>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -69,7 +69,7 @@ const Scripts = () => {
                 gtag('config', 'G-NTFT6HEZCW');
             `;
             document.head.appendChild(gtmConfigScript2);
-        }, 10000);
+        }, 5000);
 
         return () => clearTimeout(timer);
     }, []);

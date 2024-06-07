@@ -19,11 +19,11 @@ const Contact = () => {
                 <div className="container">
                     <div className='flex items-center justify-around'>
                         <div className='w-full text-center'>
-                            <h1 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight my-2">
-                                Reach Out
-                            </h1>
+                            <h2 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight my-2">
+                                Ready To Engage Your Audience?
+                            </h2>
                             <p className="w-[80%] mx-auto text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
-                                Engage, share and traverse with us
+                                Engage, Share and Traverse With Us
                             </p>
                         </div>
                     </div>

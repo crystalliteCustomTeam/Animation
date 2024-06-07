@@ -1,0 +1,55 @@
+.blogContent p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.readMore {
+  /* position: relative; */
+  width: 50%;
+}
+
+.readMore::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  background-color: #fff;
+  height: 1px;
+  width: 80%;
+}
+
+@media screen and (max-width: 1499px) {
+  .readMore::before {
+    width: 87%;
+  }
+}
+
+@media screen and (max-width: 1299px) {
+  .readMore::before {
+    width: 68%;
+  }
+}
+
+@media screen and (max-width: 1099px) {
+    .readMore::before {
+      width: 100%;
+    }
+
+    .readMore {
+        width: 55%;
+      }
+  }
+  
+
+  @media screen and (max-width: 767px) {
+    .readMore::before {
+      width: 62%;
+    }
+
+    .readMore {
+        width: 100%;
+      }
+  }
+  

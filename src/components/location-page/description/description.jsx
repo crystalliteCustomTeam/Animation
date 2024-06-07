@@ -28,15 +28,15 @@ function Description({ content }) {
                     </div>
                     }
 
-                    <div className={` col-span-12 lg:col-span-6 ms-auto pe-5 flex flex-col justify-center `}>
-                        <h2 className={`text-[#fff] text-[35px] sm:text-[40px] font-semibold font-sans leading-tight mt-5 mb-5 text-start`}>
+                    <div className={` col-span-12 lg:col-span-6 ms-auto pe-0 md:pe-5 flex flex-col justify-center`}>
+                        <h2 className={`text-[#fff] text-[30px] sm:text-[40px] font-semibold font-sans leading-tight md:mt-5 mb-5 text-start`}>
                             {title}
                         </h2>
-                        <p className="text-[14px] sm:text-[16px] text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-start ">
+                        <p className="text-[15px] lg:text-[16px] text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-start ">
                             {para}
                         </p>
                         {downArrow &&
-                            <div className={`flex items-center h-[70px] mt-[35px] ${downArrow === 'start' && 'justify-start border-l-2 '} ${downArrow === 'end' && 'justify-end border-r-2'}  border-gray-500`}>
+                            <div className={`flex items-center w-[98%] md:w-full h-[70px] mt-[35px] ${downArrow === 'start' && 'justify-start border-l-2 '} ${downArrow === 'end' && 'justify-end border-r-2'}  border-gray-500`}>
                                 <Image src={DescDot} width='25px' height='25px' className={`${downArrow === 'start' && 'ms-[-18px]'} ${downArrow === 'end' && 'me-[-18px]'}`} />
                             </div>
                         }

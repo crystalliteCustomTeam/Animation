@@ -18,15 +18,12 @@ const Contact = () => {
                 <div className="container">
                     <div className='flex items-center justify-around'>
                         <div className='w-full text-center mb-6'>
-                            <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5 capitalize`}>
+                            <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-3 capitalize`}>
                                 Connect With Us
                             </h2>
-                            <p className="w-full md:w-[70%] lg:w-[60%] mx-auto text-[14px] sm:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
+                            <p className="w-full md:w-[70%] lg:w-[60%] mx-auto text-[15px] lg:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
                             Let’s engage, share ideas, and explore together
                             </p>
-                            {/* <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3 text-center mb-0 lg:mb-5">
-                                Let’s engage, share ideas, and explore together
-                            </p> */}
                         </div>
                     </div>
                     <div className='grid grid-cols-1 lg:grid-cols-2 mt-6 md:mt-4 bg-transparent relative z-50 mx-auto'>

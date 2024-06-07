@@ -72,9 +72,9 @@ const Looking = ({ content }) => {
                             <Image src={flodImg} className={`w-full mx-auto ${css}`} alt="Infinity Animation" quality={85} />
                         </div>
                         <div className={`w-full lg:w-[800px] ${lookingSecCol}`}>
-                            <h1 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5">
+                            <h2 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5">
                                 {title}
-                            </h1>
+                            </h2>
                             {paraArray.map((para, index) => (
                                 <p key={index} className="text-[16px] font-normal font-sans leading-snug tracking-wider text-justify mb-5">
                                     {para}

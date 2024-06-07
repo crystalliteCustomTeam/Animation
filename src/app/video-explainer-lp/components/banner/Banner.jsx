@@ -135,7 +135,7 @@ const Banner = () => {
 
     return (
         <>
-            <section className='bg-cover bg-center bg-[#003465f0] lg:bg-[url("../../public/video-explainer/banner.jpg")] h-[100%] pt-[180px] lg:pt-[265px] pb-[60px] md:pb-[100px] mt-[-85px]'>
+            <section className='bg-cover bg-right-top bg-[#003465f0] lg:bg-[url("../../public/video-explainer/banner.jpg")] h-[100%] pt-[180px] lg:pt-[265px] pb-[60px] md:pb-[100px] mt-[-85px]'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-y-12">
                         <div className="col-span-12 lg:col-span-6">
@@ -144,19 +144,23 @@ const Banner = () => {
                             <ul>
                                 <li className='flex items-start gap-x-2'>
                                     <CheckCircle className='text-white' />
-                                    <span className='text-white font-[400] pb-[10px] montserrat'> Full HD Animations</span>
+                                    <span className='text-white font-[400] pb-[10px] montserrat'> Demo/Tutorial Videos</span>
                                 </li>
                                 <li className='flex items-start gap-x-2'>
                                     <CheckCircle className='text-white' />
-                                    <span className='text-white font-[400] pb-[10px] montserrat'>Appealing Designs</span>
+                                    <span className='text-white font-[400] pb-[10px] montserrat'>Training Videos</span>
                                 </li>
                                 <li className='flex items-start gap-x-2'>
                                     <CheckCircle className='text-white' />
-                                    <span className='text-white font-[400] pb-[10px] montserrat'>Latest Technology</span>
+                                    <span className='text-white font-[400] pb-[10px] montserrat'>Animated commercial Videos</span>
                                 </li>
                                 <li className='flex items-start gap-x-2'>
                                     <CheckCircle className='text-white' />
-                                    <span className='text-white font-[400] pb-[10px] montserrat'>Award-Winning Agency</span>
+                                    <span className='text-white font-[400] pb-[10px] montserrat'>Promotional Videos</span>
+                                </li>
+                                <li className='flex items-start gap-x-2'>
+                                    <CheckCircle className='text-white' />
+                                    <span className='text-white font-[400] pb-[10px] montserrat'>Marketing Videos</span>
                                 </li>
                             </ul>
                             <Image src={BannerLogos} alt='banner-logos' className='object-contain mt-4 mb-6' />

@@ -13,21 +13,21 @@ const Concept = ({ content }) => {
     const { title, para } = content;
     return (
         <>
-            <section className="pt-6 md:pt-12 lg:pt-20 mb-[50px] lg:mb-[-40px]">
+            <section className="pt-6 md:pt-20 mb-[40px] lg:mb-[-40px]">
                 <div className='flex items-center justify-around'>
-                    <div className='w-full text-center'>
+                    <div className='w-full text-center px-3 md:px-0'>
                         <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5 capitalize`}>
                            {title} 
                         </h2>
-                        <p className="w-full md:w-[70%] lg:w-[60%] mx-auto text-[14px] sm:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
+                        <p className="w-full md:w-[70%] lg:w-[60%] mx-auto text-[15px] lg:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
                           {para} 
                         </p>
                     </div>
                 </div>
             </section>
-            <section className={`w-full h-full pb-6 md:pb-12 lg:pb-16 flex items-center justify-star bg-none lg:bg-[url("../../public/home/concept-bg.gif")] bg-no-repeat bg-center bg-[length:100%_90%]`}>
+            <section className={`w-full h-full pb-0 lg:pb-16 flex items-center justify-star bg-none lg:bg-[url("../../public/home/concept-bg.gif")] bg-no-repeat bg-center bg-[length:100%_90%]`}>
                 <div className="container">
-                    <div className='lg:w-[550px] xl:w-[650px] ml-auto mt-0 lg:mt-48 pb-8 md:pb-16 lg:pb-20'>
+                    <div className='lg:w-[550px] xl:w-[650px] ml-auto mt-0 lg:mt-48 pb-8 lg:pb-20'>
                         <div className="grid grid-cols-2 gap-12 relative">
                             <div className="absolute left-[50%] w-[1px] h-full bg-white text-white"></div>
                             <div className="absolute top-[50%] w-full h-[1px] bg-white text-white"></div>

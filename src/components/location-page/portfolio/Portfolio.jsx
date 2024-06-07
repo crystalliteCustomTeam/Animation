@@ -59,10 +59,10 @@ const Portfolio = ({ content }) => {
                 <div className="container">
                     <div className='flex items-center justify-around'>
                         <div className='w-full text-center'>
-                            <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5 capitalize`}>
-                            {title}
+                            <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-3 capitalize`}>
+                                {title}
                             </h2>
-                            <p className="w-full md:w-[70%] lg:w-[60%] mx-auto text-[14px] sm:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
+                            <p className="w-full md:w-[70%] lg:w-[60%] mx-auto text-[15px] lg:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5 md:mb-0 lg:mb-5">
                                 {para}
                             </p>
                         </div>

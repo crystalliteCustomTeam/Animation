@@ -11,7 +11,7 @@ const Looking = ({ content }) => {
 
     return (
         <>
-            <section className={`w-full flex items-center justify-start py-6 md:py-12 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative `}>
+            <section className={`w-full flex items-center justify-start py-6 md:pt-20 md:pb-12 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative `}>
                 <div className="px-[35px] sm:px-8 lg:px-16 mx-auto">
                     <div className='grid grid-cols-12 '>
                         <div className="col-span-12 lg:col-span-5 flex flex-col items-start ">
@@ -23,11 +23,11 @@ const Looking = ({ content }) => {
                             </div>
                         </div>
                         <div className={`col-span-12 lg:col-span-7 flex flex-col justify-end lg:ms-[15%] xl:ms-[12%] lg:pe-[35px] mt-[35px] md:mt-0`}>
-                            <h4 className="text-[22px] lg:text-[28px] font-bold font-sans leading-tight mb-5">
+                            <h3 className="text-[22px] lg:text-[28px] font-bold font-sans leading-tight mb-5">
                                 {title}
-                            </h4>
+                            </h3>
                             {paraArray.map((para, index) => (
-                                <p key={index} className="text-[16px] font-[300] font-sans leading-snug tracking-wider text-start mb-5">
+                                <p key={index} className="text-[15px] lg:text-[16px] font-[300] font-sans leading-snug tracking-wider text-start mb-5">
                                     {para}
                                 </p>
                             ))}

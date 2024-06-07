@@ -194,7 +194,7 @@ function BannerContact({ content }) {
         <div className="container">
           <div className='grid grid-cols-12 justify-items-around w-full'>
             <div className={`col-span-12 lg:col-span-5 flex flex-col`}>
-              <div className={`lg:h-full ${styles.sectionRibbon} bg-[#D60925] rounded-[4px] mt-[65px] md:mt-0`}>
+              <div className={`lg:h-full ${styles.sectionRibbon} bg-[#D60925] rounded-[4px] mt-[65px] md:mt-0 w-[95%] mx-auto`}>
                 <div className={`${styles.ribbon} bg-white border py-[20px] `}>
                   <span className={` py-3 ${styles.ribbon5} `}>
                     <h4 className={`text-[#fff] text-[25px] md:text-[30px] font-[550] font-sans leading-[30px] text-center mb-2`}>
@@ -253,11 +253,11 @@ function BannerContact({ content }) {
             </div>
 
             <div className={`  col-span-12 lg:col-span-7 flex flex-col justify-center h-full px-[15px] lg:ps-[15%] mx-[15px] sm:mx-[35px] md:mx-0 mt-[55px] lg:mt-5  ${styles.paraBg}`}>
-              <h2 className={`text-[#fff] text-[35px] sm:text-[40px] font-semibold font-sans leading-tight mt-5 mb-5 text-center lg:text-start`}>
+              <h2 className={`text-[#fff] text-[24px] md:text-[35px] sm:text-[40px] font-semibold font-sans leading-tight mt-5 mb-5 text-center lg:text-start`}>
                 {title}
               </h2>
               {paraArrayBanner.map((para, index) => (
-                <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
+                <p className="text-[15px] lg:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
                 {para}
               </p>
               ))}

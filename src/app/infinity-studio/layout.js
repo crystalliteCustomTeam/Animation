@@ -1,12 +1,12 @@
 //===== Meta Data =====
 export const metadata = {
     //===== Meta Tags =====
-    title: "",
-    description: "",
+    title: "Creative & Affordable Animation Studio",
+    description: "Leading Video Animation Production Company who create Top Notch Animated Explainer Videos",
     //===== OG Tags =====
     openGraph: {
-        title: '',
-        description: '',
+        title: 'Creative & Affordable Animation Studio',
+        description: 'Leading Video Animation Production Company who create Top Notch Animated Explainer Videos',
         url: '/infinity-studio',
         siteName: 'Infinity Animations',
         locale: 'en_US',

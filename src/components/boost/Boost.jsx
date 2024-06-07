@@ -22,9 +22,9 @@ const Boost = ({ content }) => {
                 <div className="container">
                     <div className='flex flex-col-reverse lg:flex-row gap-y-8 items-center justify-between'>
                         <div className='w-full lg:w-[1000px]'>
-                            <h1 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-3">
+                            <h2 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-3">
                                 {title}
-                            </h1>
+                            </h2>
                             <p className="text-[16px] font-normal font-sans leading-snug tracking-wider text-justify mb-5">
                                 {para}
                             </p>

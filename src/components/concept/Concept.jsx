@@ -10,9 +10,20 @@ import icon4 from "media/icons/concept-icon4.png"
 
 
 const Concept = ({ content }) => {
-    const { btnBg, btnColor, btnBorder, btnHover, } = content;
+    const { title, para } = content;
     return (
-        <>
+        <><section className="pt-6 md:pt-20 mb-[40px] lg:mb-[-40px]">
+            <div className='flex items-center justify-around'>
+                <div className='w-full text-center px-3 md:px-0'>
+                    <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5 capitalize`}>
+                        {title}
+                    </h2>
+                    <p className="w-full md:w-[70%] lg:w-[60%] mx-auto text-[15px] lg:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
+                        {para}
+                    </p>
+                </div>
+            </div>
+        </section>
             <section className={`w-full h-full flex items-center justify-star bg-none lg:bg-[url("../../public/home/concept-bg.gif")] bg-no-repeat bg-center bg-[length:100%_90%]`}>
                 <div className="container">
                     <div className='lg:w-[550px] xl:w-[650px] ml-auto mt-0 lg:mt-48 pb-8 md:pb-16 lg:pb-20'>
@@ -77,7 +88,7 @@ const Concept = ({ content }) => {
                                 bg="bg-prime"
                                 color={`text-white`}
                                 border={`border-2 border-[#f5090b]`}
-                                hover="hover:bg-transparent" 
+                                hover="hover:bg-transparent"
                             />
                             <CTA
                                 text="Live Chat"

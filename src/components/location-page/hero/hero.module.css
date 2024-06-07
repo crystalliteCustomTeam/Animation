@@ -5,15 +5,15 @@
 .mainImg {
   position: absolute;
   bottom: -5%;
-  right: 6%;
+  right: 5%;
   width: 82%;
 }
 
 .topLeft {
-  width: 110px;
-  top: 35px;
-  left: 12%;
   position: absolute;
+  top: 110px;
+  left: 13%;
+  width: 110px;
 }
 
 .bannerImg:hover .topLeft {
@@ -21,10 +21,10 @@
 }
 
 .topRight {
-  width: 60px;
-  top: 130px;
-  right: 15%;
   position: absolute;
+  top: 210px;
+  right: 15%;
+  width: 60px;
 }
 
 .bannerImg:hover .topRight {
@@ -44,66 +44,66 @@
 
 @media only screen and (max-width: 1599px) {
   .mainImg {
-    bottom: -5%;
+    bottom: -2%;
     right: 6%;
     width: 75%;
   }
 
   .topLeft {
-    top: 75px;
+    top: 130px;
     left: 18%;
   }
 
   .topRight {
-    top: 180px;
+    top: 235px;
     right: 15%;
   }
 
   .bottomRight {
-    bottom: 50px;
+    bottom: 60px;
     right: 10%;
   }
 }
 
 @media only screen and (max-width: 1499px) {
   .mainImg {
-    bottom: 0%;
-    right: 6%;
+    bottom: 6%;
+    right: 5%;
     width: 80%;
   }
 
   .topLeft {
-    top: 85px;
+    top: 125px;
     left: 15%;
     width: 95px;
   }
 
   .topRight {
-    top: 180px;
+    top: 220px;
     right: 15%;
   }
 
   .bottomRight {
-    bottom: 80px;
+    bottom: 115px;
     right: 10%;
   }
 }
 
 @media only screen and (max-width: 1299px) {
-
   .topLeft {
-    top: 105px;
+    top: 140px;
     left: 15%;
     width: 85px;
   }
 
   .topRight {
     width: 50px;
-    top: 190px;
+    top: 230px;
     right: 15%;
   }
 
   .bottomRight {
+    bottom: 105px;
     width: 50px;
   }
 }

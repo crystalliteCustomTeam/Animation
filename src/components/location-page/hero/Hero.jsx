@@ -51,18 +51,34 @@ const Hero = ({ content }) => {
         slidesToShow: 4,
         slidesToScroll: 1,
         adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
 
     return (
         <>
-            <section className={`w-full lg:h-[100vh] flex items-center justify-start sm:pb-5 bg-none bg-no-repeat relative overflow-hidden z-1 top-[97px] lg:top-auto`}>
+            <section className={`w-full lg:h-[100vh] flex items-center justify-start mt-0 md:mt-10 lg:mt-0 mb-0 md:mb-16 lg:mb-5 bg-none bg-no-repeat relative overflow-hidden z-1 top-[97px] lg:top-auto`}>
                 <div className="container">
                     <div className='grid grid-cols-12'>
                         <div className='col-span-12 lg:col-span-5'>
                             <h1 className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-5 mt-4 lg:mt-32 ${margin}`}>
                                 {title}
                             </h1>
-                            <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
+                            <p className="text-[15px] lg:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
                                 {para}
                             </p>
                             <div className="flex gap-6">
