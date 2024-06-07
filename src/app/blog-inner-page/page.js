@@ -1,19 +1,12 @@
 "use client"
 import React from 'react';
 // Import Components
-import BlogHero from '@/components/blog-hero/BlogHero';
-import BlogPost from '@/components/blog-post/blogPost';
-import BlogDescription from '@/components/blog-description/blogdescription';
-import BlogPortfolio from '@/components/blog-portfolio/blogPortfolio';
-import BlogTestimonialNew from '@/components/blog-testimonial-new/blogTestimonial';
-import BlogLooking from '@/components/blog-looking/Looking';
-//==== Looking Images
-import LookingFlodImg from "media/home/looking-img.png";
-//==== Testimonial Images
-import icon2 from "media/icons/stars.png";
-import Grace from "media/thumbnails/grace.png";
-import Alex from "media/thumbnails/alex.png";
-import Olivia from "media/thumbnails/olivia.png";
+import BlogHero from '@/components/blogs/BlogHero';
+import BlogDescription from '@/components/blogs/BlogDescription';
+import Portfolio from '@/components/portfolio/Portfolio';
+import TestimonialNew from '@/components/testimonialNew/Testimonial';
+import Looking from '@/components/looking/Looking';
+import BlogPost from '@/components/blogs/BlogPost';
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.png";
 import Thumnail2 from "media/thumbnails/2d-animation/2.png";
@@ -45,12 +38,19 @@ import Thumnail27 from "media/thumbnails/hybrid/3.png";
 import Thumnail28 from "media/thumbnails/hybrid/4.png";
 import Thumnail29 from "media/thumbnails/hybrid/5.png";
 import Thumnail30 from "media/thumbnails/hybrid/6.png";
-import Image from 'next/image';
+//==== Testimonial Images
+import icon2 from "media/icons/stars.png";
+import Grace from "media/thumbnails/grace.png";
+import Alex from "media/thumbnails/alex.png";
+import Olivia from "media/thumbnails/olivia.png";
+import David from "media/thumbnails/david.jpg";
+import Emma from "media/thumbnails/emma.jpg";
+import Michael from "media/thumbnails/michael.jpg";
+import Sarah from "media/thumbnails/sarah.png";
+//==== Looking Images
+import LookingFlodImg from "media/home/looking-img.gif";
 
 const LocationPage = () => {
-
-    // const ;
-
     //=====Banner Fold=====//
     const bloghero = {
         subTitle: (<> Architectural Animation</>),
@@ -59,7 +59,6 @@ const LocationPage = () => {
             top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.</>),
         subPara: (<>Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised</>),
         btnBg: "bg-prime",
-
     };
 
     //=====Description Fold=====//
@@ -78,11 +77,7 @@ const LocationPage = () => {
                         para: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
                     }
                 ],
-                ImageDesc: (
-                <div className="flex h-[350px] w-full rounded-[25px]">
-                    <Image src={Thumnail1} className='img-fluid rounded-[15px]' />
-                </div>
-                ),
+                ImageDesc: Thumnail1,
                 subTitle: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
                 subPara: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
             },
@@ -90,81 +85,28 @@ const LocationPage = () => {
                 title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
                 para: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
                 para2: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair. Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
-                ImageDesc: (
-                    <div className="flex h-[450px] w-full rounded-[25px]">
-                        <Image src={Thumnail4} className='img-fluid rounded-[15px]' />
-                    </div>
-                    ),
+                ImageDesc: Thumnail4,
             },
             {
                 title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
                 para: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
                 para2: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair. Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
-                ImageDesc: (
-                    <div className="flex h-[450px] w-full rounded-[25px]">
-                        <Image src={Thumnail6} className='img-fluid rounded-[15px]' />
-                    </div>
-                    ),
+                ImageDesc: Thumnail6,
                 subTitle: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
                 subPara: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
             },
         ]
-
-    };
-
-    const DescPara = [
-        `Infinity Animations creates videos that bring your brand’s vision to life through research, strategy, copywriting, and custom visuals.`,
-        `Our personalized and collaborative approach ensures that your video is truly one of a kind.
-        As an end-to-end service solution, we’ll guide you through every step – from our streamlined discovery process, through key points in production, to final delivery.
-        `,
-        `As a leading animation studio, we pride ourselves on delivering high-quality, innovative animations that exceed our clients' expectations, making us the go-to choice for businesses seeking top-notch animation companies.`,
-    ];
-    // const blogDesc1 = {
-    //     title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
-    //     para: "Our Animators specialize in creating vibrant and captivating animations and visual effects that bring characters and stories to life. Whether it’s for commercials, explainer videos, or entertainment, our animations are designed to engage and inspire your audience. With Infinity Animations, you get top-notch quality and creativity that stands out in the competitive landscape of animation studios in NYC.",
-    //     DescParaArray: [
-    //         {
-    //          title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
-    //          para: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
-    //         },
-    //         {
-    //          title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
-    //          para: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
-    //         }
-    //      ],
-    //      ImageDesc : Thumnail1,
-    //      subTitle: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
-    //      subPara: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
-    // };
-
-    //=====Looking Fold=====//
-    const blogParaArray = [
-        `Infinity Animations creates videos that bring your brand’s vision to life through research, strategy, copywriting, and custom visuals.`,
-        `Our personalized and collaborative approach ensures that your video is truly one of a kind.
-        As an end-to-end service solution, we’ll guide you through every step – from our streamlined discovery process, through key points in production, to final delivery.
-        `,
-        `As a leading animation studio, we pride ourselves on delivering high-quality, innovative animations that exceed our clients' expectations, making us the go-to choice for businesses seeking top-notch animation companies.`,
-    ];
-
-    const blogLooking = {
-        main: (<> Why <span className='text-[#FF2D4A]'>Choose </span> <br /> Infinity Animations  </>),
-        title: (<> Our Mission is to help our clients uncover the essence of their brand story to drive sales, influence decisions and promote understanding.  </>),
-        para: { blogParaArray },
-        isCTA: true,
-        isBtns: true,
-        flodImg: LookingFlodImg
     };
 
     //=====Portfilio Fold=====// 
-    const blogTabInfo = [
+    const tabInfo = [
         { label: "2D Animations", index: 0 },
         { label: "3D Animation", index: 1 },
         { label: "Whiteboard", index: 2 },
-        { label: "Explainer Videos", index: 3 },
-        { label: "Typographic", index: 4 },
+        { label: "Motion Graphics", index: 3 },
+        { label: "Hybrid Animation", index: 4 },
     ];
-
-    const blogTabContents = [
+    const tabContents = [
         [
             {
                 video: "https://player.vimeo.com/progressive_redirect/playback/907828567/rendition/1080p/file.mp4?loc=external&signature=2cb0c1bd0ce7278cfcc88931f949d2a4df4a28555c8e3a5dd73de49eeb9934e9",
@@ -296,21 +238,20 @@ const LocationPage = () => {
             }
         ],
     ];
-
-    const blogPortfolio = {
-        title: (<> Our Exceptional Portfolio of Creative Video Animations </>),
-        para: (<> Why we are a Top Animation studio in NYC, we take pride in creating stunning 2D Animations, 3D Animations, Whiteboard Animations, Motion Graphics Animations, Hybrid Animations, and more videos for our Valued Clientele. </>),
-        tabContents: blogTabContents,
+    const portfolio = {
+        subtitle: (<> Replay Button in this Area is Highly Addictive </>),
+        title: (<> Our Exceptional Portfolio for Video Animation </>),
+        para: (<> A visual journey through a kaleidoscope of creativity, where each project tells a unique story of brand elevation and visual excellence. </>),
+        tabContents: tabContents,
         tabsInfo: true,
-        tabInfo: blogTabInfo
+        tabInfo: tabInfo
     };
 
     //=====Testimonial Fold=====//
-    const blogTestiContentNew2 = [
+    const testiContentNew2 = [
         {
             stars: icon2,
             name: 'Sylvia David',
-            company: "ABC company",
             para: `I wanted to give a big shout-out to Infinity Animations, a top video animation company, for their outstanding work on our promotional video. Their team was easy to work with and delivered the project quickly and efficiently.`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
@@ -318,7 +259,6 @@ const LocationPage = () => {
         {
             stars: icon2,
             name: 'Emily Margolis',
-            company: "ABC company",
             para: `We approached Infinity Animations, a leading video animation agency, for a short explainer video. Their team provided exceptional video animation services and delivered a high-quality 2D animation right on time. Highly recommended!`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045464/rendition/720p/file.mp4?loc=external&log_user=0&signature=06fddc742a45b3eff983a4e5a207a5ff2d1ae71a328b1c14056b1bcc152a9800",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045464/rendition/720p/file.mp4?loc=external&log_user=0&signature=06fddc742a45b3eff983a4e5a207a5ff2d1ae71a328b1c14056b1bcc152a9800",
@@ -326,7 +266,6 @@ const LocationPage = () => {
         {
             stars: icon2,
             name: 'Helen Brooks',
-            company: "ABC company",
             para: `Huge thanks to Infinity Animations for their incredible video production service. They made the entire process seamless and produced a visually stunning animation that perfectly matched our brand.`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045568/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6ed32074656bcaa25e810119398883ade800b3fd2c5eed96b1eff541e57f5bca",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045568/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6ed32074656bcaa25e810119398883ade800b3fd2c5eed96b1eff541e57f5bca",
@@ -334,7 +273,6 @@ const LocationPage = () => {
         {
             stars: icon2,
             name: 'Edd Lockwood',
-            company: "ABC company",
             para: `Kudos to Infinity Animations, a fantastic video marketing agency, for creating an engaging and visually appealing animated video. Their team’s creativity and professionalism made our project a huge success.`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045397/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5eb15a8721a49d21ead978545b43276c59608470ad55c3677e62e1fe88d8edfc",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045397/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5eb15a8721a49d21ead978545b43276c59608470ad55c3677e62e1fe88d8edfc",
@@ -342,7 +280,6 @@ const LocationPage = () => {
         {
             stars: icon2,
             name: 'Matt Evans',
-            company: "ABC company",
             para: `We needed a compelling video for our new product launch, and Infinity Animations, as a video animation agency, exceeded our expectations. Their video production service was exceptional, delivering a high-quality animation in a timely manner.`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045706/rendition/1080p/file.mp4?loc=external&log_user=0&signature=2b0144629d6bc9649580afa809527d09e6528f656a1c76a1b59408367879c24e",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045706/rendition/1080p/file.mp4?loc=external&log_user=0&signature=2b0144629d6bc9649580afa809527d09e6528f656a1c76a1b59408367879c24e",
@@ -350,7 +287,6 @@ const LocationPage = () => {
         {
             stars: icon2,
             name: 'Mathew',
-            company: "ABC company",
             para: `A big thank you to Infinity Animations, a top-notch video animation company, for delivering an outstanding explainer video. The team was responsive, creative, and quick to complete the project.`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045615/rendition/720p/file.mp4?loc=external&log_user=0&signature=8256b0e38317771b8db2d8959dc6d54ee41dd6c7a847875437dde63ea45333f2",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045615/rendition/720p/file.mp4?loc=external&log_user=0&signature=8256b0e38317771b8db2d8959dc6d54ee41dd6c7a847875437dde63ea45333f2",
@@ -358,7 +294,6 @@ const LocationPage = () => {
         {
             stars: icon2,
             name: 'Gary Wilson',
-            company: "ABC company",
             para: `I highly recommend Infinity Animations, a premier animation agency, for their excellent video animation services. They created a high-quality animation for our campaign and were a pleasure to work with throughout the process.`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
@@ -366,44 +301,78 @@ const LocationPage = () => {
         {
             stars: icon2,
             name: 'Olivia Bennett',
-            company: "ABC company",
             para: "The architectural visualization provided by this team surpassed our expectations. The animations brought our designs to life with incredible detail and realism. A fantastic experience from start to finish!",
             thumbnail: Olivia,
         },
         {
             stars: icon2,
             name: 'Grace Turner',
-            company: "ABC company",
             para: 'Choosing this animation team was a game-changer for our marketing campaigns. Their creativity and attention to detail brought our brand stories to life in ways we never imagined. Exceptional work!',
             thumbnail: Grace,
         },
         {
             stars: icon2,
+            name: 'Sarah L.',
+            company: "Product Manager",
+            para: "Infinity Animations transformed our vision into a stunning reality with their exceptional 3D animation skills. We needed a lifelike and immersive animation for our product launch, and their team delivered beyond our expectations. Their expertise and attention to detail were evident in every frame. The result was a dynamic and engaging animation that captivated our audience. Working with such a talented and dedicated team reaffirmed their position as a top animation studio in New York. I wouldn't hesitate to work with them again.",
+            thumbnail: Sarah,
+        },
+        {
+            stars: icon2,
+            name: 'Emma R.',
+            company: "Social Media Manager",
+            para: "Our experience with Infinity Animations for our motion graphics project was nothing short of amazing. We needed high-quality promotional videos for our social media campaigns, and their team delivered spectacular results. The animations were visually striking and perfectly aligned with our brand's messaging. Their innovative techniques and creativity made our content stand out, significantly boosting our online engagement. Choosing Infinity Animations, a leading NYC animation studio, was one of the best decisions for our marketing efforts. Their professionalism and dedication are truly commendable.",
+            thumbnail: Emma,
+        },
+        {
+            stars: icon2,
+            name: 'David H.',
+            company: "Educational Coordinator",
+            para: "Our experience with Infinity Animations for our motion graphics project was nothing short of amazing. We needed high-quality promotional videos for our social media campaigns, and their team delivered spectacular results. The animations were visually striking and perfectly aligned with our brand's messaging. Their innovative techniques and creativity made our content stand out, significantly boosting our online engagement. Choosing Infinity Animations, a leading NYC animation studio, was one of the best decisions for our marketing efforts. Their professionalism and dedication are truly commendable.",
+            thumbnail: David,
+        },
+        {
+            stars: icon2,
+            name: 'Michael J.',
+            company: "Marketing Director",
+            para: "Infinity Animations transformed our vision into a stunning reality with their exceptional 3D animation skills. We needed a lifelike and immersive animation for our product launch, and their team delivered beyond our expectations. Their expertise and attention to detail were evident in every frame. The result was a dynamic and engaging animation that captivated our audience. Working with such a talented and dedicated team reaffirmed their position as a top animation studio in New York. I wouldn't hesitate to work with them again.",
+            thumbnail: Michael,
+        },
+        {
+            stars: icon2,
             name: 'Alex Mitchell',
-            company: "ABC company",
             para: 'Working with this animation team elevated the educational content on my platform. The animations were not only visually engaging but also simplified complex concepts for my audience. Highly recommend for anyone in the education space.',
             thumbnail: Alex,
         },
     ]
+    const testimonialNew = {
+        title: (<> Our Animation Videos Made Their Product <br /> Look Easy & Exciting </>),
+        para: (<> If you can’t trust us, try trusting them.</>),
+        testiContentNew2: testiContentNew2
+    };
 
-    const blogTestimonialNew = {
-        title: (<> The Ultimate Collection of Our<br />
-            Incredible Customer Experience </>),
-        para: (<> Achieved 1000+ Impactful Results That Speak our Credibility</>),
-        testiContentNew2: blogTestiContentNew2
+    //=====Looking Fold=====//
+    const paraArray = [
+        "Our team is dedicated to bringing your ideas to life with a perfect blend of creativity and technical expertise. With a commitment to excellence and a passion for innovation, we go beyond animation – we craft immersive experiences that resonate with your audience. ",
+
+        "Unleash your narrative, say it loud and proud, let the world know and take note!"
+    ];
+    const looking = {
+        title: (<> Making Your Products ‘Easy-to-Use’ With Our Animated Videos </>),
+        para: { paraArray },
+        isCTA: true,
+        isBtns: true,
+        flodImg: LookingFlodImg
     };
 
     return (
         <>
             <div className='bg-black'>
                 <BlogHero content={bloghero} />
-
                 <BlogDescription content={blogDesc1} />
-                <BlogPortfolio content={blogPortfolio} />
-                {/* <Description content={Desc2} />
-                <Description content={Desc3} /> */}
-                <BlogTestimonialNew content={blogTestimonialNew} />
-                <BlogLooking content={blogLooking} />
+                <Portfolio content={portfolio} />
+                <TestimonialNew content={testimonialNew} />
+                <Looking content={looking} />
                 <BlogPost />
             </div>
         </>

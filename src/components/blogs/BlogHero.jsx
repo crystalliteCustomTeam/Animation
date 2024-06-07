@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import CSS
-import styles from "./bloghero.module.css"
+import styles from "./BlogHero.module.css"
 // Import Images
 import BannerLogo1 from "media/location-page/banner-logo-1.png"
 import BannerLogo2 from "media/location-page/banner-logo-2.png"

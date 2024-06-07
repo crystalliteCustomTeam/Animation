@@ -93,26 +93,25 @@ const BlogPost = () => {
                                                 {items.para}
                                             </p>
 
-                                            <div className="grid grid-cols-6  ">
-                                                <div className='col-span-4 text-center flex items-start  '>
+                                            <div className="grid grid-cols-6">
+                                                <div className='col-span-4 text-center flex items-start'>
                                                     <div className="grid grid-cols-12  pt-2">
                                                         <div className="col-span-3">
                                                             <Image src={Profile} />
                                                         </div>
                                                         <div className="col-span-9 flex flex-col  text-start ps-3 pe-[35px]">
-                                                            <span className=' text-[16px] font-normal poppins text-white text-opacity-80'>James D. Surratt</span>
-                                                            <span className=' text-[13px] font-normal poppins text-white text-opacity-80'>Animation Manager</span>
+                                                            <span className='text-[16px] font-normal poppins text-white text-opacity-80'>James D. Surratt</span>
+                                                            <span className='text-[13px] font-normal poppins text-white text-opacity-80'>Animation Manager</span>
                                                         </div>
                                                     </div>
 
                                                 </div>
                                                 <div className=' py-[15px] col-span-2 flex items-start justify-end'>
                                                     <div className="flex items-center justify-between border-b-2 border-white-500 w-[100px]">
-                                                        <p className="text-[14px] xl:text-[16px] font-sans text-[#fff] font-light leading-[1.52857143] text-start text-white text-opacity-80">
+                                                        <p className="text-[14px] xl:text-[16px] font-sans font-light leading-[1.52857143] text-start text-white text-opacity-80">
                                                             Read More
                                                         </p>
                                                         <FaArrowRightLong />
-
                                                     </div>
                                                 </div>
                                             </div>

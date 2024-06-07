@@ -2,22 +2,23 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from 'next/link'
-import styles from "./blog.module.css"
+import styles from "./Blogs.module.css"
+import { FaArrowRightLong } from "react-icons/fa6";
 //===== Images 
 import author from "media/blogs/author.png"
 import verified from "media/blogs/verified.png"
-import arrow from "media/blogs/arrow.png"
 import Blog1 from "media/blogs/blog1.png"
 import Blog2 from "media/blogs/blog2.png"
 import Blog3 from "media/blogs/blog3.png"
 
 const blogList = [
-    { label: "2D Animations", index: 0 },
-    { label: "3D Animation", index: 1 },
-    { label: "Architectural Animation", index: 2 },
-    { label: "CGI & VFX", index: 3 },
-    { label: "Infographics", index: 4 },
-    { label: "Motion Graphics", index: 5 },
+    { label: "All", index: 0 },
+    { label: "2D Animations", index: 1 },
+    { label: "3D Animation", index: 2 },
+    { label: "Architectural Animation", index: 3 },
+    { label: "CGI & VFX", index: 4 },
+    { label: "Infographics", index: 5 },
+    { label: "Motion Graphics", index: 6 },
 ];
 
 const blogCards = [
@@ -54,7 +55,7 @@ const blogCards = [
     {
         id: 4,
         category: "CGI & VFX",
-        image: Blog1,
+        image: Blog3,
         title: "Be the First to Hire Our Professional Animators",
         description: "Delve into the world of CGI and VFX with our experienced team, bringing imagination to life.",
         author: "Sarah L. Parker",
@@ -64,7 +65,7 @@ const blogCards = [
     {
         id: 5,
         category: "Infographics",
-        image: Blog2,
+        image: Blog1,
         title: "Be the First to Hire Our Professional Animators",
         description: "Transform complex data into visually appealing infographics with our step-by-step guide.",
         author: "John D. Riley",
@@ -74,7 +75,7 @@ const blogCards = [
     {
         id: 6,
         category: "Motion Graphics",
-        image: Blog3,
+        image: Blog2,
         title: "Be the First to Hire Our Professional Animators",
         description: "Stay ahead of the curve with the latest trends and techniques in motion graphics.",
         author: "Lisa M. Brown",
@@ -116,15 +117,13 @@ const blogCards = [
 
 const Blogs = () => {
 
-    const [selectedCategory, setSelectedCategory] = useState(null);
-
+    const [selectedCategory, setSelectedCategory] = useState("All");
     const handleCategoryClick = (category) => {
         setSelectedCategory(category);
     };
-
-    const filteredBlogCards = selectedCategory
-        ? blogCards.filter(blog => blog.category === selectedCategory)
-        : blogCards;
+    const filteredBlogCards = selectedCategory === "All"
+        ? blogCards
+        : blogCards.filter(blog => blog.category === selectedCategory);
 
     return (
         <>
@@ -135,7 +134,8 @@ const Blogs = () => {
                             {blogList.map((tab, index) => (
                                 <li
                                     key={index}
-                                    className={`flex items-center py-3 h-full text-[15px] font-normal font-sans text-white cursor-pointer hover:bg-primary-100 px-5 rounded-lg`}
+                                    className={`flex items-center py-3 h-full text-[15px] font-normal font-sans text-white cursor-pointer px-5 rounded-lg ${selectedCategory === tab.label ? 'bg-primary-100' : 'hover:bg-primary-100'
+                                        }`}
                                     onClick={() => handleCategoryClick(tab.label)}
                                 >
                                     {tab.label}
@@ -152,9 +152,9 @@ const Blogs = () => {
                                             <Image src={blog.image} alt={blog.title} />
                                         </div>
                                         <div className={`${styles.blogContent} px-5 flex flex-col gap-2`}>
-                                            <h5 className="text-[18px] text-primary-100 font-normal font-sans mb-0">{blog.category}</h5>
-                                            <h4 className="text-[20px] md:text-[24px] xl:text-[28px] text-white leading-tight font-bold font-sans mb-0">{blog.title}</h4>
-                                            <p className="text-[16px] text-white font-normal font-sans mb-0">{blog.description}</p>
+                                            <h5 className="text-[14px] md:text-[16px] text-primary-100 font-normal font-sans tracking-wider mb-0">{blog.category}</h5>
+                                            <h4 className="text-[20px] md:text-[25px] text-white leading-tight font-bold font-sans mb-0">{blog.title}</h4>
+                                            <p className="text-[14px] md:text-[16px] text-white font-normal font-sans mb-0">{blog.description}</p>
                                         </div>
                                         <div className="aboutBlog flex flex-row items-center justify-between px-5 pb-5">
                                             <div className="author flex flex-row items-center w-full gap-3">
@@ -163,13 +163,17 @@ const Blogs = () => {
                                                 </div>
                                                 <div className="relative">
                                                     <Image src={verified} alt="Verified" className="absolute right-[-18%] top-[14%] w-[10%]" />
-                                                    <h4 className="text-[15px] xl:text-[20px] text-white font-semibold font-sans mb-0">{blog.author}</h4>
-                                                    <h5 className="text-[12px] xl:text-[15px] text-white font-normal font-sans mb-0">{blog.role}</h5>
+                                                    <h4 className="text-[15px] xl:text-[16px] text-white font-semibold font-sans mb-0">{blog.author}</h4>
+                                                    <h5 className="text-[12px] xl:text-[14px] text-white font-normal font-sans mb-0">{blog.role}</h5>
                                                 </div>
                                             </div>
                                             <Link href="javascript:;" className={`${styles.readMore} flex flex-row items-center justify-end gap-3 pb-2`}>
-                                                <span className="text-[16px] text-white font-normal font-sans mb-0">Read More</span>
-                                                <Image src={arrow} alt="Arrow" className="w-[20%]" />
+                                                <div className="flex items-center justify-between border-b-2 border-white-500 w-[100px]">
+                                                    <p className="text-[14px] xl:text-[16px] font-sans font-light leading-[1.52857143] text-start text-white text-opacity-80">
+                                                        Read More
+                                                    </p>
+                                                    <FaArrowRightLong />
+                                                </div>
                                             </Link>
                                         </div>
                                     </div>

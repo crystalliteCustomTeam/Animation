@@ -35,30 +35,21 @@ const Hero = ({ content }) => {
     useEffect(() => {
         const swiperContainer = swiperRef.current;
         const params = {
-            navigation: {
-                nextEl: `.swiper-button-next`,
-                prevEl: `.swiper-button-prev`
-            },
-            loop: 'true',
+            loop: true,
             speed: 400,
-            pagination: "false",
-            slidesPerView: '4',
             freeMode: true,
             grabCursor: true,
-            spaceBetween: "20",
             autoplay: {
                 delay: 1500,
-                disableOnInteraction: "false",
-                stopOnLastSlide: 'false'
             },
             slidesPerView: 4,
             spaceBetween: 10,
             breakpoints: {
                 480: {
-                    slidesPerView: "1",
+                    slidesPerView: 1,
                 },
                 780: {
-                    slidesPerView: "3",
+                    slidesPerView: 3,
                 },
 
             },

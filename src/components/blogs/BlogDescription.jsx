@@ -3,7 +3,7 @@ import Image from 'next/image';
 import DescDot from "media/location-page/desc-dot.png"
 import BlogImg1 from "media/inner-blogs/image-1.svg"
 import BlogImg2 from "media/inner-blogs/image-2.svg"
-import style from "./blogdescription.module.css"
+import style from "./BlogDescription.module.css"
 
 function BlogDescription({ content }) {
     const { DescArray, DescParaArray } = content;
@@ -36,7 +36,9 @@ function BlogDescription({ content }) {
                                     </div>
                                 ))}
                                 <div className="w-full h-full py-[25px]" >
-                                    {item.ImageDesc}
+                                    <div className="flex h-[350px] w-full rounded-[25px]">
+                                        <Image src={item.ImageDesc} className='img-fluid rounded-[15px]' />
+                                    </div>
                                 </div>
                                 <h4 className={`text-[20px] xl:text-[30px] font-bold font-sans leading-tight my-4 capitalize`}>
                                     {item.subTitle}
@@ -51,7 +53,7 @@ function BlogDescription({ content }) {
                         ))}
                     </div>
                     <div className={`col-span-12 lg:col-span-3 `}>
-                        <div className='w-full bg-[#4A4A4A] flex flex-col text-center rounded-[10px] w-[370px]'>
+                        <div className='w-full bg-[#4A4A4A] flex flex-col text-center rounded-[10px] md:w-[370px]'>
                             <h5 className={`text-[22px] xl:text-[32px] font-normal font-sans leading-tight my-4 capitalize`}>
                                 Quick Links
                             </h5>
@@ -101,7 +103,7 @@ function BlogDescription({ content }) {
                             </h5>
                             <div className="grid grid-cols-12 mb-5 py-1">
                                 <div className="col-span-3 ">
-                                    <Image src={BlogImg1} width={70}/>
+                                    <Image src={BlogImg1} width={70} />
                                 </div>
                                 <div className="col-span-9 flex flex-col justify-end text-start">
                                     <span className='text-white text-opacity-90 text-[17px] font-normal poppins '>Be the First to Hire Our <br /> Professional Animators</span>
@@ -109,7 +111,7 @@ function BlogDescription({ content }) {
                             </div>
                             <div className="grid grid-cols-12 mb-5 py-1">
                                 <div className="col-span-3 ">
-                                    <Image src={BlogImg2} width={70}/>
+                                    <Image src={BlogImg2} width={70} />
                                 </div>
                                 <div className="col-span-9 flex flex-col justify-end text-start">
                                     <span className='text-white text-opacity-90 text-[17px] font-normal poppins '>Be the First to Hire Our <br /> Professional Animators</span>
@@ -117,7 +119,7 @@ function BlogDescription({ content }) {
                             </div>
                             <div className="grid grid-cols-12 mb-5 py-1">
                                 <div className="col-span-3 ">
-                                    <Image src={BlogImg1} width={70}/>
+                                    <Image src={BlogImg1} width={70} />
                                 </div>
                                 <div className="col-span-9 flex flex-col justify-end text-start">
                                     <span className='text-white text-opacity-90 text-[17px] font-normal poppins '>Be the First to Hire Our <br /> Professional Animators</span>
@@ -125,7 +127,7 @@ function BlogDescription({ content }) {
                             </div>
                             <div className="grid grid-cols-12 mb-5 py-1">
                                 <div className="col-span-3 ">
-                                    <Image src={BlogImg2} width={70}/>
+                                    <Image src={BlogImg2} width={70} />
                                 </div>
                                 <div className="col-span-9 flex flex-col justify-end text-start">
                                     <span className='text-white text-opacity-90 text-[17px] font-normal poppins '>Be the First to Hire Our <br /> Professional Animators</span>
