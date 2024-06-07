@@ -1,4 +1,5 @@
 "use client"
+import { useEffect, useRef, useState } from 'react';
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Css
@@ -6,9 +7,69 @@ import styles from "./Hero.module.css"
 // Import Components
 import CTA from "@/components/cta/CTA";
 // Import Images
-import trustPlatforms from "media/icons/trust.png";
+import icon1 from "media/icons/banner-logo-1.png";
+import icon2 from "media/icons/banner-logo-2.png";
+import icon3 from "media/icons/banner-logo-3.png";
+import icon4 from "media/icons/banner-logo-4.png";
+import icon5 from "media/icons/banner-logo-5.png";
+// Import Slider
+import { register } from 'swiper/element/bundle'
+
+register();
+
+const sliderInfo = [
+    { image: icon1 },
+    { image: icon2 },
+    { image: icon3 },
+    { image: icon4 },
+    { image: icon5 }
+];
 
 const Hero = ({ content }) => {
+
+    const swiperRef = useRef(null);
+    useEffect(() => {
+        const swiperContainer = swiperRef.current;
+        const params = {
+            navigation: {
+                nextEl: `.swiper-button-next`,
+                prevEl: `.swiper-button-prev`
+            },
+            loop: 'true',
+            speed: 400,
+            pagination: "false",
+            slidesPerView: '4',
+            freeMode: true,
+            grabCursor: true,
+            spaceBetween: "20",
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: "false",
+                stopOnLastSlide: 'false'
+            },
+            slidesPerView: 4,
+            spaceBetween: 10,
+            breakpoints: {
+                480: {
+                    slidesPerView: "1",
+                },
+                780: {
+                    slidesPerView: "3",
+                },
+
+            },
+            injectStyles: [
+                `
+                .swiper-wrapper {
+                    align-items: center;
+                }
+            `,
+            ],
+        };
+        Object.assign(swiperContainer, params);
+        swiperContainer.initialize();
+    }, []);
+
     const { title, para, video, dynamic } = content;
     // Set Bg-Image
     const router = usePathname();
@@ -136,7 +197,22 @@ const Hero = ({ content }) => {
                                     href="javascript:$zopim.livechat.window.show();"
                                 />
                             </div>
-                            <Image src={trustPlatforms} className=" w-[60%] lg:w-auto mt-10 lg:mt-16 " alt="Infinity Animation" />
+                            <div className="bannerSlider mt-10 lg:mt-16 mb-10 lg:mb-0">
+                                <swiper-container ref={swiperRef} init="false" >
+                                    {
+                                        sliderInfo.map((item, index) => (
+                                            <>
+                                                <swiper-slide key={index}>
+                                                    <div>
+                                                        <Image src={item.image} className="w-[70%]" alt='BannerLogo' />
+                                                    </div>
+                                                </swiper-slide>
+                                            </>
+                                        ))
+                                    }
+                                    <swiper-pagination className="hidden"></swiper-pagination>
+                                </swiper-container>
+                            </div>
                         </div>
                     </div>
                 </div>
