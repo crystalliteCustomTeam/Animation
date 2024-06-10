@@ -68,12 +68,12 @@ const BlogHero = ({ content }) => {
                             <h1 className={`text-white text-[28px] lg:text-[35px] xl:text-[50px] font-[600] poppins font-sans md:leading-[60px] text-start  ${margin}`}>
                                 {title}
                             </h1>
-                            <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify pt-3 pb-1 text-white text-opacity-90 text-[15px] sm:text-[17px]">
+                            <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify pt-3 pb-1 text-white text-opacity-90 text-[15px] sm:text-[17px] border-b-2 border-gray-500">
                                 {para}
                             </p>
 
-                            <div className="grid grid-cols-12 py-[15px] lg:pb-[5px] lg:pt-[30px]  border-t-2 border-gray-500">
-                                <div className=' py-[15px] col-span-6 lg:col-span-5 text-center flex items-start  '>
+                            <div className="grid grid-cols-12 py-[15px] md:pb-[5px] md:pt-[30px]  ">
+                                <div className=' py-[15px] col-span-12 md:col-span-5 text-center flex items-start  '>
                                     <div className="grid grid-cols-12  ">
                                         <div className="col-span-3 ">
                                             <Image src={Profile} />
@@ -85,16 +85,16 @@ const BlogHero = ({ content }) => {
                                     </div>
 
                                 </div>
-                                <div className=' py-[15px] col-span-6 lg:col-span-4 text-center  flex items-start '>
+                                <div className='pb-[15px] md:py-[15px] col-span-12 md:col-span-4 text-center  flex items-start '>
                                     <div className="flex items-center justify-between">
-                                        <Image src={WhiteDot} width={10} />
-                                        <span className='text-white text-opacity-90 text-[16px] font-normal poppins ps-[35px]'>Verified In Animation</span>
+                                        <Image src={WhiteDot} width={10} className="hidden md:block"/>
+                                        <span className='text-white text-opacity-90 text-[16px] font-normal poppins md:ps-[35px]'>Verified In Animation</span>
                                         <Image src={BlueCheck} />
                                     </div>
 
                                 </div>
-                                <div className=' py-[15px] col-span-6 lg:col-span-3 text-center '>
-                                    <div className="flex items-center justify-start lg:justify-between lg:ps-[25px]">
+                                <div className=' md:py-[15px] col-span-12 md:col-span-3 text-center '>
+                                    <div className="flex items-center justify-start md:justify-between md:ps-[25px]">
                                         <Image src={Star} width={20} className="" />
                                         <span className='text-white text-opacity-90 text-[16px] font-normal poppins ps-[10px]'>3 Yrs Exp</span>
                                     </div>
@@ -104,7 +104,7 @@ const BlogHero = ({ content }) => {
                                 {subPara}
                             </p>
                         </div>
-                    <div className={`col-span-12 lg:col-span-6 flex flex-col items-center`}>
+                    <div className={`col-span-12 lg:col-span-6 flex flex-col items-center mb-[100px] lg:mb-0`}>
                         <div className="w-full  220px h-full " onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                             <figure className="relative h-full flex lg:justify-end">
                                 <video loading="lazy" muted loop preload="auto" autoPlay={false} className="w-full h-full object-cover rounded-[25px] lg:w-[95%]" >

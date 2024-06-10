@@ -5,7 +5,7 @@ import BlogHero from '@/components/blogs/BlogHero';
 import BlogDescription from '@/components/blogs/BlogDescription';
 import Portfolio from '@/components/portfolio/Portfolio';
 import TestimonialNew from '@/components/testimonialNew/Testimonial';
-import Looking from '@/components/looking/Looking';
+import Looking from '@/components/location-page/looking/Looking';
 import BlogPost from '@/components/blogs/BlogPost';
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.png";
@@ -66,7 +66,9 @@ const LocationPage = () => {
         DescArray: [
             {
                 title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
-                para: "Our Animators specialize in creating vibrant and captivating animations and visual effects that bring characters and stories to life. Whether it’s for commercials, explainer videos, or entertainment, our animations are designed to engage and inspire your audience. With Infinity Animations, you get top-notch quality and creativity that stands out in the competitive landscape of animation studios in NYC.",
+                paraArray: [
+                    "Our Animators specialize in creating vibrant and captivating animations and visual effects that bring characters and stories to life. Whether it’s for commercials, explainer videos, or entertainment, our animations are designed to engage and inspire your audience. With Infinity Animations, you get top-notch quality and creativity that stands out in the competitive landscape of animation studios in NYC."
+                ],
                 DescParaArray: [
                     {
                         title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
@@ -77,20 +79,32 @@ const LocationPage = () => {
                         para: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
                     }
                 ],
-                ImageDesc: Thumnail1,
-                subTitle: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
-                subPara: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
             },
             {
                 title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
-                para: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
-                para2: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair. Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
+                paraArray: [
+                    "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
+             
+                     "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair."
+                 ],
                 ImageDesc: Thumnail4,
+                
             },
             {
                 title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
-                para: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
-                para2: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair. Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
+                paraArray: [
+                   "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
+                ],
+                DescParaArray: [
+                    {
+                        title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
+                        para: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
+                    },
+                    {
+                        title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
+                        para: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
+                    }
+                ],
                 ImageDesc: Thumnail6,
                 subTitle: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
                 subPara: "Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Cloud Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
@@ -239,9 +253,8 @@ const LocationPage = () => {
         ],
     ];
     const portfolio = {
-        subtitle: (<> Replay Button in this Area is Highly Addictive </>),
         title: (<> Our Exceptional Portfolio for Video Animation </>),
-        para: (<> A visual journey through a kaleidoscope of creativity, where each project tells a unique story of brand elevation and visual excellence. </>),
+        para: (<>We take pride in crafting stunning 2D animation videos, whiteboard animations, 3D animations, typographic <br /> animations, and more for our valued clientele.</>),
         tabContents: tabContents,
         tabsInfo: true,
         tabInfo: tabInfo
@@ -346,19 +359,18 @@ const LocationPage = () => {
         },
     ]
     const testimonialNew = {
-        title: (<> Our Animation Videos Made Their Product <br /> Look Easy & Exciting </>),
-        para: (<> If you can’t trust us, try trusting them.</>),
+        title: (<> The Ultimate Collection Of <br />Our Incredible Customer Experiences</>),
+        para: (<> Achieved 1000+ Impactful Results That Speak Volumes</>),
         testiContentNew2: testiContentNew2
     };
 
     //=====Looking Fold=====//
     const paraArray = [
-        "Our team is dedicated to bringing your ideas to life with a perfect blend of creativity and technical expertise. With a commitment to excellence and a passion for innovation, we go beyond animation – we craft immersive experiences that resonate with your audience. ",
-
-        "Unleash your narrative, say it loud and proud, let the world know and take note!"
+        "In the heart of Austin, Cloud Animation leads the way among animation production companies in Austin, offering top-tier services that redefine visual storytelling. Our engaging animation workshops in Austin provide hands-on learning experiences, nurturing talent for the future. With cutting-edge video animation services for social media in Austin, we elevate your brand's presence online and propel it to new heights like before. As one of the premier Austin – Texas animation studios, Cloud Animation blends expertise with creativity, making us the pinnacle choice for captivating animations in the vibrant Texan city."
     ];
     const looking = {
-        title: (<> Making Your Products ‘Easy-to-Use’ With Our Animated Videos </>),
+        main: (<> Why <br /><span className='text-[#FF2D4A]'>Choose </span>  us  </>),
+        title: (<> Our mission is to help our clients uncover the essence of their brand story to drive sales, influence decisions, and promote understanding.</>),
         para: { paraArray },
         isCTA: true,
         isBtns: true,
