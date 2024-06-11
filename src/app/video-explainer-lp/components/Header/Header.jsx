@@ -49,29 +49,21 @@ const HeaderLP = () => {
 
     return (
         <>
-            <header className={`fixed left-0 top-0 py-3 z-50 w-full ${isScrolled ? 'bg-[#003465] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-3' : ''}`}>
+            <header className={`fixed left-0 top-0 py-6 z-50 w-full ${isScrolled ? 'bg-[#003465] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-6' : ''}`}>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
-                        <div className="col-span-6 lg:col-span-4 xl:col-span-5">
+                        <div className="col-span-6 lg:col-span-4">
                             <div className="logo">
                                 <Image src={logo} alt='logo' width={150} className='w-[70%] md:w-[50%] lg:w-[28%]' />
                             </div>
                         </div>
-                        <div className="col-span-12 lg:col-span-8 xl:col-span-7 lg:block hidden">
+                        <div className="col-span-12 lg:col-span-8 lg:block hidden">
                             <div className="nav_lists">
-                                <ul className='flex items-center gap-x-4 xl:gap-x-7'>
+                                <ul className='flex items-center justify-end gap-x-4 xl:gap-x-7'>
                                     <li>
                                         <a href="mailto:queries@infinityanimations.com" className='flex items-center'>
                                             <EnvelopeIcon className='w-[25px] h-[25px] text-white' />
                                             <span className='text-[13px] text-white py-[10px] px-[8px] font-[700] font-sans'>queries@infinityanimations.com</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:833-666-6689" className='flex items-center'>
-                                            <Image src={UK} alt='UK' className='w-[23px] h-[16px] object-contain' />
-                                            <span className='text-[13px] text-white py-[10px] px-[8px] font-[700] font-sans'>
-                                                833-666-6689
-                                            </span>
                                         </a>
                                     </li>
                                     <li>
@@ -83,11 +75,15 @@ const HeaderLP = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <button onClick={popupHandle} className='flex items-center text-[13px] text-white font-[700] font-sans bg-black ml-[10px] py-[10px] px-[12px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
-                                            Get Started
+                                        <button onClick={popupHandle} className='flex items-center text-[15px] text-white font-[700] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
+                                            Get A Call
                                         </button>
                                     </li>
-
+                                    <li>
+                                        <a href='tel:1-833-666-6689;' className='flex items-center text-[15px] text-white font-[700] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
+                                            Toll Free: 1-833-666-6689
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

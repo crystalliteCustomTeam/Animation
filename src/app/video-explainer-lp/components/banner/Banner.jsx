@@ -167,7 +167,7 @@ const Banner = () => {
                             <div className="flex gap-4 md:gap-2">
                                 <div className="btn">
                                     <button onClick={popupHandle} className='flex items-center text-[16px] text-black font-[700] montserrat bg-[#f6c501] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
-                                        Get Started
+                                        Call Now
                                     </button>
                                 </div>
                                 <a href="javascript:$zopim.livechat.window.show();" className="chat flex items-center gap-2">

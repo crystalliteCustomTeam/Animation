@@ -51,7 +51,7 @@ const Popup = ({ }) => {
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-    const [formStatus, setFormStatus] = useState("Get Started");
+    const [formStatus, setFormStatus] = useState("Submit");
     const [errors, setErrors] = useState({});
     const [isDisabled, setIsDisabled] = useState(false);
     const formValidateHandle = () => {
@@ -140,8 +140,12 @@ const Popup = ({ }) => {
                         </div>
                         <div className="grid grid-cols-12 lg:w-5/12 lg:absolute right-[5%] top-[12%] xxl:top-[15%] pt-14 md:pt-20 lg:pt-0">
                             <div className="col-span-12">
-                                <h3 className='text-[16px] xl:text-[20px] text-black font-bold text-center p-0 montserrat mb-0'>Sign up Now to</h3>
-                                <h2 className='text-[24px] xl:text-[36px] text-[#EF0707] text-center font-bold montserrat mb-0'>Get Instant Quote</h2>
+                                <h3 className='text-[16px] xl:text-[20px] text-black font-bold text-center p-0 montserrat mb-0'>
+                                    Schedule A Strategy Session with
+                                </h3>
+                                <h2 className='text-[24px] xl:text-[36px] leading-[42px] text-[#EF0707] text-center font-bold montserrat mb-0'>
+                                    An Experienced Animation Expert
+                                </h2>
                                 <form action="javascript:;" className='mx-auto px-5 mt-3 md:mt-5 h-full'>
                                     <div className="name mt-1 relative w-full">
                                         <input type="text" name="name" placeholder='Enter Your Name' className='text-[14px] text-black placeholder:text-[#D5D5D5] focus:outline-none montserrat px-[18px] h-[45px] md:h-[50px] lg:h-[40px] xl:h-[50px] w-full mb-[10px] font-[500] rounded-[6px] shadow-md' onChange={handleDataChange} required />
@@ -179,7 +183,7 @@ const Popup = ({ }) => {
                             </div>
                         </div>
                         <div className='w-[50%] md:w-[30%] lg:w-[20%] h-[40px] absolute top-[0%] left-[25%] md:left-[35%] lg:left-[65%] flex items-center justify-center text-center border-0 bg-[#EF0707] text-white text-[14px] font-bold montserrat uppercase rounded-t-none rounded-[10px]'>
-                            <span>SPECIAL OFFER</span>
+                            <span>Get A Call</span>
                         </div>
                     </div>
                 </section>

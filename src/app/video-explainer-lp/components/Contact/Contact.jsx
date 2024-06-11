@@ -64,7 +64,7 @@ const Contact = () => {
         getIPData();
     }, []);
     // For Page
-     const [pagenewurl, setPagenewurl] = useState(null);
+    const [pagenewurl, setPagenewurl] = useState(null);
     useEffect(() => {
         setPagenewurl(window.location.href);
     }, [setPagenewurl]);
@@ -78,7 +78,7 @@ const Contact = () => {
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-    const [formStatus, setFormStatus] = useState(" Get Started");
+    const [formStatus, setFormStatus] = useState("Submit");
     const [errors, setErrors] = useState({});
     const [isDisabled, setIsDisabled] = useState(false);
     const formValidateHandle = () => {
@@ -167,8 +167,10 @@ const Contact = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-4">
                         <div className="col-span-12 lg:col-span-6">
-                            <h2 className='text-[#231f20] font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Get in Touch Now!</h2>
-                            <p className='text-[#231f20] text-[16px] lg:text-[18px] montserrat font-[400] py-[17px] leading-[22px] pb-[60px]'>Its High Time to Showcase Your Store to the World</p>
+                            <h2 className='text-[#231f20] font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>
+                                Get A Free Consultation with An Experienced Animation Expert
+                            </h2>
+                            <p className='text-[#231f20] text-[16px] lg:text-[18px] montserrat font-[400] py-[17px] leading-[22px] pb-[60px]'>Book a meeting with a member of our team to learn more and get a quote today!</p>
                             <div className="form">
                                 <form action="javascript:;">
                                     <div className="flex-wrap flex items-center">
@@ -234,20 +236,20 @@ const Contact = () => {
                                 </ul>
                                 <Image src={Payment} alt='Payment-Methods' className='w-5/12 lg:w-full my-3 object-contain' />
                                 <div>
-                                <ul className="flex items-center gap-4 mt-4 md:mt-6">
-                                    {
-                                        socialLinks.map((e, i) => {
-                                            return (
-                                                <li key={i} className="bg-transparent border border-[#fc0] w-[45px] h-[45px] rounded-[5px] flex items-center justify-center p-1 hover:bg-second">
-                                                    <Link target="_blank" href={e.link}>
-                                                        <Image src={e.icon} className="w-[20px]" alt="Infinity Animation" />
-                                                    </Link>
-                                                </li>
-                                            );
-                                        })
-                                    }
-                                </ul>
-                            </div>
+                                    <ul className="flex items-center gap-4 mt-4 md:mt-6">
+                                        {
+                                            socialLinks.map((e, i) => {
+                                                return (
+                                                    <li key={i} className="bg-transparent border border-[#fc0] w-[45px] h-[45px] rounded-[5px] flex items-center justify-center p-1 hover:bg-second">
+                                                        <Link target="_blank" href={e.link}>
+                                                            <Image src={e.icon} className="w-[20px]" alt="Infinity Animation" />
+                                                        </Link>
+                                                    </li>
+                                                );
+                                            })
+                                        }
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

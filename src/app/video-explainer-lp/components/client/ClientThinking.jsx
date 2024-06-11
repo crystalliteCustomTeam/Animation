@@ -35,7 +35,9 @@ const ClientThinking = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-4">
                         <div className="col-span-12">
-                            <h2 className='text-white text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>How Our Clients Are Thanking Us</h2>
+                            <h2 className='text-white text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>
+                                Hear From Our Clients Why Infinity Animations is the <br /> Right Video Partner For you
+                            </h2>
                             <p className='text-white text-[16px] lg:text-[18px] montserrat font-[400] py-[17px] text-center pb-[40px] md:pb-[60px]'>Our experts leave no stone unturned in providing the desired outcome of our clients</p>
                         </div>
                     </div>

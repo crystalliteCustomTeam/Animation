@@ -31,7 +31,7 @@ const Brands = ({ content }) => {
                         <div className="btns flex-wrap flex items-center justify-center md:justify-start gap-5 mt-6">
                             <div className="btn">
                                 <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[600] montserrat bg-[#003466] py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
-                                    Get Started
+                                    Get A Call For Free Consultation
                                 </button>
                             </div>
                             <div className="btn">
@@ -40,10 +40,10 @@ const Brands = ({ content }) => {
                                 </a>
                             </div>
                             {isBtn ? <div className="btn">
-                                <a href="tel:833-666-6689" className='flex items-center'>
+                                <a href="tel:1-833-666-6689" className='flex items-center'>
                                     <Image src={UK} alt='UK' className='object-contain' />
                                     <span className='text-[20px] text-black py-[10px] px-[8px] font-bold montserrat'>
-                                        833-666-6689
+                                        Toll Free: 1-833-666-6689
                                     </span>
                                 </a>
                             </div> : null}
