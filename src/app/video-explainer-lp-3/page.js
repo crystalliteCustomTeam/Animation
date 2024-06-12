@@ -20,7 +20,7 @@ const Contact = React.lazy(() => import('./components/Contact/Contact'));
 const Video = () => {
   // ===== Brands Content ===== //
   const brands = {
-    title: <>Explain Your Complex Product with Amazing <br className='xl:hidden lg:block hidden'/> Animated Videos</>,
+    title: <>Explain Your Complex Product with Amazing <br className='xl:hidden lg:block hidden' /> Animated Videos</>,
     subTitle: "",
     desc: "Spread profound message and scale up your business with our animated video services today!",
     isBtn: true,
@@ -61,7 +61,7 @@ const Video = () => {
   }
   // ===== Brands Content ===== //
   const brandsTwo = {
-    title: <>Animated Video Content That Boosts Your Brand,<br className='lg:block hidden'/>  Maximizes Prospect Engagement and Drives ROI</>,
+    title: <>Animated Video Content That Boosts Your Brand,<br className='lg:block hidden' />  Maximizes Prospect Engagement and Drives ROI</>,
     subTitle: "",
     desc: "Spread profound message and scale up your business with our animated video services today!",
     isBtn: true,
@@ -80,17 +80,18 @@ const Video = () => {
         <Animations />
         <Work />
         <Faqs content={faqs} />
-        <Brands content={brandsTwo} />
         <ClientThinking />
         <Clients />
+        <Brands content={brandsTwo} />
         <Contact />
+
         <Script id="websiteSchema" type="application/ld+json">
           {`
             {
               "@context": "https://schema.org/",
               "@type": "WebSite",
-              "name": "Animated Explainer Videos | Infinity Animations",
-              "url": "https://infinityanimations.com/video-explainer-lp",
+              "name": "Explainer Video Animation Services | Infinity Animations",
+              "url": "https://infinityanimations.com/video-explainer-lp-new",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": "{search_term_string}",
@@ -104,8 +105,8 @@ const Video = () => {
             {
               "@context": "https://schema.org",
               "@type": "Corporation",
-              "name": "Animated Explainer Videos | Infinity Animations",
-              "url": "https://infinityanimations.com/video-explainer-lp",
+              "name": "Explainer Video Animation Services | Infinity Animations",
+              "url": "https://infinityanimations.com/video-explainer-lp-new",
               "logo": "https://infinityanimations.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.957f7aac.gif&w=256&q=75"
             }
           `}
@@ -115,10 +116,10 @@ const Video = () => {
             {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
-              "name": "Animated Explainer Videos | Infinity Animations",
-              "image": "https://infinityanimations.com/_next/static/media/banner.e85b7a7f.jpg",
+              "name": "Explainer Video Animation Services | Infinity Animations",
+              "image": "https://infinityanimations.com/_next/static/media/banner.26074fa5.png",
               "@id": "",
-              "url": "https://infinityanimations.com/video-explainer-lp",
+              "url": "https://infinityanimations.com/video-explainer-lp-new",
               "telephone": "833-666-6689",
               "address": {
                 "@type": "PostalAddress",
@@ -149,7 +150,7 @@ const Video = () => {
               "sameAs": [
                 "https://www.facebook.com/infinityanimationsofficial",
                 "https://www.instagram.com/infinityanimationsofficials"
-              ]                     
+              ]                       
             }
           `}
         </Script>
@@ -158,9 +159,9 @@ const Video = () => {
             {
               "@context": "https://schema.org/", 
               "@type": "Product", 
-              "name": "Animated Explainer Videos | Infinity Animations",
-              "image": "https://infinityanimations.com/_next/static/media/banner.e85b7a7f.jpg",
-              "description": "Animated Explainer Videos, Our expert team specializes in creating captivating animated explainer videos that engage and inform your audience.",
+              "name": "Explainer Video Animation Services | Infinity Animations",
+              "image": "https://infinityanimations.com/_next/static/media/banner.26074fa5.png",
+              "description": "Explainer Video Animation Services, Contact us to discover how our expert team can bring your ideas to life with engaging explainer videos.",
               "brand": {
                 "@type": "Brand",
                 "name": "Infinity Animations"

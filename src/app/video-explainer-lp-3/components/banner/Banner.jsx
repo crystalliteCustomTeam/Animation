@@ -1,14 +1,15 @@
-import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
 import Axios from "axios";
+import { CheckCircle } from 'heroicons-react'
 //===== Component
 import usePopup from '@/app/configs/store/Popup';
 //===== CSS
 import styles from './banner.module.css'
 // ===== Images
-import BannerLogos from "media/video-explainer/bnr-logo.png"
-import chatIcon from "media/video-explainer/chat-icon.png"
-import { CheckCircle } from 'heroicons-react'
+import BannerLogos from "media/video-explainer2/bnr-logo.png"
+import chatIcon from "media/video-explainer2/chatIcon.png"
+import discount from "media/video-explainer2/bnr-form.png"
 
 const Banner = () => {
     const { popup, togglePopup } = usePopup()
@@ -24,6 +25,7 @@ const Banner = () => {
     let today = new Date();
     let setTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     let setDate = `${month < 10 ? `0${month}` : `${month}`}-${date}-${year}`;
+
     const [ip, setIP] = useState("");
     //creating function to load ip address from the API
     const getIPData = async () => {
@@ -36,7 +38,7 @@ const Banner = () => {
         getIPData();
     }, []);
     // For Page
-    const [pagenewurl, setPagenewurl] = useState(null);
+     const [pagenewurl, setPagenewurl] = useState(null);
     useEffect(() => {
         setPagenewurl(window.location.href);
     }, [setPagenewurl]);
@@ -50,7 +52,7 @@ const Banner = () => {
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-    const [formStatus, setFormStatus] = useState("SUBMIT");
+    const [formStatus, setFormStatus] = useState(" Get Started");
     const [errors, setErrors] = useState({});
     const [isDisabled, setIsDisabled] = useState(false);
     const formValidateHandle = () => {
@@ -105,8 +107,6 @@ const Banner = () => {
 
         if (Object.keys(errors).length === 0) {
             if (data.botchecker === null) {
-
-
                 let headersList = {
                     Accept: "*/*",
                     Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
@@ -135,70 +135,71 @@ const Banner = () => {
 
     return (
         <>
-            <section className='bg-cover bg-right-top bg-[#003465f0] lg:bg-[url("../../public/video-explainer/banner.jpg")] h-[100%] pt-[180px] lg:pt-[265px] pb-[60px] md:pb-[100px] mt-[-85px]'>
+            <section className='bg-cover bg-right bg-black/90 lg:bg-[url("../../public/video-explainer2/banner.png")] h-[100%] pt-[180px] lg:pt-[265px] pb-[60px] md:pb-[100px] mt-[-85px]'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-y-12">
                         <div className="col-span-12 lg:col-span-6">
-                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[30px] font-[700] uppercase montserrat lg:w-10/12 md:leading-[35px] '>Animated Explainer Videos That Expand Your Brand Reach & Increase Your ROI</h1>
-                            <p className='text-white text-[18px] font-[400] montserrat lg:w-11/12 leading-[25px] py-[25px]'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.</p>
+                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[30px] font-[700] uppercase montserrat lg:w-10/12 md:leading-[35px]'>ANIMATED EXPLAINER VIDEOS THAT EXPAND YOUR BRAND REACH & INCREASE YOUR ROI</h1>
+                            <p className='text-white text-[17px] font-[400] montserrat lg:w-11/12 leading-[25px] py-[25px]'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.</p>
                             <ul>
                                 <li className='flex items-start gap-x-2'>
-                                    <CheckCircle className='text-white' />
-                                    <span className='text-white font-[400] pb-[10px] montserrat'> Demo/Tutorial Videos</span>
+                                    <CheckCircle className='text-[#A70A0E]' />
+                                    <span className='text-white font-[400] pb-[10px] montserrat'>Demo/Tutorial Videos</span>
                                 </li>
                                 <li className='flex items-start gap-x-2'>
-                                    <CheckCircle className='text-white' />
+                                    <CheckCircle className='text-[#A70A0E]' />
                                     <span className='text-white font-[400] pb-[10px] montserrat'>Training Videos</span>
                                 </li>
                                 <li className='flex items-start gap-x-2'>
-                                    <CheckCircle className='text-white' />
+                                    <CheckCircle className='text-[#A70A0E]' />
                                     <span className='text-white font-[400] pb-[10px] montserrat'>Animated commercial Videos</span>
                                 </li>
                                 <li className='flex items-start gap-x-2'>
-                                    <CheckCircle className='text-white' />
+                                    <CheckCircle className='text-[#A70A0E]' />
                                     <span className='text-white font-[400] pb-[10px] montserrat'>Promotional Videos</span>
                                 </li>
                                 <li className='flex items-start gap-x-2'>
-                                    <CheckCircle className='text-white' />
+                                    <CheckCircle className='text-[#A70A0E]' />
                                     <span className='text-white font-[400] pb-[10px] montserrat'>Marketing Videos</span>
                                 </li>
                             </ul>
                             <Image src={BannerLogos} alt='banner-logos' className='object-contain mt-4 mb-6' />
                             <div className="flex gap-4 md:gap-2">
                                 <div className="btn">
-                                    <a href='tel:1-833-666-6689' onClick={popupHandle} className='flex items-center text-[16px] text-black font-[700] montserrat bg-[#f6c501] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
-                                        Call Now
-                                    </a>
+                                    <button onClick={popupHandle} className='flex items-center text-[14px] text-white font-[700] montserrat bg-[#A70A0E] py-[12px] px-[25px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                        Get Started
+                                    </button>
                                 </div>
                                 <a href="javascript:$zopim.livechat.window.show();" className="chat flex items-center gap-2">
                                     <Image src={chatIcon} alt='chat-icon' className='w-[25px] ml-[10px]' />
                                     <div className="text">
-                                        <span className='block montserrat text-[14px] font-[400] text-[#ffcb05] leading-[14px]'>Chat Now to Avail 50% OFF</span>
+                                        <span className='block montserrat text-[14px] font-[400] text-white leading-[14px]'>Talk to our Expert</span>
                                         <span className='text-white text-[16px] montserrat font-[700]'>Live Chat</span>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div className="col-span-12 lg:col-span-6">
-                            <form action="javascript:;" className='bg-[#003465] pt-[20px] md:mr-[98px] md:ml-[40px] relative border-[6px] border-white lg:w-8/12 h-full'>
-                                <h3 className='text-[20px] md:text-[30px] leading-[35px] montserrat font-[700] py-[10px] px-[20px] text-center'> 
-                                    <strong className=' text-[#f6c501]'>
-                                    Get a <span className='text-white'>Free</span> Consultation
+                            <form action="javascript:;" className={`${styles.banForm} pt-[20px] md:mr-[98px] md:ml-[40px] relative border-[1px] border-[#A70A0E] md:border-white lg:w-8/12`}>
+                                <h3 className='text-white text-[20px] md:text-[25px] leading-[30px] montserrat font-[700] text-left py-[10px] px-[20px]'>Share Your <br className='block' />
+                                    <strong className='text-[30px] font-extrabold '>
+                                        Animation Idea
                                     </strong>
                                 </h3>
+
                                 <div className="form pt-[5px] px-[20px] pb-[30px]">
                                     <div className="relative">
-                                        <input type="text" name="name" placeholder='Enter your name' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none bg-[#f1f0f0] montserrat placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
+                                        <input type="text" name="name" placeholder='Enter your name' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white' onChange={handleDataChange} required />
                                         {errors.name && (
-                                            <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-40%] z-50">
+                                            <span className="text-[10px] block p-2 font-medium font-sans text-white tracking-wider absolute left-0 bottom-[-38%]">
                                                 {errors.name}
                                             </span>
                                         )}
                                     </div>
                                     <div className="relative">
-                                        <input type="email" name='email' placeholder='Enter Email' className='mt-[16px] py-[13px] px-[8px] shadow-lg w-full border-none bg-[#f1f0f0] montserrat placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
+                                        <input type="email" name='email' placeholder='Enter Email' className='mt-[16px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white' onChange={handleDataChange} required />
                                         {errors.email && (
-                                            <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-38%] z-50">
+                                            <span className="text-[10px] block p-2 font-medium font-sans text-white tracking-wider absolute left-0 bottom-[-36%]">
                                                 {errors.email}
                                             </span>
                                         )}
@@ -206,21 +207,19 @@ const Banner = () => {
                                     <div className="relative">
                                         <input type="tel" name='phone' minLength="10"
                                             maxLength="13"
-                                            pattern="[0-9]*" placeholder='Enter Phone Number' className='mt-[16px] py-[13px] px-[8px] shadow-lg w-full border-none bg-[#f1f0f0] montserrat placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
+                                            pattern="[0-9]*" placeholder='Enter Phone Number' className='mt-[16px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white' onChange={handleDataChange} required />
                                         {errors.phone && (
-                                            <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-38%] z-50">
+                                            <span className="text-[10px] block p-2 font-medium font-sans text-white tracking-wider absolute left-0 bottom-[-36%]">
                                                 {errors.phone}
                                             </span>
                                         )}
                                     </div>
-                                    <textarea name='message' type="text" placeholder='Message' className='mt-[16px] py-[13px] px-[8px] shadow-lg w-full border-none bg-[#f1f0f0] montserrat placeholder:text-[#858585] focus:outline-0 text-black resize-none' required onChange={handleDataChange}></textarea>
+                                    <textarea name='message' type="text" placeholder='Message' className='mt-[16px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white resize-none' required onChange={handleDataChange}></textarea>
 
-                                    <button type='submit' className='bg-[#231f20] hover:bg-[#1c2a49] text-white text-[16px] font-[700] montserrat uppercase mt-[10px] py-[13px] px-[8px] shadow-lg w-full duration-700 transition-all hover:duration-700 hover:transition-all' onClick={handleFormSubmit} disabled={isDisabled}>{formStatus}</button>
+                                    <button type='submit' className='bg-[#A70A0E] hover:bg-[#1c2a49] text-white text-[16px] font-[700] montserrat uppercase mt-[10px] py-[13px] px-[8px] shadow-lg w-full duration-700 transition-all hover:duration-700 hover:transition-all' onClick={handleFormSubmit} disabled={isDisabled}>{formStatus}</button>
                                 </div>
-                                <div className={`form_partical absolute top-[-7px] right-[42px] md:right-[12px] ${styles.discountbg}`}>
-                                    <h6 className={`absolute font-[700] text-right uppercase left-[-33px] m-auto text-white top-[-20px] z-[1] text-[13px] rotate-[-8deg] right-[-58px] montserrat before:content-[''] before:absolute before:w-[135px] before:h-[52px] before:top-[-15px] before:left-[-17px] before:right-0 ${styles.headingParticle} before:rotate-[10deg] before:bg-cover before:bg-center before:z-[-1] w-[110px]`}>Special Offer</h6>
-                                    <h4 className={`text-black relative m-0 top-[-2px] text-[30px] font-[700] right-[-32px] rotate-[-18deg] montserrat`}>50%</h4>
-                                    <h5 className='m-0 text-black relative z-1 top-[-13px] text-[11px] montserrat font-[700] right-[-42px] rotate-[-18deg]'>Discount</h5>
+                                <div>
+                                    <Image src={discount} alt='Infinity Animation' className={`${styles.discountbg}`} />
                                 </div>
                             </form>
                         </div>
