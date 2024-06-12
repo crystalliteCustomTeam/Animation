@@ -50,7 +50,7 @@ const Banner = () => {
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-    const [formStatus, setFormStatus] = useState("SUBMIT");
+    const [formStatus, setFormStatus] = useState("Get A Quote");
     const [errors, setErrors] = useState({});
     const [isDisabled, setIsDisabled] = useState(false);
     const formValidateHandle = () => {
@@ -140,7 +140,7 @@ const Banner = () => {
                     <div className="grid grid-cols-12 gap-y-12">
                         <div className="col-span-12 lg:col-span-6">
                             <h1 className='text-white text-[20px] md:text-[25px] lg:text-[30px] font-[700] uppercase montserrat lg:w-10/12 md:leading-[35px] '>Animated Explainer Videos That Expand Your Brand Reach & Increase Your ROI</h1>
-                            <p className='text-white text-[18px] font-[400] montserrat lg:w-11/12 leading-[25px] py-[25px]'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.</p>
+                            <p className='text-white text-[18px] font-[400] montserrat lg:w-11/12 leading-[25px] py-[25px]'>We are a leading video animation company that has helped hundreds of brands to broaden their product reach via engaging explainer animated videos.</p>
                             <ul>
                                 <li className='flex items-start gap-x-2'>
                                     <CheckCircle className='text-white' />
@@ -181,9 +181,9 @@ const Banner = () => {
                         </div>
                         <div className="col-span-12 lg:col-span-6">
                             <form action="javascript:;" className='bg-[#003465] pt-[20px] md:mr-[98px] md:ml-[40px] relative border-[6px] border-white lg:w-8/12 h-full'>
-                                <h3 className='text-[20px] md:text-[30px] leading-[35px] montserrat font-[700] py-[10px] px-[20px] text-center'> 
-                                    <strong className=' text-[#f6c501]'>
-                                    Get a <span className='text-white'>Free</span> Consultation
+                                <h3 className='text-white text-[20px] md:text-[25px] leading-[30px] montserrat font-[700] text-left py-[10px] px-[20px]'>Share Your <br className='block' />
+                                    <strong className='text-[30px] text-[#f6c501] md:ml-[2rem] font-extrabold '>
+                                        Animation Idea
                                     </strong>
                                 </h3>
                                 <div className="form pt-[5px] px-[20px] pb-[30px]">
