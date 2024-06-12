@@ -72,27 +72,22 @@ const megaMenuItems = [
 function NavList() {
     return (
         <List className="mt-4 lg:mt-0 mb-0 pt-4 p-5 pb-4 lg:pb-0 lg:flex-row lg:p-1 gap-3 bg-black lg:bg-transparent border-b-2 border-[prime/100] lg:border-0">
-            <Link href="javascript:;">
+            <Link href="#banner">
                 <span className="text-white lg:text-black poppins font-semibold text-[16px] hover:text-primary-100 hover:duration-700 duration-700 ease-in-out lg:p-3">
                     Home
                 </span>
             </Link>
-            <Link href="javascript:;">
+            <Link href="#services">
                 <span className="text-white lg:text-black poppins font-semibold text-[16px] hover:text-primary-100 hover:duration-700 duration-700 ease-in-out lg:p-3">
                     Services
                 </span>
             </Link>
-            <Link href="javascript:;">
+            <Link href="#portfolio">
                 <span className="text-white lg:text-black poppins font-semibold text-[16px] hover:text-primary-100 hover:duration-700 duration-700 ease-in-out lg:p-3">
-                    Process
+                    Portfolio
                 </span>
-            </Link>
-            <Link href="javascript:;">
-                <span className="text-white lg:text-black poppins font-semibold text-[16px] hover:text-primary-100 hover:duration-700 duration-700 ease-in-out lg:p-3">
-                    Pricing
-                </span>
-            </Link>
-            <Link href="javascript:;">
+            </Link> 
+            <Link href="#contact">
                 <span className="text-white lg:text-black poppins font-semibold text-[16px] hover:text-primary-100 hover:duration-700 duration-700 ease-in-out lg:p-3">
                     Contact Us
                 </span>
@@ -125,11 +120,11 @@ const Header = () => {
                         <div className="lg:flex hidden items-center gap-x-7">
                             <div className="">
                                 <Link
-                                    href="tel:;"
+                                    href="tel:1-833-666-6689"
                                     className="flex items-center gap-x-3 text-primary-100 poppins font-semibold text-[15px]"
                                 >
                                     <FaPhoneAlt className="text-[15px]" />
-                                    123 456 7890
+                                    1-833-666-6689
                                 </Link>
                             </div>
                             <div className="lg:block hidden">

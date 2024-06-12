@@ -13,7 +13,7 @@ import HandAnimation from "media/explainer-videos/hand-animation.gif"
 const Form = () => {
     return (
         <>
-            <section className={`lg:pt-[70px]`}>
+            <section className={`lg:pt-[70px]`} id='contact'>
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="form bg-[#F5090B] rounded-xl px-4 md:px-6 py-4">
                         <h2 className='text-[18px] md:text-[25px] font-sans font-bold leading-[25px] md:leading-[60px] text-white'>🔥 Special Offer on Video Animation and So Much More! </h2>

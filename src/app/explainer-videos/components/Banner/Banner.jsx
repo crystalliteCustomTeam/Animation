@@ -18,7 +18,7 @@ const banVideo = [
 const Banner = () => {
     return (
         <>
-            <section className='py-[30px] md:py-[70px] relative'>
+            <section className='py-[30px] md:py-[70px] relative' id='banner'>
                 <Image src={PartiTwo} alt='Particle' height={625} width={517} className='animation absolute 3xl:right-[137px] right-0 bottom-[-38px] 3xl:bottom-[-20px] 3xl:w-3/12 w-4/12 lg:block hidden' />
                 <Image src={PartiFour} alt='Particle' className=' absolute right-0 bottom-[-45%] lg:bottom-0 w-[9%] lg:block hidden' />
                 <div className="px-5 lg:max-w-7xl mx-auto relative">
