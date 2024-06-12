@@ -53,11 +53,11 @@ const Packages = () => {
                                 </div>
                                 <div className="card_bottom relative z-1 pt-[12px] px-[15px]">
                                     <div className="flex-wrap flex items-center justify-between mt-[10px]">
-                                        <button onClick={popupHandle} className='flex items-center justify-center text-[15px] text-white font-[700] poppins bg-black py-[12px] px-[20px] lg:px-[25px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
+                                        <button onClick={popupHandle} className='flex items-center justify-center text-[11px] xl:text-[15px] text-white font-[700] poppins bg-black py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
                                             Get A Call For Free Creative Consultation
                                         </button>
                                     </div>
-                                    <div className="hidden md:flex flex-wrap gap-y-3 items-center justify-between mt-[0px] md:mt-[20px] mb-[20px] px-2">
+                                    <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[20px] px-2">
                                         <a href="tel:1-833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-[700]'>
                                             <FaPhoneVolume className='rotate-[-45deg] text-black mt-1' />
                                             <span className='text-[#231f20] text-[16px] pt-2'>
@@ -106,11 +106,11 @@ const Packages = () => {
                                 </div>
                                 <div className="card_bottom relative z-1 pt-[12px] px-[15px]">
                                     <div className="flex-wrap flex items-center justify-between mt-[10px]">
-                                        <button onClick={popupHandle} className='flex items-center justify-center text-[15px] text-white font-[700] poppins bg-black py-[12px] px-[20px] lg:px-[25px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
+                                        <button onClick={popupHandle} className='flex items-center justify-center text-[11px] xl:text-[15px] text-white font-[700] poppins bg-black py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
                                             Get A Call For Free Creative Consultation
                                         </button>
                                     </div>
-                                    <div className="hidden md:flex flex-wrap gap-y-3 items-center justify-between mt-[0px] md:mt-[20px] mb-[20px] px-2">
+                                    <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[20px] px-2">
                                         <a href="tel:1-833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-[700]'>
                                             <FaPhoneVolume className='rotate-[-45deg] text-black mt-1' />
                                             <span className='text-[#231f20] text-[16px] pt-2'>
@@ -159,11 +159,11 @@ const Packages = () => {
                                 </div>
                                 <div className="card_bottom relative z-1 pt-[12px] px-[15px]">
                                     <div className="flex-wrap flex items-center justify-between mt-[10px]">
-                                        <button onClick={popupHandle} className='flex items-center justify-center text-[15px] text-white font-[700] poppins bg-black py-[12px] px-[20px] lg:px-[25px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
+                                        <button onClick={popupHandle} className='flex items-center justify-center text-[11px] xl:text-[15px] text-white font-[700] poppins bg-black py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
                                             Get A Call For Free Creative Consultation
                                         </button>
                                     </div>
-                                    <div className="hidden md:flex flex-wrap gap-y-3 items-center justify-between mt-[0px] md:mt-[20px] mb-[20px] px-2">
+                                    <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[20px] px-2">
                                         <a href="tel:1-833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-[700]'>
                                             <FaPhoneVolume className='rotate-[-45deg] text-black mt-1' />
                                             <span className='text-[#231f20] text-[16px] pt-2'>

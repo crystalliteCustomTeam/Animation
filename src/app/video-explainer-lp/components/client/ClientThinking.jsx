@@ -30,7 +30,7 @@ const ClientThinking = () => {
 
     return (
         <>
-            <section className='pt-[50px] pb-[75px] md:py-[50px] bg-cover bg-center bg-[url(../../public/video-explainer/testi-bg.jpg)] relative'>
+            <section className='pt-[50px] pb-[75px] lg:py-[50px] bg-cover bg-center bg-[url(../../public/video-explainer/testi-bg.jpg)] relative'>
                 <Image src={TestiBf} alt='Particle Image' className='w-[245px] h-[585px] object-contain absolute left-[15px] bottom-0 z-0 testi lg:block hidden' />
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-4">

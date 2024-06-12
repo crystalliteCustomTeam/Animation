@@ -20,7 +20,7 @@ const Contact = React.lazy(() => import('./components/Contact/Contact'));
 const Video = () => {
   // ===== Brands Content ===== //
   const brands = {
-    title: "Explain Your Complex Product with Amazing Animated Videos",
+    title: <>Explain Your Complex Product with Amazing <br className='xl:hidden lg:block hidden'/> Animated Videos</>,
     subTitle: "",
     desc: "Spread profound message and scale up your business with our animated video services today!",
     isBtn: true,
@@ -61,7 +61,7 @@ const Video = () => {
   }
   // ===== Brands Content ===== //
   const brandsTwo = {
-    title: <>Animated Video Content That Boosts Your Brand, Maximizes <br /> Prospect Engagement and Drives ROI</>,
+    title: <>Animated Video Content That Boosts Your Brand,<br className='lg:block hidden'/>  Maximizes Prospect Engagement and Drives ROI</>,
     subTitle: "",
     desc: "Spread profound message and scale up your business with our animated video services today!",
     isBtn: true,

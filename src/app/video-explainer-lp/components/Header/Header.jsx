@@ -59,7 +59,7 @@ const HeaderLP = () => {
                         </div>
                         <div className="col-span-12 lg:col-span-8 lg:block hidden">
                             <div className="nav_lists">
-                                <ul className='flex items-center justify-end gap-x-4 xl:gap-x-7'>
+                                <ul className='flex items-center justify-end gap-x-2 xl:gap-x-7'>
                                     <li>
                                         <a href="mailto:queries@infinityanimations.com" className='flex items-center'>
                                             <EnvelopeIcon className='w-[25px] h-[25px] text-white' />
@@ -80,7 +80,7 @@ const HeaderLP = () => {
                                         </button>
                                     </li>
                                     <li>
-                                        <a href='tel:1-833-666-6689;' className='flex items-center text-[15px] text-white font-[700] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
+                                        <a href='tel:1-833-666-6689' className='flex items-center text-[15px] text-white font-[700] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
                                             Toll Free: 1-833-666-6689
                                         </a>
                                     </li>
@@ -90,9 +90,8 @@ const HeaderLP = () => {
                         <div className="col-span-6 lg:hidden block">
                             <ul>
                                 <li>
-                                    <a href="tel:833-666-6689" className='flex items-center justify-end gap-x-3 text-white font-sans'>
-                                        <Image src={telephone} loading="lazy" width="56" height="52" class="w-[15px]" alt='Infinity Animations' />
-                                        833-666-6689
+                                    <a href='tel:1-833-666-6689' className='flex items-center justify-center text-[11px] text-white font-[700] font-sans bg-black py-[10px] px-[10px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
+                                        Toll Free: 1-833-666-6689
                                     </a>
                                 </li>
                             </ul>

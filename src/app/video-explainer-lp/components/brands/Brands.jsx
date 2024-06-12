@@ -29,20 +29,20 @@ const Brands = ({ content }) => {
                             </p>
                         </div>
                         <div className="btns flex-wrap flex items-center justify-center md:justify-start gap-5 mt-6">
-                            <div className="btn">
-                                <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[600] montserrat bg-[#003466] py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                            <div className="btn w-full md:w-auto flex items-center justify-center">
+                                <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[600] montserrat bg-[#003466] py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full md:w-auto flex items-center justify-center'>
                                     Get A Call For Free Consultation
                                 </button>
                             </div>
-                            <div className="btn">
-                                <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[16px] text-white font-[600] montserrat bg-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                            <div className="btn w-full md:w-auto flex items-center justify-center">
+                                <a href="javascript:$zopim.livechat.window.show();" className='text-[16px] text-white font-[600] montserrat bg-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full md:w-auto flex items-center justify-center'>
                                     Live Chat
                                 </a>
                             </div>
                             {isBtn ? <div className="btn">
                                 <a href="tel:1-833-666-6689" className='flex items-center'>
                                     <Image src={UK} alt='UK' className='object-contain' />
-                                    <span className='text-[20px] text-black py-[10px] px-[8px] font-bold montserrat'>
+                                    <span className='text-[18px] text-black py-[10px] px-[8px] font-bold montserrat'>
                                         Toll Free: 1-833-666-6689
                                     </span>
                                 </a>

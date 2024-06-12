@@ -108,7 +108,7 @@ const ExplainerType = () => {
                     <div className="lg:hidden block">
                         <Slider {...testiSlider} className="typeSlider">
                             <div className='p-3'>
-                                <div className="card rounded-[10px] bg-white shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
+                                <div className="card rounded-[10px] bg-white shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[415px]">
                                     <Image src={Card1} alt='card-1' />
                                     <div className="content">
                                         <h3 className='text-black text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] lg:h-[96px]'>Whiteboard Animation Video</h3>
@@ -117,7 +117,7 @@ const ExplainerType = () => {
                                 </div>
                             </div>
                             <div className='p-3'>
-                                <div className="card rounded-[10px] bg-white shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
+                                <div className="card rounded-[10px] bg-white shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[415px]">
                                     <Image src={Card2} alt='card-1' />
                                     <div className="content">
                                         <h3 className='text-black text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] lg:h-[96px]'>Motion Graphics</h3>
@@ -126,7 +126,7 @@ const ExplainerType = () => {
                                 </div>
                             </div>
                             <div className='p-3'>
-                                <div className="card rounded-[10px] bg-white shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
+                                <div className="card rounded-[10px] bg-white shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[415px]">
                                     <Image src={Card3} alt='card-1' />
                                     <div className="content">
                                         <h3 className='text-black text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] lg:h-[96px]'>2D Character Animation Videos</h3>
@@ -135,7 +135,7 @@ const ExplainerType = () => {
                                 </div>
                             </div>
                             <div className='p-3'>
-                                <div className="card rounded-[10px] bg-white shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
+                                <div className="card rounded-[10px] bg-white shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[415px]">
                                     <Image src={Card4} alt='card-1' />
                                     <div className="content">
                                         <h3 className='text-black text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] lg:h-[96px]'>3D Animation Video</h3>
@@ -144,7 +144,7 @@ const ExplainerType = () => {
                                 </div>
                             </div>
                             <div className='p-3'>
-                                <div className="card rounded-[10px] bg-white shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
+                                <div className="card rounded-[10px] bg-white shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[415px]">
                                     <Image src={Card6} alt='card-1' />
                                     <div className="content">
                                         <h3 className='text-black text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] lg:h-[96px]'>Screencast Videos</h3>
@@ -153,7 +153,7 @@ const ExplainerType = () => {
                                 </div>
                             </div>
                             <div className='p-3'>
-                                <div className="card rounded-[10px] bg-white shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
+                                <div className="card rounded-[10px] bg-white shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[415px]">
                                     <Image src={Card5} alt='card-1' />
                                     <div className="content">
                                         <h3 className='text-black text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] lg:h-[96px]'>Typography Videos</h3>
