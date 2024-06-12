@@ -140,12 +140,9 @@ const Popup = ({ }) => {
                         </div>
                         <div className="grid grid-cols-12 lg:w-5/12 lg:absolute right-[5%] top-[12%] xxl:top-[15%] pt-14 md:pt-20 lg:pt-0">
                             <div className="col-span-12">
-                                <h3 className='text-[16px] xl:text-[20px] text-black font-bold text-center p-0 montserrat mb-0'>
-                                    Schedule A Strategy Session with
+                                <h3 className='text-[24px] xl:text-[26px] leading-[42px] text-black text-center font-bold montserrat mb-0'>
+                                    Get A Free Quote Today!
                                 </h3>
-                                <h2 className='text-[24px] xl:text-[36px] leading-[42px] text-[#EF0707] text-center font-bold montserrat mb-0'>
-                                    An Experienced Animation Expert
-                                </h2>
                                 <form action="javascript:;" className='mx-auto px-5 mt-3 md:mt-5 h-full'>
                                     <div className="name mt-1 relative w-full">
                                         <input type="text" name="name" placeholder='Enter Your Name' className='text-[14px] text-black placeholder:text-[#D5D5D5] focus:outline-none montserrat px-[18px] h-[45px] md:h-[50px] lg:h-[40px] xl:h-[50px] w-full mb-[10px] font-[500] rounded-[6px] shadow-md' onChange={handleDataChange} required />

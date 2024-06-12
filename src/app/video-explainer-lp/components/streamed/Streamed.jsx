@@ -223,7 +223,7 @@ const Streamed = () => {
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
                             <h2 className='text-[#231f20] text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Our Animated Videos that Deliver Results</h2>
-                            <h3 className='text-[#231f20] text-center font-[700] montserrat text-[17px] lg:text-[22px] mt-2'>Checkout Our Recent Work </h3>
+                            <p className='text-[#231f20] text-[16px] md:text-[18px] montserrat font-[400] py-[17px] text-center lg:w-10/12 mx-auto leading-[20px] md:leading-[22px]'>Checkout Our Recent Work </p>
                             <div className={`mt-8 md:mt-12`}>
                                 <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-5 lg:w-11/12 mx-auto">
                                     {tabInfo.map((tab, index) => (
