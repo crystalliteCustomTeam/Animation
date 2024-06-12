@@ -13,9 +13,12 @@ const Packages = React.lazy(() => import('./components/packages/Packages'));
 const Animations = React.lazy(() => import('./components/infinity-animation/Animations'));
 const Work = React.lazy(() => import('./components/work/Work'));
 const Faqs = React.lazy(() => import('./components/faqs/Faqs'));
+const Looking = React.lazy(() => import('./components/looking/Looking'));
 const ClientThinking = React.lazy(() => import('./components/client/ClientThinking'));
 const Clients = React.lazy(() => import('./components/OurClients/Clients'));
 const Contact = React.lazy(() => import('./components/Contact/Contact'));
+//==== Looking Images
+import LookingFlodImg from "media/home/looking-img.gif";
 
 const Video = () => {
   // ===== Brands Content ===== //
@@ -25,6 +28,16 @@ const Video = () => {
     desc: "Spread profound message and scale up your business with our animated video services today!",
     isBtn: true,
   }
+  //=====Looking Fold=====//
+  const paraArray = [
+    "In the heart of Austin, Cloud Animation leads the way among animation production companies in Austin, offering top-tier services that redefine visual storytelling. Our engaging animation workshops in Austin provide hands-on learning experiences, nurturing talent for the future. With cutting-edge video animation services for social media in Austin, we elevate your brand's presence online and propel it to new heights like before. As one of the premier Austin – Texas animation studios, Cloud Animation blends expertise with creativity, making us the pinnacle choice for captivating animations in the vibrant Texan city."
+  ];
+  const looking = {
+    main: (<> Why <br /><span className='text-[#FF2D4A]'>Choose </span>  us  </>),
+    title: (<> Our mission is to help our clients uncover the essence of their brand story to drive sales, influence decisions, and promote understanding.</>),
+    para: { paraArray },
+    flodImg: LookingFlodImg
+  };
   //===== FAQS =====//
   const lists = [
     {
@@ -61,7 +74,7 @@ const Video = () => {
   }
   // ===== Brands Content ===== //
   const brandsTwo = {
-    title: <>Animated Video Content That Boosts Your Brand,<br className='lg:block hidden'/>  Maximizes Prospect Engagement and Drives ROI</>,
+    title: <>Animated Video Content That Boosts Your Brand,<br className='lg:block hidden' />  Maximizes Prospect Engagement and Drives ROI</>,
     subTitle: "",
     desc: "Spread profound message and scale up your business with our animated video services today!",
     isBtn: true,
@@ -80,6 +93,7 @@ const Video = () => {
         <Animations />
         <Work />
         <Faqs content={faqs} />
+        <Looking content={looking} />
         <ClientThinking />
         <Clients />
         <Brands content={brandsTwo} />

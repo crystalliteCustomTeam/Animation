@@ -60,7 +60,7 @@ const ClientThinking = () => {
                                             <Image src={Play} alt='play' className='img-fluid w-[55px]' />
                                         </div>
                                         <div className="content pl-[15px]">
-                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-white'>Jennifer Aswat</h4>
+                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-white'>Kelly Sparks</h4>
                                             <div className="reviews flex items-center">
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />
@@ -89,7 +89,7 @@ const ClientThinking = () => {
                                             <Image src={Play} alt='play' className='img-fluid w-[55px]' />
                                         </div>
                                         <div className="content pl-[15px]">
-                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-white'>David Manks</h4>
+                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-white'>Edd Lockwood</h4>
                                             <div className="reviews flex items-center">
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />
@@ -152,7 +152,7 @@ const ClientThinking = () => {
                                             <Image src={Play} alt='play' className='img-fluid w-[55px]' />
                                         </div>
                                         <div className="content pl-[15px]">
-                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-white'>Jennifer Aswat</h4>
+                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-white'>Kelly Sparks</h4>
                                             <div className="reviews flex items-center">
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />
@@ -181,7 +181,7 @@ const ClientThinking = () => {
                                             <Image src={Play} alt='play' className='img-fluid w-[55px]' />
                                         </div>
                                         <div className="content pl-[15px]">
-                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-white'>David Manks</h4>
+                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-white'>Edd Lockwood</h4>
                                             <div className="reviews flex items-center">
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />
