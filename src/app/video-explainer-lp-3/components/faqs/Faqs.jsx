@@ -23,14 +23,14 @@ const Faqs = ({ content }) => {
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 lg:col-span-6">
                             <h2 className='text-white font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>FAQS</h2>
-                            <p className='text-white text-[16px] montserrat font-[400] py-[17px] leading-[22px] pb-[30px] md:pb-[30px]'>Step into the realm of visual enchantment with our video animation services. We breathe life into your ideas, utilizing a diverse palette ranging from dynamic 2D animations to immersive 3D experiences. Whether you're seeking the whimsy of character animations, the sleekness of motion graphics, or the depth of 3D worlds, our team of creatives is here to turn your vision into a captivating visual masterpiece</p>
+                            <p className='text-white text-[16px] montserrat font-[400] py-[17px] leading-[22px] pb-[30px] md:pb-[30px]'>We have piled up a list of common questions that are usually asked by new clients who show their interest in hiring our services. You may get your answer to the following questions if you have any in your mind.</p>
                         </div>
                     </div>
                     <div className="grid grid-cols-12 items-center">
                         <div className="col-span-12 lg:col-span-6">
                             {accordionData.map((item, index) => (
                                 <div key={index} className={`py-2 ${activeIndex === index ? 'border-white' : ' border-white'}`}>
-                                    <div className={`flex space-x-1 items-start cursor-pointer p-[15px] rounded-[10px] h-[65px] ${activeIndex === index ? 'bg-[#A70A0E] text-white' : 'text-black bg-[#e6e7e8]'}`}
+                                    <div className={`flex space-x-1 items-center cursor-pointer p-[15px] rounded-[10px] h-[65px] ${activeIndex === index ? 'bg-[#A70A0E] text-white' : 'text-black bg-[#e6e7e8]'}`}
                                         onClick={() => handleClick(index)}>
                                         <span>{activeIndex === index ? <HiChevronUp className='text-[20px] font-[900]' /> : <HiChevronDown className='text-[20px] font-[900]' />}</span>
                                         <h3 className={`text-[12px] md:text-[14px] tracking-wide font-[500] capitalize montserrat`}>{item.question}</h3>

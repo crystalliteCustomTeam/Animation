@@ -227,7 +227,8 @@ const Streamed = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
-                            <h2 className='text-[#231f20] text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Our Impactful Offerings</h2>
+                            <h2 className='text-[#231f20] text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Our Animated Videos that Deliver Results</h2>
+                            <h3 className='text-[#231f20] text-center font-[700] montserrat text-[17px] lg:text-[22px] mt-2'>Checkout Our Recent Work </h3>
                             <div className={`mt-8 md:mt-12`}>
                                 <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-5 lg:w-11/12 mx-auto">
                                     {tabInfo.map((tab, index) => (
@@ -249,8 +250,8 @@ const Streamed = () => {
                                                 {tabContents[activeTab].map((item, index) => (
                                                     <Link key={index} href={item.video} datafancybox="gallery" className={`${styles.shadow} w-full h-full group`}>
                                                         <div className="overlay relative">
-                                                            <Image src={item.thumbnail} alt="Infinity Animations" width={468} height={263} className='min-h-[263px]' />
-                                                            <div className="bg-secondary-100/70 h-full w-full absolute left-[50%] top-[50%] translate-x-[-50%] group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center ">
+                                                            <Image src={item.thumbnail} alt="Infinity Animations" width={468} height={263} className='min-h-[230px]' />
+                                                            <div className="bg-secondary-100/70 h-full w-full absolute left-[50%] top-[50%] translate-x-[-50%] group-hover:translate-y-[-115px] translate-y-[132px] flex items-center justify-center">
                                                                 <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0' />
                                                             </div>
                                                         </div>
@@ -267,12 +268,12 @@ const Streamed = () => {
                                                 infinite: false,
                                             },
                                         }}>
-                                            <Slider {...testiSlider} className="streamedSlider streamedSlider2 mt-4">
+                                            <Slider {...testiSlider} className="streamedSlider">
                                                 {tabContents[activeTab].map((item, index) => (
                                                     <Link key={index} href={item.video} datafancybox="gallery" className={`${styles.shadow} w-full h-full group`}>
                                                         <div className="overlay relative">
-                                                            <Image src={item.thumbnail} alt="Infinity Animations" width={468} height={263} className='min-h-[263px]' />
-                                                            <div className="bg-secondary-100/70 h-full w-full absolute left-[50%] top-[50%] translate-x-[-50%] group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center ">
+                                                            <Image src={item.thumbnail} alt="Infinity Animations" width={468} height={263} className='min-h-[230px]' />
+                                                            <div className="bg-secondary-100/70 h-full w-full absolute left-[50%] top-[50%] translate-x-[-50%] group-hover:translate-y-[-115px] translate-y-[132px] flex items-center justify-center ">
                                                                 <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0' />
                                                             </div>
                                                         </div>

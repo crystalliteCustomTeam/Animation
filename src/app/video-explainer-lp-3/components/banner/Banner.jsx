@@ -38,7 +38,7 @@ const Banner = () => {
         getIPData();
     }, []);
     // For Page
-     const [pagenewurl, setPagenewurl] = useState(null);
+    const [pagenewurl, setPagenewurl] = useState(null);
     useEffect(() => {
         setPagenewurl(window.location.href);
     }, [setPagenewurl]);
@@ -52,7 +52,7 @@ const Banner = () => {
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-    const [formStatus, setFormStatus] = useState(" Get Started");
+    const [formStatus, setFormStatus] = useState("SUBMIT");
     const [errors, setErrors] = useState({});
     const [isDisabled, setIsDisabled] = useState(false);
     const formValidateHandle = () => {
@@ -166,14 +166,16 @@ const Banner = () => {
                             <Image src={BannerLogos} alt='banner-logos' className='object-contain mt-4 mb-6' />
                             <div className="flex gap-4 md:gap-2">
                                 <div className="btn">
-                                    <button onClick={popupHandle} className='flex items-center text-[14px] text-white font-[700] montserrat bg-[#A70A0E] py-[12px] px-[25px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
-                                        Get Started
-                                    </button>
+                                    <a href='tel:1-833-666-6689' className='flex items-center text-[14px] text-white font-[700] montserrat bg-[#A70A0E] py-[12px] px-[25px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                        Call Now
+                                    </a>
                                 </div>
                                 <a href="javascript:$zopim.livechat.window.show();" className="chat flex items-center gap-2">
                                     <Image src={chatIcon} alt='chat-icon' className='w-[25px] ml-[10px]' />
                                     <div className="text">
-                                        <span className='block montserrat text-[14px] font-[400] text-white leading-[14px]'>Talk to our Expert</span>
+                                        <span className='block montserrat text-[14px] font-[400] text-white leading-[14px]'>
+                                            Chat Now to Avail 50% OFF
+                                        </span>
                                         <span className='text-white text-[16px] montserrat font-[700]'>Live Chat</span>
                                     </div>
                                 </a>
@@ -181,12 +183,9 @@ const Banner = () => {
                         </div>
                         <div className="col-span-12 lg:col-span-6">
                             <form action="javascript:;" className={`${styles.banForm} pt-[20px] md:mr-[98px] md:ml-[40px] relative border-[1px] border-[#A70A0E] md:border-white lg:w-8/12`}>
-                                <h3 className='text-white text-[20px] md:text-[25px] leading-[30px] montserrat font-[700] text-left py-[10px] px-[20px]'>Share Your <br className='block' />
-                                    <strong className='text-[30px] font-extrabold '>
-                                        Animation Idea
-                                    </strong>
+                                <h3 className='text-[20px] md:text-[30px] leading-[35px] montserrat font-[700] py-[10px] px-[20px] text-center'>
+                                    Get a Free <br className='lg:block hidden' /> Consultation
                                 </h3>
-
                                 <div className="form pt-[5px] px-[20px] pb-[30px]">
                                     <div className="relative">
                                         <input type="text" name="name" placeholder='Enter your name' className='mt-[10px] py-[13px] px-[8px] shadow-lg w-full border-none montserrat placeholder:text-[#ffffff] focus:outline-0 text-white' onChange={handleDataChange} required />

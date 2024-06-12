@@ -61,7 +61,7 @@ const Video = () => {
   }
   // ===== Brands Content ===== //
   const brandsTwo = {
-    title: <>Animated Video Content That Boosts Your Brand,<br className='lg:block hidden' />  Maximizes Prospect Engagement and Drives ROI</>,
+    title: <>Animated Video Content That Boosts Your Brand,<br className='lg:block hidden'/>  Maximizes Prospect Engagement and Drives ROI</>,
     subTitle: "",
     desc: "Spread profound message and scale up your business with our animated video services today!",
     isBtn: true,
@@ -84,7 +84,6 @@ const Video = () => {
         <Clients />
         <Brands content={brandsTwo} />
         <Contact />
-
         <Script id="websiteSchema" type="application/ld+json">
           {`
             {

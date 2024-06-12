@@ -35,7 +35,8 @@ const ClientThinking = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-4">
                         <div className="col-span-12">
-                            <h2 className='text-white text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Feedback from Valued Clientele</h2>
+                            <h2 className='text-white text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Hear From Our Clients Why Infinity Animations is the <br className='lg:block hidden' />
+                            Right Video Partner For you</h2>
                             <p className='text-white text-[16px] lg:text-[18px] montserrat font-[400] py-[17px] text-center pb-[40px] md:pb-[60px]'>Our experts leave no stone unturned in providing the desired outcome of our clients</p>
                         </div>
                     </div>
@@ -46,13 +47,13 @@ const ClientThinking = () => {
                                     <span className='text-[#222] text-[50px] md:text-[75px] relative left-[18px] top-[20px]'>
                                         <FaQuoteLeft />
                                     </span>
-                                    <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>I never knew explaining tech could be so cool! These guys turned my jargon into a visual masterpiece. My audience loves it!</p>
+                                    <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>From start to finish, the process was incredibly easy. It was a pleasure to work with the Infinity Animations squad.</p>
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
                                             <Image src={Testi1} alt='testi1' className='img-fluid' />
                                         </div>
                                         <div className="content pl-[15px]">
-                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>John D. - Tech Guru</h4>
+                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Jennifer Aswat</h4>
                                             <div className="reviews flex items-center">
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />
@@ -69,13 +70,13 @@ const ClientThinking = () => {
                                     <span className='text-[#222] text-[50px] md:text-[75px] relative left-[18px] top-[20px]'>
                                         <FaQuoteLeft />
                                     </span>
-                                    <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>My fitness app needed a boost, and these video wizards made it happen! Now, even my dumbbells are doing a happy dance. Thanks, team!</p>
+                                    <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>The story of the business relationship started with a 30 second video in 2019, now Infinity Animations team has produced 27 videos for our multiple brands for us. Glad to get a reliable company in the US</p>
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
                                             <Image src={Testi2} alt='testi1' className='img-fluid' />
                                         </div>
                                         <div className="content pl-[15px]">
-                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Sarah K. - Fitness Leader</h4>
+                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>David Manks</h4>
                                             <div className="reviews flex items-center">
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />
@@ -92,14 +93,14 @@ const ClientThinking = () => {
                                     <span className='text-[#222] text-[50px] md:text-[75px] relative left-[18px] top-[20px]'>
                                         <FaQuoteLeft />
                                     </span>
-                                    <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>"Who knew explaining coffee blends could be an art? These folks brewed up an explainer video that's as smooth as my morning espresso. Cheers!"</p>
+                                    <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>The whole team of Infinity Animations was extremely responsive and helpful. The videos were produced on time. The creatives were excellent and I personally liked the concept. Highly recommended.</p>
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
                                             <Image src={Testi3} alt='testi1' className='img-fluid' />
                                         </div>
                                         <div className="content pl-[15px]">
-                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Eddie S. - Coffee Connoisseur</h4>
+                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Jason Gawkwad</h4>
                                             <div className="reviews flex items-center">
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />
@@ -120,7 +121,7 @@ const ClientThinking = () => {
                                     <span className='text-[#222] text-[50px] md:text-[75px] relative left-[18px] top-[20px]'>
                                         <FaQuoteLeft />
                                     </span>
-                                    <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>I never knew explaining tech could be so cool! These guys turned my jargon into a visual masterpiece. My audience loves it!</p>
+                                    <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>From start to finish, the process was incredibly easy. It was a pleasure to work with the Infinity Animations squad.</p>
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
                                             <Image src={Testi1} alt='testi1' className='img-fluid' />
@@ -143,7 +144,7 @@ const ClientThinking = () => {
                                     <span className='text-[#222] text-[50px] md:text-[75px] relative left-[18px] top-[20px]'>
                                         <FaQuoteLeft />
                                     </span>
-                                    <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>My fitness app needed a boost, and these video wizards made it happen! Now, even my dumbbells are doing a happy dance. Thanks, team!</p>
+                                    <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>The story of the business relationship started with a 30 second video in 2019, now Infinity Animations team has produced 27 videos for our multiple brands for us. Glad to get a reliable company in the US</p>
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
                                             <Image src={Testi2} alt='testi1' className='img-fluid' />
@@ -166,14 +167,14 @@ const ClientThinking = () => {
                                     <span className='text-[#222] text-[50px] md:text-[75px] relative left-[18px] top-[20px]'>
                                         <FaQuoteLeft />
                                     </span>
-                                    <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>"Who knew explaining coffee blends could be an art? These folks brewed up an explainer video that's as smooth as my morning espresso. Cheers!"</p>
+                                    <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>The whole team of Infinity Animations was extremely responsive and helpful. The videos were produced on time. The creatives were excellent and I personally liked the concept. Highly recommended.</p>
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
                                             <Image src={Testi3} alt='testi1' className='img-fluid' />
                                         </div>
                                         <div className="content pl-[15px]">
-                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Eddie S. - Coffee Connoisseur</h4>
+                                            <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Jason Gawkwad</h4>
                                             <div className="reviews flex items-center">
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />
                                                 <Star className='text-[#ffd100] text-[14px] w-[20px] h-[20px]' />

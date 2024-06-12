@@ -54,7 +54,7 @@ const Packages = () => {
                                 <div className="card_bottom relative z-1 pt-[12px] px-[15px]">
                                     <div className="flex-wrap flex items-center justify-between mt-[10px]">
                                         <button onClick={popupHandle} className='flex items-center justify-center text-[11px] xl:text-[15px] text-white font-[700] poppins bg-black py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
-                                            Get A Call For Free Creative Consultation
+                                            Get A Call For Free Consultation
                                         </button>
                                     </div>
                                     <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[20px] px-2">
@@ -107,7 +107,7 @@ const Packages = () => {
                                 <div className="card_bottom relative z-1 pt-[12px] px-[15px]">
                                     <div className="flex-wrap flex items-center justify-between mt-[10px]">
                                         <button onClick={popupHandle} className='flex items-center justify-center text-[11px] xl:text-[15px] text-white font-[700] poppins bg-black py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
-                                            Get A Call For Free Creative Consultation
+                                            Get A Call For Free Consultation
                                         </button>
                                     </div>
                                     <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[20px] px-2">
@@ -160,7 +160,7 @@ const Packages = () => {
                                 <div className="card_bottom relative z-1 pt-[12px] px-[15px]">
                                     <div className="flex-wrap flex items-center justify-between mt-[10px]">
                                         <button onClick={popupHandle} className='flex items-center justify-center text-[11px] xl:text-[15px] text-white font-[700] poppins bg-black py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
-                                            Get A Call For Free Creative Consultation
+                                            Get A Call For Free Consultation
                                         </button>
                                     </div>
                                     <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[20px] px-2">

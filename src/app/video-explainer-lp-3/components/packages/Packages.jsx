@@ -4,6 +4,7 @@ import Image from 'next/image'
 //===== Component
 import usePopup from '@/app/configs/store/Popup';
 // ==== Images 
+import { FaPhoneVolume } from 'react-icons/fa';
 import Price1 from "media/video-explainer2/package1.png"
 import Price2 from "media/video-explainer2/package2.png"
 import Price3 from "media/video-explainer2/package3.png"
@@ -28,7 +29,8 @@ const Packages = () => {
                                 <div className="card_top text-center pt-[15px] pb-[10px] relative z-1">
                                     <h3 className='text-[#231f20] montserrat text-[25px] font-[700] uppercase'>STARTUP PACKAGE</h3>
                                     <Image src={Price1} alt='Price_image' className='hidden md:block mx-auto mt-[20px] mb-[5px]' />
-                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins py-0 md:py-[10px]'>$499</h4>
+                                   <p className='text-[#231f20] montserrat text-[14px]'>Text & Image Compilation</p>
+                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins pb-0 md:pb-[10px]'>$499</h4>
                                 </div>
                                 <div className="card_list bg-[#D9D9D9] py-[30px] px-[20px] relative z-1">
                                     <ul className='h-[245px] pl-[5px]'>
@@ -52,24 +54,21 @@ const Packages = () => {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
-                                    <div className="hidden md:flex flex-wrap gap-y-3 items-center justify-between">
-                                        <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-black montserrat flex flex-col justify-center font-[700]'>
-                                            speak with us
-                                            <span className='text-[#231f20] text-[16px] pt-2'>833-666-6689</span>
-                                        </a>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-black montserrat flex flex-col justify-center font-[700]'>
-                                            Want to Discuss
-                                            <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
-                                        </a>
-                                    </div>
-                                    <div className="flex-wrap flex items-center justify-between mt-[0px] md:mt-[35px] mb-[20px]">
-                                        <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[700] poppins bg-[#A70A0E] group-hover:bg-[#1c2a49] py-[12px] px-3 xl:px-5 w-[45%] h-[50px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
-                                            Get Started
+                                <div className="card_bottom relative z-1 pt-[12px] px-[15px]">
+                                    <div className="flex-wrap flex items-center justify-between mt-[10px]">
+                                        <button onClick={popupHandle} className='flex items-center justify-center text-[11px] xl:text-[15px] text-white font-[700] poppins bg-black py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
+                                            Get A Call For Free Consultation
                                         </button>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-between text-[16px] text-black group-hover:text-white font-[700] poppins bg-transparent group-hover:bg-[#231f20] border border-[#231f20] py-[12px] px-3 xl:px-5 w-[45%] xl:w-[45%] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
-                                            <span className='text-[16px]'>Live Chat</span>
-                                            <Image src={chat} alt='Infinity Animation' className='w-[18%] md:w-[12%] lg:w-[20%] group-hover:brightness-[50] group-hover:invert-1' />
+                                    </div>
+                                    <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[20px] px-2">
+                                        <a href="tel:1-833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-[700]'>
+                                            <FaPhoneVolume className='rotate-[-45deg] text-black mt-1' />
+                                            <span className='text-[#231f20] text-[16px] pt-2'>
+                                                1-833-666-6689
+                                            </span>
+                                        </a>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700]'>
+                                            <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
                                         </a>
                                     </div>
                                 </div>
@@ -80,7 +79,8 @@ const Packages = () => {
                                 <div className="card_top text-center pt-[15px] pb-[10px] relative z-1">
                                     <h3 className='text-[#231f20] montserrat text-[25px] font-[700] uppercase'>CLASSIC PACKAGE</h3>
                                     <Image src={Price2} alt='Price_image' className='hidden md:block mx-auto mt-[20px] mb-[5px]' />
-                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins py-0 md:py-[10px]'>$799</h4>
+                                   <p className='text-[#231f20] montserrat text-[14px]'>Whiteboard or Motion Graphic Animation</p>
+                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins pb-0 md:pb-[10px]'>$499</h4>
                                 </div>
                                 <div className="card_list bg-[#D9D9D9] py-[30px] px-[20px] relative z-1">
                                     <ul className='h-[245px] pl-[5px]'>
@@ -107,24 +107,21 @@ const Packages = () => {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
-                                    <div className="hidden md:flex flex-wrap gap-y-3 items-center justify-between">
-                                        <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-black montserrat flex flex-col justify-center font-[700]'>
-                                            speak with us
-                                            <span className='text-[#231f20] text-[16px] pt-2'>833-666-6689</span>
-                                        </a>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-black montserrat flex flex-col justify-center font-[700]'>
-                                            Want to Discuss
-                                            <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
-                                        </a>
-                                    </div>
-                                    <div className="flex-wrap flex items-center justify-between mt-[0px] md:mt-[35px] mb-[20px]">
-                                        <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[700] poppins bg-[#A70A0E] group-hover:bg-[#1c2a49] py-[12px] px-3 xl:px-5 w-[45%] h-[50px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
-                                            Get Started
+                                <div className="card_bottom relative z-1 pt-[12px] px-[15px]">
+                                    <div className="flex-wrap flex items-center justify-between mt-[10px]">
+                                        <button onClick={popupHandle} className='flex items-center justify-center text-[11px] xl:text-[15px] text-white font-[700] poppins bg-black py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
+                                            Get A Call For Free Consultation
                                         </button>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-between text-[16px] text-black group-hover:text-white font-[700] poppins bg-transparent group-hover:bg-[#231f20] border border-[#231f20] py-[12px] px-3 xl:px-5 w-[45%] xl:w-[45%] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
-                                            <span className='text-[16px]'>Live Chat</span>
-                                            <Image src={chat} alt='Infinity Animation' className='w-[18%] md:w-[12%] lg:w-[20%] group-hover:brightness-[50] group-hover:invert-1' />
+                                    </div>
+                                    <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[20px] px-2">
+                                        <a href="tel:1-833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-[700]'>
+                                            <FaPhoneVolume className='rotate-[-45deg] text-black mt-1' />
+                                            <span className='text-[#231f20] text-[16px] pt-2'>
+                                                1-833-666-6689
+                                            </span>
+                                        </a>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700]'>
+                                            <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
                                         </a>
                                     </div>
                                 </div>
@@ -135,7 +132,8 @@ const Packages = () => {
                                 <div className="card_top text-center pt-[15px] pb-[10px] relative z-1">
                                     <h3 className='text-[#231f20] montserrat text-[25px] font-[700] uppercase'>PREMIUM PACKAGE</h3>
                                     <Image src={Price3} alt='Price_image' className='hidden md:block mx-auto mt-[20px] mb-[5px]' />
-                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins py-0 md:py-[10px]'>$999</h4>
+                                   <p className='text-[#231f20] montserrat text-[14px]'>Ultimate 2D Character Animation</p>
+                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins pb-0 md:pb-[10px]'>$799</h4>
                                 </div>
                                 <div className="card_list bg-[#D9D9D9] py-[30px] px-[20px] relative z-1">
                                     <ul className='h-[245px] pl-[5px]'>
@@ -162,24 +160,21 @@ const Packages = () => {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
-                                    <div className="hidden md:flex flex-wrap gap-y-3 items-center justify-between">
-                                        <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-black montserrat flex flex-col justify-center font-[700]'>
-                                            speak with us
-                                            <span className='text-[#231f20] text-[16px] pt-2'>833-666-6689</span>
-                                        </a>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-black montserrat flex flex-col justify-center font-[700]'>
-                                            Want to Discuss
-                                            <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
-                                        </a>
-                                    </div>
-                                    <div className="flex-wrap flex items-center justify-between mt-[0px] md:mt-[35px] mb-[20px]">
-                                        <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[700] poppins bg-[#A70A0E] group-hover:bg-[#1c2a49] py-[12px] px-3 xl:px-5 w-[45%] h-[50px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
-                                            Get Started
+                                <div className="card_bottom relative z-1 pt-[12px] px-[15px]">
+                                    <div className="flex-wrap flex items-center justify-between mt-[10px]">
+                                        <button onClick={popupHandle} className='flex items-center justify-center text-[11px] xl:text-[15px] text-white font-[700] poppins bg-black py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
+                                            Get A Call For Free Consultation
                                         </button>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-between text-[16px] text-black group-hover:text-white font-[700] poppins bg-transparent group-hover:bg-[#231f20] border border-[#231f20] py-[12px] px-3 xl:px-5 w-[45%] xl:w-[45%] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
-                                            <span className='text-[16px]'>Live Chat</span>
-                                            <Image src={chat} alt='Infinity Animation' className='w-[18%] md:w-[12%] lg:w-[20%] group-hover:brightness-[50] group-hover:invert-1' />
+                                    </div>
+                                    <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[20px] px-2">
+                                        <a href="tel:1-833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-[700]'>
+                                            <FaPhoneVolume className='rotate-[-45deg] text-black mt-1' />
+                                            <span className='text-[#231f20] text-[16px] pt-2'>
+                                                1-833-666-6689
+                                            </span>
+                                        </a>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700]'>
+                                            <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
                                         </a>
                                     </div>
                                 </div>

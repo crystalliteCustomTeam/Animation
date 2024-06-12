@@ -32,7 +32,7 @@ const Brands = ({ content }) => {
                         <div className="btns flex-wrap flex items-center justify-center md:justify-start gap-5 mt-6">
                             <div className="btn">
                                 <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[600] montserrat bg-[#A70A0E] hover:bg-[#1c2a49] py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
-                                    Get Started
+                                    Get A Call For Free Consultation
                                 </button>
                             </div>
                             <div className="btn">
@@ -41,17 +41,17 @@ const Brands = ({ content }) => {
                                 </a>
                             </div>
                             {isBtn ? <div className="btn">
-                                <a href="tel:833-666-6689;" className='flex items-center'>
+                                <a href="tel:1-833-666-6689" className='flex items-center'>
                                     <Image src={UK} alt='UK' className='object-contain' />
                                     <span className='text-[20px] text-white hover:text-[#A70A0E] py-[10px] px-[8px] font-bold montserrat'>
-                                        833-666-6689
+                                        Toll Free: 1-833-666-6689
                                     </span>
                                 </a>
                             </div> : null}
                         </div>
                     </div>
                 </div>
-                <div className="partical absolute right-[30px] top-[-75px] animation lg:block hidden">
+                <div className="partical absolute right-[20px] top-[-54px] animation lg:block hidden">
                     <Image src={CTAPart} alt='particale-Image' />
                 </div>
             </section>
