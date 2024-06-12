@@ -13,11 +13,13 @@ const Looking = ({ content }) => {
         <>
             <section className={`w-full flex items-center justify-start py-6 md:pt-20 md:pb-12 lg:py-16 bg-black relative `}>
                 <div className="px-[35px] sm:px-8 lg:px-16 mx-auto">
+                    <div className="mb-14">
+                        <h2 className={`text-[35px] md:text-[50px] font-semibold font-sans leading-tight mb-5 capitalize text-center`}>
+                            {main}
+                        </h2>
+                    </div>
                     <div className='grid grid-cols-12 '>
                         <div className="col-span-12 lg:col-span-5 flex flex-col items-start ">
-                            <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5 capitalize`}>
-                                {main}
-                            </h2>
                             <div className={`w-full`}>
                                 <Image src={flodImg} className={`mx-auto`} alt="Infinity Animation" />
                             </div>
