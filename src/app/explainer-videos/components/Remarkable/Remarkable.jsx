@@ -22,7 +22,7 @@ const Remarkable = ({ content }) => {
     };
     return (
         <>
-            <section className={isHomePage ? 'lg:pb-[20px]' : 'lg:pb-0'}>
+            <section className={isHomePage ? 'lg:pb-[20px]' : 'lg:pb-0'} id='services'>
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-5">
                         <div className="col-span-12 mb-5">
