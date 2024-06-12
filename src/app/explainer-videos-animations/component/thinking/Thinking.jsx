@@ -69,7 +69,7 @@ const Video = () => {
                                 </div>
                                 <div className={styles.data}>
                                     <div className={styles.datarow}>
-                                        <p className={styles.aswat}>David Manks</p>
+                                        <p className={styles.aswat}>Edd Lockwood</p>
                                         <Image src={starp} alt="" />
                                     </div>
                                     <p className={styles.start}>The story of the business relationship started with a 30 second video in 2019, now Infinity Animations team has produced 27 videos for our multiple brands for us.  </p>
@@ -86,7 +86,7 @@ const Video = () => {
                                 </div>
                                 <div className={styles.data}>
                                     <div className={styles.datarow}>
-                                        <p className={styles.aswat}>Jennifer Aswat</p>
+                                        <p className={styles.aswat}>Kelly Sparks</p>
                                         <Image src={starp} alt="" />
                                     </div>
                                     <p className={styles.start}>From start to finish, the process was straightforward. It was a pleasure to work with the Infinity Animations squad.   </p>
@@ -120,7 +120,7 @@ const Video = () => {
                                 </div>
                                 <div className={styles.data}>
                                     <div className={styles.datarow}>
-                                        <p className={styles.aswat}>David Manks</p>
+                                        <p className={styles.aswat}>Edd Lockwood</p>
                                         <Image src={starp} alt="" />
                                     </div>
                                     <p className={styles.start}>The story of the business relationship started with a 30 second video in 2019, now Infinity Animations team has produced 27 videos for our multiple brands for us.  </p>
@@ -137,7 +137,7 @@ const Video = () => {
                                 </div>
                                 <div className={styles.data}>
                                     <div className={styles.datarow}>
-                                        <p className={styles.aswat}>Jennifer Aswat</p>
+                                        <p className={styles.aswat}>Kelly Sparks</p>
                                         <Image src={starp} alt="" />
                                     </div>
                                     <p className={styles.start}>From start to finish, the process was straightforward. It was a pleasure to work with the Infinity Animations squad.   </p>
