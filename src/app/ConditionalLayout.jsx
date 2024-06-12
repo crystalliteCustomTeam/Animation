@@ -25,7 +25,7 @@ const ConditionalLayout = ({ children }) => {
             <Popup />
             <>
                 {pathname !== "/video-explainer-lp" &&
-                pathname !== "/video-explainer-lp-3" &&
+                pathname !== "/video-explainer-lp3" &&
                     pathname !== "/video-explainer-lp2" &&
                     pathname !== "/video-explainer-lp-new" &&
                     pathname !== "/explainer-videos-animations" &&
@@ -36,7 +36,7 @@ const ConditionalLayout = ({ children }) => {
                     )}
                 {children}
                 {pathname !== "/video-explainer-lp" &&
-                pathname !== "/video-explainer-lp-3" &&
+                pathname !== "/video-explainer-lp3" &&
                     pathname !== "/video-explainer-lp2" &&
                     pathname !== "/video-explainer-lp-new" &&
                     pathname !== "/explainer-videos-animations" &&
