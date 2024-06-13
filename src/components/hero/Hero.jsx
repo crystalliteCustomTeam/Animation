@@ -27,7 +27,38 @@ const sliderInfo = [
 
 const Hero = ({ content }) => {
 
+    const { title, para, video, dynamic } = content;
     const swiperRef = useRef(null);
+    const [videoReady, setVideoReady] = useState(false);
+    const [playVideo, setPlayVideo] = useState(false);
+    //======= Banner Video
+    useEffect(() => {
+        const handleWindowLoad = () => {
+            setTimeout(() => {
+                setVideoReady(true);
+            }, 3000);
+        };
+        window.addEventListener('load', handleWindowLoad);
+        return () => {
+            window.removeEventListener('load', handleWindowLoad);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (videoReady) {
+            setPlayVideo(true);
+        }
+    }, [videoReady]);
+
+    useEffect(() => {
+        if (playVideo) {
+            const video = document.getElementById('background-video');
+            if (video) {
+                video.play();
+            }
+        }
+    }, [playVideo]);
+    //======= Swiper Slider
     useEffect(() => {
         const swiperContainer = swiperRef.current;
         const params = {
@@ -61,14 +92,13 @@ const Hero = ({ content }) => {
         swiperContainer.initialize();
     }, []);
 
-    const { title, para, video, dynamic } = content;
     // Set Bg-Image
     const router = usePathname();
     let backgroundVideo;
     let margin;
     switch (router) {
         case "/":
-            backgroundVideo = 'https://player.vimeo.com/progressive_redirect/playback/950015917/rendition/720p/file.mp4?loc=external&log_user=0&signature=e0789e199bc0374e4971e5fc0b408a23ea883170eeb1fa2500dbaf2d0117d095'
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/home/banner-img.gif")]'
             margin = 'mt-0'
             break;
         case '/why-us':
@@ -128,12 +158,13 @@ const Hero = ({ content }) => {
         default:
             break;
     }
+
     return (
         <>
             <section className={`w-full lg:h-[100vh] flex items-center justify-start sm:pb-5 bg-none bg-no-repeat relative overflow-hidden z-1 ${backgroundVideo} top-[97px] lg:top-auto`}>
                 {video ?
                     <div className="video-div w-full h-[480px] md:h-auto absolute z-[-1] before:content-[''] before:bg-[#000] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[90] before:opacity-[0.7]">
-                        <video src={backgroundVideo} autoPlay={true} loop={true} muted={true} className='relative h-full xl:left-0 w-full object-cover'>
+                        <video id="background-video" src={backgroundVideo} autoPlay={false} loop={true} muted={true} className='relative h-full xl:left-0 w-full object-cover'>
                         </video>
                     </div> : null}
                 <div className="container">
@@ -195,7 +226,7 @@ const Hero = ({ content }) => {
                                             <>
                                                 <swiper-slide key={index}>
                                                     <div>
-                                                        <Image src={item.image} className="w-[70%]" alt='BannerLogo' />
+                                                        <Image priority src={item.image} className="w-[70%]" alt='BannerLogo' />
                                                     </div>
                                                 </swiper-slide>
                                             </>
