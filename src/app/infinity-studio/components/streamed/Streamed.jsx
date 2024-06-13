@@ -43,7 +43,7 @@ import Thumnail30 from "media/thumbnails/hybrid/6.png";
 import PlayIcon from "media/infinity-studio/play2.png"
 
 const tabInfo = [
-    { label: "2D Animations", index: 0 },
+    { label: "2D Animation", index: 0 },
     { label: "3D Animation", index: 1 },
     { label: "Whiteboard", index: 2 },
     { label: "Motion Graphics", index: 3 },

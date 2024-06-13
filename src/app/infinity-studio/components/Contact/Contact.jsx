@@ -78,7 +78,7 @@ const Contact = () => {
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-    const [formStatus, setFormStatus] = useState(" Get Started");
+    const [formStatus, setFormStatus] = useState("Submit");
     const [errors, setErrors] = useState({});
     const [isDisabled, setIsDisabled] = useState(false);
     const formValidateHandle = () => {
@@ -167,8 +167,8 @@ const Contact = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-4">
                         <div className="col-span-12 lg:col-span-6">
-                            <h2 className='text-white font-[700] poppins text-[20px] md:text-[25px] lg:text-[30px]'>Get in Touch Now!</h2>
-                            <p className='text-white text-[16px] lg:text-[18px] poppins font-[400] py-[17px] leading-[22px]'>Its High Time to Showcase Your Store to the World</p>
+                            <h2 className='text-white font-[700] poppins text-[20px] md:text-[25px] lg:text-[30px]'>Get A Free Consultation with An Experienced Animation Expert</h2>
+                            <p className='text-white text-[16px] lg:text-[18px] poppins font-[400] py-[17px] leading-[22px]'>Book a meeting with a member of our team to learn more and get a quote today!</p>
                             <div className="form mt-[15px]">
                                 <form action="javascript:;">
                                     <div className="flex items-center gap-3">
@@ -205,7 +205,7 @@ const Contact = () => {
                                         <textarea name='message' placeholder='Message' className='bg-[#171717] text-[14px] text-white placeholder:text-white poppins py-[10px] px-[35px] w-full mb-[10px] font-[500] resize-none' onChange={handleDataChange}></textarea>
                                     </div>
                                     <div className="btn mt-3">
-                                        <button type='submit' className='py-[10px] px-[30px] border-0 text-white text-[16px] uppercase font-[600] bg-[#004E98] poppins rounded-md' onClick={handleFormSubmit} disabled={isDisabled}>
+                                        <button type='submit' className='py-[10px] px-[30px] border-0 text-white text-[16px] uppercase font-[400] bg-[#004E98] poppins rounded-md' onClick={handleFormSubmit} disabled={isDisabled}>
                                             {formStatus}
                                         </button>
                                     </div>
@@ -217,7 +217,7 @@ const Contact = () => {
                             <div className="address_detail formBef">
                                 <ul>
                                     <li className='py-[10px]'>
-                                        <a href="tel:833-666-6689" className='text-[15px] md:text-[20px] text-white poppins flex items-center gap-2'>
+                                        <a href="tel:1-833-666-6689" className='text-[15px] md:text-[20px] text-white poppins flex items-center gap-2'>
                                             <Phone className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> 833-666-6689
                                         </a>
                                     </li>
