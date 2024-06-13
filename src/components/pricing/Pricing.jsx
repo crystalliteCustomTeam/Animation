@@ -12,20 +12,20 @@ import tickW from "media/icons/tick-w.png"
 
 const packages = [
     {
-        name: 'Basic',
-        price: '$49',
+        name: 'Startup Package',
+        price: '$499',
         backgroundColor: '#2f2f2fd1',
         tickImage: tickP,
         color: "text-black",
         ctaColor: "text-black",
         titleColor: "text-black",
         features: [
-            '1 Illustration Design',
-            '1 Creative Designer',
-            '1 Revision',
-            'Money Back Guarantee',
-            'Full Ownership',
-            'Dedicated Project Manager',
+            '30 Seconds Duration',
+            'Script Writing',
+            'Custom Artwork',
+            'Background Music',
+            'HD Format Video',
+            'Dedicated Support',
             { text: 'Invisible Point', isVisible: true },
         ],
         buttons: [
@@ -45,8 +45,8 @@ const packages = [
         ],
     },
     {
-        name: 'Silver',
-        price: '$179',
+        name: 'Classic Package',
+        price: '$799',
         backgroundColor: '#262626',
         color: "text-white",
         tickImage: tickW,
@@ -54,12 +54,13 @@ const packages = [
         ctaColor: "text-white",
         titleColor: "text-white",
         features: [
-            '4 Illustration Designs',
-            '2 Creative Designer',
-            '5 Revisions',
-            'Money Back Guarantee',
-            'Full Ownership',
-            'Dedicated Project Manager',
+            '30 Seconds Duration',
+            'Script Writing',
+            'Professional Voice-over & SFX',
+            'Hand-drawn Illustrations',
+            'Unlimited Revisions',
+            'HD Format Video',
+            'Dedicated Support',
         ],
         buttons: [
             {
@@ -78,24 +79,21 @@ const packages = [
         ],
     },
     {
-        name: 'Gold',
-        price: '$399',
+        name: 'Premium Package',
+        price: '$999',
         backgroundColor: '#2f2f2fd1',
         color: "text-black",
         tickImage: tickP,
         ctaColor: "text-black",
         titleColor: "text-black",
         features: [
-            '10 Illustration Designs',
-            '4 Creative Designer',
-            '100% vector based work',
+            '30 Seconds Duration',
+            'Script Writing',
+            'Professional Voice-over & SFX',
+            'Custom 2D Character Illustration',
             'Unlimited Revisions',
-            'FREE Color Options',
-            'File Format (JPEG, PNG, Ai, PSD, PDF)',
-            'Money Back Guarantee',
-            'Full Ownership',
-            'Dedicated Project Manager',
-            'Prioritized Support',
+            'HD Format Video',
+            'Dedicated Support',
         ],
         buttons: [
             {
@@ -112,43 +110,43 @@ const packages = [
             },
         ],
     },
-    {
-        name: 'Platinum',
-        price: '$799',
-        backgroundColor: '#262626',
-        color: "text-white",
-        tickImage: tickW,
-        mblSpc: 'my-10 md:my-0',
-        ctaColor: "text-white",
-        titleColor: "text-white",
-        features: [
-            '20 Illustration Designs',
-            '6 Creative Designer',
-            '100% vector based work',
-            'Unlimited Revisions',
-            'FREE Color Options',
-            'File Format (JPEG, PNG, Ai, PSD, PDF)',
-            'Money Back Guarantee',
-            'Full Ownership',
-            'Dedicated Project Manager',
-            'Prioritized Support',
-        ],
-        buttons: [
-            {
-                text: 'Get Started',
-                color: 'bg-white text-black font-semibold border-0',
-                image: arrowB,
-                href: "tel:833-666-6689",
-                imgColor: "bg-black w-[25px] h-[25px] xl:w-[28px] xl:h-[28px] rounded-full p-[8.5px] rotate-[90deg]"
-            },
-            {
-                text: 'Live Chat',
-                color: 'bg-black text-white border border-white',
-                image: chat,
-                href: "javascript:$zopim.livechat.window.show();"
-            },
-        ],
-    },
+    // {
+    //     name: 'Platinum',
+    //     price: '$799',
+    //     backgroundColor: '#262626',
+    //     color: "text-white",
+    //     tickImage: tickW,
+    //     mblSpc: 'my-10 md:my-0',
+    //     ctaColor: "text-white",
+    //     titleColor: "text-white",
+    //     features: [
+    //         '20 Illustration Designs',
+    //         '6 Creative Designer',
+    //         '100% vector based work',
+    //         'Unlimited Revisions',
+    //         'FREE Color Options',
+    //         'File Format (JPEG, PNG, Ai, PSD, PDF)',
+    //         'Money Back Guarantee',
+    //         'Full Ownership',
+    //         'Dedicated Project Manager',
+    //         'Prioritized Support',
+    //     ],
+    //     buttons: [
+    //         {
+    //             text: 'Get Started',
+    //             color: 'bg-white text-black font-semibold border-0',
+    //             image: arrowB,
+    //             href: "tel:833-666-6689",
+    //             imgColor: "bg-black w-[25px] h-[25px] xl:w-[28px] xl:h-[28px] rounded-full p-[8.5px] rotate-[90deg]"
+    //         },
+    //         {
+    //             text: 'Live Chat',
+    //             color: 'bg-black text-white border border-white',
+    //             image: chat,
+    //             href: "javascript:$zopim.livechat.window.show();"
+    //         },
+    //     ],
+    // },
 ];
 
 const Pricing = ({ content }) => {
@@ -175,7 +173,7 @@ const Pricing = ({ content }) => {
                                 {packages.map((pkg, index) => (
                                     <div key={index} className={`relative ${pkg.mblSpc} h-full ${styles.cards}`}>
                                         <div key={index} className={`absolute top-[-7%] md:top-[-10%] lg:top-[-7%] xl:top-[-8%] left-[12%] h-[115px] w-[75%] -z-10 rounded-3xl flex items-start justify-center pt-4 gap-2 
-  ${(index === 1 || index === 3) ? 'bg-[#262626]' : 'bg-third'}`}>
+                                            ${(index === 1 || index === 3) ? 'bg-[#262626]' : 'bg-third'}`}>
                                             {Array.from({ length: index + 1 }).map((_, i) => (
                                                 <Image key={i} src={star} className="w-[6%]" alt="Infinity Animation" />
                                             ))}
@@ -185,7 +183,7 @@ const Pricing = ({ content }) => {
                                                 <h3 className="text-[30px] font-extrabold font-sans leading-tight mb-2">{pkg.name}</h3>
                                                 <h4 className={`text-[60px] font-extrabold font-sans ${pkg.backgroundColor === '#2f2f2fd1' ? 'text-secondary-100' : ''}`}>{pkg.price}</h4>
                                             </div>
-                                            <ul className="pt-4 px-6 max-h-[230px] overflow-y-scroll">
+                                            <ul className="pt-4 px-6 max-h-[270px] ">
                                                 {pkg.features.map((feature, i) => (
                                                     typeof feature === 'string' ? (
                                                         <li key={i} className="flex items-center gap-3 my-2 xl:my-3 text-[16px] font-normal font-sans leading-snug tracking-wider">
