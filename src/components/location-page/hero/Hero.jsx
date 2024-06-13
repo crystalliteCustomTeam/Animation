@@ -16,54 +16,10 @@ import icon3 from "media/icons/banner-logo-3.png";
 import icon4 from "media/icons/banner-logo-4.png";
 import icon5 from "media/icons/banner-logo-5.png";
 // Import Slider
-import { register } from 'swiper/element/bundle'
-
-register();
-
-const sliderInfo = [
-    { image: icon1 },
-    { image: icon2 },
-    { image: icon3 },
-    { image: icon4 },
-    { image: icon5 }
-];
+import { AutoScroll } from '@/components/sliders';
 
 const Hero = ({ content }) => {
     const { title, para, } = content;
-
-    const swiperRef = useRef(null);
-    useEffect(() => {
-        const swiperContainer = swiperRef.current;
-        const params = {
-            loop: true,
-            speed: 400,
-            freeMode: true,
-            grabCursor: true,
-            autoplay: {
-                delay: 1500,
-            },
-            slidesPerView: 4,
-            spaceBetween: 10,
-            breakpoints: {
-                480: {
-                    slidesPerView: 1,
-                },
-                780: {
-                    slidesPerView: 3,
-                },
-
-            },
-            injectStyles: [
-                `
-                .swiper-wrapper {
-                    align-items: center;
-                }
-            `,
-            ],
-        };
-        Object.assign(swiperContainer, params);
-        swiperContainer.initialize();
-    }, []);
 
     return (
         <>
@@ -98,22 +54,15 @@ const Hero = ({ content }) => {
                                     href="javascript:$zopim.livechat.window.show();"
                                 />
                             </div>
-                            <div className="bannerSlider mt-[40px] border-t-2 border-gray-500 pt-4">
-                                <swiper-container ref={swiperRef} init="false" >
-                                    {
-                                        sliderInfo.map((item, index) => (
-                                            <>
-                                                <swiper-slide key={index}>
-                                                    <div>
-                                                        <Image src={item.image} className="w-[70%]" alt='BannerLogo' />
-                                                    </div>
-                                                </swiper-slide>
-                                            </>
-                                        ))
-                                    }
-                                    <swiper-pagination className="hidden"></swiper-pagination>
-                                </swiper-container>
-                            </div>
+                            <AutoScroll wrapperClass="mt-[40px] border-t-2 border-gray-500 pt-4" options={{ loop: true, align: "start" }}>
+                                {
+                                    [icon1, icon2, icon3, icon4, icon5, icon1, icon2, icon3, icon4, icon5, icon1, icon2, icon3, icon4, icon5].map((e, i) => (
+                                        <div key={i} className="shrink-0 grow-0 basis-1/4 mr-5">
+                                            <Image src={e} alt="logo" className='w-[70%]' />
+                                        </div>
+                                    ))
+                                }
+                            </AutoScroll>
                         </div>
                         <div className={`${styles.bannerImg} relative col-span-12 lg:col-span-7`}>
                             <div className="flex justify-between relative">

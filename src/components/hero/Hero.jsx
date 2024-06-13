@@ -13,17 +13,7 @@ import icon3 from "media/icons/banner-logo-3.png";
 import icon4 from "media/icons/banner-logo-4.png";
 import icon5 from "media/icons/banner-logo-5.png";
 // Import Slider
-import { register } from 'swiper/element/bundle'
-
-register();
-
-const sliderInfo = [
-    { image: icon1 },
-    { image: icon2 },
-    { image: icon3 },
-    { image: icon4 },
-    { image: icon5 }
-];
+import { AutoScroll } from '@/components/sliders';
 
 const Hero = ({ content }) => {
 
@@ -58,39 +48,6 @@ const Hero = ({ content }) => {
             }
         }
     }, [playVideo]);
-    //======= Swiper Slider
-    useEffect(() => {
-        const swiperContainer = swiperRef.current;
-        const params = {
-            loop: true,
-            speed: 400,
-            freeMode: true,
-            grabCursor: true,
-            autoplay: {
-                delay: 1500,
-            },
-            slidesPerView: 4,
-            spaceBetween: 10,
-            breakpoints: {
-                480: {
-                    slidesPerView: 1,
-                },
-                780: {
-                    slidesPerView: 3,
-                },
-
-            },
-            injectStyles: [
-                `
-                .swiper-wrapper {
-                    align-items: center;
-                }
-            `,
-            ],
-        };
-        Object.assign(swiperContainer, params);
-        swiperContainer.initialize();
-    }, []);
 
     // Set Bg-Image
     const router = usePathname();
@@ -98,7 +55,11 @@ const Hero = ({ content }) => {
     let margin;
     switch (router) {
         case "/":
-            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/home/banner-img.gif")]'
+            if (playVideo) {
+                backgroundVideo = 'https://player.vimeo.com/progressive_redirect/playback/950015917/rendition/720p/file.mp4?loc=external&log_user=0&signature=e0789e199bc0374e4971e5fc0b408a23ea883170eeb1fa2500dbaf2d0117d095';
+            } else {
+                backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/home/poster.png")]';
+            }
             margin = 'mt-0'
             break;
         case '/why-us':
@@ -219,22 +180,15 @@ const Hero = ({ content }) => {
                                     href="javascript:$zopim.livechat.window.show();"
                                 />
                             </div>
-                            <div className="bannerSlider mt-10 lg:mt-16 mb-10 lg:mb-0">
-                                <swiper-container ref={swiperRef} init="false" >
-                                    {
-                                        sliderInfo.map((item, index) => (
-                                            <>
-                                                <swiper-slide key={index}>
-                                                    <div>
-                                                        <Image priority src={item.image} className="w-[70%]" alt='BannerLogo' />
-                                                    </div>
-                                                </swiper-slide>
-                                            </>
-                                        ))
-                                    }
-                                    <swiper-pagination className="hidden"></swiper-pagination>
-                                </swiper-container>
-                            </div>
+                            <AutoScroll wrapperClass="mt-10 lg:mt-16 mb-10 lg:mb-0" options={{ loop: true, align: "start" }}>
+                                {
+                                    [icon1, icon2, icon3, icon4, icon5, icon1, icon2, icon3, icon4, icon5, icon1, icon2, icon3, icon4, icon5].map((e, i) => (
+                                        <div key={i} className="shrink-0 grow-0 basis-1/4 mr-5">
+                                            <Image src={e} alt="logo" className='w-[70%]' />
+                                        </div>
+                                    ))
+                                }
+                            </AutoScroll>
                         </div>
                     </div>
                 </div>
