@@ -138,13 +138,13 @@ const Banner = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-y-12 items-end ">
                         <div className="col-span-12 lg:col-span-8">
-                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-[600] poppins lg:w-10/12 md:leading-[50px]'>Expand Your Brand’s Reach With An Engaging Custom <span className='text-[#f6c501] '> Explainer Video</span></h1>
-                            <p className='text-white text-[16px] font-[400] poppins lg:w-11/12 leading-[25px] py-[20px]'>A leading Video Animation Production Company that helped thousands of Brands to broaden their product reach by Top Notch Custom Explainer Animated Videos.</p>
+                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-[600] poppins lg:w-10/12 md:leading-[50px]'>Combining Creativity With Motion & Turning Concepts Into <span className='text-[#f6c501] '> Extraordinary Visual Experiences</span></h1>
+                            <p className='text-white text-[16px] font-[400] poppins lg:w-11/12 leading-[25px] py-[20px]'>Transform Your Ideas into Visually Engaging Animated Stories, Tailored to Resonate with Your Audience & Elevate your Brand.</p>
                             <div className="grid grid-cols-12 gap-y-6 items-end pb-0 pt-[25px] md:py-[25px]">
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
                                     <div className='flex items-center gap-x-2 border-l-0 border-2 rounded-full w-[100%] sm:w-[90%] md:w-[250px] h-[40px]'>
                                         <div className='w-[38px] h-[37px]'>
-                                            <Image src={Check} alt='banner-logos' className='img-fuild'/>
+                                            <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
                                         <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Full HD Animations</span>
                                     </div>
@@ -152,7 +152,7 @@ const Banner = () => {
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
                                     <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[250px] h-[40px]'>
                                         <div className='w-[38px] h-[37px]'>
-                                            <Image src={Check} alt='banner-logos' className='img-fuild'/>
+                                            <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
                                         <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Appealing Designs</span>
                                     </div>
@@ -160,7 +160,7 @@ const Banner = () => {
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
                                     <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[250px] h-[40px]'>
                                         <div className='w-[38px] h-[37px]'>
-                                            <Image src={Check} alt='banner-logos' className='img-fuild'/>
+                                            <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
                                         <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Latest Technology</span>
                                     </div>
@@ -168,7 +168,7 @@ const Banner = () => {
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
                                     <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[250px] h-[40px]'>
                                         <div className='w-[38px] h-[37px]'>
-                                            <Image src={Check} alt='banner-logos' className='img-fuild'/>
+                                            <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
                                         <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Award-Winning Agency</span>
                                     </div>

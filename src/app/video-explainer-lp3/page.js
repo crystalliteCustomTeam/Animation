@@ -30,7 +30,11 @@ const Video = () => {
   }
   //=====Looking Fold=====//
   const paraArray = [
-    "In the heart of Austin, Cloud Animation leads the way among animation production companies in Austin, offering top-tier services that redefine visual storytelling. Our engaging animation workshops in Austin provide hands-on learning experiences, nurturing talent for the future. With cutting-edge video animation services for social media in Austin, we elevate your brand's presence online and propel it to new heights like before. As one of the premier Austin – Texas animation studios, Cloud Animation blends expertise with creativity, making us the pinnacle choice for captivating animations in the vibrant Texan city."
+    `Infinity Animations creates videos that bring your brand’s vision to life through research, strategy, copywriting, and custom visuals.`,
+    `Our personalized and collaborative approach ensures that your video is truly one of a kind.
+        As an end-to-end service solution, we’ll guide you through every step – from our streamlined discovery process, through key points in production, to final delivery.
+        `,
+    `As a leading animation studio, we pride ourselves on delivering high-quality, innovative animations that exceed our clients' expectations, making us the go-to choice for businesses seeking top-notch animation companies.`
   ];
   const looking = {
     main: (<> Why <span className='text-[#FF2D4A]'> Choose </span> Infinity Animations </>),

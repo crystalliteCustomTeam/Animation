@@ -139,8 +139,8 @@ const Banner = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-y-12">
                         <div className="col-span-12 lg:col-span-6">
-                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[30px] font-[700] uppercase montserrat lg:w-10/12 md:leading-[35px]'>ANIMATED EXPLAINER VIDEOS THAT EXPAND YOUR BRAND REACH & INCREASE YOUR ROI</h1>
-                            <p className='text-white text-[17px] font-[400] montserrat lg:w-11/12 leading-[25px] py-[25px]'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.</p>
+                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[30px] font-[700] uppercase montserrat lg:w-10/12 md:leading-[35px]'>Combining Creativity With Motion & Turning Concepts Into Extraordinary Visual Experiences</h1>
+                            <p className='text-white text-[17px] font-[400] montserrat lg:w-11/12 leading-[25px] py-[25px]'>Transform Your Ideas into Visually Engaging Animated Stories, Tailored to Resonate with Your Audience & Elevate your Brand.</p>
                             <ul>
                                 <li className='flex items-start gap-x-2'>
                                     <CheckCircle className='text-[#A70A0E]' />
