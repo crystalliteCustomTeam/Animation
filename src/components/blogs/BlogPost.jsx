@@ -21,19 +21,19 @@ const BlogPost = () => {
             subTitle: (<> Architectural Animation</>),
             image: Blog1,
             title: "Be the First to Hire Our Professional Animators",
-            para: `Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin.`
+            para: `Discover unparalleled creativity at Infinity Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin.`
         },
         {
             subTitle: (<> Architectural Animation</>),
             image: Blog2,
             title: "Be the First to Hire Our Professional Animators",
-            para: `Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin,`
+            para: `Discover unparalleled creativity at Infinity Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin,`
         },
         {
             subTitle: (<> Architectural Animation</>),
             image: Blog3,
             title: "Be the First to Hire Our Professional Animators",
-            para: `Discover unparalleled creativity at Cloud Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin,`
+            para: `Discover unparalleled creativity at Infinity Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin,`
         },
     ];
 

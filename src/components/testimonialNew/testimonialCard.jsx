@@ -30,7 +30,7 @@ export default function TestimonialCard() {
                 </div>
                 <div className='border'>
                     <p className="text-[11px] xl:text-[14px] font-sans font-normal text-black">
-                        “Cloud Animation services earned my respect by providing high-quality,
+                        “Infinity Animation services earned my respect by providing high-quality,
                         aesthetically pleasing animated content. The group executed my project in a
                         unique and impressive manner.”
                     </p>

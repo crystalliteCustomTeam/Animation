@@ -20,7 +20,7 @@ function BlogDescription({ content }) {
             content: `Elevating Your Project's Visuals Partner With Houston Animation`,
         },
         {
-            content: `Discover Unparalleled Creativity At Cloud Animations`,
+            content: `Discover Unparalleled Creativity At Infinity Animations`,
         },
         {
             content: `Elevating Your Project's Visuals`,
@@ -29,10 +29,10 @@ function BlogDescription({ content }) {
             content: `Security Measurements`,
         },
         {
-            content: `Discover Unparalleled Creativity At Cloud Animations, Your Gateway To Transformative Visual Storytelling.`,
+            content: `Discover Unparalleled Creativity At Infinity Animations, Your Gateway To Transformative Visual Storytelling.`,
         },
         {
-            content: `Discover Unparalleled Creativity At Cloud Animations,`,
+            content: `Discover Unparalleled Creativity At Infinity Animations,`,
         },
         {
             content: `Elevating Your Project's Visuals`,
@@ -76,7 +76,7 @@ function BlogDescription({ content }) {
                                                 Hire Expert Architectural Animation From Infinity Animation In Just 24 Hours
                                             </h4>
                                             <p className="text-[20px] sm:text-[22px] text-[#000] text-opacity-90 font-[300] font-sans leading-[1.52857143] tracking-wider text-start pb-3">
-                                                Discover Unparalleled Creativity At Cloud Animations, Your Gateway To Transformative Visual Storytelling.
+                                                Discover Unparalleled Creativity At Infinity Animations, Your Gateway To Transformative Visual Storytelling.
                                             </p>
                                         </div>
                                         <div className={`col-span-12 xl:col-span-3 ${style.circle} flex flex-col justify-center items-end xl:items-start pe-[85px] xl:pe-0`}>
