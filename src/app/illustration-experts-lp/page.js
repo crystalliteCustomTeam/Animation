@@ -8,7 +8,7 @@ import Illustrative from './components/Illustrative/Illustrative';
 import TreeStep from './components/tree-step/treeStep';
 import LookingFor from './components/looking-for/lookingFor';
 import Testimonials from './components/testimonial/Testimonials';
-import Pricing from '@/components/pricing/Pricing';
+import Pricing from './components/pricing/Pricing';
 
 const Illustration = () => {
   // ===== Brands 1 Content ===== //
