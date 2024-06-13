@@ -96,10 +96,10 @@ const Video = () => {
         <Packages />
         <Animations />
         <Work />
-        <Faqs content={faqs} />
         <Looking content={looking} />
         <ClientThinking />
         <Clients />
+        <Faqs content={faqs} />
         <Brands content={brandsTwo} />
         <Contact />
         <Script id="websiteSchema" type="application/ld+json">

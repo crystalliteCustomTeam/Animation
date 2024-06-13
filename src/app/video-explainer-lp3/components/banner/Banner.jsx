@@ -52,7 +52,7 @@ const Banner = () => {
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-    const [formStatus, setFormStatus] = useState("SUBMIT");
+    const [formStatus, setFormStatus] = useState("GET A QUOTE");
     const [errors, setErrors] = useState({});
     const [isDisabled, setIsDisabled] = useState(false);
     const formValidateHandle = () => {
@@ -183,8 +183,13 @@ const Banner = () => {
                         </div>
                         <div className="col-span-12 lg:col-span-6">
                             <form action="javascript:;" className={`${styles.banForm} pt-[20px] md:mr-[98px] md:ml-[40px] relative border-[1px] border-[#A70A0E] md:border-white lg:w-8/12`}>
-                                <h3 className='text-[20px] md:text-[30px] leading-[35px] montserrat font-[700] py-[10px] px-[20px] text-center'>
+                                {/* <h3 className='text-[20px] md:text-[30px] leading-[35px] montserrat font-[700] py-[10px] px-[20px] text-center'>
                                     Get a Free <br className='lg:block hidden' /> Consultation
+                                </h3> */}
+                                <h3 className='text-white text-[20px] md:text-[25px] leading-[30px] montserrat font-[700] text-left py-[10px] px-[20px]'>Share Your <br className='block' />
+                                    <strong className='text-[30px] md:ml-[2rem] font-extrabold '>
+                                        Animation Idea
+                                    </strong>
                                 </h3>
                                 <div className="form pt-[5px] px-[20px] pb-[30px]">
                                     <div className="relative">
