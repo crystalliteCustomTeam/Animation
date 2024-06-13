@@ -8,6 +8,8 @@ import BannerLogos from "media/infinity-studio/bannerLogos.png"
 import BannerLogosReel from "media/infinity-studio/play.png"
 import Discount from "media/infinity-studio/offer.png"
 import Check from "media/infinity-studio/check.png"
+import chatIcon from "media/video-explainer/chat-icon.png"
+import { CheckCircle } from 'heroicons-react'
 
 const Banner = () => {
     const { popup, togglePopup } = usePopup()
@@ -49,7 +51,7 @@ const Banner = () => {
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-    const [formStatus, setFormStatus] = useState(" Get Started");
+    const [formStatus, setFormStatus] = useState("GET A QUOTE");
     const [errors, setErrors] = useState({});
     const [isDisabled, setIsDisabled] = useState(false);
     const formValidateHandle = () => {
@@ -183,6 +185,20 @@ const Banner = () => {
                                     <Image src={BannerLogosReel} alt='banner-logos' className='mb-2 mx-auto' />
                                     <span className='text-white font-normal poppins pt-[8px]'>Play Reels</span>
                                 </div>
+                            </div>
+                            <div className="flex gap-4 md:gap-2">
+                                <div className="btn">
+                                    <a href='tel:1-833-666-6689' className='flex items-center text-[16px] text-black font-[700] montserrat bg-[#f6c501] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                        Call Now
+                                    </a>
+                                </div>
+                                <a href="javascript:$zopim.livechat.window.show();" className="chat flex items-center gap-2">
+                                    <Image src={chatIcon} alt='chat-icon' className='w-[25px] ml-[10px]' />
+                                    <div className="text">
+                                        <span className='block montserrat text-[14px] font-[400] text-[#ffcb05] leading-[14px]'>Chat Now to Avail 50% OFF</span>
+                                        <span className='text-white text-[16px] montserrat font-[700]'>Live Chat</span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div className="col-span-12 lg:col-span-4">

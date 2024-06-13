@@ -23,15 +23,20 @@ const Brands = ({ content }) => {
                                 <h2 className='text-[#fff] font-[700] poppins text-[20px] lg:text-[25px] xl:text-[36px] leading-[28px] lg:leading-[35px] xl:leading-[56px]'>
                                     {title} <br />
                                 </h2>
-                                <p className='text-[#fff] text-[16px] xl:text-[18px] poppins font-[400] pt-[13px] pb-[20px] xl:py-[20px] leading-[25px]'>
+                                <p className='text-[#fff] text-[16px] xl:text-[18px] poppins font-[400] pt-[13px] pb-[20px] xl:pt-[20px] xl:pb-[30px] leading-[25px]'>
                                     {desc}
                                 </p>
                             </div>
                             <div className="btns flex-wrap flex items-center justify-center lg:justify-start gap-5 mt-0">
                                 <div className="btn">
                                     <button onClick={popupHandle} className='flex items-center text-[16px] text-[#003262] font-[600] poppins bg-[#FFCC00] py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
-                                        Get Started
+                                        Get A Free Quote
                                     </button>
+                                </div>
+                                <div className="btn">
+                                    <a href='tel:1-833-666-6689' className='flex items-center text-[15px] text-black font-[700] font-sans bg-[#f6c501] ml-[10px] py-[12px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
+                                        Toll Free: 1-833-666-6689
+                                    </a>
                                 </div>
                             </div>
                         </div>
