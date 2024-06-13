@@ -34,7 +34,7 @@ const Brands = ({ content }) => {
                                     </button>
                                 </div>
                                 <div className="btn">
-                                    <a href='tel:1-833-666-6689' className='flex items-center text-[15px] text-black font-[700] font-sans bg-[#f6c501] ml-[10px] py-[12px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
+                                    <a href='tel:833-666-6689' className='flex items-center text-[15px] text-black font-[700] font-sans bg-[#f6c501] ml-[10px] py-[12px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl '>
                                         Toll Free: 1-833-666-6689
                                     </a>
                                 </div>

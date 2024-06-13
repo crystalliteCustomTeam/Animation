@@ -22,7 +22,7 @@ const Banner = () => {
                 <div className="bannervideo absolute top-[-100px] z-[0] left-0 right-0 w-full">
                     {banVideo.map((item, index) => (
                         <div key={index}>
-                            <video className={`rounded-2xl shadow-2xl w-full h-full`} loop={true} muted="muted" autoPlay={true} src={item}></video>
+                            <video className={` w-full h-full`} loop={true} muted="muted" autoPlay={true} src={item}></video>
                         </div>
                     ))}
                 </div> 
