@@ -188,7 +188,7 @@ const Banner = () => {
                             </div>
                             <div className="flex gap-4 md:gap-2">
                                 <div className="btn">
-                                    <a href='tel:1-833-666-6689' className='flex items-center text-[16px] text-black font-[700] montserrat bg-[#f6c501] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                    <a href='tel:833-666-6689' className='flex items-center text-[16px] text-black font-[700] montserrat bg-[#f6c501] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                         Call Now
                                     </a>
                                 </div>

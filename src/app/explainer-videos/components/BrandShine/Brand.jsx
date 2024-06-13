@@ -8,7 +8,7 @@ const Brand = ({ content }) => {
     const { title, subtitle, desc, branImage, isBranImage, btnTxt, css, positionCss, callTxt } = content
     return (
         <>
-            <section className='py-[30px] md:py-[70px] lg:my-[90px]'>
+            <section className='py-[30px] md:py-[70px] lg:mt-[90px]'>
                 <div className="mx-4 lg:max-w-7xl xl:mx-auto bg-[#EE8526] rounded-[20px] md:rounded-[40px] py-10 md:py-16 lg:py-10 px-4 sm:px-7 relative">
                     <div className="grid grid-cols-12">
                         {isBranImage ?

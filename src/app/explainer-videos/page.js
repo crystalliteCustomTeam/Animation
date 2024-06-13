@@ -324,11 +324,11 @@ const page = () => {
         <Header />
         <Banner />
         <Form />
-        <Animations content={animations} />
         <Portfolio content={portfolio} />
+        <Animations content={animations} />
         <Brand content={brands} />
-        <Remarkable content={remarkable} />
         <Animation />
+        <Remarkable content={remarkable} />
         <Brand content={sales} />
         <OurClient />
         <Extraordinary />
