@@ -18,21 +18,21 @@ const Form = () => {
                     <div className="form bg-[#F5090B] rounded-xl px-4 md:px-6 py-4">
                         <h2 className='text-[18px] md:text-[25px] font-sans font-bold leading-[25px] md:leading-[60px] text-white'>🔥 Special Offer on Video Animation and So Much More! </h2>
                         <form action="javascript:;" className='pt-5'>
-                            <div className="lg:flex flex-wrap lg:justify-center items-center gap-3">
+                            <div className="lg:flex flex-wrap items-center gap-3">
                                 <div className="name">
-                                    <input type="text" placeholder='Name' className='bg-white shadow-sm shadow-white rounded-[5px] h-[45px] text-center font-sans w-full lg:w-[285px] focus:outline-none text-black mb-[15px] lg:mb-0' />
+                                    <input type="text" placeholder='Name' className='bg-white shadow-sm shadow-white rounded-[5px] h-[45px] text-center font-sans w-full lg:w-[370px] xl:w-[385px] focus:outline-none text-black mb-[15px] lg:mb-0' />
                                 </div>
                                 <div className="phone-number">
-                                    <input type="number" placeholder='Phone Number' className='bg-white shadow-sm shadow-white rounded-[5px] h-[45px] text-center font-sans w-full lg:w-[285px] focus:outline-none text-black mb-[15px] lg:mb-0' />
+                                    <input type="number" placeholder='Phone Number' className='bg-white shadow-sm shadow-white rounded-[5px] h-[45px] text-center font-sans w-full lg:w-[370px] xl:w-[385px] focus:outline-none text-black mb-[15px] lg:mb-0' />
                                 </div>
                                 <div className="email">
-                                    <input type="email" placeholder='Email' className='bg-white shadow-sm shadow-white rounded-[5px] h-[45px] text-center font-sans w-full lg:w-[285px] focus:outline-none text-black mb-[15px] lg:mb-0' />
+                                    <input type="email" placeholder='Email' className='bg-white shadow-sm shadow-white rounded-[5px] h-[45px] text-center font-sans w-full lg:w-[370px] xl:w-[385px] focus:outline-none text-black mb-[15px] lg:mb-0' />
                                 </div>
-                                <div className="email">
-                                    <input type="email" placeholder='Email' className='bg-white shadow-sm shadow-white rounded-[5px] h-[45px] text-center font-sans w-full lg:w-[285px] focus:outline-none text-black mb-[15px] lg:mb-0' />
+                                <div className="description">
+                                    <textarea placeholder='Description' className='bg-white shadow-sm shadow-white rounded-[5px] h-[45px] leading-[45px] text-center font-sans w-full lg:w-[750px] xl:w-[783px] focus:outline-none text-black mb-[15px] lg:mb-0 resize-none'></textarea>
                                 </div>
-                                <button className='w-full lg:w-[285px] h-[45px] bg-gradient-to-r from-[#363636] to-[#000000] poppins rounded-[5px] font-semibold text-white relative'>
-                                    <Image src={HandAnimation} alt='Animating Studio' className='absolute top-[-104px] left-0 right-0 mx-auto lg:block hidden' />
+                                <button className='w-full lg:w-[370px] xl:w-[385px] h-[45px] bg-gradient-to-r from-[#363636] to-[#000000] poppins rounded-[5px] font-semibold text-white relative'>
+                                    <Image src={HandAnimation} alt='Animating Studio' className='absolute top-[-104px] right-0 ml    -auto lg:block hidden' />
                                     <span>Claim</span>
                                 </button>
                             </div>

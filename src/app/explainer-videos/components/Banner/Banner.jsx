@@ -15,6 +15,16 @@ const banVideo = [
     ]
 ];
 
+//========= video code start =========
+const handleVideoPlay = (e) => {
+    const video = e.currentTarget.querySelector('video');
+    video.play();
+};
+const handleVideoPause = (e) => {
+    const video = e.currentTarget.querySelector('video');
+    video.pause();
+};
+
 const Banner = () => {
     return (
         <>

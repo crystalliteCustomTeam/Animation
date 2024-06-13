@@ -53,8 +53,6 @@ const videoData = [
     ]
 ]
 
-
-
 const Portfolio = () => {
     //========= tabs =========
     const [activeTab, setActiveTab] = useState(0);

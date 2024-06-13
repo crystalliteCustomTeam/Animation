@@ -19,7 +19,7 @@ import 'swiper/css/navigation';
 // ===== Images Start
 import Slide1 from "media/explainer-videos/animate1.png"
 import Slide2 from "media/explainer-videos/animate2.png"
-import Slide3 from "media/explainer-videos/animate3.png"
+import Slide3 from "media/explainer-videos/animate3.jpg"
 import Arrow from "media/explainer-videos/slide-arrow.png"
 import VideoIco from "media/explainer-videos/play.png"
 import { register } from "swiper/element/bundle";
@@ -35,7 +35,6 @@ const Animation = () => {
             slidesPerView: typeof window !== 'undefined' && window.innerWidth >= 1200 ? 2 : 1,
             navigation: true,
             autoHeight: true,
-            pagination: { clickable: true, dynamicBullets: true },
             coverflowEffect: {
                 rotate: -20,      // Set the rotation angle
                 stretch: 0,
@@ -94,13 +93,13 @@ const Animation = () => {
                 }
 
                 .swiper-button-prev {
-                left: 45% !important;
-                right: inherit !important;
+                    left: 47% !important;
+                    right: inherit !important;
                 }
 
                 .swiper-button-next {
                 left: inherit !important;
-                right: 40% !important;
+                right: 46% !important;
                 }
 
                 .swiper-button-prev,
@@ -173,11 +172,11 @@ const Animation = () => {
                                 },
                             }}>
                                 <div>
-                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/907828567/rendition/1080p/file.mp4?loc=external&signature=2cb0c1bd0ce7278cfcc88931f949d2a4df4a28555c8e3a5dd73de49eeb9934e9" datafancybox="gallery">
+                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/947422905/rendition/1080p/file.mp4?loc=external&signature=f56596bad42e22dfbb5dcf417293fe4f92f3fc7e84a9464be5c8f07f903eaa05" datafancybox="gallery">
                                         <Image src={Slide1} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
                                         <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
-                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Video Animation Services</h3>
-                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We can add that vividness, vibrancy, and a strong taste of zestfulness to those mundane corporate videos, making your brand truly stand out.</p>
+                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">3D Animation Services</h3>
+                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>Our 3D animation services are not just visuals; they're an immersive experience that propels your brand into the future. Our skilled team of 3D artists and visionaries transform concepts into living, breathing narratives that captivate audiences.</p>
 
                                             <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
@@ -195,11 +194,11 @@ const Animation = () => {
                                 },
                             }}>
                                 <div>
-                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/907828734/rendition/1080p/file.mp4?loc=external&signature=c6da013ddb686dfc7be1b15b94eda413bc5fa963be1fd91775347155025326ee" datafancybox="gallery">
+                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/957421481/rendition/1080p/file.mp4?loc=external&signature=2200951cfd824565a3f569c81e997b1f7c5ad0a443debd2bc4d73ff7a3b0f27b" datafancybox="gallery">
                                         <Image src={Slide2} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
                                         <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
-                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Explainer Videos Services</h3>
-                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We like to explain things, but it’s not just that…we want your audience to enjoy the seeing and listening experience as well with our explainer videos.</p>
+                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Cel Animation Services</h3>
+                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>With Cel Animation, we seamlessly merge traditional hand-drawn Cel animation techniques with cutting-edge digital elements. This dynamic fusion results in visuals that not only pay homage to the timeless charm of Cel animation but also push the boundaries of innovation.</p>
 
                                             <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
@@ -217,11 +216,11 @@ const Animation = () => {
                                 },
                             }}>
                                 <div>
-                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/907828816/rendition/1080p/file.mp4?loc=external&signature=0c96783fc0283d20b714fec19c63f4565bf6618cfe19a581a25783cb5f6005e1" datafancybox="gallery">
+                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/923043536/rendition/1080p/file.mp4?loc=external&signature=65ba4de21993e2ab518a0dbad0e015b2bd960e70967b63241c8509cc1f8c5390" datafancybox="gallery">
                                         <Image src={Slide3} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
                                         <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
-                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Whiteboard Animation Services</h3>
-                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>A whiteboard is a wonderful blank space to start or unleash creativity. Well, truth be told, we don’t view a whiteboard as a whiteboard, we view it as a canvas that can be splendidly colored.</p>
+                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Architectural Visualization Services</h3>
+                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>At the intersection of innovation and aesthetics, our Architectural Visualization Services go beyond rendering structures; they create visual stories that resonate. Whether it's a residential project, commercial space, or urban development.</p>
 
                                             <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
@@ -239,11 +238,12 @@ const Animation = () => {
                                 },
                             }}>
                                 <div>
-                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/907829018/rendition/1080p/file.mp4?loc=external&signature=19f1bda07f4caacaccc0fdcf5567fb848096a95289bb8bc5310b0bb801c74380" datafancybox="gallery">
+                                    <Link
+                                        href="https://player.vimeo.com/progressive_redirect/playback/947422905/rendition/1080p/file.mp4?loc=external&signature=f56596bad42e22dfbb5dcf417293fe4f92f3fc7e84a9464be5c8f07f903eaa05" datafancybox="gallery">
                                         <Image src={Slide1} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
                                         <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
-                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Video Animation Services</h3>
-                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We can add that vividness, vibrancy, and a strong taste of zestfulness to those mundane corporate videos, making your brand truly stand out.</p>
+                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">3D Animation Services</h3>
+                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>Our 3D animation services are not just visuals; they're an immersive experience that propels your brand into the future. Our skilled team of 3D artists and visionaries transform concepts into living, breathing narratives that captivate audiences.</p>
 
                                             <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
@@ -261,11 +261,11 @@ const Animation = () => {
                                 },
                             }}>
                                 <div>
-                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/907828567/rendition/1080p/file.mp4?loc=external&signature=2cb0c1bd0ce7278cfcc88931f949d2a4df4a28555c8e3a5dd73de49eeb9934e9" datafancybox="gallery">
+                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/957421481/rendition/1080p/file.mp4?loc=external&signature=2200951cfd824565a3f569c81e997b1f7c5ad0a443debd2bc4d73ff7a3b0f27b" datafancybox="gallery">
                                         <Image src={Slide2} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
                                         <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
-                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Explainer Videos Services</h3>
-                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We like to explain things, but it’s not just that…we want your audience to enjoy the seeing and listening experience as well with our explainer videos.</p>
+                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Cel Animation Services</h3>
+                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>With Cel Animation, we seamlessly merge traditional hand-drawn Cel animation techniques with cutting-edge digital elements. This dynamic fusion results in visuals that not only pay homage to the timeless charm of Cel animation but also push the boundaries of innovation.</p>
 
                                             <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
@@ -283,11 +283,11 @@ const Animation = () => {
                                 },
                             }}>
                                 <div>
-                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/907829397/rendition/1080p/file.mp4?loc=external&signature=90d3e6d4b05f56ed61129b5031be09b724259666750b41882f54bf99b3e2314e" datafancybox="gallery">
+                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/923043536/rendition/1080p/file.mp4?loc=external&signature=65ba4de21993e2ab518a0dbad0e015b2bd960e70967b63241c8509cc1f8c5390" datafancybox="gallery">
                                         <Image src={Slide3} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
                                         <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
-                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Whiteboard Animation Services</h3>
-                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>A whiteboard is a wonderful blank space to start or unleash creativity. Well, truth be told, we don’t view a whiteboard as a whiteboard, we view it as a canvas that can be splendidly colored.</p>
+                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Architectural Visualization Services</h3>
+                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>At the intersection of innovation and aesthetics, our Architectural Visualization Services go beyond rendering structures; they create visual stories that resonate. Whether it's a residential project, commercial space, or urban development.</p>
 
                                             <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
