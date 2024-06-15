@@ -263,7 +263,7 @@ const Header = () => {
                         <div className="hidden lg:flex gap-5">
                             <NavList />
                             <CTA
-                                text="Get Started"
+                                text="Toll Free: 1-833-666-6689"
                                 icon="/icons/arrow-red.png"
                                 iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2"
                                 bg="bg-prime"

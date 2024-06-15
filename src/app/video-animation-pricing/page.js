@@ -4,6 +4,7 @@ import Script from 'next/script';
 import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
 import Pricing from "@/components/pricing/Pricing";
+import Concept from '@/components/concept/Concept';
 import Want from '@/components/want/Want';
 import TestimonialNew from '@/components/testimonialNew/Testimonial';
 import Contact from '@/components/contact/Contact';
@@ -28,6 +29,12 @@ export default function Page() {
     const pricing = {
         title: (<> Pricing Plans </>),
         para: (<> Easy on the pocket and the eyes. </>),
+    };
+    //=====Concept Fold=====//
+    const concept = {
+        title: (<> Design Process At Infinity Animations </>),
+        para: (<>  At Infinity Animations, we follow a comprehensive and detailed process to ensure the highest quality of work. Here’s how we bring your ideas to life as one of the leading animation studios. </>),
+        btnBg: "bg-prime",
     };
     //=====Want Fold=====//
     const want = {
@@ -145,6 +152,7 @@ export default function Page() {
             <Hero content={hero} />
             <Review />
             <Pricing content={pricing} />
+            <Concept content={concept} />
             <Want content={want} />
             <TestimonialNew content={testimonialNew} />
             <Contact />

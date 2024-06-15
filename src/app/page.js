@@ -150,7 +150,7 @@ export default function Page() {
     };
     //=====Portfilio Fold=====// 
     const tabInfo = [
-        { label: "2D Animations", index: 0 },
+        { label: "2D Animation", index: 0 },
         { label: "3D Animation", index: 1 },
         { label: "Whiteboard", index: 2 },
         { label: "Motion Graphics", index: 3 },

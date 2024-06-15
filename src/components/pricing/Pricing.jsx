@@ -30,7 +30,7 @@ const packages = [
         ],
         buttons: [
             {
-                text: 'Get Started',
+                text: '1-833-666-6689',
                 color: 'bg-prime text-white border-0',
                 image: arrow,
                 href: "tel:833-666-6689",
@@ -64,7 +64,7 @@ const packages = [
         ],
         buttons: [
             {
-                text: 'Get Started',
+                text: '1-833-666-6689',
                 color: 'bg-white text-black font-semibold border-0',
                 image: arrowB,
                 href: "tel:833-666-6689",
@@ -97,9 +97,10 @@ const packages = [
         ],
         buttons: [
             {
-                text: 'Get Started',
+                text: '1-833-666-6689',
                 color: 'bg-prime text-white border-0',
                 image: arrow,
+                href: "tel:833-666-6689",
                 imgColor: "bg-white w-[25px] h-[25px] xl:w-[28px] xl:h-[28px] rounded-full p-2 ms-1"
             },
             {
@@ -133,7 +134,7 @@ const packages = [
     //     ],
     //     buttons: [
     //         {
-    //             text: 'Get Started',
+    //             text: '1-833-666-6689',
     //             color: 'bg-white text-black font-semibold border-0',
     //             image: arrowB,
     //             href: "tel:833-666-6689",
@@ -200,24 +201,19 @@ const Pricing = ({ content }) => {
                                                     )
                                                 ))}
                                             </ul>
-                                            <div className="flex justify-between px-6 mt-5 pt-4">
-                                                <div>
-                                                    <p className="text-[15px] font-bold font-sans">Speak With Us</p>
-                                                    <a href="tel:833-666-6689" className="font-sans text-[14px]">833-666-6689</a>
-                                                </div>
-                                                <div>
-                                                    <p className="text-[15px] font-bold font-sans">Want To Discuss</p>
-                                                    <a href="javascript:$zopim.livechat.window.show();" className="font-sans text-[14px]">Live Chat Now</a>
-                                                </div>
+                                            <div className="flex-wrap flex items-center justify-between mt-[10px] w-[90%] mx-auto">
+                                                <button onClick={popupHandle} className='flex items-center justify-center text-[11px] xl:text-[15px] text-black font-[700] poppins bg-white py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
+                                                    Get A Call For Free Consultation
+                                                </button>
                                             </div>
                                             <div className="flex justify-between px-6 mt-5">
                                                 {pkg.buttons.map((button, i) => (
                                                     <>
-                                                        {button.text === "Get Started" ? (
-                                                            <button key={i} onClick={popupHandle} className={`flex items-center justify-between font-sans ${button.color} w-max px-3 xl:px-5 gap-2 rounded-lg py-[7px]`}>
+                                                        {button.text === "1-833-666-6689" ? (
+                                                            <a href={button.href} key={i} className={`flex items-center justify-between font-sans ${button.color} w-max px-3 xl:px-5 gap-2 rounded-lg py-[7px]`}>
                                                                 <span className="text-[16px] xl:text-[18px] font-normal font-sans">{button.text}</span>
                                                                 <Image className={`${button.imgColor}`} src={button.image} alt="Infinity Animations " />
-                                                            </button>
+                                                            </a>
                                                         ) : (
                                                             <a key={i} href={button.href} className={`flex items-center justify-between font-sans ${button.color} w-max py-2 px-3 xl:px-5 gap-2 rounded-lg`}>
                                                                 <span className="text-[14px] xl:text-[16px]">{button.text}</span>

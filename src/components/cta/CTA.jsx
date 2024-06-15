@@ -16,10 +16,10 @@ const CTA = ({ text, icon, bg, color, border, hover, href, iconCss }) => {
                 <span class="text-[16px] xl:text-[18px] font-normal">${text}</span>
                 <img src=${icon} alt="Icons" class="object-contain ${iconCss}" />
                 </a>`
-            }} /> : <button onClick={popupHandle} className='bg-prime text-white border-0 h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
-                <span className="text-[16px] xl:text-[18px] font-normal font-sans">Get Started</span>
+            }} /> : <a href="tel:833-666-6689" className='bg-prime text-white border-0 h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
+                <span className="text-[16px] xl:text-[18px] font-normal font-sans">{text}</span>
                 <Image className="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2 object-contain" src={arrowRed} alt="Infinity Animations " />
-            </button>}
+            </a>}
         </>
     );
 }

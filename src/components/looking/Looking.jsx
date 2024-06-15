@@ -84,7 +84,7 @@ const Looking = ({ content }) => {
                             {isBtns ?
                                 <div className="flex gap-6">
                                     <CTA
-                                        text="Get Started"
+                                        text="Get A Free Quote"
                                         icon="/icons/arrow-red.png"
                                         iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2"
                                         bg="bg-prime"

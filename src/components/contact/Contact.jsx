@@ -23,7 +23,7 @@ const Contact = () => {
                                 Ready To Engage Your Audience?
                             </h2>
                             <p className="w-[80%] mx-auto text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
-                                Engage, Share and Traverse With Us
+                            Book a meeting with a member of our team to learn more and get a quote today!
                             </p>
                         </div>
                     </div>
