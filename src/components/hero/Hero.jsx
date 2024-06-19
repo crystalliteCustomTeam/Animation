@@ -13,62 +13,54 @@ import icon3 from "media/icons/banner-logo-3.png";
 import icon4 from "media/icons/banner-logo-4.png";
 import icon5 from "media/icons/banner-logo-5.png";
 // Import Slider
-import { register } from 'swiper/element/bundle'
-
-register();
-
-const sliderInfo = [
-    { image: icon1 },
-    { image: icon2 },
-    { image: icon3 },
-    { image: icon4 },
-    { image: icon5 }
-];
+import { AutoScroll } from '@/components/sliders';
 
 const Hero = ({ content }) => {
 
+    const { title, para, video, dynamic } = content;
     const swiperRef = useRef(null);
+    const [videoReady, setVideoReady] = useState(false);
+    const [playVideo, setPlayVideo] = useState(false);
+    //======= Banner Video
     useEffect(() => {
-        const swiperContainer = swiperRef.current;
-        const params = {
-            loop: true,
-            speed: 400,
-            freeMode: true,
-            grabCursor: true,
-            autoplay: {
-                delay: 1500,
-            },
-            slidesPerView: 4,
-            spaceBetween: 10,
-            breakpoints: {
-                480: {
-                    slidesPerView: 1,
-                },
-                780: {
-                    slidesPerView: 3,
-                },
-
-            },
-            injectStyles: [
-                `
-                .swiper-wrapper {
-                    align-items: center;
-                }
-            `,
-            ],
+        const handleWindowLoad = () => {
+            setTimeout(() => {
+                setVideoReady(true);
+            }, 3000);
         };
-        Object.assign(swiperContainer, params);
-        swiperContainer.initialize();
+        window.addEventListener('load', handleWindowLoad);
+        return () => {
+            window.removeEventListener('load', handleWindowLoad);
+        };
     }, []);
 
-    const { title, para, video, dynamic } = content;
+    useEffect(() => {
+        if (videoReady) {
+            setPlayVideo(true);
+        }
+    }, [videoReady]);
+
+    useEffect(() => {
+        if (playVideo) {
+            const video = document.getElementById('background-video');
+            if (video) {
+                video.play();
+            }
+        }
+    }, [playVideo]);
+
     // Set Bg-Image
     const router = usePathname();
     let backgroundVideo;
     let margin;
     switch (router) {
         case "/":
-            backgroundVideo = 'https://player.vimeo.com/progressive_redirect/playback/950015917/rendition/720p/file.mp4?loc=external&log_user=0&signature=e0789e199bc0374e4971e5fc0b408a23ea883170eeb1fa2500dbaf2d0117d095'
+            // if (playVideo) {
+            //     backgroundVideo = 'https://player.vimeo.com/progressive_redirect/playback/950015917/rendition/720p/file.mp4?loc=external&log_user=0&signature=e0789e199bc0374e4971e5fc0b408a23ea883170eeb1fa2500dbaf2d0117d095';
+            // } else {
+            //     backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/home/poster.png")]';
+            // }
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/home/banner-img.gif")]';
             margin = 'mt-0'
             break;
         case '/why-us':
@@ -128,12 +120,13 @@ const Hero = ({ content }) => {
         default:
             break;
     }
+
     return (
         <>
             <section className={`w-full lg:h-[100vh] flex items-center justify-start sm:pb-5 bg-none bg-no-repeat relative overflow-hidden z-1 ${backgroundVideo} top-[97px] lg:top-auto`}>
                 {video ?
                     <div className="video-div w-full h-[480px] md:h-auto absolute z-[-1] before:content-[''] before:bg-[#000] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[90] before:opacity-[0.7]">
-                        <video src={backgroundVideo} autoPlay={true} loop={true} muted={true} className='relative h-full xl:left-0 w-full object-cover'>
+                        <video id="background-video" src={backgroundVideo} autoPlay={false} loop={true} muted={true} className='relative h-full xl:left-0 w-full object-cover'>
                         </video>
                     </div> : null}
                 <div className="container">
@@ -169,7 +162,7 @@ const Hero = ({ content }) => {
                             </p>
                             <div className="flex gap-6">
                                 <CTA
-                                    text="Get Started"
+                                    text="Get A Call"
                                     icon="/icons/arrow-red.png"
                                     iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2"
                                     bg="bg-prime"
@@ -188,22 +181,15 @@ const Hero = ({ content }) => {
                                     href="javascript:$zopim.livechat.window.show();"
                                 />
                             </div>
-                            <div className="bannerSlider mt-10 lg:mt-16 mb-10 lg:mb-0">
-                                <swiper-container ref={swiperRef} init="false" >
-                                    {
-                                        sliderInfo.map((item, index) => (
-                                            <>
-                                                <swiper-slide key={index}>
-                                                    <div>
-                                                        <Image src={item.image} className="w-[70%]" alt='BannerLogo' />
-                                                    </div>
-                                                </swiper-slide>
-                                            </>
-                                        ))
-                                    }
-                                    <swiper-pagination className="hidden"></swiper-pagination>
-                                </swiper-container>
-                            </div>
+                            <AutoScroll wrapperClass="mt-10 lg:mt-16 mb-10 lg:mb-0" options={{ loop: true, align: "start" }}>
+                                {
+                                    [icon1, icon2, icon3, icon4, icon5, icon1, icon2, icon3, icon4, icon5, icon1, icon2, icon3, icon4, icon5].map((e, i) => (
+                                        <div key={i} className="shrink-0 grow-0 basis-1/4 mr-5">
+                                            <Image src={e} alt="logo" className='w-[70%]' />
+                                        </div>
+                                    ))
+                                }
+                            </AutoScroll>
                         </div>
                     </div>
                 </div>

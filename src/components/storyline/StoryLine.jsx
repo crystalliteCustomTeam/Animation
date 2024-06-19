@@ -4,6 +4,7 @@ import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Images
 import arrow from "media/icons/arrow.png";
+import PlayIcon from "media/icons/play.png"
 // Import CSS
 import styles from "./StoryLine.module.css"
 
@@ -34,6 +35,17 @@ const StoryLine = ({ content }) => {
         default:
             break;
     }
+
+    // video code start
+    const handleVideoPlay = (e) => {
+        const video = e.currentTarget.querySelector('video');
+        video.play();
+    };
+    const handleVideoPause = (e) => {
+        const video = e.currentTarget.querySelector('video');
+        video.pause();
+    };
+
     return (
         <>
             <section className={`w-full flex items-center justify-start py-6 md:py-12 lg:py-16 ${main}`}>
@@ -80,9 +92,11 @@ const StoryLine = ({ content }) => {
                         </div>
                         <div className="w-full md:w-[70%] 220px sm:h-[740px]">
                             {activeIndex !== null && (
-                                <figure className="relative h-full">
-                                    {/* <Image className={`w-full lg:w-[90%] lg:ml-auto ${accImg}`} src={accordionData[activeIndex].StoryLineImg} alt="Infinity Animation" /> */}
-                                    <video src={accordionData[activeIndex].StoryLineImg} autoPlay={true} loop={true} muted={true} className='relative w-full lg:w-[95%] lg:ml-auto md:h-full object-cover'></video> 
+                                <figure className="relative h-full overlay group overflow-hidden" onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
+                                    <video src={accordionData[activeIndex].StoryLineImg} loop={true} muted={true} className='relative w-full lg:w-[95%] lg:ml-auto md:h-full object-cover'></video>
+                                    <div className=" bg-black/[0.2] h-full w-full absolute left-[50%] top-[0%] translate-x-[-50%] group-hover:top-[100%] flex items-center justify-center ">
+                                        <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0' />
+                                    </div>
                                 </figure>
                             )}
                         </div>
