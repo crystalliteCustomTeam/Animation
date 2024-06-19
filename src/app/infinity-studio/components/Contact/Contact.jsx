@@ -255,7 +255,7 @@ const Contact = () => {
             </section>
             <div className="copyright py-[20px] bg-black mt-1">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto relative">
-                    <p className='text-[14px] text-[#fff] poppins text-center'>© 2024 <p className='text-[14px] text-[#fff] poppins text-center inline'> - All Rights Reserved By</p> <Link target="_blank" className="no-underline" href="https://mini-investments.net/">Mini Investments</Link></p>
+                    <p className='text-[14px] text-[#fff] poppins text-center'>© 2024 <p className='text-[14px] text-[#fff] poppins text-center inline'> - All Rights Reserved By</p> <Link target="_blank" className="no-underline" href="https://bhaooinc.com/">Bhaoo Inc</Link></p>
                     <div className="top-icon absolute right-[14px] lg:right-0 top-[-60px]">
                         <Link href="#" className='bg-black w-[80px] h-[80px] text-center text-[#fff] font-[500] uppercase rounded-[60%] align-middle border-[5px] border-[#FFCC00] absolute right-0 lg:flex flex-col justify-center items-center md:block hidden'>
                             <Image src={UpArrow} alt='upArrow' className='mx-auto' />
