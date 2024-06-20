@@ -106,7 +106,7 @@ function TestimonialNew({ content }) {
                                                         src={testimonial.thumbnail}
                                                         alt="Infinity Animations"
                                                         className='rounded-[12px] h-full w-[150px]' />
-                                                    <div className="overlay-testi rounded-[12px] w-[150px] h-full ">
+                                                    <div className="overlay-testi rounded-[12px] w-[100px] md:w-[150px] h-full ">
                                                     </div>
                                                 </div>
                                             )}
