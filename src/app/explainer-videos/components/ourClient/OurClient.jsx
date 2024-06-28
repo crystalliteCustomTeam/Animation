@@ -186,17 +186,16 @@ const OurClient = () => {
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
                         <div className="col-span-12">
-                            <h2 className='text-[30px] sm:text-[45px] md:text-[50px] leading-tight font-bold font-sans text-center text-white mb-3'>Let’s Read What Our Clients Have to Say</h2>
+                            <h2 className='text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-bold font-sans leading-[35px] sm:leading-[45px] text-center text-white mb-3'>Let’s Read What Our Clients Have to Say</h2>
                             <p className='text-[13px] lg:text-[16px] leading-[21px] font-sans text-center text-white mx-auto mb-10'>If you can’t trust us, try trusting them.</p>
                         </div>
                         <div className="col-span-4 xl:col-span-5 hidden md:block">
                             <Image src={ClientImage} alt='Clients' className='mt-[-57px] lg:mt-0 lg:mb-[-70px] lg:block hidden' />
                         </div>
                         <div className="col-span-12 xl:col-span-7">
-                            <Slider {...ClientSlider} className='clientSlider lg:w-[62%] xl:w-[50%] bottom-[7%] right-0 mt-[25px] lg:mt-0 md:bottom-[33%] lg:bottom-[29%] right-0 mt-[35px] lg:mt-0'>
+                            <Slider {...ClientSlider} className='clientSlider lg:w-[62%] xl:w-[50%] bottom-[7%] right-0 mt-[25px] lg:mt-0 md:bottom-[33%] lg:bottom-[29%]'>
                                 {testiContentNew2.map((testimonial, index) => (
                                     <Fancybox options={{ Carousel: { infinite: false } }} key={index}>
-
                                         <div className='flex justify-center items-center slide px-4 lg:pe-8 my-auto' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
 
                                             {testimonial.video ? (
@@ -226,16 +225,17 @@ const OurClient = () => {
                                             )}
                                             <div className='pe-[15px] '>
                                                 <div className="client ms-[15px]">
-                                                    <h3 className='text-[20px] md:text-[30px] text-white font-bold poppins'>{testimonial.name}</h3>
+                                                    <h3 className='text-[20px] text-white font-bold font-sans'>{testimonial.name}</h3>
+                                                    <h3 className=" text-[13px] font-semibold font-sans text-white">
+                                                        {testimonial.company}
+                                                    </h3>
                                                     <div className="reviews flex items-center gap-x-1 ">
-                                                        <Image
-                                                            src={testimonial.stars}
-                                                            className="w-[30%]" alt='Infinity Animation' />
+                                                        <Image src={testimonial.stars} className="w-[25%]" alt='Infinity Animation' />
                                                     </div>
                                                     <div className="my-2">
-                                                    <p className="text-[13px] lg:text-[16px] text-white font-sans leading-tight lg:leading-[30px] ourClient-location pe-[25px] ">
-                                                        {testimonial.para}
-                                                    </p>
+                                                        <p className="text-[13px] lg:text-[16px] text-white font-sans leading-normal ourClient-location pe-[25px] ">
+                                                            {testimonial.para}
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>

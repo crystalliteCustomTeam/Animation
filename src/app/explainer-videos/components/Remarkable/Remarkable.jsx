@@ -26,7 +26,7 @@ const Remarkable = ({ content }) => {
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-5">
                         <div className="col-span-12 mb-5">
-                            <h2 className='text-[30px] sm:text-[40px] lg:text-[50px] leading-tight font-bold font-sans text-center text-black mb-3'>{title}</h2>
+                            <h2 className='text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-bold font-sans leading-[35px] sm:leading-[45px] text-center text-black mb-3'>{title}</h2>
                             <p className='text-[13px] lg:text-[16px] leading-[21px] font-sans text-center text-black sm:w-10/12 mx-auto mb-4 md:mb-10'>{para}</p>
                         </div>
                     </div>

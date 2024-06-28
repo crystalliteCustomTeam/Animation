@@ -7,6 +7,7 @@ import PartiOne from "media/explainer-videos/banner1.png"
 import PartiTwo from "media/explainer-videos/banner2.png"
 import PartiThree from "media/explainer-videos/banner-3.png"
 import PartiFour from "media/explainer-videos/banner-4.png"
+import chatIcon from "media/video-explainer/chat-icon.png"
 
 // ===== Video 
 const banVideo = [
@@ -15,20 +16,10 @@ const banVideo = [
     ]
 ];
 
-//========= video code start =========
-const handleVideoPlay = (e) => {
-    const video = e.currentTarget.querySelector('video');
-    video.play();
-};
-const handleVideoPause = (e) => {
-    const video = e.currentTarget.querySelector('video');
-    video.pause();
-};
-
 const Banner = () => {
     return (
         <>
-            <section className='py-[30px] md:py-[70px] relative' id='banner'>
+            <section className='pt-[80px] lg:pt-[150px] pb-[60px] md:pb-[100px] relative' id='banner'>
                 <Image src={PartiTwo} alt='Particle' height={625} width={517} className='animation absolute 3xl:right-[137px] right-0 bottom-[-38px] 3xl:bottom-[-20px] 3xl:w-3/12 w-4/12 lg:block hidden' />
                 <Image src={PartiFour} alt='Particle' className=' absolute right-0 bottom-[-45%] lg:bottom-0 w-[9%] lg:block hidden' />
                 <div className="px-5 lg:max-w-7xl mx-auto relative">
@@ -45,8 +36,8 @@ const Banner = () => {
                             <p className='text-[13px] sm:text-[16px] text-black font-sans ms-2'><strong>4.8 out of 5</strong> (review rating) Over 1,200+ reviews</p>
                         </div>
                     </div>
-                    <h1 className='text-[30px] sm:text-[35px] lg:text-[45px] font-bold text-black font-sans text-center leading-[35px] sm:leading-[45px] lg:leading-[55px] pt-2 md:pt-4 pb-2 md:pb-5' data-aos="fade-up" data-wow-duration="3s">Boost Sales with Animation Services. <br className='md:block hidden' />
-                    Instantaneously Forge Animated Explainer Videos!</h1>                                                                                     
+                    <h1 className='text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-bold font-sans leading-[35px] sm:leading-[45px] text-center text-black pt-2 md:pt-4 pb-2 md:pb-5' data-aos="fade-up" data-wow-duration="3s">Boost Sales with Animation Services. <br className='md:block hidden' />
+                        Instantaneously Forge Animated Explainer Videos!</h1>
                     <p className='text-center text-[13px] sm:text-[16px] font-sans text-black leading-[19px] pb-6' data-aos="fade-up" data-wow-duration="3s">Transform Your Ideas into Visually Engaging Animated Stories, Tailored to Resonate with Your Audience & <br /> Elevate your Brand.</p>
                     <div className="video w-full lg:w-6/12 mx-auto">
                         {banVideo.map((item, index) => (
@@ -58,6 +49,25 @@ const Banner = () => {
                 </div>
                 <Image src={PartiThree} alt='Particle' className='absolute left-0 bottom-[-28%] lg:bottom-[-11%] w-[7%] lg:block hidden' />
             </section>
+            <section className='mb-16'>
+                <div className='flex flex-col items-center content-center'>
+                    <div className="flex gap-4 md:gap-2">
+                        <div className="btn">
+                            <a href='tel:1-833-666-6689' className='flex items-center text-[16px] text-white font-[600] montserrat bg-[#FF2D4B] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                Call Now
+                            </a>
+                        </div>
+                        <a href="javascript:$zopim.livechat.window.show();" className="chat flex items-center gap-2">
+                            <Image src={chatIcon} alt='chat-icon' className='w-[25px] ml-[10px]' />
+                            <div className="text">
+                                <span className='block montserrat text-[14px] font-[600] text-[#FF2D4B] leading-[14px]'>Chat Now to Avail 50% OFF</span>
+                                <span className='text-black text-[16px] montserrat font-[600]'>Live Chat</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
         </>
     )
 }

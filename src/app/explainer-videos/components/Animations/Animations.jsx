@@ -15,7 +15,7 @@ const Animations = ({ content }) => {
         <section className='lg:pt-[70px] relative'>
             <div className="grid grid-cols-12">
                 <div className="col-span-12 px-3 md:px-5">
-                    <h2 className='text-center text-[25px] sm:text-[40px] lg:text-[50px] leading-[40px] lg:leading-[55px] font-bold font-sans mb-3 text-black'>{title}</h2>
+                    <h2 className='text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-bold font-sans leading-tight text-black text-center mb-3'>{title}</h2>
                     <p className='text-[13px] text-center sm:text-[16px] font-sans text-black leading-[19px] pb-6 lg:w-8/12 mx-auto md:mb-[75px]'>{para}</p>
                 </div>
             </div>
@@ -23,7 +23,6 @@ const Animations = ({ content }) => {
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
-                            {/* <Image src={AnimationVideo} quality={85} alt='Animating Studio' className='mt-4 md:w-5/12 mx-auto md:mt-[-50px] shadow-2xl' /> */}
                             <video src={AnimationVideo} autoPlay={true} loop={true} muted={true} className='mt-4 md:w-8/12 lg:w-5/12 mx-auto md:mt-[-50px] custom-shadow rounded-[15px]'></video>
                             <h3 className='text-[25px] sm:text-[40px] lg:text-[50px] leading-[25px] md:leading-[40px] lg:leading-[55px] font-bold font-sans mt-3 md:mt-8 mb-2 text-white text-center'>{subtitleOne}</h3>
                             <h5 className='text-center text-[25px] text-white leading-[30px] md:leading-[33px] font-bold font-sans mb-4 lg:mb-8'>{subtitleTwo}</h5>

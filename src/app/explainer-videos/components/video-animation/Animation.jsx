@@ -154,7 +154,7 @@ const Animation = () => {
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
                             <div className="content">
-                                <h2 className='text-[30px] lg:text-[50px] leading-tight font-sans font-bold text-black text-center'>Master the Art of Video Animation</h2>
+                                <h2 className='text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-bold font-sans leading-[35px] sm:leading-[45px] text-black text-center'>Master the Art of Video Animation</h2>
                                 <p className='text-black text-[13px] lg:text-[16px] font-sans text-center'>When it comes to any type of animation services, we are quite well-equipped and well-versed.</p>
                             </div>
                         </div>

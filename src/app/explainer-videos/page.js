@@ -480,8 +480,8 @@ const page = () => {
           isMobile ? (
             showMobileComponents && (
               <>
-                <Form />
                 <BadgeSlider />
+                <Form />
                 <Portfolio content={portfolio} />
                 <Animations content={animations} />
                 <Brand content={brands} />
@@ -497,8 +497,8 @@ const page = () => {
           ) : (
             showDesktopComponents && (
               <>
-                <Form />
                 <BadgeSlider />
+                <Form />
                 <Portfolio content={portfolio} />
                 <Animations content={animations} />
                 <Brand content={brands} />

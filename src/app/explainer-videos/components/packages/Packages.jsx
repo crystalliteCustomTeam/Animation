@@ -18,10 +18,8 @@ const Packages = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-6">
                         <div className="col-span-12">
-                        <h2 className='text-center text-[25px] sm:text-[40px] lg:text-[50px] leading-[40px] lg:leading-[55px] font-bold font-sans mb-3 text-black'>Our Packages</h2>
+                        <h2 className='text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-bold font-sans text-center leading-[35px] sm:leading-[45px] mb-3 text-black'>Our Packages</h2>
                         <p className='text-[13px] text-center sm:text-[16px] font-sans text-black leading-[19px] pb-6 lg:w-8/12 mx-auto '>You've visited the right website if you're looking for top-of-the-line video animation experts in the US.</p>
-                            {/* <h2 className='text-white text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Our Packages</h2>
-                            <p className='text-white text-[16px] lg:text-[18px] montserrat font-[400] py-[17px] text-center pb-[30px]'>You've visited the right website if you're looking for top-of-the-line video animation experts in the US.</p> */}
                         </div>
                         <div className="col-span-12 lg:col-span-4">
                             <div className="card bg-[#c4df9b] rounded-[10px] py-[10px] overflow-hidden duration-700 relative z-1 cursor-pointer shadow-2xl before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:m-auto before:content-[''] before:rounded-[10px] before:translate-y-[-690px] before:duration-700 before:bg-[#b5ce8f] before:z-0 hover:before:translate-y-[0px] ">

@@ -47,7 +47,7 @@ const Header = () => {
 
     return (
         <>
-            <header className={`fixed left-0 top-0 py-6 z-50 w-full ${isScrolled ? 'bg-[#00C6F9] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-6' : ''}`}>
+            <header className={`fixed left-0 top-0 py-6 z-50 w-full ${isScrolled ? 'bg-[#36aac7db] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-6' : ''}`}>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
                         <div className="col-span-6 lg:col-span-4">

@@ -2,12 +2,19 @@
 // Imports Components
 import Image from "next/image";
 import Link from "next/link";
+import { EnvelopeIcon } from '@heroicons/react/24/solid'
+import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
 // Import Images
 import logo from "media/images/black-logo.gif";
-import facebook from "media/explainer-videos/fb.png";
-import twitter from "media/explainer-videos/twitter.png";
-import instagram from "media/explainer-videos/insta.png";
-import linkedin from "media/explainer-videos/linkedin.png";
+import Payment from "media/video-explainer/payment-img.png"
+import UpArrow from "media/video-explainer/up-arrow.png"
+import facebook from "media/icons/fb.png";
+import twitter from "media/icons/x.png";
+import youtube from "media/icons/youtube.png";
+import instagram from "media/icons/insta.png";
+import linkedin from "media/icons/linkedin.png";
+import vimeo from "media/icons/vemio.png";
+
 
 const Footer = () => {
     const quickLinks = [
@@ -129,19 +136,27 @@ const Footer = () => {
     const socialLinks = [
         {
             icon: facebook,
-            link: "https://www.facebook.com/"
+            link: "https://www.facebook.com/infinityanimationsofficial"
         },
         {
             icon: twitter,
-            link: "https://twitter.com/_"
+            link: "https://twitter.com/infinityan_/"
         },
         {
             icon: instagram,
-            link: "https://www.instagram.com/"
+            link: "https://www.instagram.com/infinityanimationsofficials"
         },
         {
             icon: linkedin,
-            link: "https://www.linkedin.com/"
+            link: "https://www.linkedin.com/company/infinity-animations/"
+        },
+        {
+            icon: youtube,
+            link: "https://www.youtube.com/@Infinity-Animations"
+        },
+        {
+            icon: vimeo,
+            link: "https://www.vimeo.com/infinityanimations"
         },
     ]
 
@@ -153,23 +168,43 @@ const Footer = () => {
                         <Link href="javascript:;" className="lg:w-[25%]">
                             <Image src={logo} width={150} height={54} className="pb-3" alt="Animation Studio" />
                         </Link>
-                        <p className="text-[16px] poppins text-justify text-black mt-3 md:pr-5 pb-10">Animating Studio is a visionary kingdom where creativity knows no bounds. With masterful strokes of artistry, they breathe life into ideas, forging appealing animations that dance with imagination.</p>
-
-                        <hr className="border-black " />
-
-                        <ul className="flex items-center gap-4 mt-4">
-                            {
-                                socialLinks.map((e, i) => {
-                                    return (
-                                        <li key={i} className="">
-                                            <Link href={e.link} target="_blank">
-                                                <Image src={e.icon} className="w-[20px] brightness-0 " alt="Animation Studio" />
-                                            </Link>
-                                        </li>
-                                    );
-                                })
-                            }
-                        </ul>
+                        <div className="col-span-12 lg:col-span-4">
+                            <div className="address_detail">
+                                <ul>
+                                    <li className='py-[10px]'>
+                                        <a href="tel:833-666-6689" className='text-[15px] md:text-[20px] text-black montserrat flex items-center gap-2'>
+                                            <Phone className='bg-[#36aac7db] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> 833-666-6689
+                                        </a>
+                                    </li>
+                                    <li className='py-[10px]'>
+                                        <a href="mailto:queries@infinityanimations.com" className='text-[15px] md:text-[20px] text-black montserrat flex items-center gap-2'>
+                                            <EnvelopeIcon className='bg-[#36aac7db] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> queries@infinityanimations.com
+                                        </a>
+                                    </li>
+                                    <li className='py-[10px]'>
+                                        <a href="https://infinityanimations.com" className='text-[15px] md:text-[20px] text-black montserrat flex items-center gap-2'>
+                                            <Globe className='bg-[#36aac7db] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimations.com
+                                        </a>
+                                    </li>
+                                </ul>
+                                <Image src={Payment} alt='Payment-Methods' className='w-5/12 lg:w-full my-3 object-contain' />
+                                <div>
+                                    <ul className="flex items-center gap-4 mt-4 md:mt-6">
+                                        {
+                                            socialLinks.map((e, i) => {
+                                                return (
+                                                    <li key={i} className="bg-transparent border border-[#36aac7db] w-[45px] h-[45px] rounded-[5px] flex items-center justify-center p-1 hover:bg-second">
+                                                        <Link target="_blank" href={e.link}>
+                                                            <Image src={e.icon} className="w-[20px] invert" alt="Infinity Animation" />
+                                                        </Link>
+                                                    </li>
+                                                );
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="basis-full sm:basis-[48%] lg:basis-[20%]">
                         <h4 className="text-[16px] font-semibold poppins text-black leading-none mb-3">Quick Links</h4>

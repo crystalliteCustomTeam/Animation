@@ -16,7 +16,7 @@ const Form = () => {
             <section className={`lg:pt-[70px]`} id='portfolio'>
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="form bg-[#F5090B] rounded-xl px-4 md:px-6 py-4">
-                        <h2 className='text-[18px] md:text-[25px] font-sans font-bold leading-[25px] md:leading-[60px] text-white'>🔥 Get Special Offer On Video Animation and So Much More! </h2>
+                        <h2 className='text-[18px] md:text-[24px] font-sans font-bold leading-[25px] md:leading-[60px] text-white'>🔥 Get Special Offer On Video Animation and So Much More! </h2>
                         <form action="javascript:;" className='pt-5'>
                             <div className="lg:flex flex-wrap items-center gap-3">
                                 <div className="name">
