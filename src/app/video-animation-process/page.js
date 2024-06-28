@@ -1,4 +1,5 @@
-import React from 'react';
+"use client"
+import React, { useState, useEffect } from "react";
 import Script from 'next/script';
 // Import Page Components
 import Hero from "@/components/hero/Hero";
@@ -23,6 +24,46 @@ import Michael from "media/thumbnails/michael.jpg";
 import Sarah from "media/thumbnails/sarah.png";
 
 export default function Page() {
+    const [showDesktopComponents, setShowDesktopComponents] = useState(true);
+    const [showMobileComponents, setShowMobileComponents] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+
+        // Show desktop components after 1 second
+        const desktopTimer = setTimeout(() => {
+            setShowDesktopComponents(true);
+        }, 500);
+
+        return () => {
+            window.removeEventListener("resize", checkMobile);
+            clearTimeout(desktopTimer);
+        };
+    }, []);
+
+    useEffect(() => {
+        const handleTouchOrScroll = () => {
+            setShowMobileComponents(true);
+            // Remove event listeners after mobile components are shown
+            window.removeEventListener("scroll", handleTouchOrScroll);
+            window.removeEventListener("touchstart", handleTouchOrScroll);
+        };
+
+        // Add event listeners for touch and scroll events
+        window.addEventListener("scroll", handleTouchOrScroll);
+        window.addEventListener("touchstart", handleTouchOrScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleTouchOrScroll);
+            window.removeEventListener("touchstart", handleTouchOrScroll);
+        };
+    }, []);
     //=====Banner Fold=====//
     const hero = {
         title: (<> Journey to Brilliance with Guaranteed Results </>),
@@ -168,11 +209,30 @@ export default function Page() {
     return (
         <>
             <Hero content={hero} />
-            <Review />
-            <StoryLine content={storyLine} />
-            <Want content={want} />
-            <TestimonialNew content={testimonialNew} />
-            <Contact />
+            {
+                isMobile ? (
+                    showMobileComponents && (
+                        <>
+                            <Review />
+                            <StoryLine content={storyLine} />
+                            <Want content={want} />
+                            <TestimonialNew content={testimonialNew} />
+                            <Contact />
+                        </>
+                    )
+                ) : (
+                    showDesktopComponents && (
+                        <>
+                            <Review />
+                            <StoryLine content={storyLine} />
+                            <Want content={want} />
+                            <TestimonialNew content={testimonialNew} />
+                            <Contact />
+                        </>
+                    )
+                )
+            }
+
             <Script id="productSchema" type="application/ld+json">
                 {`
                     {

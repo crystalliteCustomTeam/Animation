@@ -1,10 +1,12 @@
-import React from 'react';
-// Import Components
+"use client"
+import React, { useState, useEffect } from "react";
+// Import Page Components
 const Banner = React.lazy(() => import('@/app/explainer-videos-animations/component/banner/Banner'));
 const Logo = React.lazy(() => import('@/app/explainer-videos-animations/component/logo/Logo'));
 const Video = React.lazy(() => import('@/app/explainer-videos-animations/component/video/Video'));
 const Display = React.lazy(() => import('@/app/explainer-videos-animations/component/display/Display'));
 const Explainer = React.lazy(() => import('@/app/explainer-videos-animations/component/explainer/Explainer'));
+const BadgeSlider = React.lazy(() => import('@/components/badgeSlider2/BadgeSlider2'));
 const Types = React.lazy(() => import('@/app/explainer-videos-animations/component/types/Types'));
 const Packages = React.lazy(() => import('@/app/explainer-videos-animations/component/packages/Packages'));
 const Statistics = React.lazy(() => import('@/app/explainer-videos-animations/component/statistics/Statistics'));
@@ -48,6 +50,46 @@ import Thumnail29 from "media/thumbnails/hybrid/5.png";
 import Thumnail30 from "media/thumbnails/hybrid/6.png";
 
 export default function Page() {
+    const [showDesktopComponents, setShowDesktopComponents] = useState(true);
+    const [showMobileComponents, setShowMobileComponents] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+
+        // Show desktop components after 1 second
+        const desktopTimer = setTimeout(() => {
+            setShowDesktopComponents(true);
+        }, 500);
+
+        return () => {
+            window.removeEventListener("resize", checkMobile);
+            clearTimeout(desktopTimer);
+        };
+    }, []);
+
+    useEffect(() => {
+        const handleTouchOrScroll = () => {
+            setShowMobileComponents(true);
+            // Remove event listeners after mobile components are shown
+            window.removeEventListener("scroll", handleTouchOrScroll);
+            window.removeEventListener("touchstart", handleTouchOrScroll);
+        };
+
+        // Add event listeners for touch and scroll events
+        window.addEventListener("scroll", handleTouchOrScroll);
+        window.addEventListener("touchstart", handleTouchOrScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleTouchOrScroll);
+            window.removeEventListener("touchstart", handleTouchOrScroll);
+        };
+    }, []);
     //=====Portfilio Fold=====// 
     const tabInfo = [
         { label: "2D Animations", index: 0 },
@@ -226,19 +268,47 @@ export default function Page() {
         <>
             <Header />
             <Banner />
-            <Logo />
-            <Video />
-            <Streamlined content={portfolio} />
-            <Display />
-            <Types />
-            <Packages />
-            <Statistics />
-            <Work />
-            <Faqs content={faqs} />
-            <Thinking />
-            <Clients />
-            <Explainer />
-            <Footer />
+            {
+                isMobile ? (
+                    showMobileComponents && (
+                        <>
+                            <Logo />
+                            <Video />
+                            <Streamlined content={portfolio} />
+                            <Display />
+                            <BadgeSlider />
+                            <Types />
+                            <Packages />
+                            <Statistics />
+                            <Work />
+                            <Faqs content={faqs} />
+                            <Thinking />
+                            <Clients />
+                            <Explainer />
+                            <Footer />
+                        </>
+                    )
+                ) : (
+                    showDesktopComponents && (
+                        <>
+                            <Logo />
+                            <Video />
+                            <Streamlined content={portfolio} />
+                            <Display />
+                            <BadgeSlider />
+                            <Types />
+                            <Packages />
+                            <Statistics />
+                            <Work />
+                            <Faqs content={faqs} />
+                            <Thinking />
+                            <Clients />
+                            <Explainer />
+                            <Footer />
+                        </>
+                    )
+                )
+            }
         </>
     )
 }

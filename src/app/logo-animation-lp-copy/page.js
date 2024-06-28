@@ -1,8 +1,9 @@
 "use client"
-import React from 'react';
+import React, { useState, useEffect } from "react";
 // Import Components
 const HeaderLP = React.lazy(() => import('./components/header/Header'));
 const Banner = React.lazy(() => import('./components/banner/Banner'));
+const BadgeSlider = React.lazy(() => import('@/components/badgeSlider2/BadgeSlider2'));
 const LogoAnimation = React.lazy(() => import('./components/logoAnimartion/LogoAnimation'));
 const Startups = React.lazy(() => import('./components/startups/Startups'));
 const Streamed = React.lazy(() => import('./components/streamed/Streamed'));
@@ -16,6 +17,50 @@ import ImageTwo from "media/logo-animation-lp/templatebased.gif"
 import ImageThree from "media/logo-animation-lp/Intro.gif"
 
 const LogoAnimations = () => {
+
+  const [showDesktopComponents, setShowDesktopComponents] = useState(true);
+  const [showMobileComponents, setShowMobileComponents] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    // Show desktop components after 1 second
+    const desktopTimer = setTimeout(() => {
+      setShowDesktopComponents(true);
+    }, 500);
+
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+      clearTimeout(desktopTimer);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleTouchOrScroll = () => {
+      setShowMobileComponents(true);
+      // Remove event listeners after mobile components are shown
+      window.removeEventListener("scroll", handleTouchOrScroll);
+      window.removeEventListener("touchstart", handleTouchOrScroll);
+    };
+
+    // Add event listeners for touch and scroll events
+    window.addEventListener("scroll", handleTouchOrScroll);
+    window.addEventListener("touchstart", handleTouchOrScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleTouchOrScroll);
+      window.removeEventListener("touchstart", handleTouchOrScroll);
+    };
+  }, []);
+
+  // ===============================
+
   //=====Startups Fold=====// 
   const tabInfo = [
     { label: "2D LOGO ANIMATION", index: 0 },
@@ -78,15 +123,36 @@ const LogoAnimations = () => {
   return (
     <>
       <div className='bg-white'>
-        {/* <HeaderLP /> */}
         <Banner />
-        <LogoAnimation />
-        <Startups content={startups} />
-        <Streamed />
-        <AnimatedLogo />
-        <SmallBanner />
-        <Testimonials />
-        <Footer />
+        {
+          isMobile ? (
+            showMobileComponents && (
+              <>
+                <BadgeSlider />
+                <LogoAnimation />
+                <Startups content={startups} />
+                <Streamed />
+                <AnimatedLogo />
+                <SmallBanner />
+                <Testimonials />
+                <Footer />
+              </>
+            )
+          ) : (
+            showDesktopComponents && (
+              <>
+                <BadgeSlider />
+                <LogoAnimation />
+                <Startups content={startups} />
+                <Streamed />
+                <AnimatedLogo />
+                <SmallBanner />
+                <Testimonials />
+                <Footer />
+              </>
+            )
+          )
+        }
       </div>
     </>
   )

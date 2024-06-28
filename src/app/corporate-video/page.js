@@ -1,3 +1,5 @@
+"use client"
+import React, { useState, useEffect } from "react";
 // Import Page Components
 import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
@@ -69,6 +71,46 @@ import Slide5 from "media/corporate-video/brand5.png"
 
 
 export default function Page() {
+    const [showDesktopComponents, setShowDesktopComponents] = useState(true);
+    const [showMobileComponents, setShowMobileComponents] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+
+        // Show desktop components after 1 second
+        const desktopTimer = setTimeout(() => {
+            setShowDesktopComponents(true);
+        }, 500);
+
+        return () => {
+            window.removeEventListener("resize", checkMobile);
+            clearTimeout(desktopTimer);
+        };
+    }, []);
+
+    useEffect(() => {
+        const handleTouchOrScroll = () => {
+            setShowMobileComponents(true);
+            // Remove event listeners after mobile components are shown
+            window.removeEventListener("scroll", handleTouchOrScroll);
+            window.removeEventListener("touchstart", handleTouchOrScroll);
+        };
+
+        // Add event listeners for touch and scroll events
+        window.addEventListener("scroll", handleTouchOrScroll);
+        window.addEventListener("touchstart", handleTouchOrScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleTouchOrScroll);
+            window.removeEventListener("touchstart", handleTouchOrScroll);
+        };
+    }, []);
     //=====Banner Fold=====//
     const hero = {
         title: (<> <span className='text-primary-100'> Corporate</span> Video Production Services Company </>),
@@ -508,17 +550,41 @@ export default function Page() {
     return (
         <>
             <Hero content={hero} />
-            <Review />
-            <Company content={companies} />
-            <Portfolio content={portfolio} />
-            <Production content={production} />
-            <Looking content={looking} />
-            <Tech content={techType} />
-            <Brand content={branding} />
-            <Want content={want} />
-            <TestimonialNew content={testimonialNew} />
-            <Faqs content={faqs} />
-            <Contact />
+            {
+                isMobile ? (
+                    showMobileComponents && (
+                        <>
+                            <Review />
+                            <Company content={companies} />
+                            <Portfolio content={portfolio} />
+                            <Production content={production} />
+                            <Looking content={looking} />
+                            <Tech content={techType} />
+                            <Brand content={branding} />
+                            <Want content={want} />
+                            <TestimonialNew content={testimonialNew} />
+                            <Faqs content={faqs} />
+                            <Contact />
+                        </>
+                    )
+                ) : (
+                    showDesktopComponents && (
+                        <>
+                            <Review />
+                            <Company content={companies} />
+                            <Portfolio content={portfolio} />
+                            <Production content={production} />
+                            <Looking content={looking} />
+                            <Tech content={techType} />
+                            <Brand content={branding} />
+                            <Want content={want} />
+                            <TestimonialNew content={testimonialNew} />
+                            <Faqs content={faqs} />
+                            <Contact />
+                        </>
+                    )
+                )
+            }
         </>
     )
 }

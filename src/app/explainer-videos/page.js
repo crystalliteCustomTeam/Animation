@@ -1,10 +1,11 @@
 "use client"
-
-import React from 'react'
+import React, { useState, useEffect } from "react";
+// Import Page Components 
 import Banner from './components/Banner/Banner'
 import Form from './components/form/Form'
 import Header from './components/Header/Header'
 import Animations from './components/Animations/Animations'
+import BadgeSlider from '@/components/badgeSlider3/BadgeSlider3'
 import Portfolio from './components/portfolio/Portfolio'
 import Brand from './components/BrandShine/Brand'
 import Remarkable from './components/Remarkable/Remarkable'
@@ -56,8 +57,48 @@ import Remark12 from "media/explainer-videos/remark25.png"
 import Remark13 from "media/explainer-videos/remark26.png"
 import Remark14 from "media/explainer-videos/remark27.png"
 
-const page = () => {
 
+const page = () => {
+  const [showDesktopComponents, setShowDesktopComponents] = useState(true);
+  const [showMobileComponents, setShowMobileComponents] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    // Show desktop components after 1 second
+    const desktopTimer = setTimeout(() => {
+      setShowDesktopComponents(true);
+    }, 500);
+
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+      clearTimeout(desktopTimer);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleTouchOrScroll = () => {
+      setShowMobileComponents(true);
+      // Remove event listeners after mobile components are shown
+      window.removeEventListener("scroll", handleTouchOrScroll);
+      window.removeEventListener("touchstart", handleTouchOrScroll);
+    };
+
+    // Add event listeners for touch and scroll events
+    window.addEventListener("scroll", handleTouchOrScroll);
+    window.addEventListener("touchstart", handleTouchOrScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleTouchOrScroll);
+      window.removeEventListener("touchstart", handleTouchOrScroll);
+    };
+  }, []);
   //===== Banner Section====//
   const lists = [
     "- High Quality & Fast Video Animation Services",
@@ -323,16 +364,41 @@ const page = () => {
       <div className='bg-white'>
         <Header />
         <Banner />
-        <Form />
-        <Portfolio content={portfolio} />
-        <Animations content={animations} />
-        <Brand content={brands} />
-        <Animation />
-        <Remarkable content={remarkable} />
-        <Brand content={sales} />
-        <OurClient />
-        <Extraordinary />
-        <Footer />
+        {
+          isMobile ? (
+            showMobileComponents && (
+              <>
+                <Form />
+                <BadgeSlider />
+                <Portfolio content={portfolio} />
+                <Animations content={animations} />
+                <Brand content={brands} />
+                <Animation />
+                <Remarkable content={remarkable} />
+                <Brand content={sales} />
+                <OurClient />
+                <Extraordinary />
+                <Footer />
+              </>
+            )
+          ) : (
+            showDesktopComponents && (
+              <>
+                <Form />
+                <BadgeSlider />
+                <Portfolio content={portfolio} />
+                <Animations content={animations} />
+                <Brand content={brands} />
+                <Animation />
+                <Remarkable content={remarkable} />
+                <Brand content={sales} />
+                <OurClient />
+                <Extraordinary />
+                <Footer />
+              </>
+            )
+          )
+        }
       </div>
     </>
   )

@@ -229,7 +229,7 @@ const Header = () => {
     React.useEffect(() => {
         window.addEventListener(
             "resize",
-            () => window.innerWidth >= 960 && setOpenNav(false),
+            () => window.innerWidth >= 1099 && setOpenNav(false),
         );
     }, []);
     // ===============================================

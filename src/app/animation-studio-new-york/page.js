@@ -1,5 +1,5 @@
 "use client"
-import React from 'react';
+import React, { useState, useEffect } from "react";
 // Import Components
 import Hero from '@/components/location-page/hero/Hero';
 import BannerContact from '@/components/location-page/contact-banner/bannercontact';
@@ -25,6 +25,46 @@ import Sarah from "media/thumbnails/sarah.png";
 
 const LocationPage = () => {
 
+    const [showDesktopComponents, setShowDesktopComponents] = useState(true);
+    const [showMobileComponents, setShowMobileComponents] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+
+        // Show desktop components after 1 second
+        const desktopTimer = setTimeout(() => {
+            setShowDesktopComponents(true);
+        }, 500);
+
+        return () => {
+            window.removeEventListener("resize", checkMobile);
+            clearTimeout(desktopTimer);
+        };
+    }, []);
+
+    useEffect(() => {
+        const handleTouchOrScroll = () => {
+            setShowMobileComponents(true);
+            // Remove event listeners after mobile components are shown
+            window.removeEventListener("scroll", handleTouchOrScroll);
+            window.removeEventListener("touchstart", handleTouchOrScroll);
+        };
+
+        // Add event listeners for touch and scroll events
+        window.addEventListener("scroll", handleTouchOrScroll);
+        window.addEventListener("touchstart", handleTouchOrScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleTouchOrScroll);
+            window.removeEventListener("touchstart", handleTouchOrScroll);
+        };
+    }, []);
     //=====Banner Fold=====//
     const hero = {
         title: (<> Top <span className='text-primary-100'>Animation <br /> Studio </span> in NYC </>),
@@ -208,17 +248,41 @@ const LocationPage = () => {
         <>
             <div className='bg-black'>
                 <Hero content={hero} />
-                <BannerContact content={bannerContact} />
-                <Services />
-                <Description content={Desc1} />
-                <Portfolio />
-                <Description content={Desc2} />
-                <Description content={Desc3} />
-                <Want content={want} />
-                <Concept content={concept} />
-                <TestimonialNew content={testimonialNew} />
-                <Looking content={looking} />
-                <Contact />
+                {
+                    isMobile ? (
+                        showMobileComponents && (
+                            <>
+                                <BannerContact content={bannerContact} />
+                                <Services />
+                                <Description content={Desc1} />
+                                <Portfolio />
+                                <Description content={Desc2} />
+                                <Description content={Desc3} />
+                                <Want content={want} />
+                                <Concept content={concept} />
+                                <TestimonialNew content={testimonialNew} />
+                                <Looking content={looking} />
+                                <Contact />
+                            </>
+                        )
+                    ) : (
+                        showDesktopComponents && (
+                            <>
+                                <BannerContact content={bannerContact} />
+                                <Services />
+                                <Description content={Desc1} />
+                                <Portfolio />
+                                <Description content={Desc2} />
+                                <Description content={Desc3} />
+                                <Want content={want} />
+                                <Concept content={concept} />
+                                <TestimonialNew content={testimonialNew} />
+                                <Looking content={looking} />
+                                <Contact />
+                            </>
+                        )
+                    )
+                }
             </div>
         </>
     )

@@ -1,11 +1,12 @@
 "use client"
+import React, { useState, useEffect } from "react";
 import Script from 'next/script';
-import React from 'react';
 // Import Components
 const HeaderLP = React.lazy(() => import('./components/Header/Header'));
 const Banner = React.lazy(() => import('./components/banner/Banner'));
 const Partners = React.lazy(() => import('./components/partners/partners'));
 const Explainer = React.lazy(() => import('./components/explainer/Explainer'));
+const BadgeSlider = React.lazy(() => import('@/components/badgeSlider2/BadgeSlider2'));
 const Streamed = React.lazy(() => import('./components/streamed/Streamed'));
 const Brands = React.lazy(() => import('./components/brands/Brands'));
 const ExplainerType = React.lazy(() => import('./components/type-explainer/ExplainerType'));
@@ -21,6 +22,46 @@ const Contact = React.lazy(() => import('./components/Contact/Contact'));
 import LookingFlodImg from "media/home/looking-img.gif";
 
 const Video = () => {
+  const [showDesktopComponents, setShowDesktopComponents] = useState(true);
+  const [showMobileComponents, setShowMobileComponents] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    // Show desktop components after 1 second
+    const desktopTimer = setTimeout(() => {
+      setShowDesktopComponents(true);
+    }, 500);
+
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+      clearTimeout(desktopTimer);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleTouchOrScroll = () => {
+      setShowMobileComponents(true);
+      // Remove event listeners after mobile components are shown
+      window.removeEventListener("scroll", handleTouchOrScroll);
+      window.removeEventListener("touchstart", handleTouchOrScroll);
+    };
+
+    // Add event listeners for touch and scroll events
+    window.addEventListener("scroll", handleTouchOrScroll);
+    window.addEventListener("touchstart", handleTouchOrScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleTouchOrScroll);
+      window.removeEventListener("touchstart", handleTouchOrScroll);
+    };
+  }, []);
   // ===== Brands Content ===== //
   const brands = {
     title: <>Explain Your Complex Product with Amazing <br className='xl:hidden lg:block hidden' /> Animated Videos</>,
@@ -88,20 +129,50 @@ const Video = () => {
       <div className='bg-white'>
         <HeaderLP />
         <Banner />
-        <Partners />
-        <Streamed />
-        <Explainer />
-        <Brands content={brands} />
-        <ExplainerType />
-        <Packages />
-        <Animations />
-        <Work />
-        <Looking content={looking} />
-        <ClientThinking />
-        <Clients />
-        <Faqs content={faqs} />
-        <Brands content={brandsTwo} />
-        <Contact />
+        {
+          isMobile ? (
+            showMobileComponents && (
+              <>
+                <Partners />
+                <Streamed />
+                <BadgeSlider />
+                <Explainer />
+                <Brands content={brands} />
+                <ExplainerType />
+                <Packages />
+                <Animations />
+                <Work />
+                <Looking content={looking} />
+                <ClientThinking />
+                <Clients />
+                <Faqs content={faqs} />
+                <Brands content={brandsTwo} />
+                <Contact />
+              </>
+            )
+          ) : (
+            showDesktopComponents && (
+              <>
+                <Partners />
+                <Streamed />
+                <BadgeSlider />
+                <Explainer />
+                <Brands content={brands} />
+                <ExplainerType />
+                <Packages />
+                <Animations />
+                <Work />
+                <Looking content={looking} />
+                <ClientThinking />
+                <Clients />
+                <Faqs content={faqs} />
+                <Brands content={brandsTwo} />
+                <Contact />
+              </>
+            )
+          )
+        }
+
         <Script id="websiteSchema" type="application/ld+json">
           {`
             {

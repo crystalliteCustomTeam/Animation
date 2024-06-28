@@ -1,6 +1,6 @@
 "use client"
-import React, { useEffect, useState } from 'react';
-// Import Components
+import React, { useState, useEffect } from "react";
+// Import Page Components
 const HeaderLP = React.lazy(() => import('./components/Header/Header'));
 const Banner = React.lazy(() => import('./components/banner/Banner'));
 const Partners = React.lazy(() => import('./components/partners/partners'));
@@ -9,6 +9,7 @@ const Streamed = React.lazy(() => import('./components/streamed/Streamed'));
 const Brands = React.lazy(() => import('./components/brands/Brands'));
 const ExplainerType = React.lazy(() => import('./components/type-explainer/ExplainerType'));
 const Packages = React.lazy(() => import('./components/packages/Packages'));
+const BadgeSlider = React.lazy(() => import('@/components/badgeSlider1/BadgeSlider1'));
 const Animations = React.lazy(() => import('./components/infinity-animation/Animations'));
 const Work = React.lazy(() => import('./components/work/Work'));
 const Faqs = React.lazy(() => import('./components/faqs/Faqs'));
@@ -17,6 +18,47 @@ const Clients = React.lazy(() => import('./components/OurClients/Clients'));
 const Contact = React.lazy(() => import('./components/Contact/Contact'));
 
 const Video = () => {
+  const [showDesktopComponents, setShowDesktopComponents] = useState(true);
+  const [showMobileComponents, setShowMobileComponents] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    // Show desktop components after 1 second
+    const desktopTimer = setTimeout(() => {
+      setShowDesktopComponents(true);
+    }, 500);
+
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+      clearTimeout(desktopTimer);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleTouchOrScroll = () => {
+      setShowMobileComponents(true);
+      // Remove event listeners after mobile components are shown
+      window.removeEventListener("scroll", handleTouchOrScroll);
+      window.removeEventListener("touchstart", handleTouchOrScroll);
+    };
+
+    // Add event listeners for touch and scroll events
+    window.addEventListener("scroll", handleTouchOrScroll);
+    window.addEventListener("touchstart", handleTouchOrScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleTouchOrScroll);
+      window.removeEventListener("touchstart", handleTouchOrScroll);
+    };
+  }, []);
+
   // ===== Brands Content ===== //
   const brands = {
     title: <> Start Displaying Your Brand with <span className='text-[#FFCC00]'>Amazing Animated Videos</span> </>,
@@ -61,37 +103,56 @@ const Video = () => {
     isBtn: false,
   }
 
-  const [showDelayedSections, setShowDelayedSections] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowDelayedSections(true);
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, []);
   return (
     <>
       <div className='bg-white'>
         <HeaderLP />
         <Banner />
-        {showDelayedSections && (
-          <>
-            <Partners />
-            <Explainer />
-            <Streamed />
-            <ExplainerType />
-            <Brands content={brands} />
-            <Packages />
-            <Animations />
-            <Work />
-            <Faqs content={faqs} />
-            <ClientThinking />
-            <Clients />
-            <Brands content={brandsTwo} />
-            <Contact />
-          </>
-        )}
+        {
+          isMobile ? (
+            showMobileComponents && (
+              <>
+                <Partners />
+                <Explainer />
+                <Streamed />
+                <ExplainerType />
+                <Brands content={brands} />
+                <Packages />
+                <div className='mb-12 md:mb-20'>
+                  <BadgeSlider />
+                </div>
+                <Animations />
+                <Work />
+                <Faqs content={faqs} />
+                <ClientThinking />
+                <Clients />
+                <Brands content={brandsTwo} />
+                <Contact />
+              </>
+            )
+          ) : (
+            showDesktopComponents && (
+              <>
+                <Partners />
+                <Explainer />
+                <Streamed />
+                <ExplainerType />
+                <Brands content={brands} />
+                <Packages />
+                <div className='mb-12 md:mb-20'>
+                  <BadgeSlider />
+                </div>
+                <Animations />
+                <Work />
+                <Faqs content={faqs} />
+                <ClientThinking />
+                <Clients />
+                <Brands content={brandsTwo} />
+                <Contact />
+              </>
+            )
+          )
+        }
       </div>
     </>
   )

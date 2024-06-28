@@ -10,6 +10,7 @@ import styles from './banner.module.css'
 import BannerLogos from "media/video-explainer2/bnr-logo.png"
 import chatIcon from "media/video-explainer2/chatIcon.png"
 import discount from "media/video-explainer2/bnr-form.png"
+import Star from "media/banner/star.png"
 
 const Banner = () => {
     const { popup, togglePopup } = usePopup()
@@ -163,7 +164,21 @@ const Banner = () => {
                                     <span className='text-white font-[400] pb-[10px] montserrat'>Marketing Videos</span>
                                 </li>
                             </ul>
-                            <Image src={BannerLogos} alt='banner-logos' className='object-contain mt-4 mb-6' />
+                            <div className='flex items-center gap-5'>
+                                <Image src={BannerLogos} alt='banner-logos' className='object-contain mt-4 mb-6' />
+                                <div className='flex flex-col items-center'>
+                                    <div className="flex items-center">
+                                        <Image src={Star} alt='banner-logos' width={22} height={22} />
+                                        <Image src={Star} alt='banner-logos' width={22} height={22} />
+                                        <Image src={Star} alt='banner-logos' width={22} height={22} />
+                                        <Image src={Star} alt='banner-logos' width={22} height={22} />
+                                        <Image src={Star} alt='banner-logos' width={22} height={22} />
+                                    </div>
+                                    <p className='mb-0 text-[12px] font-sans'>
+                                        <strong>4.8 out of 5</strong> (review rating)
+                                    </p>
+                                </div>
+                            </div>
                             <div className="flex gap-4 md:gap-2">
                                 <div className="btn">
                                     <a href='tel:1-833-666-6689' className='flex items-center text-[14px] text-white font-[700] montserrat bg-[#A70A0E] py-[12px] px-[25px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
@@ -183,9 +198,6 @@ const Banner = () => {
                         </div>
                         <div className="col-span-12 lg:col-span-6">
                             <form action="javascript:;" className={`${styles.banForm} pt-[20px] md:mr-[98px] md:ml-[40px] relative border-[1px] border-[#A70A0E] md:border-white lg:w-8/12`}>
-                                {/* <h3 className='text-[20px] md:text-[30px] leading-[35px] montserrat font-[700] py-[10px] px-[20px] text-center'>
-                                    Get a Free <br className='lg:block hidden' /> Consultation
-                                </h3> */}
                                 <h3 className='text-white text-[20px] md:text-[25px] leading-[30px] montserrat font-[700] text-left py-[10px] px-[20px]'>Share Your <br className='block' />
                                     <strong className='text-[30px] md:ml-[2rem] font-extrabold '>
                                         Animation Idea

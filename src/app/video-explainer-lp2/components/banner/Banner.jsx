@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import Axios from "axios";
+import { CheckCircle } from 'heroicons-react'
 //===== Component
 import usePopup from '@/app/configs/store/Popup';
 //===== CSS
@@ -8,7 +9,7 @@ import styles from './banner.module.css'
 // ===== Images
 import BannerLogos from "media/video-explainer/bnr-logo.png"
 import chatIcon from "media/video-explainer/chat-icon.png"
-import { CheckCircle } from 'heroicons-react'
+import Star from "media/banner/star.png"
 
 const Banner = () => {
     const { popup, togglePopup } = usePopup()
@@ -37,7 +38,7 @@ const Banner = () => {
         getIPData();
     }, []);
     // For Page
-     const [pagenewurl, setPagenewurl] = useState(null);
+    const [pagenewurl, setPagenewurl] = useState(null);
     useEffect(() => {
         setPagenewurl(window.location.href);
     }, [setPagenewurl]);
@@ -160,7 +161,21 @@ const Banner = () => {
                                     <span className='text-white font-[400] pb-[10px] montserrat'>Award-Winning Agency</span>
                                 </li>
                             </ul>
-                            <Image src={BannerLogos} alt='banner-logos' className='object-contain mt-4 mb-6' />
+                            <div className='flex items-center gap-5'>
+                                <Image src={BannerLogos} alt='banner-logos' className='object-contain mt-4 mb-6' />
+                                <div className='flex flex-col items-center'>
+                                    <div className="flex items-center">
+                                        <Image src={Star} alt='banner-logos' width={22} height={22} />
+                                        <Image src={Star} alt='banner-logos' width={22} height={22} />
+                                        <Image src={Star} alt='banner-logos' width={22} height={22} />
+                                        <Image src={Star} alt='banner-logos' width={22} height={22} />
+                                        <Image src={Star} alt='banner-logos' width={22} height={22} />
+                                    </div>
+                                    <p className='mb-0 text-[12px] font-sans'>
+                                        <strong>4.8 out of 5</strong> (review rating)
+                                    </p>
+                                </div>
+                            </div>
                             <div className="flex gap-4 md:gap-2">
                                 <div className="btn">
                                     <button onClick={popupHandle} className='flex items-center text-[16px] text-black font-[700] montserrat bg-[#f6c501] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>

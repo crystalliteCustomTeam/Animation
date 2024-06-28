@@ -12,6 +12,8 @@ import icon2 from "media/icons/banner-logo-2.png";
 import icon3 from "media/icons/banner-logo-3.png";
 import icon4 from "media/icons/banner-logo-4.png";
 import icon5 from "media/icons/banner-logo-5.png";
+import icon6 from "media/icons/banner-logo-6.png";
+import icon7 from "media/icons/banner-logo-7.png";
 // Import Slider
 import { AutoScroll } from '@/components/sliders';
 
@@ -123,7 +125,7 @@ const Hero = ({ content }) => {
 
     return (
         <>
-            <section className={`w-full lg:h-[100vh] flex items-center justify-start sm:pb-5 bg-none bg-no-repeat relative overflow-hidden z-1 ${backgroundVideo} top-[97px] lg:top-auto`}>
+            <section className={`w-full pt-6 flex items-center justify-start sm:pb-5 bg-none bg-no-repeat relative overflow-hidden z-1 ${backgroundVideo} top-[97px] lg:top-auto`}>
                 {video ?
                     <div className="video-div w-full h-[480px] md:h-auto absolute z-[-1] before:content-[''] before:bg-[#000] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[90] before:opacity-[0.7]">
                         <video id="background-video" src={backgroundVideo} autoPlay={false} loop={true} muted={true} className='relative h-full xl:left-0 w-full object-cover'>
@@ -150,7 +152,7 @@ const Hero = ({ content }) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <span className="d-block">With Our Explainer Videos</span>
+                                    <span className="d-block">With Our Animated Explainer Videos</span>
                                 </h1>
                                 :
                                 <h1 className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-5 mt-4 lg:mt-32 ${margin}`}>
@@ -181,9 +183,9 @@ const Hero = ({ content }) => {
                                     href="javascript:$zopim.livechat.window.show();"
                                 />
                             </div>
-                            <AutoScroll wrapperClass="mt-10 lg:mt-16 mb-10 lg:mb-0" options={{ loop: true, align: "start" }}>
+                            <AutoScroll wrapperClass="mt-10 lg:mt-10 mb-10 lg:mb-0" options={{ loop: true, align: "start" }}>
                                 {
-                                    [icon1, icon2, icon3, icon4, icon5, icon1, icon2, icon3, icon4, icon5, icon1, icon2, icon3, icon4, icon5].map((e, i) => (
+                                    [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon1, icon2, icon3, icon4, icon5, icon6, icon7].map((e, i) => (
                                         <div key={i} className="shrink-0 grow-0 basis-1/4 mr-5">
                                             <Image src={e} alt="logo" className='w-[70%]' />
                                         </div>

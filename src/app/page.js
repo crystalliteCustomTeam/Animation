@@ -1,4 +1,5 @@
-import React from 'react';
+"use client"
+import React, { useState, useEffect } from "react";
 import Script from 'next/script';
 // Import Page Components
 import Hero from '@/components/hero/Hero';
@@ -59,9 +60,49 @@ import Thumnail29 from "media/thumbnails/hybrid/5.png";
 import Thumnail30 from "media/thumbnails/hybrid/6.png";
 
 export default function Page() {
+    const [showDesktopComponents, setShowDesktopComponents] = useState(true);
+    const [showMobileComponents, setShowMobileComponents] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+
+        // Show desktop components after 1 second
+        const desktopTimer = setTimeout(() => {
+            setShowDesktopComponents(true);
+        }, 500);
+
+        return () => {
+            window.removeEventListener("resize", checkMobile);
+            clearTimeout(desktopTimer);
+        };
+    }, []);
+
+    useEffect(() => {
+        const handleTouchOrScroll = () => {
+            setShowMobileComponents(true);
+            // Remove event listeners after mobile components are shown
+            window.removeEventListener("scroll", handleTouchOrScroll);
+            window.removeEventListener("touchstart", handleTouchOrScroll);
+        };
+
+        // Add event listeners for touch and scroll events
+        window.addEventListener("scroll", handleTouchOrScroll);
+        window.addEventListener("touchstart", handleTouchOrScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleTouchOrScroll);
+            window.removeEventListener("touchstart", handleTouchOrScroll);
+        };
+    }, []);
     //=====Banner Fold=====//
     const hero = {
-        para: "Whether you're a brand seeking to captivate your audience, an educator aiming to simplify complex concepts, or a content creator in pursuit of visual brilliance, our animation services are designed to elevate your storytelling. With a perfect blend of technical expertise and artistic flair, we breathe life into every frame, crafting animations that transcend the ordinary. ",
+        para: "At Infinity Animations, we specialize in creating high-quality animated explainer videos that drive results. From engaging animated explainer videos to compelling product demonstrations, dynamic promotional content, Marketing Videos, Animated commercial Videos and informative training videos, we cover it all. Elevate your corporate communications and captivate your audience with top-tier animations. Don't miss out on this exclusive opportunity – partner with Infinity Animations today and bring your ideas to life like never before.",
         btnBg: "bg-prime",
         video: true,
         dynamic: true,
@@ -434,14 +475,36 @@ export default function Page() {
     return (
         <>
             <Hero content={hero} />
-            <Review />
-            <Looking content={looking} />
-            <StoryLine content={storyLine} />
-            <Portfolio content={portfolio} />
-            <Concept content={concept} />
-            <Boost content={boost} />
-            <TestimonialNew content={testimonialNew} />
-            <Contact />
+            {
+                isMobile ? (
+                    showMobileComponents && (
+                        <>
+                            <Review />
+                            <Looking content={looking} />
+                            <StoryLine content={storyLine} />
+                            <Portfolio content={portfolio} />
+                            <Concept content={concept} />
+                            <Boost content={boost} />
+                            <TestimonialNew content={testimonialNew} />
+                            <Contact />
+                        </>
+                    )
+                ) : (
+                    showDesktopComponents && (
+                        <>
+                            <Review />
+                            <Looking content={looking} />
+                            <StoryLine content={storyLine} />
+                            <Portfolio content={portfolio} />
+                            <Concept content={concept} />
+                            <Boost content={boost} />
+                            <TestimonialNew content={testimonialNew} />
+                            <Contact />
+                        </>
+                    )
+                )
+            }
+
             <Script id="websiteSchema" type="application/ld+json">
                 {`
                     {

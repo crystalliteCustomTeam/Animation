@@ -4,6 +4,7 @@ import usePopup from '@/app/configs/store/Popup';
 import Axios from "axios";
 import Image from 'next/image'
 // Images 
+import Star from "media/banner/star.png"
 import Brands from "media/explainer-videos-new/brands.png"
 import Partners from "media/explainer-videos-new/partners.png"
 import Particle1 from "media/explainer-videos-new/particle1.png"
@@ -184,8 +185,20 @@ const Banner = ({ content }) => {
                                     </a>
                                 </div>
                             </div>
-                            <div className="brands">
-                                <Image src={Brands} alt='' />
+                            <div className='flex items-center gap-5'>
+                                <Image src={Brands} alt='banner-logos' className='object-contain mt-4 mb-6' />
+                                <div className='flex flex-col items-center'>
+                                    <div className="flex items-center">
+                                        <Image src={Star} alt='banner-logos' width={22} height={22} />
+                                        <Image src={Star} alt='banner-logos' width={22} height={22} />
+                                        <Image src={Star} alt='banner-logos' width={22} height={22} />
+                                        <Image src={Star} alt='banner-logos' width={22} height={22} />
+                                        <Image src={Star} alt='banner-logos' width={22} height={22} />
+                                    </div>
+                                    <p className='mb-0 text-[12px] font-sans'>
+                                        <strong>4.8 out of 5</strong> (review rating)
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div className="col-span-12 lg:col-span-6">
