@@ -1006,13 +1006,13 @@ div.swiper-button-prev {
 
 .clientSlider .slick-prev {
   left: 46% !important;
-  bottom: -43% !important;
+  bottom: -53% !important;
   top: inherit !important;
 }
 
 .clientSlider .slick-next {
   left: 65% !important;
-  bottom: -43% !important;
+  bottom: -53% !important;
   top: inherit !important;
 }
 
@@ -1022,6 +1022,13 @@ div.swiper-button-prev {
 
 .clientSlider .slick-prev:before {
   content: url(/explainer-videos/prevslide.png) !important;
+}
+
+.ourClient-location {
+  height: 110px;
+  overflow: auto;
+  padding-right: 5px;
+  text-align: start;
 }
 
 /*=============== Media Query Start ===============*/

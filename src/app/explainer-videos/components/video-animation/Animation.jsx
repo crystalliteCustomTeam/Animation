@@ -155,7 +155,7 @@ const Animation = () => {
                         <div className="col-span-12">
                             <div className="content">
                                 <h2 className='text-[30px] lg:text-[50px] leading-tight font-sans font-bold text-black text-center'>Master the Art of Video Animation</h2>
-                                <p className='text-black text-[13px] lg:text-[16px] font-sans text-center'>When it comes to 3D animation services, we are quite well-equipped and well-versed.</p>
+                                <p className='text-black text-[13px] lg:text-[16px] font-sans text-center'>When it comes to any type of animation services, we are quite well-equipped and well-versed.</p>
                             </div>
                         </div>
                     </div>
