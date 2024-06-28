@@ -19,7 +19,7 @@ const banVideo = [
 const Banner = () => {
     return (
         <>
-            <section className='pt-[80px] lg:pt-[150px] pb-[60px] md:pb-[100px] relative' id='banner'>
+            <section className='pt-[120px] md:pt-[150px] pb-[50px] md:pb-[100px] relative' id='banner'>
                 <Image src={PartiTwo} alt='Particle' height={625} width={517} className='animation absolute 3xl:right-[137px] right-0 bottom-[-38px] 3xl:bottom-[-20px] 3xl:w-3/12 w-4/12 lg:block hidden' />
                 <Image src={PartiFour} alt='Particle' className=' absolute right-0 bottom-[-45%] lg:bottom-0 w-[9%] lg:block hidden' />
                 <div className="px-5 lg:max-w-7xl mx-auto relative">
@@ -33,7 +33,7 @@ const Banner = () => {
                             <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
                         </div>
                         <div className="content">
-                            <p className='text-[13px] sm:text-[16px] text-black font-sans ms-2'><strong>4.8 out of 5</strong> (review rating) Over 1,200+ reviews</p>
+                            <p className='text-[13px] sm:text-[16px] text-black font-sans ms-2'><strong>4.8 out of 5</strong> (review rating)</p>
                         </div>
                     </div>
                     <h1 className='text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-bold font-sans leading-[35px] sm:leading-[45px] text-center text-black pt-2 md:pt-4 pb-2 md:pb-5' data-aos="fade-up" data-wow-duration="3s">Boost Sales with Animation Services. <br className='md:block hidden' />
@@ -49,7 +49,7 @@ const Banner = () => {
                 </div>
                 <Image src={PartiThree} alt='Particle' className='absolute left-0 bottom-[-28%] lg:bottom-[-11%] w-[7%] lg:block hidden' />
             </section>
-            <section className='mb-16'>
+            <section className='mb-12 md:mb-16 md:mt-[-60px]'>
                 <div className='flex flex-col items-center content-center'>
                     <div className="flex gap-4 md:gap-2">
                         <div className="btn">

@@ -13,7 +13,7 @@ import HandAnimation from "media/explainer-videos/hand-animation.gif"
 const Form = () => {
     return (
         <>
-            <section className={`lg:pt-[70px]`} id='portfolio'>
+            <section className={`pt-[50px] lg:pt-[70px]`} id='portfolio'>
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="form bg-[#F5090B] rounded-xl px-4 md:px-6 py-4">
                         <h2 className='text-[18px] md:text-[24px] font-sans font-bold leading-[25px] md:leading-[60px] text-white'>🔥 Get Special Offer On Video Animation and So Much More! </h2>
@@ -51,8 +51,7 @@ const Form = () => {
                                     <Star className='text-[16px] w-[24px] h-[24px] text-[#FFD62B]' />
                                     <Star className='text-[16px] w-[24px] h-[24px] text-[#FFD62B]' />
                                 </div>
-                                <p className='text-black text-[10px] xl:text-[14px] poppins text-center leading-[14px] xl:leading-[18px]'><strong> 4.8 out of 5</strong> (review rating) <br />
-                                    Over 1,200+ reviews</p>
+                                <p className='text-black text-[10px] xl:text-[14px] poppins text-center leading-[14px] xl:leading-[18px]'><strong> 4.8 out of 5</strong> (review rating)</p>
                             </div>
                         </div>
                         <div className='flex  items-center gap-x-4'>

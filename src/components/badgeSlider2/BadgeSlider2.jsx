@@ -14,7 +14,7 @@ import { AutoScroll } from '@/components/sliders';
 
 const BadgeSlider = () => {
     return (
-        <section className='py-[50px] bg-black'>
+        <section className='py-[25px] bg-black'>
             <div className="container">
                 <AutoScroll wrapperClass="" options={{ loop: true, align: "start" }}>
                     {

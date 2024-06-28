@@ -161,7 +161,7 @@ const Footer = () => {
     ]
 
     return (
-        <footer className="bg-[#F3F3F3] pt-[70px] 3xl:mt-0 relative z-[999]">
+        <footer className="bg-[#00C6F9] pt-[70px] 3xl:mt-0 relative z-[999]">
             <div className="px-5 lg:max-w-7xl mx-auto">
                 <div className="flex gap-x-5 pb-8 flex-wrap lg:flex-nowrap justify-between gap-y-5 lg:gap-y-0">
                     <div className="basis-full sm:basis-[55%] md:pr-[55px] lg:basis-[30%]">
@@ -172,18 +172,18 @@ const Footer = () => {
                             <div className="address_detail">
                                 <ul>
                                     <li className='py-[10px]'>
-                                        <a href="tel:833-666-6689" className='text-[15px] md:text-[20px] text-black montserrat flex items-center gap-2'>
-                                            <Phone className='bg-[#36aac7db] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> 833-666-6689
+                                        <a href="tel:833-666-6689" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
+                                            <Phone className='bg-[#ffffff] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> 833-666-6689
                                         </a>
                                     </li>
                                     <li className='py-[10px]'>
-                                        <a href="mailto:queries@infinityanimations.com" className='text-[15px] md:text-[20px] text-black montserrat flex items-center gap-2'>
-                                            <EnvelopeIcon className='bg-[#36aac7db] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> queries@infinityanimations.com
+                                        <a href="mailto:queries@infinityanimations.com" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
+                                            <EnvelopeIcon className='bg-[#ffffff] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> queries@infinityanimations.com
                                         </a>
                                     </li>
                                     <li className='py-[10px]'>
-                                        <a href="https://infinityanimations.com" className='text-[15px] md:text-[20px] text-black montserrat flex items-center gap-2'>
-                                            <Globe className='bg-[#36aac7db] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimations.com
+                                        <a href="https://infinityanimations.com" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
+                                            <Globe className='bg-[#ffffff] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimations.com
                                         </a>
                                     </li>
                                 </ul>
@@ -193,9 +193,9 @@ const Footer = () => {
                                         {
                                             socialLinks.map((e, i) => {
                                                 return (
-                                                    <li key={i} className="bg-transparent border border-[#36aac7db] w-[45px] h-[45px] rounded-[5px] flex items-center justify-center p-1 hover:bg-second">
+                                                    <li key={i} className="bg-transparent border border-[#ffffff] w-[45px] h-[45px] rounded-[5px] flex items-center justify-center p-1 hover:bg-second">
                                                         <Link target="_blank" href={e.link}>
-                                                            <Image src={e.icon} className="w-[20px] invert" alt="Infinity Animation" />
+                                                            <Image src={e.icon} className="w-[20px]" alt="Infinity Animation" />
                                                         </Link>
                                                     </li>
                                                 );
@@ -207,13 +207,13 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="basis-full sm:basis-[48%] lg:basis-[20%]">
-                        <h4 className="text-[16px] font-semibold poppins text-black leading-none mb-3">Quick Links</h4>
+                        <h4 className="text-[16px] font-semibold poppins text-white leading-none mb-3">Quick Links</h4>
                         <ul>
                             {
                                 quickLinks.map((e, i) => {
                                     return (
                                         <li key={i}>
-                                            <Link href={e.link} className="text-[16px] text-black poppins font-normal hover:opacity-50 leading-[30px]">
+                                            <Link href={e.link} className="text-[16px] text-white poppins font-normal hover:opacity-50 leading-[30px]">
                                                 {e.text}
                                             </Link>
                                         </li>
@@ -223,13 +223,13 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="basis-full sm:basis-[48%] lg:basis-1/4">
-                        <h4 className="text-[16px] font-semibold poppins text-black leading-none mb-3">Quick Links</h4>
+                        <h4 className="text-[16px] font-semibold poppins text-white leading-none mb-3">Quick Links</h4>
                         <ul>
                             {
                                 servicesLinks.map((e, i) => {
                                     return (
                                         <li key={i}>
-                                            <Link href={e.link} className="text-[16px] text-black poppins font-normal hover:opacity-50 leading-[30px]">
+                                            <Link href={e.link} className="text-[16px] text-white poppins font-normal hover:opacity-50 leading-[30px]">
                                                 {e.text}
                                             </Link>
                                         </li>
@@ -239,13 +239,13 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="basis-full sm:basis-[48%] lg:basis-1/4">
-                        <h4 className="text-[16px] font-semibold poppins text-black leading-none mb-3">Resource Augmentation</h4>
+                        <h4 className="text-[16px] font-semibold poppins text-white leading-none mb-3">Resource Augmentation</h4>
                         <ul>
                             {
                                 resourceLinks.map((e, i) => {
                                     return (
                                         <li key={i}>
-                                            <Link href={e.link} className="text-[16px] text-black poppins font-normal hover:opacity-50 leading-[30px]">
+                                            <Link href={e.link} className="text-[16px] text-white poppins font-normal hover:opacity-50 leading-[30px]">
                                                 {e.text}
                                             </Link>
                                         </li>
@@ -255,9 +255,9 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="flex gap-x-5 py-5 flex-wrap sm:flex-nowrap gap-y-2 sm:gap-y-0 items-center border-t border-[#000000]">
+                <div className="flex gap-x-5 py-5 flex-wrap sm:flex-nowrap gap-y-2 sm:gap-y-0 items-center border-t border-[#ffffff]">
                     <div className="basis-full sm:basis-1/2">
-                        <p className="text-sm poppins text-black leading-6 text-center sm:text-left">
+                        <p className="text-sm poppins text-white leading-6 text-center sm:text-left">
                             © Copyright 2024 - Animation Studio
                         </p>
                     </div>
@@ -267,7 +267,7 @@ const Footer = () => {
                                 otherLinks.map((e, i) => {
                                     return (
                                         <li key={i}>
-                                            <Link href={e.link} className="text-[16px] text-black poppins font-normal hover:opacity-50 leading-[30px]">
+                                            <Link href={e.link} className="text-[16px] text-white poppins font-normal hover:opacity-50 leading-[30px]">
                                                 {e.text}
                                             </Link>
                                         </li>
