@@ -1,178 +1,104 @@
-"use client";
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-// Import Components
-import { FaPhoneAlt } from "react-icons/fa";
-import {
-    Navbar,
-    Collapse,
-    Typography,
-    List,
-    Menu,
-    MenuHandler,
-    MenuList,
-    MenuItem,
-} from "@material-tailwind/react";
-import {
-    ChevronDownIcon,
-    Bars3Icon,
-    XMarkIcon,
-    ChevronRightIcon,
-} from "@heroicons/react/24/outline";
-import {
-    NewspaperIcon,
-    PhoneIcon,
-    RectangleGroupIcon,
-    SquaresPlusIcon,
-    TagIcon,
-    UserGroupIcon,
-} from "@heroicons/react/24/solid";
-// Import Images
+import React, { useEffect, useState } from 'react'
+import usePopup from '@/app/configs/store/Popup'
+import Image from 'next/image'
+import { EnvelopeIcon } from '@heroicons/react/24/solid'
+//===== Images 
 import logo from "media/images/black-logo.gif";
+import Chat from "media/video-explainer/cht-icon.png"
 
-const megaMenuItems = [
-    {
-        title: "2d Animation",
-        icon: SquaresPlusIcon,
-        href: "/2d-animation",
-    },
-    {
-        title: "3d Animation",
-        icon: UserGroupIcon,
-        href: "/3d-animation",
-    },
-    {
-        title: "Promotional Videos",
-        icon: RectangleGroupIcon,
-        href: "/promotional-videos",
-    },
-    {
-        title: "Explainer Videos",
-        icon: TagIcon,
-        href: "/explainer-videos",
-    },
-    {
-        title: "Whiteboard Animation",
-        icon: UserGroupIcon,
-        href: "/whiteboard",
-    },
-    {
-        title: "Infographics Design",
-        icon: PhoneIcon,
-        href: "javascript:;",
-    },
-    {
-        title: "Logo Animation",
-        icon: NewspaperIcon,
-        href: "javascript:;",
-    },
-];
-
-function NavList() {
-    return (
-        <List className="mt-4 lg:mt-0 mb-0 pt-4 p-5 pb-4 lg:pb-0 lg:flex-row lg:p-1 gap-3 bg-black lg:bg-transparent border-b-2 border-[prime/100] lg:border-0">
-            <Link href="#banner">
-                <span className="text-white lg:text-black poppins font-semibold text-[16px] hover:text-primary-100 hover:duration-700 duration-700 ease-in-out lg:p-3">
-                    Home
-                </span>
-            </Link>
-            <Link href="#services">
-                <span className="text-white lg:text-black poppins font-semibold text-[16px] hover:text-primary-100 hover:duration-700 duration-700 ease-in-out lg:p-3">
-                    Services
-                </span>
-            </Link>
-            <Link href="#portfolio">
-                <span className="text-white lg:text-black poppins font-semibold text-[16px] hover:text-primary-100 hover:duration-700 duration-700 ease-in-out lg:p-3">
-                    Portfolio
-                </span>
-            </Link> 
-            <Link href="#contact">
-                <span className="text-white lg:text-black poppins font-semibold text-[16px] hover:text-primary-100 hover:duration-700 duration-700 ease-in-out lg:p-3">
-                    Contact Us
-                </span>
-            </Link>
-        </List>
-    );
-}
 
 const Header = () => {
-    const [openNav, setOpenNav] = React.useState(false);
+    const { popup, togglePopup } = usePopup();
+    const popupHandle = () => {
+        togglePopup(popup);
+    }
 
-    React.useEffect(() => {
-        window.addEventListener(
-            "resize",
-            () => window.innerWidth >= 960 && setOpenNav(false)
-        );
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            setIsScrolled(scrollTop > 1);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
+    // ===============================================
+    const [isScrollDown, setIsScrollDown] = useState(false);
+    const [lastScrollTop, setLastScrollTop] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            setIsScrollDown(scrollTop > 1 && scrollTop > lastScrollTop);
+            setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [lastScrollTop]);
 
     return (
-        <header className={`w-full pt-5`}>
-            <div className="px-5 lg:max-w-7xl mx-auto">
-                <Navbar className="max-w-none shadow-none px-0 py-2 rounded-none bg-transparent border-none">
-                    <div className="flex items-center justify-between relative">
-                        <Link href="javascript:;" className="logo lg:w-[25%]">
-                            <Image src={logo} alt='logo' width={150} />
-                        </Link>
-                        <div className="hidden lg:block">
-                            <NavList />
-                        </div>
-                        <div className="lg:flex hidden items-center gap-x-7">
-                            <div className="">
-                                <Link
-                                    href="tel:1-833-666-6689"
-                                    className="flex items-center gap-x-3 text-primary-100 poppins font-semibold text-[15px]"
-                                >
-                                    <FaPhoneAlt className="text-[15px]" />
-                                    1-833-666-6689
-                                </Link>
-                            </div>
-                            <div className="lg:block hidden">
-                                <Link
-                                    href="javascript:;"
-                                    className="text-[13px] sm:text-[15px] font-semibold leading-[25px] text-white bg-[#FF2D4B] dropShadow rounded-[5px] w-[135px] h-[42px] poppins flex items-center justify-center"
-                                >
-                                    Get A Quote
-                                </Link>
+        <>
+            <header className={`fixed left-0 top-0 py-6 z-50 w-full ${isScrolled ? 'bg-[#00C6F9] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-6' : ''}`}>
+                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
+                    <div className="grid grid-cols-12 items-center">
+                        <div className="col-span-6 lg:col-span-4">
+                            <div className="logo">
+                                <Image src={logo} alt='logo' width={150} className='w-[70%] md:w-[50%] lg:w-[28%]' />
                             </div>
                         </div>
-                        <div className="xl:hidden flex items-center gap-x-3">
-                            <div className="">
-                                <Link
-                                    href="tel:;"
-                                    className="flex items-center gap-x-3 text-primary-100 poppins font-semibold text-[13px] sm:text-[15px]"
-                                >
-                                    <FaPhoneAlt className="text-[15px] sm:block hidden" />
-                                    123 456 7890
-                                </Link>
+                        <div className="col-span-12 lg:col-span-8 lg:block hidden">
+                            <div className="nav_lists">
+                                <ul className='flex items-center justify-end gap-x-2 xl:gap-x-7'>
+                                    <li>
+                                        <a href="mailto:queries@infinityanimations.com" className='flex items-center'>
+                                            <EnvelopeIcon className='w-[25px] h-[25px] text-[#000000]' />
+                                            <span className='text-[13px] text-[#000000] py-[10px] px-[8px] font-[700] font-sans'>queries@infinityanimations.com</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='javascript:$zopim.livechat.window.show();' className='flex items-center text-[15px] text-white font-[700] font-sans bg-[#000000] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                            <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100]' />
+                                            <span className='text-[15px] text-white px-[8px] font-[700] font-sans'>
+                                                Live Chat
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <button onClick={popupHandle} className='flex items-center text-[15px] text-white font-[700] font-sans bg-[#000000] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                            Get A Call
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <a href='tel:1-833-666-6689' className='flex items-center text-[15px] text-white font-[700] font-sans bg-[#000000] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                            Toll Free: 1-833-666-6689
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                            <button
-                                onClick={() => setOpenNav(!openNav)}
-                                className="block lg:hidden"
-                            >
-                                {openNav ? (
-                                    <XMarkIcon
-                                        className="h-[40px] w-[40px] text-black"
-                                        strokeWidth={2}
-                                    />
-                                ) : (
-                                    <Bars3Icon
-                                        className="h-[40px] w-[40px] text-black"
-                                        strokeWidth={2}
-                                    />
-                                )}
-                            </button>
                         </div>
-
+                        <div className="col-span-6 lg:hidden block">
+                            <ul>
+                                <li>
+                                    <a href='tel:1-833-666-6689' className='flex items-center justify-center text-[11px] text-white font-[700] font-sans bg-[#FF2D4B] py-[10px] px-[10px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                        Toll Free: 1-833-666-6689
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    {openNav && (
-                        <Collapse open={openNav} className="block lg:hidden ">
-                            <NavList />
-                        </Collapse>
-                    )}
-                </Navbar>
-            </div>
-        </header>
-    );
-};
-export default Header;
+                </div>
+            </header>
+        </>
+    )
+}
+
+export default Header

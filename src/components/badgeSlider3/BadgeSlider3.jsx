@@ -9,6 +9,7 @@ import icon4 from "media/icons/banner-logo-4.png";
 import icon5 from "media/icons/banner-logo-5.png";
 import icon6 from "media/icons/banner-logo-6.png";
 import icon7 from "media/icons/banner-logo-7.png";
+
 // Import Slider
 import { AutoScroll } from '@/components/sliders';
 
