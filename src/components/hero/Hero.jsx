@@ -133,7 +133,7 @@ const Hero = ({ content }) => {
                     </div> : null}
                 <div className="container">
                     <div className='flex'>
-                        <div className='w-full lg:w-[550px] xl:w-[600px]'>
+                        <div className='w-full lg:w-[550px] xl:w-[650px]'>
                             {dynamic ?
                                 <h1 className={`text-[40px] md:text-[45px] xl:text-[50px] font-semibold font-sans leading-none mb-5 mt-4 lg:mt-32 ${margin}`}>
                                     <div className={styles.sliderWrapper}>
@@ -152,7 +152,7 @@ const Hero = ({ content }) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <span className="d-block">With Our Animated Explainer Videos</span>
+                                    <span className="d-block">With Our Animated Videos</span>
                                 </h1>
                                 :
                                 <h1 className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-5 mt-4 lg:mt-32 ${margin}`}>

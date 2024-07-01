@@ -194,8 +194,8 @@ export default function Page() {
         { label: "Motion Graphics", index: 0 },
         { label: "Hybrid Animation", index: 1 },
         { label: "3D Animation", index: 2 },
-        { label: "2D Animations", index: 3 },
-        { label: "Whiteboard", index: 4 },
+        { label: "2D Animation", index: 3 },
+        { label: "Whiteboard Animation", index: 4 },
     ];
     const tabContents = [
         [
