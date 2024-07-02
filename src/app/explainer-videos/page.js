@@ -1,9 +1,10 @@
 "use client"
 import React, { useState, useEffect } from "react";
 // Import Page Components 
+import Header from './components/Header/Header'
 import Banner from './components/Banner/Banner'
 import Form from './components/form/Form'
-import Header from './components/Header/Header'
+import Clients from './components/OurClients/Clients';
 import Animations from './components/Animations/Animations'
 import BadgeSlider from '@/components/badgeSlider3/BadgeSlider3'
 import Portfolio from './components/portfolio/Portfolio'
@@ -129,39 +130,13 @@ const page = () => {
   }
   //=====Portfilio Fold=====// 
   const tabInfo = [
-    { label: "Motion Graphics", index: 0 },
-    { label: "Hybrid Animation", index: 1 },
-    { label: "3D Animation", index: 2 },
-    { label: "2D Animations", index: 3 },
-    { label: "Whiteboard", index: 4 },
+    { label: "Hybrid Animation", index: 0 },
+    { label: "3D Animation", index: 1 },
+    { label: "2D Animation", index: 2 },
+    { label: "Whiteboard Animation", index: 3 },
+    { label: "Motion Graphics", index: 4 },
   ];
   const tabContents = [
-    [
-      {
-        video: "https://player.vimeo.com/progressive_redirect/playback/907667394/rendition/1080p/file.mp4?loc=external&signature=34f7fe39024c0b9ce15188e07fb6d4a90238c7b9cfcddb2b7688d8541b55c1a4",
-        thumbnail: Thumnail19,
-      },
-      {
-        video: "https://player.vimeo.com/progressive_redirect/playback/907667503/rendition/1080p/file.mp4?loc=external&signature=79bff3a91abee33d8e6071d0e4c642d6a6061992b1077cb006f5ca32ab5b1c51",
-        thumbnail: Thumnail20,
-      },
-      {
-        video: "https://player.vimeo.com/progressive_redirect/playback/907667817/rendition/1080p/file.mp4?loc=external&signature=62f4e51f50389dad04d8d6658c50e99198503d3ca6d458ef27bac708f6bb7feb",
-        thumbnail: Thumnail21,
-      },
-      {
-        video: "https://player.vimeo.com/progressive_redirect/playback/907667958/rendition/1080p/file.mp4?loc=external&signature=a3502c5e8ab318001eebdb072c17871dd6d561ebb9f922a08ef03dc6ffd35fe4",
-        thumbnail: Thumnail22,
-      },
-      {
-        video: "https://player.vimeo.com/progressive_redirect/playback/907667998/rendition/1080p/file.mp4?loc=external&signature=9547d186557ae1c6f51a43880464ed876c4bab48fca0ef0950f36b5c77079872",
-        thumbnail: Thumnail23,
-      },
-      {
-        video: "https://player.vimeo.com/progressive_redirect/playback/907668204/rendition/1080p/file.mp4?loc=external&signature=a51872dd125be907894841af68d8262c46f584ab3dbcfad7c0f068e9556b98c8",
-        thumbnail: Thumnail24,
-      }
-    ],
     [
       {
         video: "https://player.vimeo.com/progressive_redirect/playback/911720231/rendition/1080p/file.mp4?loc=external&signature=d9b02a0f53aa8784b0e3ed063720d29b1970b3e3b399f1d34316482874fdaa86",
@@ -266,7 +241,32 @@ const page = () => {
         thumbnail: Thumnail18,
       }
     ],
-
+    [
+      {
+        video: "https://player.vimeo.com/progressive_redirect/playback/907667394/rendition/1080p/file.mp4?loc=external&signature=34f7fe39024c0b9ce15188e07fb6d4a90238c7b9cfcddb2b7688d8541b55c1a4",
+        thumbnail: Thumnail19,
+      },
+      {
+        video: "https://player.vimeo.com/progressive_redirect/playback/907667503/rendition/1080p/file.mp4?loc=external&signature=79bff3a91abee33d8e6071d0e4c642d6a6061992b1077cb006f5ca32ab5b1c51",
+        thumbnail: Thumnail20,
+      },
+      {
+        video: "https://player.vimeo.com/progressive_redirect/playback/907667817/rendition/1080p/file.mp4?loc=external&signature=62f4e51f50389dad04d8d6658c50e99198503d3ca6d458ef27bac708f6bb7feb",
+        thumbnail: Thumnail21,
+      },
+      {
+        video: "https://player.vimeo.com/progressive_redirect/playback/907667958/rendition/1080p/file.mp4?loc=external&signature=a3502c5e8ab318001eebdb072c17871dd6d561ebb9f922a08ef03dc6ffd35fe4",
+        thumbnail: Thumnail22,
+      },
+      {
+        video: "https://player.vimeo.com/progressive_redirect/playback/907667998/rendition/1080p/file.mp4?loc=external&signature=9547d186557ae1c6f51a43880464ed876c4bab48fca0ef0950f36b5c77079872",
+        thumbnail: Thumnail23,
+      },
+      {
+        video: "https://player.vimeo.com/progressive_redirect/playback/907668204/rendition/1080p/file.mp4?loc=external&signature=a51872dd125be907894841af68d8262c46f584ab3dbcfad7c0f068e9556b98c8",
+        thumbnail: Thumnail24,
+      }
+    ],
   ];
   const portfolio = {
     title: (<>Our Animated Videos that Deliver Results To Our Clientele </>),
@@ -463,13 +463,14 @@ const page = () => {
     <>
       <div className='bg-white'>
         <Header />
-        <Banner content={banner}/>
+        <Banner content={banner} />
         {
           isMobile ? (
             showMobileComponents && (
               <>
                 <BadgeSlider />
                 <Portfolio content={portfolio} />
+                <Clients />
                 <Form />
                 <Packages />
                 <Animations content={animations} />
@@ -487,6 +488,7 @@ const page = () => {
               <>
                 <BadgeSlider />
                 <Portfolio content={portfolio} />
+                <Clients />
                 <Form />
                 <Packages />
                 <Animations content={animations} />
