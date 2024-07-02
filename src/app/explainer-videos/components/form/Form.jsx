@@ -124,7 +124,7 @@ const Form = () => {
     };
     return (
         <>
-            <section className={`pt-[50px] lg:pt-[70px]`} id='portfolio'>
+            <section className={`pt-[20px] pb-[50px]`} id='portfolio'>
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="form bg-[#F5090B] rounded-xl px-4 md:px-6 py-4">
                         <h2 className='text-[18px] md:text-[24px] font-sans font-bold leading-[25px] md:leading-[60px] text-white'>🔥 Get Special Offer On Video Animation and So Much More! </h2>
@@ -163,44 +163,6 @@ const Form = () => {
                                 </button>
                             </div>
                         </form>
-                    </div>
-                    <div className="flex flex-wrap gap-6 lg:gap-y-8 justify-center items-center lg:justify-between py-[30px] md:py-[60px] px-[50px]">
-                        <div className='flex items-center justify-center gap-x-4 w-full'>
-                            <div className="img">
-                                <Image src={Review1} alt='Review' />
-                            </div>
-                            <div className="txt">
-                                <div className="review flex items-center justify-center gap-x-1 pb-[2px]">
-                                    <Star className='text-[16px] w-[24px] h-[24px] text-[#FFD62B]' />
-                                    <Star className='text-[16px] w-[24px] h-[24px] text-[#FFD62B]' />
-                                    <Star className='text-[16px] w-[24px] h-[24px] text-[#FFD62B]' />
-                                    <Star className='text-[16px] w-[24px] h-[24px] text-[#FFD62B]' />
-                                    <Star className='text-[16px] w-[24px] h-[24px] text-[#FFD62B]' />
-                                </div>
-                                <p className='text-black text-[10px] xl:text-[14px] poppins text-center leading-[14px] xl:leading-[18px]'><strong> 4.8 out of 5</strong> (review rating)</p>
-                            </div>
-                        </div>
-                        <div className='flex  items-center gap-x-4'>
-                            <div className="img">
-                                <Image src={Review2} alt='Review' />
-                            </div>
-                            <div className="txt">
-                                <p className='text-black text-[10px] xl:text-[14px] poppins font-semibold leading-[14px] xl:leading-[18px] pb-2'>HIGH PERFORMER</p>
-                                <p className='text-black text-[10px] xl:text-[14px] poppins font-semibold leading-[14px] xl:leading-[18px]'>Top Video Making Company</p>
-                            </div>
-                        </div>
-                        <div className='flex items-center gap-x-4'>
-                            <div className="img">
-                                <Image src={Review3} alt='Review' />
-                            </div>
-                            <div className="txt">
-                                <p className='text-black text-[10px] xl:text-[14px] poppins font-semibold leading-[14px] xl:leading-[18px] pb-2'>IN TOP 3 BEST RATED</p>
-                                <p className='text-black text-[10px] xl:text-[14px] poppins font-semibold leading-[14px] xl:leading-[18px]'>Video Making & Editing Company</p>
-                            </div>
-                        </div>
-                        <div>
-                            <Image src={clutchReview} alt='Infinity Animation' />
-                        </div>
                     </div>
                 </div>
             </section>

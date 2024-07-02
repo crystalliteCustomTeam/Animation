@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { Star } from 'heroicons-react'
+import Link from 'next/link';
 import Image from 'next/image';
 
 import { Fancybox as NativeFancybox } from "@fancyapps/ui"
@@ -10,15 +11,8 @@ import PartiTwo from "media/explainer-videos/banner2.png"
 import PartiThree from "media/explainer-videos/banner-3.png"
 import PartiFour from "media/explainer-videos/banner-4.png"
 import chatIcon from "media/video-explainer/chat-icon.png"
-import googleReview from "media/explainer-videos/googleReview.PNG"
-import Link from 'next/link';
-
-// ===== Video 
-// const banVideo = [
-//     [
-//         "https://player.vimeo.com/progressive_redirect/playback/950015917/rendition/720p/file.mp4?loc=external&log_user=0&signature=e0789e199bc0374e4971e5fc0b408a23ea883170eeb1fa2500dbaf2d0117d095",
-//     ]
-// ];
+import googleReview from "media/explainer-videos/googleReview.png"
+import clutchReview from "media/explainer-videos/clutchReview.png"
 
 const Banner = ({ content }) => {
     const { bannerVideo } = content
@@ -47,16 +41,7 @@ const Banner = ({ content }) => {
                     <Image src={PartiOne} alt='Particle One' className='animationUpDown absolute left-[40px] bottom-[-70px] w-[23%] z-20 lg:block hidden' />
                     <div className="flex items-center justify-center gap-x-5" data-aos="zoom-in" data-wow-duration="3s">
                         <div>
-                            <div className="reviews flex items-center justify-center gap-x-1">
-                                <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
-                                <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
-                                <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
-                                <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
-                                <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
-                            </div>
-                            <div className="content">
-                                <p className='text-[13px] sm:text-[16px] text-black font-sans ms-2 pt-2'><strong>4.8 out of 5</strong> (review rating)</p>
-                            </div>
+                            <Image src={clutchReview} alt='Infinity Animations' />
                         </div>
                         <div>
                             <Image src={googleReview} alt='Infinity Animations' />
