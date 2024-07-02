@@ -1,22 +1,43 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Star } from 'heroicons-react'
 import Image from 'next/image';
 
+import { Fancybox as NativeFancybox } from "@fancyapps/ui"
+import "@fancyapps/ui/dist/fancybox/fancybox.css"
 // ====== Images 
 import PartiOne from "media/explainer-videos/banner1.png"
 import PartiTwo from "media/explainer-videos/banner2.png"
 import PartiThree from "media/explainer-videos/banner-3.png"
 import PartiFour from "media/explainer-videos/banner-4.png"
 import chatIcon from "media/video-explainer/chat-icon.png"
+import googleReview from "media/explainer-videos/googleReview.PNG"
+import Link from 'next/link';
 
 // ===== Video 
-const banVideo = [
-    [
-        "https://player.vimeo.com/progressive_redirect/playback/950015917/rendition/720p/file.mp4?loc=external&log_user=0&signature=e0789e199bc0374e4971e5fc0b408a23ea883170eeb1fa2500dbaf2d0117d095",
-    ]
-];
+// const banVideo = [
+//     [
+//         "https://player.vimeo.com/progressive_redirect/playback/950015917/rendition/720p/file.mp4?loc=external&log_user=0&signature=e0789e199bc0374e4971e5fc0b408a23ea883170eeb1fa2500dbaf2d0117d095",
+//     ]
+// ];
 
-const Banner = () => {
+const Banner = ({ content }) => {
+    const { bannerVideo } = content
+    // fancy box 
+    function Fancybox(props) {
+        const containerRef = useRef(null);
+        useEffect(() => {
+            const container = containerRef.current;
+            const delegate = props.delegate || "[datafancybox]";
+            const options = props.options || {};
+            NativeFancybox.bind(container, delegate, options);
+            return () => {
+                NativeFancybox.unbind(container);
+                NativeFancybox.close();
+            };
+        });
+
+        return <div ref={containerRef}>{props.children}</div>;
+    }
     return (
         <>
             <section className='pt-[120px] md:pt-[150px] pb-[50px] md:pb-[100px] relative' id='banner'>
@@ -24,32 +45,41 @@ const Banner = () => {
                 <Image src={PartiFour} alt='Particle' className=' absolute right-0 bottom-[-45%] lg:bottom-0 w-[9%] lg:block hidden' />
                 <div className="px-5 lg:max-w-7xl mx-auto relative">
                     <Image src={PartiOne} alt='Particle One' className='animationUpDown absolute left-[40px] bottom-[-70px] w-[23%] z-20 lg:block hidden' />
-                    <div className="flex items-center justify-center" data-aos="zoom-in" data-wow-duration="3s">
-                        <div className="reviews flex items-center justify-center gap-x-1">
-                            <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
-                            <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
-                            <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
-                            <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
-                            <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
+                    <div className="flex items-center justify-center gap-x-5" data-aos="zoom-in" data-wow-duration="3s">
+                        <div>
+                            <div className="reviews flex items-center justify-center gap-x-1">
+                                <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
+                                <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
+                                <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
+                                <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
+                                <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
+                            </div>
+                            <div className="content">
+                                <p className='text-[13px] sm:text-[16px] text-black font-sans ms-2 pt-2'><strong>4.8 out of 5</strong> (review rating)</p>
+                            </div>
                         </div>
-                        <div className="content">
-                            <p className='text-[13px] sm:text-[16px] text-black font-sans ms-2'><strong>4.8 out of 5</strong> (review rating)</p>
+                        <div>
+                            <Image src={googleReview} alt='Infinity Animations' />
                         </div>
                     </div>
                     <h1 className='text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-bold font-sans leading-[35px] sm:leading-[45px] text-center text-black pt-2 md:pt-4 pb-2 md:pb-5' data-aos="fade-up" data-wow-duration="3s">Boost Sales with Animation Services. <br className='md:block hidden' />
                         Instantaneously Forge Animated Explainer Videos!</h1>
                     <p className='text-center text-[13px] sm:text-[16px] font-sans text-black leading-[19px] pb-6' data-aos="fade-up" data-wow-duration="3s">Transform Your Ideas into Visually Engaging Animated Stories, Tailored to Resonate with Your Audience & <br /> Elevate your Brand.</p>
                     <div className="video w-full lg:w-6/12 mx-auto">
-                        {banVideo.map((item, index) => (
-                            <div key={index}>
-                                <video className={`rounded-2xl shadow-2xl w-full h-full`} loop={true} muted="muted" autoPlay={true} src={item}></video>
-                            </div>
-                        ))}
+                        <Fancybox options={{
+                            Carousel: {
+                                infinite: false,
+                            },
+                        }}>
+                            <Link href={bannerVideo} datafancybox="gallery">
+                                <video className={`rounded-2xl shadow-2xl w-full h-full`} loop={true} muted="muted" autoPlay={true} src={bannerVideo}></video>
+                            </Link>
+                        </Fancybox>
                     </div>
                 </div>
                 <Image src={PartiThree} alt='Particle' className='absolute left-0 bottom-[-28%] lg:bottom-[-11%] w-[7%] lg:block hidden' />
             </section>
-            <section className='mb-12 md:mb-16 md:mt-[-60px]'>
+            <section className='relative z-[999] mb-12 md:mb-16 md:mt-[-60px]'>
                 <div className='flex flex-col items-center content-center'>
                     <div className="flex gap-4 md:gap-2">
                         <div className="btn">

@@ -20,6 +20,8 @@ import 'swiper/css/navigation';
 import Slide1 from "media/explainer-videos/animate1.png"
 import Slide2 from "media/explainer-videos/animate2.png"
 import Slide3 from "media/explainer-videos/animate3.jpg"
+import Slide4 from "media/explainer-videos/animate4.jpg"
+import Slide5 from "media/explainer-videos/animate5.jpg"
 import Arrow from "media/explainer-videos/slide-arrow.png"
 import VideoIco from "media/explainer-videos/play.png"
 import { register } from "swiper/element/bundle";
@@ -239,10 +241,10 @@ const Animation = () => {
                             }}>
                                 <div>
                                     <Link
-                                        href="https://player.vimeo.com/progressive_redirect/playback/947422905/rendition/1080p/file.mp4?loc=external&signature=f56596bad42e22dfbb5dcf417293fe4f92f3fc7e84a9464be5c8f07f903eaa05" datafancybox="gallery">
-                                        <Image src={Slide1} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
+                                        href="https://player.vimeo.com/progressive_redirect/playback/911728642/rendition/1080p/file.mp4?loc=external&signature=44469d3d3ef50562def357cdf05ef68b8d9eb1f6c874c98d4b7a6772c4b7f173" datafancybox="gallery">
+                                        <Image src={Slide4} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
                                         <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
-                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">3D Animation Services</h3>
+                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Hybrid Animation Service</h3>
                                             <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>Our 3D animation services are not just visuals; they're an immersive experience that propels your brand into the future. Our skilled team of 3D artists and visionaries transform concepts into living, breathing narratives that captivate audiences.</p>
 
                                             <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
@@ -261,33 +263,11 @@ const Animation = () => {
                                 },
                             }}>
                                 <div>
-                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/957421481/rendition/1080p/file.mp4?loc=external&signature=2200951cfd824565a3f569c81e997b1f7c5ad0a443debd2bc4d73ff7a3b0f27b" datafancybox="gallery">
-                                        <Image src={Slide2} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
+                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/907829397/rendition/1080p/file.mp4?loc=external&signature=90d3e6d4b05f56ed61129b5031be09b724259666750b41882f54bf99b3e2314e" datafancybox="gallery">
+                                        <Image src={Slide5} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
                                         <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
-                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Cel Animation Services</h3>
-                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>With Cel Animation, we seamlessly merge traditional hand-drawn Cel animation techniques with cutting-edge digital elements. This dynamic fusion results in visuals that not only pay homage to the timeless charm of Cel animation but also push the boundaries of innovation.</p>
-
-                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
-                                                <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                            </Link>
-                                            <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
-                                        </div>
-                                    </Link>
-                                </div>
-                            </Fancybox>
-                        </swiper-slide>
-                        <swiper-slide className='relative pt-4'>
-                            <Fancybox options={{
-                                Carousel: {
-                                    infinite: false,
-                                },
-                            }}>
-                                <div>
-                                    <Link href="https://player.vimeo.com/progressive_redirect/playback/923043536/rendition/1080p/file.mp4?loc=external&signature=65ba4de21993e2ab518a0dbad0e015b2bd960e70967b63241c8509cc1f8c5390" datafancybox="gallery">
-                                        <Image src={Slide3} alt='Slide' className='rounded-[50px] w-full relative top-0 left-0' />
-                                        <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
-                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Architectural Visualization Services</h3>
-                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>At the intersection of innovation and aesthetics, our Architectural Visualization Services go beyond rendering structures; they create visual stories that resonate. Whether it's a residential project, commercial space, or urban development.</p>
+                                            <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">2D Animation Service</h3>
+                                            <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>2D animation involves creating movement in a two-dimensional space, offering a timeless and versatile visual experience. Our service leverages the simplicity and charm of hand-drawn elements to craft engaging and visually stunning animations. This approach allows for clear and effective communication, perfect for explainer videos, marketing campaigns, and educational content. By focusing on high-quality, captivating animations, we ensure that your message resonates with your audience and leaves a lasting impression.</p>
 
                                             <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />

@@ -22,8 +22,8 @@ const Remarkable = ({ content }) => {
     };
     return (
         <>
-            <section className={isHomePage ? 'lg:pb-[20px]' : 'lg:pb-0'} id='services'>
-                <div className="px-5 lg:max-w-7xl mx-auto">
+            <section className={'lg:pb-[120px]'} id='services'>
+                <div className="px-5 lg:px-0 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-5">
                         <div className="col-span-12 mb-5">
                             <h2 className='text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-bold font-sans leading-[35px] sm:leading-[45px] text-center text-black mb-3'>{title}</h2>
