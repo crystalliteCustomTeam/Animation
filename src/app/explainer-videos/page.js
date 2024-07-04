@@ -269,7 +269,7 @@ const page = () => {
     ],
   ];
   const portfolio = {
-    title: (<>Our Animated Videos that Deliver Results To Our Clientele </>),
+    title: (<>Animated Videos that Deliver Results </>),
     para: (<>Our creative prospectus, over the years, has garnered quite a reputation for itself. <br />  Here’s the evidence.</>),
     tabContents: tabContents,
     tabsInfo: true,

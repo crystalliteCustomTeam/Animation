@@ -57,7 +57,7 @@ const Header = () => {
                         </div>
                         <div className="col-span-12 lg:col-span-8 lg:block hidden">
                             <div className="nav_lists">
-                                <ul className='flex items-center justify-end gap-x-2 xl:gap-x-7'>
+                                <ul className='flex items-center justify-end gap-x-2 xl:gap-x-4'>
                                     <li>
                                         <a href="mailto:queries@infinityanimations.com" className='flex items-center'>
                                             <EnvelopeIcon className='w-[25px] h-[25px] text-[#000000]' />
@@ -74,7 +74,7 @@ const Header = () => {
                                     </li>
                                     <li>
                                         <button onClick={popupHandle} className='flex items-center text-[15px] text-white font-[700] font-sans bg-[#000000] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
-                                            Get A Call
+                                            Get A Quote
                                         </button>
                                     </li>
                                     <li>

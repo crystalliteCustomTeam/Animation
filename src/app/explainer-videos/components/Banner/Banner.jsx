@@ -11,8 +11,9 @@ import PartiTwo from "media/explainer-videos/banner2.png"
 import PartiThree from "media/explainer-videos/banner-3.png"
 import PartiFour from "media/explainer-videos/banner-4.png"
 import chatIcon from "media/video-explainer/chat-icon.png"
-import googleReview from "media/explainer-videos/googleReview.PNG"
-import clutchReview from "media/explainer-videos/clutchReview.PNG"
+import googleReview from "media/explainer-videos/googleReview.png"
+import clutchReview from "media/explainer-videos/clutchReview.png"
+import review from "media/explainer-videos/review.png"
 
 const Banner = ({ content }) => {
     const { bannerVideo } = content
@@ -39,12 +40,15 @@ const Banner = ({ content }) => {
                 <Image src={PartiFour} alt='Particle' className=' absolute right-0 bottom-[-45%] lg:bottom-0 w-[9%] lg:block hidden' />
                 <div className="px-5 lg:max-w-7xl mx-auto relative">
                     <Image src={PartiOne} alt='Particle One' className='animationUpDown absolute left-[40px] bottom-[-70px] w-[23%] z-20 lg:block hidden' />
-                    <div className="flex items-center justify-center gap-x-5" data-aos="zoom-in" data-wow-duration="3s">
-                        <div>
+                    <div className="flex items-center justify-center gap-x-5 lg:gap-x-10 mb-6" data-aos="zoom-in" data-wow-duration="3s">
+                        <div className='w-[12%]'>
+                            <Image src={googleReview} alt='Infinity Animations' />
+                        </div>
+                        <div className='w-[12%]'>
                             <Image src={clutchReview} alt='Infinity Animations' />
                         </div>
-                        <div>
-                            <Image src={googleReview} alt='Infinity Animations' />
+                        <div className='w-[12%]'>
+                            <Image src={review} alt='Infinity Animations' />
                         </div>
                     </div>
                     <h1 className='text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-bold font-sans leading-[35px] sm:leading-[45px] text-center text-black pt-2 md:pt-4 pb-2 md:pb-5' data-aos="fade-up" data-wow-duration="3s">Boost Sales with Animation Services. <br className='md:block hidden' />
@@ -64,7 +68,7 @@ const Banner = ({ content }) => {
                 </div>
                 <Image src={PartiThree} alt='Particle' className='absolute left-0 bottom-[-28%] lg:bottom-[-11%] w-[7%] lg:block hidden' />
             </section>
-            <section className='relative z-[999] mb-12 md:mb-16 md:mt-[-60px]'>
+            <section className='relative z-[9] mb-12 md:mb-16 md:mt-[-60px]'>
                 <div className='flex flex-col items-center content-center'>
                     <div className="flex gap-4 md:gap-2">
                         <div className="btn">
@@ -81,8 +85,7 @@ const Banner = ({ content }) => {
                         </a>
                     </div>
                 </div>
-            </section>
-
+            </section> 
         </>
     )
 }
