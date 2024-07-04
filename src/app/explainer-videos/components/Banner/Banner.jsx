@@ -11,8 +11,8 @@ import PartiTwo from "media/explainer-videos/banner2.png"
 import PartiThree from "media/explainer-videos/banner-3.png"
 import PartiFour from "media/explainer-videos/banner-4.png"
 import chatIcon from "media/video-explainer/chat-icon.png"
-import googleReview from "media/explainer-videos/googleReview.png"
-import clutchReview from "media/explainer-videos/clutchReview.png"
+import googleReview from "media/explainer-videos/googleReview.PNG"
+import clutchReview from "media/explainer-videos/clutchReview.PNG"
 import review from "media/explainer-videos/review.png"
 
 const Banner = ({ content }) => {
