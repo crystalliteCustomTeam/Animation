@@ -65,22 +65,26 @@ const LocationPage = () => {
     const blogDesc1 = {
         DescArray: [
             {
+                contentId:'content-1',
                 title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
                 paraArray: [
                     "Our Animators specialize in creating vibrant and captivating animations and visual effects that bring characters and stories to life. Whether it’s for commercials, explainer videos, or entertainment, our animations are designed to engage and inspire your audience. With Infinity Animations, you get top-notch quality and creativity that stands out in the competitive landscape of animation studios in NYC."
                 ],
                 DescParaArray: [
                     {
+                        contentDescId:'content-2',
                         title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
                         para: "Discover unparalleled creativity at Infinity Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Infinity Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
                     },
                     {
+                        contentDescId:'content-3',
                         title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
                         para: "Discover unparalleled creativity at Infinity Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Infinity Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
                     }
                 ],
             },
             {
+                contentId:'content-4',
                 title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
                 paraArray: [
                     "Discover unparalleled creativity at Infinity Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Infinity Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
@@ -91,21 +95,25 @@ const LocationPage = () => {
                 
             },
             {
+                contentId:'content-5',
                 title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
                 paraArray: [
                    "Discover unparalleled creativity at Infinity Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Infinity Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
                 ],
                 DescParaArray: [
                     {
+                        contentDescId:'content-6',
                         title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
                         para: "Discover unparalleled creativity at Infinity Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Infinity Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
                     },
                     {
+                        
                         title: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
                         para: "Discover unparalleled creativity at Infinity Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Infinity Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
                     }
                 ],
                 ImageDesc: Thumnail6,
+                contentSubId:'content-7',
                 subTitle: (<>Elevating Your Project's Visuals Partner with Houston Animation</>),
                 subPara: "Discover unparalleled creativity at Infinity Animations, your gateway to transformative visual storytelling. As one of the leading animation studios in Austin, we redefine narratives through animations and innovation. Our dedicated team, comprised of the finest talents in the industry, elevates ideas to captivating animations that leave a lasting impact. Infinity Animations stands apart among the top Austin animation companies, offering a seamless blend of technical expertise and imaginative flair.",
             },
