@@ -128,7 +128,7 @@ const Popup = ({ }) => {
                 window.location.href = "/thank-you";
             }
         }
-    }; 
+    };
 
     return (
         <>
