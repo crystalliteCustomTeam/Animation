@@ -6,8 +6,9 @@ import React, { useEffect, useState } from 'react'
 import { Dialog } from "@material-tailwind/react";
 import usePopup from '@/app/configs/store/Popup';
 // Images
-import btnClose from 'media/video-explainer/popup-btn.png'
-
+import closeBtn from 'media/video-explainer/close-btn.svg'
+import popUpImage from "media/images/boost-img.gif"
+import arrowRed from "media/icons/arrow-red.png"
 
 const Popup = ({ }) => {
 
@@ -51,7 +52,7 @@ const Popup = ({ }) => {
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-    const [formStatus, setFormStatus] = useState("Submit");
+    const [formStatus, setFormStatus] = useState("Get A Quote");
     const [errors, setErrors] = useState({});
     const [isDisabled, setIsDisabled] = useState(false);
     const formValidateHandle = () => {
@@ -133,54 +134,59 @@ const Popup = ({ }) => {
     return (
         <>
             <Dialog open={popup} handler={popupHandle} className='popup h-full w-full' style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(8px)' }}>
-                <section className='h-full lg:w-full py-12 px-4 md:px-6'>
-                    <div className='popupBg bg-none lg:bg-[url("../../public/video-explainer/popup-bg.png")] bg-[length:100%_100%] bg-center bg-no-repeat max-w-4xl lg:max-w-3xl xl:max-w-4xl 3xl:max-w-5xl mx-auto relative top-[50px] md:top-[100px] lg:top-[0%] xl:top-[35px] 3xl:top-[75px] bottom-0 left-0 right-0 h-[78%] md:h-auto lg:h-[110%] xl:lg:h-[90%] 3xl:h-[660px] w-full'>
-                        <div className='w-[40px] xl:w-[50px] h-[40px] xl:h-[50px] absolute top-[2%] right-[2%] flex items-center justify-center text-center rounded-[50%] border-0 cursor-pointer'>
-                            <Image onClick={popupHandle} src={btnClose} className="w-full" alt='Infinity Animations' />
+                <section className='lg:h-auto 2xl:h-full lg:w-full py-7 2xl:py-12 px-4 md:px-6 flex items-center justify-center'>
+                    <div className="popupBg bg-[url('../../public/video-explainer/popupnew-bg.png')] bg-[length:100%_100%] bg-center bg-no-repeat pt-8 pb-8 xl:pt-9 px-4 sm:px-6 lg:px-10 relative w-full lg:w-[850px] xl:w-[900px] rounded-xl">
+                        <div className='w-[40px] xl:w-[60px] h-[40px] xl:h-[60px] absolute top-[1%] right-[1%] flex items-center justify-center text-center rounded-[50%] border-0 cursor-pointer'>
+                            <Image onClick={popupHandle} src={closeBtn} className="w-full" alt='Infinity Animations' />
                         </div>
-                        <div className="grid grid-cols-12 lg:w-5/12 lg:absolute right-[5%] top-[12%] xxl:top-[15%] pt-14 md:pt-20 lg:pt-0">
-                            <div className="col-span-12">
-                                <h3 className='text-[24px] xl:text-[26px] leading-[42px] text-black text-center font-bold montserrat mb-0'>
-                                    Get A Free Quote Today!
-                                </h3>
-                                <form action="javascript:;" className='mx-auto px-5 mt-3 md:mt-5 h-full'>
-                                    <div className="name mt-1 relative w-full">
-                                        <input type="text" name="name" placeholder='Enter Your Name' className='text-[14px] text-black placeholder:text-[#D5D5D5] focus:outline-none montserrat px-[18px] h-[45px] md:h-[50px] lg:h-[40px] xl:h-[50px] w-full mb-[10px] font-[500] rounded-[6px] shadow-md' onChange={handleDataChange} required />
+                        <div className="grid grid-cols-12">
+                            <div className="col-span-12 lg:col-span-6">
+                                <div className="txt pt-5 sm:pt-0">
+                                    <p className="montserrat uppercase text-[17px] 2xl:text-[20px] leading-[30px] 2xl:leading-[30px] text-center text-white bg-white/20 backdrop-blur-2xl rounded-[20px] px-4 sm:w-6/12 lg:w-9/12 pt-[2px]">Fill This Form to Avail</p>
+                                    <h2 className="fontsfpromedium uppercase text-[25px] sm:text-[35px] tracking-normal font-bold leading-[30px] sm:leading-[45px] text-white pt-2 pb-0 xl:py-2 2xl:py-3">Amazing <span className="text-[#FB2035]">Discounts</span></h2>
+                                    <p className="text-[14px] sm:text-[16px] xl:text-[20px] text-white leading-[26px] xl:leading-[28px] montserrat pl-2 pb-3 xl:pb-4 2xl:pb-6">On Video Animation Services</p>
+                                </div>
+                                <form className="relative z-[99]">
+                                    <div className="relative">
+                                        <input type="text" id="name" name="name" placeholder="Enter Your Name" className="montserrat text-[10px] xl:text-[12px] text-white w-full h-[35px] xl:h-[50px] bg-[#242424]/100 rounded-[6px] backdrop-blur-xl px-3 lg:px-4 mb-3 2xl:mb-4 focus:outline-0" onChange={handleDataChange} />
                                         {errors.name && (
-                                            <span className="absolute left-[5px] bottom-[-5px] text-[11px] block font-medium text-[#EF0707]">
+                                            <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-6px]">
                                                 {errors.name}
                                             </span>
                                         )}
                                     </div>
-                                    <div className="email mt-1 relative w-full">
-                                        <input type="email" name="email" placeholder='Enter Email Address' className='text-[14px] text-black placeholder:text-[#D5D5D5] focus:outline-none montserrat px-[18px] h-[45px] md:h-[50px] lg:h-[40px] xl:h-[50px] w-full mb-[10px] font-[500] rounded-[6px] shadow-md' onChange={handleDataChange} required />
+                                    <div className="relative">
+                                        <input type="email" id="email" name="email" placeholder="Enter Email Address" className="montserrat text-[10px] xl:text-[12px] text-white w-full h-[35px] xl:h-[50px] bg-[#242424]/100 rounded-[6px] backdrop-blur-xl px-3 lg:px-4 mb-3 2xl:mb-4 focus:outline-0" onChange={handleDataChange} />
                                         {errors.email && (
-                                            <span className="absolute left-[5px] bottom-[-5px] text-[11px] block font-medium text-[#EF0707]">
+                                            <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-6px]">
                                                 {errors.email}
                                             </span>
                                         )}
                                     </div>
-                                    <div className="phone mt-1 relative w-full">
-                                        <input type="phone" name="phone" placeholder='Enter Phone Number' minLength={7} maxLength={15} className='text-[14px] text-black placeholder:text-[#D5D5D5] focus:outline-none montserrat px-[18px] h-[45px] md:h-[50px] lg:h-[40px] xl:h-[50px] w-full mb-[10px] font-[500] rounded-[6px] shadow-md' onChange={handleDataChange} required />
+                                    <div className="relative">
+                                        <input type="tel" id="phone" name="phone" minLength="10" maxLength="13" placeholder="Enter Phone" className="montserrat text-[10px] xl:text-[12px] text-white w-full h-[35px] xl:h-[50px] bg-[#242424]/100 rounded-[6px] backdrop-blur-xl px-3 lg:px-4 mb-3 2xl:mb-4 focus:outline-0" onChange={handleDataChange} />
                                         {errors.phone && (
-                                            <span className="absolute left-[5px] bottom-[-5px] text-[11px] block font-medium text-[#EF0707]">
+                                            <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-6px]">
                                                 {errors.phone}
                                             </span>
                                         )}
                                     </div>
-                                    <div className="message mt-1 relative w-full">
-                                        <textarea name='message' placeholder='Message' className='text-[14px] text-black placeholder:text-[#D5D5D5] focus:outline-none montserrat px-[18px] py-[12px] h-[60px] md:h-[100px] w-full font-[500] rounded-[6px] shadow-md resize-none' onChange={handleDataChange}></textarea>
+                                    <div className="relative">
+                                        <textarea id="message" name="message" className="montserrat text-[12px] text-white w-full h-[95px] bg-[#242424]/100 rounded-[6px] backdrop-blur-xl px-3 lg:px-4 pt-3 2xl:mb-4 focus:outline-0 resize-none" placeholder="Message" onChange={handleDataChange}></textarea>
                                     </div>
-                                    <div className="btn mt-2 w-full text-end">
-                                        <button type='submit' className='h-[45px] w-max px-[50px] lg:px-[25px] border-0 bg-black text-white text-[15px] font-[600] poppins rounded-[6px] ml-auto' onClick={handleFormSubmit} disabled={isDisabled}>
+                                    <button className='bg-prime text text-[10px]-xl:white border-0 h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2 mt-2 ml-[4px]' onClick={handleFormSubmit} disabled={isDisabled}>
+                                        <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">
                                             {formStatus}
-                                        </button>
-                                    </div>
+                                        </span>
+                                        <Image className="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2 object-contain formbutton" src={arrowRed} alt="Infinity Animations " />
+                                    </button>
                                 </form>
                             </div>
-                        </div>
-                        <div className='w-[50%] md:w-[30%] lg:w-[20%] h-[40px] absolute top-[0%] left-[25%] md:left-[35%] lg:left-[65%] flex items-center justify-center text-center border-0 bg-[#EF0707] text-white text-[14px] font-bold montserrat uppercase rounded-t-none rounded-[10px]'>
-                            <span>Get A Call</span>
+                            <div className="col-span-12 lg:col-span-6 lg:block hidden">
+                                <div className="max-h-[400px] 2xl:max-h-full mt-[-55px] xl:mt-0">
+                                    <Image src={popUpImage} alt="Infinity Animation" className="h-full m-auto w-[90%]" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

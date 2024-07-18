@@ -1055,7 +1055,7 @@ div.swiper-button-prev {
   }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1499px) {
   .blogsSlider .slick-dots {
     width: 11%;
   }
@@ -1079,11 +1079,18 @@ div.swiper-button-prev {
 
   .popupBg {
     height: 100% !important;
-    top: 5px !important;
+    top: 110px !important;
   }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1399px) {
+  .popupBg {
+    height: 100% !important;
+    top: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 1299px) {
   .explainerTestinomials .slick-next {
     right: 33px;
     bottom: -105px;
@@ -1120,14 +1127,25 @@ div.swiper-button-prev {
     opacity: 1;
     color: #a70a0e;
   }
+
+  .popupBg {
+    height: 100% !important;
+    top: 120px !important;
+  }
+}
+
+@media only screen and (max-width: 1099px) {
+  .popupBg {
+    top: 125px !important;
+  }
 }
 
 @media only screen and (max-width: 991px) {
   .popupBg {
-    background: #ffcc00;
     height: auto !important;
-    top: 100px !important;
-    padding-bottom: 20px;
+    top: 350px !important;
+    transform: translateY(-130px);
+    padding-bottom: 25px;
   }
 
   .servicesConcept .slick-next {
@@ -1327,7 +1345,7 @@ div.swiper-button-prev {
     top: inherit;
     bottom: -30px !important;
   }
-}
+} 
 
 @media only screen and (max-width: 567px) {
   .testiSlider.portfolio .slick-dots {
@@ -1339,7 +1357,7 @@ div.swiper-button-prev {
   }
 
   .popupBg {
-    top: 50px !important;
+    top: 250px !important;
   }
 
   .wantbg {
