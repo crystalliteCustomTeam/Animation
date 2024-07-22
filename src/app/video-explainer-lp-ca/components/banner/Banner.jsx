@@ -140,7 +140,7 @@ const Banner = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-y-12 items-center">
                         <div className="col-span-12 lg:col-span-6">
-                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[30px] font-[700] uppercase montserrat lg:w-10/12 md:leading-[35px] '>Combining Creativity With Motion & Turning Concepts Into Extraordinary Visual Experiences</h1>
+                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[30px] font-[700] uppercase montserrat lg:w-10/12 md:leading-[35px] '>Hire Canada's #1 Animation Studio, Engaging Animated Explainer Videos</h1>
                             <p className='text-white text-[18px] font-[400] montserrat lg:w-11/12 leading-[25px] py-[25px]'>
                                 Transform Your Ideas into Visually Engaging Animated Stories, Tailored to Resonate with Your Audience & Elevate your Brand.</p>
                             <ul>

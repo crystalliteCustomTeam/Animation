@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Axios from "axios";
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
+import { HiMapPin } from 'react-icons/hi2';
 // ==== Images 
 import Payment from "media/video-explainer/payment-img.png"
 import UpArrow from "media/video-explainer/up-arrow.png"
@@ -231,6 +232,11 @@ const Contact = () => {
                                     <li className='py-[10px]'>
                                         <a href="https://infinityanimations.com" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
                                             <Globe className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimations.com
+                                        </a>
+                                    </li>
+                                    <li className='py-[10px]'>
+                                        <a href="#href" className='text-[15px] md:text-[20px] text-white montserrat flex gap-2'>
+                                            <HiMapPin className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[32px] h-[25px]' /> 229 Yonge St Suite 400, Toronto, ON M5B 1N9, Canada
                                         </a>
                                     </li>
                                 </ul>

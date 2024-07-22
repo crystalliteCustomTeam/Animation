@@ -4,7 +4,7 @@ import React from 'react'
 //===== Component
 import usePopup from '@/app/configs/store/Popup';
 // ==== Images 
-import UK from "media/video-explainer/flag-icon.png"
+import flag from "media/infinity-studio/flag.png"
 import CTAPart from "media/video-explainer/cta-rht-img.png"
 
 
@@ -41,7 +41,7 @@ const Brands = ({ content }) => {
                             </div>
                             {isBtn ? <div className="btn">
                                 <a href="tel:1-833-666-6689" className='flex items-center'>
-                                    {/* <Image src={UK} alt='UK' className='object-contain' /> */}
+                                    <Image src={flag} alt='CA' className='object-contain' />
                                     <span className='text-[18px] text-black py-[10px] px-[8px] font-bold montserrat'>
                                         Toll Free: 1-833-666-6689
                                     </span>
