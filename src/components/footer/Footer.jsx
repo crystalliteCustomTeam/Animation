@@ -86,6 +86,12 @@ const Footer = () => {
             icon: mapmarker,
             target: "_blank"
         },
+        {
+            text: "229 Yonge St Suite 400, Toronto, ON M5B 1N9, Canada",
+            link: "#href",
+            icon: mapmarker,
+            // target: "_blank"
+        },
     ];
     const otherLinks = [
         {
