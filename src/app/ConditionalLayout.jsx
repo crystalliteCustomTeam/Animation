@@ -24,33 +24,39 @@ const ConditionalLayout = ({ children }) => {
         <PopupProvider value={{ popup, togglePopup }}>
             <Popup />
             <>
-                {pathname !== "/video-explainer-lp" &&
-                pathname !== "/video-explainer-lp3" &&
-                pathname !== "/explainer-videos" &&
-                pathname !== "/explainer-videos-duplicate" &&
+                {
+                    pathname !== "/video-explainer-lp" &&
                     pathname !== "/video-explainer-lp2" &&
+                    pathname !== "/video-explainer-lp3" &&
+                    pathname !== "/video-explainer-lp-ca" &&
                     pathname !== "/video-explainer-lp-new" &&
-                    pathname !== "/explainer-videos-animations" &&
+                    pathname !== "/explainer-videos" &&
                     pathname !== "/explainer-videos-new" &&
+                    pathname !== "/explainer-videos-duplicate" &&
+                    pathname !== "/explainer-videos-animations" &&
                     pathname !== "/logo-animation-lp" &&
                     pathname !== "/infinity-studio" && (
                         <Header />
-                    )}
+                    )
+                }
                 {children}
-                {pathname !== "/video-explainer-lp" &&
-                pathname !== "/video-explainer-lp3" &&
-                pathname !== "/explainer-videos" &&
-                pathname !== "/explainer-videos-duplicate" &&
+                {
+                    pathname !== "/video-explainer-lp" &&
                     pathname !== "/video-explainer-lp2" &&
+                    pathname !== "/video-explainer-lp3" &&
+                    pathname !== "/video-explainer-lp-ca" &&
                     pathname !== "/video-explainer-lp-new" &&
-                    pathname !== "/explainer-videos-animations" &&
+                    pathname !== "/explainer-videos" &&
                     pathname !== "/explainer-videos-new" &&
+                    pathname !== "/explainer-videos-duplicate" &&
+                    pathname !== "/explainer-videos-animations" &&
                     pathname !== "/logo-animation-lp" &&
                     pathname !== "/logo-animation-lp-copy" &&
                     pathname !== "/logo-animation-lp-black" &&
                     pathname !== "/infinity-studio" && (
                         <Footer />
-                    )}
+                    )
+                }
             </>
         </PopupProvider>
     )
