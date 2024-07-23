@@ -138,9 +138,9 @@ const Banner = () => {
         <>
             <section className='bg-cover bg-right-top bg-[#003465f0] lg:bg-[url("../../public/video-explainer/banner.jpg")] h-[100%] pt-[180px] lg:pt-[265px] pb-[60px] md:pb-[100px] mt-[-85px]'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
-                    <div className="grid grid-cols-12 gap-y-12">
+                    <div className="grid grid-cols-12 gap-y-12 items-center">
                         <div className="col-span-12 lg:col-span-6">
-                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[30px] font-[700] uppercase montserrat lg:w-10/12 md:leading-[35px] '>Combining Creativity With Motion & Turning Concepts Into Extraordinary Visual Experiences</h1>
+                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[30px] font-[700] uppercase montserrat lg:w-10/12 md:leading-[35px] '>Hire US #1 Animation Studio, Engaging Animated Explainer Videos</h1>
                             <p className='text-white text-[18px] font-[400] montserrat lg:w-11/12 leading-[25px] py-[25px]'>
                                 Transform Your Ideas into Visually Engaging Animated Stories, Tailored to Resonate with Your Audience & Elevate your Brand.</p>
                             <ul>
@@ -182,7 +182,7 @@ const Banner = () => {
                             </div>
                             <div className="flex gap-4 md:gap-2">
                                 <div className="btn">
-                                    <a href='tel:1-833-666-6689' className='flex items-center text-[16px] text-black font-[700] montserrat bg-[#f6c501] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                    <a href='tel:1-833-666-6689' className='flex items-center text-[14px] lg:text-[16px] text-black font-[700] montserrat bg-[#f6c501] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                         Call Now
                                     </a>
                                 </div>
@@ -196,7 +196,7 @@ const Banner = () => {
                             </div>
                         </div>
                         <div className="col-span-12 lg:col-span-6">
-                            <form action="javascript:;" className='bg-[#003465] pt-[20px] md:mr-[98px] md:ml-auto relative border-[6px] border-white lg:w-8/12 h-full'>
+                            <form action="javascript:;" className='bg-[#003465] pt-[20px] md:mr-[98px] md:ml-auto relative border-[6px] border-white lg:w-8/12'>
                                 <h3 className='text-white text-[20px] md:text-[25px] leading-[30px] montserrat font-[700] text-left py-[10px] px-[20px]'>Share Your <br className='block' />
                                     <strong className='text-[30px] text-[#f6c501] md:ml-[2rem] font-extrabold '>
                                         Animation Idea

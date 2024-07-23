@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import usePopup from '@/app/configs/store/Popup'
 import Image from 'next/image'
-//===== Images 
-// import logo from "media/images/logo.gif";
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
+//===== Images 
 import logo from "media/images/logo.gif";
 import Chat from "media/video-explainer/cht-icon.png"
-import telephone from "media/icons/call.png";
+import flag from "media/infinity-studio/flag.png"
 
 
 const HeaderLP = () => {
@@ -49,50 +48,55 @@ const HeaderLP = () => {
 
     return (
         <>
-            <header className={`fixed left-0 top-0 py-5 z-50 w-full ${isScrolled ? 'bg-[#003465] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-3' : ''}`}>
+            <header className={`fixed left-0 top-0 py-6 z-50 w-full ${isScrolled ? 'bg-[#003465] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-6' : ''}`}>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
-                        <div className="col-span-6 lg:col-span-4">
+                        <div className="col-span-4 lg:col-span-4">
                             <div className="logo">
-                                <Image priority src={logo} alt='logo' width={150} className='w-[70%] md:w-[50%] lg:w-[28%]' />
+                                <Image src={logo} alt='logo' width={150} className='w-[90%] md:w-[50%] lg:w-[28%]' />
                             </div>
                         </div>
                         <div className="col-span-12 lg:col-span-8 lg:block hidden">
                             <div className="nav_lists">
-                                <ul className='flex justify-end items-center gap-x-4 xl:gap-x-7'>
+                                <ul className='flex items-center justify-end gap-x-2 xl:gap-x-4'>
                                     <li>
                                         <a href="mailto:queries@infinityanimations.com" className='flex items-center'>
                                             <EnvelopeIcon className='w-[25px] h-[25px] text-white' />
-                                            <span className='text-[13px] text-white py-[10px] px-[8px] font-[700] font-sans'>queries@infinityanimations.com</span>
+                                            <span className='text-[13px] text-white py-[10px] px-[8px] font-[600] font-sans tracking-wider'>queries@infinityanimations.com</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href='javascript:$zopim.livechat.window.show();' className='flex items-center text-[15px] text-white font-[700] font-sans bg-[#f6c501] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:duration-700 hover:transition-all'>
+                                        <a href='javascript:$zopim.livechat.window.show();' className='flex items-center text-[15px] text-white font-[600] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all w-max'>
                                             <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100]' />
-                                            <span className='text-[15px] text-black px-[8px] font-[700] font-sans'>
+                                            <span className='text-[15px] text-white px-[8px] font-[600] font-sans'>
                                                 Live Chat
                                             </span>
                                         </a>
                                     </li>
                                     <li>
-                                        <button onClick={popupHandle} className='flex items-center text-[15px] text-black font-[700] font-sans bg-[#f6c501] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:duration-700 hover:transition-all'>
-                                            Get A Call
+                                        <button onClick={popupHandle} className='flex items-center text-[15px] text-white font-[600] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all w-max'>
+                                            Get A Quote
                                         </button>
                                     </li>
                                     <li>
-                                        <a href='tel:833-666-6689' className='flex items-center text-[15px] text-black font-[700] font-sans bg-[#f6c501] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:duration-700 hover:transition-all'>
-                                            Toll Free: 1-833-666-6689
+                                        <a href='tel:1-833-666-6689' className='flex items-center justify-center gap-3 text-[14px] text-white font-[600] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
+                                            <Image src={flag} alt='CA' className='object-contain' />
+                                            <span className='text-[14px] text-white font-sans w-max'>
+                                                Toll Free: 1-833-666-6689
+                                            </span>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-span-6 lg:hidden block">
+                        <div className="col-span-8 lg:hidden block">
                             <ul>
                                 <li>
-                                    <a href="tel:833-666-6689" className='flex items-center justify-end gap-x-3 text-white font-sans'>
-                                        <Image src={telephone} loading="lazy" width="56" height="52" class="w-[15px]" alt='Infinity Animations' />
-                                        1-833-666-6689
+                                    <a href='tel:1-833-666-6689' className='flex items-center justify-center gap-2 text-[14px] text-white font-[600] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all w-max ms-auto'>
+                                        <Image src={flag} alt='CA' className='object-contain' />
+                                        <span className='text-[13px] md:text-[16px] text-white font-sans w-max'>
+                                            Toll Free: 1-833-666-6689
+                                        </span>
                                     </a>
                                 </li>
                             </ul>

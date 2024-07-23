@@ -57,7 +57,7 @@ const OurClient = () => {
                             <Image src={ClientImage} alt='Clients' className='mt-[-57px] lg:mt-0 lg:mb-[-70px] lg:block hidden' />
                         </div>
                         <div className="col-span-12 lg:col-span-4">
-                            <Slider {...ClientSlider} className='clientSlider lg:w-[52%] xl:w-[40%] bottom-[7%] md:bottom-[33%] lg:bottom-[19%] right-0 mt-[25px] lg:mt-0'>
+                            <Slider {...ClientSlider} className='clientSlider ourClients lg:w-[52%] xl:w-[40%] bottom-[7%] md:bottom-[33%] lg:bottom-[19%] right-0 mt-[25px] lg:mt-0'>
                                 <div className="slide px-4 lg:px-12">
                                     <div className="client">
                                         <Image src={Client1} width={69} height={69} alt='Clients' />
@@ -146,7 +146,7 @@ const OurClient = () => {
                         </div>
                     </div>
                 </div>
-            </section >
+            </section>
         </>
     )
 }
