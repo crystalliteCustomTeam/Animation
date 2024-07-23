@@ -112,7 +112,7 @@ const partners = () => {
                             <Image src={Partners9} alt='Partners' className='img-fluid md:w-[60%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners9a} alt='Partners' className='img-fluid md:w-[50%] mx-auto px-5' />
+                            <Image src={Partners9a} alt='Partners' className='img-fluid w-[80%] md:w-[50%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
                             <Image src={Partners10} alt='Partners' className='img-fluid md:w-[80%] mx-auto px-5' />
