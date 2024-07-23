@@ -1005,7 +1005,7 @@ div.swiper-button-prev {
 
 /* Explainer Video */
 
-.clientSlider {
+.clientSlider.ourClients {
   position: absolute !important;
 }
 

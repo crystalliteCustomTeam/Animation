@@ -60,19 +60,6 @@ const HeaderLP = () => {
                         <div className="col-span-12 lg:col-span-8 lg:block hidden">
                             <div className="nav_lists">
                                 <ul className='flex justify-end items-center gap-x-4 xl:gap-x-7'>
-                                    {/* <li>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center gap-3 rounded-[5px] shadow-xl ml-[10px] py-[10px] px-[35px] bg-transparent border'>
-                                            <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100]' />
-                                            <span className='font-[400] text-[15px] text-white poppins tracking-[.3px] leading-[20px]'>
-                                                Live Chat
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <button onClick={popupHandle} className='flex items-center text-[15px] text-[#003262] font-[700] poppins bg-[#FFCC00] ml-[10px] py-[10px] px-[40px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all'>
-                                            Get Started
-                                        </button>
-                                    </li> */}
                                     <li>
                                         <a href="mailto:queries@infinityanimations.com" className='flex items-center'>
                                             <EnvelopeIcon className='w-[25px] h-[25px] text-white' />
@@ -103,7 +90,7 @@ const HeaderLP = () => {
                         <div className="col-span-6 lg:hidden block">
                             <ul>
                                 <li>
-                                    <a href="tel:833-666-6689" className='flex items-center justify-end gap-x-3 text-black font-sans'>
+                                    <a href="tel:833-666-6689" className='flex items-center justify-end gap-x-3 text-white font-sans'>
                                         <Image src={telephone} loading="lazy" width="56" height="52" class="w-[15px]" alt='Infinity Animations' />
                                         1-833-666-6689
                                     </a>
