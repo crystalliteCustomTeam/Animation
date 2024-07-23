@@ -75,7 +75,7 @@ const ClientThinking = () => {
                                     </span>
                                     <p className='mb-[20px] p-[20px] text-[15px] text-[#333] montserrat lg:w-11/12 mt-[13px]'>The story of the business relationship started with a 30 second video in 2019,
                                         now Infinity Animations team has produced 27 videos for our multiple brands for
-                                        us. Glad to get a reliable company in the US</p>
+                                        us. Glad to get a reliable company in the Canada.</p>
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">

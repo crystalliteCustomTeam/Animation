@@ -462,7 +462,7 @@ const page = () => {
   return (
     <>
       <div className='bg-white'>
-        <Header />
+        <He ader />
         <Banner content={banner} />
         {
           isMobile ? (

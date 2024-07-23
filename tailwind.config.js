@@ -20,7 +20,7 @@ export default {
       screens: {
         'sm': '640px',
         'md': '768px',
-        'lg': '1024px', 
+        'lg': '1024px',
         'xl': '1300px',
         '2xl': '1500px',
         'xxl': '1700px',
@@ -33,6 +33,9 @@ export default {
       colors: {
         "primary": { 100: "#f5090b" },
         "secondary": { 100: "#ff2d4b" },
+      },
+      boxShadow: {
+        '3xl': '0px 0px 11px 1px #FF2D4B',
       }
     },
   },
