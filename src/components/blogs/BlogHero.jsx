@@ -88,7 +88,7 @@ const BlogHero = ({ content }) => {
                                 <div className='pb-[15px] md:py-[15px] col-span-12 md:col-span-4 text-center  flex items-start '>
                                     <div className="flex items-center justify-between">
                                         <Image src={WhiteDot} width={10} className="hidden md:block"/>
-                                        <span className='text-white text-opacity-90 text-[16px] font-normal poppins md:ps-[35px]'>Verified In Animation</span>
+                                        <span className='text-white text-opacity-90 text-[16px] font-normal poppins md:ps-[35px] pe-1'>Verified In Animation</span>
                                         <Image src={BlueCheck} />
                                     </div>
 

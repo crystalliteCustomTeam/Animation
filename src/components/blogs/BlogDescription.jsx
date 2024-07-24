@@ -18,24 +18,31 @@ function BlogDescription({ content }) {
     const Divider = [
         {
             content: `Elevating Your Project's Visuals Partner With Houston Animation`,
+            href:'#content-1'
         },
         {
             content: `Discover Unparalleled Creativity At Infinity Animations`,
+            href:'#content-2'
         },
         {
             content: `Elevating Your Project's Visuals`,
+            href:'#content-3'
         },
         {
             content: `Security Measurements`,
+            href:'#content-4'
         },
         {
             content: `Discover Unparalleled Creativity At Infinity Animations, Your Gateway To Transformative Visual Storytelling.`,
+            href:'#content-5'
         },
         {
             content: `Discover Unparalleled Creativity At Infinity Animations,`,
+            href:'#content-6'
         },
         {
             content: `Elevating Your Project's Visuals`,
+            href:'#content-7'
         },
     ];
 
@@ -43,9 +50,9 @@ function BlogDescription({ content }) {
         <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-12 bg-none  bg-no-repeat bg-center bg-cover relative `}>
             <div className="container">
                 <div className='grid grid-cols-12 w-full '>
-                    <div className={`col-span-12 lg:col-span-8 xl:col-span-9 ms-auto pe-5 xl:pe-[95px]`}>
+                    <div className={`col-span-12 lg:col-span-8 xl:col-span-9 ms-auto pe-5 xl:pe-[95px] h-auto`}>
                         {DescArray?.map((item, index) => (
-                            <div className='pb-[25px] md:pb-[45px]'>
+                            <div className='pb-[25px] md:pb-[45px]' id={item.contentId}>
                                 <h2 className={`text-[25px] sm:text-[30px] lg:text-[40px] xl:text-[50px] font-bold font-sans leading-tight capitalize pb-2`}>
                                     {item.title}
                                 </h2>
@@ -56,7 +63,7 @@ function BlogDescription({ content }) {
                                 ))}
                                 {item.DescParaArray?.map((array, index) => (
                                     <div key={index}>
-                                        <h4 className={`text-[20px] xl:text-[30px] font-bold font-sans leading-tight my-4 capitalize`}>
+                                        <h4 className={`text-[20px] xl:text-[30px] font-bold font-sans leading-tight my-4 capitalize`} id={item.contentDescId}>
                                             {array?.title}
                                         </h4>
                                         <p className="text-[15px] sm:text-[17px] text-white text-opacity-90 font-[300] font-sans leading-[1.52857143] tracking-wider text-start pb-5">
@@ -93,7 +100,7 @@ function BlogDescription({ content }) {
                                         </div>
                                     </div>
                                 }
-                                <h4 className={`text-[20px] xl:text-[30px] font-bold font-sans leading-tight my-4 capitalize`}>
+                                <h4 className={`text-[20px] xl:text-[30px] font-bold font-sans leading-tight my-4 capitalize`} id={item.contentSubId}>
                                     {item.subTitle}
                                 </h4>
                                 {item.subPara &&
@@ -105,17 +112,17 @@ function BlogDescription({ content }) {
                             </div>
                         ))}
                     </div>
-                    <div className={`col-span-12 lg:col-span-4 xl:col-span-3 `}>
-                        <div className='grid grid-cols-12 content-start'>
+                    <div className={`col-span-12 lg:col-span-4 xl:col-span-3 relative`}>
+                        <div className='grid grid-cols-12 content-start  sticky top-[15%]'>
                             <div className='col-span-12 w-full bg-[#4A4A4A] flex flex-col text-center rounded-[10px] '>
                                 <h5 className={`text-[22px] xl:text-[32px] font-normal font-sans leading-tight my-4 capitalize`}>
                                     Quick Links
                                 </h5>
 
-                                <div class="grid grid-cols-1 divide-y-2 divide-gray-500 pb-[10px]">
+                                <div class="grid grid-cols-1 divide-y-2 divide-gray-500 pb-[10px] ">
                                 {Divider.map((items, index) => (
                                     <div key={index} className={`${style.Diver} ${index === activeIndex ? style.DiverActive : style.DiverHover} `} onClick={() => handleCardHover(index)}>
-                                        <a className="text-[14px] sm:text-[16px] px-[25px] py-[12px] text-white text-opacity-90 font-[300] font-sans leading-[1.52857143] tracking-wider text-start ">
+                                        <a className="text-[14px] sm:text-[16px] px-[25px] py-[12px] text-white text-opacity-90 font-[300] font-sans leading-[1.52857143] tracking-wider text-start " href={items.href}>
                                             {items.content}
                                         </a>
                                     </div>
