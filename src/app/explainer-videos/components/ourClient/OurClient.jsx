@@ -182,7 +182,7 @@ const OurClient = () => {
 
     return (
         <>
-            <section className="py-[30px] md:py-[70px] bg-[#FF2D4B] relative sm:before:absolute sm:before:content-[''] sm:before:h-full sm:before:w-[111px] 3xl:before:w-[145px] sm:before:right-0 sm:before:top-0 lg:before:bg-[#ff2d4c73] sm:before:z-50 lg:h-full">
+            <section className="py-[30px] md:py-[70px] bg-[#FF2D4B] relative sm:before:absolute sm:before:content-[''] sm:before:h-full sm:before:w-[111px] 3xl:before:w-[145px] sm:before:right-0 sm:before:top-0 lg:before:bg-[#ff2d4c73] sm:before:z-10 lg:h-full">
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
                         <div className="col-span-12">
@@ -193,7 +193,7 @@ const OurClient = () => {
                             <Image src={ClientImage} alt='Clients' className='mt-[-57px] lg:mt-0 lg:mb-[-70px] lg:block hidden' />
                         </div>
                         <div className="col-span-12 xl:col-span-7">
-                            <Slider {...ClientSlider} className='clientSlider lg:w-[62%] xl:w-[50%] bottom-[7%] right-0 mt-[25px] lg:mt-0 md:bottom-[33%] lg:bottom-[29%]'>
+                            <Slider {...ClientSlider} className='clientSlider w-full bottom-[7%] right-[-205px] mt-[25px] lg:mt-0 md:bottom-[33%] lg:bottom-[29%]'>
                                 {testiContentNew2.map((testimonial, index) => (
                                     <Fancybox options={{ Carousel: { infinite: false } }} key={index}>
                                         <div className='flex justify-center items-center slide px-4 lg:pe-8 my-auto' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
