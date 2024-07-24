@@ -35,6 +35,7 @@ export default {
         "secondary": { 100: "#ff2d4b" },
       },
       boxShadow: {
+        'sm': '0px 0px 6px 0px #00000082;',
         '3xl': '0px 0px 11px 1px #FF2D4B',
       }
     },

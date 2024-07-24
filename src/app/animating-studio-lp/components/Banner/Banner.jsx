@@ -18,14 +18,14 @@ const Banner = () => {
                 </video>
             </div>
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
-                <div className="grid grid-cols-12 items-center">
-                    <div className="md:col-span-6 2xl:col-span-6">
+                <div className="grid grid-cols-12 gap-y-5 md:gap-y-10 items-center">
+                    <div className="col-span-12 lg:col-span-6 2xl:col-span-6">
                         <div className="txt">
                             <h1 className='text-[25px] lg:text-[35px] font-semibold poppins leading-[35px] lg:leading-[50px] mb-5'>Boost Sales With Animation Services.Instantaneously Forge Animatedexplainer Videos!</h1>
-                            <p className='text-[16px] poppins leading-[25px] font-normal xl:pr-[20px]'>Transform Your Ideas into Visually Engaging Animated Stories, Tailored to Resonate with Your Audience & Elevate your Brand.</p>
+                            <p className='text-[14px] md:text-[16px] poppins leading-[25px] font-normal xl:pr-[20px]'>Transform Your Ideas into Visually Engaging Animated Stories, Tailored to Resonate with Your Audience & Elevate your Brand.</p>
                             <div className="flex items-center gap-4 lg:gap-8 pt-5 lg:pt-9">
                                 <div>
-                                    <Link href="javascript:;" className='flex items-center justify-center text-[14px] xl:text-[16px] text-white font-semibold poppins ml-[10px] h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                    <Link href="javascript:;" className='flex items-center justify-center text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins ml-[10px] h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                         Call Now
                                     </Link>
                                 </div>
@@ -46,33 +46,33 @@ const Banner = () => {
                         </div>
                     </div>
                     <div className="2xl:block hidden 2xl:col-span-1"></div>
-                    <div className="md:col-span-6 2xl:col-span-5">
-                        <div className='bg-[#FF2D4B] rounded-[19px] py-12 px-8 relative '>
+                    <div className="col-span-12 lg:col-span-6 2xl:col-span-5">
+                        <div className='bg-[#FF2D4B] rounded-[19px] py-12 px-6 xl:px-8 relative '>
                             <div className="flex items-center gap-x-4">
                                 <Image src={Logo1} alt='Infinity Animation' height={100} className='mt-[-49px]' />
-                                <p className='text-[17px] font-semibold leading-[26px] text-white poppins'>
+                                <p className='text-[15px] md:text-[17px] font-semibold leading-[22px] md:leading-[26px] text-white poppins'>
                                     SIGN-UP & GET UPTO <span className='text-[#FFCC00]'>50%</span> Off <br className='lg:block hidden' />
                                     ON ALL TYPE OF VIDEO SERVICES
                                 </p>
                             </div>
-                            <div className="logo absolute right-[-16px] top-[25px]">
+                            <div className="logo absolute right-[-16px] top-[2px] xl:top-[25px]">
                                 <Image src={Logo2} alt='Infinity Animation' width={125} height={60} />
                             </div>
                             <form action="javascript:;" className='pt-5 lg:pt-8'>
                                 <div className="name mb-4">
-                                    <input type="text" placeholder='Name' className='text-[16px] font-normal leading-[25px] w-full h-[50px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0' />
+                                    <input type="text" placeholder='Name' className='text-[14px] md:text-[16px] font-normal leading-[25px] w-full h-[50px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0' />
                                 </div>
                                 <div className="number mb-4">
-                                    <input type="tel" placeholder='Phone Number' className='text-[16px] font-normal leading-[25px] w-full h-[50px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0' />
+                                    <input type="tel" placeholder='Phone Number' className='text-[14px] md:text-[16px] font-normal leading-[25px] w-full h-[50px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0' />
                                 </div>
                                 <div className="email mb-4">
-                                    <input type="email" placeholder='Email' className='text-[16px] font-normal leading-[25px] w-full h-[50px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0' />
+                                    <input type="email" placeholder='Email' className='text-[14px] md:text-[16px] font-normal leading-[25px] w-full h-[50px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0' />
                                 </div>
                                 <div className="message mb-4">
-                                    <textarea name="message" placeholder='Tell us about your Project' className='text-[16px] font-normal leading-[25px] w-full h-[185px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0 pt-4'></textarea>
+                                    <textarea name="message" placeholder='Tell us about your Project' className='text-[14px] md:text-[16px] font-normal leading-[25px] w-full h-[185px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0 pt-4'></textarea>
                                 </div>
                                 <div className="btn">
-                                    <button className='h-[50px] w-full bg-black rounded-[5px] poppins text-[16px] leading-[25px] font-semibold'>Get a Free Quote</button>
+                                    <button className='h-[50px] w-full bg-black rounded-[5px] poppins text-[14px] md:text-[16px] leading-[25px] font-semibold'>Get a Free Quote</button>
                                 </div>
                             </form>
                         </div>
