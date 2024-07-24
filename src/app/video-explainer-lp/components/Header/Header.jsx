@@ -5,6 +5,7 @@ import { EnvelopeIcon } from '@heroicons/react/24/solid'
 //===== Images 
 import logo from "media/images/logo.gif";
 import Chat from "media/video-explainer/cht-icon.png"
+import flag from "media/video-explainer/flag-icon.png"
 
 
 const HeaderLP = () => {
@@ -50,9 +51,9 @@ const HeaderLP = () => {
             <header className={`fixed left-0 top-0 py-6 z-50 w-full ${isScrolled ? 'bg-[#003465] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-6' : ''}`}>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
-                        <div className="col-span-6 lg:col-span-4">
+                        <div className="col-span-4 lg:col-span-4">
                             <div className="logo">
-                                <Image src={logo} alt='logo' width={150} className='w-[70%] md:w-[50%] lg:w-[28%]' />
+                                <Image src={logo} alt='logo' width={150} className='w-[90%] md:w-[50%] lg:w-[28%]' />
                             </div>
                         </div>
                         <div className="col-span-12 lg:col-span-8 lg:block hidden">
@@ -78,18 +79,24 @@ const HeaderLP = () => {
                                         </button>
                                     </li>
                                     <li>
-                                        <a href='tel:1-833-666-6689' className='flex items-center text-[15px] text-white font-[700] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
-                                            Toll Free: 1-833-666-6689
+                                        <a href='tel:1-833-666-6689' className='flex items-center justify-center gap-3 text-[14px] text-white font-[600] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
+                                            <Image src={flag} alt='CA' className='object-contain' />
+                                            <span className='text-[14px] text-white font-sans w-max'>
+                                                Toll Free: 1-833-666-6689
+                                            </span>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-span-6 lg:hidden block">
+                        <div className="col-span-8 lg:hidden block">
                             <ul>
                                 <li>
-                                    <a href='tel:1-833-666-6689' className='flex items-center justify-center text-[11px] text-white font-[700] font-sans bg-black py-[10px] px-[10px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
-                                        Toll Free: 1-833-666-6689
+                                    <a href='tel:1-833-666-6689' className='flex items-center justify-center gap-2 text-[14px] text-white font-[600] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all w-max ms-auto'>
+                                        <Image src={flag} alt='CA' className='object-contain' />
+                                        <span className='text-[13px] md:text-[16px] text-white font-sans w-max'>
+                                            Toll Free: 1-833-666-6689
+                                        </span>
                                     </a>
                                 </li>
                             </ul>

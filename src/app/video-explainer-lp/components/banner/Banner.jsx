@@ -165,8 +165,8 @@ const Banner = () => {
                                     <span className='text-white font-[400] pb-[10px] montserrat'>Marketing Videos</span>
                                 </li>
                             </ul>
-                            <div className='flex items-center gap-5'>
-                                <Image src={BannerLogos} alt='banner-logos' className='object-contain mt-4 mb-6' />
+                            <div className='flex flex-wrap items-center justify-center md:justify-start gap-5 mt-4 mb-6'>
+                                <Image src={BannerLogos} alt='banner-logos' className='object-contain' />
                                 <div className='flex flex-col items-center'>
                                     <div className="flex items-center">
                                         <Image src={Star} alt='banner-logos' width={22} height={22} />
