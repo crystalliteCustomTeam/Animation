@@ -4,7 +4,7 @@ import usePopup from '@/app/configs/store/Popup'
 import Image from 'next/image'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 //===== Images 
-import logo from "media/images/black-logo.gif";
+import logo from "media/images/logo.gif";
 import Chat from "media/infinity-studio-lp-new/chat-icon.svg"
 import mail from "media/infinity-studio-lp-new/mail-icon.svg"
 
@@ -48,7 +48,7 @@ const Header = () => {
 
     return (
         <>
-            <header className={`fixed left-0 top-0 py-6 z-50 w-full ${isScrolled ? 'bg-[#36aac7db] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-6' : ''}`}>
+            <header className={`fixed left-0 top-0 py-6 z-50 w-full ${isScrolled ? 'bg-black shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-6' : ''}`}>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
                         <div className="col-span-6 lg:col-span-3">

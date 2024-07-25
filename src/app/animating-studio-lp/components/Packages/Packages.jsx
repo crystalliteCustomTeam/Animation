@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link'
+import { FaPhoneVolume } from 'react-icons/fa'
 // imges  
 import card1 from "media/infinity-studio-lp-new/package-1.png"
 import card2 from "media/infinity-studio-lp-new/package-2.png"
@@ -8,8 +10,6 @@ import Image1 from "media/infinity-studio-lp-new/packagesImage1.png"
 import Image2 from "media/infinity-studio-lp-new/packagesImage2.png"
 import Image3 from "media/infinity-studio-lp-new/packagesImage3.png"
 import Tick from "media/infinity-studio-lp-new/tick.png"
-import Link from 'next/link'
-import { FaPhoneVolume } from 'react-icons/fa'
 
 const Packages = () => {
     return (
@@ -22,11 +22,11 @@ const Packages = () => {
                         <p className='text-[14px] md:text-[16px] poppins text-normal text-black text-center lg:w-8/12 xl:px-[23px] mx-auto mb-4 md:mb-10'>Infinity Animations is a renowned name in the video animation industry. Our experts produce all types of animation videos with the usage of modern devices and techniques, some are discussed below:</p>
                     </div>
                     <div className="col-span-12 lg:col-span-4">
-                        <div className='bg-gradient-to-r from-[#f3d86e] to-[#FFCC00] rounded-[20px] md:rounded-[40px] lg:rounded-[25px]'>
-                            <div className="image">
-                                <Image src={card1} alt='Infinity Animation' className='w-full h-full' />
+                        <div className='bg-gradient-to-r from-[#f3d86e] to-[#FFCC00] rounded-[30px] md:rounded-[40px] lg:rounded-[25px] group'>
+                            <div className="image overflow-hidden rounded-t-[10px] lg:rounded-t-[20px]">
+                                <Image src={card1} alt='Infinity Animation' className='w-full h-full object-cover lg:group-hover:translate-x-[-100px] ease-in-out group-hover:duration-1000 duration-1000 translate-x-0 lg:max-w-[500px] lg:min-w-[500px] lg:min-h-[150px] lg:max-h-[150px] xl:min-h-[200px] xl:max-h-[200px]' />
                             </div>
-                            <Image src={Image1} alt='Infinfity Animation' className='mt-[-55px] mx-auto' />
+                            <Image src={Image1} alt='Infinfity Animation' className='mt-[-55px] mx-auto relative z-10' />
                             <div className='px-5 pb-1'>
                                 <p className='text-center text-[17px] xl:text-[20px] font-semibold leading-[24px] xl:leading-[30px] poppins text-black'>Startup Package</p>
                                 <h5 className='text-[50px] xl:text-[70px] font-bold poppins text-center leading-[60px] xl:leading-[85px] mb-2 text-black'>$195</h5>
@@ -76,11 +76,11 @@ const Packages = () => {
                         </div>
                     </div>
                     <div className="col-span-12 lg:col-span-4">
-                        <div className='bg-gradient-to-r from-[#003262] to-[#005DB8] rounded-[20px] md:rounded-[40px] lg:rounded-[25px] shadow-sm lg:scale-[1.04]'>
-                            <div className="image">
-                                <Image src={card2} alt='Infinity Animation' className='w-full h-full' />
+                        <div className='bg-gradient-to-r from-[#003262] to-[#005DB8] rounded-[30px] md:rounded-[40px] lg:rounded-[25px] overflow-hidden group shadow-sm lg:scale-[1.04]'>
+                            <div className="image overflow-hidden rounded-t-[10px] lg:rounded-t-[20px]">
+                                <Image src={card2} alt='Infinity Animation' className='w-full h-full lg:group-hover:translate-x-[-100px] ease-in-out group-hover:duration-1000 duration-1000 translate-x-0 lg:max-w-[500px] lg:min-w-[500px] lg:min-h-[150px] lg:max-h-[150px] xl:min-h-[200px] xl:max-h-[200px]' />
                             </div>
-                            <Image src={Image2} alt='Infinfity Animation' className='mt-[-55px] mx-auto' />
+                            <Image src={Image2} alt='Infinfity Animation' className='mt-[-55px] mx-auto relative z-10' />
                             <div className='px-5 pb-1'>
                                 <p className='text-center text-[17px] xl:text-[20px] font-semibold leading-[24px] xl:leading-[30px] poppins text-white'>Classic Package</p>
                                 <h5 className='text-[50px] xl:text-[70px] font-bold poppins text-center leading-[60px] xl:leading-[85px] mb-2 text-white'>$499</h5>
@@ -130,11 +130,11 @@ const Packages = () => {
                         </div>
                     </div>
                     <div className="col-span-12 lg:col-span-4">
-                        <div className='bg-gradient-to-r from-[#C55F61] to-[#A70A0E] rounded-[20px] md:rounded-[40px] lg:rounded-[25px]'>
-                            <div className="image">
-                                <Image src={card3} alt='Infinity Animation' className='w-full h-full' />
+                        <div className='bg-gradient-to-r from-[#C55F61] to-[#A70A0E] rounded-[30px] md:rounded-[40px] lg:rounded-[25px] group'>
+                            <div className="image overflow-hidden rounded-t-[10px] lg:rounded-t-[20px]">
+                                <Image src={card3} alt='Infinity Animation' className='w-full h-full lg:group-hover:translate-x-[-100px] ease-in-out group-hover:duration-1000 duration-1000 translate-x-0 lg:max-w-[500px] lg:min-w-[500px] lg:min-h-[150px] lg:max-h-[150px] xl:min-h-[200px] xl:max-h-[200px]' />
                             </div>
-                            <Image src={Image3} alt='Infinfity Animation' className='mt-[-55px] mx-auto' />
+                            <Image src={Image3} alt='Infinfity Animation' className='mt-[-55px] mx-auto relative z-10' />
                             <div className='px-5 pb-1'>
                                 <p className='text-center text-[17px] xl:text-[20px] font-semibold leading-[24px] xl:leading-[30px] poppins text-white'>Premium Package</p>
                                 <h5 className='text-[50px] xl:text-[70px] font-bold poppins text-center leading-[60px] xl:leading-[85px] mb-2 text-white'>$799</h5>

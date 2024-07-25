@@ -65,35 +65,27 @@ body {
 }
 
 .bg-prime {
-  background: linear-gradient(
-    90deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
 }
 
 .bg-second {
-  background: linear-gradient(
-    0deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
 }
 
 .bg-third {
-  background: linear-gradient(
-    0deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 40%
-  );
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 40%);
 }
 
 .bg-secondary {
-  background: linear-gradient(
-    90deg,
-    rgba(55, 178, 204, 1) 0%,
-    rgba(52, 209, 192) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(55, 178, 204, 1) 0%,
+      rgba(52, 209, 192) 100%);
 }
 
 .testicard::before {
@@ -138,6 +130,7 @@ body {
 }
 
 @keyframes transform-scale-item {
+
   0%,
   100% {
     transform: scale(1);
@@ -264,11 +257,11 @@ div#ty7 {
   opacity: 0.3;
 }
 
-.newreactslide .slick-current + .slick-slide {
+.newreactslide .slick-current+.slick-slide {
   opacity: unset;
 }
 
-.newreactslide .slick-current + .slick-slide svg {
+.newreactslide .slick-current+.slick-slide svg {
   fill: #d50d12;
   opacity: unset;
   color: #d50d12;
@@ -297,7 +290,7 @@ div#ty7 {
   top: -40px;
 }
 
-.newreactslide .slick-current + .slick-slide::after {
+.newreactslide .slick-current+.slick-slide::after {
   position: absolute;
   content: "";
   width: 6.5%;
@@ -373,7 +366,7 @@ div#ty7 {
   background: rgb(203 203 203) !important;
 }
 
-#newslides .swiper-horizontal > .swiper-pagination-bullets,
+#newslides .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -383,14 +376,14 @@ div#ty7 {
   width: 100%;
 }
 
-#newslides .swiper-slide-active + swiper-slide {
+#newslides .swiper-slide-active+swiper-slide {
   padding-bottom: 150px;
   transform: translateY(42.8%) translateX(2%) scale(1.7);
   z-index: -1;
   position: relative;
 }
 
-#newslides .swiper-slide-active + swiper-slide + swiper-slide {
+#newslides .swiper-slide-active+swiper-slide+swiper-slide {
   padding-bottom: 247px;
   transform: translateY(37.8%) translateX(-65%) scale(1.6);
   z-index: -2;
@@ -411,11 +404,9 @@ div#ty7 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    0deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
 }
 
 .packagesScroll::-webkit-scrollbar {
@@ -637,12 +628,10 @@ div#ty7 {
 .overlay-div-testi .overlay-testi {
   position: absolute;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0) 53%,
-    rgba(0, 0, 0, 1) 99%
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 53%,
+      rgba(0, 0, 0, 1) 99%);
 }
 
 .newvideoSlider .slick-next {
@@ -685,7 +674,7 @@ div#ty7 {
   height: auto;
 }
 
-.newvideoSlider.animiStudio .slick-track{
+.newvideoSlider.animiStudio .slick-track {
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -880,11 +869,9 @@ div#ty7 {
 }
 
 .videoSlide {
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(38, 1, 1, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(38, 1, 1, 1) 100%);
   position: relative;
 }
 
@@ -919,11 +906,9 @@ div#ty7 {
 
 #testimonialsCMP .swiper-slide-active {
   /* background-color: #fff; */
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(38, 1, 1, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(38, 1, 1, 1) 100%);
   box-shadow: 0 0 68.62px 4.38px rgba(0, 0, 0, 0.09);
   opacity: 1;
   border-radius: 8px;
@@ -1024,10 +1009,7 @@ div.swiper-button-prev {
   display: block;
 }
 
-.studioexplainSlider
-  .slick-slide.slick-active.slick-current
-  .card
-  .nonActiveImg {
+.studioexplainSlider .slick-slide.slick-active.slick-current .card .nonActiveImg {
   display: none;
 }
 
@@ -1063,6 +1045,32 @@ div.swiper-button-prev {
   padding-right: 5px;
   text-align: start;
 }
+
+/*=============== ReadClientSlider Start */
+
+.readClientSlider .slick-next:before {
+  content: url(/infinity-studio-lp-new/nextslide.png) !important;
+}
+
+.readClientSlider .slick-prev:before {
+  content: url(/infinity-studio-lp-new/prevslide.png) !important;
+}
+
+.readClientSlider .slick-prev {
+  left: 45%;
+}
+
+.readClientSlider .slick-next {
+  right: 45%;
+}
+
+.readClientSlider .slick-prev,
+.readClientSlider .slick-next {
+  top: inherit;
+  bottom: -26%;
+}
+
+/*=============== ReadClientSlider End */
 
 /*=============== Media Query Start ===============*/
 
@@ -1170,6 +1178,20 @@ div.swiper-button-prev {
 @media only screen and (max-width: 1099px) {
   .popupBg {
     top: 125px !important;
+  }
+
+  .readClientSlider .slick-prev {
+    left: 40%;
+  }
+
+  .readClientSlider .slick-next {
+    right: 45%;
+  }
+
+  .readClientSlider .slick-prev,
+  .readClientSlider .slick-next {
+    top: inherit;
+    bottom: -22% !important;
   }
 }
 
@@ -1380,6 +1402,14 @@ div.swiper-button-prev {
   }
 }
 
+@media only screen and (max-width: 768px) {
+
+  .readClientSlider .slick-prev,
+  .readClientSlider .slick-next {
+    bottom: 2% !important;
+  }
+}
+
 @media only screen and (max-width: 567px) {
   .testiSlider.portfolio .slick-dots {
     bottom: -40px;
@@ -1394,11 +1424,9 @@ div.swiper-button-prev {
   }
 
   .wantbg {
-    background: linear-gradient(
-      0deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 40%
-    );
+    background: linear-gradient(0deg,
+        rgba(245, 9, 11, 1) 0%,
+        rgba(255, 45, 75, 1) 40%);
   }
 
   .blogsSlider .slick-next {
@@ -1495,12 +1523,32 @@ div.swiper-button-prev {
   .overlay-div {
     top: 7%;
   }
+
+  .readClientSlider .slick-prev,
+  .readClientSlider .slick-next {
+    bottom: 3% !important;
+  }
 }
 
 @media (max-width: 480px) {
   .newreactslide .slick-slide {
     opacity: 1;
   }
+
+  .readClientSlider .slick-next {
+    right: 40%;
+  }
+
+  .readClientSlider .slick-prev {
+    left: 35%;
+  }
+
+  .readClientSlider .slick-prev,
+  .readClientSlider .slick-next {
+    top: inherit;
+    bottom: 8% !important;
+  }
+
 }
 
 .W100 {

@@ -25,6 +25,9 @@ import Remark6 from "media/infinity-studio-lp-new/remark6.png"
 import Remark7 from "media/infinity-studio-lp-new/remark7.png"
 import Remark8 from "media/infinity-studio-lp-new/remark8.png"
 import Remark9 from "media/infinity-studio-lp-new/remark9.png"
+import Faqs from './components/faqs/Faqs'
+import Footer from './components/Footer/Footer'
+import OurClient from './components/ourClient/OurClient'
 
 const page = () => {
     //==== Animations Sections =====//
@@ -118,6 +121,36 @@ const page = () => {
         branImage: SaleShine,
         isColor: true,
     }
+    //===== FAQS =====//
+    const accordionData = [
+        {
+            question: 'How Many People Will Work On My Video?',
+            list: [
+                "Understanding your business and marketing objectives",
+                "Story and script development",
+                "Storyboard",
+                "Voiceover",
+                "Illustration",
+                "Animation",
+                "Delivery/publication",
+            ]
+        },
+        {
+            question: 'How Many People Will Work On My Video?',
+            answer: "Step into a realm of immersive storytelling with our cutting-edge 3D animations. Elevate your visual narratives, whether for product showcases, virtual tours, or cinematic experiences.",
+        },
+        {
+            question: 'Do I Get Full Copyrights To The Video?',
+            answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
+        },
+        {
+            question: 'Do You Produce All Types Of Animation Videos And Provide Video Concept Too, If I Have No Concept Idea?',
+            answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
+        }
+    ];
+    const faqs = {
+        accordionData: accordionData,
+    }
     return (
         <>
             <Header />
@@ -132,6 +165,9 @@ const page = () => {
             <Serve />
             <Remarkable content={remarkable} />
             <Brand content={sales} />
+            <OurClient />
+            <Faqs content={faqs} />
+            <Footer />
         </>
     )
 }
