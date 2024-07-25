@@ -3,21 +3,20 @@ import React from 'react'
 import Header from './components/Header/Header'
 import Banner from './components/Banner/Banner'
 import AwardWinning from './components/AwardWinning/AwardWinning'
+import Portfolio from './components/Portfolio/portfolio'
 import BookMeeting from './components/BookMeeting/BookMeeting'
 import Packages from './components/Packages/Packages'
 import Animation from './components/video-animation/Animation'
 import Brand from './components/BrandShine/Brand'
-import Faqs from './components/faqs/Faqs'
-import Footer from './components/Footer/Footer'
-import OurClient from './components/ourClient/OurClient'
-import Portfolio from './components/Portfolio/portfolio'
-// Images
-import BranShine from "media/infinity-studio-lp-new/brandshine.png"
 import Animations from './components/Animations/Animations'
 import Serve from './components/Serve/Serve'
 import Remarkable from './components/Remarkable/Remarkable'
+import OurClient from './components/ourClient/OurClient'
+import Faqs from './components/faqs/Faqs'
+import Footer from './components/Footer/Footer'
+// Images
+import BranShine from "media/infinity-studio-lp-new/brandshine.png"
 import SaleShine from "media/explainer-videos/salesimage.png"
-
 // ===== Card Images
 import Remark1 from "media/infinity-studio-lp-new/remark1.png"
 import Remark2 from "media/infinity-studio-lp-new/remark2.png"
@@ -28,6 +27,7 @@ import Remark6 from "media/infinity-studio-lp-new/remark6.png"
 import Remark7 from "media/infinity-studio-lp-new/remark7.png"
 import Remark8 from "media/infinity-studio-lp-new/remark8.png"
 import Remark9 from "media/infinity-studio-lp-new/remark9.png"
+
 
 const page = () => {
     //==== Animations Sections =====//

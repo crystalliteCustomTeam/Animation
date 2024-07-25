@@ -14,7 +14,6 @@ import Animation from './components/video-animation/Animation'
 import OurClient from './components/ourClient/OurClient'
 import Extraordinary from './components/Extraordinary/Extraordinary'
 import Footer from './components/Footer/Footer'
-
 // ===== Images 
 import BranShine from "media/explainer-videos/brandshine.png"
 import SaleShine from "media/explainer-videos/salesimage.png"
@@ -26,7 +25,6 @@ import David from "media/thumbnails/david.jpg";
 import Emma from "media/thumbnails/emma.jpg";
 import Michael from "media/thumbnails/michael.jpg";
 import Sarah from "media/thumbnails/sarah.png";
-
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.png"
 import Thumnail2 from "media/thumbnails/2d-animation/2.png"
@@ -58,7 +56,6 @@ import Thumnail27 from "media/thumbnails/hybrid/3.png"
 import Thumnail28 from "media/thumbnails/hybrid/4.png"
 import Thumnail29 from "media/thumbnails/hybrid/5.png"
 import Thumnail30 from "media/thumbnails/hybrid/6.png"
-
 // ===== Card Images
 import Remark10 from "media/explainer-videos/remark24.png"
 import Remark11 from "media/explainer-videos/remark20.png"

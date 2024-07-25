@@ -1,313 +1,191 @@
-import React from 'react'
 import Image from 'next/image'
-//===== Component
-import usePopup from '@/app/configs/store/Popup';
-// ==== Images 
-import Package1 from "media/animating-studio/package-img-1.png"
-import Package2 from "media/animating-studio/package-img-2.png"
-import Package3 from "media/animating-studio/package-img-3.png"
-import Rocket from "media/animating-studio/rocket.svg"
-import Message from "media/animating-studio/message.svg"
-import Setting from "media/animating-studio/setting.svg"
-import ArrowWhite from "media/animating-studio/arrow-white.svg"
-import ArrowBlack from "media/animating-studio/arrow-black.svg"
-import PackageMsg1 from "media/animating-studio/package-msg-1.svg"
-import PackageMsg2 from "media/animating-studio/package-msg-2.svg"
+import React from 'react'
+import Link from 'next/link'
+import { FaPhoneVolume } from 'react-icons/fa'
+// imges  
+import card1 from "media/infinity-studio-lp-new/package-1.png"
+import card2 from "media/infinity-studio-lp-new/package-2.png"
+import card3 from "media/infinity-studio-lp-new/package-3.png"
+import Image1 from "media/infinity-studio-lp-new/packagesImage1.png"
+import Image2 from "media/infinity-studio-lp-new/packagesImage2.png"
+import Image3 from "media/infinity-studio-lp-new/packagesImage3.png"
+import Tick from "media/infinity-studio-lp-new/tick.png"
 
 const Packages = () => {
-    const { popup, togglePopup } = usePopup()
-    const popupHandle = () => {
-        togglePopup(popup)
-    }
     return (
-        <>
-            <section className='pt-[40px] pb-0 md:pt-[20px] md:pb-[40px] packages'>
-                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
-                    <div className="grid grid-cols-12 gap-6 lg:max-w-7xl mx-auto">
-                        <div className="col-span-12 md:mb-[30px]">
-                            <h3 className='text-[#000000] text-center font-[600] poppins text-[15px] md:text-[20px] lg:text-[25px]'>Pricing</h3>
-                            <h2 className='text-[#000000] text-center font-[600] poppins text-[32px] md:text-[42px] lg:text-[48px]'>Types of <span className="text-[#A70A0E]">Explainer Videos</span></h2>
-                            <p className='text-[#231F20] text-[16px] poppins font-[400] py-[17px] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-0'>Infinity Animations is a renowned name in the video animation industry. Our experts produce all <br className='hidden lg:block' /> types of animation videos with the usage of modern devices and techniques, some are <br className='hidden lg:block' /> discussed below:</p>
+        <section className='bg-white py-[50px] lg:py-[90px]'>
+            <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
+                <div className="grid grid-cols-12 gap-5">
+                    <div className="col-span-12">
+                        <h3 className='text-[#000000] text-center font-[600] poppins text-[15px] md:text-[20px] lg:text-[25px]'>Pricing</h3>
+                        <h2 className='text-[#000000] text-center font-[600] poppins text-[32px] md:text-[42px] lg:text-[48px]'>Types of <span className="text-[#A70A0E]">Explainer</span> Videos</h2>
+                        <p className='text-[14px] md:text-[16px] poppins text-normal text-black text-center lg:w-8/12 xl:px-[23px] mx-auto mb-4 md:mb-10'>Infinity Animations is a renowned name in the video animation industry. Our experts produce all types of animation videos with the usage of modern devices and techniques, some are discussed below:</p>
+                    </div>
+                    <div className="col-span-12 lg:col-span-4">
+                        <div className='bg-gradient-to-r from-[#f3d86e] to-[#FFCC00] rounded-[30px] md:rounded-[40px] lg:rounded-[25px] group'>
+                            <div className="image overflow-hidden rounded-t-[10px] lg:rounded-t-[20px]">
+                                <Image src={card1} alt='Infinity Animation' className='w-full h-full object-cover lg:group-hover:translate-x-[-100px] ease-in-out group-hover:duration-1000 duration-1000 translate-x-0 lg:max-w-[500px] lg:min-w-[500px] lg:min-h-[150px] lg:max-h-[150px] xl:min-h-[200px] xl:max-h-[200px]' />
+                            </div>
+                            <Image src={Image1} alt='Infinfity Animation' className='mt-[-55px] mx-auto relative z-10' />
+                            <div className='px-5 pb-2'>
+                                <p className='text-center text-[17px] xl:text-[20px] font-semibold leading-[24px] xl:leading-[30px] poppins text-black'>Startup Package</p>
+                                <h5 className='text-[50px] xl:text-[70px] font-bold poppins text-center leading-[60px] xl:leading-[85px] mb-2 text-black'>$195</h5>
+                                <ul className='pb-4'>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
+                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
+                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Script Writing</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
+                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Custom Artwork</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
+                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Background Music</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
+                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>HD Format Video</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
+                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Dedicated Support</span>
+                                    </li>
+                                </ul>
+                                <div className="btn">
+                                    <Link href="javascript:;" className='flex items-center justify-center text-[11px] xl:text-[15px] text-white font-medium poppins bg-[#A70A0E] py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
+                                        Get A Call For Free Consultation
+                                    </Link>
+                                </div>
+                                <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] px-2">
+                                    <a href="tel:1-833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-normal'>
+                                        <FaPhoneVolume className='rotate-[-45deg] text-black mt-1' />
+                                        <span className='text-[#231f20] text-[16px] pt-2'>
+                                            1-833-666-6689
+                                        </span>
+                                    </a>
+                                    <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-normal'>
+                                        <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div className="grid grid-cols-12 gap-8">
-                        <div className="col-span-12 lg:col-span-4 ">
-                            <div className="card bg-gradient-to-br from-[#FFE680] to-[#FFCC00] rounded-[35px] pb-[15px]">
-                                <div className='relative mb-[45px]'>
-                                    <Image src={Package1} />
-                                    <div className='bg-[#fff] w-[75px] h-[75px] flex justify-center items-center rounded-[50%] right-[40%] left-[40%] bottom-[-40px] absolute'>
-                                        <Image src={Rocket} />
-                                    </div>
+                    <div className="col-span-12 lg:col-span-4">
+                        <div className='bg-gradient-to-r from-[#003262] to-[#005DB8] rounded-[30px] md:rounded-[40px] lg:rounded-[25px] overflow-hidden group shadow-sm lg:scale-[1.04]'>
+                            <div className="image overflow-hidden rounded-t-[10px] lg:rounded-t-[20px]">
+                                <Image src={card2} alt='Infinity Animation' className='w-full h-full lg:group-hover:translate-x-[-100px] ease-in-out group-hover:duration-1000 duration-1000 translate-x-0 lg:max-w-[500px] lg:min-w-[500px] lg:min-h-[150px] lg:max-h-[150px] xl:min-h-[200px] xl:max-h-[200px]' />
+                            </div>
+                            <Image src={Image2} alt='Infinfity Animation' className='mt-[-55px] mx-auto relative z-10' />
+                            <div className='px-5 pb-2'>
+                                <p className='text-center text-[17px] xl:text-[20px] font-semibold leading-[24px] xl:leading-[30px] poppins text-white'>Classic Package</p>
+                                <h5 className='text-[50px] xl:text-[70px] font-bold poppins text-center leading-[60px] xl:leading-[85px] mb-2 text-white'>$499</h5>
+                                <ul className='pb-4'>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Script Writing</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Professional Voice-over & SFX</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Hand-drawn Illustrations</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>HD Format Video</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Dedicated Support</span>
+                                    </li>
+                                </ul>
+                                <div className="btn">
+                                    <Link href="javascript:;" className='flex items-center justify-center text-[11px] xl:text-[15px] text-[#0056AB] font-medium poppins bg-white py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
+                                        Get A Call For Free Consultation
+                                    </Link>
                                 </div>
-                                <div className="card_top text-center pt-[15px] relative z-1">
-                                    <h3 className='text-[#000] poppins text-[17px] font-[500] uppercase font-[700]'>Startup Package</h3>
-                                    <h4 className='text-[#231f20] text-[40px] md:text-[50px] font-[700] poppins '>$195</h4>
-                                </div>
-                                <div className="grid grid-cols-12 items-end px-[15px] pb-[20px]  relative z-1 ">
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowBlack} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> 60 Seconds Duration</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowBlack} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Script Writing</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowBlack} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Custom Artwork</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowBlack} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Background Music</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowBlack} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>HD Format Video</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12 h-[32px] ">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowBlack} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>Dedicated Support</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
-                                    <div className="hidden md:flex flex-wrap gap-y-3 items-center justify-between">
-                                        <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-[#000] montserrat flex flex-col justify-center font-[700]'>
-                                            speak with us
-                                            <span className='text-[#231f20] text-[16px] pt-2'>833-666-6689</span>
-                                        </a>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-[#000] montserrat flex flex-col justify-center font-[700]'>
-                                            Want to Discuss
-                                            <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
-                                        </a>
-                                    </div>
-                                    <div className="flex-wrap flex items-center justify-between mt-[0px] md:mt-[35px] mb-[20px]">
-                                        <button onClick={popupHandle} className='flex items-center text-[16px] text-white font-[700] poppins bg-[#A70A0E] py-[12px] px-[20px] lg:px-[30px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
-                                            Get Started
-                                        </button>
-                                        <a href='tel:833-666-6689' className='flex items-center justify-center text-[15px] text-[#A70A0E] font-[700] font-sans bg-transparent ml-[10px] border border-[#A70A0E] py-[12px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl '>
-                                            Live Chat <span className='ml-[15px]'><Image src={PackageMsg1} /></span>
-                                        </a>
-                                    </div>
+                                <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] px-2">
+                                    <a href="tel:1-833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-normal'>
+                                        <FaPhoneVolume className='rotate-[-45deg] text-white mt-1' />
+                                        <span className='text-white text-[16px] pt-2'>
+                                            1-833-666-6689
+                                        </span>
+                                    </a>
+                                    <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-normal'>
+                                        <span className='text-white text-[16px] pt-2'>Live Chat Now</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-12 lg:col-span-4 ">
-                            <div className="card bg-gradient-to-br from-[#005DB8] to-[#003262] rounded-[35px] pb-[15px]">
-                                <div className='relative mb-[45px]'>
-                                    <Image src={Package2} />
-                                    <div className='bg-[#fff] w-[75px] h-[75px] flex justify-center items-center rounded-[50%] right-[40%] left-[40%] bottom-[-40px] absolute'>
-                                        <Image src={Setting} />
-                                    </div>
+                    </div>
+                    <div className="col-span-12 lg:col-span-4">
+                        <div className='bg-gradient-to-r from-[#C55F61] to-[#A70A0E] rounded-[30px] md:rounded-[40px] lg:rounded-[25px] group'>
+                            <div className="image overflow-hidden rounded-t-[10px] lg:rounded-t-[20px]">
+                                <Image src={card3} alt='Infinity Animation' className='w-full h-full lg:group-hover:translate-x-[-100px] ease-in-out group-hover:duration-1000 duration-1000 translate-x-0 lg:max-w-[500px] lg:min-w-[500px] lg:min-h-[150px] lg:max-h-[150px] xl:min-h-[200px] xl:max-h-[200px]' />
+                            </div>
+                            <Image src={Image3} alt='Infinfity Animation' className='mt-[-55px] mx-auto relative z-10' />
+                            <div className='px-5 pb-2'>
+                                <p className='text-center text-[17px] xl:text-[20px] font-semibold leading-[24px] xl:leading-[30px] poppins text-white'>Premium Package</p>
+                                <h5 className='text-[50px] xl:text-[70px] font-bold poppins text-center leading-[60px] xl:leading-[85px] mb-2 text-white'>$799</h5>
+                                <ul className='pb-4'>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Script Writing</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Professional Voice-over & SFX</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Hand-drawn Illustrations</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>HD Format Video</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Dedicated Support</span>
+                                    </li>
+                                </ul>
+                                <div className="btn">
+                                    <Link href="javascript:;" className='flex items-center justify-center text-[11px] xl:text-[15px] text-[#AB1518] font-medium poppins bg-white py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
+                                        Get A Call For Free Consultation
+                                    </Link>
                                 </div>
-                                <div className="card_top text-center pt-[15px] relative z-1">
-                                    <h3 className='text-[#fff] poppins text-[17px] font-[500] uppercase font-[700]'>Classic Package</h3>
-                                    <h4 className='text-[#fff] text-[40px] md:text-[50px] font-[700] poppins '>$499</h4>
-                                </div>
-                                <div className="grid grid-cols-12 items-end px-[15px]  relative z-1">
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowWhite} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-[#fff] font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> 60 Seconds Duration</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowWhite} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-[#fff] font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Script Writing</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowWhite} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-[#fff] font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Professional Voice-over & SFX</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowWhite} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-[#fff] font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Hand-drawn Illustrations</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowWhite} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-[#fff] font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Unlimited Revisions</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowWhite} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-[#fff] font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>HD Format Video</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12 h-[32px] invisible">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowWhite} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-[#fff] font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>Dedicated Support</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
-                                    <div className="hidden md:flex flex-wrap gap-y-3 items-center justify-between">
-                                        <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-[#fff] montserrat flex flex-col justify-center font-[700]'>
-                                            speak with us
-                                            <span className='text-[#fff] text-[16px] pt-2'>833-666-6689</span>
-                                        </a>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-[#fff] montserrat flex flex-col justify-center font-[700]'>
-                                            Want to Discuss
-                                            <span className='text-[#fff] text-[16px] pt-2'>Live Chat Now</span>
-                                        </a>
-                                    </div>
-                                    <div className="flex-wrap flex items-center justify-between mt-[0px] md:mt-[35px] mb-[20px]">
-                                        <button onClick={popupHandle} className='flex items-center text-[16px] text-[#005DB8] font-[700] poppins bg-white py-[12px] px-[20px] lg:px-[30px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
-                                            Get Started
-                                        </button>
-                                        <a href='tel:833-666-6689' className='flex items-center justify-center text-[15px] text-[#fff] font-[700] font-sans bg-transparent ml-[10px] border border-[#fff] py-[12px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl '>
-                                            Live Chat <span className='ml-[15px]'><Image src={PackageMsg2} /></span>
-                                        </a>
-                                    </div>
+                                <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] px-2">
+                                    <a href="tel:1-833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-normal'>
+                                        <FaPhoneVolume className='rotate-[-45deg] text-white mt-1' />
+                                        <span className='text-white text-[16px] pt-2'>
+                                            1-833-666-6689
+                                        </span>
+                                    </a>
+                                    <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-normal'>
+                                        <span className='text-white text-[16px] pt-2'>Live Chat Now</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-12 lg:col-span-4 ">
-                            <div className="card bg-gradient-to-br from-[#C76365] to-[#A70A0E] rounded-[35px] pb-[15px]">
-                                <div className='relative mb-[45px]'>
-                                    <Image src={Package3} />
-                                    <div className='bg-[#fff] w-[75px] h-[75px] flex justify-center items-center rounded-[50%] right-[40%] left-[40%] bottom-[-40px] absolute'>
-                                        <Image src={Message} />
-                                    </div>
-                                </div>
-                                <div className="card_top text-center pt-[15px] relative z-1">
-                                    <h3 className='text-[#fff] poppins text-[17px] font-[500] uppercase font-[700]'>Premium Package</h3>
-                                    <h4 className='text-[#fff] text-[40px] md:text-[50px] font-[700] poppins '>$799</h4>
-                                </div>
-                                <div className="grid grid-cols-12 items-end px-[15px]  relative z-1">
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowWhite} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-[#fff] font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> 60 Seconds Duration</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowWhite} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-[#fff] font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Script Writing</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowWhite} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-[#fff] font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Professional Voice-over & SFX</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowWhite} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-[#fff] font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Custom 2D Character Illustration</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowWhite} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-[#fff] font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Unlimited Revisions</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12  h-[32px]">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowWhite} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-[#fff] font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>HD Format Video</span>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-12 h-[32px] invisible">
-                                        <div className='flex items-center ps-[10px] '>
-                                            <div className='w-[15px] h-[15px]'>
-                                                <Image src={ArrowWhite} alt='banner-logos' className='img-fluid' />
-                                            </div>
-                                            <span className='text-[#fff] font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>Dedicated Support</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
-                                    <div className="hidden md:flex flex-wrap gap-y-3 items-center justify-between">
-                                        <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-[#fff] montserrat flex flex-col justify-center font-[700]'>
-                                            speak with us
-                                            <span className='text-[#fff] text-[16px] pt-2'>833-666-6689</span>
-                                        </a>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-[#fff] montserrat flex flex-col justify-center font-[700]'>
-                                            Want to Discuss
-                                            <span className='text-[#fff] text-[16px] pt-2'>Live Chat  Now</span>
-                                        </a>
-                                    </div>
-                                    <div className="flex-wrap flex items-center justify-between mt-[0px] md:mt-[35px] mb-[20px]">
-                                        <button onClick={popupHandle} className='flex items-center text-[16px] text-[#A70A0E] font-[700] poppins bg-white py-[12px] px-[20px] lg:px-[30px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
-                                            Get Started
-                                        </button>
-                                        <a href='tel:833-666-6689' className='flex items-center justify-center text-[15px] text-[#fff] font-[700] font-sans bg-transparent ml-[10px] border border-[#fff] py-[12px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl '>
-                                            Live Chat <span className='ml-[15px]'><Image src={PackageMsg2} /></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-            </section>
-        </>
+            </div>
+        </section>
     )
 }
 

@@ -27,33 +27,33 @@ const Packages = () => {
                                 <Image src={card1} alt='Infinity Animation' className='w-full h-full object-cover lg:group-hover:translate-x-[-100px] ease-in-out group-hover:duration-1000 duration-1000 translate-x-0 lg:max-w-[500px] lg:min-w-[500px] lg:min-h-[150px] lg:max-h-[150px] xl:min-h-[200px] xl:max-h-[200px]' />
                             </div>
                             <Image src={Image1} alt='Infinfity Animation' className='mt-[-55px] mx-auto relative z-10' />
-                            <div className='px-5 pb-1'>
+                            <div className='px-5 pb-2'>
                                 <p className='text-center text-[17px] xl:text-[20px] font-semibold leading-[24px] xl:leading-[30px] poppins text-black'>Startup Package</p>
                                 <h5 className='text-[50px] xl:text-[70px] font-bold poppins text-center leading-[60px] xl:leading-[85px] mb-2 text-black'>$195</h5>
                                 <ul className='pb-4'>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
+                                    <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
-                                        <span className='text-black text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
                                     </li>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
+                                    <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
-                                        <span className='text-black text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Script Writing</span>
                                     </li>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
+                                    <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
-                                        <span className='text-black text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Custom Artwork</span>
                                     </li>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
+                                    <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
-                                        <span className='text-black text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Background Music</span>
                                     </li>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
+                                    <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
-                                        <span className='text-black text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>HD Format Video</span>
                                     </li>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
+                                    <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
-                                        <span className='text-black text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Dedicated Support</span>
                                     </li>
                                 </ul>
                                 <div className="btn">
@@ -81,33 +81,33 @@ const Packages = () => {
                                 <Image src={card2} alt='Infinity Animation' className='w-full h-full lg:group-hover:translate-x-[-100px] ease-in-out group-hover:duration-1000 duration-1000 translate-x-0 lg:max-w-[500px] lg:min-w-[500px] lg:min-h-[150px] lg:max-h-[150px] xl:min-h-[200px] xl:max-h-[200px]' />
                             </div>
                             <Image src={Image2} alt='Infinfity Animation' className='mt-[-55px] mx-auto relative z-10' />
-                            <div className='px-5 pb-1'>
+                            <div className='px-5 pb-2'>
                                 <p className='text-center text-[17px] xl:text-[20px] font-semibold leading-[24px] xl:leading-[30px] poppins text-white'>Classic Package</p>
                                 <h5 className='text-[50px] xl:text-[70px] font-bold poppins text-center leading-[60px] xl:leading-[85px] mb-2 text-white'>$499</h5>
                                 <ul className='pb-4'>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
-                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} className='brightness-100 invert-[1]' />
-                                        <span className='text-white text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
                                     </li>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
-                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} className='brightness-100 invert-[1]' />
-                                        <span className='text-white text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Script Writing</span>
                                     </li>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
-                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} className='brightness-100 invert-[1]' />
-                                        <span className='text-white text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Professional Voice-over & SFX</span>
                                     </li>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
-                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} className='brightness-100 invert-[1]' />
-                                        <span className='text-white text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Hand-drawn Illustrations</span>
                                     </li>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
-                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} className='brightness-100 invert-[1]' />
-                                        <span className='text-white text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>HD Format Video</span>
                                     </li>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
-                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} className='brightness-100 invert-[1]' />
-                                        <span className='text-white text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Dedicated Support</span>
                                     </li>
                                 </ul>
                                 <div className="btn">
@@ -135,33 +135,33 @@ const Packages = () => {
                                 <Image src={card3} alt='Infinity Animation' className='w-full h-full lg:group-hover:translate-x-[-100px] ease-in-out group-hover:duration-1000 duration-1000 translate-x-0 lg:max-w-[500px] lg:min-w-[500px] lg:min-h-[150px] lg:max-h-[150px] xl:min-h-[200px] xl:max-h-[200px]' />
                             </div>
                             <Image src={Image3} alt='Infinfity Animation' className='mt-[-55px] mx-auto relative z-10' />
-                            <div className='px-5 pb-1'>
+                            <div className='px-5 pb-2'>
                                 <p className='text-center text-[17px] xl:text-[20px] font-semibold leading-[24px] xl:leading-[30px] poppins text-white'>Premium Package</p>
                                 <h5 className='text-[50px] xl:text-[70px] font-bold poppins text-center leading-[60px] xl:leading-[85px] mb-2 text-white'>$799</h5>
                                 <ul className='pb-4'>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
-                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} className='brightness-100 invert-[1]' />
-                                        <span className='text-white text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
                                     </li>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
-                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} className='brightness-100 invert-[1]' />
-                                        <span className='text-white text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Script Writing</span>
                                     </li>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
-                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} className='brightness-100 invert-[1]' />
-                                        <span className='text-white text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Professional Voice-over & SFX</span>
                                     </li>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
-                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} className='brightness-100 invert-[1]' />
-                                        <span className='text-white text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Hand-drawn Illustrations</span>
                                     </li>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
-                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} className='brightness-100 invert-[1]' />
-                                        <span className='text-white text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>HD Format Video</span>
                                     </li>
-                                    <li className='flex items-center gap-2 mb-2 xl:mb-3'>
-                                        <Image src={Tick} alt='Infinity Animation' width={14} height={14} className='brightness-100 invert-[1]' />
-                                        <span className='text-white text-[15px] xl:text-[19px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Dedicated Support</span>
                                     </li>
                                 </ul>
                                 <div className="btn">

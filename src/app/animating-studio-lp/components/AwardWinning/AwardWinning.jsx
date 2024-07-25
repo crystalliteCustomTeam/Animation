@@ -19,12 +19,12 @@ const AwardWinning = () => {
                             <p className='text-[14px] md:text-[16px] poppins text-normal text-black text-center xl:w-7/12 mx-auto'>At Infinity Animations, we create powerful video animations that elevate your brand. Our dedication to excellence has earned us numerous awards and accolades, including:</p>
                         </div>
                         <div className="flex items-center flex-wrap gap-10 lg:gap-0 justify-center lg:justify-between pt-12">
-                            <Image src={Win1} alt='infinity Animation' />
-                            <Image src={Win2} alt='infinity Animation' />
-                            <Image src={Win3} alt='infinity Animation' />
-                            <Image src={Win4} alt='infinity Animation' />
-                            <Image src={Win5} alt='infinity Animation' />
-                            <Image src={Win6} alt='infinity Animation' />
+                            <Image src={Win1} alt='infinity Animation' className='w-[10%]' />
+                            <Image src={Win2} alt='infinity Animation' className='w-[10%]' />
+                            <Image src={Win3} alt='infinity Animation' className='w-[10%]' />
+                            <Image src={Win4} alt='infinity Animation' className='w-[10%]' />
+                            <Image src={Win5} alt='infinity Animation' className='w-[10%]' />
+                            <Image src={Win6} alt='infinity Animation' className='w-[10%]' />
                         </div>
                     </div>
                 </div>
