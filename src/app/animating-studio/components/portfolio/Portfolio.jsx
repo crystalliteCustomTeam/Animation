@@ -43,7 +43,7 @@ const Portfolio = ({ content }) => {
     }
     return (
         <>
-            <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-16 ${bg}`} id='portfolio'>
+            <section className={`w-full flex items-center justify-start pt-[40px] pb-0 md:py-[40px] lg:py-[80px] ${bg}`} id='portfolio'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-6 lg:max-w-7xl mx-auto">
                         <div className="col-span-12 md:mt-4">

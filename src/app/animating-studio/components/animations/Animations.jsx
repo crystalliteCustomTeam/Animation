@@ -61,8 +61,8 @@ const Animations = () => {
 
     return (
         <>
-            <section className='py-[50px] lg:py-[80px] relative' ref={sectionRef}>
-                <div className='px-4 sm:px-8 lg:max-w-7xl mx-auto '>
+            <section className='py-[50px] lg:pb-[40px] lg:pt-[100px] relative' ref={sectionRef}>
+                <div className='lg:max-w-7xl mx-auto '>
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 md:mb-[40px]">
                         <h2 className='text-[#000000] text-center font-[600] poppins text-[32px] md:text-[42px] lg:text-[48px]'>Proven  <span className="text-[#A70A0E]"> Statistics</span> of Infinity Animations</h2>

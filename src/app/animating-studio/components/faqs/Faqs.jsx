@@ -19,7 +19,7 @@ const Faqs = ({ content }) => {
 
     return (
         <>
-            <section className='py-[50px] lg:py-[80px]'>
+            <section className='py-[50px] lg:py-[90px]'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="mb-[10px] md:mb-[50px]">
                         <h2 className='text-[#000000] text-center font-[600] poppins text-[32px] md:text-[42px] lg:text-[48px]'>FAQS</h2>

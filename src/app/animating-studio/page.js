@@ -114,14 +114,14 @@ const Studio = () => {
         title: (<>
             Start Displaying Your Brand with <br />  <span className="text-[#FFCC00]"> Amazing Animated Videos</span>
         </>),
-        desc: "Spread profound message and scale up your business with our animated video services today!",
+        desc: (<>Spread profound message and scale up your business with our <br /> animated video services today!</>),
         isBtn: false
     }
     const brandsTwo = {
         title: (<>
             Start Displaying Your Brand with <br />  <span className="text-[#FFCC00]"> Amazing Animated Videos</span>
         </>),
-        desc: "Spread profound message and scale up your business with our animated video services today!",
+        desc: (<>Spread profound message and scale up your business with our <br /> animated video services today!</>),
         isBtn: false
     }
     const brandsThree = {
@@ -136,7 +136,7 @@ const Studio = () => {
         title: (<>
             Start Displaying Your Brand with <br />  <span className="text-[#FFCC00]"> Amazing Animated Videos</span>
         </>),
-        desc: "Spread profound message and scale up your business with our animated video services today!",
+        desc: (<>Spread profound message and scale up your business with our <br /> animated video services today!</>),
         isBtn: false
     }
 

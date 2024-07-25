@@ -16,12 +16,13 @@ const BrandOne = ({ content }) => {
     }
     return (
         <>
-            <section className='pt-0 md:pt-[50px] lg:pt-[100px] lg:relative px-4 xl:px-0 md:my-[30px]'>
+            {/* <section className='pt-0 md:pt-[50px] lg:pt-[100px] lg:relative px-4 xl:px-0 md:my-[30px]'> */}
+            <section className='py-[50px] lg:py-[70px] lg:mt-[75px]'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className='px-10 bg-cover bg-center bg-no-repeat bg-[url("../../public/infinity-studio/brand.svg")] rounded-xl'>
                         <div className="grid grid-cols-12">
                             <div className='col-span-12 lg:col-span-7 pb-4 pt-2 lg:py-[50px]'>
-                                <div className="content">
+                                <div className="content pt-[25px] lg:pt-0">
                                     <h2 className='text-[#fff] font-[700] poppins text-[20px] lg:text-[25px] xl:text-[36px] leading-[28px] lg:leading-[35px] xl:leading-[56px]'>
                                         {title} <br />
                                     </h2>
@@ -43,8 +44,8 @@ const BrandOne = ({ content }) => {
                                 </div>
                             </div>
                             <div className='col-span-12 lg:col-span-5 flex justify-center '>
-                                <div className='flex items-end relative w-full'>
-                                    <Image src={ctaImg} alt='Infinity Animations ' className='mb-0 absolute bottom-[0%] lg:h-[400px] xl:h-[480px] w-full' />
+                                <div className='flex items-end lg:relative w-full'>
+                                    <Image src={ctaImg} alt='Infinity Animations ' className='mb-0 lg:absolute bottom-[0%] h-[300px] lg:h-[400px] xl:h-[480px] w-full' />
                                 </div>
                             </div>
                         </div>

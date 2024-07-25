@@ -13,7 +13,7 @@ import Tick from "media/infinity-studio-lp-new/tick.png"
 
 const Packages = () => {
     return (
-        <section className='bg-white py-[50px] lg:py-[90px]'>
+        <section className='bg-white py-[50px] lg:py-[70px]'>
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="grid grid-cols-12 gap-5">
                     <div className="col-span-12">

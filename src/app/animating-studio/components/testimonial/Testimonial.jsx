@@ -20,7 +20,7 @@ function Testimonial({ content }) {
     const testiSlider = {
         dots: false,
         arrows: false,
-        infinite: false,
+        infinite: true,
         autoplay: false,
         autoplaySpeed: 2000,
         speed: 3000,
@@ -72,7 +72,7 @@ function Testimonial({ content }) {
     };
 
     return (
-        <section className='pt-[40px] pb-0 md:pb-[20px] md:pt-[80px] '>
+        <section className='pt-[40px] pb-0 md:pb-[20px] md:pt-[110px] '>
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="mb-[40px]">
                     <h3 className='text-[#000000] text-center font-[600] poppins text-[15px] md:text-[20px] lg:text-[25px]'>Testimonials</h3>
@@ -85,13 +85,13 @@ function Testimonial({ content }) {
                     }}>
                         {testiContentNew2.map((testimonial, index) => (
                             <Fancybox options={{ Carousel: { infinite: false } }} key={index}>
-                                <div className=" h-full group mb-8">
-                                    <div className='flex border rounded-[25px] ps-[15px] pe-[10px] md:px-[15px] md:py-[15px]' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
+                                <div className=" h-full group mb-8 px-2">
+                                    <div className='flex border rounded-[25px] ps-[20px] py-[15px]' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                                         {testimonial.video ? (
                                             <Link href={testimonial.video} datafancybox="gallery">
-                                                <div className='w-[100px] sm:w-[155px] h-[155px] md:w-[180px] md:h-[184px] box-testi  my-auto'>
-                                                    <div className='w-[100px] sm:w-[145px] h-[150px] md:w-[175px] md:h-[200px] flex justify-center items-center  relative group'>
-                                                        <video loading="lazy" muted loop preload="auto" autoPlay={false} className="rounded-[12px] w-[150px] h-full object-cover " >
+                                                <div className='w-[180px] h-[220px] box-testi mb-auto border'>
+                                                    <div className='w-[100%] h-[100%] flex justify-center items-center  relative group border'>
+                                                        <video loading="lazy" muted loop preload="auto" autoPlay={false} className="rounded-[12px] w-full h-full object-cover " >
                                                             <source src={testimonial.video} type="video/mp4" />
                                                         </video>
                                                         <div className="absolute rounded-[12px] w-[100px] sm:w-[150px] h-full group-hover:hidden ">
@@ -104,12 +104,12 @@ function Testimonial({ content }) {
                                                 </div>
                                             </Link>
                                         ) : (
-                                            <div className='w-[100px] sm:w-[155px] h-[155px] md:w-[180px] md:h-[184px] box-testi  mb-auto'>
-                                                <div className='w-[100px] sm:w-[145px] h-[150px] md:w-[175px] md:h-[200px] flex justify-center items-center  relative '>
+                                            <div className='w-[250px] h-[220px] box-testi  mb-auto '>
+                                                <div className='w-full h-full flex justify-center items-center  relative '>
                                                     <Image
                                                         src={testimonial.thumbnail}
                                                         alt="Infinity Animations"
-                                                        className='rounded-[12px] h-full w-[150px] md:w-[175px] md:h-[200px]' />
+                                                        className='rounded-[12px] h-full w-full object-fill' />
                                                 </div>
                                             </div>
                                         )}
@@ -126,10 +126,10 @@ function Testimonial({ content }) {
                                                     {testimonial.para}
                                                 </p>
                                             </div>
-                                            <div className='my-2'>
+                                            <div className='my-3'>
                                                 <Image
                                                     src={testimonial.review}
-                                                    className="w-[35%]" alt='Infinity Animation' />
+                                                    className="w-[25%] lh:w-[35%]" alt='Infinity Animation' />
                                             </div>
                                             <div className=''>
                                                 <h3 className=" text-[15px] md:text-[18px] leading-[24px] font-semibold font-sans text-[#000] ">
@@ -145,7 +145,7 @@ function Testimonial({ content }) {
                             </Fancybox>
                         ))}
                     </Slider>
-                    <div className={styles.progress}>
+                    <div className={`${styles.progress} xl:mt-[25px]`}>
                         <input
                             className={styles.progressFill}
                             onChange={e => sliderRef.slickGoTo(e.target.value)}
@@ -153,7 +153,7 @@ function Testimonial({ content }) {
                             type="range"
                             id="cowbell" name="cowbell" min="0" max="12"
                         />
-                        <h5 className=" text-[13px] md:text-[15px] leading-[24px] font-normal font-sans text-[#000] pt-[15px]">
+                        <h5 className="text-[#231F20] text-[16px] poppins font-[400] pt-[15px]">
                             {slideIndex + 1} / {testiContentNew2.length}
                         </h5>
                     </div>
