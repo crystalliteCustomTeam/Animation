@@ -15,7 +15,7 @@ const Brand = ({ content }) => {
     return (
         <>
             <section className='py-[30px] md:py-[70px] lg:pt-[60px] bg-white relative'>
-                <div className={`mx-4 lg:max-w-7xl xl:mx-auto py-10 md:py-16 lg:py-10 px-4 sm:px-9 relative ${isColor ? "bg-[#EE8526] rounded-[30px]" : "bg-[#FA1F33] rounded-[17px]"}`}>
+                <div className={`mx-4 sm:mx-8 lg:max-w-7xl xl:mx-auto py-10 md:py-16 lg:py-10 px-4 sm:px-9 relative ${isColor ? "bg-[#EE8526] rounded-[30px]" : "bg-[#FA1F33] rounded-[17px]"}`}>
                     <div className="grid grid-cols-12">
                         {isBranImage ?
                             <div className="col-span-12 lg:col-span-7">

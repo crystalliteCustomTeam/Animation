@@ -36,6 +36,7 @@ const ConditionalLayout = ({ children }) => {
                     pathname !== "/explainer-videos-animations" &&
                     pathname !== "/logo-animation-lp" &&
                     pathname !== "/animating-studio-lp" &&
+                    pathname !== "/animating-studio-lp-2" &&
                     pathname !== "/infinity-studio" && 
                     pathname !== "/animating-studio" && (
                         <Header />

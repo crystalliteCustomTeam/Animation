@@ -138,7 +138,7 @@ const Banner = () => {
 
     });
 
-    await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+    await fetch("https://sheetdb.io/api/v1/e9jx941paxuo0i", {
       method: "POST",
       body: bodyContent,
       headers: headersList

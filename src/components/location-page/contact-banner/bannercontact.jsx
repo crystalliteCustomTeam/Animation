@@ -148,7 +148,7 @@ function BannerContact({ content }) {
           "JSON": { ...data, pageURL: pagenewurl },
         });
         let reqOptions = {
-          url: "https://sheetdb.io/api/v1/1ownp6p7a9xpi",
+          url: "https://sheetdb.io/api/v1/e9jx941paxuo0i",
           method: "POST",
           headers: headersList,
           data: bodyContent,

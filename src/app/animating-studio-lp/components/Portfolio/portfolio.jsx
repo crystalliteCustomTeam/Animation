@@ -103,7 +103,7 @@ const Portfolio = () => {
     return (
         <>
             <section className={`w-full flex items-center justify-start pb-12 pt-6 py-[50px] lg:py-[90px] bg-[#F3F3F3]`}>
-                <div className="container">
+                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className='flex items-center justify-around'>
                         <div className='w-full text-center'>
                             <h2 className={`text-black poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[60px] text-center mb-2`}>

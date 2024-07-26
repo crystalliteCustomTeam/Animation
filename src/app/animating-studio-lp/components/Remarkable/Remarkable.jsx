@@ -12,7 +12,7 @@ const Remarkable = ({ content }) => {
     return (
         <>
             <section className={'pb-[90px] pt-[20px] bg-white'} id='services'>
-                <div className="px-5 xl:px-0 xl:max-w-7xl mx-auto">
+                <div className="px-4 sm:px-8 xl:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-5">
                         <div className="col-span-12 mb-5">
                             <h2 className='text-black poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[50px] text-center mb-2'>{title}</h2>
