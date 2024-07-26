@@ -1,166 +1,131 @@
+"use client"
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Axios from "axios";
+import { usePathname } from "next/navigation"
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
 // ==== Images 
 import Payment from "media/video-explainer2/payment-img.png"
 import UpArrow from "media/video-explainer2/up-arrow.png"
-import facebook from "media/icons/fb.png";
-import twitter from "media/icons/x.png";
-import youtube from "media/icons/youtube.png";
-import instagram from "media/icons/insta.png";
-import linkedin from "media/icons/linkedin.png";
-import vimeo from "media/icons/vemio.png";
-
-const socialLinks = [
-    {
-        icon: facebook,
-        link: "https://www.facebook.com/infinityanimationsofficial"
-    },
-    {
-        icon: twitter,
-        link: "https://twitter.com/infinityan_/"
-    },
-    {
-        icon: instagram,
-        link: "https://www.instagram.com/infinityanimationsofficials"
-    },
-    {
-        icon: linkedin,
-        link: "https://www.linkedin.com/company/infinity-animations/"
-    },
-    {
-        icon: youtube,
-        link: "https://www.youtube.com/@Infinity-Animations"
-    },
-    {
-        icon: vimeo,
-        link: "https://www.vimeo.com/infinityanimations"
-    },
-]
 
 const Contact = () => {
+//========== Form
+const [ip, setIP] = useState('');
+const [pagenewurl, setPagenewurl] = useState('');
+const [errors, setErrors] = useState({});
+const [formStatus, setFormStatus] = useState('Get Started');
+const [isDisabled, setIsDisabled] = useState(false);
+const [data, setData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: ""
+});
 
-    // form Start 
-    let newDate = new Date();
-    let date = newDate.getDate();
-    let month = newDate.getMonth() + 1;
-    let year = newDate.getFullYear();
-    // For Time
-    let today = new Date();
-    let setTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    let setDate = `${month < 10 ? `0${month}` : `${month}`}-${date}-${year}`;
-
-    const [ip, setIP] = useState("");
-    //creating function to load ip address from the API
-    const getIPData = async () => {
-        const res = await Axios.get(
-            "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
-        );
+//========== Fetch IP data from the API
+const getIPData = async () => {
+    try {
+        const res = await Axios.get('https://ipwho.is/');
         setIP(res.data);
-    };
-    useEffect(() => {
-        getIPData();
-    }, []);
-    // For Page
-    const [pagenewurl, setPagenewurl] = useState(null);
-    useEffect(() => {
-        setPagenewurl(window.location.href);
-    }, [setPagenewurl]);
-    const [data, setData] = useState({
-        name: "",
-        phone: "",
-        email: "",
-        message: "",
-        botchecker: null,
-    });
-    const handleDataChange = (e) => {
-        setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-    };
-    const [formStatus, setFormStatus] = useState(" Get Started");
-    const [errors, setErrors] = useState({});
-    const [isDisabled, setIsDisabled] = useState(false);
-    const formValidateHandle = () => {
-        let errors = {};
-        // Name validation
-        if (!data.name.trim()) {
-            errors.name = "Name is required";
-        }
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!data.email.match(emailRegex)) {
-            errors.email = "Valid email is required";
-        }
-        // Phone validation
-        const phoneRegex = /[0-9]/i;
-        if (!data.phone.match(phoneRegex)) {
-            errors.phone = "Valid phone is required";
-        }
-        return errors;
-    };
-    const handleFormSubmit = async (e) => {
-        e.preventDefault();
-        setFormStatus("Processing...");
-        setIsDisabled(true);
+    } catch (error) {
+        console.error('Error fetching IP data:', error);
+    }
+};
 
-        const errors = formValidateHandle();
-        setErrors(errors);
+useEffect(() => {
+    getIPData();
+    setPagenewurl(window.location.href);
+}, []);
 
-        if (Object.keys(errors).length === 0) {
-            if (data.botchecker === null) {
-                let headersList = {
-                    Accept: "*/*",
-                    "Content-Type": "application/json",
-                };
+const router = usePathname();
+const currentRoute = router;
 
-                let bodyContent = JSON.stringify({ ...data, pageURL: pagenewurl });
-                let reqOptions = {
-                    url: "/api/email",
-                    method: "POST",
-                    headers: headersList,
-                    data: bodyContent,
-                };
-                await Axios.request(reqOptions);
-            } else {
-                setFormStatus("Failed...");
-                setIsDisabled(false);
-            }
-        } else {
+const handleDataChange = (e) => {
+    setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+};
+
+const formValidateHandle = () => {
+    let errors = {};
+    if (!data.name.trim()) {
+        errors.name = "Name is required";
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!data.email.match(emailRegex)) {
+        errors.email = "Valid email is required";
+    }
+    const phoneRegex = /^[0-9]+$/;
+    if (!data.phone.match(phoneRegex)) {
+        errors.phone = "Valid phone number is required";
+    }
+    return errors;
+};
+
+const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setFormStatus("Processing...");
+    setIsDisabled(true);
+
+    const errors = formValidateHandle();
+    setErrors(errors);
+
+    if (Object.keys(errors).length === 0) {
+        const currentdate = new Date().toLocaleString();
+        const dataToSend = {
+            ...data,
+            pageUrl: pagenewurl,
+            IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
+            currentdate: currentdate,
+        };
+        const JSONdata = JSON.stringify(dataToSend);
+
+        try {
+            //========== First API call to your server
+            await fetch('/api/email/', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json'
+                },
+                body: JSONdata
+            });
+
+            //========== Second API call to SheetDB
+            let headersList = {
+                "Accept": "*/*",
+                "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+                "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+                "Content-Type": "application/json"
+            };
+            let bodyContent = JSON.stringify({
+                "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
+                "Brand": "Infinity Animations",
+                "Page": `${currentRoute}`,
+                "Date": currentdate,
+                "Time": currentdate,
+                "JSON": JSONdata,
+            });
+            await fetch("https://sheetdb.io/api/v1/orh55uv03rvh4", {
+                method: "POST",
+                body: bodyContent,
+                headers: headersList
+            });
+
+            setFormStatus("Success...");
+            setTimeout(() => {
+                window.location.href = '/thank-you';
+            }, 2000);
+        } catch (error) {
+            console.error('Error during form submission:', error);
             setFormStatus("Failed...");
             setIsDisabled(false);
         }
-
-        if (Object.keys(errors).length === 0) {
-            if (data.botchecker === null) {
-
-
-                let headersList = {
-                    Accept: "*/*",
-                    Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-                    "Content-Type": "application/json",
-                };
-
-                let bodyContent = JSON.stringify({
-                    "IP": `${ip.ip} - ${ip.country_name} - ${ip.city_name}`,
-                    "Brand": "Infinity Animations",
-                    "Page": pagenewurl,
-                    "Date": setDate,
-                    "Time": setTime,
-                    "JSON": { ...data, pageURL: pagenewurl },
-                });
-                let reqOptions = {
-                    url: "https://sheetdb.io/api/v1/e9jx941paxuo0i",
-                    method: "POST",
-                    headers: headersList,
-                    data: bodyContent,
-                };
-                await Axios.request(reqOptions);
-                window.location.href = "/thank-you";
-            }
-        }
-    };
+    } else {
+        setFormStatus("Failed...");
+        setIsDisabled(false);
+    }
+};
 
     return (
         <>
@@ -195,7 +160,7 @@ const Contact = () => {
                             <h2 className='text-[#fff] font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Get in Touch Now!</h2>
                             <p className='text-[#fff] text-[16px] lg:text-[18px] montserrat font-[400] pt-[10px] leading-[22px] pb-[30px]'>Its High Time to Showcase Your Store to the World</p>
                             <div className="form">
-                                <form action="javascript:;">
+                                <form>
                                     <div className="flex flex-col lg:flex-row items-center lg:gap-4 ">
                                         <div className="name relative w-full ">
                                             <User className='text-[#FFCC00] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />

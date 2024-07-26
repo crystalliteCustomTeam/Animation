@@ -1,8 +1,8 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import Axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
+import Axios from "axios";
 import { usePathname } from 'next/navigation';
 import styles from '@/app/explainer-videos-animations/component/footer/footer.module.css';
 // Import Components
@@ -47,96 +47,121 @@ const socialLinks = [
 ]
 
 const Video = () => {
+    //========== Form
     const [ip, setIP] = useState('');
-    //creating function to load ip address from the API
-    const getIPData = async () => {
-        const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
-        setIP(res.data);
-    }
-    useEffect(() => {
-        getIPData()
-    }, [])
-
-    const [score, setScore] = useState('Submit');
-
-    const router = usePathname();
-
-    const currentRoute = router.pathname;
     const [pagenewurl, setPagenewurl] = useState('');
+    const [errors, setErrors] = useState({});
+    const [formStatus, setFormStatus] = useState('Get Started');
+    const [isDisabled, setIsDisabled] = useState(false);
+    const [data, setData] = useState({
+        name: "",
+        phone: "",
+        email: "",
+        message: ""
+    });
+
+    //========== Fetch IP data from the API
+    const getIPData = async () => {
+        try {
+            const res = await Axios.get('https://ipwho.is/');
+            setIP(res.data);
+        } catch (error) {
+            console.error('Error fetching IP data:', error);
+        }
+    };
+
     useEffect(() => {
-        const pagenewurl = window.location.href;
-        console.log(pagenewurl);
-        setPagenewurl(pagenewurl);
+        getIPData();
+        setPagenewurl(window.location.href);
     }, []);
 
-    const handleSubmit = async (e) => {
+    const router = usePathname();
+    const currentRoute = router;
 
+    const handleDataChange = (e) => {
+        setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    };
 
-
-        e.preventDefault()
-        var currentdate = new Date().toLocaleString() + ''
-
-        const data = {
-            name: e.target.name.value,
-            email: e.target.email.value,
-            phone: e.target.phone.value,
-            message: e.target.message.value,
-            pageUrl: pagenewurl,
-            IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-            currentdate: currentdate,
+    const formValidateHandle = () => {
+        let errors = {};
+        if (!data.name.trim()) {
+            errors.name = "Name is required";
         }
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!data.email.match(emailRegex)) {
+            errors.email = "Valid email is required";
+        }
+        const phoneRegex = /^[0-9]+$/;
+        if (!data.phone.match(phoneRegex)) {
+            errors.phone = "Valid phone number is required";
+        }
+        return errors;
+    };
 
-        const JSONdata = JSON.stringify(data)
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+        setFormStatus("Processing...");
+        setIsDisabled(true);
 
-        setScore('Sending Data');
-        console.log(JSONdata);
+        const errors = formValidateHandle();
+        setErrors(errors);
 
+        if (Object.keys(errors).length === 0) {
+            const currentdate = new Date().toLocaleString();
+            const dataToSend = {
+                ...data,
+                pageUrl: pagenewurl,
+                IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
+                currentdate: currentdate,
+            };
+            const JSONdata = JSON.stringify(dataToSend);
 
-        fetch('/api/email', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json, text/plain, */*',
-                'Content-Type': 'application/json'
-            },
-            body: JSONdata
-        }).then((res) => {
-            console.log(`Response received ${res}`)
-            if (res.status === 200) {
-                console.log(`Response Successed ${res}`)
+            try {
+                //========== First API call to your server
+                await fetch('/api/email/', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json, text/plain, */*',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSONdata
+                });
+
+                //========== Second API call to SheetDB
+                let headersList = {
+                    "Accept": "*/*",
+                    "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+                    "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+                    "Content-Type": "application/json"
+                };
+                let bodyContent = JSON.stringify({
+                    "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
+                    "Brand": "Infinity Animations",
+                    "Page": `${currentRoute}`,
+                    "Date": currentdate,
+                    "Time": currentdate,
+                    "JSON": JSONdata,
+                });
+                await fetch("https://sheetdb.io/api/v1/orh55uv03rvh4", {
+                    method: "POST",
+                    body: bodyContent,
+                    headers: headersList
+                });
+
+                setFormStatus("Success...");
+                setTimeout(() => {
+                    window.location.href = '/thank-you';
+                }, 2000);
+            } catch (error) {
+                console.error('Error during form submission:', error);
+                setFormStatus("Failed...");
+                setIsDisabled(false);
             }
-        })
-
-
-
-        let headersList = {
-            "Accept": "*/*",
-            "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-            "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-            "Content-Type": "application/json"
+        } else {
+            setFormStatus("Failed...");
+            setIsDisabled(false);
         }
-
-        let bodyContent = JSON.stringify({
-            "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-            "Brand": "Infinity Animations",
-            "Page": pagenewurl,
-            "Date": currentdate,
-            "Time": currentdate,
-            "JSON": JSONdata,
-
-        });
-
-        await fetch("https://sheetdb.io/api/v1/e9jx941paxuo0i", {
-            method: "POST",
-            body: bodyContent,
-            headers: headersList
-        });
-        const { pathname } = router;
-        if (pathname == pathname) {
-            window.location.href = '/thank-you';
-        }
-
-    }
-
+    };
 
     return (
         <>
@@ -148,17 +173,36 @@ const Video = () => {
                             <p className={styles.wordsmosth}>Its High Time to Showcase
                                 Your
                                 Store to the World</p>
-                            <form onSubmit={handleSubmit}>
+                            <form>
                                 <div className={styles.form2} >
-                                    <input type="text" minLength="4" required name="name" className="form-control" placeholder="Enter Your Name" />
-                                    <input type="email" required name="email" className="form-control" placeholder="Enter Your Email" />
+                                    <div className="relative w-full">
+                                        <input type="text" minLength="4" name="name" className="form-control" placeholder="Enter Your Name" onChange={handleDataChange} required />
+                                        {errors.name && (
+                                            <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-56%]">
+                                                {errors.name}
+                                            </span>
+                                        )}
+                                    </div>
+                                    <div className="relative w-full">
+                                        <input type="email" name="email" className="form-control" placeholder="Enter Your Email" onChange={handleDataChange} required />
+                                        {errors.email && (
+                                            <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-56%]">
+                                                {errors.email}
+                                            </span>
+                                        )}
+                                    </div>
                                 </div>
-                                <div className={styles.form2}>
-                                    <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" className="form-control" placeholder="Enter Your Number" />
+                                <div className={`relative ${styles.form2}`}>
+                                    <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" className="form-control" placeholder="Enter Your Number" onChange={handleDataChange} required />
+                                    {errors.phone && (
+                                        <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-56%]">
+                                            {errors.phone}
+                                        </span>
+                                    )}
                                 </div>
                                 <div>
                                     <textarea name="message" className={styles.megg} id="exampleFormControlTextarea1" placeholder="Type Message" rows="5"></textarea>
-                                    <input type="submit" value="Get Started" className={styles.showcas} />
+                                    <button type="submit" className={styles.showcas} disabled={isDisabled} onClick={handleFormSubmit}>{formStatus}</button>
                                 </div>
                             </form>
                         </div>

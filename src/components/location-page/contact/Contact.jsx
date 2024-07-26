@@ -3,14 +3,11 @@ import Image from "next/image";
 // Import Components
 import Form from "../form/Form";
 // Import Images
-import contactBg from "media/images/fold-bg.png";
 import contactImg from "media/location-page/contact-img.png";
-// Import Images
+// Import CSS
 import styles from "./Contact.module.css"
 
 const Contact = () => {
-
-    // form code start
 
     return (
         <>

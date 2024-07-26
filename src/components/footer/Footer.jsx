@@ -13,6 +13,7 @@ import youtube from "media/icons/youtube.png";
 import instagram from "media/icons/insta.png";
 import linkedin from "media/icons/linkedin.png";
 import vimeo from "media/icons/vemio.png";
+import dmca from "media/icons/dmca.png";
 
 const Footer = () => {
     const quickLinks = [
@@ -172,6 +173,9 @@ const Footer = () => {
                                     })
                                 }
                             </ul>
+                            <div className="hidden md:block mt-12 lg:mt-24">
+                                <Image src={dmca} alt="Infinity Animation" />
+                            </div>
                         </div>
                         <div className="basis-full sm:basis-[48%] lg:basis-1/4 flex flex-col justify-between">
                             <div>
@@ -205,6 +209,9 @@ const Footer = () => {
                                         })
                                     }
                                 </ul>
+                                <div className="block md:hidden mt-4">
+                                    <Image src={dmca} alt="Infinity Animation" />
+                                </div>
                             </div>
                         </div>
                     </div>
