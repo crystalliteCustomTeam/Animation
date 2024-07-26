@@ -132,7 +132,7 @@ const BookMeeting = () => {
                         <h2 className='text-white poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[50px] text-center mb-7 sm:mb-12 lg:mb-20 lg:w-8/12 mx-auto'>Book A Meeting With A Member Of Our Team To Learn More And <span className='text-[#F5090B]'>Get A Quote</span> Today!</h2>
                     </div>
                     <div className="hidden lg:block lg:col-span-6">
-                        <Image src={MerketMen} alt='Infinity Animation' className='w-full h-full' />
+                        <Image src={MerketMen} alt='Infinity Animation' className='w-full h-full lg:w-10/12 object-contain' />
                     </div>
                     <div className="col-span-12 lg:col-span-6">
                         <div>

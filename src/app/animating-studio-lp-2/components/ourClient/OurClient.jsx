@@ -134,12 +134,6 @@ const OurClient = () => {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1599,
-                settings: {
-                    slidesToShow: 1.2,
-                }
-            },
-            {
                 breakpoint: 1099,
                 settings: {
                     slidesToShow: 1,
@@ -176,8 +170,8 @@ const OurClient = () => {
 
     return (
         <>
-            <section className="pt-[30px] pb-[30px] md:pb-[130px] md:pt-[70px] lg:pb-[150px] bg-[#F3F3F3] relative xl:before:absolute xl:before:content-[''] sm:before:h-full before:w-[240px] xl:before:w-[250px] 2xl:before:w-[300px] xxl:before:w-[450px] 3xl:before:w-[535px] 4xl:before:w-[610px] sm:before:right-0 sm:before:top-0 lg:before:bg-[#ededed9e] sm:before:z-10 lg:h-full">
-                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
+            <section className="pt-[30px] pb-[30px] md:pb-[130px] md:pt-[70px] lg:pb-[150px] bg-[#F3F3F3] relative xl:before:absolute xl:before:content-[''] sm:before:h-full before:w-[230px] xl:before:w-[305px] 2xl:before:w-[365px] 3xl:before:w-[500px] 4xl:before:w-[600px] sm:before:right-0 sm:before:top-0 lg:before:bg-[#ededed9e] sm:before:z-10 lg:h-full">
+                <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
                         <div className="col-span-12">
                             <h2 className='text-black poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[50px] text-center mb-4 lg:mb-10'>Let’s Read <span className="text-[#F5090B]">What Our Clients</span> Have to Say</h2>
