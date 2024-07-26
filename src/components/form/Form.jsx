@@ -1,13 +1,15 @@
 "use client"
+import React, { useEffect, useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import Axios from "axios";
-import React, { useEffect, useState } from 'react'
-// Import Images
+import { usePathname } from "next/navigation"
+//========== Import Images
 import facebook from "media/icons/fb.png";
 import twitter from "media/icons/x.png";
 import instagram from "media/icons/insta.png";
 import linkedin from "media/icons/linkedin.png";
+//==========
 const socialLinks = [
     {
         icon: facebook,
@@ -26,84 +28,115 @@ const socialLinks = [
         link: "https://www.linkedin.com/company/infinity-animations/"
     },
 ]
+//==========
 const Form = () => {
-    // For Date
-    let newDate = new Date();
-    let date = newDate.getDate();
-    let month = newDate.getMonth() + 1;
-    let year = newDate.getFullYear();
-    // For Time
-    let today = new Date();
-    let setTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    let setDate = `${month < 10 ? `0${month}` : `${month}`}-${date}-${year}`;
-    const [ip, setIP] = useState("");
-    //creating function to load ip address from the API
-    const getIPData = async () => {
-        const res = await Axios.get(
-            "https://api.ip2location.io/?key=F9B01293761EF666EB54678698AC8682"
-        );
-        setIP(res);
-    };
-    useEffect(() => {
-        getIPData();
-    }, []);
-    // For Page
-    const [pagenewurl, setPagenewurl] = useState(null);
-    useEffect(() => {
-        setPagenewurl(window.location.href);
-    }, [setPagenewurl]);
+    //========== Form
+    const [ip, setIP] = useState('');
+    const [pagenewurl, setPagenewurl] = useState('');
+    const [errors, setErrors] = useState({});
+    const [formStatus, setFormStatus] = useState('Submit');
+    const [isDisabled, setIsDisabled] = useState(false);
     const [data, setData] = useState({
         name: "",
         phone: "",
         email: "",
-        message: "",
-        botchecker: null,
+        message: ""
     });
+
+    //========== Fetch IP data from the API
+    const getIPData = async () => {
+        try {
+            const res = await Axios.get('https://ipwho.is/');
+            setIP(res.data);
+        } catch (error) {
+            console.error('Error fetching IP data:', error);
+        }
+    };
+
+    useEffect(() => {
+        getIPData();
+        setPagenewurl(window.location.href);
+    }, []);
+
+    const router = usePathname();
+    const currentRoute = router;
+
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-    const [formStatus, setFormStatus] = useState("Submit");
-    const [errors, setErrors] = useState({});
-    const [isDisabled, setIsDisabled] = useState(false);
+
     const formValidateHandle = () => {
         let errors = {};
-        // Name validation
         if (!data.name.trim()) {
             errors.name = "Name is required";
         }
-        // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!data.email.match(emailRegex)) {
             errors.email = "Valid email is required";
         }
-        // Phone validation
-        const phoneRegex = /[0-9]/i;
+        const phoneRegex = /^[0-9]+$/;
         if (!data.phone.match(phoneRegex)) {
-            errors.phone = "Valid phone is required";
+            errors.phone = "Valid phone number is required";
         }
         return errors;
     };
+
     const handleFormSubmit = async (e) => {
         e.preventDefault();
         setFormStatus("Processing...");
         setIsDisabled(true);
+
         const errors = formValidateHandle();
         setErrors(errors);
+
         if (Object.keys(errors).length === 0) {
-            if (data.botchecker === null) {
+            const currentdate = new Date().toLocaleString();
+            const dataToSend = {
+                ...data,
+                pageUrl: pagenewurl,
+                IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
+                currentdate: currentdate,
+            };
+            const JSONdata = JSON.stringify(dataToSend);
+
+            try {
+                //========== First API call to your server
+                await fetch('/api/email/', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json, text/plain, */*',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSONdata
+                });
+
+                //========== Second API call to SheetDB
                 let headersList = {
-                    Accept: "*/*",
-                    "Content-Type": "application/json",
+                    "Accept": "*/*",
+                    "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+                    "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+                    "Content-Type": "application/json"
                 };
-                let bodyContent = JSON.stringify({ ...data, pageURL: pagenewurl });
-                let reqOptions = {
-                    url: "/api/email",
+                let bodyContent = JSON.stringify({
+                    "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
+                    "Brand": "Infinity Animations",
+                    "Page": `${currentRoute}`,
+                    "Date": currentdate,
+                    "Time": currentdate,
+                    "JSON": JSONdata,
+                });
+                await fetch("https://sheetdb.io/api/v1/orh55uv03rvh4", {
                     method: "POST",
-                    headers: headersList,
-                    data: bodyContent,
-                };
-                await Axios.request(reqOptions);
-            } else {
+                    body: bodyContent,
+                    headers: headersList
+                });
+
+                setFormStatus("Success...");
+                setTimeout(() => {
+                    window.location.href = '/thank-you';
+                }, 2000);
+            } catch (error) {
+                console.error('Error during form submission:', error);
                 setFormStatus("Failed...");
                 setIsDisabled(false);
             }
@@ -111,35 +144,11 @@ const Form = () => {
             setFormStatus("Failed...");
             setIsDisabled(false);
         }
-        if (Object.keys(errors).length === 0) {
-            if (data.botchecker === null) {
-                let headersList = {
-                    Accept: "*/*",
-                    Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-                    "Content-Type": "application/json",
-                };
-                let bodyContent = JSON.stringify({
-                    "IP": `${ip.ip} - ${ip.country_name} - ${ip.city_name}`,
-                    "Brand": "Infinity Animations",
-                    "Page": pagenewurl,
-                    "Date": setDate,
-                    "Time": setTime,
-                    "JSON": { ...data, pageURL: pagenewurl },
-                });
-                let reqOptions = {
-                    url: "https://sheetdb.io/api/v1/1ownp6p7a9xpi",
-                    method: "POST",
-                    headers: headersList,
-                    data: bodyContent,
-                };
-                await Axios.request(reqOptions);
-                window.location.href = "/thank-you";
-            }
-        }
     };
+
     return (
         <>
-            <form action="#" className="space-y-2 sm:space-y-4 md:space-y-8">
+            <form className="space-y-2 sm:space-y-4 md:space-y-8">
                 <div className="relative">
                     <label htmlFor="subject" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Full Name*</label>
                     <input type="text" id="name" name="name" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Full Name" onChange={handleDataChange} />

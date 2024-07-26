@@ -1,22 +1,22 @@
 "use client"
-// Imports Components
+import React, { useEffect, useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
+import Axios from "axios";
+import { usePathname } from "next/navigation"
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
 // Import Images
 import logo from "media/images/black-logo.gif";
-import Payment from "media/video-explainer/payment-img.png" 
+import Payment from "media/video-explainer/payment-img.png"
 import facebook from "media/icons/fb.png";
 import twitter from "media/icons/x.png";
 import youtube from "media/icons/youtube.png";
 import instagram from "media/icons/insta.png";
 import linkedin from "media/icons/linkedin.png";
 import vimeo from "media/icons/vemio.png";
-import { useEffect, useState } from "react";
 
-
-const Footer = () => { 
+const Footer = () => {
     const otherLinks = [
         {
             text: "Terms of Services",
@@ -53,63 +53,57 @@ const Footer = () => {
             link: "https://www.vimeo.com/infinityanimations"
         },
     ];
-    // form Start 
-    let newDate = new Date();
-    let date = newDate.getDate();
-    let month = newDate.getMonth() + 1;
-    let year = newDate.getFullYear();
-    // For Time
-    let today = new Date();
-    let setTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    let setDate = `${month < 10 ? `0${month}` : `${month}`}-${date}-${year}`;
-
-    const [ip, setIP] = useState("");
-    //creating function to load ip address from the API
-    const getIPData = async () => {
-        const res = await Axios.get(
-            "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
-        );
-        setIP(res.data);
-    };
-    useEffect(() => {
-        getIPData();
-    }, []);
-    // For Page
-    const [pagenewurl, setPagenewurl] = useState(null);
-    useEffect(() => {
-        setPagenewurl(window.location.href);
-    }, [setPagenewurl]);
+    //========== Form
+    const [ip, setIP] = useState('');
+    const [pagenewurl, setPagenewurl] = useState('');
+    const [errors, setErrors] = useState({});
+    const [formStatus, setFormStatus] = useState('Submit');
+    const [isDisabled, setIsDisabled] = useState(false);
     const [data, setData] = useState({
         name: "",
         phone: "",
         email: "",
-        message: "",
-        botchecker: null,
+        message: ""
     });
+
+    //========== Fetch IP data from the API
+    const getIPData = async () => {
+        try {
+            const res = await Axios.get('https://ipwho.is/');
+            setIP(res.data);
+        } catch (error) {
+            console.error('Error fetching IP data:', error);
+        }
+    };
+
+    useEffect(() => {
+        getIPData();
+        setPagenewurl(window.location.href);
+    }, []);
+
+    const router = usePathname();
+    const currentRoute = router;
+
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-    const [formStatus, setFormStatus] = useState("Submit");
-    const [errors, setErrors] = useState({});
-    const [isDisabled, setIsDisabled] = useState(false);
+
     const formValidateHandle = () => {
         let errors = {};
-        // Name validation
         if (!data.name.trim()) {
             errors.name = "Name is required";
         }
-        // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!data.email.match(emailRegex)) {
             errors.email = "Valid email is required";
         }
-        // Phone validation
-        const phoneRegex = /[0-9]/i;
+        const phoneRegex = /^[0-9]+$/;
         if (!data.phone.match(phoneRegex)) {
-            errors.phone = "Valid phone is required";
+            errors.phone = "Valid phone number is required";
         }
         return errors;
     };
+
     const handleFormSubmit = async (e) => {
         e.preventDefault();
         setFormStatus("Processing...");
@@ -119,21 +113,53 @@ const Footer = () => {
         setErrors(errors);
 
         if (Object.keys(errors).length === 0) {
-            if (data.botchecker === null) {
-                let headersList = {
-                    Accept: "*/*",
-                    "Content-Type": "application/json",
-                };
+            const currentdate = new Date().toLocaleString();
+            const dataToSend = {
+                ...data,
+                pageUrl: pagenewurl,
+                IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
+                currentdate: currentdate,
+            };
+            const JSONdata = JSON.stringify(dataToSend);
 
-                let bodyContent = JSON.stringify({ ...data, pageURL: pagenewurl });
-                let reqOptions = {
-                    url: "/api/email",
-                    method: "POST",
-                    headers: headersList,
-                    data: bodyContent,
+            try {
+                //========== First API call to your server
+                await fetch('/api/email/', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json, text/plain, */*',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSONdata
+                });
+
+                //========== Second API call to SheetDB
+                let headersList = {
+                    "Accept": "*/*",
+                    "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+                    "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+                    "Content-Type": "application/json"
                 };
-                await Axios.request(reqOptions);
-            } else {
+                let bodyContent = JSON.stringify({
+                    "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
+                    "Brand": "Infinity Animations",
+                    "Page": `${currentRoute}`,
+                    "Date": currentdate,
+                    "Time": currentdate,
+                    "JSON": JSONdata,
+                });
+                await fetch("https://sheetdb.io/api/v1/orh55uv03rvh4", {
+                    method: "POST",
+                    body: bodyContent,
+                    headers: headersList
+                });
+
+                setFormStatus("Success...");
+                setTimeout(() => {
+                    window.location.href = '/thank-you';
+                }, 2000);
+            } catch (error) {
+                console.error('Error during form submission:', error);
                 setFormStatus("Failed...");
                 setIsDisabled(false);
             }
@@ -141,36 +167,8 @@ const Footer = () => {
             setFormStatus("Failed...");
             setIsDisabled(false);
         }
-
-        if (Object.keys(errors).length === 0) {
-            if (data.botchecker === null) {
-
-
-                let headersList = {
-                    Accept: "*/*",
-                    Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-                    "Content-Type": "application/json",
-                };
-
-                let bodyContent = JSON.stringify({
-                    "IP": `${ip.ip} - ${ip.country_name} - ${ip.city_name}`,
-                    "Brand": "Infinity Animations",
-                    "Page": pagenewurl,
-                    "Date": setDate,
-                    "Time": setTime,
-                    "JSON": { ...data, pageURL: pagenewurl },
-                });
-                let reqOptions = {
-                    url: "https://sheetdb.io/api/v1/1ownp6p7a9xpi",
-                    method: "POST",
-                    headers: headersList,
-                    data: bodyContent,
-                };
-                await Axios.request(reqOptions);
-                window.location.href = "/thank-you";
-            }
-        }
     };
+
     return (
         <>
             <footer className="bg-[#00C6F9] pt-[70px] pb-[70px] 3xl:mt-0 relative z-[999]">
@@ -225,13 +223,13 @@ const Footer = () => {
                             </h2>
                             <p className='text-white text-[16px] lg:text-[18px] montserrat font-[400] py-[17px] leading-[22px] pb-[60px]'>Book a meeting with a member of our team to learn more and get a quote today!</p>
                             <div className="form">
-                                <form action="javascript:;">
+                                <form>
                                     <div className="flex-wrap flex items-center">
                                         <div className="name relative w-full">
                                             <User className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
                                             <input type="text" name="name" placeholder='Enter your name' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
                                             {errors.name && (
-                                                <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-16%]">
+                                                <span className="text-[12px] block p-2 font-sans font-semibold text-primary-100 absolute left-0 bottom-[-16%]">
                                                     {errors.name}
                                                 </span>
                                             )}
@@ -240,7 +238,7 @@ const Footer = () => {
                                             <EnvelopeIcon className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
                                             <input type="email" name="email" placeholder='Enter Email' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
                                             {errors.email && (
-                                                <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-16%]">
+                                                <span className="text-[12px] block p-2 font-sans font-semibold text-primary-100 absolute left-0 bottom-[-16%]">
                                                     {errors.email}
                                                 </span>
                                             )}
@@ -250,7 +248,7 @@ const Footer = () => {
                                         <Phone className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
                                         <input type="phone" name="phone" minLength={7} maxLength={15} placeholder='Enter Phone Number' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
                                         {errors.phone && (
-                                            <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-16%]">
+                                            <span className="text-[12px] block p-2 font-sans font-semibold text-primary-100 absolute left-0 bottom-[-16%]">
                                                 {errors.phone}
                                             </span>
                                         )}

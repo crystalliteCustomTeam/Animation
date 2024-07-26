@@ -1,7 +1,10 @@
+"use client"
 import React, { useEffect, useState } from 'react'
+import Image from "next/image";
 import Axios from "axios";
+import { usePathname } from "next/navigation"
+import { FaRegCommentAlt } from "react-icons/fa";
 //===== Component
-import usePopup from '@/app/configs/store/Popup';
 import styles from './bannercontact.module.css'
 // import Image
 import BrandsLogo1 from "media/location-page/brand-1.png"
@@ -13,13 +16,10 @@ import Profile from "media/location-page/Profile.png"
 import phone from "media/location-page/Calling.png"
 import message from "media/location-page/Message.png"
 import btnIcon from "media/icons/arrow-red.png"
-// icons
-import { BsPerson } from "react-icons/bs";
 // Import Slick Slider
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Image from 'next/image'
 
 const tabInfo = [
   { image: BrandsLogo1 },
@@ -37,66 +37,57 @@ const tabInfo = [
 function BannerContact({ content }) {
   const { title, para: { paraArrayBanner } } = content;
 
-  const { popup, togglePopup } = usePopup()
-  const popupHandle = () => {
-    togglePopup(popup)
-  }
-  // form Start
-  let newDate = new Date();
-  let date = newDate.getDate();
-  let month = newDate.getMonth() + 1;
-  let year = newDate.getFullYear();
-  // For Time
-  let today = new Date();
-  let setTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-  let setDate = `${month < 10 ? `0${month}` : `${month}`}-${date}-${year}`;
-  const [ip, setIP] = useState("");
-  //creating function to load ip address from the API
-  const getIPData = async () => {
-    const res = await Axios.get(
-      "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
-    );
-    setIP(res.data);
-  };
-  useEffect(() => {
-    getIPData();
-  }, []);
-  // For Page
-  const [pagenewurl, setPagenewurl] = useState(null);
-  useEffect(() => {
-    setPagenewurl(window.location.href);
-  }, [setPagenewurl]);
+  //========== Form
+  const [ip, setIP] = useState('');
+  const [pagenewurl, setPagenewurl] = useState('');
+  const [errors, setErrors] = useState({});
+  const [formStatus, setFormStatus] = useState('Get Started');
+  const [isDisabled, setIsDisabled] = useState(false);
   const [data, setData] = useState({
     name: "",
     phone: "",
     email: "",
-    message: "",
-    botchecker: null,
+    message: ""
   });
+
+  //========== Fetch IP data from the API
+  const getIPData = async () => {
+    try {
+      const res = await Axios.get('https://ipwho.is/');
+      setIP(res.data);
+    } catch (error) {
+      console.error('Error fetching IP data:', error);
+    }
+  };
+
+  useEffect(() => {
+    getIPData();
+    setPagenewurl(window.location.href);
+  }, []);
+
+  const router = usePathname();
+  const currentRoute = router;
+
   const handleDataChange = (e) => {
     setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
-  const [formStatus, setFormStatus] = useState(" Get Started");
-  const [errors, setErrors] = useState({});
-  const [isDisabled, setIsDisabled] = useState(false);
+
   const formValidateHandle = () => {
     let errors = {};
-    // Name validation
     if (!data.name.trim()) {
       errors.name = "Name is required";
     }
-    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!data.email.match(emailRegex)) {
       errors.email = "Valid email is required";
     }
-    // Phone validation
-    const phoneRegex = /[0-9]/i;
+    const phoneRegex = /^[0-9]+$/;
     if (!data.phone.match(phoneRegex)) {
-      errors.phone = "Valid phone is required";
+      errors.phone = "Valid phone number is required";
     }
     return errors;
   };
+
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setFormStatus("Processing...");
@@ -106,21 +97,53 @@ function BannerContact({ content }) {
     setErrors(errors);
 
     if (Object.keys(errors).length === 0) {
-      if (data.botchecker === null) {
-        let headersList = {
-          Accept: "*/*",
-          "Content-Type": "application/json",
-        };
+      const currentdate = new Date().toLocaleString();
+      const dataToSend = {
+        ...data,
+        pageUrl: pagenewurl,
+        IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
+        currentdate: currentdate,
+      };
+      const JSONdata = JSON.stringify(dataToSend);
 
-        let bodyContent = JSON.stringify({ ...data, pageURL: pagenewurl });
-        let reqOptions = {
-          url: "/api/email",
-          method: "POST",
-          headers: headersList,
-          data: bodyContent,
+      try {
+        //========== First API call to your server
+        await fetch('/api/email/', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+          },
+          body: JSONdata
+        });
+
+        //========== Second API call to SheetDB
+        let headersList = {
+          "Accept": "*/*",
+          "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+          "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+          "Content-Type": "application/json"
         };
-        await Axios.request(reqOptions);
-      } else {
+        let bodyContent = JSON.stringify({
+          "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
+          "Brand": "Infinity Animations",
+          "Page": `${currentRoute}`,
+          "Date": currentdate,
+          "Time": currentdate,
+          "JSON": JSONdata,
+        });
+        await fetch("https://sheetdb.io/api/v1/orh55uv03rvh4", {
+          method: "POST",
+          body: bodyContent,
+          headers: headersList
+        });
+
+        setFormStatus("Success...");
+        setTimeout(() => {
+          window.location.href = '/thank-you';
+        }, 2000);
+      } catch (error) {
+        console.error('Error during form submission:', error);
         setFormStatus("Failed...");
         setIsDisabled(false);
       }
@@ -128,37 +151,7 @@ function BannerContact({ content }) {
       setFormStatus("Failed...");
       setIsDisabled(false);
     }
-
-    if (Object.keys(errors).length === 0) {
-      if (data.botchecker === null) {
-
-
-        let headersList = {
-          Accept: "*/*",
-          Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-          "Content-Type": "application/json",
-        };
-
-        let bodyContent = JSON.stringify({
-          "IP": `${ip.ip} - ${ip.country_name} - ${ip.city_name}`,
-          "Brand": "Infinity Animations",
-          "Page": pagenewurl,
-          "Date": setDate,
-          "Time": setTime,
-          "JSON": { ...data, pageURL: pagenewurl },
-        });
-        let reqOptions = {
-          url: "https://sheetdb.io/api/v1/1ownp6p7a9xpi",
-          method: "POST",
-          headers: headersList,
-          data: bodyContent,
-        };
-        await Axios.request(reqOptions);
-        window.location.href = "/thank-you";
-      }
-    }
   };
-
 
   const testiSlider = {
     dots: false,
@@ -212,7 +205,7 @@ function BannerContact({ content }) {
                         <input type="text" name="name" placeholder='Enter your name' className='mx-3 w-full bg-transparent font-sans placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
                       </div>
                       {errors.name && (
-                        <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-40%] z-50">
+                        <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-60%] z-50">
                           {errors.name}
                         </span>
                       )}
@@ -223,7 +216,7 @@ function BannerContact({ content }) {
                         <input type="email" name='email' placeholder='Enter Email' className='mx-3 w-full bg-transparent font-sans placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
                       </div>
                       {errors.email && (
-                        <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-38%] z-50">
+                        <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-60%] z-50">
                           {errors.email}
                         </span>
                       )}
@@ -236,12 +229,15 @@ function BannerContact({ content }) {
                           pattern="[0-9]*" placeholder='Enter Phone Number' className='mx-3 w-full bg-transparent font-sans placeholder:text-[#858585] focus:outline-0 text-black' onChange={handleDataChange} required />
                       </div>
                       {errors.phone && (
-                        <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-38%] z-50">
+                        <span className="text-[12px] block p-2 font-bold font-sans text-primary-100 absolute left-0 bottom-[-60%] z-50">
                           {errors.phone}
                         </span>
                       )}
                     </div>
-
+                    <div className='flex mt-[10px] py-[13px] px-[8px] rounded-[4px] w-full border-none bg-[#E6E6E6] mb-[25px]'>
+                      <FaRegCommentAlt className='text-[#858585] text-[25px]' />
+                      <textarea id="message" name="message" rows="2" className="mx-3 w-full bg-transparent font-sans placeholder:text-[#858585] focus:outline-0 text-black resize-none" placeholder="Type Full Details" onChange={handleDataChange} />
+                    </div>
                     <button type='submit' className='bg-prime text-white border-0 h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center justify-between gap-x-2 w-full' onClick={handleFormSubmit} disabled={isDisabled}>
                       <span className="text-[16px] xl:text-[18px] font-normal font-sans">{formStatus}</span>
                       <Image src={btnIcon} className="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2 object-contain" />
@@ -258,8 +254,8 @@ function BannerContact({ content }) {
               </h2>
               {paraArrayBanner.map((para, index) => (
                 <p className="text-[15px] lg:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
-                {para}
-              </p>
+                  {para}
+                </p>
               ))}
               <div className='grid grid-cols-1 '>
                 <Slider {...testiSlider} >

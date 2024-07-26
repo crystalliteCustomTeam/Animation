@@ -1,10 +1,128 @@
+"use client"
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import React from 'react'
+import Axios from "axios";
+import { usePathname } from "next/navigation"
 // Images
 import MaketBg from "media/infinity-studio-lp-new/marketing-bg.png"
 import MerketMen from "media/infinity-studio-lp-new/market-men.png"
 
 const BookMeeting = () => {
+    //========== Form
+    const [ip, setIP] = useState('');
+    const [pagenewurl, setPagenewurl] = useState('');
+    const [errors, setErrors] = useState({});
+    const [formStatus, setFormStatus] = useState('Get Started');
+    const [isDisabled, setIsDisabled] = useState(false);
+    const [data, setData] = useState({
+        name: "",
+        phone: "",
+        email: "",
+        message: ""
+    });
+
+    //========== Fetch IP data from the API
+    const getIPData = async () => {
+        try {
+            const res = await Axios.get('https://ipwho.is/');
+            setIP(res.data);
+        } catch (error) {
+            console.error('Error fetching IP data:', error);
+        }
+    };
+
+    useEffect(() => {
+        getIPData();
+        setPagenewurl(window.location.href);
+    }, []);
+
+    const router = usePathname();
+    const currentRoute = router;
+
+    const handleDataChange = (e) => {
+        setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    };
+
+    const formValidateHandle = () => {
+        let errors = {};
+        if (!data.name.trim()) {
+            errors.name = "Name is required";
+        }
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!data.email.match(emailRegex)) {
+            errors.email = "Valid email is required";
+        }
+        const phoneRegex = /^[0-9]+$/;
+        if (!data.phone.match(phoneRegex)) {
+            errors.phone = "Valid phone number is required";
+        }
+        return errors;
+    };
+
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+        setFormStatus("Processing...");
+        setIsDisabled(true);
+
+        const errors = formValidateHandle();
+        setErrors(errors);
+
+        if (Object.keys(errors).length === 0) {
+            const currentdate = new Date().toLocaleString();
+            const dataToSend = {
+                ...data,
+                pageUrl: pagenewurl,
+                IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
+                currentdate: currentdate,
+            };
+            const JSONdata = JSON.stringify(dataToSend);
+
+            try {
+                //========== First API call to your server
+                await fetch('/api/email/', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json, text/plain, */*',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSONdata
+                });
+
+                //========== Second API call to SheetDB
+                let headersList = {
+                    "Accept": "*/*",
+                    "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+                    "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+                    "Content-Type": "application/json"
+                };
+                let bodyContent = JSON.stringify({
+                    "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
+                    "Brand": "Infinity Animations",
+                    "Page": `${currentRoute}`,
+                    "Date": currentdate,
+                    "Time": currentdate,
+                    "JSON": JSONdata,
+                });
+                await fetch("https://sheetdb.io/api/v1/orh55uv03rvh4", {
+                    method: "POST",
+                    body: bodyContent,
+                    headers: headersList
+                });
+
+                setFormStatus("Success...");
+                setTimeout(() => {
+                    window.location.href = '/thank-you';
+                }, 2000);
+            } catch (error) {
+                console.error('Error during form submission:', error);
+                setFormStatus("Failed...");
+                setIsDisabled(false);
+            }
+        } else {
+            setFormStatus("Failed...");
+            setIsDisabled(false);
+        }
+    };
     return (
         <section className='relative py-[50px] lg:py-[90px]'>
             <Image src={MaketBg} alt='Infinity Animation' fill={true} className='z-[-1] object-cover object-center' />
@@ -19,24 +137,39 @@ const BookMeeting = () => {
                     <div className="col-span-12 lg:col-span-6">
                         <div>
                             <h3 className='montserrat text-[30px] md:text-[40px] font-bold leading-[40px] md:leading-[33px] mb-5'>Get A Quote</h3>
-                            <form action="javascript:;">
+                            <form>
                                 <div className="grid grid-cols-2 gap-3 mb-3">
-                                    <div className="name">
-                                        <input type="text" name='name' placeholder='Enter Your Name' className='text-[#000000] poppins text-[13px] font-normal leading-[17px] w-full focus:outline-0 h-[45px] px-4 border-0' />
+                                    <div className="relative mb-1 name">
+                                        <input type="text" name='name' placeholder='Enter Your Name' className='text-[#000000] poppins text-[13px] font-normal leading-[17px] w-full focus:outline-0 h-[45px] px-4 border-0' onChange={handleDataChange} required />
+                                        {errors.name && (
+                                            <span className="text-[12px] block p-2 font-bold poppins text-primary-100 absolute left-0 bottom-[-55%] z-50">
+                                                {errors.name}
+                                            </span>
+                                        )}
                                     </div>
-                                    <div className="email">
-                                        <input type="email" name='email' placeholder='Enter Your Number' className='text-[#000000] poppins text-[13px] font-normal leading-[17px] w-full focus:outline-0 h-[45px] px-4 border-0' />
+                                    <div className="relative mb-1 email">
+                                        <input type="email" name='email' placeholder='Enter Your Number' className='text-[#000000] poppins text-[13px] font-normal leading-[17px] w-full focus:outline-0 h-[45px] px-4 border-0' onChange={handleDataChange} required />
+                                        {errors.email && (
+                                            <span className="text-[12px] block p-2 font-bold poppins text-primary-100 absolute left-0 bottom-[-55%] z-50">
+                                                {errors.email}
+                                            </span>
+                                        )}
                                     </div>
                                 </div>
-                                <div className="number mb-3">
-                                    <input type="tel" name='number' placeholder='Enter Your Number' className='text-[#000000] poppins text-[13px] font-normal leading-[17px] w-full focus:outline-0 h-[45px] px-4 border-0' />
+                                <div className="relative mb-4 number">
+                                    <input type="tel" name='phone' minLength="10" maxLength="13" pattern="[0-9]*" placeholder='Enter Your Number' className='text-[#000000] poppins text-[13px] font-normal leading-[17px] w-full focus:outline-0 h-[45px] px-4 border-0' onChange={handleDataChange} required />
+                                    {errors.phone && (
+                                        <span className="text-[12px] block p-2 font-bold poppins text-primary-100 absolute left-0 bottom-[-55%] z-50">
+                                            {errors.phone}
+                                        </span>
+                                    )}
                                 </div>
                                 <div className="message">
-                                    <textarea name="message" type="message" placeholder='Type Message' className='text-[#000000] poppins text-[13px] font-normal leading-[17px] w-full focus:outline-0 h-[110px] px-4 pt-4 border-0' ></textarea>
+                                    <textarea name="message" type="message" placeholder='Type Message' className='text-[#000000] poppins text-[13px] font-normal leading-[17px] w-full focus:outline-0 h-[110px] px-4 pt-4 border-0' onChange={handleDataChange}></textarea>
                                 </div>
-                                <p className='text-[15px] md:text-[18px] poppins leading-[23px] md:leading-[25px] font-normal text-white pt-3 pb-5'>By continuing you agree to the Explainly Privacy Policy <br className='xl:block hidden'/>
-                                and consent to receive communications from us.</p>
-                                <button type='submit' className='text-white text-[16px] font-semibold poppins leading-[22px] bg-[#FF0000] rounded-[5px] px-9 py-3 w-max'>Get Started</button>
+                                <p className='text-[15px] md:text-[18px] poppins leading-[23px] md:leading-[25px] font-normal text-white pt-3 pb-5'>By continuing you agree to the Explainly Privacy Policy <br className='xl:block hidden' />
+                                    and consent to receive communications from us.</p>
+                                <button type='submit' className='text-white text-[16px] font-semibold poppins leading-[22px] bg-[#FF0000] rounded-[5px] px-9 py-3 w-max' onClick={handleFormSubmit} disabled={isDisabled}>{formStatus}</button>
                             </form>
                         </div>
                     </div>

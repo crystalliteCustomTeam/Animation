@@ -1,7 +1,8 @@
 "use client"
-import Axios from "axios";
-import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
+import Image from 'next/image';
+import Axios from "axios";
+import { usePathname } from "next/navigation"
 // pupup
 import { Dialog } from "@material-tailwind/react";
 import usePopup from '@/app/configs/store/Popup';
@@ -16,63 +17,57 @@ const Popup = ({ }) => {
     const popupHandle = () => {
         togglePopup(popup)
     }
-    // form Start 
-    let newDate = new Date();
-    let date = newDate.getDate();
-    let month = newDate.getMonth() + 1;
-    let year = newDate.getFullYear();
-    // For Time
-    let today = new Date();
-    let setTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    let setDate = `${month < 10 ? `0${month}` : `${month}`}-${date}-${year}`;
-
-    const [ip, setIP] = useState("");
-    //creating function to load ip address from the API
-    const getIPData = async () => {
-        const res = await Axios.get(
-            "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
-        );
-        setIP(res.data);
-    };
-    useEffect(() => {
-        getIPData();
-    }, []);
-    // For Page
-    const [pagenewurl, setPagenewurl] = useState(null);
-    useEffect(() => {
-        setPagenewurl(window.location.href);
-    }, [setPagenewurl]);
+    //========== Form
+    const [ip, setIP] = useState('');
+    const [pagenewurl, setPagenewurl] = useState('');
+    const [errors, setErrors] = useState({});
+    const [formStatus, setFormStatus] = useState('Get A Quote');
+    const [isDisabled, setIsDisabled] = useState(false);
     const [data, setData] = useState({
         name: "",
         phone: "",
         email: "",
-        message: "",
-        botchecker: null,
+        message: ""
     });
+
+    //========== Fetch IP data from the API
+    const getIPData = async () => {
+        try {
+            const res = await Axios.get('https://ipwho.is/');
+            setIP(res.data);
+        } catch (error) {
+            console.error('Error fetching IP data:', error);
+        }
+    };
+
+    useEffect(() => {
+        getIPData();
+        setPagenewurl(window.location.href);
+    }, []);
+
+    const router = usePathname();
+    const currentRoute = router;
+
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-    const [formStatus, setFormStatus] = useState("Get A Quote");
-    const [errors, setErrors] = useState({});
-    const [isDisabled, setIsDisabled] = useState(false);
+
     const formValidateHandle = () => {
         let errors = {};
-        // Name validation
         if (!data.name.trim()) {
             errors.name = "Name is required";
         }
-        // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!data.email.match(emailRegex)) {
             errors.email = "Valid email is required";
         }
-        // Phone validation
-        const phoneRegex = /[0-9]/i;
+        const phoneRegex = /^[0-9]+$/;
         if (!data.phone.match(phoneRegex)) {
-            errors.phone = "Valid phone is required";
+            errors.phone = "Valid phone number is required";
         }
         return errors;
     };
+
     const handleFormSubmit = async (e) => {
         e.preventDefault();
         setFormStatus("Processing...");
@@ -82,52 +77,59 @@ const Popup = ({ }) => {
         setErrors(errors);
 
         if (Object.keys(errors).length === 0) {
-            if (data.botchecker === null) {
-                let headersList = {
-                    Accept: "*/*",
-                    "Content-Type": "application/json",
-                };
+            const currentdate = new Date().toLocaleString();
+            const dataToSend = {
+                ...data,
+                pageUrl: pagenewurl,
+                IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
+                currentdate: currentdate,
+            };
+            const JSONdata = JSON.stringify(dataToSend);
 
-                let bodyContent = JSON.stringify({ ...data, pageURL: pagenewurl });
-                let reqOptions = {
-                    url: "/api/email",
-                    method: "POST",
-                    headers: headersList,
-                    data: bodyContent,
+            try {
+                //========== First API call to your server
+                await fetch('/api/email/', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json, text/plain, */*',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSONdata
+                });
+
+                //========== Second API call to SheetDB
+                let headersList = {
+                    "Accept": "*/*",
+                    "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+                    "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+                    "Content-Type": "application/json"
                 };
-                await Axios.request(reqOptions);
-            } else {
+                let bodyContent = JSON.stringify({
+                    "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
+                    "Brand": "Infinity Animations",
+                    "Page": `${currentRoute}`,
+                    "Date": currentdate,
+                    "Time": currentdate,
+                    "JSON": JSONdata,
+                });
+                await fetch("https://sheetdb.io/api/v1/orh55uv03rvh4", {
+                    method: "POST",
+                    body: bodyContent,
+                    headers: headersList
+                });
+
+                setFormStatus("Success...");
+                setTimeout(() => {
+                    window.location.href = '/thank-you';
+                }, 2000);
+            } catch (error) {
+                console.error('Error during form submission:', error);
                 setFormStatus("Failed...");
                 setIsDisabled(false);
             }
         } else {
             setFormStatus("Failed...");
             setIsDisabled(false);
-        }
-        if (Object.keys(errors).length === 0) {
-            if (data.botchecker === null) {
-                let headersList = {
-                    Accept: "*/*",
-                    Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-                    "Content-Type": "application/json",
-                };
-                let bodyContent = JSON.stringify({
-                    "IP": `${ip.ip} - ${ip.country_name} - ${ip.city_name}`,
-                    "Brand": "Infinity Animations",
-                    "Page": pagenewurl,
-                    "Date": setDate,
-                    "Time": setTime,
-                    "JSON": { ...data, pageURL: pagenewurl },
-                });
-                let reqOptions = {
-                    url: "https://sheetdb.io/api/v1/1ownp6p7a9xpi",
-                    method: "POST",
-                    headers: headersList,
-                    data: bodyContent,
-                };
-                await Axios.request(reqOptions);
-                window.location.href = "/thank-you";
-            }
         }
     };
 
@@ -150,7 +152,7 @@ const Popup = ({ }) => {
                                     <div className="relative">
                                         <input type="text" id="name" name="name" placeholder="Enter Your Name" className="montserrat text-[10px] xl:text-[12px] text-white w-full h-[35px] xl:h-[50px] bg-[#242424]/100 rounded-[6px] backdrop-blur-xl px-3 lg:px-4 mb-3 2xl:mb-4 focus:outline-0" onChange={handleDataChange} />
                                         {errors.name && (
-                                            <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-6px]">
+                                            <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-10px]">
                                                 {errors.name}
                                             </span>
                                         )}
@@ -158,7 +160,7 @@ const Popup = ({ }) => {
                                     <div className="relative">
                                         <input type="email" id="email" name="email" placeholder="Enter Email Address" className="montserrat text-[10px] xl:text-[12px] text-white w-full h-[35px] xl:h-[50px] bg-[#242424]/100 rounded-[6px] backdrop-blur-xl px-3 lg:px-4 mb-3 2xl:mb-4 focus:outline-0" onChange={handleDataChange} />
                                         {errors.email && (
-                                            <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-6px]">
+                                            <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-10px]">
                                                 {errors.email}
                                             </span>
                                         )}
@@ -166,7 +168,7 @@ const Popup = ({ }) => {
                                     <div className="relative">
                                         <input type="tel" id="phone" name="phone" minLength="10" maxLength="13" placeholder="Enter Phone" className="montserrat text-[10px] xl:text-[12px] text-white w-full h-[35px] xl:h-[50px] bg-[#242424]/100 rounded-[6px] backdrop-blur-xl px-3 lg:px-4 mb-3 2xl:mb-4 focus:outline-0" onChange={handleDataChange} />
                                         {errors.phone && (
-                                            <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-6px]">
+                                            <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-10px]">
                                                 {errors.phone}
                                             </span>
                                         )}

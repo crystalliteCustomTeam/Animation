@@ -1,6 +1,8 @@
-import Image from 'next/image'
+"use client"
 import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
 import Axios from "axios";
+import { usePathname } from "next/navigation"
 import { CheckCircle } from 'heroicons-react'
 //===== Component
 import usePopup from '@/app/configs/store/Popup';
@@ -16,63 +18,57 @@ const Banner = () => {
     const popupHandle = () => {
         togglePopup(popup)
     }
-    // form Start
-    let newDate = new Date();
-    let date = newDate.getDate();
-    let month = newDate.getMonth() + 1;
-    let year = newDate.getFullYear();
-    // For Time
-    let today = new Date();
-    let setTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    let setDate = `${month < 10 ? `0${month}` : `${month}`}-${date}-${year}`;
-
-    const [ip, setIP] = useState("");
-    //creating function to load ip address from the API
-    const getIPData = async () => {
-        const res = await Axios.get(
-            "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
-        );
-        setIP(res.data);
-    };
-    useEffect(() => {
-        getIPData();
-    }, []);
-    // For Page
-    const [pagenewurl, setPagenewurl] = useState(null);
-    useEffect(() => {
-        setPagenewurl(window.location.href);
-    }, [setPagenewurl]);
+    //========== Form
+    const [ip, setIP] = useState('');
+    const [pagenewurl, setPagenewurl] = useState('');
+    const [errors, setErrors] = useState({});
+    const [formStatus, setFormStatus] = useState('Get Started');
+    const [isDisabled, setIsDisabled] = useState(false);
     const [data, setData] = useState({
         name: "",
         phone: "",
         email: "",
-        message: "",
-        botchecker: null,
+        message: ""
     });
+
+    //========== Fetch IP data from the API
+    const getIPData = async () => {
+        try {
+            const res = await Axios.get('https://ipwho.is/');
+            setIP(res.data);
+        } catch (error) {
+            console.error('Error fetching IP data:', error);
+        }
+    };
+
+    useEffect(() => {
+        getIPData();
+        setPagenewurl(window.location.href);
+    }, []);
+
+    const router = usePathname();
+    const currentRoute = router;
+
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-    const [formStatus, setFormStatus] = useState(" Get Started");
-    const [errors, setErrors] = useState({});
-    const [isDisabled, setIsDisabled] = useState(false);
+
     const formValidateHandle = () => {
         let errors = {};
-        // Name validation
         if (!data.name.trim()) {
             errors.name = "Name is required";
         }
-        // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!data.email.match(emailRegex)) {
             errors.email = "Valid email is required";
         }
-        // Phone validation
-        const phoneRegex = /[0-9]/i;
+        const phoneRegex = /^[0-9]+$/;
         if (!data.phone.match(phoneRegex)) {
-            errors.phone = "Valid phone is required";
+            errors.phone = "Valid phone number is required";
         }
         return errors;
     };
+
     const handleFormSubmit = async (e) => {
         e.preventDefault();
         setFormStatus("Processing...");
@@ -82,56 +78,59 @@ const Banner = () => {
         setErrors(errors);
 
         if (Object.keys(errors).length === 0) {
-            if (data.botchecker === null) {
-                let headersList = {
-                    Accept: "*/*",
-                    "Content-Type": "application/json",
-                };
+            const currentdate = new Date().toLocaleString();
+            const dataToSend = {
+                ...data,
+                pageUrl: pagenewurl,
+                IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
+                currentdate: currentdate,
+            };
+            const JSONdata = JSON.stringify(dataToSend);
 
-                let bodyContent = JSON.stringify({ ...data, pageURL: pagenewurl });
-                let reqOptions = {
-                    url: "/api/email",
-                    method: "POST",
-                    headers: headersList,
-                    data: bodyContent,
+            try {
+                //========== First API call to your server
+                await fetch('/api/email/', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json, text/plain, */*',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSONdata
+                });
+
+                //========== Second API call to SheetDB
+                let headersList = {
+                    "Accept": "*/*",
+                    "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+                    "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+                    "Content-Type": "application/json"
                 };
-                await Axios.request(reqOptions);
-            } else {
+                let bodyContent = JSON.stringify({
+                    "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
+                    "Brand": "Infinity Animations",
+                    "Page": `${currentRoute}`,
+                    "Date": currentdate,
+                    "Time": currentdate,
+                    "JSON": JSONdata,
+                });
+                await fetch("https://sheetdb.io/api/v1/orh55uv03rvh4", {
+                    method: "POST",
+                    body: bodyContent,
+                    headers: headersList
+                });
+
+                setFormStatus("Success...");
+                setTimeout(() => {
+                    window.location.href = '/thank-you';
+                }, 2000);
+            } catch (error) {
+                console.error('Error during form submission:', error);
                 setFormStatus("Failed...");
                 setIsDisabled(false);
             }
         } else {
             setFormStatus("Failed...");
             setIsDisabled(false);
-        }
-
-        if (Object.keys(errors).length === 0) {
-            if (data.botchecker === null) {
-
-
-                let headersList = {
-                    Accept: "*/*",
-                    Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-                    "Content-Type": "application/json",
-                };
-
-                let bodyContent = JSON.stringify({
-                    "IP": `${ip.ip} - ${ip.country_name} - ${ip.city_name}`,
-                    "Brand": "Infinity Animations",
-                    "Page": pagenewurl,
-                    "Date": setDate,
-                    "Time": setTime,
-                    "JSON": { ...data, pageURL: pagenewurl },
-                });
-                let reqOptions = {
-                    url: "https://sheetdb.io/api/v1/1ownp6p7a9xpi",
-                    method: "POST",
-                    headers: headersList,
-                    data: bodyContent,
-                };
-                await Axios.request(reqOptions);
-                window.location.href = "/thank-you";
-            }
         }
     };
 
@@ -192,7 +191,7 @@ const Banner = () => {
                             </div>
                         </div>
                         <div className="col-span-12 lg:col-span-6">
-                            <form action="javascript:;" className='bg-[#003465] pt-[20px] md:mr-[98px] md:ml-[40px] relative border-[6px] border-white lg:w-8/12 h-full'>
+                            <form className='bg-[#003465] pt-[20px] md:mr-[98px] md:ml-[40px] relative border-[6px] border-white lg:w-8/12 h-full'>
                                 <h3 className='text-white text-[20px] md:text-[25px] leading-[30px] montserrat font-[700] text-left py-[10px] px-[20px]'>Share Your <br className='block' />
                                     <strong className='text-[30px] text-[#f6c501] md:ml-[2rem] font-extrabold '>
                                         Animation Idea
