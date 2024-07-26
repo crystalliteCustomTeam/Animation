@@ -43,7 +43,7 @@ const Portfolio = ({ content }) => {
     }
     return (
         <>
-            <section className={`w-full flex items-center justify-start pt-[40px] pb-0 md:py-[40px] lg:py-[80px] ${bg}`} id='portfolio'>
+            <section className={`w-full flex items-center justify-start pt-[40px] pb-0 md:py-[40px] lg:py-[60px] ${bg}`} id='portfolio'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-6 lg:max-w-7xl mx-auto">
                         <div className="col-span-12 md:mt-4">
@@ -71,8 +71,8 @@ const Portfolio = ({ content }) => {
                                         {tabContents[activeTab].map((item, index) => (
                                             <Link key={index} href={item.video} datafancybox="gallery" className={`${styles.shadow} w-full h-full group`}>
                                                 <div className="overlay relative ">
-                                                    <Image src={item.thumbnail} alt="Infinity Animations" width={468} className='h-full lg:h-[263px]' />
-                                                    <div className="bg-slate-700/75 h-full w-full absolute left-[50%] top-[50%] lg:top-[132px] translate-x-[-50%] group-hover:translate-y-[-110px] lg:group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center ">
+                                                    <Image src={item.thumbnail} alt="Infinity Animations"  className='h-[263px] min-w-[468px]' />
+                                                    <div className="bg-slate-700/75 h-full w-full absolute left-[50%] top-[50%] lg:top-[132px] translate-x-[-50%] group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center ">
                                                         <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0 w-[75px]' />
                                                     </div>
                                                 </div>

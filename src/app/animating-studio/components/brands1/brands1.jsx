@@ -16,36 +16,37 @@ const BrandOne = ({ content }) => {
     }
     return (
         <>
-            {/* <section className='pt-0 md:pt-[50px] lg:pt-[100px] lg:relative px-4 xl:px-0 md:my-[30px]'> */}
-            <section className='py-[50px] lg:py-[70px] lg:mt-[75px]'>
-                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
-                    <div className='px-10 bg-cover bg-center bg-no-repeat bg-[url("../../public/infinity-studio/brand.svg")] rounded-xl'>
-                        <div className="grid grid-cols-12">
-                            <div className='col-span-12 lg:col-span-7 pb-4 pt-2 lg:py-[50px]'>
-                                <div className="content pt-[25px] lg:pt-0">
-                                    <h2 className='text-[#fff] font-[700] poppins text-[20px] lg:text-[25px] xl:text-[36px] leading-[28px] lg:leading-[35px] xl:leading-[56px]'>
-                                        {title} <br />
-                                    </h2>
-                                    <p className='text-[#fff] text-[16px] xl:text-[18px] poppins font-[400] pt-[13px] pb-[20px] xl:pt-[20px] xl:pb-[30px] leading-[25px]'>
-                                        {desc}
-                                    </p>
-                                </div>
-                                <div className="btns flex-wrap flex items-center justify-center lg:justify-start gap-5 mt-0">
-                                    <div className="btn">
-                                        <button onClick={popupHandle} className='flex items-center justify-center text-[16px] text-[#003262] font-[600] poppins bg-[#FFCC00] py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl md:min-w-[180px]'>
-                                            Get Started
-                                        </button>
+            <section className='pb-[30px] pt-[50px] lg:pt-[100px] lg:relative px-4 xl:px-0 md:my-[10px]'>
+                <div className='md:py-[50px] '>
+                    <div className="sm:px-8 lg:max-w-7xl mx-auto">
+                        <div className='px-6 sm:px-10 bg-cover bg-center bg-no-repeat bg-[url("../../public/infinity-studio/brand.svg")] rounded-xl pt-[35px] lg:pt-0'>
+                            <div className="grid grid-cols-12">
+                                <div className='col-span-12 lg:col-span-7 pb-4 lg:py-[30px] '>
+                                    <div className="content">
+                                        <h2 className='text-[#fff] font-[700] poppins text-[22px] md:text-[25px] lg:text-[34px] xl:text-[36px] leading-[35px] lg:leading-[45px] xl:leading-[50px]'>
+                                            {title} <br />
+                                        </h2>
+                                        <p className='text-[#fff] text-[16px] xl:text-[18px] poppins font-[400] pt-[5px] pb-[12px] xl:pt-[12px] xl:pb-[26px] leading-[25px]'>
+                                            {desc}
+                                        </p>
                                     </div>
-                                    <div className="btn">
-                                        <a href='tel:833-666-6689' className='flex items-center justify-center text-[15px] text-white font-[700] font-sans bg-transparent ml-[10px] border border-white py-[12px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl md:min-w-[180px]'>
-                                            <span className='mr-[15px]'><Image src={BtnMsg} /></span>  Live Chat
-                                        </a>
+                                    <div className="btns flex-wrap flex items-center justify-start sm:gap-5 my-2 sm:mt-0">
+                                        <div className="btn">
+                                            <button onClick={popupHandle} className='flex items-center justify-center text-[15px] text-[#003262] font-[600] poppins bg-[#FFCC00] py-[12px] px-[10px] sm:px-[15px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl md:min-w-[180px]'>
+                                                Get Started
+                                            </button>
+                                        </div>
+                                        <div className="btn">
+                                            <a href='tel:833-666-6689' className='flex items-center justify-center text-[15px] text-white font-[700] font-sans bg-transparent ml-[10px] border border-white py-[12px] px-[10px] sm:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl md:min-w-[180px]'>
+                                                <span className='mr-[15px]'><Image src={BtnMsg} /></span>  Live Chat
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className='col-span-12 lg:col-span-5 flex justify-center '>
-                                <div className='flex items-end lg:relative w-full'>
-                                    <Image src={ctaImg} alt='Infinity Animations ' className='mb-0 lg:absolute bottom-[0%] h-[300px] lg:h-[400px] xl:h-[480px] w-full' />
+                                <div className='col-span-12 lg:col-span-5 flex justify-center '>
+                                    <div className='flex items-end lg:relative w-full'>
+                                        <Image src={ctaImg} alt='Infinity Animations ' className='mb-0 lg:absolute bottom-[0%] h-[300px] lg:h-[360px] xl:h-[400px] w-full' />
+                                    </div>
                                 </div>
                             </div>
                         </div>

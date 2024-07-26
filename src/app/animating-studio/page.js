@@ -112,31 +112,31 @@ const Studio = () => {
     // ===== Brands Content ===== //
     const brandsOne = {
         title: (<>
-            Start Displaying Your Brand with <br />  <span className="text-[#FFCC00]"> Amazing Animated Videos</span>
+            Start Displaying Your Brand with <br className='hidden xl:block' />   <span className="text-[#FFCC00]"> Amazing Animated Videos</span>
         </>),
-        desc: (<>Spread profound message and scale up your business with our <br /> animated video services today!</>),
+        desc: (<>Spread profound message and scale up your business with our <br className='hidden xl:block' /> animated video services today!</>),
         isBtn: false
     }
     const brandsTwo = {
         title: (<>
-            Start Displaying Your Brand with <br />  <span className="text-[#FFCC00]"> Amazing Animated Videos</span>
+            Start Displaying Your Brand with <br className='hidden xl:block' />  <span className="text-[#FFCC00]"> Amazing Animated Videos</span>
         </>),
-        desc: (<>Spread profound message and scale up your business with our <br /> animated video services today!</>),
+        desc: (<>Spread profound message and scale up your business with our <br className='hidden xl:block' /> animated video services today!</>),
         isBtn: false
     }
     const brandsThree = {
         subTitle: "OUR EXPERIENCE",
         title: (<>
-            <span className="text-[#FFCC00]">Infinity Animation</span> works with all types of <br /> companies.
+            <span className="text-[#FFCC00]">Infinity Animation</span> works with all types of <br className='hidden xl:block' /> companies.
         </>),
         desc: "From startups and non-profits to industry leaders like swisscom, 2park, codio, and Google. But no matter the client, we strategically tailor our approach to support your specific needs to produce compelling videos.",
         isBtn: false
     }
     const brandsFour = {
         title: (<>
-            Start Displaying Your Brand with <br />  <span className="text-[#FFCC00]"> Amazing Animated Videos</span>
+            Start Displaying Your Brand with <br className='hidden xl:block' />  <span className="text-[#FFCC00]"> Amazing Animated Videos</span>
         </>),
-        desc: (<>Spread profound message and scale up your business with our <br /> animated video services today!</>),
+        desc: (<>Spread profound message and scale up your business with our <br className='hidden xl:block' /> animated video services today!</>),
         isBtn: false
     }
 
@@ -282,7 +282,7 @@ const Studio = () => {
     ];
     const portfolio = {
         title: (<>Our Streamlined <span className="text-[#A70A0E]">Projects</span></>),
-        para: (<>Our creative prospectus, over the years, has garnered quite a reputation for itself. <br />  Here’s the evidence.</>),
+        para: (<>Our creative prospectus, over the years, has garnered quite a reputation for itself. <br className='hidden xl:block' />  Here’s the evidence.</>),
         tabContents: tabContents,
         tabsInfo: true,
         tabInfo: tabInfo,
@@ -429,7 +429,7 @@ const Studio = () => {
         },
     ]
     const testimonial = {
-        title: (<> Our Animation Videos Made Their Product <br /> Look Easy & Exciting </>),
+        title: (<> Our Animation Videos Made Their Product <br className='hidden xl:block' /> Look Easy & Exciting </>),
         para: (<> If you can’t trust us, try trusting them.</>),
         testiContentNew2: testiContent
     };

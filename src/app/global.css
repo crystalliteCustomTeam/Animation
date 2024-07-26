@@ -582,6 +582,14 @@ div#ty7 {
   text-align: start;
 }
 
+.explainerType-location {
+  height: 60px;
+  overflow: auto;
+  padding-right: 5px;
+  background: transparent;
+  padding-right: 10px;
+}
+
 .testimonialBg {
   filter: invert(1);
 }

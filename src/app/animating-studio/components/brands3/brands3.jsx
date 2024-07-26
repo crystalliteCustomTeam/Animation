@@ -16,16 +16,16 @@ const BrandsThree = ({ content }) => {
     }
     return (
         <>
-            <section className='pt-[50px] lg:pt-[90px] lg:relative px-4 xl:px-0 '>
-                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
-                    <div className='px-10 bg-cover bg-center bg-no-repeat bg-[url("../../public/animating-studio/brand-bg.svg")] rounded-xl pt-[25px] md:pt-[5px]'>
+            <section className='pb-[30px] md:pb-0 pt-[50px] lg:pt-[90px] lg:relative px-4 xl:px-0 '>
+                <div className="sm:px-8 lg:max-w-7xl mx-auto">
+                    <div className='px-6 sm:px-10 bg-cover bg-center bg-no-repeat bg-[url("../../public/animating-studio/brand-bg.svg")] rounded-xl pt-[25px] md:pt-[5px]'>
                         <div className="grid grid-cols-12">
                             <div className='col-span-12 pb-4 pt-2 lg:py-[25px] xl:py-[30px]'>
                                 <div className="content">
                                     <h3 className='text-[#fff] font-[600] poppins text-[15px] lg:text-[20px] xl:text-[30px] leading-[35px] xl:leading-[56px]'>
                                         {subTitle} <br />
                                     </h3>
-                                    <h2 className='text-[#fff] font-[600] poppins text-[35px] lg:text-[40px] xl:text-[50px] leading-[32px] lg:leading-[40px] xl:leading-[60px]'>
+                                    <h2 className='text-[#fff] font-[600] poppins text-[28px] sm:text-[35px] lg:text-[40px] xl:text-[50px] leading-[32px] sm:leading-[40px] xl:leading-[60px]'>
                                         {title} <br />
                                     </h2>
                                     <p className='text-[#fff] text-[16px] xl:text-[18px] poppins font-[400] pt-[13px] pb-[20px] xl:pt-[20px] xl:pb-[30px] leading-[25px]'>
