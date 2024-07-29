@@ -12,7 +12,7 @@ export default function FeaturedImage({ post }) {
 
     return (
         <Link href={`/blog/${post.slug}`}>
-            <Image quality={75} width="480" height="350" src={defaultFeaturedImage}  alt={post.title}  className={`img-fluid rounded-[18px]`}/>
+            <Image quality={75} width="480" height="350" src={defaultFeaturedImage}  alt={post.title}  className={`  rounded-[18px]`}/>
         </Link>
     )
 }

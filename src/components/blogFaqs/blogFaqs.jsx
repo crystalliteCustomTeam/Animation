@@ -29,7 +29,7 @@ const BlogFaqs = ({ faqData }) => {
                                             quality={75}
                                             alt='BitsWits'
                                             src={faqStates[index] ? arrowDown : arrowUp}
-                                            className='img-fluid'
+                                            className=' '
                                         />
                                     </span>
                                 </div>

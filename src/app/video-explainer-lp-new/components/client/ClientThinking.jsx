@@ -49,7 +49,7 @@ const ClientThinking = () => {
                                     <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>I never knew explaining tech could be so cool! These guys turned my jargon into a visual masterpiece. My audience loves it!</p>
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
-                                            <Image src={Testi1} alt='testi1' className='img-fluid' />
+                                            <Image src={Testi1} alt='testi1' className=' ' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>John D. - Tech Guru</h4>
@@ -72,7 +72,7 @@ const ClientThinking = () => {
                                     <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>My fitness app needed a boost, and these video wizards made it happen! Now, even my dumbbells are doing a happy dance. Thanks, team!</p>
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
-                                            <Image src={Testi2} alt='testi1' className='img-fluid' />
+                                            <Image src={Testi2} alt='testi1' className=' ' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Sarah K. - Fitness Leader</h4>
@@ -96,7 +96,7 @@ const ClientThinking = () => {
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
-                                            <Image src={Testi3} alt='testi1' className='img-fluid' />
+                                            <Image src={Testi3} alt='testi1' className=' ' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Eddie S. - Coffee Connoisseur</h4>
@@ -123,7 +123,7 @@ const ClientThinking = () => {
                                     <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>I never knew explaining tech could be so cool! These guys turned my jargon into a visual masterpiece. My audience loves it!</p>
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
-                                            <Image src={Testi1} alt='testi1' className='img-fluid' />
+                                            <Image src={Testi1} alt='testi1' className=' ' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>John D. - Tech Guru</h4>
@@ -146,7 +146,7 @@ const ClientThinking = () => {
                                     <p className='mb-[20px] p-[20px] text-[15px] font-bold text-black montserrat mx-auto lg:w-11/12 mt-[13px] text-center'>My fitness app needed a boost, and these video wizards made it happen! Now, even my dumbbells are doing a happy dance. Thanks, team!</p>
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
-                                            <Image src={Testi2} alt='testi1' className='img-fluid' />
+                                            <Image src={Testi2} alt='testi1' className=' ' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Sarah K. - Fitness Leader</h4>
@@ -170,7 +170,7 @@ const ClientThinking = () => {
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
-                                            <Image src={Testi3} alt='testi1' className='img-fluid' />
+                                            <Image src={Testi3} alt='testi1' className=' ' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Eddie S. - Coffee Connoisseur</h4>

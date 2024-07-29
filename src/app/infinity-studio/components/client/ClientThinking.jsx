@@ -50,7 +50,7 @@ const ClientThinking = () => {
                                         <Image src={quote} className='w-[75px]' />
                                     </div>
                                     <div className='flex flex-col items-center text-center justify-center px-3 py-1 ' >
-                                        <Image src={Testi1} alt='testi1' className='img-fluid w-[60px]' />
+                                        <Image src={Testi1} alt='testi1' className='  w-[60px]' />
                                         <p className='mb-[20px] py-[20px] text-[15px] text-[#fff] montserrat  mt-[13px]'>From start to finish, the process was incredibly easy. It was a pleasure to work
                                             with the Infinity Animations squad. </p>
                                     </div>
@@ -58,7 +58,7 @@ const ClientThinking = () => {
 
                                     <div className="card-bottom flex items-center p-[20px] pt-0 sm:pt-[50px] xl:pt-[70px]">
                                         <div className="img">
-                                            <Image src={Play} alt='play' className='img-fluid w-[55px]' />
+                                            <Image src={Play} alt='play' className='  w-[55px]' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-white'>Kelly Sparks</h4>
@@ -79,7 +79,7 @@ const ClientThinking = () => {
                                         <Image src={quote} className='w-[75px]' />
                                     </div>
                                     <div className='flex flex-col items-center text-center justify-center px-3 py-1 ' >
-                                        <Image src={Testi2} alt='testi2' className='img-fluid w-[60px]' />
+                                        <Image src={Testi2} alt='testi2' className='  w-[60px]' />
                                         <p className='mb-[20px] py-[20px] text-[15px] text-[#fff] montserrat  mt-[13px]'>From start to finish, the process was incredibly easy. It was a pleasure to work
                                             with the Infinity Animations squad. </p>
                                     </div>
@@ -87,7 +87,7 @@ const ClientThinking = () => {
 
                                     <div className="card-bottom flex items-center p-[20px] pt-0 sm:pt-[30px] xl:pt-[50px]">
                                         <div className="img">
-                                            <Image src={Play} alt='play' className='img-fluid w-[55px]' />
+                                            <Image src={Play} alt='play' className='  w-[55px]' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-white'>Edd Lockwood</h4>
@@ -108,7 +108,7 @@ const ClientThinking = () => {
                                         <Image src={quote} className='w-[75px]' />
                                     </div>
                                     <div className='flex flex-col items-center text-center justify-center px-3 py-1 ' >
-                                        <Image src={Testi3} alt='testi3' className='img-fluid w-[60px]' />
+                                        <Image src={Testi3} alt='testi3' className='  w-[60px]' />
                                         <p className='mb-[20px] py-[20px] text-[15px] text-[#fff] montserrat  mt-[13px]'>From start to finish, the process was incredibly easy. It was a pleasure to work
                                             with the Infinity Animations squad. </p>
                                     </div>
@@ -116,7 +116,7 @@ const ClientThinking = () => {
 
                                     <div className="card-bottom flex items-center p-[20px] pt-0 sm:pt-[5px] xl:pt-[25px]">
                                         <div className="img">
-                                            <Image src={Play} alt='play' className='img-fluid w-[55px]' />
+                                            <Image src={Play} alt='play' className='  w-[55px]' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-white'>Jason Gawkward</h4>
@@ -142,7 +142,7 @@ const ClientThinking = () => {
                                         <Image src={quote} className='w-[75px]' />
                                     </div>
                                     <div className='flex flex-col items-center text-center justify-center px-3 py-1 ' >
-                                        <Image src={Testi1} alt='testi1' className='img-fluid w-[60px]' />
+                                        <Image src={Testi1} alt='testi1' className='  w-[60px]' />
                                         <p className='md:mb-[20px] py-[20px] text-[15px] text-[#fff] montserrat  mt-[13px]'>From start to finish, the process was incredibly easy. It was a pleasure to work
                                             with the Infinity Animations squad. </p>
                                     </div>
@@ -150,7 +150,7 @@ const ClientThinking = () => {
 
                                     <div className="card-bottom flex items-center p-[20px]">
                                         <div className="img">
-                                            <Image src={Play} alt='play' className='img-fluid w-[55px]' />
+                                            <Image src={Play} alt='play' className='  w-[55px]' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-white'>Kelly Sparks</h4>
@@ -171,7 +171,7 @@ const ClientThinking = () => {
                                         <Image src={quote} className='w-[75px]' />
                                     </div>
                                     <div className='flex flex-col items-center text-center justify-center px-3 py-1 ' >
-                                        <Image src={Testi2} alt='testi2' className='img-fluid w-[60px]' />
+                                        <Image src={Testi2} alt='testi2' className='  w-[60px]' />
                                         <p className='md:mb-[20px] py-[20px] text-[15px] text-[#fff] montserrat  mt-[13px]'>From start to finish, the process was incredibly easy. It was a pleasure to work
                                             with the Infinity Animations squad. </p>
                                     </div>
@@ -179,7 +179,7 @@ const ClientThinking = () => {
 
                                     <div className="card-bottom flex items-center p-[20px]">
                                         <div className="img">
-                                            <Image src={Play} alt='play' className='img-fluid w-[55px]' />
+                                            <Image src={Play} alt='play' className='  w-[55px]' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-white'>Edd Lockwood</h4>
@@ -200,7 +200,7 @@ const ClientThinking = () => {
                                         <Image src={quote} className='w-[75px]' />
                                     </div>
                                     <div className='flex flex-col items-center text-center justify-center px-3 py-1 ' >
-                                        <Image src={Testi3} alt='testi3' className='img-fluid w-[60px]' />
+                                        <Image src={Testi3} alt='testi3' className='  w-[60px]' />
                                         <p className='md:mb-[20px] py-[20px] text-[15px] text-[#fff] montserrat  mt-[13px]'>From start to finish, the process was incredibly easy. It was a pleasure to work
                                             with the Infinity Animations squad. </p>
                                     </div>
@@ -208,7 +208,7 @@ const ClientThinking = () => {
 
                                     <div className="card-bottom flex items-center p-[20px]">
                                         <div className="img">
-                                            <Image src={Play} alt='play' className='img-fluid w-[55px]' />
+                                            <Image src={Play} alt='play' className='  w-[55px]' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-white'>Jason Gawkward</h4>

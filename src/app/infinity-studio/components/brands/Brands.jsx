@@ -42,7 +42,7 @@ const Brands = ({ content }) => {
                         </div>
                         <div className='col-span-12 lg:col-span-6 flex justify-center'>
                             <div className='lg:absolute lg:top-[1%] w-[450px] lg:w-[50%] xl:w-[50%] 2xl:w-[44%] xxl:w -[39%] 3xl:w-[36%] h-full lg:h-auto mb-0 flex items-end bottom-0 right-0 xl:right-auto'>
-                                <Image src={ctaImg} alt='Infinity Animations ' className='img-fluid mb-0' />
+                                <Image src={ctaImg} alt='Infinity Animations ' className='  mb-0' />
                             </div>
                         </div>
                     </div>
