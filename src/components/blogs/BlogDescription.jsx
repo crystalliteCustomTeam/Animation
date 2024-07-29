@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 // Import Images
 import DescDot from "media/location-page/desc-dot.png"

@@ -58,7 +58,7 @@ const BlogHero = ({ content }) => {
 
     return (
         <>
-            <section className={`w-full lg:h-[100vh] flex items-center justify-start sm:pb-5 bg-none bg-no-repeat relative overflow-hidden z-1 top-[97px] lg:top-auto pt-[35px] lg:pt-[85px]`}>
+        <section className={`w-full lg:h-[100vh] flex items-center justify-start sm:pb-5 bg-none bg-no-repeat relative overflow-hidden z-1 top-[97px] lg:top-auto pt-[35px] lg:pt-[85px]`}>
                 <div className="container">
                     <div className='grid grid-cols-12 content-center lg:gap-16'>
                         <div className='col-span-12 lg:col-span-6 flex flex-col items-start py-[35px]'>
