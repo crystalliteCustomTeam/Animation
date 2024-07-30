@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import { FaPhoneAlt } from 'react-icons/fa'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -10,9 +11,126 @@ import Logo1 from "media/infinity-studio-lp-new/form-1.png"
 import Logo2 from "media/infinity-studio-lp-2/form-3.png"
 import Chats from "media/infinity-studio-lp-new/chat-icon.svg"
 import BadgeSlider from '../badgeSlider2/BadgeSlider2'
+import { usePathname } from 'next/navigation'
 
 const Banner = () => {
     const backgroundVideo = 'https://player.vimeo.com/progressive_redirect/playback/950015917/rendition/720p/file.mp4?loc=external&log_user=0&signature=e0789e199bc0374e4971e5fc0b408a23ea883170eeb1fa2500dbaf2d0117d095';
+
+    //========== Form
+    const [ip, setIP] = useState('');
+    const [pagenewurl, setPagenewurl] = useState('');
+    const [errors, setErrors] = useState({});
+    const [formStatus, setFormStatus] = useState('Get a Free Quote');
+    const [isDisabled, setIsDisabled] = useState(false);
+    const [data, setData] = useState({
+        name: "",
+        phone: "",
+        email: "",
+        message: ""
+    });
+
+    //========== Fetch IP data from the API
+    const getIPData = async () => {
+        try {
+            const res = await Axios.get('https://ipwho.is/');
+            setIP(res.data);
+        } catch (error) {
+            console.error('Error fetching IP data:', error);
+        }
+    };
+
+    useEffect(() => {
+        getIPData();
+        setPagenewurl(window.location.href);
+    }, []);
+
+    const router = usePathname();
+    const currentRoute = router;
+
+    const handleDataChange = (e) => {
+        setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    };
+
+    const formValidateHandle = () => {
+        let errors = {};
+        if (!data.name.trim()) {
+            errors.name = "Name is required";
+        }
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!data.email.match(emailRegex)) {
+            errors.email = "Valid email is required";
+        }
+        const phoneRegex = /^[0-9]+$/;
+        if (!data.phone.match(phoneRegex)) {
+            errors.phone = "Valid phone number is required";
+        }
+        return errors;
+    };
+
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+        setFormStatus("Processing...");
+        setIsDisabled(true);
+
+        const errors = formValidateHandle();
+        setErrors(errors);
+
+        if (Object.keys(errors).length === 0) {
+            const currentdate = new Date().toLocaleString();
+            const dataToSend = {
+                ...data,
+                pageUrl: pagenewurl,
+                IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
+                currentdate: currentdate,
+            };
+            const JSONdata = JSON.stringify(dataToSend);
+
+            try {
+                //========== First API call to your server
+                await fetch('/api/email/', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json, text/plain, */*',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSONdata
+                });
+
+                //========== Second API call to SheetDB
+                let headersList = {
+                    "Accept": "*/*",
+                    "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+                    "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+                    "Content-Type": "application/json"
+                };
+                let bodyContent = JSON.stringify({
+                    "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
+                    "Brand": "Infinity Animations",
+                    "Page": `${currentRoute}`,
+                    "Date": currentdate,
+                    "Time": currentdate,
+                    "JSON": JSONdata,
+                });
+                await fetch("https://sheetdb.io/api/v1/orh55uv03rvh4", {
+                    method: "POST",
+                    body: bodyContent,
+                    headers: headersList
+                });
+
+                setFormStatus("Success...");
+                setTimeout(() => {
+                    window.location.href = '/thank-you';
+                }, 2000);
+            } catch (error) {
+                console.error('Error during form submission:', error);
+                setFormStatus("Failed...");
+                setIsDisabled(false);
+            }
+        } else {
+            setFormStatus("Failed...");
+            setIsDisabled(false);
+        }
+    };
 
     return (
         <>
@@ -62,21 +180,36 @@ const Banner = () => {
                                 <div className="logo absolute right-[-6px] top-[0px] lg:top-[-30px] xl:top-[-41px] sm:block hidden">
                                     <Image src={Logo2} alt='Infinity Animation' width={180} height={60} />
                                 </div>
-                                <form action="javascript:;" className='pb-2 sm:pb-0 pt-2 sm:pt-5'>
-                                    <div className="name mb-3">
-                                        <input type="text" placeholder='Name' className='text-[14px] md:text-[16px] font-normal leading-[25px] w-full h-[50px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0' />
+                                <form className='pb-2 sm:pb-0 pt-2 sm:pt-5'>
+                                    <div className="name relative mb-3">
+                                        <input type="text" name="name" placeholder='Name' className='text-[14px] md:text-[16px] font-normal leading-[25px] w-full h-[50px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0' onChange={handleDataChange} required />
+                                        {errors.name && (
+                                            <span className="text-[12px] block p-2 font-semibold poppins text-black absolute left-0 bottom-[-48%] z-50">
+                                                {errors.name}
+                                            </span>
+                                        )}
                                     </div>
-                                    <div className="number mb-3">
-                                        <input type="tel" placeholder='Phone Number' className='text-[14px] md:text-[16px] font-normal leading-[25px] w-full h-[50px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0' />
+                                    <div className="number relative mb-3">
+                                        <input type="tel" name='phone' placeholder='Phone Number' className='text-[14px] md:text-[16px] font-normal leading-[25px] w-full h-[50px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0' onChange={handleDataChange} required />
+                                        {errors.phone && (
+                                            <span className="text-[12px] block p-2 font-semibold poppins text-black absolute left-0 bottom-[-48%] z-50">
+                                                {errors.phone}
+                                            </span>
+                                        )}
                                     </div>
-                                    <div className="email mb-3">
-                                        <input type="email" placeholder='Email' className='text-[14px] md:text-[16px] font-normal leading-[25px] w-full h-[50px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0' />
+                                    <div className="email relative mb-3">
+                                        <input type="email" name='email' placeholder='Email' className='text-[14px] md:text-[16px] font-normal leading-[25px] w-full h-[50px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0' onChange={handleDataChange} required />
+                                        {errors.email && (
+                                            <span className="text-[12px] block p-2 font-semibold poppins text-black absolute left-0 bottom-[-48%] z-50">
+                                                {errors.email}
+                                            </span>
+                                        )}
                                     </div>
                                     <div className="message mb-2">
-                                        <textarea name="message" placeholder='Tell us about your Project' className='text-[14px] md:text-[16px] font-normal leading-[25px] w-full h-[100px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0 pt-4 resize-none'></textarea>
+                                        <textarea name="message" placeholder='Tell us about your Project' className='text-[14px] md:text-[16px] font-normal leading-[25px] w-full h-[100px] text-[#0000008e] poppins px-4 rounded-[5px] border border-[#00000029] focus:outline-0 pt-4 resize-none' onChange={handleDataChange}></textarea>
                                     </div>
                                     <div className="btn">
-                                        <button className='h-[50px] w-full bg-black rounded-[5px] poppins text-[14px] md:text-[16px] leading-[25px] font-semibold'>Get a Free Quote</button>
+                                        <button className='h-[50px] w-full bg-black rounded-[5px] poppins text-[14px] md:text-[16px] leading-[25px] font-semibold' onClick={handleFormSubmit} disabled={isDisabled}> {formStatus}</button>
                                     </div>
                                 </form>
                             </div>
