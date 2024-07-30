@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import { FaPhoneVolume } from 'react-icons/fa'
@@ -20,13 +21,13 @@ const Packages = () => {
     }
 
     return (
-        <section className='bg-white py-[50px] lg:py-[70px]'>
+        <section className='bg-white py-[50px] lg:py-[90px]'>
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="grid grid-cols-12 gap-5">
                     <div className="col-span-12">
-                        <h3 className='text-[#000000] text-center font-[600] poppins text-[15px] md:text-[20px] lg:text-[25px]'>Pricing</h3>
-                        <h2 className='text-[#000000] text-center font-[600] poppins text-[32px] md:text-[42px] lg:text-[48px]'>Types of <span className="text-[#A70A0E]">Explainer</span> Videos</h2>
-                        <p className='text-[#231F20] text-[16px] poppins font-[400] py-[13px] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-4 md:mb-10'>Infinity Animations is a renowned name in the video animation industry. Our experts produce all types of animation videos with the usage of modern devices and techniques, some are discussed below:</p>
+                        <p className='text-[18px] lg:text-[25px] text-center leading-[25px] lg:leading-[38px] poppins font-semibold text-black'>Pricing</p>
+                        <h2 className='text-black poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[50px] text-center mb-2'>Types of <span className='text-[#FF0000]'>Animated</span> Explainer Videos</h2>
+                        <p className='text-[14px] md:text-[16px] poppins text-normal text-black text-center lg:w-8/12 xl:px-[23px] mx-auto mb-4 md:mb-10'>Infinity Animations is a renowned name in the video animation industry. Our experts produce all types of animation videos with the usage of modern devices and techniques, some are discussed below:</p>
                     </div>
                     <div className="col-span-12 lg:col-span-4">
                         <div className='bg-gradient-to-r from-[#f3d86e] to-[#FFCC00] rounded-[30px] md:rounded-[40px] lg:rounded-[25px] group'>
@@ -68,7 +69,7 @@ const Packages = () => {
                                         Get A Call For Free Consultation
                                     </button>
                                 </div>
-                                <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] px-2">
+                                <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] xl:px-2">
                                     <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-normal'>
                                         <FaPhoneVolume className='rotate-[-45deg] text-black mt-1' />
                                         <span className='text-[#231f20] text-[16px] pt-2'>
@@ -122,7 +123,7 @@ const Packages = () => {
                                         Get A Call For Free Consultation
                                     </button>
                                 </div>
-                                <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] px-2">
+                                <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] xl:px-2">
                                     <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-normal'>
                                         <FaPhoneVolume className='rotate-[-45deg] text-white mt-1' />
                                         <span className='text-white text-[16px] pt-2'>
@@ -176,7 +177,7 @@ const Packages = () => {
                                         Get A Call For Free Consultation
                                     </button>
                                 </div>
-                                <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] px-2">
+                                <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] xl:px-2">
                                     <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-normal'>
                                         <FaPhoneVolume className='rotate-[-45deg] text-white mt-1' />
                                         <span className='text-white text-[16px] pt-2'>

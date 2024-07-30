@@ -69,7 +69,7 @@ const Packages = () => {
                                         Get A Call For Free Consultation
                                     </button>
                                 </div>
-                                <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] px-2">
+                                <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] xl:px-2">
                                     <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-normal'>
                                         <FaPhoneVolume className='rotate-[-45deg] text-black mt-1' />
                                         <span className='text-[#231f20] text-[16px] pt-2'>
@@ -123,7 +123,7 @@ const Packages = () => {
                                         Get A Call For Free Consultation
                                     </button>
                                 </div>
-                                <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] px-2">
+                                <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] xl:px-2">
                                     <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-normal'>
                                         <FaPhoneVolume className='rotate-[-45deg] text-white mt-1' />
                                         <span className='text-white text-[16px] pt-2'>
@@ -177,7 +177,7 @@ const Packages = () => {
                                         Get A Call For Free Consultation
                                     </button>
                                 </div>
-                                <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] px-2">
+                                <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] xl:px-2">
                                     <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-normal'>
                                         <FaPhoneVolume className='rotate-[-45deg] text-white mt-1' />
                                         <span className='text-white text-[16px] pt-2'>

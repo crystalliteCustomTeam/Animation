@@ -63,9 +63,9 @@ import Remark9 from "media/infinity-studio-lp-new/remark9.png"
 const page = () => {
     //==== Animations Sections =====//
     const animations = {
-        title: <>Best <span className='text-black'>Animated Explainer Video</span> Creation Services</>,
+        title: <>Best <span className='text-[#FF0000]'>Animated Explainer Video</span> Creation Services</>,
         para: <>At Infinity Animations our animators have magic in their hands with their perfect blend of creativity we create incredible visuals for your business. At every stage of the making, we ensure our clients are fully aware of the project progress and are completely satisfied too. We cater a strong relationship with clients, starting from your ideas.</>,
-        subtitleOne: <><span className='text-black'>Professional</span> Explainer <br className='xl:block hidden' /> Animated Videos</>,
+        subtitleOne: <><span className='text-[#FF0000]'>Professional</span> Explainer <br className='xl:block hidden' /> Animated Videos</>,
         subtitleTwo: <>Simple words or symbols do not attract as many people as video animation does.</>,
         subpara: <>Animated videos are a great way to fascinate your viewers with rich, intriguing, and playful scenes. It is evaluated according to a study that animations videos can boost your company sales upto around 49%. Infinity animations studio offers you the interactive, innovative approach to motion pictures creation in any format in tight deadline terms and affordable prices. We are proud to have served top-notch names in the industry with our service.</>,
         AnimationVideo: "https://player.vimeo.com/progressive_redirect/playback/973456427/rendition/1080p/file.mp4?loc=external&signature=bec01dc8250d19fddde8de57be2a91813d578dfc4f31dbe5a25fa58857a4113e",
@@ -182,7 +182,6 @@ const page = () => {
     const faqs = {
         accordionData: accordionData,
     }
-
     //=====Portfilio Fold=====// 
     const tabInfo = [
         { label: "Hybrid Animation", index: 0 },

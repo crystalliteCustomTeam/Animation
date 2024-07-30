@@ -29,8 +29,7 @@ const Animations = ({ content }) => {
         return <div ref={containerRef}>{props.children}</div>;
     }
     return (
-        <section className='pt-[50px] lg:pt-[70px] relative bg-white'>
-            <Image src={AnimationBg} alt='Infinity Animation' fill={true} className='z-0 object-cover object-center' />
+        <section className='pt-[50px] lg:pt-[70px] bg-black'>
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="grid grid-cols-12 relative z-10">
                     <div className="col-span-12 ">
@@ -49,9 +48,9 @@ const Animations = ({ content }) => {
                                     <a href='tel:833-666-6689' class="text-[13px] md:text-[16px] font-bold leading-[25px] text-white bg-[#FF2D4B] rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center">Make an Animation</a>
                                 </div>
                                 <div className="btn mt-6 w-[180px]">
-                                    <a class="text-[13px] md:text-[16px] font-bold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center" href="javascript:$zopim.livechat.window.show();">
-                                        <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] xl:block hidden' />
-                                        <span className='text-[14px] xl:text-[16px] text-white px-[8px] fontbold poppins'>
+                                    <a class="text-[13px] md:text-[16px] font-bold leading-[25px] bg-white rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center" href="javascript:$zopim.livechat.window.show();">
+                                        <Image src={Chat} alt='UK' className='object-contain invert grayscale-[1] brightness-[100] xl:block hidden' />
+                                        <span className='text-[14px] xl:text-[16px] text-black px-[8px] fontbold poppins'>
                                             Live Chat
                                         </span>
                                     </a>
@@ -79,7 +78,7 @@ const Animations = ({ content }) => {
                     </div>
                 </div>
             </div>
-        </section >
+        </section>
     )
 }
 

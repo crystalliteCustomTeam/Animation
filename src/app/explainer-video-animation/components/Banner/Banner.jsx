@@ -141,7 +141,7 @@ const Banner = () => {
                 <div className="grid grid-cols-12 gap-y-5 md:gap-y-10 items-center">
                     <div className="col-span-12 lg:col-span-6 2xl:col-span-6">
                         <div className="txt">
-                            <h1 className='text-[25px] lg:text-[35px] font-semibold poppins leading-[35px] lg:leading-[50px] mb-5'>Boost Sales With Animation Services. Instantaneously Forge Animatedexplainer Videos!</h1>
+                            <h1 className='text-[25px] lg:text-[35px] font-semibold poppins leading-[35px] lg:leading-[50px] mb-5'>Boost Sales with Animation Services. Instantaneously Forge Animated Explainer Videos!</h1>
                             <p className='text-[14px] md:text-[16px] poppins leading-[25px] font-normal xl:pr-[20px]'>Transform Your Ideas into Visually Engaging Animated Stories, Tailored to Resonate with Your Audience & Elevate your Brand.</p>
                             <div className="flex items-center gap-4 lg:gap-8 pt-5 lg:pt-9">
                                 <div>
@@ -171,8 +171,8 @@ const Banner = () => {
                             <div className="flex items-center gap-x-4">
                                 <Image src={Logo1} alt='Infinity Animation' height={100} className='mt-[-49px]' />
                                 <p className='text-[15px] font-semibold leading-[22px] md:leading-[26px] text-white poppins'>
-                                    SIGN-UP & GET UPTO <span className='text-[#FFCC00]'>50%</span> Off <br className='md:block hidden' />
-                                    ON ALL TYPE OF VIDEO SERVICES
+                                    SIGN-UP & GET UPTO  <span className='text-[#FFCC00]'>50%</span> Off <br className='md:block hidden' />
+                                    ON ALL TYPES OF VIDEO SERVICES
                                 </p>
                             </div>
                             <div className="logo absolute w-[25%] right-[-8px] top-[10px] md:w-[20%] md:right-[-10px] md:top-[35px] xl:w-[25%] xl:right-[-15px] xl:top-[25px]">
