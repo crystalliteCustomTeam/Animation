@@ -25,7 +25,7 @@ const Brand = ({ content }) => {
                                         <a href='javascript:$zopim.livechat.window.show();' class="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center">{btnTxt}</a>
                                     </div>
                                     <div className="btn mt-6 w-[180px]">
-                                        <a class="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center" href="tel:1-833-666-6689">{callTxt}</a>
+                                        <a class="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center" href="tel:833-666-6689">{callTxt}</a>
                                     </div>
                                 </div>
                             </div> :

@@ -21,7 +21,7 @@ const Brand = ({ content }) => {
                                         <Link class="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center" href="javascript:;">{btnTxt}</Link>
                                     </div>
                                     <div className="btn mt-6 w-[180px]">
-                                        <Link class="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center" href="tel:1-833-666-6689">{callTxt}</Link>
+                                        <Link class="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center" href="tel:833-666-6689">{callTxt}</Link>
                                     </div>
                                 </div>
                             </div> :

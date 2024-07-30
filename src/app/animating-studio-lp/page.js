@@ -336,8 +336,8 @@ const page = () => {
             <Banner />
             <AwardWinning />
             <Portfolio content={portfolio} />
-            <BookMeeting />
             <Packages />
+            <BookMeeting />
             <Animation />
             <Brand content={brands} />
             <Animations content={animations} />

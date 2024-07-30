@@ -80,7 +80,7 @@ const Portfolio = ({ content }) => {
                                                 <div className="overlay relative ">
                                                     <Image src={item.thumbnail} alt="Infinity Animations" className='h-[263px] min-w-[468px]' />
                                                     <div className="bg-slate-700/75 h-full w-full absolute left-[50%] top-[50%] lg:top-[132px] translate-x-[-50%] group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center ">
-                                                        <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0 w-[75px]' />
+                                                        <Image src={PlayIcon} alt='Play-icon' className={`${styles.animi} brightness-200 invert-0 w-[75px]`} />
                                                     </div>
                                                 </div>
                                             </Link>

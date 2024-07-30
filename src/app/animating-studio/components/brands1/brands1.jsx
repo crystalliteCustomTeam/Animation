@@ -1,23 +1,15 @@
-
-import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
-//===== Component
-import usePopup from '@/app/configs/store/Popup';
+import Image from 'next/image'
 // ==== Images 
 import ctaImg from "media/animating-studio/ctaImg1.svg"
 import BtnMsg from "media/animating-studio/btn-message.svg"
 
 const BrandOne = ({ content }) => {
-    const { title, subTitle, desc, isBtn } = content;
-    const { popup, togglePopup } = usePopup()
-    const popupHandle = () => {
-        togglePopup(popup)
-    }
+    const { title, desc } = content;
     return (
         <>
             <section className='pb-[30px] pt-[50px] lg:pt-[100px] lg:relative px-4 xl:px-0 md:my-[10px]'>
-                <div className='md:py-[50px] '>
+                <div className='lg:py-[50px] '>
                     <div className="sm:px-8 lg:max-w-7xl mx-auto">
                         <div className='px-6 sm:px-10 bg-cover bg-center bg-no-repeat bg-[url("../../public/infinity-studio/brand.svg")] rounded-xl pt-[35px] lg:pt-0'>
                             <div className="grid grid-cols-12">
@@ -32,12 +24,12 @@ const BrandOne = ({ content }) => {
                                     </div>
                                     <div className="btns flex-wrap flex items-center justify-start sm:gap-5 my-2 sm:mt-0">
                                         <div className="btn">
-                                            <button onClick={popupHandle} className='flex items-center justify-center text-[15px] text-[#003262] font-[600] poppins bg-[#FFCC00] py-[12px] px-[10px] sm:px-[15px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl md:min-w-[180px]'>
+                                            <a href="tel:833-666-6689" className='flex items-center justify-center text-[15px] text-[#003262] font-[600] poppins bg-[#FFCC00] py-[12px] px-[10px] sm:px-[15px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl md:min-w-[180px]'>
                                                 Get Started
-                                            </button>
+                                            </a>
                                         </div>
                                         <div className="btn">
-                                            <a href='tel:833-666-6689' className='flex items-center justify-center text-[15px] text-white font-[700] font-sans bg-transparent ml-[10px] border border-white py-[12px] px-[10px] sm:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl md:min-w-[180px]'>
+                                            <a href='javascript:$zopim.livechat.window.show();' className='flex items-center justify-center text-[15px] text-white font-[700] font-sans bg-transparent ml-[10px] border border-white py-[12px] px-[10px] sm:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl md:min-w-[180px]'>
                                                 <span className='mr-[15px]'><Image src={BtnMsg} /></span>  Live Chat
                                             </a>
                                         </div>

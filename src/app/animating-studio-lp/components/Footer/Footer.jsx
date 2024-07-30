@@ -171,7 +171,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className="bg-[#00C6F9] pt-[70px] pb-[70px] 3xl:mt-0 relative z-[999]">
+            <footer className="bg-[#00C6F9] pt-[50px] pb-[50px] md:pt-[70px] md:pb-[70px] 3xl:mt-0 relative z-[999]">
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-4">
                         <div className="col-span-12 lg:col-span-4">
@@ -197,7 +197,7 @@ const Footer = () => {
                                             </a>
                                         </li>
                                     </ul>
-                                    <Image src={Payment} alt='Payment-Methods' className='w-5/12 lg:w-full my-3 object-contain' />
+                                    <Image src={Payment} alt='Payment-Methods' className='md:w-5/12 lg:w-full my-3 object-contain' />
                                     <div>
                                         <ul className="flex items-center gap-4 mt-4 md:mt-6">
                                             {

@@ -79,7 +79,7 @@ const HeaderLP = () => {
                                         </button>
                                     </li>
                                     <li>
-                                        <a href='tel:1-833-666-6689' className='flex items-center justify-center gap-3 text-[14px] text-white font-[600] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
+                                        <a href='tel:833-666-6689' className='flex items-center justify-center gap-3 text-[14px] text-white font-[600] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
                                             <Image src={flag} alt='CA' className='object-contain' />
                                             <span className='text-[14px] text-white font-sans w-max'>
                                                 Toll Free: 1-833-666-6689
@@ -92,7 +92,7 @@ const HeaderLP = () => {
                         <div className="col-span-8 lg:hidden block">
                             <ul>
                                 <li>
-                                    <a href='tel:1-833-666-6689' className='flex items-center justify-center gap-2 text-[14px] text-white font-[600] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all w-max ms-auto'>
+                                    <a href='tel:833-666-6689' className='flex items-center justify-center gap-2 text-[14px] text-white font-[600] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all w-max ms-auto'>
                                         <Image src={flag} alt='CA' className='object-contain' />
                                         <span className='text-[13px] md:text-[16px] text-white font-sans w-max'>
                                             Toll Free: 1-833-666-6689

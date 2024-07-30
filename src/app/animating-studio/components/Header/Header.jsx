@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import usePopup from '@/app/configs/store/Popup'
 import Image from 'next/image'
+import usePopup from '@/app/configs/store/Popup'
 //===== Images 
-// import logo from "media/images/logo.gif";
-import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import logo from "media/animating-studio/logo.svg";
 import Chat from "media/video-explainer/cht-icon.png"
 import telephone from "media/icons/call.png";
@@ -63,7 +61,7 @@ const HeaderLP = () => {
                                 <ul className='flex justify-end items-center gap-x-4 xl:gap-x-7'>
                                     <li>
                                         <a href="mailto:queries@infinityanimations.com" className='flex items-center'>
-                                            <Image src={email} className='w-[25px] h-[25px]'/>
+                                            <Image src={email} className='w-[25px] h-[25px]' />
                                             <span className='text-[13px] text-white py-[10px] px-[8px] font-[700] font-sans'>queries@infinityanimations.com</span>
                                         </a>
                                     </li>
@@ -77,12 +75,12 @@ const HeaderLP = () => {
                                     </li>
                                     <li>
                                         <button onClick={popupHandle} className='flex items-center text-[15px] text-white font-[700] font-sans bg-[#A70A0E]  ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:duration-700 hover:transition-all'>
-                                        Get A Quote
+                                            Get A Quote
                                         </button>
                                     </li>
                                     <li>
                                         <a href='tel:833-666-6689' className='flex items-center text-[15px] text-black font-[700] font-sans bg-[#f6c501] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:duration-700 hover:transition-all'>
-                                        Call Now: 123 456 7890
+                                            Call Now: 1-833-666-6689
                                         </a>
                                     </li>
                                 </ul>

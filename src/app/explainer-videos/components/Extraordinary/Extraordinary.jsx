@@ -21,7 +21,7 @@ const Extraordinary = () => {
                             <p className='text-[13px] sm:text-[17px] leading-[21px] font-sans text-center text-black lg:w-9/12 mx-auto mb-10'>Are you ready for our video animation services? If yes, then you are about to enter into a portal that leads to never-ending artistic creativity and vigor.</p>
                             <div className="flex flex-wrap items-center justify-center gap-3">
                                 <div className="btns">
-                                    <a href='tel:1-833-666-6689' class="text-[16px] font-semibold leading-[25px] text-white bg-[#FF2D4B] dropShadow rounded-[5px] w-[318px] h-[44px] poppins flex items-center justify-center">Make an Animation</a>
+                                    <a href='tel:833-666-6689' class="text-[16px] font-semibold leading-[25px] text-white bg-[#FF2D4B] dropShadow rounded-[5px] w-[318px] h-[44px] poppins flex items-center justify-center">Make an Animation</a>
                                 </div>
                                 <div className="btns">
                                     <a class="text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-[318px] md:w-[214px] h-[44px] shadow-2xl poppins flex items-center justify-center" href="javascript:$zopim.livechat.window.show();">Live Chat</a>

@@ -78,7 +78,7 @@ const Banner = ({ content }) => {
                 <div className='flex flex-col items-center content-center'>
                     <div className="flex gap-4 md:gap-2">
                         <div className="btn">
-                            <a href='tel:1-833-666-6689' className='flex items-center text-[16px] text-white font-[600] montserrat bg-[#FF2D4B] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                            <a href='tel:833-666-6689' className='flex items-center text-[16px] text-white font-[600] montserrat bg-[#FF2D4B] py-[12px] px-[20px] md:px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                 Call Now
                             </a>
                         </div>

@@ -48,12 +48,14 @@ function Work({ content }) {
                             <h3 className={`${clickedItem === index || hoveredItem === index ? "text-[#A70A0E]" : "text-[#003262]"} font-[600] poppins text-[18px] md:text-[24px] lg:text-[28px]`}>
                                 {item.listTitle}
                             </h3>
-                            <Image
-                                src={clickedItem === index || hoveredItem === index ? ArrowFill : ArrowUnfill}
-                                alt="Arrow"
-                                width={60}
-                                height={60}
-                            />
+                            <a href="javascript:$zopim.livechat.window.show();">
+                                <Image
+                                    src={clickedItem === index || hoveredItem === index ? ArrowFill : ArrowUnfill}
+                                    alt="Arrow"
+                                    width={60}
+                                    height={60}
+                                />
+                            </a>
                             <div className="absolute right-[20%] md:right-[10%] z-[10]">
                                 {clickedItem === index || hoveredItem === index ? (
                                     <Image src={item.listImage} alt="WorkImg" className='h-[120px] w-[120px] md:h-[150px] md:w-[150px]' />

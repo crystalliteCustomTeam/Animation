@@ -167,9 +167,7 @@ const BookMeeting = () => {
                                 <div className="message">
                                     <textarea name="message" type="message" placeholder='Type Message' className='text-[#000000] poppins text-[13px] font-normal leading-[17px] w-full focus:outline-0 h-[110px] px-4 pt-4 border-0' onChange={handleDataChange}></textarea>
                                 </div>
-                                <p className='text-[15px] md:text-[18px] poppins leading-[23px] md:leading-[25px] font-normal text-white pt-3 pb-5'>By continuing you agree to the Explainly Privacy Policy <br className='xl:block hidden' />
-                                    and consent to receive communications from us.</p>
-                                <button type='submit' className='text-white text-[16px] font-semibold poppins leading-[22px] bg-[#FF0000] rounded-[5px] px-9 py-3 w-max' onClick={handleFormSubmit} disabled={isDisabled}>{formStatus}</button>
+                                <button type='submit' className='text-white text-[16px] font-semibold poppins leading-[22px] bg-[#FF0000] rounded-[5px] px-9 py-3 w-max mt-3' onClick={handleFormSubmit} disabled={isDisabled}>{formStatus}</button>
                             </form>
                         </div>
                     </div>

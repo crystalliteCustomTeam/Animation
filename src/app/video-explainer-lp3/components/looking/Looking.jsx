@@ -35,7 +35,7 @@ const Looking = ({ content }) => {
                             ))}
                             <div className="btns flex-wrap flex items-center justify-center md:justify-start gap-5 mt-4">
                                 <div className="btn">
-                                    <a href="tel:1-833-666-6689" className='flex items-center text-[16px] text-white font-[600] montserrat bg-[#A70A0E] hover:bg-white hover:text-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                    <a href="tel:833-666-6689" className='flex items-center text-[16px] text-white font-[600] montserrat bg-[#A70A0E] hover:bg-white hover:text-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                         Toll Free: 1-833-666-6689
                                     </a>
                                 </div>

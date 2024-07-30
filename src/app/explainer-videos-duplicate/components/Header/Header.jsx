@@ -121,7 +121,7 @@ const Header = () => {
                         <div className="lg:flex hidden items-center gap-x-7">
                             <div className="">
                                 <Link
-                                    href="tel:1-833-666-6689"
+                                    href="tel:833-666-6689"
                                     className="flex items-center gap-x-3 text-primary-100 poppins font-semibold text-[15px]"
                                 >
                                     <FaPhoneAlt className="text-[15px]" />

@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react'
 import usePopup from '@/app/configs/store/Popup'
 import Image from 'next/image'
-import { EnvelopeIcon } from '@heroicons/react/24/solid'
 //===== Images 
 import logo from "media/images/logo.gif";
 import Chat from "media/infinity-studio-lp-new/chat-icon.svg"
@@ -66,7 +65,7 @@ const Header = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href='javascript:$zopim.livechat.window.show();' className='flex items-center text-[14px] xl:text-[16px] text-white font-normal poppins bg-[#ff2d4c2f] border-2 ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                        <a href='javascript:$zopim.livechat.window.show();' className='flex items-center text-[14px] xl:text-[16px] text-white font-normal poppins bg-[#ff2d4c2f] border-2 xl:ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                             <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] xl:block hidden' />
                                             <span className='text-[14px] xl:text-[16px] text-white px-[8px] font-normal poppins'>
                                                 Live Chat
@@ -74,12 +73,12 @@ const Header = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <button onClick={popupHandle} className='flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                        <button onClick={popupHandle} className='flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins xl:ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                             Get A Quote
                                         </button>
                                     </li>
                                     <li>
-                                        <a href='tel:1-833-666-6689' className='flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                        <a href='tel:833-666-6689' className='flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins xl:ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                             Call Now: 1-833-666-6689
                                         </a>
                                     </li>
@@ -89,7 +88,7 @@ const Header = () => {
                         <div className="col-span-6 lg:hidden block">
                             <ul>
                                 <li>
-                                    <a href='tel:1-833-666-6689' className='flex items-center justify-center text-[11px] text-white font-normal poppins bg-[#FF2D4B] py-[12px] px-[10px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                    <a href='tel:833-666-6689' className='flex items-center justify-center text-[11px] text-white font-normal poppins bg-[#FF2D4B] py-[12px] px-[10px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                         Call Now: 1-833-666-6689
                                     </a>
                                 </li>

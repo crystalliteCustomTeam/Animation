@@ -176,7 +176,7 @@ const OurClient = () => {
 
     return (
         <>
-            <section className="pt-[30px] pb-[30px] md:pb-[130px] md:pt-[70px] lg:pb-[150px] bg-[#F3F3F3] relative xl:before:absolute xl:before:content-[''] sm:before:h-full before:w-[240px] xl:before:w-[250px] 2xl:before:w-[300px] xxl:before:w-[450px] 3xl:before:w-[535px] 4xl:before:w-[610px] sm:before:right-0 sm:before:top-0 lg:before:bg-[#ededed9e] sm:before:z-10 lg:h-full">
+            <section className="pt-[30px] pb-[30px] md:pb-[130px] md:pt-[70px] lg:pb-[150px] bg-[#F3F3F3] relative ">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
                         <div className="col-span-12">
@@ -189,7 +189,7 @@ const OurClient = () => {
                                         <div className='flex flex-col sm:flex-row justify-center items-center gap-x-1 md:gap-x-4 slide px-4 lg:pe-8 my-auto' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                                             {testimonial.video ? (
                                                 <Link href={testimonial.video} datafancybox="gallery">
-                                                    <div className='w-full sm:w-[200px] md:w-[350px] h-[250px] md:h-[430px] box-testi relative'>
+                                                    <div className='w-full sm:w-[200px] md:w-[350px] h-[250px] md:h-[430px] box-testilp relative'>
                                                         <div className='w-full sm:w-[200px] md:w-[350px] h-[150px] md:h-[430px]  flex justify-center items-center overlay-div-testi '>
                                                             <video loading="lazy" muted loop preload="auto" autoPlay={false} className="rounded-[30px] w-full sm:w-[200px] md:w-[350px] h-[300px] md:h-full object-cover " >
                                                                 <source src={testimonial.video} type="video/mp4" />
@@ -207,7 +207,7 @@ const OurClient = () => {
                                                     </div>
                                                 </Link>
                                             ) : (
-                                                <div className='w-[100px] sm:w-[150px] h-[250px] md:h-[184px] box-testi '>
+                                                <div className='w-[100px] sm:w-[150px] h-[250px] md:h-[184px] box-testilp '>
                                                     <div className='w-[100px] sm:w-[150px] h-[150px]  md:h-[180px] flex justify-center items-center  overlay-div-testi'>
                                                         <Image
                                                             src={testimonial.thumbnail}
@@ -246,7 +246,7 @@ const OurClient = () => {
                         </div>
                     </div>
                 </div>
-            </section >
+            </section>
         </>
     )
 }

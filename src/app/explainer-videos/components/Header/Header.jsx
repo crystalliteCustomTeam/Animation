@@ -78,7 +78,7 @@ const Header = () => {
                                         </button>
                                     </li>
                                     <li>
-                                        <a href='tel:1-833-666-6689' className='flex items-center text-[15px] text-white font-[700] font-sans bg-[#000000] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                        <a href='tel:833-666-6689' className='flex items-center text-[15px] text-white font-[700] font-sans bg-[#000000] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                             Toll Free: 1-833-666-6689
                                         </a>
                                     </li>
@@ -88,7 +88,7 @@ const Header = () => {
                         <div className="col-span-6 lg:hidden block">
                             <ul>
                                 <li>
-                                    <a href='tel:1-833-666-6689' className='flex items-center justify-center text-[11px] text-white font-[700] font-sans bg-[#FF2D4B] py-[10px] px-[10px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                    <a href='tel:833-666-6689' className='flex items-center justify-center text-[11px] text-white font-[700] font-sans bg-[#FF2D4B] py-[10px] px-[10px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                         Toll Free: 1-833-666-6689
                                     </a>
                                 </li>

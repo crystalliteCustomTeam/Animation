@@ -58,7 +58,7 @@ const Packages = () => {
                                         </button>
                                     </div>
                                     <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[20px] px-2">
-                                        <a href="tel:1-833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-[700]'>
+                                        <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-[700]'>
                                             <FaPhoneVolume className='rotate-[-45deg] text-black mt-1' />
                                             <span className='text-[#231f20] text-[16px] pt-2'>
                                                 1-833-666-6689
@@ -111,7 +111,7 @@ const Packages = () => {
                                         </button>
                                     </div>
                                     <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[20px] px-2">
-                                        <a href="tel:1-833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-[700]'>
+                                        <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-[700]'>
                                             <FaPhoneVolume className='rotate-[-45deg] text-black mt-1' />
                                             <span className='text-[#231f20] text-[16px] pt-2'>
                                                 1-833-666-6689
@@ -164,7 +164,7 @@ const Packages = () => {
                                         </button>
                                     </div>
                                     <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[20px] px-2">
-                                        <a href="tel:1-833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-[700]'>
+                                        <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-[700]'>
                                             <FaPhoneVolume className='rotate-[-45deg] text-black mt-1' />
                                             <span className='text-[#231f20] text-[16px] pt-2'>
                                                 1-833-666-6689

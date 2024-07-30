@@ -81,7 +81,7 @@ const Portfolio = ({ content }) => {
                                                 <div className="overlay relative ">
                                                     <Image src={item.thumbnail} alt="Infinity Animations" className='h-[263px] min-w-[468px]' />
                                                     <div className="bg-slate-700/75 h-full w-full absolute left-[50%] top-[50%] lg:top-[132px] translate-x-[-50%] group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center ">
-                                                        <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0 w-[75px]' />
+                                                        <Image src={PlayIcon} alt='Play-icon' className={`${styles.animi} brightness-200 invert-0 w-[75px]`} />
                                                     </div>
                                                 </div>
                                             </Link>
@@ -89,6 +89,11 @@ const Portfolio = ({ content }) => {
                                     </div>
                                 </Fancybox>
                             )}
+                        </div>
+                        <div className="mt-10 w-max mx-auto">
+                            <a href='javascript:$zopim.livechat.window.show();' className='flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                Make an Animation
+                            </a>
                         </div>
                     </div>
                 </div>

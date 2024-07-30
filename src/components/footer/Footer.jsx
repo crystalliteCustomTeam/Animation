@@ -140,7 +140,10 @@ const Footer = () => {
                             <Link href="/">
                                 <Image src={logo} className="w-[50%]" alt="Infinity Animation" />
                             </Link>
-                            <p className="text-sm xl:text-base font-normal font-sans text-justify text-white mt-3 pr-5">Infinity Animations is a visionary kingdom where creativity knows no bounds. With masterful strokes of artistry, they breathe life into ideas, forging appealing animations that dance with imagination. Each frame tells a story, each visual a masterpiece. From 2D wonders to CGI-VFX magic, they conjure dimensions where dreams come to life. </p>
+                            <p className="text-sm xl:text-base font-normal font-sans text-justify text-white mt-3 pr-5">Infinity Animations is a visionary kingdom where creativity knows no bounds. With masterful strokes of artistry, they breathe life into ideas, forging appealing animations that dance with imagination. Each frame tells a story, each visual a masterpiece. From 2D wonders to CGI-VFX magic, they conjure dimensions where dreams come to life.</p>
+                            <div className="mt-4 md:mt-6 mb-4 lg:mb-0">
+                                <Image src={dmca} alt="Infinity Animation" />
+                            </div>
                         </div>
                         <div className="basis-full sm:basis-[48%] lg:basis-[20%]">
                             <h4 className="text-3xl font-normal font-sans text-white leading-none mb-3">Company</h4>
@@ -173,9 +176,6 @@ const Footer = () => {
                                     })
                                 }
                             </ul>
-                            <div className="hidden md:block mt-12 lg:mt-24">
-                                <Image src={dmca} alt="Infinity Animation" />
-                            </div>
                         </div>
                         <div className="basis-full sm:basis-[48%] lg:basis-1/4 flex flex-col justify-between">
                             <div>
@@ -209,9 +209,6 @@ const Footer = () => {
                                         })
                                     }
                                 </ul>
-                                <div className="block md:hidden mt-4">
-                                    <Image src={dmca} alt="Infinity Animation" />
-                                </div>
                             </div>
                         </div>
                     </div>
