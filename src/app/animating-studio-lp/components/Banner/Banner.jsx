@@ -1,6 +1,5 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
 import Axios from "axios";
 import { usePathname } from "next/navigation"
@@ -146,11 +145,11 @@ const Banner = () => {
                             <p className='text-[14px] md:text-[16px] poppins leading-[25px] font-normal xl:pr-[20px]'>Transform Your Ideas into Visually Engaging Animated Stories, Tailored to Resonate with Your Audience & Elevate your Brand.</p>
                             <div className="flex items-center gap-4 lg:gap-8 pt-5 lg:pt-9">
                                 <div>
-                                    <Link href="javascript:;" className='flex items-center justify-center text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                    <a href='tel:833-666-6689' className='flex items-center justify-center text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                         Call Now
-                                    </Link>
+                                    </a>
                                 </div>
-                                <div className='flex items-center gap-2'>
+                                <a href='javascript:$zopim.livechat.window.show();' className='flex items-center gap-2'>
                                     <Image src={Chats} alt='Infinity Animation' />
                                     <div>
                                         <p className='text-[15px] leading-tight text-white poppins font-normal '>Chat Now to Avail 50% OFF</p>
@@ -158,7 +157,7 @@ const Banner = () => {
                                             Live Chat
                                         </span>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div className='flex items-center gap-7 my-5 md:my-0 md:pt-9'>
                                 <Image src={BannerLogos} alt='Infinity Animation' className='w-6/12' />

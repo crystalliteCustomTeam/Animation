@@ -1,7 +1,9 @@
-import Image from 'next/image'
+"use client"
 import React from 'react'
-import Link from 'next/link'
+import Image from 'next/image'
 import { FaPhoneVolume } from 'react-icons/fa'
+//==========
+import usePopup from '@/app/configs/store/Popup'
 // imges  
 import card1 from "media/infinity-studio-lp-new/package-1.png"
 import card2 from "media/infinity-studio-lp-new/package-2.png"
@@ -12,6 +14,12 @@ import Image3 from "media/infinity-studio-lp-new/packagesImage3.png"
 import Tick from "media/infinity-studio-lp-new/tick.png"
 
 const Packages = () => {
+
+    const { popup, togglePopup } = usePopup();
+    const popupHandle = () => {
+        togglePopup(popup);
+    }
+
     return (
         <section className='bg-white py-[50px] lg:py-[90px]'>
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
@@ -57,9 +65,9 @@ const Packages = () => {
                                     </li>
                                 </ul>
                                 <div className="btn">
-                                    <Link href="javascript:;" className='flex items-center justify-center text-[11px] xl:text-[15px] text-white font-medium poppins bg-[#A70A0E] py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
+                                    <button onClick={popupHandle} className='flex items-center justify-center text-[11px] xl:text-[15px] text-white font-medium poppins bg-[#A70A0E] py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
                                         Get A Call For Free Consultation
-                                    </Link>
+                                    </button>
                                 </div>
                                 <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] px-2">
                                     <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-normal'>
@@ -111,9 +119,9 @@ const Packages = () => {
                                     </li>
                                 </ul>
                                 <div className="btn">
-                                    <Link href="javascript:;" className='flex items-center justify-center text-[11px] xl:text-[15px] text-[#0056AB] font-medium poppins bg-white py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
+                                    <button onClick={popupHandle} className='flex items-center justify-center text-[11px] xl:text-[15px] text-[#0056AB] font-medium poppins bg-white py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
                                         Get A Call For Free Consultation
-                                    </Link>
+                                    </button>
                                 </div>
                                 <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] px-2">
                                     <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-normal'>
@@ -165,9 +173,9 @@ const Packages = () => {
                                     </li>
                                 </ul>
                                 <div className="btn">
-                                    <Link href="javascript:;" className='flex items-center justify-center text-[11px] xl:text-[15px] text-[#AB1518] font-medium poppins bg-white py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
+                                    <button onClick={popupHandle} className='flex items-center justify-center text-[11px] xl:text-[15px] text-[#AB1518] font-medium poppins bg-white py-[12px] px-[10px] lg:px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full'>
                                         Get A Call For Free Consultation
-                                    </Link>
+                                    </button>
                                 </div>
                                 <div className="flex flex-wrap gap-y-3 items-center justify-between mt-[20px] mb-[10px] px-2">
                                     <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] montserrat flex justify-center items-center gap-x-2 font-normal'>
