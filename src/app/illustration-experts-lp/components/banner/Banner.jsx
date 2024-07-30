@@ -125,7 +125,7 @@
 //                                     testiCard && testiCard.map((e, i) => (
 //                                         <swiper-slide key={i} class={`${styles.BannerDiv} `}>
 //                                             <div className={`${styles.bannerImage}`} >
-//                                                 <Image src={e.imageSrc} alt='banner-logos' className=' img-fluid' />
+//                                                 <Image src={e.imageSrc} alt='banner-logos' className='  ' />
 //                                             </div>
 //                                         </swiper-slide>
 //                                     ))
@@ -274,7 +274,7 @@ const Banner = () => {
                                 </div>
                                 <div className="col-span-12 lg:col-span-6 content-center px-[15px] Banner">
                                     <div className={`${styles.bannerImage}`}>
-                                        <Image src={e.imageSrc} alt="banner-logos" className="img-fluid" />
+                                        <Image src={e.imageSrc} alt="banner-logos" className=" " />
                                     </div>
                                 </div>
                             </div>

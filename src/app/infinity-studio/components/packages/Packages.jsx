@@ -31,7 +31,7 @@ const Packages = () => {
                             <div className={styles.borderTrans}>
                                 <div className="card bg-[#ffffff] rounded-[10px] py-[10px] ">
                                     <div className="card_top  text-start relative z-1">
-                                        <Image src={pkgIcon} alt='pkgIcon_image' className='img-fluid w-[100px] mx-3 my-5 hidden md:block' />
+                                        <Image src={pkgIcon} alt='pkgIcon_image' className='  w-[100px] mx-3 my-5 hidden md:block' />
                                         <h3 className='w-full text-[#fff] poppins text-[17px] font-[500] uppercase bg-[#A70A0E] md:w-[80%] md:rounded-r-lg px-[20px] py-[8px] my-4 md:my-0'>Startup Package</h3>
                                         <h4 className='text-[#231f20] text-[40px] md:text-[60px] font-[500] poppins px-[25px]'>$199</h4>
                                     </div>
@@ -39,7 +39,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> 30 Seconds Duration</span>
                                             </div>
@@ -47,7 +47,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Script Writing</span>
                                             </div>
@@ -55,7 +55,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Custom Artwork</span>
                                             </div>
@@ -63,7 +63,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Background Music</span>
                                             </div>
@@ -71,7 +71,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>HD Format Video</span>
                                             </div>
@@ -79,7 +79,7 @@ const Packages = () => {
                                         <div className="col-span-12 h-[32px] invisible">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>Dedicated Support</span>
                                             </div>
@@ -111,7 +111,7 @@ const Packages = () => {
                             <div className={styles.borderTrans}>
                                 <div className="card bg-[#ffffff] rounded-[10px] py-[10px] ">
                                     <div className="card_top  text-start relative z-1">
-                                        <Image src={pkgIcon2} alt='pkgIcon_image' className='img-fluid w-[100px] mx-3 my-5 hidden md:block' />
+                                        <Image src={pkgIcon2} alt='pkgIcon_image' className='  w-[100px] mx-3 my-5 hidden md:block' />
                                         <h3 className='w-full text-[#fff] poppins text-[17px] font-[500] uppercase bg-[#003262] md:w-[80%] md:rounded-r-lg px-[20px] py-[8px] my-4 md:my-0'>Classic Package</h3>
                                         <h4 className='text-[#231f20] text-[40px] md:text-[60px] font-[500] poppins px-[25px]'>$499</h4>
                                     </div>
@@ -119,7 +119,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> 30 Seconds Duration</span>
                                             </div>
@@ -127,7 +127,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Script Writing</span>
                                             </div>
@@ -135,7 +135,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Professional Voice-over & SFX</span>
                                             </div>
@@ -143,7 +143,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>  Hand-drawn Illustrations</span>
                                             </div>
@@ -151,7 +151,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Unlimited Revisions</span>
                                             </div>
@@ -159,7 +159,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>HD Format Video</span>
                                             </div>
@@ -167,7 +167,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>Dedicated Support</span>
                                             </div>
@@ -199,7 +199,7 @@ const Packages = () => {
                             <div className={styles.borderTrans}>
                                 <div className="card bg-[#ffffff] rounded-[10px] py-[10px] ">
                                     <div className="card_top  text-start relative z-1">
-                                        <Image src={pkgIcon3} alt='pkgIcon_image' className='img-fluid w-[100px] mx-3 my-5 hidden md:block' />
+                                        <Image src={pkgIcon3} alt='pkgIcon_image' className='  w-[100px] mx-3 my-5 hidden md:block' />
                                         <h3 className='text-[#003262] poppins text-[17px] font-[600] uppercase bg-[#FFCC00] md:w-[80%] md:rounded-r-lg px-[20px] py-[8px] my-4 md:my-0'>Premium Package</h3>
                                         <h4 className='text-[#231f20] text-[40px] md:text-[60px] font-[500] poppins px-[25px]'>$799</h4>
                                     </div>
@@ -207,7 +207,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> 30 Seconds Duration</span>
                                             </div>
@@ -215,7 +215,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'> Script Writing</span>
                                             </div>
@@ -223,7 +223,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>Professional Voice-over & SFX</span>
                                             </div>
@@ -231,7 +231,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>Custom 2D Character Illustration</span>
                                             </div>
@@ -239,7 +239,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>Unlimited Revisions</span>
                                             </div>
@@ -247,7 +247,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>HD Format Video</span>
                                             </div>
@@ -255,7 +255,7 @@ const Packages = () => {
                                         <div className="col-span-12  h-[32px]">
                                             <div className='flex items-center ps-[10px] '>
                                                 <div className='w-[15px] h-[15px]'>
-                                                    <Image src={Check} alt='banner-logos' className='img-fluid' />
+                                                    <Image src={Check} alt='banner-logos' className=' ' />
                                                 </div>
                                                 <span className='text-black font-[400] pb-[15px] poppins ps-[18px] pt-[15px]'>Dedicated Support</span>
                                             </div>

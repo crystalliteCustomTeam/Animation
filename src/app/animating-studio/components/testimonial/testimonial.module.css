@@ -16,15 +16,13 @@
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
+    border-radius: 5px;
 }
 
 .progressFill:hover {
     opacity: 1;
 }
 
-.progressFill::-webkit-slider-runnable-track {
-    /* border:1px solid red */
-}
 .progressFill::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -40,3 +38,25 @@
 	background: currentColor;
 	transition-delay: 30ms;
 }
+
+@media only screen and (max-width: 640px) {
+
+    .progressFill{
+        width: 350px;
+
+    }
+    .progressFill::-webkit-slider-thumb {
+        width: 40px;
+    }
+  }
+
+@media only screen and (max-width: 399px) {
+
+    .progressFill{
+        width: 320px;
+
+    }
+    .progressFill::-webkit-slider-thumb {
+        width: 28px;
+    }
+  }

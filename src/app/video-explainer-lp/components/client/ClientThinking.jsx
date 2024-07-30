@@ -53,7 +53,7 @@ const ClientThinking = () => {
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
-                                            <Image src={Testi1} alt='testi1' className='img-fluid' />
+                                            <Image src={Testi1} alt='testi1' className=' ' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Kelly Sparks</h4>
@@ -79,7 +79,7 @@ const ClientThinking = () => {
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
-                                            <Image src={Testi2} alt='testi1' className='img-fluid' />
+                                            <Image src={Testi2} alt='testi1' className=' ' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Edd Lockwood</h4>
@@ -105,7 +105,7 @@ const ClientThinking = () => {
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
-                                            <Image src={Testi3} alt='testi1' className='img-fluid' />
+                                            <Image src={Testi3} alt='testi1' className=' ' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Greg Zarzour</h4>
@@ -136,7 +136,7 @@ const ClientThinking = () => {
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
-                                            <Image src={Testi1} alt='testi1' className='img-fluid' />
+                                            <Image src={Testi1} alt='testi1' className=' ' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Kelly Sparks</h4>
@@ -164,7 +164,7 @@ const ClientThinking = () => {
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
-                                            <Image src={Testi2} alt='testi1' className='img-fluid' />
+                                            <Image src={Testi2} alt='testi1' className=' ' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Edd Lockwood</h4>
@@ -192,7 +192,7 @@ const ClientThinking = () => {
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
-                                            <Image src={Testi3} alt='testi1' className='img-fluid' />
+                                            <Image src={Testi3} alt='testi1' className=' ' />
                                         </div>
                                         <div className="content pl-[15px]">
                                             <h4 className='text-[15px] md:text-[18px] font-[600] montserrat text-black'>Greg Zarzour</h4>

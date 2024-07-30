@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 // Import Images
 import DescDot from "media/location-page/desc-dot.png"
@@ -73,7 +74,7 @@ function BlogDescription({ content }) {
                                 ))}
                                 {item.ImageDesc ? <div className="w-full h-full py-[45px]" >
                                     <div className="flex md:h-[450px] w-full rounded-[25px]">
-                                        <Image src={item.ImageDesc} className='img-fluid rounded-[15px]' />
+                                        <Image src={item.ImageDesc} className='  rounded-[15px]' />
                                     </div>
                                 </div>
                                     :

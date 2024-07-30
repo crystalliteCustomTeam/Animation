@@ -51,14 +51,14 @@ const HeaderLP = () => {
     return (
         <>
             <header className={`fixed left-0 top-0 py-5 z-50 w-full ${isScrolled ? 'bg-[#003465] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-3' : ''}`}>
-                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
+                <div className="px-4 sm:px-8 xl:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
-                        <div className="col-span-6 lg:col-span-4">
+                        <div className="col-span-6 xl:col-span-4">
                             <div className="logo">
-                                <Image priority src={logo} alt='logo' width={150} className='w-[70%] md:w-[50%] lg:w-[38%]' />
+                                <Image priority src={logo} alt='logo' width={150} className='w-[70%] md:w-[45%] lg:w-[38%]' />
                             </div>
                         </div>
-                        <div className="col-span-12 lg:col-span-8 lg:block hidden">
+                        <div className="col-span-12 xl:col-span-8 xl:block hidden">
                             <div className="nav_lists">
                                 <ul className='flex justify-end items-center gap-x-4 xl:gap-x-7'>
                                     <li>
@@ -88,10 +88,10 @@ const HeaderLP = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-span-6 lg:hidden block">
+                        <div className="col-span-6 xl:hidden block">
                             <ul>
                                 <li>
-                                    <a href="tel:833-666-6689" className='flex items-center justify-end gap-x-3 text-black font-sans'>
+                                    <a href="tel:833-666-6689" className='flex items-center justify-end gap-x-3 text-white font-sans'>
                                         <Image src={telephone} loading="lazy" width="56" height="52" class="w-[15px]" alt='Infinity Animations' />
                                         1-833-666-6689
                                     </a>

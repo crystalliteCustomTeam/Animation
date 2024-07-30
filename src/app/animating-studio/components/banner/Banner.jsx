@@ -133,10 +133,10 @@ const Banner = () => {
 
     return (
         <>
-            <section className='bg-[#003465f0] lg:bg-[url("../../public/infinity-studio/banner.webp")] bg-[length:100%_100%] bg-center bg-no-repeat h-full 3xl:h-[100vh] pt-[115px] md:pt-[150px] 3xl:pt-[230px] pb-[60px] md:pb-[100px]'>
+            <section className='bg-[#003465f0] lg:bg-[url("../../public/infinity-studio/banner.webp")] bg-[length:100%_100%] bg-center bg-no-repeat pt-[120px] pb-[80px] sm:pt-[150px] sm:pb-[100px] lg:h-[100dvh] xl:pb-0 xl:pt-[50px] flex items-center'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-y-12 items-end ">
-                        <div className="col-span-12 lg:col-span-8">
+                        <div className="col-span-12 lg:col-span-7 xl:col-span-8">
                             <h1 className='text-white text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-[600] poppins lg:w-10/12 md:leading-[50px]'>Expand Your Brand’s Reach With
                                 An Engaging Custom  <span className='text-[#f6c501] '>Explainer Video</span></h1>
                             <p className='text-white text-[16px] font-[400] poppins lg:w-11/12 leading-[25px] py-[20px]'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.</p>
@@ -197,7 +197,7 @@ const Banner = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-12 lg:col-span-4">
+                        <div className="col-span-12 lg:col-span-5 xl:col-span-4">
                             <form className='bg-[#003465] relative border-[3.5px] rounded-xl border-white w-full mx-auto'>
                                 <div className=' w-[70%] top-0 mx-auto '>
                                     <Image src={Discount} />

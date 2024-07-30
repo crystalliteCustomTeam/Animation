@@ -208,21 +208,21 @@ const Banner = () => {
               <div className={styles.helped}>
                 <div className={styles.list}>
                   <div className={`${styles.engage1} ${styles.why}`}>
-                    <Image src={icon1} class="img-fluid" alt="Infinity Animations" />
+                    <Image src={icon1} class=" " alt="Infinity Animations" />
                     <p>Product Explainer Videos</p>
                   </div>
                   <div className={`${styles.engage2} ${styles.why}`}>
-                    <Image src={icon1} class="img-fluid" alt="Infinity Animations" />
+                    <Image src={icon1} class=" " alt="Infinity Animations" />
                     <p>Animated Business Videos</p>
                   </div>
                 </div>
                 <div className={styles.list}>
                   <div className={`${styles.engage3} ${styles.why}`}>
-                    <Image src={icon1} class="img-fluid" alt="Infinity Animations" />
+                    <Image src={icon1} class=" " alt="Infinity Animations" />
                     <p>Animated Marketing Videos</p>
                   </div>
                   <div className={`${styles.engage4} ${styles.why}`}>
-                    <Image src={icon1} class="img-fluid" alt="Infinity Animations" />
+                    <Image src={icon1} class=" " alt="Infinity Animations" />
                     <p>Corporate Animated Videos</p>
                   </div>
                 </div>

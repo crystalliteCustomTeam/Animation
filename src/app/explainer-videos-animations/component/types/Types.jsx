@@ -83,40 +83,40 @@ const Video = () => {
 <Slider {...awardslogo}  >
 
                         <div className={styles.boxpost}>
-                                    <Image src={icon1} class="img-fluid mt-3 newgost" alt="" />
+                                    <Image src={icon1} class="  mt-3 newgost" alt="" />
                                     <h4 class="fontsfpro font20 center colorblack mt-3">
                                         Whiteboard Animation <br></br>
                                         Video
                                     </h4>
                         </div>
                         <div className={styles.boxpost}>
-                                    <Image src={icon2} class="img-fluid mt-3 newgost" alt="" />
+                                    <Image src={icon2} class="  mt-3 newgost" alt="" />
                                     <h4 class="fontsfpro font20 center colorblack mt-3">
                                       Motion Graphics 
               
                                     </h4>
                         </div>
                         <div className={styles.boxpost}>
-                                    <Image src={icon3} class="img-fluid mt-3 newgost" alt="" />
+                                    <Image src={icon3} class="  mt-3 newgost" alt="" />
                                     <h4 class="fontsfpro font20 center colorblack mt-3">
                                       2D Character Animation<br></br>
                                         Videos
                                     </h4>
                         </div>
                         <div className={styles.boxpost}>
-                                    <Image src={icon4} class="img-fluid mt-3 newgost" alt="" />
+                                    <Image src={icon4} class="  mt-3 newgost" alt="" />
                                     <h4 class="fontsfpro font20 center colorblack mt-3">
                                     3D Animation Video
                                     </h4>
                         </div>
                         <div className={styles.boxpost}>
-                                    <Image src={icon5} class="img-fluid mt-3 newgost" alt="" />
+                                    <Image src={icon5} class="  mt-3 newgost" alt="" />
                                     <h4 class="fontsfpro font20 center colorblack mt-3">
                                     Screencast Videos
                                     </h4>
                         </div>
                         <div className={styles.boxpost}>
-                                    <Image src={icon6} class="img-fluid mt-3 newgost" alt="" />
+                                    <Image src={icon6} class="  mt-3 newgost" alt="" />
                                     <h4 class="fontsfpro font20 center colorblack mt-3">
                                     Typography Videos
                                     </h4>
@@ -126,40 +126,40 @@ const Video = () => {
 :
                     <div class={`md:grid md:grid-cols-3`}>
                         <div className={styles.boxpost}>
-                                    <Image src={icon1} class="img-fluid mt-3 newgost" alt="" />
+                                    <Image src={icon1} class="  mt-3 newgost" alt="" />
                                     <h4 class="fontsfpro font20 center colorblack mt-3">
                                         Whiteboard Animation <br></br>
                                         Video
                                     </h4>
                         </div>
                         <div className={styles.boxpost}>
-                                    <Image src={icon2} class="img-fluid mt-3 newgost" alt="" />
+                                    <Image src={icon2} class="  mt-3 newgost" alt="" />
                                     <h4 class="fontsfpro font20 center colorblack mt-3">
                                       Motion Graphics  
                                         
                                     </h4>
                         </div>
                         <div className={styles.boxpost}>
-                                    <Image src={icon3} class="img-fluid mt-3 newgost" alt="" />
+                                    <Image src={icon3} class="  mt-3 newgost" alt="" />
                                     <h4 class="fontsfpro font20 center colorblack mt-3">
                                     2D Character Animation <br></br>
                                         Videos
                                     </h4>
                         </div>
                         <div className={styles.boxpost}>
-                                    <Image src={icon4} class="img-fluid mt-3 newgost" alt="" />
+                                    <Image src={icon4} class="  mt-3 newgost" alt="" />
                                     <h4 class="fontsfpro font20 center colorblack mt-3">
                                     3D Animation Video
                                     </h4>
                         </div>
                         <div className={styles.boxpost}>
-                                    <Image src={icon5} class="img-fluid mt-3 newgost" alt="" />
+                                    <Image src={icon5} class="  mt-3 newgost" alt="" />
                                     <h4 class="fontsfpro font20 center colorblack mt-3">
                                     Screencast Videos
                                     </h4>
                         </div>
                         <div className={styles.boxpost}>
-                                    <Image src={icon6} class="img-fluid mt-3 newgost" alt="" />
+                                    <Image src={icon6} class="  mt-3 newgost" alt="" />
                                     <h4 class="fontsfpro font20 center colorblack mt-3">
                                     Typography Videos
                                     </h4>

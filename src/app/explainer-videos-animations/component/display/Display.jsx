@@ -19,7 +19,7 @@ const Video = () => {
                 <div class={`container mx-auto ${styles.pointer} `}>
                     <div class={`md:grid md:grid-cols-1`}>
                         <div className={styles.newscool}>
-                            <Image src={icon1} class={`img-fluid mostimg ${styles.newyork}`} alt="" />
+                            <Image src={icon1} class={`  mostimg ${styles.newyork}`} alt="" />
                             <div className={styles.today}>
                                 <h3>Start Displaying Your Brand With <br></br> Amazing Animated Videos
                                 </h3>

@@ -86,16 +86,16 @@ function Testimonial({ content }) {
                         {testiContentNew2.map((testimonial, index) => (
                             <Fancybox options={{ Carousel: { infinite: false } }} key={index}>
                                 <div className=" h-full group mb-8 px-2">
-                                    <div className='flex border rounded-[25px] ps-[20px] py-[15px]' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
+                                    <div className='sm:flex border rounded-[25px] px-[20px] sm:px-0 sm:ps-[20px] py-[15px]' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                                         {testimonial.video ? (
                                             <Link href={testimonial.video} datafancybox="gallery">
-                                                <div className='w-[180px] h-[220px] box-testi mb-auto border'>
-                                                    <div className='w-[100%] h-[100%] flex justify-center items-center  relative group border'>
+                                                <div className='sm:w-[180px] h-[220px] box-testi mb-auto relative '>
+                                                    <div className='w-[100%] h-[100%] flex justify-center items-center  sm:relative group '>
                                                         <video loading="lazy" muted loop preload="auto" autoPlay={false} className="rounded-[12px] w-full h-full object-cover " >
                                                             <source src={testimonial.video} type="video/mp4" />
                                                         </video>
-                                                        <div className="absolute rounded-[12px] w-[100px] sm:w-[150px] h-full group-hover:hidden ">
-                                                            <div className="w-[40px] h-[40px] bg-zinc-600 bg-opacity-75 rounded-[50px] p-1 absolute left-auto top-auto bottom-0 right-0 m-1">
+                                                        <div className="absolute rounded-[12px] w-[100px] sm:w-[150px] h-full group-hover:hidden">
+                                                            <div className="w-[40px] h-[40px] bg-zinc-600 bg-opacity-75 rounded-[50px] p-1 absolute left-auto top-auto bottom-0 right-[-98%] sm:right-0 m-1">
                                                                 <Image src={Play} />
                                                             </div>
                                                         </div>
@@ -104,7 +104,7 @@ function Testimonial({ content }) {
                                                 </div>
                                             </Link>
                                         ) : (
-                                            <div className='w-[250px] h-[220px] box-testi  mb-auto '>
+                                            <div className='sm:w-[250px] h-[220px] box-testi mb-auto'>
                                                 <div className='w-full h-full flex justify-center items-center  relative '>
                                                     <Image
                                                         src={testimonial.thumbnail}
@@ -113,7 +113,7 @@ function Testimonial({ content }) {
                                                 </div>
                                             </div>
                                         )}
-                                        <div className='w-full lg:w-[90%] ps-2 md:ps-4 pe-[15px] flex flex-col justify-between my-auto'>
+                                        <div className='w-full lg:w-[90%] pt-2 sm:pt-0 sm:ps-2 md:ps-4 pe-[15px] flex flex-col justify-between my-auto'>
                                             <div className='flex mb-1'>
                                                 <div>
                                                     <h5 className=" text-[15px] md:text-[18px] leading-[24px] font-semibold font-sans text-[#000]">

@@ -87,7 +87,7 @@ const Video = () => {
                         <Slider {...awardslogo} className={` ${styles.startup1}  startposition mt-4`} >
                             <div className={styles.pkgcard}>
                                 <div className={styles.cardbef}>
-                                    <Image src={star} class="img-fluid" alt="Star" />
+                                    <Image src={star} class=" " alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Startup Package</h3>
                                 <h4 className={styles.price}>$499</h4>
@@ -120,8 +120,8 @@ const Video = () => {
                             </div>
                             <div className={styles.pkgcard2}>
                                 <div className={styles.cardbef}>
-                                    <Image src={star} class="img-fluid" alt="Star" />
-                                    <Image src={star} class="img-fluid" alt="Star" />
+                                    <Image src={star} class=" " alt="Star" />
+                                    <Image src={star} class=" " alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Classic Package</h3>
                                 <h4 className={styles.price}>$799</h4>
@@ -154,9 +154,9 @@ const Video = () => {
                             </div>
                             <div className={styles.pkgcard}>
                                 <div className={styles.cardbef}>
-                                    <Image src={star} class="img-fluid" alt="Star" />
-                                    <Image src={star} class="img-fluid" alt="Star" />
-                                    <Image src={star} class="img-fluid" alt="Star" />
+                                    <Image src={star} class=" " alt="Star" />
+                                    <Image src={star} class=" " alt="Star" />
+                                    <Image src={star} class=" " alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Premium Package</h3>
                                 <h4 className={styles.price}>$999</h4>
@@ -194,7 +194,7 @@ const Video = () => {
                         <div class={`md:grid md:grid-cols-3`}>
                             <div className={styles.pkgcard}>
                                 <div className={styles.cardbef}>
-                                    <Image src={star} class="img-fluid" alt="Star" />
+                                    <Image src={star} class=" " alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Startup Package</h3>
                                 <h4 className={styles.price}>$499</h4>
@@ -227,8 +227,8 @@ const Video = () => {
                             </div>
                             <div className={styles.pkgcard2}>
                                 <div className={styles.cardbef}>
-                                    <Image src={star} class="img-fluid" alt="Star" />
-                                    <Image src={star} class="img-fluid" alt="Star" />
+                                    <Image src={star} class=" " alt="Star" />
+                                    <Image src={star} class=" " alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Classic Package</h3>
                                 <h4 className={styles.price}>$799</h4>
@@ -261,9 +261,9 @@ const Video = () => {
                             </div>
                             <div className={styles.pkgcard}>
                                 <div className={styles.cardbef}>
-                                    <Image src={star} class="img-fluid" alt="Star" />
-                                    <Image src={star} class="img-fluid" alt="Star" />
-                                    <Image src={star} class="img-fluid" alt="Star" />
+                                    <Image src={star} class=" " alt="Star" />
+                                    <Image src={star} class=" " alt="Star" />
+                                    <Image src={star} class=" " alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Premium Package</h3>
                                 <h4 className={styles.price}>$999</h4>
