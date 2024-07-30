@@ -22,20 +22,20 @@ const Faqs = ({ content }) => {
             <section className='py-[50px] lg:py-[80px] bg-white'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="mb-[10px] md:mb-[50px]">
-                        <h2 className='text-[#000000] text-center font-[600] poppins text-[32px] md:text-[42px] lg:text-[48px]'>FAQS</h2>
-                        <p className='text-[#231F20] text-[16px] poppins font-[400] py-[17px] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-0'>For our customers, we create meaningful and entertaining videos at Explain Art Animation. The entire video content is produced and tailored to our client's requirements. Our team excels at creating high-quality videos, whether you need a corporate video to boost your brand awareness or a product demo to promoteyour services. Our process entails a series of meticulous animation and development steps, from brainstorming various concepts to the final delivery.</p>
+                        <h2 className='text-black poppins text-[25px] md:text-[30px] xl:text-[35px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[50px] text-center mb-5'>Frequently <span className='text-[#F5090B]'>Asked</span> Question</h2>
+                        <p className='text-[#231F20] text-[16px] poppins font-[400] pb-[17px] text-center lg:w-8/12 mx-auto leading-[25px] md:leading-[22px] mb-0'>At Infinity Animations our animators have magic in their hands with their perfect blend of creativity we create incredible visuals for your business. At every stage of the making, we ensure</p>
                     </div>
                     <div className="grid grid-cols-12 ">
                         <div className="col-span-12 lg:col-span-6">
                             {accordionData.map((item, index) => (
                                 <div key={index} className={`py-1 ${activeIndex === index ? 'border-white' : ' border-white'} border-b-2`}>
-                                    <div className={`flex space-x-3 items-center cursor-pointer p-[15px] rounded-[10px] h-[70px] ${activeIndex === index ? 'bg-[#003466] text-white' : 'text-black bg-[#e6e7e8]'}`}
+                                    <div className={`flex space-x-3 items-center cursor-pointer p-[15px] h-[70px] text-black ${activeIndex === index ? 'border border-[#D2D2D2] rounded-t-[20px] !border-b-0' : ' bg-[#e6e7e8] rounded-[10px]'}`}
                                         onClick={() => handleClick(index)}>
-                                        <h3 className={`text-[12px] md:text-[16px] font-[500] capitalize poppins me-auto`}>{item.question}</h3>
-                                        <span>{activeIndex === index ? <TiArrowSortedUp className='text-[20px] font-[900]' /> : <TiArrowSortedDown className='text-[20px] font-[900]' />}</span>
+                                        <h3 className={` capitalize poppins me-auto ${activeIndex === index ? 'text-[14px] lg:text-[18px] leading-[24px] lg:leading-[30px] font-semibold' : 'text-[12px] md:text-[16px] font-medium'}`}>{item.question}</h3>
+                                        <span>{activeIndex === index ? <TiArrowSortedUp className='text-[20px] font-[900] bg-[#F5090B] text-white rounded-full' /> : <TiArrowSortedDown className='text-[20px] font-[900] text-white bg-black rounded-full' />}</span>
                                     </div>
                                     {activeIndex === index && (
-                                        <div className='pt-5'>
+                                        <div className={`pt-5 px-4 pb-4 ${activeIndex === index ? 'border border-[#D2D2D2] !border-t-0 rounded-b-[20px]' : 'border-0'}`}>
                                             <div className={`text-[16px] font-normal poppins text-black pb-1 ${styles.ani}`}>
                                                 {item.answer}
                                             </div>

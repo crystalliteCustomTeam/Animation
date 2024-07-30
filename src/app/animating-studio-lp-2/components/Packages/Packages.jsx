@@ -13,13 +13,13 @@ import Tick from "media/infinity-studio-lp-new/tick.png"
 
 const Packages = () => {
     return (
-        <section className='bg-white py-[50px] lg:py-[90px]'>
+        <section className='bg-white py-[50px] lg:pb-[60px] lg:pt-[90px]'>
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="grid grid-cols-12 gap-5">
                     <div className="col-span-12">
-                        <p className='text-[18px] lg:text-[25px] text-center leading-[25px] lg:leading-[38px] poppins font-semibold text-black'>Pricing</p>
-                        <h2 className='text-black poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[50px] text-center mb-2'>Types of <span className='text-[#FF0000]'>Animated</span> Explainer Videos</h2>
-                        <p className='text-[14px] md:text-[16px] poppins text-normal text-black text-center lg:w-8/12 xl:px-[23px] mx-auto mb-4 md:mb-10'>Infinity Animations is a renowned name in the video animation industry. Our experts produce all types of animation videos with the usage of modern devices and techniques, some are discussed below:</p>
+                        <h2 className='text-black poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[50px] text-center mb-2'>Types <span className='text-[#FF0000]'>of </span>Animated <span className='text-[#FF0000]'>Explainer</span> Videos</h2>
+                        <p className='text-[14px] md:text-[16px] poppins text-normal text-black text-center lg:w-8/12 xl:px-[23px] mx-auto mb-4 md:mb-10'>We are a leading video animation company in the USA that has helped thousands of brands
+                            to broaden their product reach via fascinating explainer videos. We are a leading video</p>
                     </div>
                     <div className="col-span-12 lg:col-span-4">
                         <div className='bg-gradient-to-r from-[#f3d86e] to-[#FFCC00] rounded-[30px] md:rounded-[40px] lg:rounded-[25px] group'>

@@ -107,8 +107,6 @@ const Studio = () => {
         };
     }, []);
 
-
-
     // ===== Brands Content ===== //
     const brandsOne = {
         title: (<>

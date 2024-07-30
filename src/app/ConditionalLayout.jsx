@@ -37,7 +37,7 @@ const ConditionalLayout = ({ children }) => {
                     pathname !== "/logo-animation-lp" &&
                     pathname !== "/animating-studio-lp" &&
                     pathname !== "/animating-studio-lp-2" &&
-                    pathname !== "/infinity-studio" && 
+                    pathname !== "/infinity-studio" &&
                     pathname !== "/animating-studio" && (
                         <Header />
                     )
@@ -57,6 +57,7 @@ const ConditionalLayout = ({ children }) => {
                     pathname !== "/logo-animation-lp-copy" &&
                     pathname !== "/logo-animation-lp-black" &&
                     pathname !== "/animating-studio-lp" &&
+                    pathname !== "/animating-studio-lp-2" &&
                     pathname !== "/animating-studio" &&
                     pathname !== "/infinity-studio" && (
                         <Footer />

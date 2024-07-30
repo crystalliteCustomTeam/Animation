@@ -1,115 +1,68 @@
 "use client"
-// Imports Components
-import Image from "next/image";
-import Link from "next/link";
+import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import Axios from "axios";
+import { usePathname } from "next/navigation"
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
-// Import Images
-import logo from "media/images/black-logo.gif";
-import Payment from "media/video-explainer/payment-img.png" 
-import facebook from "media/icons/fb.png";
-import twitter from "media/icons/x.png";
-import youtube from "media/icons/youtube.png";
-import instagram from "media/icons/insta.png";
-import linkedin from "media/icons/linkedin.png";
-import vimeo from "media/icons/vemio.png";
-import { useEffect, useState } from "react";
+// ==== Images 
+import Payment from "media/video-explainer2/payment-img.png"
+import UpArrow from "media/video-explainer2/up-arrow.png"
+import FooterBg from "media/infinity-studio-lp-2/footer-bg.png"
 
-
-const Footer = () => { 
-    const otherLinks = [
-        {
-            text: "Terms of Services",
-            link: "/terms-and-conditions",
-        },
-        {
-            text: "Privacy Policy",
-            link: "/privacy-policy",
-        },
-    ];
-    const socialLinks = [
-        {
-            icon: facebook,
-            link: "https://www.facebook.com/infinityanimationsofficial"
-        },
-        {
-            icon: twitter,
-            link: "https://twitter.com/infinityan_/"
-        },
-        {
-            icon: instagram,
-            link: "https://www.instagram.com/infinityanimationsofficials"
-        },
-        {
-            icon: linkedin,
-            link: "https://www.linkedin.com/company/infinity-animations/"
-        },
-        {
-            icon: youtube,
-            link: "https://www.youtube.com/@Infinity-Animations"
-        },
-        {
-            icon: vimeo,
-            link: "https://www.vimeo.com/infinityanimations"
-        },
-    ];
-    // form Start 
-    let newDate = new Date();
-    let date = newDate.getDate();
-    let month = newDate.getMonth() + 1;
-    let year = newDate.getFullYear();
-    // For Time
-    let today = new Date();
-    let setTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    let setDate = `${month < 10 ? `0${month}` : `${month}`}-${date}-${year}`;
-
-    const [ip, setIP] = useState("");
-    //creating function to load ip address from the API
-    const getIPData = async () => {
-        const res = await Axios.get(
-            "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
-        );
-        setIP(res.data);
-    };
-    useEffect(() => {
-        getIPData();
-    }, []);
-    // For Page
-    const [pagenewurl, setPagenewurl] = useState(null);
-    useEffect(() => {
-        setPagenewurl(window.location.href);
-    }, [setPagenewurl]);
+const Contact = () => {
+    //========== Form
+    const [ip, setIP] = useState('');
+    const [pagenewurl, setPagenewurl] = useState('');
+    const [errors, setErrors] = useState({});
+    const [formStatus, setFormStatus] = useState('Get Started');
+    const [isDisabled, setIsDisabled] = useState(false);
     const [data, setData] = useState({
         name: "",
         phone: "",
         email: "",
-        message: "",
-        botchecker: null,
+        message: ""
     });
+
+    //========== Fetch IP data from the API
+    const getIPData = async () => {
+        try {
+            const res = await Axios.get('https://ipwho.is/');
+            setIP(res.data);
+        } catch (error) {
+            console.error('Error fetching IP data:', error);
+        }
+    };
+
+    useEffect(() => {
+        getIPData();
+        setPagenewurl(window.location.href);
+    }, []);
+
+    const router = usePathname();
+    const currentRoute = router;
+
     const handleDataChange = (e) => {
         setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
-    const [formStatus, setFormStatus] = useState("Submit");
-    const [errors, setErrors] = useState({});
-    const [isDisabled, setIsDisabled] = useState(false);
+
     const formValidateHandle = () => {
         let errors = {};
-        // Name validation
         if (!data.name.trim()) {
             errors.name = "Name is required";
         }
-        // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!data.email.match(emailRegex)) {
             errors.email = "Valid email is required";
         }
-        // Phone validation
-        const phoneRegex = /[0-9]/i;
+        const phoneRegex = /^[0-9]+$/;
         if (!data.phone.match(phoneRegex)) {
-            errors.phone = "Valid phone is required";
+            errors.phone = "Valid phone number is required";
         }
         return errors;
     };
+
     const handleFormSubmit = async (e) => {
         e.preventDefault();
         setFormStatus("Processing...");
@@ -119,21 +72,53 @@ const Footer = () => {
         setErrors(errors);
 
         if (Object.keys(errors).length === 0) {
-            if (data.botchecker === null) {
-                let headersList = {
-                    Accept: "*/*",
-                    "Content-Type": "application/json",
-                };
+            const currentdate = new Date().toLocaleString();
+            const dataToSend = {
+                ...data,
+                pageUrl: pagenewurl,
+                IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
+                currentdate: currentdate,
+            };
+            const JSONdata = JSON.stringify(dataToSend);
 
-                let bodyContent = JSON.stringify({ ...data, pageURL: pagenewurl });
-                let reqOptions = {
-                    url: "/api/email",
-                    method: "POST",
-                    headers: headersList,
-                    data: bodyContent,
+            try {
+                //========== First API call to your server
+                await fetch('/api/email/', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json, text/plain, */*',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSONdata
+                });
+
+                //========== Second API call to SheetDB
+                let headersList = {
+                    "Accept": "*/*",
+                    "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+                    "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+                    "Content-Type": "application/json"
                 };
-                await Axios.request(reqOptions);
-            } else {
+                let bodyContent = JSON.stringify({
+                    "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
+                    "Brand": "Infinity Animations",
+                    "Page": `${currentRoute}`,
+                    "Date": currentdate,
+                    "Time": currentdate,
+                    "JSON": JSONdata,
+                });
+                await fetch("https://sheetdb.io/api/v1/orh55uv03rvh4", {
+                    method: "POST",
+                    body: bodyContent,
+                    headers: headersList
+                });
+
+                setFormStatus("Success...");
+                setTimeout(() => {
+                    window.location.href = '/thank-you';
+                }, 2000);
+            } catch (error) {
+                console.error('Error during form submission:', error);
                 setFormStatus("Failed...");
                 setIsDisabled(false);
             }
@@ -141,126 +126,76 @@ const Footer = () => {
             setFormStatus("Failed...");
             setIsDisabled(false);
         }
-
-        if (Object.keys(errors).length === 0) {
-            if (data.botchecker === null) {
-
-
-                let headersList = {
-                    Accept: "*/*",
-                    Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-                    "Content-Type": "application/json",
-                };
-
-                let bodyContent = JSON.stringify({
-                    "IP": `${ip.ip} - ${ip.country_name} - ${ip.city_name}`,
-                    "Brand": "Infinity Animations",
-                    "Page": pagenewurl,
-                    "Date": setDate,
-                    "Time": setTime,
-                    "JSON": { ...data, pageURL: pagenewurl },
-                });
-                let reqOptions = {
-                    url: "https://sheetdb.io/api/v1/e9jx941paxuo0i",
-                    method: "POST",
-                    headers: headersList,
-                    data: bodyContent,
-                };
-                await Axios.request(reqOptions);
-                window.location.href = "/thank-you";
-            }
-        }
     };
+
     return (
         <>
-            <footer className="bg-[#00C6F9] pt-[70px] pb-[70px] 3xl:mt-0 relative z-[999]">
-                <div className="px-5 lg:max-w-7xl mx-auto">
+            <section className='py-[50px] lg:py-[90px] relative'>
+                <Image src={FooterBg} alt='Infinity Animations' fill={true} className='z-[1] object-cover object-center' />
+                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto  relative z-10">
                     <div className="grid grid-cols-12 gap-4">
-                        <div className="col-span-12 lg:col-span-4">
-                            <Link href="javascript:;" className="lg:w-[25%]">
-                                <Image src={logo} width={150} height={54} className="pb-3" alt="Animation Studio" />
-                            </Link>
-                            <div className="col-span-12 lg:col-span-4">
-                                <div className="address_detail">
-                                    <ul>
-                                        <li className='py-[10px]'>
-                                            <a href="tel:833-666-6689" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
-                                                <Phone className='bg-[#ffffff] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> 833-666-6689
-                                            </a>
-                                        </li>
-                                        <li className='py-[10px]'>
-                                            <a href="mailto:queries@infinityanimations.com" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
-                                                <EnvelopeIcon className='bg-[#ffffff] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> queries@infinityanimations.com
-                                            </a>
-                                        </li>
-                                        <li className='py-[10px]'>
-                                            <a href="https://infinityanimations.com" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
-                                                <Globe className='bg-[#ffffff] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimations.com
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <Image src={Payment} alt='Payment-Methods' className='w-5/12 lg:w-full my-3 object-contain' />
-                                    <div>
-                                        <ul className="flex items-center gap-4 mt-4 md:mt-6">
-                                            {
-                                                socialLinks.map((e, i) => {
-                                                    return (
-                                                        <li key={i} className="bg-transparent border border-[#ffffff] w-[45px] h-[45px] rounded-[5px] flex items-center justify-center p-1 hover:bg-second">
-                                                            <Link target="_blank" href={e.link}>
-                                                                <Image src={e.icon} className="w-[20px]" alt="Infinity Animation" />
-                                                            </Link>
-                                                        </li>
-                                                    );
-                                                })
-                                            }
-                                        </ul>
-                                    </div>
-                                </div>
+                        <div className="col-span-12 lg:col-span-6">
+                            <div className="address_detail ">
+                                <h2 className='text-white poppins text-[25px] md:text-[30px] xl:text-[55px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[50px] xl:leading-[50px] text-left mb-2 sm:mb-5'>
+                                    Get in <span className='text-[#F5090B]'>Touch</span> Now!
+                                </h2>
+                                <p className='text-white text-[11px] sm:text-[13px] xl:text-[15px] leading-[24px] xl:leading-[30px] poppins mb-2 sm:mb-5 lg:mb-8 w-11/12 pr-3'>
+                                    At Infinity Animations our animators have magic in their hands with their perfect blend of creativity we create incredible visuals for your
+                                </p>
+                                <ul>
+                                    <li className='py-[12px]'>
+                                        <a href="tel:833-666-6689" className='text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] text-white poppins flex items-center gap-4'>
+                                            <Phone className='bg-[#fff] text-[#000] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> +1-000-000-0000
+                                        </a>
+                                    </li>
+                                    <li className='py-[12px]'>
+                                        <a href="mailto:queries@infinityanimations.com" className='text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] text-white poppins flex items-center gap-4'>
+                                            <EnvelopeIcon className='bg-[#fff] text-[#000] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> sales.infinityanimations.com
+                                        </a>
+                                    </li>
+                                    <li className='py-[12px]'>
+                                        <a href="https://infinityanimations.com" className='text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] text-white poppins flex items-center gap-4'>
+                                            <Globe className='bg-[#fff] text-[#000] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimations.com
+                                        </a>
+                                    </li>
+                                </ul>
+                                <Image src={Payment} alt='Payment-Methods' className='w-8/12 sm:w-5/12 lg:w-8/12 mt-5 lg:mt-10 object-contain' />
                             </div>
                         </div>
-                        <div className="lg:col-span-2"></div>
                         <div className="col-span-12 lg:col-span-6">
-                            <h2 className='text-white font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>
-                                Get A Free Consultation with An Experienced Animation Expert
-                            </h2>
-                            <p className='text-white text-[16px] lg:text-[18px] montserrat font-[400] py-[17px] leading-[22px] pb-[60px]'>Book a meeting with a member of our team to learn more and get a quote today!</p>
                             <div className="form">
-                                <form action="javascript:;">
-                                    <div className="flex-wrap flex items-center">
-                                        <div className="name relative w-full">
-                                            <User className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                            <input type="text" name="name" placeholder='Enter your name' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
+                                <form>
+                                    <div className="flex flex-col lg:flex-row items-center lg:gap-4 ">
+                                        <div className="name relative mb-5 w-full">
+                                            <input type="text" name="name" placeholder='Enter your name' className='text-[14px] text-[#fff] px-5 font-normal placeholder:text-[#fff] placeholder:font-normal poppins block h-[85px] w-full bg-[#292929] rounded-[15px] border  border-[#888888]' onChange={handleDataChange} required />
                                             {errors.name && (
-                                                <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-16%]">
+                                                <span className="text-[11px] block p-2 poppins font-bold text-primary-100 absolute left-0 bottom-[-30%] z-50">
                                                     {errors.name}
                                                 </span>
                                             )}
                                         </div>
-                                        <div className="email relative w-full">
-                                            <EnvelopeIcon className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                            <input type="email" name="email" placeholder='Enter Email' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
+                                        <div className="email relative mb-5 w-full">
+                                            <input type="email" name="email" placeholder='Enter Your Email' className='text-[14px] text-[#fff] px-5 font-normal placeholder:text-[#fff] placeholder:font-normal poppins block h-[85px] w-full bg-[#292929] rounded-[15px] border  border-[#888888]' onChange={handleDataChange} required />
                                             {errors.email && (
-                                                <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-16%]">
+                                                <span className="text-[11px] block p-2 poppins font-bold text-primary-100 absolute left-0 bottom-[-30%] z-50">
                                                     {errors.email}
                                                 </span>
                                             )}
                                         </div>
                                     </div>
-                                    <div className="phone relative">
-                                        <Phone className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                        <input type="phone" name="phone" minLength={7} maxLength={15} placeholder='Enter Phone Number' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[16px] font-[500]' onChange={handleDataChange} required />
+                                    <div className="phone relative mb-5">
+                                        <input type="phone" name="phone" minLength={7} maxLength={15} placeholder='Enter Phone Number' className='text-[14px] text-[#fff] px-5 font-normal placeholder:text-[#fff] placeholder:font-normal poppins block h-[85px] w-full bg-[#292929] rounded-[15px] border  border-[#888888]' onChange={handleDataChange} required />
                                         {errors.phone && (
-                                            <span className="text-[12px] block p-2 font-sans font-medium text-primary-100 absolute left-0 bottom-[-16%]">
+                                            <span className="text-[11px] block p-2 poppins font-bold text-primary-100 absolute left-0 bottom-[-30%] z-50">
                                                 {errors.phone}
                                             </span>
                                         )}
                                     </div>
-                                    <div className="message relative">
-                                        <ChatAlt2 className='text-[#b2b2b2] text-[16px] absolute top-[10px] left-[8px] w-[20px] h-[20px]' />
-                                        <textarea name='message' placeholder='Message' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] px-[35px] w-full mb-[10px] font-[500] resize-none' onChange={handleDataChange}></textarea>
+                                    <div className="message relative mb-5">
+                                        <textarea name='message' placeholder='Type Message' rows={4} className='pt-4 text-[14px] text-[#fff] px-5 font-normal placeholder:text-[#fff] placeholder:font-normal poppins block h-[200px] w-full resize-none bg-[#292929] rounded-[15px] border  border-[#888888]' onChange={handleDataChange}></textarea>
                                     </div>
                                     <div className="btn mt-3">
-                                        <button type='submit' className='py-[10px] px-[30px] border-0 text-white text-[16px] uppercase font-[600] bg-[#231f20] poppins' onClick={handleFormSubmit} disabled={isDisabled}>
+                                        <button type='submit' className='py-[10px] px-[40px] border-0 text-white text-[16px] leading-[25px] capitalize font-semibold bg-[#F5090B] hover:bg-[#A70A0E] poppins rounded-[5px]' onClick={handleFormSubmit} disabled={isDisabled}>
                                             {formStatus}
                                         </button>
                                     </div>
@@ -269,35 +204,22 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-            </footer>
-            <div className="copyright bg-white">
+            </section>
+            <div className="copyright py-[20px] bg-[#292929] ">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto relative">
-                    <div className="flex gap-x-5 py-3 flex-wrap sm:flex-nowrap gap-y-2 sm:gap-y-0 items-center border-t border-[#ffffff]">
-                        <div className="basis-full sm:basis-1/2">
-                            <p className="text-sm poppins text-black leading-6 text-center sm:text-left">
-                                © Copyright 2024 - Infinity Animations
-                            </p>
-                        </div>
-                        <div className="basis-full sm:basis-1/2">
-                            <ul className="flex items-center justify-center sm:justify-end gap-4">
-                                {
-                                    otherLinks.map((e, i) => {
-                                        return (
-                                            <li key={i}>
-                                                <Link href={e.link} className="text-[16px] text-black poppins font-normal hover:opacity-50 leading-[30px]">
-                                                    {e.text}
-                                                </Link>
-                                            </li>
-                                        );
-                                    })
-                                }
-                            </ul>
-                        </div>
+                    <p className='text-[14px] text-[#fff] px-5 font-normal poppins text-center'>Copyright © 2024,  <Link target="_blank" className="no-underline" href="https://bhaooinc.com/">Infinity Animations All Rights Reserved</Link></p>
+                    <div className="sm:block hidden top-icon absolute right-0 top-[-60px]">
+                        <Link href="#" className='bg-black w-[80px] h-[80px] text-center text-white uppercase rounded-[60%] align-middle border-[5px] border-[#FFCC00] absolute right-[10px] xl:right-0 md:flex flex-col justify-center items-center hidden z-10'>
+                            <Image src={UpArrow} alt='upArrow' className='mx-auto' />
+                            <p className='text-[14px] text-center poppins'>Top</p>
+                        </Link>
                     </div>
+
                 </div>
             </div>
         </>
-    );
+    )
 }
 
-export default Footer;
+export default Contact
+

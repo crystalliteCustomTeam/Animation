@@ -51,9 +51,9 @@ const Header = () => {
             <header className={`fixed left-0 top-0 py-6 z-50 w-full ${isScrolled ? 'bg-black shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-6' : ''}`}>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
-                        <div className="col-span-6 lg:col-span-3">
+                        <div className="col-span-5 sm:col-span-6 lg:col-span-3">
                             <div className="logo">
-                                <Image src={logo} alt='logo' width={150} className='w-[70%] md:w-[50%]' />
+                                <Image src={logo} alt='logo' width={150} className='w-[60%] sm:w-[70%] md:w-[50%]' />
                             </div>
                         </div>
                         <div className="col-span-12 lg:col-span-9 lg:block hidden">
@@ -66,7 +66,7 @@ const Header = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href='javascript:$zopim.livechat.window.show();' className='flex items-center text-[14px] xl:text-[16px] text-white font-normal poppins bg-[#ff2d4c2f] border-2 ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                        <a href='javascript:$zopim.livechat.window.show();' className='flex items-center text-[14px] xl:text-[16px] text-white font-normal poppins bg-[#ff2d4c2f] border-2 xl:ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                             <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] xl:block hidden' />
                                             <span className='text-[14px] xl:text-[16px] text-white px-[8px] font-normal poppins'>
                                                 Live Chat
@@ -74,19 +74,19 @@ const Header = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <button onClick={popupHandle} className='flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                        <button onClick={popupHandle} className='flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins xl:ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                             Get A Quote
                                         </button>
                                     </li>
                                     <li>
-                                        <a href='tel:1-833-666-6689' className='flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                        <a href='tel:1-833-666-6689' className='flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins xl:ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                             Call Now: 1-833-666-6689
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-span-6 lg:hidden block">
+                        <div className="col-span-7 lg:hidden block">
                             <ul>
                                 <li>
                                     <a href='tel:1-833-666-6689' className='flex items-center justify-center text-[11px] text-white font-normal poppins bg-[#FF2D4B] py-[12px] px-[10px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>

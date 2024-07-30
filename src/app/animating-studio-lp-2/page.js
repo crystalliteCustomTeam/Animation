@@ -5,15 +5,16 @@ import Banner from './components/Banner/Banner'
 import AwardWinning from './components/AwardWinning/AwardWinning'
 import Portfolio from './components/Portfolio/portfolio'
 import BookMeeting from './components/BookMeeting/BookMeeting'
-import Packages from './components/Packages/Packages'
-import Animation from './components/video-animation/Animation'
-import Brand from './components/BrandShine/Brand'
-import Animations from './components/Animations/Animations'
-import Serve from './components/Serve/Serve'
-import Remarkable from './components/Remarkable/Remarkable'
-import OurClient from './components/ourClient/OurClient'
-import Faqs from './components/faqs/Faqs'
-import Footer from './components/Footer/Footer'
+import Packages from './components/Packages/Packages' 
+import WorldClass from './components/WorldClass/WorldClass'
+import SmallBanner from './components/SmallBanner/SmallBanner'
+import ExplainerVideo from './components/explainer-video/ExplainerVideo'
+import AnimationProcess from './components/AnimationProcess/AnimationProcess'
+import WhyChoose from './components/whyChoose/WhyChoose'
+import ClientReads from './components/ClientReads/ClientReads'
+import Brand from './components/BrandShine/Brand' 
+import Faqs from './components/faqs/Faqs' 
+import Footer from './components/Footer/Footer' 
 // Images
 import BranShine from "media/infinity-studio-lp-new/brandshine.png"
 import SaleShine from "media/explainer-videos/salesimage.png"
@@ -27,7 +28,6 @@ import Remark6 from "media/infinity-studio-lp-new/remark6.png"
 import Remark7 from "media/infinity-studio-lp-new/remark7.png"
 import Remark8 from "media/infinity-studio-lp-new/remark8.png"
 import Remark9 from "media/infinity-studio-lp-new/remark9.png"
-import WorldClass from './components/WorldClass/WorldClass'
 
 
 const page = () => {
@@ -118,9 +118,9 @@ const page = () => {
     const sales = {
         title: "Ignite sales with a single click-craft compelling videos instantly!",
         subtitle: "",
-        desc: "",
+        desc: "Animated videos are a great way to fascinate your viewers with rich, intriguing, and playful scenes. It is evaluated according to a study that animations videos can boost your company",
+        btnTxt: "Let's Begin Your Animated Journey Together!",
         branImage: SaleShine,
-        isColor: true,
     }
     //===== FAQS =====//
     const accordionData = [
@@ -157,17 +157,16 @@ const page = () => {
             <Header />
             <Banner />
             <WorldClass />
-            {/* <AwardWinning /> */}
-            {/* <Portfolio /> */}
             <BookMeeting />
+            <SmallBanner />
             <Packages />
-            <Animation />
-            <Brand content={brands} />
-            <Animations content={animations} />
-            <Serve />
-            <Remarkable content={remarkable} />
+            <Portfolio />
+            <AwardWinning />
+            <ExplainerVideo />
             <Brand content={sales} />
-            <OurClient />
+            <AnimationProcess />
+            <WhyChoose />
+            <ClientReads />
             <Faqs content={faqs} />
             <Footer />
         </>
