@@ -7,7 +7,7 @@ import { Images, Fancybox as NativeFancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 // Images
 import MaketBg from "media/infinity-studio-lp-new/marketing-bg.png";
-import PlayIcon from "media/icons/play.png";
+import PlayIcon from "media/infinity-studio-lp-2/play.png";
 import RightArrow from "media/infinity-studio-lp-2/right-arrow.png"
 import chatIcon from "media/infinity-studio-lp-2/chat-icon.svg"
 import MeetingImage from "media/infinity-studio-lp-2/book-marketing.svg"
@@ -54,13 +54,13 @@ const BookMeeting = () => {
                         <h2 className='text-white poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[50px] mb-3'>
                             Mastering The <span className='text-[#F5090B]'>Art</span> Of Video Animation <span className='text-[#F5090B]'>Services</span>
                         </h2>
-                        <p className='text-white text-[13px] lg:text-[16px] poppins mb-5 lg:mb-20'>
+                        <p className='text-white text-[13px] lg:text-[16px] poppins mb-7 md:mb-20'>
                             We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-12 gap-x-16 gap-y-14">
-                    <div className="col-span-6">
+                <div className="grid grid-cols-12 gap-x-7 lg:gap-x-16 gap-y-14">
+                    <div className="col-span-12 md:col-span-6">
                         <div className='group'>
                             <div className="border-2 rounded-[15px] group-hover:border-[#F5090B] group-hover:duration-700 duration-700 ease-in-out p-4 border-white h-full min-h-[320px] xl:min-h-[315px]">
                                 <Fancybox options={{
@@ -75,14 +75,14 @@ const BookMeeting = () => {
                                                     <source src="https://player.vimeo.com/progressive_redirect/playback/907824980/rendition/1080p/file.mp4?loc=external&signature=6b9db8abed0b7431145313cd23ed8aca8f7abe0e8f736633fb14661d441c6f2e" type="video/mp4" />
                                                 </video>
                                                 <div className="bg-black/[0.2] h-full w-full absolute left-[50%] top-[0%] translate-x-[-50%] group-hover:top-[100%] flex items-center justify-center">
-                                                    <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0' />
+                                                    <Image src={PlayIcon} alt='Play-icon' />
                                                 </div>
                                             </div>
                                         </div>
                                     </Link>
                                 </Fancybox>
                             </div>
-                            <h3 className='poppins text-white text-[25px] leading-[38px] font-semibold pt-6 pb-5'><span className='text-[#F5090B]'>2D</span> Animation</h3>
+                            <h3 className='poppins text-white text-[25px] leading-[38px] font-semibold pt-6 pb-2 md:pb-5'><span className='text-[#F5090B]'>2D</span> Animation</h3>
                             <p className='text-white text-[13px] lg:text-[15px] poppins mb-8'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach</p>
                             <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                 Make an Animation
@@ -90,7 +90,7 @@ const BookMeeting = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="col-span-6">
+                    <div className="col-span-12 md:col-span-6">
                         <div className='group'>
                             <div className="border-2 rounded-[15px] group-hover:border-[#F5090B] group-hover:duration-700 duration-700 ease-in-out p-4 border-white h-full min-h-[320px] xl:min-h-[315px]">
                                 <Fancybox options={{
@@ -105,14 +105,14 @@ const BookMeeting = () => {
                                                     <source src="https://player.vimeo.com/progressive_redirect/playback/907824980/rendition/1080p/file.mp4?loc=external&signature=6b9db8abed0b7431145313cd23ed8aca8f7abe0e8f736633fb14661d441c6f2e" type="video/mp4" />
                                                 </video>
                                                 <div className="bg-black/[0.2] h-full w-full absolute left-[50%] top-[0%] translate-x-[-50%] group-hover:top-[100%] flex items-center justify-center">
-                                                    <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0' />
+                                                    <Image src={PlayIcon} alt='Play-icon' />
                                                 </div>
                                             </div>
                                         </div>
                                     </Link>
                                 </Fancybox>
                             </div>
-                            <h3 className='poppins text-white text-[25px] leading-[38px] font-semibold pt-6 pb-5'><span className='text-[#F5090B]'>2D</span> Animation</h3>
+                            <h3 className='poppins text-white text-[25px] leading-[38px] font-semibold pt-6 pb-2 md:pb-5'><span className='text-[#F5090B]'>2D</span> Animation</h3>
                             <p className='text-white text-[13px] lg:text-[15px] poppins mb-8'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach</p>
                             <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                 Make an Animation
@@ -120,7 +120,7 @@ const BookMeeting = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="col-span-6">
+                    <div className="col-span-12 md:col-span-6">
                         <div className='group'>
                             <div className="border-2 rounded-[15px] group-hover:border-[#F5090B] group-hover:duration-700 duration-700 ease-in-out p-4 border-white h-full min-h-[320px] xl:min-h-[315px]">
                                 <Fancybox options={{
@@ -135,14 +135,14 @@ const BookMeeting = () => {
                                                     <source src="https://player.vimeo.com/progressive_redirect/playback/907824980/rendition/1080p/file.mp4?loc=external&signature=6b9db8abed0b7431145313cd23ed8aca8f7abe0e8f736633fb14661d441c6f2e" type="video/mp4" />
                                                 </video>
                                                 <div className="bg-black/[0.2] h-full w-full absolute left-[50%] top-[0%] translate-x-[-50%] group-hover:top-[100%] flex items-center justify-center">
-                                                    <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0' />
+                                                    <Image src={PlayIcon} alt='Play-icon' />
                                                 </div>
                                             </div>
                                         </div>
                                     </Link>
                                 </Fancybox>
                             </div>
-                            <h3 className='poppins text-white text-[25px] leading-[38px] font-semibold pt-6 pb-5'><span className='text-[#F5090B]'>2D</span> Animation</h3>
+                            <h3 className='poppins text-white text-[25px] leading-[38px] font-semibold pt-6 pb-2 md:pb-5'><span className='text-[#F5090B]'>2D</span> Animation</h3>
                             <p className='text-white text-[13px] lg:text-[15px] poppins mb-8'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach</p>
                             <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                 Make an Animation
@@ -150,7 +150,7 @@ const BookMeeting = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="col-span-6">
+                    <div className="col-span-12 md:col-span-6">
                         <div className='group'>
                             <div className="border-2 rounded-[15px] group-hover:border-[#F5090B] group-hover:duration-700 duration-700 ease-in-out p-4 border-white h-full min-h-[320px] xl:min-h-[315px]">
                                 <Fancybox options={{
@@ -165,14 +165,14 @@ const BookMeeting = () => {
                                                     <source src="https://player.vimeo.com/progressive_redirect/playback/907824980/rendition/1080p/file.mp4?loc=external&signature=6b9db8abed0b7431145313cd23ed8aca8f7abe0e8f736633fb14661d441c6f2e" type="video/mp4" />
                                                 </video>
                                                 <div className="bg-black/[0.2] h-full w-full absolute left-[50%] top-[0%] translate-x-[-50%] group-hover:top-[100%] flex items-center justify-center">
-                                                    <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0' />
+                                                    <Image src={PlayIcon} alt='Play-icon' />
                                                 </div>
                                             </div>
                                         </div>
                                     </Link>
                                 </Fancybox>
                             </div>
-                            <h3 className='poppins text-white text-[25px] leading-[38px] font-semibold pt-6 pb-5'><span className='text-[#F5090B]'>2D</span> Animation</h3>
+                            <h3 className='poppins text-white text-[25px] leading-[38px] font-semibold pt-6 pb-2 md:pb-5'><span className='text-[#F5090B]'>2D</span> Animation</h3>
                             <p className='text-white text-[13px] lg:text-[15px] poppins mb-8'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach</p>
                             <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                 Make an Animation
@@ -180,7 +180,7 @@ const BookMeeting = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="col-span-6">
+                    <div className="col-span-12 md:col-span-6">
                         <div className='group'>
                             <div className="border-2 rounded-[15px] group-hover:border-[#F5090B] group-hover:duration-700 duration-700 ease-in-out p-4 border-white h-full min-h-[320px] xl:min-h-[315px]">
                                 <Fancybox options={{
@@ -195,14 +195,14 @@ const BookMeeting = () => {
                                                     <source src="https://player.vimeo.com/progressive_redirect/playback/907824980/rendition/1080p/file.mp4?loc=external&signature=6b9db8abed0b7431145313cd23ed8aca8f7abe0e8f736633fb14661d441c6f2e" type="video/mp4" />
                                                 </video>
                                                 <div className="bg-black/[0.2] h-full w-full absolute left-[50%] top-[0%] translate-x-[-50%] group-hover:top-[100%] flex items-center justify-center">
-                                                    <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0' />
+                                                    <Image src={PlayIcon} alt='Play-icon' />
                                                 </div>
                                             </div>
                                         </div>
                                     </Link>
                                 </Fancybox>
                             </div>
-                            <h3 className='poppins text-white text-[25px] leading-[38px] font-semibold pt-6 pb-5'><span className='text-[#F5090B]'>2D</span> Animation</h3>
+                            <h3 className='poppins text-white text-[25px] leading-[38px] font-semibold pt-6 pb-2 md:pb-5'><span className='text-[#F5090B]'>2D</span> Animation</h3>
                             <p className='text-white text-[13px] lg:text-[15px] poppins mb-8'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach</p>
                             <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                 Make an Animation
@@ -210,7 +210,7 @@ const BookMeeting = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="col-span-6">
+                    <div className="col-span-12 md:col-span-6">
                         <div className='bg-[#F5090B] rounded-[15px] py-8 lg:py-10 px-6 lg:px-8 relative'>
                             <h3 className='text-white poppins text-[25px] lg:text-[35px] leading-[40px] lg:leading-[45px] font-semibold'>Get A Quote</h3>
                             <h3 className='text-[#FFCC00] text-[42px] lg:text-[62px] leading-[52px] lg:leading-[72px] font-semibold poppins mb-4 lg:mb-6'>Today!</h3>

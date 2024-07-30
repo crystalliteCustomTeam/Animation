@@ -107,6 +107,10 @@ body {
   transform: scale(1.01);
 }
 
+.clipPath {
+  clip-path: polygon(6% 0, 100% 0%, 100% 100%, 16% 100%);
+}
+
 .cardSliderShadow {
   box-shadow: 0 0 15px 0 rgb(0 0 0/17%);
 }
@@ -621,6 +625,10 @@ div#ty7 {
   background: none;
 }
 
+.box-testi:hover .videoDiv {
+  display: none;
+}
+
 .overlay-div-testi {
   position: relative;
 }
@@ -1072,6 +1080,34 @@ div.swiper-button-prev {
 
 /*=============== ReadClientSlider End */
 
+/*=============== LP ReadClientSlider End */
+
+.slick-prev:before {
+  content: url(/infinity-studio-lp-2/right-arrow.svg) !important;
+}
+
+.slick-next:before {
+  content: url(/infinity-studio-lp-2/right-arrow.svg) !important;
+}
+
+.clientReadSliderlp .slick-next {
+  right: inherit;
+  left: 100px;
+}
+
+.clientReadSliderlp .slick-prev {
+  left: 25px;
+  transform: rotate(180deg) !important;
+}
+
+.clientReadSliderlp .slick-prev,
+.clientReadSliderlp .slick-next {
+  top: 0;
+  transform: translate(0, -67%);
+}
+
+/*=============== LP ReadClientSlider End */
+
 /*=============== Media Query Start ===============*/
 
 @media only screen and (max-width: 1920px) {
@@ -1192,6 +1228,12 @@ div.swiper-button-prev {
   .readClientSlider .slick-next {
     top: inherit;
     bottom: -22% !important;
+  }
+
+  .clientReadSliderlp .slick-prev,
+  .clientReadSliderlp .slick-next {
+    top: 40px !important;
+    bottom: inherit !important;
   }
 }
 

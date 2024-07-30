@@ -25,7 +25,8 @@ export default {
         '2xl': '1500px',
         'xxl': '1700px',
         '3xl': '1900px',
-        '4xl': '2200px'
+        '4xl': '2200px',
+        '5xl': '1199px',
       },
       fontFamily: {
         sans: ["var(--font-primary)"],
