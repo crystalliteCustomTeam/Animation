@@ -132,7 +132,7 @@ const Banner = () => {
     };
 
     return (
-        <section className='pt-[130px] pb-[70px] md:pt-[160px] md:pb-[100px] lg:pb-0 lg:pt-[60px] lg:h-screen flex items-center justify-center relative'>
+        <section className='pt-[120px] pb-[60px] md:pt-[160px] md:pb-[80px] lg:pt-[130px] lg:pb-[60px] flex items-center justify-center relative'>
             <div className="video-div w-full h-[480px] md:h-full absolute top-0 z-[-1] before:content-[''] before:bg-[#000] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[90] before:opacity-[0.7]">
                 <video id="background-video" src={backgroundVideo} autoPlay loop muted className='relative h-full xl:left-0 w-full object-cover'>
                 </video>
@@ -167,7 +167,7 @@ const Banner = () => {
                     </div>
                     <div className="2xl:block hidden 2xl:col-span-1"></div>
                     <div className="col-span-12 lg:col-span-6 2xl:col-span-5">
-                        <div className={`${styles.form} bg-[#FF2D4B] rounded-[19px] py-12 px-6 xl:px-8 relative lg:w-[75%] 2xl:w-[90%] ms-auto`}>
+                        <div className={`${styles.form} bg-[#FF2D4B] rounded-[19px] py-12 px-6 xl:px-8 relative lg:w-[75%] 2xl:w-[90%] mx-auto lg:ms-auto`}>
                             <div className="flex items-center gap-x-4">
                                 <Image src={Logo1} alt='Infinity Animation' height={100} className='mt-[-49px]' />
                                 <p className='text-[15px] font-semibold leading-[22px] md:leading-[26px] text-white poppins'>

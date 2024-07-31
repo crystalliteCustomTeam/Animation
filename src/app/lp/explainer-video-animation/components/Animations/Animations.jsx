@@ -29,7 +29,8 @@ const Animations = ({ content }) => {
         return <div ref={containerRef}>{props.children}</div>;
     }
     return (
-        <section className='pt-[50px] lg:pt-[70px] bg-black'>
+        <section className='pt-[50px] lg:pt-[70px] relative bg-white'>
+            <Image src={AnimationBg} alt='Infinity Animation' fill={true} className='z-0 object-cover object-center' />
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="grid grid-cols-12 relative z-10">
                     <div className="col-span-12 ">
