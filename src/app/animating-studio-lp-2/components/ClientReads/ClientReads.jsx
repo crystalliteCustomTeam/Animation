@@ -23,13 +23,13 @@ import David from "media/thumbnails/david.jpg";
 import Emma from "media/thumbnails/emma.jpg";
 import Michael from "media/thumbnails/michael.jpg";
 import Sarah from "media/thumbnails/sarah.png";
-import ClutchReview from "media/infinity-studio-lp-2/clutchReview.svg"
 
 const ClientReads = () => {
     const testiContentNew2 = [
         {
             stars: icon2,
             name: 'Sylvia David',
+            badges: googleReview,
             para: `Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
@@ -37,6 +37,7 @@ const ClientReads = () => {
         {
             stars: icon2,
             name: 'Emily Margolis',
+            badges: clutchReview,
             para: `Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045464/rendition/720p/file.mp4?loc=external&log_user=0&signature=06fddc742a45b3eff983a4e5a207a5ff2d1ae71a328b1c14056b1bcc152a9800",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045464/rendition/720p/file.mp4?loc=external&log_user=0&signature=06fddc742a45b3eff983a4e5a207a5ff2d1ae71a328b1c14056b1bcc152a9800",
@@ -44,6 +45,7 @@ const ClientReads = () => {
         {
             stars: icon2,
             name: 'Helen Brooks',
+            badges: review,
             para: `Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045568/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6ed32074656bcaa25e810119398883ade800b3fd2c5eed96b1eff541e57f5bca",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045568/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6ed32074656bcaa25e810119398883ade800b3fd2c5eed96b1eff541e57f5bca",
@@ -51,6 +53,7 @@ const ClientReads = () => {
         {
             stars: icon2,
             name: 'Edd Lockwood',
+            badges: googleReview,
             para: `Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045397/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5eb15a8721a49d21ead978545b43276c59608470ad55c3677e62e1fe88d8edfc",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045397/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5eb15a8721a49d21ead978545b43276c59608470ad55c3677e62e1fe88d8edfc",
@@ -58,6 +61,7 @@ const ClientReads = () => {
         {
             stars: icon2,
             name: 'Matt Evans',
+            badges: clutchReview,
             para: `Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045706/rendition/1080p/file.mp4?loc=external&log_user=0&signature=2b0144629d6bc9649580afa809527d09e6528f656a1c76a1b59408367879c24e",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045706/rendition/1080p/file.mp4?loc=external&log_user=0&signature=2b0144629d6bc9649580afa809527d09e6528f656a1c76a1b59408367879c24e",
@@ -65,6 +69,7 @@ const ClientReads = () => {
         {
             stars: icon2,
             name: 'Mathew',
+            badges: review,
             para: `Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045615/rendition/720p/file.mp4?loc=external&log_user=0&signature=8256b0e38317771b8db2d8959dc6d54ee41dd6c7a847875437dde63ea45333f2",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045615/rendition/720p/file.mp4?loc=external&log_user=0&signature=8256b0e38317771b8db2d8959dc6d54ee41dd6c7a847875437dde63ea45333f2",
@@ -72,6 +77,7 @@ const ClientReads = () => {
         {
             stars: icon2,
             name: 'Gary Wilson',
+            badges: googleReview,
             para: `Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
@@ -79,12 +85,14 @@ const ClientReads = () => {
         {
             stars: icon2,
             name: 'Olivia Bennett',
+            badges: clutchReview,
             para: "Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!",
             thumbnail: Olivia,
         },
         {
             stars: icon2,
             name: 'Grace Turner',
+            badges: review,
             para: 'Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!',
             thumbnail: Grace,
         },
@@ -92,6 +100,7 @@ const ClientReads = () => {
             stars: icon2,
             name: 'Sarah L.',
             company: "Product Manager",
+            badges: googleReview,
             para: "Infinity Animations transformed our vision into a stunning reality with their exceptional 3D animation skills. We needed a lifelike and immersive animation for our product launch, and their team delivered beyond our expectations. Their expertise and attention to detail were evident in every frame. The result was a dynamic and engaging animation that captivated our audience. Working with such a talented and dedicated team reaffirmed their position as a top animation studio in New York. I wouldn't hesitate to work with them again.",
             thumbnail: Sarah,
         },
@@ -99,6 +108,7 @@ const ClientReads = () => {
             stars: icon2,
             name: 'Emma R.',
             company: "Social Media Manager",
+            badges: clutchReview,
             para: "Our experience with Infinity Animations for our motion graphics project was nothing short of amazing. We needed high-quality promotional videos for our social media campaigns, and their team delivered spectacular results. The animations were visually striking and perfectly aligned with our brand's messaging. Their innovative techniques and creativity made our content stand out, significantly boosting our online engagement. Choosing Infinity Animations, a leading NYC animation studio, was one of the best decisions for our marketing efforts. Their professionalism and dedication are truly commendable.",
             thumbnail: Emma,
         },
@@ -106,6 +116,7 @@ const ClientReads = () => {
             stars: icon2,
             name: 'David H.',
             company: "Educational Coordinator",
+            badges: review,
             para: "Our experience with Infinity Animations for our motion graphics project was nothing short of amazing. We needed high-quality promotional videos for our social media campaigns, and their team delivered spectacular results. The animations were visually striking and perfectly aligned with our brand's messaging. Their innovative techniques and creativity made our content stand out, significantly boosting our online engagement. Choosing Infinity Animations, a leading NYC animation studio, was one of the best decisions for our marketing efforts. Their professionalism and dedication are truly commendable.",
             thumbnail: David,
         },
@@ -113,12 +124,14 @@ const ClientReads = () => {
             stars: icon2,
             name: 'Michael J.',
             company: "Marketing Director",
+            badges: googleReview,
             para: "Infinity Animations transformed our vision into a stunning reality with their exceptional 3D animation skills. We needed a lifelike and immersive animation for our product launch, and their team delivered beyond our expectations. Their expertise and attention to detail were evident in every frame. The result was a dynamic and engaging animation that captivated our audience. Working with such a talented and dedicated team reaffirmed their position as a top animation studio in New York. I wouldn't hesitate to work with them again.",
             thumbnail: Michael,
         },
         {
             stars: icon2,
             name: 'Alex Mitchell',
+            badges: clutchReview,
             para: 'Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!',
             thumbnail: Alex,
         },
@@ -238,14 +251,7 @@ const ClientReads = () => {
                                                 <div className='pe-[15px]'>
                                                     <div className="client ms-[15px]">
                                                         <div className="flex items-center justify-end gap-x-5">
-                                                            <Image src={ClutchReview} alt="Infinity Animations" />
-                                                            <div className="reviews flex items-center gap-x-1 py-2 md:py-4">
-                                                                <Image src={testimonial.stars} width={18} height={18} alt='Infinity Animation' />
-                                                                <Image src={testimonial.stars} width={18} height={18} alt='Infinity Animation' />
-                                                                <Image src={testimonial.stars} width={18} height={18} alt='Infinity Animation' />
-                                                                <Image src={testimonial.stars} width={18} height={18} alt='Infinity Animation' />
-                                                                <Image src={testimonial.stars} width={18} height={18} alt='Infinity Animation' />
-                                                            </div>
+                                                            <Image src={testimonial.badges} alt="Infinity Animations" className='w-[20%]' />
                                                         </div>
                                                         <div className="mt-3 lg:mt-5">
                                                             <p className="text-black text-[11px] sm:text-[13px] xl:text-[15px] leading-[24px] xl:leading-[30px] lg:w-11/12 ml-auto poppins mb-5 lg:mb-10 text-right">

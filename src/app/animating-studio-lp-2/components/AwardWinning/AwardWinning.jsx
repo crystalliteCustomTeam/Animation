@@ -58,14 +58,14 @@ const AwardWinning = () => {
     };
 
     return (
-        <section className='bg-white pt-[30px] pb-[30px] md:pt-[80px] relative'>
+        <section className='bg-white pt-[30px] md:pt-[80px] relative'>
             <Image src={AwardBg} alt='Inifnity Animation' fill={true} className='z-[1] object-cover object-center' />
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto relative z-10">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12">
                         <div>
                             <h2 className='text-black poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[60px] text-center mb-2'>An <span className='text-[#F5090B]'>Clients </span> We Serve</h2>
-                            <p className='text-[14px] md:text-[16px] poppins text-normal text-black text-center xl:w-7/12 mx-auto'>At Infinity Animations our animators have magic in their hands with their perfect blend of creativity we create incredible visuals for your business. At every stage of the making, we ensure:</p>
+                            <p className='text-[14px] md:text-[16px] poppins text-normal text-black text-center xl:w-7/12 mx-auto mb-4 md:mb-0'>At Infinity Animations our animators have magic in their hands with their perfect blend of creativity we create incredible visuals for your business. At every stage of the making, we ensure:</p>
                         </div>
                     </div>
                 </div>

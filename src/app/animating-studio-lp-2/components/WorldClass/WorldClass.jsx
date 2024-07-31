@@ -29,7 +29,7 @@ const WorldClass = () => {
             <AutoScroll wrapperClass="mt-10" options={{ loop: true, align: "start" }}>
                 {
                     [Award1, Award2, Award3, Award4, Award5, Award1, Award2, Award3, Award4, Award5].map((e, i) => (
-                        <div key={i} className="group shrink-0 grow-0 basis-1/3 md:basis-1/4 lg:basis-1/6 mr-5 flex items-center justify-center">
+                        <div key={i} className="group shrink-0 grow-0 basis-1/3 md:basis-1/4 lg:basis-1/6 mr-10 sm:mr-5 flex items-center justify-center">
                             <div>
                                 <Image src={e} alt='Inifnity Animation' width={140} height={45} key={i} tabIndex={0} className='opacity-50 hover:opacity-100 group-hover:duration-700 duration-700 ease-in-out' />
                             </div>

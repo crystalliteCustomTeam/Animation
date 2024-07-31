@@ -21,7 +21,7 @@ const SmallBanner = () => {
                             <div className='lg:block hidden'>
                                 <Image src={Prtcle2} alt='Infinity Animation' className='absolute right-[-30px] top-[4px] 5xl:top-[-7px] w-[21%]' />
                             </div>
-                            <div className='relative z-30 py-7 xl:py-10'>
+                            <div className='relative z-30 md:py-7 xl:py-10'>
                                 <h2 className='text-white poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[50px] mb-3 md:w-10/12 lg:w-8/12 5xl:w-6/12 mx-auto text-center'>Start Displaying Your Brand With
                                     Amazing Animated Videos </h2>
                                 <p className='text-white text-[13px] lg:text-[14px] xl:text-[16px] text-center poppins mb-6 md:w-10/12 lg:w-8/12 5xl:w-7/12 mx-auto'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.</p>
