@@ -87,8 +87,8 @@ const Animations = () => {
                                     Across The World</p>
                             </div>
                             <div className={`border-t-2 lg:border-t-0 sm:border-l-2 border-slate-500 col-span-12 sm:col-span-6 lg:col-span-3 py-[25px]`}>
-                                <h4 className='text-[#003262] leading-[70px] text-[35px] md:text-[50px] font-[700] montserrat text-center flex items-center justify-center'><span className='mb-0 d-inline counter' data-speed="1000"> 15 </span><span className='text-[36px] font-[700]'>+</span></h4>
-                                <p className='text-[#231f20] text-center font-[700] montserrat text- text-[18px] leading-[25px] mt-4'>Million <br /> Views</p>
+                                <h4 className='text-[#003262] leading-[70px] text-[35px] md:text-[50px] font-[700] montserrat text-center flex items-center justify-center'><span className='mb-0 d-inline counter' data-speed="1000"> 15 </span><span className='text-[36px] font-[700]'>M+</span></h4>
+                                <p className='text-[#231f20] text-center font-[700] montserrat text- text-[18px] leading-[25px] mt-4'>Views</p>
                             </div>
                         </div>
                     </div>
