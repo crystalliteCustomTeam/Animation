@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import usePopup from '@/app/configs/store/Popup'
 //===== Images 
-import logo from "media/animating-studio/logo.svg";
+import logo from "media/images/logo.gif";
 import Chat from "media/video-explainer/cht-icon.png"
 import telephone from "media/icons/call.png";
 import email from "media/animating-studio/email.svg";

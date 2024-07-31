@@ -126,7 +126,7 @@ const Studio = () => {
     const brandsThree = {
         subTitle: "OUR EXPERIENCE",
         title: (<>
-            <span className="text-[#FFCC00]">Infinity Animation</span> Collaborates with  <br className='hidden xl:block' /> All Types of Companies
+            <span className="text-[#FFCC00]">Infinity Animations</span> Is The Go-to Video Animation Company For All Businesses
         </>),
         desc: "Whether you're a startup, a non-profit, or an established industry leader, we tailor our approach to meet your unique needs. Our strategic, customized solutions ensure that we produce engaging and effective videos for every client.",
         isBtn: false
@@ -135,7 +135,7 @@ const Studio = () => {
         title: (<>
             Transform Your Ideas into <br className='hidden xl:block' />  <span className="text-[#FFCC00]"> Engaging Animations!</span>
         </>),
-        desc: (<>At Infinity Animation, we craft tailor-made solutions that align with your goals and resonate with your audience. </>),
+        desc: (<>At Infinity Animations, we craft tailor-made solutions that align with your goals and resonate with your audience. </>),
         isBtn: false
     }
 
@@ -281,7 +281,7 @@ const Studio = () => {
     ];
     const portfolio = {
         title: (<>Our <span className="text-[#A70A0E]">Animated Videos </span> that Deliver Results</>),
-        para: (<>Checkout Our Recent Work</>),
+        para: (<>Check out Our Recent Work</>),
         tabContents: tabContents,
         tabsInfo: true,
         tabInfo: tabInfo,
