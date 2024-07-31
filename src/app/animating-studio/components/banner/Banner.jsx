@@ -10,6 +10,7 @@ import Discount from "media/infinity-studio/offer.png"
 import Check from "media/infinity-studio/check.png"
 
 const Banner = () => {
+    const backgroundVideo = 'https://player.vimeo.com/progressive_redirect/playback/950015917/rendition/720p/file.mp4?loc=external&log_user=0&signature=e0789e199bc0374e4971e5fc0b408a23ea883170eeb1fa2500dbaf2d0117d095';
     //========== Popup
     const { popup, togglePopup } = usePopup()
     const popupHandle = () => {
@@ -133,15 +134,18 @@ const Banner = () => {
 
     return (
         <>
-            <section className='bg-[#003465f0] lg:bg-[url("../../public/infinity-studio/banner.webp")] bg-[length:100%_100%] bg-center bg-no-repeat pt-[120px] pb-[80px] sm:pt-[150px] sm:pb-[100px] lg:h-[100dvh] xl:pb-0 xl:pt-[50px] flex items-center'>
+            <section className='pt-[120px] pb-[60px] md:pt-[160px] md:pb-[80px] lg:pt-[130px] lg:pb-[80px] flex items-center justify-center relative bg-black'>
+                <div className="video-div w-full h-[480px] md:h-full absolute top-0 z-[-1]">
+                    <video id="background-video" src={backgroundVideo} autoPlay loop muted className='relative h-full xl:left-0 w-full object-cover'>
+                    </video>
+                </div>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-y-12 items-end ">
                         <div className="col-span-12 lg:col-span-7 xl:col-span-8">
-                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-[600] poppins lg:w-10/12 md:leading-[50px]'>HIRE US #1 ANIMATION STUDIO, ENGAGING
-                                An Engaging Custom  <span className='text-[#f6c501] '>ANIMATED EXPLAINER </span> VIDEOS</h1>
-                            <p className='text-white text-[16px] font-[400] poppins lg:w-11/12 leading-[25px] py-[20px]'>Transform Your Ideas into Visually Engaging Animated Stories, Tailored to Resonate with Your Audience & Elevate your Brand.
+                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-[600] poppins lg:w-10/12 md:leading-[50px]'>HIRE US #1 ANIMATION STUDIO, ENGAGING ANIMATED <span className='text-[#f6c501] '>EXPLAINER VIDEOS </span></h1>
+                            <p className='text-white text-[16px] font-[400] poppins lg:w-11/12 leading-[25px] py-[20px]'>Transform your into visually engaging animated stories, tailored to resonate with your audience and elevate your brand.
                             </p>
-                            <div className="grid grid-cols-12 gap-y-6 items-end pb-0 pt-[25px] md:py-[25px]">
+                            <div className="grid grid-cols-12 gap-y-6 gap-x-10 items-end pb-0 pt-[25px] md:py-[25px]">
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
                                     <div className='flex items-center gap-x-2 border-l-0 border-2 rounded-full w-[100%] sm:w-[90%] md:w-[300px] h-[40px]'>
                                         <div className='w-[38px] h-[37px]'>

@@ -65,35 +65,27 @@ body {
 }
 
 .bg-prime {
-  background: linear-gradient(
-    90deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
 }
 
 .bg-second {
-  background: linear-gradient(
-    0deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
 }
 
 .bg-third {
-  background: linear-gradient(
-    0deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 40%
-  );
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 40%);
 }
 
 .bg-secondary {
-  background: linear-gradient(
-    90deg,
-    rgba(55, 178, 204, 1) 0%,
-    rgba(52, 209, 192) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(55, 178, 204, 1) 0%,
+      rgba(52, 209, 192) 100%);
 }
 
 .testicard::before {
@@ -142,6 +134,7 @@ body {
 }
 
 @keyframes transform-scale-item {
+
   0%,
   100% {
     transform: scale(1);
@@ -268,11 +261,11 @@ div#ty7 {
   opacity: 0.3;
 }
 
-.newreactslide .slick-current + .slick-slide {
+.newreactslide .slick-current+.slick-slide {
   opacity: unset;
 }
 
-.newreactslide .slick-current + .slick-slide svg {
+.newreactslide .slick-current+.slick-slide svg {
   fill: #d50d12;
   opacity: unset;
   color: #d50d12;
@@ -301,7 +294,7 @@ div#ty7 {
   top: -40px;
 }
 
-.newreactslide .slick-current + .slick-slide::after {
+.newreactslide .slick-current+.slick-slide::after {
   position: absolute;
   content: "";
   width: 6.5%;
@@ -377,7 +370,7 @@ div#ty7 {
   background: rgb(203 203 203) !important;
 }
 
-#newslides .swiper-horizontal > .swiper-pagination-bullets,
+#newslides .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -387,14 +380,14 @@ div#ty7 {
   width: 100%;
 }
 
-#newslides .swiper-slide-active + swiper-slide {
+#newslides .swiper-slide-active+swiper-slide {
   padding-bottom: 150px;
   transform: translateY(42.8%) translateX(2%) scale(1.7);
   z-index: -1;
   position: relative;
 }
 
-#newslides .swiper-slide-active + swiper-slide + swiper-slide {
+#newslides .swiper-slide-active+swiper-slide+swiper-slide {
   padding-bottom: 247px;
   transform: translateY(37.8%) translateX(-65%) scale(1.6);
   z-index: -2;
@@ -415,11 +408,9 @@ div#ty7 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    0deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
 }
 
 .packagesScroll::-webkit-scrollbar {
@@ -653,12 +644,10 @@ div#ty7 {
 .overlay-div-testi .overlay-testi {
   position: absolute;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0) 53%,
-    rgba(0, 0, 0, 1) 99%
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 53%,
+      rgba(0, 0, 0, 1) 99%);
 }
 
 .newvideoSlider .slick-next {
@@ -896,11 +885,9 @@ div#ty7 {
 }
 
 .videoSlide {
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(38, 1, 1, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(38, 1, 1, 1) 100%);
   position: relative;
 }
 
@@ -935,11 +922,9 @@ div#ty7 {
 
 #testimonialsCMP .swiper-slide-active {
   /* background-color: #fff; */
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(38, 1, 1, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(38, 1, 1, 1) 100%);
   box-shadow: 0 0 68.62px 4.38px rgba(0, 0, 0, 0.09);
   opacity: 1;
   border-radius: 8px;
@@ -1040,10 +1025,7 @@ div.swiper-button-prev {
   display: block;
 }
 
-.studioexplainSlider
-  .slick-slide.slick-active.slick-current
-  .card
-  .nonActiveImg {
+.studioexplainSlider .slick-slide.slick-active.slick-current .card .nonActiveImg {
   display: none;
 }
 
@@ -1134,17 +1116,26 @@ div.swiper-button-prev {
 
 /*=============== LP ReadClientSlider End */
 
-.typeSlider.explainerType .slick-dots {
-  bottom: -45px;
+.explainerTypeSlider .slick-prev:before {
+  content: url(/explainer-videos/swiper-left-arr.png) !important;
 }
 
-.typeSlider.explainerType .slick-dots li button:before {
-  font-size: 15px;
+.explainerTypeSlider .slick-next:before {
+  content: url(/explainer-videos/swiper-right-arrow.png) !important;
 }
 
-.typeSlider.explainerType .slick-dots li.slick-active button:before {
-  opacity: 1;
-  color: #a70a0e;
+.explainerTypeSlider .slick-prev {
+  left: 45%;
+}
+
+.explainerTypeSlider .slick-next {
+  right: 45%;
+}
+
+.explainerTypeSlider .slick-prev,
+.explainerTypeSlider .slick-next {
+  bottom: -62px;
+  top: inherit;
 }
 
 /*=============== Media Query Start ===============*/
@@ -1313,10 +1304,15 @@ div.swiper-button-prev {
   }
 
   .streamedSlider .slick-arrow,
-  .typeSlider .slick-arrow,
   .clientSlider .slick-arrow,
   .explainSlider .slick-arrow {
     display: none !important;
+  }
+
+  .explainerTypeSlider .slick-prev,
+  .explainerTypeSlider .slick-next {
+    top: inherit !important;
+    bottom: -65px !important;
   }
 
   .streamedSlider .slick-dots,
@@ -1484,6 +1480,7 @@ div.swiper-button-prev {
 }
 
 @media only screen and (max-width: 768px) {
+
   .readClientSlider .slick-prev,
   .readClientSlider .slick-next {
     bottom: 2% !important;
@@ -1499,16 +1496,28 @@ div.swiper-button-prev {
     bottom: -20px;
   }
 
+  .explainerTypeSlider .slick-prev,
+  .explainerTypeSlider .slick-next {
+    top: inherit !important;
+    bottom: -45px !important;
+  }
+
+  .explainerTypeSlider .slick-prev {
+    left: 36%;
+  }
+
+  .explainerTypeSlider .slick-next {
+    right: 41%;
+  }
+
   .popupBg {
     top: 250px !important;
   }
 
   .wantbg {
-    background: linear-gradient(
-      0deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 40%
-    );
+    background: linear-gradient(0deg,
+        rgba(245, 9, 11, 1) 0%,
+        rgba(255, 45, 75, 1) 40%);
   }
 
   .blogsSlider .slick-next {

@@ -50,7 +50,7 @@ const Animations = () => {
                     } else if (counterInnerText === 127) {
                         item.textContent += "%";
                     } else {
-                        item.textContent += "K";
+                        item.textContent += "";
                     }
                 }
             }, speed);
