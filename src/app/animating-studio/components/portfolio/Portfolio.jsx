@@ -10,7 +10,7 @@ import styles from "./PortFolio.module.css"
 import PlayIcon from "media/infinity-studio/play2.png"
 
 const Portfolio = ({ content }) => {
-    const { title, tabInfo, tabContents, bg } = content;
+    const { title, para ,tabInfo, tabContents, bg } = content;
     //========= tabs =========
     const [activeTab, setActiveTab] = useState(0);
     const handleTabClick = (index) => {
@@ -55,10 +55,11 @@ const Portfolio = ({ content }) => {
                     <div className="grid grid-cols-12 gap-6 lg:max-w-7xl mx-auto">
                         <div className="col-span-12 md:mt-4">
                             <h2 className='text-[#000000] text-center font-[600] poppins text-[32px] md:text-[42px] lg:text-[48px]'>{title}</h2>
+                            <p className='text-[#231F20] text-[16px] poppins font-[400] py-[17px] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-0'>{para}</p>
                         </div>
                     </div>
-                    <div className={`"mt-8 md:mt-8`}>
-                        <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-5 mx-auto border-b border-black py-[25px]">
+                    <div className={`"mt-8 md:mt-5`}>
+                        <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-5 mx-auto border-b border-black pt-[10px] pb-[25px]">
                             {tabInfo.map((tab, index) => (
                                 <li key={index}
                                     className={`inline-block px-5 md:px-8 py-3 text-[14px] lg:text-[17px] font-[500] poppins cursor-pointer  ${activeTab === index ? "bg-[#FFCC00] rounded-[5px] text-[#003262]" : "text-[#000]"}`}

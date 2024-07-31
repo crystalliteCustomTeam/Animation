@@ -137,56 +137,57 @@ const Banner = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-y-12 items-end ">
                         <div className="col-span-12 lg:col-span-7 xl:col-span-8">
-                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-[600] poppins lg:w-10/12 md:leading-[50px]'>Expand Your Brand’s Reach With
-                                An Engaging Custom  <span className='text-[#f6c501] '>Explainer Video</span></h1>
-                            <p className='text-white text-[16px] font-[400] poppins lg:w-11/12 leading-[25px] py-[20px]'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.</p>
+                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-[600] poppins lg:w-10/12 md:leading-[50px]'>HIRE US #1 ANIMATION STUDIO, ENGAGING
+                                An Engaging Custom  <span className='text-[#f6c501] '>ANIMATED EXPLAINER </span> VIDEOS</h1>
+                            <p className='text-white text-[16px] font-[400] poppins lg:w-11/12 leading-[25px] py-[20px]'>Transform Your Ideas into Visually Engaging Animated Stories, Tailored to Resonate with Your Audience & Elevate your Brand.
+                            </p>
                             <div className="grid grid-cols-12 gap-y-6 items-end pb-0 pt-[25px] md:py-[25px]">
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2 rounded-full w-[100%] sm:w-[90%] md:w-[250px] h-[40px]'>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2 rounded-full w-[100%] sm:w-[90%] md:w-[300px] h-[40px]'>
                                         <div className='w-[38px] h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
-                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Full HD Animations</span>
+                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'>Demo/Tutorial Videos</span>
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[250px] h-[40px]'>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[300px] h-[40px]'>
                                         <div className='w-[38px] h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
-                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Appealing Designs</span>
+                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'>Training Videos</span>
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[250px] h-[40px]'>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[300px] h-[40px]'>
                                         <div className='w-[38px] h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
-                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Latest Technology</span>
+                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'>Animated commercial Videos</span>
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[250px] h-[40px]'>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[300px] h-[40px]'>
                                         <div className='w-[38px] h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
-                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Award-Winning Agency</span>
+                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'>Promotional Videos</span>
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[250px] h-[40px]'>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[300px] h-[40px]'>
                                         <div className='w-[38px] h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
-                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Latest Technology</span>
+                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Marketing Videos</span>
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[250px] h-[40px]'>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[300px] h-[40px]'>
                                         <div className='w-[38px] h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
-                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Award-Winning Agency</span>
+                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'>Product Explainer Videos</span>
                                     </div>
                                 </div>
 

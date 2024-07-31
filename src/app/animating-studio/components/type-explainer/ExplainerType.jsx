@@ -65,8 +65,8 @@ const ExplainerType = () => {
                 <div className="grid grid-cols-12 gap-6 lg:max-w-7xl mx-auto">
                     <div className="px-4 sm:px-8 lg:px-0 col-span-12 md:mb-[30px]">
                         <h2 className='text-[#000000] text-center font-[600] poppins text-[15px] md:text-[20px] lg:text-[25px]'>Services</h2>
-                        <h2 className='text-[#000000] text-center font-[600] poppins text-[32px] md:text-[42px] lg:text-[48px]'>Types of <span className="text-[#A70A0E]">Explainer Videos</span></h2>
-                        <p className='text-[#231F20] text-[16px] poppins font-[400] py-[17px] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-0'>Infinity Animations is a renowned name in the video animation industry. Our experts produce all <br className='hidden lg:block' /> types of animation videos with the usage of modern devices and techniques, some are <br className='hidden lg:block' /> discussed below:</p>
+                        <h2 className='text-[#000000] text-center font-[600] poppins text-[32px] md:text-[42px] lg:text-[48px]'>Types of  <span className="text-[#A70A0E]">Explainer Videos</span></h2>
+                        <p className='text-[#231F20] text-[16px] poppins font-[400] py-[17px] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-0'>Infinity Animations is a renowned name in the video animation industry. Our experts produce all types of <br className='lg:block hidden'/> animation videos with the usage of modern devices and techniques, some are discussed below:</p>
                     </div>
                 </div>
                 <div>
@@ -75,8 +75,8 @@ const ExplainerType = () => {
                             <div className="card rounded-[25px] h-full bg-[#FFCC00] shadow-md  pb-[15px] ">
                                 <Image src={Card1} alt='card-1' style={{ boxShadow: 'rgb(0 0 0 / 41%) 0px 4px 16px 0px', borderTopLeftRadius: '15px', borderTopRightRadius: '15px' }} />
                                 <div className="content px-[25px] min-h-[200px] lg:h-full flex flex-col items-start justify-center mt-2 sm:mt-0">
-                                    <h3 className='text-black text-[18px] xl:text-[22px] border-b-[1px] border-[#000] font-bold poppins pt-[10px] mb-[10px] md:pt-[30px] lg:pt-[20px] leading-[23px] md:leading-[33px] '><span className='text-[#A70A0E]'>Board Animation</span> Video</h3>
-                                    <p className='text-[14px] sm:text-[15px] poppins text-[#000] leading-[1.42857143] pr-[10px] explainerType-location  mt-[20px] mb-[30px]'>board videos entail simulating black-line graphics on a background while guiding viewers through the entire concept or idea.</p>
+                                    <h3 className='text-black text-[18px] xl:text-[22px] border-b-[1px] border-[#000] font-bold poppins pt-[10px] mb-[10px] md:pt-[30px] lg:pt-[20px] leading-[23px] md:leading-[33px] '><span className='text-[#A70A0E]'>Whiteboard Animation </span> Video</h3>
+                                    <p className='text-[14px] sm:text-[15px] poppins text-[#000] leading-[1.42857143] pr-[10px] explainerType-location  mt-[20px] mb-[30px]'>Whiteboard videos entail simulating black-line graphics on a white background while guiding viewers through the entire concept or idea.</p>
                                     <div className='flex justify-end w-full mt-3 mb-2 sm:mb-0'>
                                         <a href='javascript:$zopim.livechat.window.show();' className='flex items-center text-[15px] font-[500] poppins py-[6px] px-[15px] rounded-[8px] bg-[#A70A0E] text-[#fff] tracking-[.3px] leading-[20px] duration-700 transition-all '>
                                             Get Started <span className='ps-2'><HiOutlineArrowLongRight size={28} /></span>
@@ -89,7 +89,7 @@ const ExplainerType = () => {
                             <div className="card rounded-[25px] h-full bg-[#A70A0E] shadow-md  pb-[15px] ">
                                 <Image src={Card2} alt='card-1' style={{ boxShadow: 'rgb(0 0 0 / 41%) 0px 4px 16px 0px', borderTopLeftRadius: '15px', borderTopRightRadius: '15px' }} />
                                 <div className="content px-[25px] min-h-[200px] lg:h-full flex flex-col items-start justify-center mt-2 sm:mt-0">
-                                    <h3 className='text-[#fff] text-[18px] xl:text-[22px] border-b-[1px] border-[#fff] font-bold poppins pt-[10px] md:pt-[30px] lg:pt-[20px] mb-[10px] leading-[23px] md:leading-[33px] '> <span className='text-[#FFCC00]'>Motion</span> Graphics</h3>
+                                    <h3 className='text-[#fff] text-[18px] xl:text-[22px] border-b-[1px] border-[#fff] font-bold poppins pt-[10px] md:pt-[30px] lg:pt-[20px] mb-[10px] leading-[23px] md:leading-[33px] '> <span className='text-[#FFCC00]'>Motion </span> Graphics</h3>
                                     <p className='text-[14px] sm:text-[15px] poppins text-[#fff] leading-[1.42857143] md:pr-[17px] explainerType-location mt-[20px] mb-[30px]'>Again, motion graphics animation videos are known for being simple and engaging. It's the perfect animation style for businesses looking to show off a wide variety of goods or services.</p>
                                     <div className='flex justify-end w-full mt-3 mb-2 sm:mb-0'>
                                         <a href='javascript:$zopim.livechat.window.show();' className='flex items-center text-[15px] font-[500] poppins py-[6px] px-[15px] rounded-[8px] bg-[#FFCC00] text-black tracking-[.3px] leading-[20px] duration-700 transition-all '>

@@ -26,8 +26,8 @@ const Packages = () => {
                 <div className="grid grid-cols-12 gap-5">
                     <div className="col-span-12">
                         <p className='text-[18px] lg:text-[25px] text-center leading-[25px] lg:leading-[38px] poppins font-semibold text-black'>Pricing</p>
-                        <h2 className='text-black poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[50px] text-center mb-2'>Types of <span className='text-[#FF0000]'>Animated</span> Explainer Videos</h2>
-                        <p className='text-[14px] md:text-[16px] poppins text-normal text-black text-center lg:w-8/12 xl:px-[23px] mx-auto mb-4 md:mb-10'>Infinity Animations is a renowned name in the video animation industry. Our experts produce all types of animation videos with the usage of modern devices and techniques, some are discussed below:</p>
+                        <h2 className='text-black poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[50px] text-center mb-2'>Our <span className='text-[#FF0000]'>Packages</span></h2>
+                        <p className='text-[14px] md:text-[16px] poppins text-normal text-black text-center lg:w-8/12 xl:px-[23px] mx-auto mb-4 md:mb-10'>You've visited the right website if you're looking for top-of-the-line video animation experts in the US.</p>
                     </div>
                     <div className="col-span-12 lg:col-span-4">
                         <div className='bg-gradient-to-r from-[#f3d86e] to-[#FFCC00] rounded-[30px] md:rounded-[40px] lg:rounded-[25px] group'>
@@ -36,12 +36,12 @@ const Packages = () => {
                             </div>
                             <Image src={Image1} alt='Infinfity Animation' className='mt-[-55px] mx-auto relative z-10' />
                             <div className='px-5 pb-2'>
-                                <p className='text-center text-[17px] xl:text-[20px] font-semibold leading-[24px] xl:leading-[30px] poppins text-black'>Startup Package</p>
-                                <h5 className='text-[50px] xl:text-[70px] font-bold poppins text-center leading-[60px] xl:leading-[85px] mb-2 text-black'>$195</h5>
+                                <p className='text-center text-[17px] xl:text-[20px] font-semibold leading-[24px] xl:leading-[30px] poppins text-black'>STARTUP PACKAGE</p>
+                                <h5 className='text-[50px] xl:text-[70px] font-bold poppins text-center leading-[60px] xl:leading-[85px] mb-2 text-black'>$199</h5>
                                 <ul className='pb-4'>
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
-                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>30 Seconds Duration</span>
                                     </li>
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
@@ -90,12 +90,12 @@ const Packages = () => {
                             </div>
                             <Image src={Image2} alt='Infinfity Animation' className='mt-[-55px] mx-auto relative z-10' />
                             <div className='px-5 pb-2'>
-                                <p className='text-center text-[17px] xl:text-[20px] font-semibold leading-[24px] xl:leading-[30px] poppins text-white'>Classic Package</p>
+                                <p className='text-center text-[17px] xl:text-[20px] font-semibold leading-[24px] xl:leading-[30px] poppins text-white'>CLASSIC PACKAGE</p>
                                 <h5 className='text-[50px] xl:text-[70px] font-bold poppins text-center leading-[60px] xl:leading-[85px] mb-2 text-white'>$499</h5>
                                 <ul className='pb-4'>
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
-                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>30 Seconds Duration</span>
                                     </li>
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
@@ -108,6 +108,10 @@ const Packages = () => {
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
                                         <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Hand-drawn Illustrations</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Unlimited Revisions</span>
                                     </li>
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
@@ -144,12 +148,12 @@ const Packages = () => {
                             </div>
                             <Image src={Image3} alt='Infinfity Animation' className='mt-[-55px] mx-auto relative z-10' />
                             <div className='px-5 pb-2'>
-                                <p className='text-center text-[17px] xl:text-[20px] font-semibold leading-[24px] xl:leading-[30px] poppins text-white'>Premium Package</p>
+                                <p className='text-center text-[17px] xl:text-[20px] font-semibold leading-[24px] xl:leading-[30px] poppins text-white'>PREMIUM PACKAGE</p>
                                 <h5 className='text-[50px] xl:text-[70px] font-bold poppins text-center leading-[60px] xl:leading-[85px] mb-2 text-white'>$799</h5>
                                 <ul className='pb-4'>
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
-                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>30 Seconds Duration</span>
                                     </li>
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
@@ -161,7 +165,11 @@ const Packages = () => {
                                     </li>
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
-                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Hand-drawn Illustrations</span>
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Custom 2D Character Illustration</span>
+                                    </li>
+                                    <li className='flex items-center gap-2 mb-2'>
+                                        <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>Unlimited Revisions</span>
                                     </li>
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
