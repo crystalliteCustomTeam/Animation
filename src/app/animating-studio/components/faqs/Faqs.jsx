@@ -19,11 +19,10 @@ const Faqs = ({ content }) => {
 
     return (
         <>
-            <section className='py-[50px] lg:py-[90px]'>
+            <section className='py-[50px] lg:py-[90px] bg-white'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="mb-[10px] md:mb-[50px]">
                         <h2 className='text-[#000000] text-center font-[600] poppins text-[32px] md:text-[42px] lg:text-[48px]'>FAQS</h2>
-                        {/* <p className='text-[#231F20] text-[16px] poppins font-[400] py-[17px] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-0'>For our customers, we create meaningful and entertaining videos at Explain Art Animation. The entire video content is produced and tailored to our client's requirements. Our team excels at creating high-quality videos, whether you need a corporate video to boost your brand awareness or a product demo to promoteyour services. Our process entails a series of meticulous animation and development steps, from brainstorming various concepts to the final delivery.</p> */}
                     </div>
                     <div className="grid grid-cols-12 ">
                         <div className="col-span-12 lg:col-span-6">

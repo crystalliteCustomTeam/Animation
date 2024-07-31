@@ -23,7 +23,7 @@ import { AutoScroll } from '@/components/sliders';
 
 const BadgeSlider = () => {
     return (
-        <section className='bg-[#cccccc] py-[30px] my-0 lg:my-[50px]'>
+        <section className='bg-[#cccccc] py-[30px]'>
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12">

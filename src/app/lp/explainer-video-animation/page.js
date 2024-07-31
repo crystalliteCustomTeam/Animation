@@ -329,6 +329,7 @@ const page = () => {
         tabsInfo: true,
         tabInfo: tabInfo,
     };
+
     return (
         <>
             <Header />

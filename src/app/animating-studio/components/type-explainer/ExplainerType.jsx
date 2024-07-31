@@ -60,7 +60,7 @@ const ExplainerType = () => {
 
     return (
         <>
-            <section className='py-[30px] md:py-[50px]'>
+            <section className='py-[30px] md:py-[50px] bg-white'>
                 <div className="grid grid-cols-12 gap-6 lg:max-w-7xl mx-auto">
                     <div className="px-4 sm:px-8 lg:px-0 col-span-12 md:mb-[30px]">
                         <h2 className='text-[#000000] text-center font-[600] poppins text-[15px] md:text-[20px] lg:text-[25px]'>Services</h2>

@@ -15,7 +15,7 @@ const BrandsThree = ({ content }) => {
     }
     return (
         <>
-            <section className='pb-[30px] md:pb-0 pt-[50px] lg:pt-[90px] lg:relative px-4 xl:px-0 '>
+            <section className='pb-[30px] md:pb-0 pt-[50px] lg:pt-[90px] lg:relative px-4 xl:px-0 bg-white'>
                 <div className="sm:px-8 lg:max-w-7xl mx-auto">
                     <div className='px-6 sm:px-10 bg-cover bg-center bg-no-repeat bg-[url("../../public/animating-studio/brand-bg.svg")] rounded-xl pt-[25px] md:pt-[5px]'>
                         <div className="grid grid-cols-12">

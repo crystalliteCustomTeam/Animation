@@ -23,7 +23,7 @@ function Work({ content }) {
     };
 
     return (
-        <section className="py-[50px] lg:py-[60px] ">
+        <section className="py-[50px] lg:py-[60px] bg-white">
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="divide-y divide-cyan-900">
                     <div className="mb-[10px]">

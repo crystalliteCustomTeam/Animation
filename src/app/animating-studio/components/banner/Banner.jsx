@@ -134,8 +134,8 @@ const Banner = () => {
 
     return (
         <>
-            <section className='pt-[120px] pb-[60px] md:pt-[160px] md:pb-[80px] lg:pt-[130px] lg:pb-[80px] flex items-center justify-center relative bg-black'>
-                <div className="video-div w-full h-[480px] md:h-full absolute top-0 z-[-1]">
+            <section className='pt-[120px] pb-[60px] md:pt-[160px] md:pb-[80px] lg:pt-[130px] lg:pb-[60px] flex items-center justify-center relative'>
+                <div className="video-div w-full h-[480px] md:h-full absolute top-0 z-[-1] before:content-[''] before:bg-[#000] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[90] before:opacity-[0.7]">
                     <video id="background-video" src={backgroundVideo} autoPlay loop muted className='relative h-full xl:left-0 w-full object-cover'>
                     </video>
                 </div>
@@ -145,56 +145,55 @@ const Banner = () => {
                             <h1 className='text-white text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-[600] poppins lg:w-10/12 md:leading-[50px]'>HIRE US #1 ANIMATION STUDIO, ENGAGING ANIMATED <span className='text-[#f6c501] '>EXPLAINER VIDEOS </span></h1>
                             <p className='text-white text-[16px] font-[400] poppins lg:w-11/12 leading-[25px] py-[20px]'>Transform your into visually engaging animated stories, tailored to resonate with your audience and elevate your brand.
                             </p>
-                            <div className="grid grid-cols-12 gap-y-6 gap-x-10 items-end pb-0 pt-[25px] md:py-[25px]">
+                            <div className="grid grid-cols-12 gap-y-6 sm:gap-x-10 items-end pb-0 pt-[25px] md:py-[25px]">
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2 rounded-full w-[100%] sm:w-[90%] md:w-[300px] h-[40px]'>
-                                        <div className='w-[38px] h-[37px]'>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2 rounded-full w-full sm:w-[90%] xl:w-[300px] h-[32px] xl:h-[40px]'>
+                                        <div className='w-[30px] xl:w-[38px] h-[30px] xl:h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
-                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'>Demo/Tutorial Videos</span>
+                                        <span className='text-white font-[400] pb-[10px] poppins text-[12px] xl:text-[16px] pt-[8px]'>Demo/Tutorial Videos</span>
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[300px] h-[40px]'>
-                                        <div className='w-[38px] h-[37px]'>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-full sm:w-[90%] xl:w-[300px] h-[32px] xl:h-[40px]'>
+                                        <div className='w-[30px] xl:w-[38px] h-[30px] xl:h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
-                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'>Training Videos</span>
+                                        <span className='text-white font-[400] pb-[10px] poppins text-[12px] xl:text-[16px] pt-[8px]'>Training Videos</span>
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[300px] h-[40px]'>
-                                        <div className='w-[38px] h-[37px]'>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-full sm:w-[90%] xl:w-[300px] h-[32px] xl:h-[40px]'>
+                                        <div className='w-[30px] xl:w-[38px] h-[30px] xl:h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
-                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'>Animated commercial Videos</span>
+                                        <span className='text-white font-[400] pb-[10px] poppins text-[12px] xl:text-[16px] pt-[8px]'>Animated commercial Videos</span>
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[300px] h-[40px]'>
-                                        <div className='w-[38px] h-[37px]'>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-full sm:w-[90%] xl:w-[300px] h-[32px] xl:h-[40px]'>
+                                        <div className='w-[30px] xl:w-[38px] h-[30px] xl:h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
-                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'>Promotional Videos</span>
+                                        <span className='text-white font-[400] pb-[10px] poppins text-[12px] xl:text-[16px] pt-[8px]'>Promotional Videos</span>
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[300px] h-[40px]'>
-                                        <div className='w-[38px] h-[37px]'>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-full sm:w-[90%] xl:w-[300px] h-[32px] xl:h-[40px]'>
+                                        <div className='w-[30px] xl:w-[38px] h-[30px] xl:h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
-                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'> Marketing Videos</span>
+                                        <span className='text-white font-[400] pb-[10px] poppins text-[12px] xl:text-[16px] pt-[8px]'> Marketing Videos</span>
                                     </div>
                                 </div>
                                 <div className="col-span-12 sm:col-span-6 lg:col-span-5">
-                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-[100%] sm:w-[90%] md:w-[300px] h-[40px]'>
-                                        <div className='w-[38px] h-[37px]'>
+                                    <div className='flex items-center gap-x-2 border-l-0 border-2  rounded-full w-full sm:w-[90%] xl:w-[300px] h-[32px] xl:h-[40px]'>
+                                        <div className='w-[30px] xl:w-[38px] h-[30px] xl:h-[37px]'>
                                             <Image src={Check} alt='banner-logos' className='img-fuild' />
                                         </div>
-                                        <span className='text-white font-[400] pb-[10px] poppins pt-[8px]'>Product Explainer Videos</span>
+                                        <span className='text-white font-[400] pb-[10px] poppins text-[12px] xl:text-[16px] pt-[8px]'>Product Explainer Videos</span>
                                     </div>
                                 </div>
-
                             </div>
                             <div className="hidden md:flex items-start gap-4 md:gap-10 mt-6">
                                 <div className='w-[80%] h-auto'>
@@ -251,3 +250,4 @@ const Banner = () => {
 }
 
 export default Banner
+

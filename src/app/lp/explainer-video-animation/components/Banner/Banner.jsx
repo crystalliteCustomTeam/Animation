@@ -167,7 +167,7 @@ const Banner = () => {
                     </div>
                     <div className="2xl:block hidden 2xl:col-span-1"></div>
                     <div className="col-span-12 lg:col-span-6 2xl:col-span-5">
-                        <div className={`${styles.form} bg-[#FF2D4B] rounded-[19px] py-12 px-6 xl:px-8 relative lg:w-[75%] 2xl:w-[90%] mx-auto lg:ms-auto`}>
+                        <div className={`${styles.form} bg-[#FF2D4B] rounded-[19px] py-12 px-6 xl:px-8 md:mr-auto lg:mr-0 ml-auto relative lg:w-[75%] 2xl:w-[90%]`}>
                             <div className="flex items-center gap-x-4">
                                 <Image src={Logo1} alt='Infinity Animation' height={100} className='mt-[-49px]' />
                                 <p className='text-[15px] font-semibold leading-[22px] md:leading-[26px] text-white poppins'>

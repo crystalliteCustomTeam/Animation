@@ -8,7 +8,7 @@ const BrandOne = ({ content }) => {
     const { title, desc } = content;
     return (
         <>
-            <section className='pb-[30px] pt-[50px] lg:pt-[100px] lg:relative px-4 xl:px-0 md:my-[10px]'>
+            <section className='pb-[30px] pt-[50px] lg:pt-[100px] lg:relative px-4 xl:px-0 bg-white'>
                 <div className='lg:py-[50px] '>
                     <div className="sm:px-8 lg:max-w-7xl mx-auto">
                         <div className='px-6 sm:px-10 bg-cover bg-center bg-no-repeat bg-[url("../../public/infinity-studio/brand.svg")] rounded-xl pt-[35px] lg:pt-0'>

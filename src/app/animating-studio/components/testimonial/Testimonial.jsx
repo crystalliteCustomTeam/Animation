@@ -23,7 +23,6 @@ import David from "media/thumbnails/david.jpg";
 import Emma from "media/thumbnails/emma.jpg";
 import Michael from "media/thumbnails/michael.jpg";
 import Sarah from "media/thumbnails/sarah.png";
-import ClutchReview from "media/infinity-studio-lp-2/clutchReview.svg"
 
 const ClientReads = () => {
     const testiContentNew2 = [
