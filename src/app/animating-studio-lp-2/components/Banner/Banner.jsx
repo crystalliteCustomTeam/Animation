@@ -133,7 +133,7 @@ const Banner = () => {
 
     return (
         <>
-            <section className='pt-[115px] md:pt-[155px] 3xl:pt-[250px] pb-[100px] 3xl:pb-[180px] relative h-full'>
+            <section className='pt-[120px] pb-[60px] md:pt-[160px] md:pb-[80px] lg:pt-[140px] lg:pb-[60px] relative h-full'>
                 <div className="video-div w-full h-[480px] md:h-full absolute top-0 z-[-1] before:content-[''] before:bg-[#000] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[90] before:opacity-[0.7]">
                     <video id="background-video" src={backgroundVideo} autoPlay loop muted className='relative h-full xl:left-0 w-full object-cover'>
                     </video>
@@ -162,7 +162,7 @@ const Banner = () => {
                                         </Link>
                                     </div>
                                 </div>
-                                <div className='flex items-center gap-7 pt-5 lg:pt-9'>
+                                <div className='flex items-center gap-7 pt-7 mb-6 lg:mb-0 md:pt-9'>
                                     <Image src={BannerLogos} alt='Infinity Animation' className='w-6/12' />
                                     <Image src={BannerLogosTwo} alt='Infinity Animation' className='w-4/12' />
                                 </div>
@@ -171,11 +171,11 @@ const Banner = () => {
                         <div className="2xl:block hidden 2xl:col-span-1"></div>
                         <div className="col-span-12 lg:col-span-6 2xl:col-span-5">
                             <div className='bg-[#F5090B] rounded-[19px] py-10 px-6 xl:px-8 relative lg:w-[90%] ml-auto'>
-                                <div className="flex items-center gap-x-4">
-                                    <Image src={Logo1} alt='Infinity Animation' height={120} className='mt-[-40px] ml-[-14px]' />
-                                    <h3 className='text-[#FFCC00] text-[30px] md:text-[40px] leading-[45px] md:leading-[50px] font-bold poppins'>Get A Quote</h3>
+                                <div className="flex items-center justify-center sm:justify-start gap-x-4">
+                                    <Image src={Logo1} alt='Infinity Animation' height={120} className='mt-[-40px] ml-[-14px] sm:block hidden' />
+                                    <h3 className='text-[#FFCC00] text-[30px] md:text-[40px] leading-[45px] md:leading-[50px] text-center font-bold poppins'>Get A Quote</h3>
                                 </div>
-                                <p className='text-[13px] leading-[20px] text-center poppins pt-3'>Sign-Up & Get Upto 50%Off On All Type Of Video Services</p>
+                                <p className='text-[13px] leading-[20px] text-center sm:text-left sm:ml-[90px] md:ml-0 lg:text-center poppins lg:pt-3'>Sign-Up & Get Upto 50%Off On All Type Of Video Services</p>
                                 <div className="logo absolute right-[-6px] top-[0px] lg:top-[-30px] xl:top-[-41px] sm:block hidden">
                                     <Image src={Logo2} alt='Infinity Animation' width={180} height={60} />
                                 </div>

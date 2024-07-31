@@ -1268,6 +1268,11 @@ div.swiper-button-prev {
 }
 
 @media only screen and (max-width: 991px) {
+  .clipPath {
+    -webkit-clip-path: polygon(6% 0, 100% 0%, 100% 100%, 16% 100%);
+    clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+
   .popupBg {
     height: auto !important;
     top: 350px !important;

@@ -85,7 +85,7 @@ const Header = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-span-7 lg:hidden block">
+                        <div className="col-span-7 sm:col-span-6 lg:col-span-7 lg:hidden block">
                             <ul>
                                 <li>
                                     <a href='tel:833-666-6689' className='flex items-center justify-center text-[11px] text-white font-normal poppins bg-[#FF2D4B] py-[12px] px-[10px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
