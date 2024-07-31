@@ -157,8 +157,10 @@ const Contact = () => {
                         <div className=" lg:col-span-2 relative before:absolute before:my-auto before:inset-0 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-[70%] before:w-[0.3px] before:bg-[#FFCC00]">
                         </div>
                         <div className="col-span-12 lg:col-span-6">
-                            <h2 className='text-[#fff] font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Get in Touch Now!</h2>
-                            <p className='text-[#fff] text-[16px] lg:text-[18px] montserrat font-[400] pt-[10px] leading-[22px] pb-[30px]'>Its High Time to Showcase Your Store to the World</p>
+                            <h2 className='text-[#fff] font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>
+                            Get A Free Consultation with An Experienced Animation Expert
+                            </h2>
+                            <p className='text-[#fff] text-[16px] lg:text-[18px] montserrat font-[400] pt-[10px] leading-[22px] pb-[30px]'>Book a meeting with a member of our team to learn more and get a quote today!</p>
                             <div className="form">
                                 <form>
                                     <div className="flex flex-col lg:flex-row items-center lg:gap-4 ">

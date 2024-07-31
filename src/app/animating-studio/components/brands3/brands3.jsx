@@ -5,8 +5,7 @@ import React from 'react'
 //===== Component
 import usePopup from '@/app/configs/store/Popup';
 // ==== Images 
-import BrandLogos from "media/animating-studio/brand-logo.svg"
-import BtnMsg from "media/animating-studio/btn-message.svg"
+import BrandLogos from "media/animating-studio/brand-logo.svg" 
 
 const BrandsThree = ({ content }) => {
     const { title, subTitle, desc, isBtn } = content;

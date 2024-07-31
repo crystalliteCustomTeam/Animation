@@ -13,7 +13,7 @@ import Play from "media/animating-studio/play.svg"
 import styles from "./testimonial.module.css"
 
 function Testimonial({ content }) {
-    const { title, para, testiContentNew2 } = content;
+    const { testiContentNew2 } = content;
     const [slideIndex, setSlideIndex] = useState(0);
     const [updateCount, setUpdateCount] = useState(0);
     let sliderRef = useRef(null);
@@ -76,7 +76,7 @@ function Testimonial({ content }) {
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="mb-[40px]">
                     <h3 className='text-[#000000] text-center font-[600] poppins text-[15px] md:text-[20px] lg:text-[25px]'>Testimonials</h3>
-                    <h2 className='text-[#000000] text-center font-[600] poppins text-[32px] md:text-[42px] lg:text-[48px]'>How Our <span className="text-[#A70A0E]">Clients </span>Are Thanking Us</h2>
+                    <h2 className='text-[#000000] text-center font-[600] poppins text-[32px] md:text-[42px] lg:text-[48px]'>Hear From Our Clients <span className="text-[#A70A0E]">Why Infinity Animations </span> is the Right Video Partner For you</h2>
                     <p className='text-[#231F20] text-[16px] poppins font-[400] py-[13px] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-0'>Our experts leave no stone unturned in providing the desired outcome of our clients</p>
                 </div>
                 <div className="mt-[25px] relative">
@@ -114,13 +114,6 @@ function Testimonial({ content }) {
                                             </div>
                                         )}
                                         <div className='w-full lg:w-[90%] pt-2 sm:pt-0 sm:ps-2 md:ps-4 pe-[15px] flex flex-col justify-between my-auto'>
-                                            <div className='flex mb-1'>
-                                                <div>
-                                                    <h5 className=" text-[15px] md:text-[18px] leading-[24px] font-semibold font-sans text-[#000]">
-                                                        You Have right place
-                                                    </h5>
-                                                </div>
-                                            </div>
                                             <div className='my-2'>
                                                 <p className="text-[11px] xl:text-[14px] font-sans font-light text-[#000] testmonial-location">
                                                     {testimonial.para}

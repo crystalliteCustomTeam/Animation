@@ -110,31 +110,32 @@ const Studio = () => {
     // ===== Brands Content ===== //
     const brandsOne = {
         title: (<>
-            Start Displaying Your Brand with <br className='hidden xl:block' />   <span className="text-[#FFCC00]"> Amazing Animated Videos</span>
+            Explain Your Complex Product with <br className='hidden xl:block' />   <span className="text-[#FFCC00]"> Amazing Animated Videos</span>
         </>),
-        desc: (<>Spread profound message and scale up your business with our <br className='hidden xl:block' /> animated video services today!</>),
+        desc: (<>Spread profound message and scale up your business with our <br className='hidden xl:block' />  animated video services today!</>),
         isBtn: false
     }
     const brandsTwo = {
         title: (<>
-            Start Displaying Your Brand with <br className='hidden xl:block' />  <span className="text-[#FFCC00]"> Amazing Animated Videos</span>
+            Animated Video Content That Boosts Your Brand,
+            Maximizes Prospect   <span className="text-[#FFCC00]"> Engagement and Drives ROI </span>
         </>),
-        desc: (<>Spread profound message and scale up your business with our <br className='hidden xl:block' /> animated video services today!</>),
+        desc: (<>Spread profound message and scale up your <br className='hidden xl:block' /> business with our animated video services today!</>),
         isBtn: false
     }
     const brandsThree = {
         subTitle: "OUR EXPERIENCE",
         title: (<>
-            <span className="text-[#FFCC00]">Infinity Animation</span> works with all types of <br className='hidden xl:block' /> companies.
+            <span className="text-[#FFCC00]">Infinity Animation</span> Collaborates with  <br className='hidden xl:block' /> All Types of Companies
         </>),
-        desc: "From startups and non-profits to industry leaders like swisscom, 2park, codio, and Google. But no matter the client, we strategically tailor our approach to support your specific needs to produce compelling videos.",
+        desc: "Whether you're a startup, a non-profit, or an established industry leader, we tailor our approach to meet your unique needs. Our strategic, customized solutions ensure that we produce engaging and effective videos for every client.",
         isBtn: false
     }
     const brandsFour = {
         title: (<>
-            Start Displaying Your Brand with <br className='hidden xl:block' />  <span className="text-[#FFCC00]"> Amazing Animated Videos</span>
+            Transform Your Ideas into <br className='hidden xl:block' />  <span className="text-[#FFCC00]"> Engaging Animations!</span>
         </>),
-        desc: (<>Spread profound message and scale up your business with our <br className='hidden xl:block' /> animated video services today!</>),
+        desc: (<>At Infinity Animation, we craft tailor-made solutions that align with your goals and resonate with your audience. </>),
         isBtn: false
     }
 
@@ -279,8 +280,8 @@ const Studio = () => {
         ],
     ];
     const portfolio = {
-        title: (<>Our Streamlined <span className="text-[#A70A0E]">Projects</span></>),
-        para: (<>Our creative prospectus, over the years, has garnered quite a reputation for itself. <br className='hidden xl:block' />  Here’s the evidence.</>),
+        title: (<>Our <span className="text-[#A70A0E]">Animated Videos </span> that Deliver Results</>),
+        para: (<>Checkout Our Recent Work</>),
         tabContents: tabContents,
         tabsInfo: true,
         tabInfo: tabInfo,
@@ -291,29 +292,29 @@ const Studio = () => {
 
     const accordionData = [
         {
-            question: 'How Many People Will Work On My Video?',
-            list: [
-                "Understanding your business and marketing objectives",
-                "Story and script development",
-                "Storyboard",
-                "Voiceover",
-                "Illustration",
-                "Animation",
-                "Delivery/publication",
-            ]
+            question: 'How long should an explainer video be?',
+            answer: 'Typically, explainer videos are between 60 to 90 seconds long. This length is ideal for capturing attention and delivering key messages effectively.',
         },
         {
-            question: 'How Many People Will Work On My Video?',
-            answer: "Step into a realm of immersive storytelling with our cutting-edge 3D animations. Elevate your visual narratives, whether for product showcases, virtual tours, or cinematic experiences.",
+            question: 'What information do I need to provide?',
+            answer: "You should provide details about your product or service, target audience, key messages, and branding guidelines. The more information you provide, the better the video will align with your vision",
         },
         {
-            question: 'Do I Get Full Copyrights To The Video?',
-            answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
+            question: 'Can I use my voiceover, or do you provide one?',
+            answer: "You can use your voiceover, or we can provide professional voiceover services. Just let us know your preference.",
         },
         {
-            question: 'Do You Produce All Types Of Animation Videos And Provide Video Concept Too, If I Have No Concept Idea?',
-            answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
-        }
+            question: 'What is the turnaround time for an explainer video?',
+            answer: "The typical turnaround time is 4 to 6 weeks, depending on the complexity of the video and feedback response times.",
+        },
+        {
+            question: 'Can I use the video for multiple platforms?',
+            answer: "Yes, the video can be optimized for various platforms such as websites, social media, and presentations. Just specify where you plan to use it.",
+        },
+        {
+            question: 'What are the benefits of using an explainer video?',
+            answer: "Explainer videos simplify complex information, increase viewer engagement, boost conversion rates, and enhance brand recognition. They provide a compelling and memorable way to communicate your message to your audience.",
+        },
     ];
     const faqs = {
         accordionData: accordionData,
@@ -333,30 +334,30 @@ const Studio = () => {
         {
             review: clutchReview,
             name: 'Sylvia David',
-            para: `I wanted to give a big shout-out to Infinity Animations, a top video animation company, for their outstanding work on our promotional video. Their team was easy to work with and delivered the project quickly and efficiently.`,
+            para: `I wanted to give a big shout-out to Infinity Animations, a top video animation company, for their outstanding work on our promotional video. Their team was easy to work with and delivered the project quickly and efficiently..`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045737/rendition/1080p/file.mp4?loc=external&log_user=0&signature=85c3341b0d68f65b218956e9081d46bef4408f2e74e83148f4d3a83e34b79daf",
         },
         {
             review: googleReview,
-            name: 'Emily Margolis',
+            name: 'Emily Margolis', 
             para: `We approached Infinity Animations, a leading video animation agency, for a short explainer video. Their team provided exceptional video animation services and delivered a high-quality 2D animation right on time. Highly recommended!`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045464/rendition/720p/file.mp4?loc=external&log_user=0&signature=06fddc742a45b3eff983a4e5a207a5ff2d1ae71a328b1c14056b1bcc152a9800",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045464/rendition/720p/file.mp4?loc=external&log_user=0&signature=06fddc742a45b3eff983a4e5a207a5ff2d1ae71a328b1c14056b1bcc152a9800",
         },
         {
             review: clutchReview,
-            name: 'Edd Lockwood',
-            para: `Kudos to Infinity Animations, a fantastic video marketing agency, for creating an engaging and visually appealing animated video. Their team’s creativity and professionalism made our project a huge success.`,
-            video: "https://player.vimeo.com/progressive_redirect/playback/950045397/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5eb15a8721a49d21ead978545b43276c59608470ad55c3677e62e1fe88d8edfc",
-            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045397/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5eb15a8721a49d21ead978545b43276c59608470ad55c3677e62e1fe88d8edfc",
-        },
-        {
-            review: googleReview,
             name: 'Helen Brooks',
             para: `Huge thanks to Infinity Animations for their incredible video production service. They made the entire process seamless and produced a visually stunning animation that perfectly matched our brand.`,
             video: "https://player.vimeo.com/progressive_redirect/playback/950045568/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6ed32074656bcaa25e810119398883ade800b3fd2c5eed96b1eff541e57f5bca",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045568/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6ed32074656bcaa25e810119398883ade800b3fd2c5eed96b1eff541e57f5bca",
+        },
+        {
+            review: googleReview,
+            name: 'Edd Lockwood',
+            para: `Kudos to Infinity Animations, a fantastic video marketing agency, for creating an engaging and visually appealing animated video. Their team’s creativity and professionalism made our project a huge success.`,
+            video: "https://player.vimeo.com/progressive_redirect/playback/950045397/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5eb15a8721a49d21ead978545b43276c59608470ad55c3677e62e1fe88d8edfc",
+            thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045397/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5eb15a8721a49d21ead978545b43276c59608470ad55c3677e62e1fe88d8edfc",
         },
         {
             review: clutchReview,
@@ -463,9 +464,9 @@ const Studio = () => {
                                 <BadgeSlider />
                                 <Work content={workListContent} />
                                 <BrandsTwo content={brandsTwo} />
-                                <BrandsThree content={brandsThree} />
-                                <BrandsFour content={brandsFour} />
                                 <Animations />
+                                <BrandsThree content={brandsThree} />
+                                <BrandsFour content={brandsFour} /> 
                                 <Testimonial content={testimonial} />
                                 <Faqs content={faqs} />
                                 <Footer />

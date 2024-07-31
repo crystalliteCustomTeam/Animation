@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import Image from 'next/image';
 import ArrowUnfill from 'media/animating-studio/arrow-unfill.svg';
@@ -33,8 +31,7 @@ function Work({ content }) {
                             How We Work
                         </h2>
                         <p className="text-[#231F20] text-[16px] poppins font-[400] py-[17px] lg:w-[90%] leading-[20px] md:leading-[22px] mb-0">
-                            There is an immense amount of product animation & graphic content out there but here <br /> at
-                            Video Explain Art, we make sure our animation service & work stands out.
+                            We've simplified our video production process as much as possible thanks to our years of experience. <br className='lg:block hidden'/> We have got field experts in each process of video making.
                         </p>
                     </div>
                     {workList?.map((item, index) => (

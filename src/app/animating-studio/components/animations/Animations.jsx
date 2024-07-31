@@ -66,13 +66,13 @@ const Animations = () => {
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 md:mb-[40px]">
                             <h2 className='text-[#000000] text-center font-[600] poppins text-[32px] md:text-[42px] lg:text-[48px]'>Proven  <span className="text-[#A70A0E]"> Statistics</span> of Infinity Animations</h2>
-                            <p className='text-[#231F20] text-[16px] poppins font-[400] py-[17px] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-0'>There is an immense amount of product animation & graphic content out there but here at Video Explain Art , we make sure our<br className='hidden lg:block' /> animation service & work stands out. </p>
+                            <p className='text-[#231F20] text-[16px] poppins font-[400] py-[17px] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-0'>There is an immense amount of product animation & graphic content out there but here at Video Explain Art , <br className='lg:block hidden'/> we make sure our animation service & work stands out.</p>
                         </div>
                     </div>
                     <div className='px-[20px] rounded-[10px] relative'>
                         <div className="grid grid-cols-12 gap-0 lg:gap-6">
                             <div className={`col-span-12 sm:col-span-6 lg:col-span-3 py-[25px]`}>
-                                <h4 className='text-[#003262] leading-[70px] text-[35px] md:text-[50px] font-[700] montserrat text-center flex items-center justify-center'><span className='mb-0 d-inline counter' data-speed="1000"> 12 </span><span className='text-[36px] font-[700]'>+</span></h4>
+                                <h4 className='text-[#003262] leading-[70px] text-[35px] md:text-[50px] font-[700] montserrat text-center flex items-center justify-center'><span className='mb-0 d-inline counter' data-speed="1000"> 4 </span><span className='text-[36px] font-[700]'>+</span></h4>
                                 <p className='text-[#231f20] text-center font-[700] montserrat text- text-[18px] leading-[25px] mt-4'>Years Of <br />
                                     Experience</p>
                             </div>
