@@ -123,12 +123,12 @@ const Services = () => {
                         ) : (
                             <div key={card.id} className="col-span-12 md:col-span-6">
                                 <div className="group">
-                                    <div className="border-2 rounded-[15px] group-hover:border-[#F5090B] group-hover:duration-700 duration-700 ease-in-out p-4 border-white h-full min-h-[320px] xl:min-h-[315px]">
+                                    <div className="border-2 rounded-[15px] group-hover:border-[#F5090B] group-hover:duration-700 duration-700 ease-in-out p-4 border-white h-full min-h-[258px] lg:min-h-[320px] xl:min-h-[315px]">
                                         <Fancybox options={{ Carousel: { infinite: false } }}>
                                             <Link href={card.video} data-fancybox="gallery" onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause} className="min-h-[350px]">
                                                 <div className="w-full h-full overlay relative group overflow-hidden rounded-[10px]">
                                                     <div className="w-full h-full flex justify-center items-center overlay-div-testi">
-                                                        <video loading="lazy" muted loop preload="auto" autoPlay={false} className="rounded-[12px] w-full h-full object-cover min-h-[320px] xl:min-h-[315px]">
+                                                        <video loading="lazy" muted loop preload="auto" autoPlay={false} className="rounded-[12px] w-full h-full object-cover min-h-[258px] lg:min-h-[320px] xl:min-h-[315px]">
                                                             <source src={card.video} type="video/mp4" />
                                                         </video>
                                                         <div className="bg-black/[0.2] h-full w-full absolute left-[50%] top-[0%] translate-x-[-50%] group-hover:top-[100%] flex items-center justify-center">
