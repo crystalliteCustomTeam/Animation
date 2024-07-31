@@ -1,10 +1,15 @@
 import React from 'react'
-import WorldClassSlider from './WorldClassSlider/WorldClassSlider'
-// Images
-import Chats from "media/infinity-studio-lp-new/chat-icon.svg"
 import Image from 'next/image'
-import Link from 'next/link'
 import { FaPhoneAlt } from 'react-icons/fa'
+// Import Slider
+import { AutoScroll } from '@/components/sliders';
+//===== Images
+import Award1 from "media/infinity-studio-lp-2/world-1.png"
+import Award2 from "media/infinity-studio-lp-2/world-2.png"
+import Award3 from "media/infinity-studio-lp-2/world-3.png"
+import Award4 from "media/infinity-studio-lp-2/world-4.png"
+import Award5 from "media/infinity-studio-lp-2/world-5.png"
+import Chats from "media/infinity-studio-lp-new/chat-icon.svg"
 
 const WorldClass = () => {
     return (
@@ -21,19 +26,29 @@ const WorldClass = () => {
                     </div>
                 </div>
             </div>
-            <WorldClassSlider />
+            <AutoScroll wrapperClass="mt-10" options={{ loop: true, align: "start" }}>
+                {
+                    [Award1, Award2, Award3, Award4, Award5, Award1, Award2, Award3, Award4, Award5].map((e, i) => (
+                        <div key={i} className="group shrink-0 grow-0 basis-1/3 md:basis-1/4 lg:basis-1/6 mr-5 flex items-center justify-center">
+                            <div>
+                                <Image src={e} alt='Inifnity Animation' width={140} height={45} key={i} tabIndex={0} className='opacity-50 hover:opacity-100 group-hover:duration-700 duration-700 ease-in-out' />
+                            </div>
+                        </div>
+                    ))
+                }
+            </AutoScroll>
             <div className="flex items-center justify-center gap-3 pt-16">
                 <div>
-                    <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins ml-[10px] h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                    <a href="tel:833-666-6689" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins ml-[10px] h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                         <FaPhoneAlt />
                         Call Now
-                    </Link>
+                    </a>
                 </div>
                 <div>
-                    <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all'>
+                    <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all'>
                         <Image src={Chats} alt='Infinity Animation' />
                         Live Chat
-                    </Link>
+                    </a>
                 </div>
             </div>
         </section>

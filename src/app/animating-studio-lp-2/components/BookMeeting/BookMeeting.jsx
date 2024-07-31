@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React, { useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { Images, Fancybox as NativeFancybox } from "@fancyapps/ui";
+import { Fancybox as NativeFancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 // Images
 import MaketBg from "media/infinity-studio-lp-new/marketing-bg.png";
@@ -84,10 +84,10 @@ const BookMeeting = () => {
                             </div>
                             <h3 className='poppins text-white text-[25px] leading-[38px] font-semibold pt-6 pb-2 md:pb-5'><span className='text-[#F5090B]'>2D</span> Animation</h3>
                             <p className='text-white text-[13px] lg:text-[15px] poppins mb-8'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach</p>
-                            <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                            <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                 Make an Animation
                                 <Image src={RightArrow} alt='Infinity Animation' className='w-[8%]' />
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className="col-span-12 md:col-span-6">
@@ -114,10 +114,10 @@ const BookMeeting = () => {
                             </div>
                             <h3 className='poppins text-white text-[25px] leading-[38px] font-semibold pt-6 pb-2 md:pb-5'><span className='text-[#F5090B]'>2D</span> Animation</h3>
                             <p className='text-white text-[13px] lg:text-[15px] poppins mb-8'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach</p>
-                            <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                            <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                 Make an Animation
                                 <Image src={RightArrow} alt='Infinity Animation' className='w-[8%]' />
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className="col-span-12 md:col-span-6">
@@ -144,10 +144,10 @@ const BookMeeting = () => {
                             </div>
                             <h3 className='poppins text-white text-[25px] leading-[38px] font-semibold pt-6 pb-2 md:pb-5'><span className='text-[#F5090B]'>2D</span> Animation</h3>
                             <p className='text-white text-[13px] lg:text-[15px] poppins mb-8'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach</p>
-                            <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                            <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                 Make an Animation
                                 <Image src={RightArrow} alt='Infinity Animation' className='w-[8%]' />
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className="col-span-12 md:col-span-6">
@@ -174,10 +174,10 @@ const BookMeeting = () => {
                             </div>
                             <h3 className='poppins text-white text-[25px] leading-[38px] font-semibold pt-6 pb-2 md:pb-5'><span className='text-[#F5090B]'>2D</span> Animation</h3>
                             <p className='text-white text-[13px] lg:text-[15px] poppins mb-8'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach</p>
-                            <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                            <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                 Make an Animation
                                 <Image src={RightArrow} alt='Infinity Animation' className='w-[8%]' />
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className="col-span-12 md:col-span-6">
@@ -204,10 +204,10 @@ const BookMeeting = () => {
                             </div>
                             <h3 className='poppins text-white text-[25px] leading-[38px] font-semibold pt-6 pb-2 md:pb-5'><span className='text-[#F5090B]'>2D</span> Animation</h3>
                             <p className='text-white text-[13px] lg:text-[15px] poppins mb-8'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach</p>
-                            <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                            <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                 Make an Animation
                                 <Image src={RightArrow} alt='Infinity Animation' className='w-[8%]' />
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className="col-span-12 md:col-span-6">
@@ -217,13 +217,13 @@ const BookMeeting = () => {
                             <p className='text-white text-[13px] lg:text-[14px] poppins mb-4 lg:mb-6'>We are a leading video animation company <br className='xl:block hidden' />
                                 in the USA that has helped thousands of</p>
                             <div>
-                                <Link href="javascript:;" className='bg-white h-[65px] w-max px-4 rounded-[6px] flex items-center gap-x-4'>
+                                <a href="javascript:$zopim.livechat.window.show();" className='bg-white h-[65px] w-max px-4 rounded-[6px] flex items-center gap-x-4'>
                                     <Image src={chatIcon} alt='Infinity Animation' />
                                     <div>
                                         <span className='text-black text-[10px] poppins font-semibold block'>Chat Now to Avail 50% OFF</span>
                                         <span className='text-black text-[20px] leading-[30px] font-semibold poppins block text-center'>Live Chat</span>
                                     </div>
-                                </Link>
+                                </a>
                             </div>
                             <div className='xl:block hidden absolute right-[-35px] top-[-35px]'>
                                 <Image src={MeetingImage} alt='Infinity Animation' className='max-h-[380px]' />

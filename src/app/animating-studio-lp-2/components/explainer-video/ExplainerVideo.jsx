@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import { FaPhoneAlt } from 'react-icons/fa'
 // Images
@@ -35,16 +34,16 @@ const ExplainerVideo = () => {
                                 <p className='text-white text-[13px] lg:text-[14px] xxl:text-[15px] pr-[10px] poppins mb-7 lg:pr-10'>Animated videos are a great way to fascinate your viewers with rich, intriguing, and playful scenes. It is evaluated according to a study that animations videos can boost your company sales up to around 49%. Infinity animations studio offers you the interactive, innovative approach to motion pictures creation in any format in tight deadline terms and affordable prices. We are proud to have served top-notch names in the industry with our service.</p>
                                 <div className="flex flex-col md:flex-row items-center justify-start gap-3">
                                     <div className='w-full md:w-max'>
-                                        <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-black font-semibold poppins h-[45px] w-full md:w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-white hover:duration-700 hover:transition-all'>
+                                        <a href="tel:833-666-6689" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-black font-semibold poppins h-[45px] w-full md:w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-white hover:duration-700 hover:transition-all'>
                                             <FaPhoneAlt className='text-black' />
                                             Call Now
-                                        </Link>
+                                        </a>
                                     </div>
                                     <div className='w-full md:w-max'>
-                                        <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-full md:w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-full md:w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all'>
                                             <Image src={Chats} alt='Infinity Animation' className='brightness-200 invert-0' />
                                             Live Chat
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link';
 import Image from 'next/image'
 import { FaPhoneAlt } from 'react-icons/fa';
 // Images
@@ -28,16 +27,16 @@ const SmallBanner = () => {
                                 <p className='text-white text-[13px] lg:text-[14px] xl:text-[16px] text-center poppins mb-6 md:w-10/12 lg:w-8/12 5xl:w-7/12 mx-auto'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.</p>
                                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                                     <div className='w-full sm:w-auto'>
-                                        <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-black font-semibold poppins h-[45px] w-full sm:w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-white hover:duration-700 hover:transition-all'>
+                                        <a href="tel:833-666-6689" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-black font-semibold poppins h-[45px] w-full sm:w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-white hover:duration-700 hover:transition-all'>
                                             <FaPhoneAlt className='text-black' />
                                             Call Now
-                                        </Link>
+                                        </a>
                                     </div>
                                     <div className='w-full sm:w-auto'>
-                                        <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-full sm:w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-full sm:w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all'>
                                             <Image src={Chats} alt='Infinity Animation' className='brightness-200 invert-0' />
                                             Live Chat
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

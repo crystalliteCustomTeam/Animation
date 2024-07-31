@@ -1,14 +1,11 @@
 "use client"
-import usePopup from '@/app/configs/store/Popup';
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 // Images
-import Chat from "media/infinity-studio-lp-new/chat-icon.svg"
 import BrandBg from "media/infinity-studio-lp-2/brand-bg.png"
 
 const Brand = ({ content }) => {
-    const { title, subtitle, desc, branImage, btnTxt, callTxt } = content
+    const { title, subtitle, desc, branImage, btnTxt,} = content
     return (
         <>
             <section className='py-[30px] md:py-[70px] lg:pt-[90px] bg-white'>
@@ -21,7 +18,7 @@ const Brand = ({ content }) => {
                             <p className='text-white text-[13px] 5xl:text-[16px] poppins 5xl:pr-6'>{desc}</p>
                             <div className='flex items-center gap-4'>
                                 <div className="btn mt-6 w-full sm:w-[250px]">
-                                    <a href='tel:833-666-6689' class="text-[11px] sm:text-[13px] md:text-[16px] font-bold leading-[25px] text-white bg-black rounded-[5px] w-full sm:w-[360px] md:w-[440px] h-[44px] px-[10px] sm:px-[20px] poppins flex items-center justify-center">{btnTxt}</a>
+                                    <a href='javascript:$zopim.livechat.window.show();' class="text-[11px] sm:text-[13px] md:text-[16px] font-bold leading-[25px] text-white bg-black rounded-[5px] w-full sm:w-[360px] md:w-[440px] h-[44px] px-[10px] sm:px-[20px] poppins flex items-center justify-center">{btnTxt}</a>
                                 </div>
                             </div>
                         </div>

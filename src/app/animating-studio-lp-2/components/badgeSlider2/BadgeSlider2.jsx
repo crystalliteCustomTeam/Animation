@@ -28,7 +28,7 @@ const BadgeSlider = () => {
                 <AutoScroll wrapperClass="" options={{ loop: true, align: "start" }}>
                     {
                         [icon1, icon2, icon4, icon6, icon7, icon8, icon9, icon10, icon12, icon13, icon14, icon15, icon16, icon17, icon18, icon19].map((e, i) => (
-                            <div key={i} className="shrink-0 grow-0 basis-1/6 mr-5">
+                            <div key={i} className="shrink-0 grow-0 basis-1/3 md:basis-1/4 lg:basis-1/5 mr-5">
                                 <Image src={e} alt="logo" className='w-[60%]' />
                             </div>
                         ))

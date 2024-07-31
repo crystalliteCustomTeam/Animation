@@ -1,8 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import usePopup from '@/app/configs/store/Popup'
 import Image from 'next/image'
-import { EnvelopeIcon } from '@heroicons/react/24/solid'
+import usePopup from '@/app/configs/store/Popup'
 //===== Images 
 import logo from "media/images/logo.gif";
 import Chat from "media/infinity-studio-lp-new/chat-icon.svg"

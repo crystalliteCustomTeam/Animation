@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
 import { FaPhoneAlt } from 'react-icons/fa'
 // Images
@@ -79,10 +78,10 @@ const AnimationProcess = () => {
                                 ))}
                             </ul>
                             <div className="btn">
-                                <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins ml-[27px] h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                <a href="tel:833-666-6689" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins ml-[27px] h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                     <FaPhoneAlt />
                                     Call Now
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -108,10 +107,10 @@ const AnimationProcess = () => {
                                     ))}
                                 </ul>
                                 <div className="btn">
-                                    <Link href="javascript:;" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] lg:bg-black hover:duration-700 hover:transition-all'>
+                                    <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] lg:bg-black hover:duration-700 hover:transition-all'>
                                         <Image src={Chats} alt='Infinity Animation' className='brightness-200 invert-0' />
                                         Live Chat
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>

@@ -1,7 +1,6 @@
 "use client"
 import usePopup from '@/app/configs/store/Popup';
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 // Images
 import Chat from "media/infinity-studio-lp-new/chat-icon.svg"
@@ -41,7 +40,7 @@ const Brand = ({ content }) => {
                                 <h5 className='text-white font-bold font-sans leading-[31px] text-[25px] lg:w-11/12 pb-[5px]'>{subtitle}</h5>
                                 <p className='text-[17px] text-white font-sans leading-[22px]'>{desc}</p>
                                 <div className="btn mt-6">
-                                    <a href='javascript:$zopim.livechat.window.show();' class="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-full md:w-[410px] h-[44px] poppins flex items-center justify-center">Let's Begin Your Animated Journey Together!</a>
+                                    <a href='javascript:$zopim.livechat.window.show();' class="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-max px-4 h-[45px] poppins flex items-center justify-center">Let’s Animate Your Idea</a>
                                 </div>
                             </div>}
                         {isBranImage ?

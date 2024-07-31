@@ -58,7 +58,7 @@ const partners = () => {
     return (
         <>
             <section className='bg-[#bfbfbf] relative partners'>
-                <div className="px-2 mx-auto ">
+                <div className="px-2 mx-auto">
                     <Slider {...testiSlider} className="partnerSlider">
                         <div className='mx-[45px] px-[15px]'>
                             <Image src={Partners1} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />

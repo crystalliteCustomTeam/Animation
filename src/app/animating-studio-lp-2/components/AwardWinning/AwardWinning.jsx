@@ -1,26 +1,64 @@
-import Image from 'next/image'
+"use client"
 import React from 'react'
-// Images
-import Win1 from "media/infinity-studio-lp-new/reward-1.png"
-import Win2 from "media/infinity-studio-lp-new/reward-2.png"
-import Win3 from "media/infinity-studio-lp-new/reward-3.png"
-import Win4 from "media/infinity-studio-lp-new/reward-4.png"
-import Win5 from "media/infinity-studio-lp-new/reward-5.png"
-import Win6 from "media/infinity-studio-lp-new/reward-6.png"
+import Image from 'next/image'
+// Import Images
 import AwardBg from "media/infinity-studio-lp-2/awardwinning-bg.png"
-import Award1 from "media/infinity-studio-lp-2/award1.png"
-import Award2 from "media/infinity-studio-lp-2/award2.png"
-import Award3 from "media/infinity-studio-lp-2/award3.png"
-import Award4 from "media/infinity-studio-lp-2/award4.png"
-import Award5 from "media/infinity-studio-lp-2/award5.png"
-import Award6 from "media/infinity-studio-lp-2/award6.png"
-import Award7 from "media/infinity-studio-lp-2/award7.png"
-import Award8 from "media/infinity-studio-lp-2/award8.png"
-import AutoScrollSlider from '../AutoScrollSlider/AutoScrollSlider'
+import Partners1 from 'media/infinity-studio/partner1.png'
+import Partners1a from 'media/infinity-studio/partner1a.png'
+import Partners2 from 'media/infinity-studio/partner2.png'
+import Partners2a from 'media/infinity-studio/partner2a.png'
+import Partners3 from 'media/infinity-studio/partner3.png'
+import Partners3a from 'media/infinity-studio/partner3a.png'
+import Partners4 from 'media/infinity-studio/partner4.png'
+import Partners4a from 'media/infinity-studio/partner4a.png'
+import Partners5 from 'media/infinity-studio/partner5.png'
+import Partners5a from 'media/infinity-studio/partner5a.png'
+import Partners6 from 'media/infinity-studio/partner6.png'
+import Partners6a from 'media/infinity-studio/partner6a.png'
+import Partners7 from 'media/infinity-studio/partner7.png'
+import Partners7a from 'media/infinity-studio/partner7a.png'
+import Partners8 from 'media/infinity-studio/partner8.png'
+import Partners8a from 'media/infinity-studio/partner8a.png'
+import Partners9 from 'media/infinity-studio/partner9.png'
+import Partners9a from 'media/infinity-studio/partner9a.png'
+import Partners10 from 'media/infinity-studio/partner10.png'
+// Import Slick Slider
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 const AwardWinning = () => {
+
+    // Slider Setting
+    const testiSlider = {
+        dots: false,
+        arrows: false,
+        speed: 8000,
+        autoplay: true,
+        autoplaySpeed: 0,
+        cssEase: 'linear',
+        pauseOnHover: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1099,
+                settings: {
+                    slidesToShow: 4,
+                },
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+        ],
+    };
+
     return (
-        <section className='bg-white py-[30px] md:py-[80px] relative'>
+        <section className='bg-white pt-[30px] pb-[30px] md:pt-[80px] relative'>
             <Image src={AwardBg} alt='Inifnity Animation' fill={true} className='z-[1] object-cover object-center' />
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto relative z-10">
                 <div className="grid grid-cols-12">
@@ -32,19 +70,66 @@ const AwardWinning = () => {
                     </div>
                 </div>
             </div>
-            <div className="relative z-10">
-                <AutoScrollSlider>
-                    {
-                        [Award1, Award2, Award3, Award4, Award5, Award6, Award7, Award8].map((e, i) => (
-                            <div key={i} className="grow-0 group flex items-center justify-center shrink-0 basis-8/12 sm:basis-6/12 md:basis-4/12 lg:basis-3/12 min-w-0 pl-4 pt-12">
-                                <div className="relative">
-                                    <div className="absolute top-[-1px] left-[-1px] right-[-1px] bottom-[-1px] bg-foreground opacity-50 rounded-[10px] group-hover:opacity-0 transition-opacity"></div>
-                                    <Image tabIndex={0} key={i} src={e} alt="thumbnails" className="rounded-[10px]" />
-                                </div>
-                            </div>
-                        ))
-                    }
-                </AutoScrollSlider>
+            <div className="relative z-10 px-2 mx-auto">
+                <Slider {...testiSlider} className="partnerSlider">
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners1} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners1a} alt='Partners' className='  w-[75%] md:w-[50%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners2} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners2a} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners3} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners3a} alt='Partners' className='  w-[80%] md:w-[60%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners4} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners4a} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners5} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners5a} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners6} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners6a} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners7} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners7a} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners8} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners8a} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners9} alt='Partners' className='  w-[80%] md:w-[60%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners9a} alt='Partners' className='  w-[80%] md:w-[50%] mx-auto px-5' />
+                    </div>
+                    <div className='mx-[45px] px-[15px]'>
+                        <Image src={Partners10} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                    </div>
+                </Slider>
             </div>
         </section>
     )

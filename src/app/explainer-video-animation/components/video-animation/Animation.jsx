@@ -310,6 +310,54 @@ const Animation = () => {
                                 </div>
                             </Fancybox>
                         </swiper-slide>
+                        <swiper-slide className='relative pt-4'>
+                            <Fancybox options={{
+                                Carousel: {
+                                    infinite: false,
+                                },
+                            }}>
+                                <div>
+                                    <Link
+                                        href="https://player.vimeo.com/progressive_redirect/playback/911728642/rendition/1080p/file.mp4?loc=external&signature=44469d3d3ef50562def357cdf05ef68b8d9eb1f6c874c98d4b7a6772c4b7f173" datafancybox="gallery">
+                                        <Image src={Slide1} alt='Slide' className='rounded-[20px] w-full relative top-0 left-0' />
+                                        <div className="absolute bottom-0 left-0 w-full h-full flex items-start justify-end flex-col bg-gradient-to-t from-black/100 to-black/20 rounded-[20px] px-[20px] pb-[20px] md:px-[25px] md:pb-[25px] xl:px-[40px] xl:pb-[40px]">
+                                            <h3 className="text-white text-[20px] lg:text-[24px] xl:text-[26px] font-sans font-[400] lg:pb-1 xl:pb-2">Whiteboard Animation Video</h3>
+                                            <p className='text-white md:text-[15px] xl:text-[17px] font-sans leading-[20px] xl:leading-[22px] lg:w-11/12 pr-2 overflow-y-scroll h-[40px] xl:h-[45px] hidden lg:block'>Whiteboard videos simulate black-line graphics on a white background while guiding viewers through the entire concept or idea.</p>
+                                            <div className="btn w-max ms-auto">
+                                                <a href='javascript:$zopim.livechat.window.show();' className='flex items-center gap-x-3 mt-4 h-[35px] lg:h-[40px] xl:h-[45px] w-max px-3 text-[12px] md:text-[14px] xl:text-[16px] font-medium poppins tracking-wider bg-[#FF2D4B] text-white rounded-[5px] shadow-3xl duration-700 transition-all hover:duration-700 hover:transition-all'>Make an Animation
+                                                    <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
+                                                </a>
+                                            </div>
+                                            <Image src={VideoIco} alt='video-icon' className={`${styles.play} absolute translate-x-[-50%] translate-y-[-50%] w-[50px] xl:w-[60px]`} />
+                                        </div>
+                                    </Link>
+                                </div>
+                            </Fancybox>
+                        </swiper-slide>
+                        <swiper-slide className='relative pt-4'>
+                            <Fancybox options={{
+                                Carousel: {
+                                    infinite: false,
+                                },
+                            }}>
+                                <div>
+                                    <Link
+                                        href="https://player.vimeo.com/progressive_redirect/playback/911728642/rendition/1080p/file.mp4?loc=external&signature=44469d3d3ef50562def357cdf05ef68b8d9eb1f6c874c98d4b7a6772c4b7f173" datafancybox="gallery">
+                                        <Image src={Slide2} alt='Slide' className='rounded-[20px] w-full relative top-0 left-0' />
+                                        <div className="absolute bottom-0 left-0 w-full h-full flex items-start justify-end flex-col bg-gradient-to-t from-black/100 to-black/20 rounded-[20px] px-[20px] pb-[20px] md:px-[25px] md:pb-[25px] xl:px-[40px] xl:pb-[40px]">
+                                            <h3 className="text-white text-[20px] lg:text-[24px] xl:text-[26px] font-sans font-[400] lg:pb-1 xl:pb-2">Motion Graphics</h3>
+                                            <p className='text-white md:text-[15px] xl:text-[17px] font-sans leading-[20px] xl:leading-[22px] lg:w-11/12 pr-2 overflow-y-scroll h-[40px] xl:h-[45px] hidden lg:block'>Again, motion graphics animation videos are known for being simple and engaging. It's the perfect animation style for businesses looking to show off various goods or services.</p>
+                                            <div className="btn w-max ms-auto">
+                                                <a href='javascript:$zopim.livechat.window.show();' className='flex items-center gap-x-3 mt-4 h-[35px] lg:h-[40px] xl:h-[45px] w-max px-3 text-[12px] md:text-[14px] xl:text-[16px] font-medium poppins tracking-wider bg-[#FF2D4B] text-white rounded-[5px] shadow-3xl duration-700 transition-all hover:duration-700 hover:transition-all'>Make an Animation
+                                                    <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
+                                                </a>
+                                            </div>
+                                            <Image src={VideoIco} alt='video-icon' className={`${styles.play} absolute translate-x-[-50%] translate-y-[-50%] w-[50px] xl:w-[60px]`} />
+                                        </div>
+                                    </Link>
+                                </div>
+                            </Fancybox>
+                        </swiper-slide>
                     </swiper-container>
                 </div>
             </section>

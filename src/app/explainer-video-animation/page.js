@@ -63,8 +63,8 @@ import Remark9 from "media/infinity-studio-lp-new/remark9.png"
 const page = () => {
     //==== Animations Sections =====//
     const animations = {
-        title: <>Best <span className='text-[#FF0000]'>Animated Explainer Video</span> Creation Services</>,
-        para: <>At Infinity Animations our animators have magic in their hands with their perfect blend of creativity we create incredible visuals for your business. At every stage of the making, we ensure our clients are fully aware of the project progress and are completely satisfied too. We cater a strong relationship with clients, starting from your ideas.</>,
+        title: <>Best <span className='text-[#FF0000]'>Explainer Video Animation</span> Creation Services</>,
+        para: <>At Infinity Animations our animators have magic in their hands with their perfect blend of creativity we create incredible visuals for your business. At every stage of the making, we ensure our clients are fully aware of the project's progress and are completely satisfied too.</>,
         subtitleOne: <><span className='text-[#FF0000]'>Professional</span> Explainer <br className='xl:block hidden' /> Animated Videos</>,
         subtitleTwo: <>Simple words or symbols do not attract as many people as video animation does.</>,
         subpara: <>Animated videos are a great way to fascinate your viewers with rich, intriguing, and playful scenes. It is evaluated according to a study that animations videos can boost your company sales upto around 49%. Infinity animations studio offers you the interactive, innovative approach to motion pictures creation in any format in tight deadline terms and affordable prices. We are proud to have served top-notch names in the industry with our service.</>,
@@ -72,9 +72,9 @@ const page = () => {
     }
     // ==== brands Start
     const brands = {
-        title: <>Start Displaying <span className='text-black'>Your Brand</span> with Amazing Animated Videos!</>,
+        title: <>Broad-Cast <span className='text-black'>Your Brand</span> Worldwide Through Custom Animated Videos!</>,
         subtitle: "",
-        desc: <>Are you ready for our video animation services? If yes, then you are <br className='xl:block hidden' /> about to enter into a portal that leads to never-ending artistic creativity and vigor.</>,
+        desc: <>We assure you that we will make use of every latest and related method <br className='xl:block hidden' />  to develop and improve your corporate identity in the market with our best video service.</>,
         branImage: BranShine,
         isBranImage: true,
         css: "lg:w-[32%] ml-auto absolute right-[20px] top-[-75px] xl:top-[-95px]",
@@ -86,53 +86,53 @@ const page = () => {
     //==== remarkable start =====//
     const cardOne = {
         cardtitle: <>Concept and Storyboards</>,
-        cardpara: <>During the video animation process, we retain your concept, and we keep you posted by showing you the storyboard first.</>,
+        cardpara: <>Develop initial ideas and sketch scenes to visualize the narrative, setting the foundation for the project’s direction and flow.</>,
         css: "w-8/12 mx-auto",
         cardImage: Remark1,
     }
     const cardTwo = {
         cardtitle: <>Texturing</>,
-        cardpara: <>Our 3D animation services comprise a series of procedural methods ensuring that the end result turns out to be not just impeccable, but flawless as well.</>,
+        cardpara: <>Apply textures to 3D models to enhance their appearance, adding details like colors, patterns, and surface finishes.</>,
         cardImage: Remark2,
     }
     const cardThree = {
         cardtitle: <>Rigging</>,
-        cardpara: <>Rigging is an essential step in 3D animation services, as it allows animators to manipulate the 3D model and make it move in whatever way you want it to be.</>,
+        cardpara: <>Create skeletal structures for 3D models, allowing them to move and deform naturally during animation.</>,
         cardImage: Remark3,
     }
     const cardFour = {
-        cardtitle: <>Lightings</>,
-        cardpara: <>Lighting in 3D animation services is much like lighting in filmmaking. The lighting artist sets up a combination of light sources to draw attention to a special part of the setting.</>,
+        cardtitle: <>Lighting</>,
+        cardpara: <>Design and position lights in the scene to enhance mood, highlight details, and create realistic visual effects.</>,
         cardImage: Remark4,
     }
     const cardFive = {
         cardtitle: <>Animation</>,
-        cardpara: <>Need we say more? Well, without animation, video animation wouldn’t be possible or any kind of animation services wouldn’t be possible.</>,
+        cardpara: <>Bring characters and objects to life through movement, following the storyboard and rigging setups to achieve desired actions.</>,
         cardImage: Remark5,
     }
     const cardSix = {
         cardtitle: <>Compositing and Special VFX</>,
-        cardpara: <>VFX compositing serves as the nexus between live-action video footage and digital elements, intricately weaving together the harmonies that make our 3D animation services stand out.</>,
+        cardpara: <>Combine various visual elements and add special effects to create a cohesive and striking final image.</>,
         cardImage: Remark6,
     }
     const cardSeven = {
         cardtitle: <>Music and Foley</>,
-        cardpara: <>Harnessing an array of props, foley artisans methodically conceive and capture the ambient sounds ubiquitous in cinematic masterpieces, such as video animation services.</>,
+        cardpara: <>Compose or select background music and create sound effects to enhance the atmosphere and impact of the visuals.</>,
         cardImage: Remark7,
     }
     const cardEight = {
         cardtitle: <>Editing and Final Output</>,
-        cardpara: <>Our video animation services will never be complete unless and until we invest most of our attention in the editing process. It allows us to achieve the best results.</>,
+        cardpara: <>Cut and assemble footage, ensuring smooth transitions and finalizing the project for distribution in the desired format.</>,
         cardImage: Remark8,
     }
     const cardNine = {
         cardtitle: <>Rendering</>,
-        cardpara: <>Rendering epitomizes the transformative procedure wherein a three-dimensional model or animation is transmuted into a two-dimensional image or video composition.</>,
+        cardpara: <>Generate the final high-quality images or sequences from the 3D models and animations, processing them into the final visual output.</>,
         cardImage: Remark9,
     }
     const remarkable = {
-        title: <>How We <span className='text-[#FF0000]'>Achieve Remarkable</span> Outcomes</>,
-        para: <>At Animating Studio, our meticulous work process is intricately crafted to yield flawless outcomes, whether for large-scale endeavors or smaller projects. Every detail is considered in our comprehensive approach to ensure excellence in every animation project.</>,
+        title: <>How Infinity Animations <span className='text-[#FF0000]'>Achieve Remarkable</span> Outcomes</>,
+        para: <>At Infinity Animations, our meticulous work process is intricately crafted to yield flawless outcomes, whether for large-scale endeavors or smaller projects. Every detail is considered in our comprehensive approach to ensure excellence in every animation project.</>,
         cardOne: cardOne,
         cardTwo: cardTwo,
         cardThree: cardThree,
@@ -146,7 +146,7 @@ const page = () => {
     }
     // ===== sales
     const sales = {
-        title: "Ignite sales with a single click-craft compelling videos instantly!",
+        title: "The Best Video Animation Services Are Just A Click Away!",
         subtitle: "",
         desc: "",
         branImage: SaleShine,
@@ -155,29 +155,29 @@ const page = () => {
     //===== FAQS =====//
     const accordionData = [
         {
-            question: 'How Many People Will Work On My Video?',
-            list: [
-                "Understanding your business and marketing objectives",
-                "Story and script development",
-                "Storyboard",
-                "Voiceover",
-                "Illustration",
-                "Animation",
-                "Delivery/publication",
-            ]
+            question: 'How long should an explainer video be?',
+            answer: "Typically, explainer videos are between 60 to 90 seconds long. This length is ideal for capturing attention and delivering key messages effectively.",
         },
         {
-            question: 'How Many People Will Work On My Video?',
-            answer: "Step into a realm of immersive storytelling with our cutting-edge 3D animations. Elevate your visual narratives, whether for product showcases, virtual tours, or cinematic experiences.",
+            question: 'What information do I need to provide?',
+            answer: "You should provide details about your product or service, target audience, key messages, and branding guidelines. The more information you provide, the better the video will align with your vision.",
         },
         {
-            question: 'Do I Get Full Copyrights To The Video?',
-            answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
+            question: 'Can I use my voiceover, or do you provide one?',
+            answer: "You can use your voiceover, or we can provide professional voiceover services. Just let us know your preference.",
         },
         {
-            question: 'Do You Produce All Types Of Animation Videos And Provide Video Concept Too, If I Have No Concept Idea?',
-            answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
-        }
+            question: 'What is the turnaround time for an explainer video?',
+            answer: "The typical turnaround time is 4 to 6 weeks, depending on the complexity of the video and feedback response times.",
+        },
+        {
+            question: 'Can I use the video for multiple platforms?',
+            answer: "Yes, the video can be optimized for various platforms such as websites, social media, and presentations. Just specify where you plan to use it.",
+        },
+        {
+            question: 'What are the benefits of using an explainer video?',
+            answer: "Explainer videos simplify complex information, increase viewer engagement, boost conversion rates, and enhance brand recognition. They provide a compelling and memorable way to communicate your message to your audience.",
+        },
     ];
     const faqs = {
         accordionData: accordionData,
