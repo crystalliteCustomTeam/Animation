@@ -92,12 +92,12 @@ const page = () => {
     }
     const cardTwo = {
         cardtitle: <>Texturing</>,
-        cardpara: <>Apply textures to 3D models to enhance their appearance, adding details like colors, patterns, and surface finishes.</>,
+        cardpara: <>Apply textures to models to enhance their appearance, adding details like colors, patterns, and surface finishes.</>,
         cardImage: Remark2,
     }
     const cardThree = {
         cardtitle: <>Rigging</>,
-        cardpara: <>Create skeletal structures for 3D models, allowing them to move and deform naturally during animation.</>,
+        cardpara: <>Create skeletal structures for models, allowing them to move and deform naturally during animation.</>,
         cardImage: Remark3,
     }
     const cardFour = {
@@ -126,8 +126,8 @@ const page = () => {
         cardImage: Remark8,
     }
     const cardNine = {
-        cardtitle: <>Rendering</>,
-        cardpara: <>Generate the final high-quality images or sequences from the 3D models and animations, processing them into the final visual output.</>,
+        cardtitle: <>Rendering & Delivery</>,
+        cardpara: <>Generate the final high-quality images or sequences from the models and animations, processing them into the final visual output.</>,
         cardImage: Remark9,
     }
     const remarkable = {

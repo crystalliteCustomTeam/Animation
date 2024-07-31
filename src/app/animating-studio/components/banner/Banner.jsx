@@ -142,7 +142,7 @@ const Banner = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-y-12 items-end ">
                         <div className="col-span-12 lg:col-span-7 xl:col-span-8">
-                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-[600] poppins lg:w-10/12 md:leading-[50px]'>HIRE US #1 ANIMATION STUDIO, ENGAGING ANIMATED <span className='text-[#f6c501] '>EXPLAINER VIDEOS </span></h1>
+                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[28px] xl:text-[36px] font-[600] poppins lg:w-10/12 leading-[35px] lg:leading-[50px]'>HIRE US #1 ANIMATION STUDIO, ENGAGING ANIMATED <span className='text-[#f6c501] '>EXPLAINER VIDEOS </span></h1>
                             <p className='text-white text-[16px] font-[400] poppins lg:w-11/12 leading-[25px] py-[20px]'>Transform your into visually engaging animated stories, tailored to resonate with your audience and elevate your brand.
                             </p>
                             <div className="grid grid-cols-12 gap-y-6 sm:gap-x-10 items-end pb-0 pt-[25px] md:py-[25px]">

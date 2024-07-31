@@ -60,7 +60,7 @@ const Header = () => {
                                 <ul className='flex items-center justify-end gap-x-2 xl:gap-x-4'>
                                     <li>
                                         <a href="mailto:queries@infinityanimations.com" className='flex items-center'>
-                                            <Image src={mail} alt='Infinity Animation'/>
+                                            <Image src={mail} alt='Infinity Animation' />
                                             <span className='text-[13px] text-white py-[12px] px-[8px] font-normal poppins'>queries@infinityanimations.com</span>
                                         </a>
                                     </li>
@@ -73,12 +73,12 @@ const Header = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <button onClick={popupHandle} className='flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins xl:ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                        <button onClick={popupHandle} className='flex items-center text-[14px] xl:text-[16px] text-white font-medium poppins xl:ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                             Get A Quote
                                         </button>
                                     </li>
                                     <li>
-                                        <a href='tel:833-666-6689' className='flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins xl:ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                        <a href='tel:833-666-6689' className='flex items-center text-[14px] xl:text-[16px] text-white font-medium poppins xl:ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                             Call Now: 1-833-666-6689
                                         </a>
                                     </li>
@@ -87,8 +87,8 @@ const Header = () => {
                         </div>
                         <div className="col-span-6 lg:hidden block">
                             <ul>
-                                <li>
-                                    <a href='tel:833-666-6689' className='flex items-center justify-center text-[11px] text-white font-normal poppins bg-[#FF2D4B] py-[12px] px-[10px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                <li className='flex items-center justify-end'>
+                                    <a href='tel:833-666-6689' className='flex items-center justify-center text-[11px] text-white font-normal poppins bg-[#FF2D4B] py-[12px] px-[10px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all w-max'>
                                         Call Now: 1-833-666-6689
                                     </a>
                                 </li>

@@ -190,19 +190,13 @@ const OurClient = () => {
                     <div className="col-span-12 sm:col-span-6 lg:col-span-5">
                         <div className="flex items-center justify-between sm:justify-end gap-x-4 lg:gap-x-12 border-b-[3px] border-[#DFDFDF] pb-3">
                             <div className="w-[20%] sm:w-[30%] relative lg:after:content-[''] lg:after:absolute lg:after:top-0 lg:after:right-[-27px] lg:after:h-full lg:after:w-[3px] lg:after:bg-[#DFDFDF]">
-                                <a href='https://g.page/r/CdxfyZwVv9naEBM/'>
-                                    <Image src={googleReview} alt='Infinity Animations' />
-                                </a>
+                                <Image src={googleReview} alt='Infinity Animations' />
                             </div>
                             <div className="w-[20%] sm:w-[30%] relative lg:after:content-[''] lg:after:absolute lg:after:top-0 lg:after:right-[-27px] lg:after:h-full lg:after:w-[3px] lg:after:bg-[#DFDFDF]">
-                                <a href='https://clutch.co/profile/infinity-animations#highlights'>
-                                    <Image src={clutchReview} alt='Infinity Animations' />
-                                </a>
+                                <Image src={clutchReview} alt='Infinity Animations' />
                             </div>
                             <div className='w-[20%] sm:w-[30%]'>
-                                <a href='https://www.goodfirms.co/company/infinity-animations'>
-                                    <Image src={review} alt='Infinity Animations' />
-                                </a>
+                                <Image src={review} alt='Infinity Animations' />
                             </div>
                         </div>
                         <p className='text-black text-[14px] xl:text-[17px] leading-[25px] lg:leading-[27px] text-center italic poppins pt-2'>"See what our clients say about our exceptional service!"</p>
