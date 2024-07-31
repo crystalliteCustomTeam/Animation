@@ -137,12 +137,12 @@ const Contact = () => {
                                 <ul>
                                     <li className='py-[10px]'>
                                         <a href="tel:833-666-6689" className='text-[16px] text-white montserrat flex items-center gap-2'>
-                                            <Phone className='bg-[#fff] text-[#000] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> 833-666-6689
+                                            <Phone className='bg-[#fff] text-[#000] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> 1-833-666-6689
                                         </a>
                                     </li>
                                     <li className='py-[10px]'>
                                         <a href="mailto:queries@infinityanimations.com" className='text-[16px] text-white montserrat flex items-center gap-2'>
-                                            <EnvelopeIcon className='bg-[#fff] text-[#000] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> sales.infinityanimations.com
+                                            <EnvelopeIcon className='bg-[#fff] text-[#000] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> queries@infinityanimations.com
                                         </a>
                                     </li>
                                     <li className='py-[10px]'>

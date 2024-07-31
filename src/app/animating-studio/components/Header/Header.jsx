@@ -62,7 +62,7 @@ const HeaderLP = () => {
                                     <li>
                                         <a href="mailto:queries@infinityanimations.com" className='flex items-center'>
                                             <Image src={email} className='w-[25px] h-[25px]' />
-                                            <span className='text-[13px] text-white py-[10px] px-[8px] font-normal font-sans'>queries@infinityanimations.com</span>
+                                            <span className='text-[13px] text-white py-[10px] px-[8px] font-normal font-sans tracking-wider'>queries@infinityanimations.com</span>
                                         </a>
                                     </li>
                                     <li>
