@@ -64,10 +64,13 @@ const page = () => {
     //==== Animations Sections =====//
     const animations = {
         title: <>Best <span className='text-[#FF0000]'>Explainer Video Animation</span> Creation Services</>,
-        para: <>At Infinity Animations our animators have magic in their hands with their perfect blend of creativity we create incredible visuals for your business. At every stage of the making, we ensure our clients are fully aware of the project's progress and are completely satisfied too.</>,
+        para: <>At Infinity Animations, our team transforms creativity into compelling visuals, crafting pivotal explainer videos for business success. Our seamless process keeps you informed and satisfied throughout.</>,
         subtitleOne: <><span className='text-[#FF0000]'>Professional</span> Explainer <br className='xl:block hidden' /> Animated Videos</>,
-        subtitleTwo: <>Simple words or symbols do not attract as many people as video animation does.</>,
-        subpara: <>Animated videos are a great way to fascinate your viewers with rich, intriguing, and playful scenes. It is evaluated according to a study that animations videos can boost your company sales upto around 49%. Infinity animations studio offers you the interactive, innovative approach to motion pictures creation in any format in tight deadline terms and affordable prices. We are proud to have served top-notch names in the industry with our service.</>,
+        subtitleTwo: <>Explain Better. Drive Engagement. Get More Sales.</>,
+        subpara: <>
+            Don't settle for ordinary—capture your audience’s attention with the irresistible allure of animated videos. <br /><br />
+            Our explainer videos simplify complex ideas and engage viewers like never before. Studies show that explainer videos can boost sales by up to 49%, so investing in our animations is a game-changer for your ROI. At Infinity Animations, we deliver innovative, high-quality videos on tight deadlines and at competitive prices. Join top industry leaders who have already reaped the rewards of our exceptional service. Elevate your business with the power of explainer videos today!
+        </>,
         AnimationVideo: "https://player.vimeo.com/progressive_redirect/playback/973456427/rendition/1080p/file.mp4?loc=external&signature=bec01dc8250d19fddde8de57be2a91813d578dfc4f31dbe5a25fa58857a4113e",
     }
     // ==== brands Start
