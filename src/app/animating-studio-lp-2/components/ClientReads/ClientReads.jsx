@@ -16,15 +16,8 @@ import googleReview from "media/explainer-videos/googleReview.PNG"
 import clutchReview from "media/explainer-videos/clutchReview.PNG"
 import review from "media/explainer-videos/review.png"
 import icon2 from "media/infinity-studio-lp-new/stars.png";
-import Grace from "media/thumbnails/grace.png";
-import Alex from "media/thumbnails/alex.png";
-import Olivia from "media/thumbnails/olivia.png";
-import David from "media/thumbnails/david.jpg";
-import Emma from "media/thumbnails/emma.jpg";
-import Michael from "media/thumbnails/michael.jpg";
-import Sarah from "media/thumbnails/sarah.png";
 
-const ClientReads = () => {
+const OurClient = () => {
     const testiContentNew2 = [
         {
             stars: icon2,
@@ -82,67 +75,14 @@ const ClientReads = () => {
             video: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
             thumbnail: "https://player.vimeo.com/progressive_redirect/playback/950045528/rendition/720p/file.mp4?loc=external&log_user=0&signature=88472fd594409a630523ae139ad0cb0c10556198290ca3f6e4e79c61eec6e8ff",
         },
-        {
-            stars: icon2,
-            name: 'Olivia Bennett',
-            badges: clutchReview,
-            para: "Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!",
-            thumbnail: Olivia,
-        },
-        {
-            stars: icon2,
-            name: 'Grace Turner',
-            badges: review,
-            para: 'Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!',
-            thumbnail: Grace,
-        },
-        {
-            stars: icon2,
-            name: 'Sarah L.',
-            company: "Product Manager",
-            badges: googleReview,
-            para: "Infinity Animations transformed our vision into a stunning reality with their exceptional 3D animation skills. We needed a lifelike and immersive animation for our product launch, and their team delivered beyond our expectations. Their expertise and attention to detail were evident in every frame. The result was a dynamic and engaging animation that captivated our audience. Working with such a talented and dedicated team reaffirmed their position as a top animation studio in New York. I wouldn't hesitate to work with them again.",
-            thumbnail: Sarah,
-        },
-        {
-            stars: icon2,
-            name: 'Emma R.',
-            company: "Social Media Manager",
-            badges: clutchReview,
-            para: "Our experience with Infinity Animations for our motion graphics project was nothing short of amazing. We needed high-quality promotional videos for our social media campaigns, and their team delivered spectacular results. The animations were visually striking and perfectly aligned with our brand's messaging. Their innovative techniques and creativity made our content stand out, significantly boosting our online engagement. Choosing Infinity Animations, a leading NYC animation studio, was one of the best decisions for our marketing efforts. Their professionalism and dedication are truly commendable.",
-            thumbnail: Emma,
-        },
-        {
-            stars: icon2,
-            name: 'David H.',
-            company: "Educational Coordinator",
-            badges: review,
-            para: "Our experience with Infinity Animations for our motion graphics project was nothing short of amazing. We needed high-quality promotional videos for our social media campaigns, and their team delivered spectacular results. The animations were visually striking and perfectly aligned with our brand's messaging. Their innovative techniques and creativity made our content stand out, significantly boosting our online engagement. Choosing Infinity Animations, a leading NYC animation studio, was one of the best decisions for our marketing efforts. Their professionalism and dedication are truly commendable.",
-            thumbnail: David,
-        },
-        {
-            stars: icon2,
-            name: 'Michael J.',
-            company: "Marketing Director",
-            badges: googleReview,
-            para: "Infinity Animations transformed our vision into a stunning reality with their exceptional 3D animation skills. We needed a lifelike and immersive animation for our product launch, and their team delivered beyond our expectations. Their expertise and attention to detail were evident in every frame. The result was a dynamic and engaging animation that captivated our audience. Working with such a talented and dedicated team reaffirmed their position as a top animation studio in New York. I wouldn't hesitate to work with them again.",
-            thumbnail: Michael,
-        },
-        {
-            stars: icon2,
-            name: 'Alex Mitchell',
-            badges: clutchReview,
-            para: 'Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!',
-            thumbnail: Alex,
-        },
     ]
     const clientReadSlider = {
         dots: false,
         arrows: true,
         infinite: false,
         autoplay: false,
-        autoplaySpeed: 5000,
-        speed: 3000,
+        autoplaySpeed: 0,
+        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [
@@ -208,7 +148,7 @@ const ClientReads = () => {
                             {testiContentNew2.map((testimonial, index) => (
                                 <div className="px-1 sm:px-4">
                                     <Fancybox options={{ Carousel: { infinite: false } }} key={index}>
-                                        <div className='grid grid-cols-12 gap-y-10 gap-x-1 md:gap-x-4 items-center' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
+                                        <div className='grid grid-cols-12 gap-y-10 gap-x-1 md:gap-x-4 items-center mb-[70px]' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                                             <div className="col-span-12 lg:col-span-5">
                                                 {testimonial.video ? (
                                                     <Link href={testimonial.video} datafancybox="gallery">
@@ -263,8 +203,8 @@ const ClientReads = () => {
                     </div>
                 </div>
             </div>
-        </section >
+        </section>
     )
 }
 
-export default ClientReads
+export default OurClient
