@@ -361,7 +361,7 @@ export default async function Post({ params, searchParams }) {
     return (
 
         <>
-            {postData && (
+            {/* {postData && (
                 <div className='bg-black'>
                     <Head>
                         <title key="title">{postData.title}</title>
@@ -385,7 +385,7 @@ export default async function Post({ params, searchParams }) {
                                     </h1>
                                     {postData.blogDescription.topDescription && (
                                         <>
-                                            <p dangerouslySetInnerHTML={{ __html: postData.blogDescription.topDescription }} className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify pt-3 pb-1 text-white text-opacity-90 text-[15px] sm:text-[17px] border-b-2 border-gray-500">
+                                            <p dangerouslySetInnerHTML={{ __html: postData.blogDescription.topDescription }} className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify pt-3 pb-1 text-white text-opacity-90 sm:text-[17px] border-b-2 border-gray-500">
                                             </p>
                                         </>
                                     )}
@@ -551,7 +551,7 @@ export default async function Post({ params, searchParams }) {
                     <TestimonialNew content={testimonialNew} />
                     <Looking content={looking} />
                 </div>
-            )}
+            )} */}
         </>
     )
 

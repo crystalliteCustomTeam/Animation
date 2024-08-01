@@ -5,7 +5,7 @@ import AutoScrollPlugin from "embla-carousel-auto-scroll"
 
 export default function AutoScroll({ wrapperClass = " ", options, children }) {
     const plugin = [
-        AutoScrollPlugin({ speed: 0.5, stopOnInteraction: false, stopOnMouseEnter: true, stopOnFocusIn: false })
+        AutoScrollPlugin({ speed: 1, stopOnInteraction: false, stopOnMouseEnter: false, stopOnFocusIn: false })
     ]
     const [emblaRef] = useEmblaCarousel(options, plugin)
     return (

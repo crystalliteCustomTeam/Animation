@@ -15,7 +15,7 @@ export default function Page() {
     return (
         <>
             <Hero content={hero} />
-            <Blogs />
+            {/* <Blogs /> */}
             <Script id="productSchema" type="application/ld+json">
                 {`
                     {
