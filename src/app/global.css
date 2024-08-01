@@ -1184,17 +1184,17 @@ div.swiper-button-prev {
     padding-left: 15px;
   }
 
-  .popupBg {
+  /* .popupBg {
     height: 100% !important;
     top: 110px !important;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1399px) {
-  .popupBg {
+  /* .popupBg {
     height: 100% !important;
-    top: 40px !important;
-  }
+    top: 80px !important;
+  } */
 }
 
 @media only screen and (max-width: 1299px) {
@@ -1235,16 +1235,16 @@ div.swiper-button-prev {
     color: #a70a0e;
   }
 
-  .popupBg {
+  /* .popupBg {
     height: 100% !important;
     top: 120px !important;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1099px) {
-  .popupBg {
+  /* .popupBg {
     top: 125px !important;
-  }
+  } */
 
   .readClientSlider .slick-prev {
     left: 40%;
@@ -1273,12 +1273,12 @@ div.swiper-button-prev {
     clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%);
   }
 
-  .popupBg {
+  /* .popupBg {
     height: auto !important;
     top: 350px !important;
     transform: translateY(-130px);
     padding-bottom: 25px;
-  }
+  } */
 
   .servicesConcept .slick-next {
     right: 50px;
@@ -1490,6 +1490,10 @@ div.swiper-button-prev {
   .readClientSlider .slick-next {
     bottom: 2% !important;
   }
+
+  /* .popupBg {
+    top: 270px !important;
+  } */
 }
 
 @media only screen and (max-width: 567px) {
@@ -1515,9 +1519,9 @@ div.swiper-button-prev {
     right: 41%;
   }
 
-  .popupBg {
-    top: 250px !important;
-  }
+  /* .popupBg {
+    top: 225px !important;
+  } */
 
   .wantbg {
     background: linear-gradient(0deg,
