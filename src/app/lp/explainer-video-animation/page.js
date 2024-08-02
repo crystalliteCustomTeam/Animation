@@ -336,12 +336,12 @@ const page = () => {
             <Banner />
             <AwardWinning />
             <Portfolio content={portfolio} />
+            <Serve />
             <Packages />
-            <BookMeeting />
+            {/* <BookMeeting /> */}
             <Animation />
             <Brand content={brands} />
             <Animations content={animations} />
-            <Serve />
             <Remarkable content={remarkable} />
             <Brand content={sales} />
             <OurClient />
