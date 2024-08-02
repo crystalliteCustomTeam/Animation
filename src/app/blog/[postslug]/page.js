@@ -440,8 +440,8 @@ export default async function Post({ params, searchParams }) {
                                 </div>
                             </div>
                         </div>
-                    </section >
-                    <section >
+                    </section>
+                    <section>
                         <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-12 bg-none  bg-no-repeat bg-center bg-cover relative `}>
                             <div className="container">
                                 <div className='grid grid-cols-12 w-full '>
@@ -451,15 +451,7 @@ export default async function Post({ params, searchParams }) {
                                     </div>
                                     <div className={`col-span-12 lg:col-span-4 xl:col-span-3 relative ps-4`}>
                                         <div className='grid grid-cols-12 content-start  sticky top-[15%]'>
-                                            <div className='col-span-12 w-full bg-[#4A4A4A] flex flex-col text-center rounded-[10px] '>
-                                                <h5 className={`text-[22px] xl:text-[32px] font-normal font-sans leading-tight my-4 capitalize`}>
-                                                    Quick Links
-                                                </h5>
-
-                                                <div class="grid grid-cols-1 divide-y-2 divide-gray-500 pb-[10px] ">
-                                                <BlogNavigation postData={postData} />
-                                                </div>
-                                            </div>
+                                            <BlogNavigation postData={postData} />
 
                                             <div className='col-span-12  md:col-span-6 lg:col-span-12 flex flex-col pt-[35px] '>
                                                 <h5 className={`text-[22px] xl:text-[32px] font-normal font-sans leading-tight lg:my-4 capitalize text-start pb-[25px] pt-[15px] lg:py-[25px]`}>
