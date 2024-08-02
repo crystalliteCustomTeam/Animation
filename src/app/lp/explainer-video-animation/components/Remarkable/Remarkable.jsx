@@ -11,7 +11,7 @@ const Remarkable = ({ content }) => {
     const { title, para, cardOne, cardTwo, cardThree, cardFour, cardFive, cardSix, cardSeven, cardEight, cardNine, cardTen, CardBg, isHomePage, css, cardCss } = content;
     return (
         <>
-            <section className={'pb-[90px] pt-[20px] bg-white'} id='services'>
+            <section className={'py-[50px] lg:py-[90px] bg-white'} id='services'>
                 <div className="px-4 sm:px-8 xl:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-5">
                         <div className="col-span-12 mb-5">
