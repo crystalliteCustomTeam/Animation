@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react';
 // ===== CSS
 import styles from "./blogNavigation.module.css"
+import { FaAngleDown } from 'react-icons/fa6';
+import { ChevronDownIcon } from '@heroicons/react/24/outline';
 
 const BlogNavigation = ({ postData }) => {
     const [h2Tags, setH2Tags] = useState([]);
@@ -43,19 +45,32 @@ const BlogNavigation = ({ postData }) => {
 
     return (
         <>
-            {h2Tags.map((item, index) => (
-                <div key={index}
-                    className={`${styles.Diver} ${activeHeading === `#heading${index + 1}` ? styles.DiverActive : styles.DiverHover}`}
-                >
-                    <a
-                        className="text-[14px] sm:text-[16px] px-[25px] py-[12px] text-white text-opacity-90 font-[300] font-sans leading-[1.52857143] tracking-wider text-start "
-                        href={`#heading${index + 1}`}
-                        onClick={() => handleHeadingClick(`#heading${index + 1}`)}
-                    >
-                        {item}
-                    </a>
-                </div>
-            ))}
+            <div className='col-span-12 w-full bg-[#4A4A4A] flex flex-col text-center rounded-[10px] '>
+                <h5 className={`text-[22px] xl:text-[32px] font-normal font-sans leading-tight my-4 capitalize flex justify-center items-center`} onClick={toggleNavVisibility}>
+                    Quick Links
+                    <FaAngleDown
+                        className={`ms-3 transition-transform ${isNavVisible ? "rotate-180" : ""
+                            }`}
+                    />
+                </h5>
+                {isNavVisible && (
+                    <div class="grid grid-cols-1 divide-y-2 divide-gray-500 pb-[10px] ">
+                        {h2Tags.map((item, index) => (
+                            <div key={index}
+                                className={`${styles.Diver} ${activeHeading === `#heading${index + 1}` ? styles.DiverActive : styles.DiverHover}`}
+                            >
+                                <a
+                                    className="text-[14px] sm:text-[16px] px-[25px] py-[12px] text-white text-opacity-90 font-[300] font-sans leading-[1.52857143] tracking-wider text-start "
+                                    href={`#heading${index + 1}`}
+                                    onClick={() => handleHeadingClick(`#heading${index + 1}`)}
+                                >
+                                    {item}
+                                </a>
+                            </div>
+                        ))}
+                    </div>
+                )}
+            </div>
         </>
     );
 };
