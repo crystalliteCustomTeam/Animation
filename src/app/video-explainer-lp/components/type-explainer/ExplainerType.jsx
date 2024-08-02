@@ -106,7 +106,7 @@ const ExplainerType = () => {
                         </div>
                     </div>
                     <div className="lg:hidden block">
-                        <Slider {...testiSlider} className="typeSlider">
+                        <Slider {...testiSlider} className="typeSlider videoLpSlider">
                             <div className='p-3'>
                                 <div className="card rounded-[10px] bg-white shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[415px]">
                                     <Image src={Card1} alt='card-1' />

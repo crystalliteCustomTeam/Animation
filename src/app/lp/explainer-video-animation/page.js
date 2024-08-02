@@ -4,7 +4,6 @@ import Header from './components/Header/Header'
 import Banner from './components/Banner/Banner'
 import AwardWinning from './components/AwardWinning/AwardWinning'
 import Portfolio from './components/Portfolio/portfolio'
-import BookMeeting from './components/BookMeeting/BookMeeting'
 import Packages from './components/Packages/Packages'
 import Animation from './components/video-animation/Animation'
 import Brand from './components/BrandShine/Brand'
@@ -326,7 +325,7 @@ const page = () => {
     ];
     const portfolio = {
         title: (<> <span className='text-[#F5090B]'>Animated Videos</span> That Deliver Results </>),
-        para: (<> Our creative prospectus, over the years, has garnered quite a reputation for itself. <br className='lg:block hidden' /> Here’s the evidence. </>),
+        para: (<> Unlock your brand’s potential with our video animation services! Engage your audience with dynamic animations that convert viewers into loyal customers. Let’s make your idea come alive! </>),
         tabContents: tabContents,
         tabsInfo: true,
         tabInfo: tabInfo,
@@ -340,7 +339,6 @@ const page = () => {
             <Portfolio content={portfolio} />
             <Serve />
             <Packages />
-            {/* <BookMeeting /> */}
             <Animation />
             <Brand content={brands} />
             <Animations content={animations} />

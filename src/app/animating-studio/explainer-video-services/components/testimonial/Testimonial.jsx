@@ -148,7 +148,7 @@ const OurClient = () => {
                             {testiContentNew2.map((testimonial, index) => (
                                 <div className="px-1 sm:px-4">
                                     <Fancybox options={{ Carousel: { infinite: false } }} key={index}>
-                                        <div className='grid grid-cols-12 gap-y-10 gap-x-1 md:gap-x-4 items-center mb-[70px]' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
+                                        <div className='grid grid-cols-12 gap-y-10 gap-x-1 md:gap-x-4 items-center lg:mb-[70px]' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                                             <div className="col-span-12 lg:col-span-5">
                                                 {testimonial.video ? (
                                                     <Link href={testimonial.video} datafancybox="gallery">
@@ -188,7 +188,7 @@ const OurClient = () => {
                                                             <Image src={testimonial.badges} alt="Infinity Animations" className='w-[20%]' />
                                                         </div>
                                                         <div className="mt-3 lg:mt-5">
-                                                            <p className="text-black text-[11px] sm:text-[13px] xl:text-[15px] leading-[24px] xl:leading-[30px] lg:w-11/12 ml-auto poppins mb-5 lg:mb-10 text-right">
+                                                            <p className="text-black text-[11px] sm:text-[13px] xl:text-[15px] leading-[24px] xl:leading-[30px] lg:w-11/12 ml-auto poppins mb-0 lg:mb-10 text-right">
                                                                 {testimonial.para}
                                                             </p>
                                                         </div>

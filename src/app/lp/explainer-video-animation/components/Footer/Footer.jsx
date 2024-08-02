@@ -6,6 +6,7 @@ import Axios from "axios";
 import { usePathname } from "next/navigation"
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
+import { HiMapPin } from 'react-icons/hi2';
 // Import Images
 import logo from "media/images/black-logo.gif";
 import Payment from "media/video-explainer/payment-img.png"
@@ -15,6 +16,7 @@ import youtube from "media/icons/youtube.png";
 import instagram from "media/icons/insta.png";
 import linkedin from "media/icons/linkedin.png";
 import vimeo from "media/icons/vemio.png";
+import tiktok from "media/icons/tiktok.png";
 
 const Footer = () => {
     const otherLinks = [
@@ -51,6 +53,10 @@ const Footer = () => {
         {
             icon: vimeo,
             link: "https://www.vimeo.com/infinityanimations"
+        },
+        {
+            icon: tiktok,
+            link: "https://www.tiktok.com/@infinityanimationsusa"
         },
     ];
     //========== Form
@@ -171,7 +177,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className="bg-[#00C6F9] pt-[50px] pb-[50px] md:pt-[70px] md:pb-[70px] 3xl:mt-0 relative z-[999]">
+            <footer className="bg-[#00C6F9] pt-[50px] pb-[50px]">
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-4">
                         <div className="col-span-12 lg:col-span-4">
@@ -196,15 +202,20 @@ const Footer = () => {
                                                 <Globe className='bg-[#ffffff] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimations.com
                                             </a>
                                         </li>
+                                        <li className='py-[10px]'>
+                                            <a href="https://maps.app.goo.gl/BFBsCwAX1znom3LE6" target='_blank' className='text-[15px] md:text-[20px] text-white montserrat flex gap-2'>
+                                                <HiMapPin className='bg-[#ffffff] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[25px] lg:w-[45px] h-[25px]' /> One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007
+                                            </a>
+                                        </li>
                                     </ul>
                                     <Image src={Payment} alt='Payment-Methods' className='md:w-5/12 lg:w-full my-3 object-contain' />
                                     <div>
-                                        <ul className="flex items-center gap-4 mt-4 md:mt-6">
+                                        <ul className="flex items-center flex-wrap md:flex-nowrap gap-4 mt-4 md:mt-6">
                                             {
                                                 socialLinks.map((e, i) => {
                                                     return (
-                                                        <li key={i} className="bg-transparent border border-[#ffffff] w-[45px] h-[45px] rounded-[5px] flex items-center justify-center p-1 hover:bg-second">
-                                                            <Link target="_blank" href={e.link}>
+                                                        <li key={i}>
+                                                            <Link target="_blank" href={e.link} className="bg-transparent border border-[#ffffff] w-[45px] h-[45px] rounded-[5px] flex items-center justify-center p-1">
                                                                 <Image src={e.icon} className="w-[20px]" alt="Infinity Animation" />
                                                             </Link>
                                                         </li>
@@ -221,7 +232,7 @@ const Footer = () => {
                             <h2 className='text-white font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>
                                 Get A Free Consultation with An Experienced Animation Expert
                             </h2>
-                            <p className='text-white text-[16px] lg:text-[18px] montserrat font-[400] py-[17px] leading-[22px] pb-[60px]'>Book a meeting with a member of our team to learn more and get a quote today!</p>
+                            <p className='text-white text-[16px] lg:text-[18px] montserrat font-[400] py-[17px] leading-[22px] pb-[20px] lg:pb-[60px]'>Book a meeting with a member of our team to learn more and get a quote today!</p>
                             <div className="form">
                                 <form>
                                     <div className="flex-wrap flex items-center">

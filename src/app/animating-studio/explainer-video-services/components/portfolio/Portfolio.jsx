@@ -10,12 +10,7 @@ import styles from "./PortFolio.module.css"
 import PlayIcon from "media/infinity-studio/play2.png"
 
 const Portfolio = ({ content }) => {
-    const { title, para ,tabInfo, tabContents, bg } = content;
-    //========= tabs =========
-    const [activeTab, setActiveTab] = useState(0);
-    const handleTabClick = (index) => {
-        setActiveTab(index);
-    };
+    const { title, para, videoItems, bg } = content;
     //========= fancy box =========
     function Fancybox(props) {
         const containerRef = useRef(null);
@@ -37,16 +32,6 @@ const Portfolio = ({ content }) => {
         return <div ref={containerRef}>{props.children}</div>;
     }
 
-    //========= video code start =========
-    const handleVideoPlay = (e) => {
-        const video = e.currentTarget.querySelector('video');
-        video.play();
-    };
-    const handleVideoPause = (e) => {
-        const video = e.currentTarget.querySelector('video');
-        video.pause();
-    };
-
 
     return (
         <>
@@ -58,37 +43,45 @@ const Portfolio = ({ content }) => {
                             <p className='text-[#231F20] text-[16px] poppins font-[400] py-[17px] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-0'>{para}</p>
                         </div>
                     </div>
-                    <div className={`"mt-8 md:mt-5`}>
-                        <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-5 mx-auto border-b border-black pt-[10px] pb-[25px]">
-                            {tabInfo.map((tab, index) => (
-                                <li key={index}
-                                    className={`inline-block px-5 md:px-8 py-3 text-[14px] lg:text-[17px] font-[500] poppins cursor-pointer  ${activeTab === index ? "bg-[#FFCC00] rounded-[5px] text-[#003262]" : "text-[#000]"}`}
-                                    onClick={() => handleTabClick(index)}>
-                                    {tab.label}
-                                </li>
-                            ))}
-                        </ul>
-                        <div className="tabs-content pt-7 md:pt-12">
-                            {tabContents[activeTab] && (
-                                <Fancybox options={{
-                                    Carousel: {
-                                        infinite: false,
-                                    },
-                                }}>
-                                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8'>
-                                        {tabContents[activeTab].map((item, index) => (
-                                            <Link key={index} href={item.video} datafancybox="gallery" className={`${styles.shadow} w-full h-full group`}>
-                                                <div className="overlay relative ">
-                                                    <Image src={item.thumbnail} alt="Infinity Animations" className='h-[263px] min-w-[468px]' />
-                                                    <div className="bg-slate-700/75 h-full w-full absolute left-[50%] top-[50%] lg:top-[132px] translate-x-[-50%] group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center ">
-                                                        <Image src={PlayIcon} alt='Play-icon' className={`${styles.animi} brightness-200 invert-0 w-[75px]`} />
-                                                    </div>
+                    <div className="mt-8">
+                        <div className="tabs-content">
+                            <Fancybox options={{
+                                Carousel: {
+                                    infinite: false,
+                                },
+                            }}>
+                                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8'>
+                                    {videoItems.map((item, index) => (
+                                        <Link
+                                            key={index}
+                                            href={item.video}
+                                            passHref
+                                            className={`${styles.shadow} w-full h-full group`}
+                                        >
+                                            <div className="overlay relative">
+                                                <Image
+                                                    src={item.thumbnail}
+                                                    alt={`Infinity Animations ${index + 1}`}
+                                                    className='h-[263px] min-w-[468px]'
+                                                    width={468}
+                                                    height={263}
+                                                />
+                                                <div
+                                                    className="bg-slate-700/75 h-full w-full absolute left-[50%] top-[50%] lg:top-[132px] translate-x-[-50%] group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center"
+                                                >
+                                                    <Image
+                                                        src={PlayIcon}
+                                                        alt='Play-icon'
+                                                        className={`${styles.animi} brightness-200 invert-0 w-[75px]`}
+                                                        width={75}
+                                                        height={75}
+                                                    />
                                                 </div>
-                                            </Link>
-                                        ))}
-                                    </div>
-                                </Fancybox>
-                            )}
+                                            </div>
+                                        </Link>
+                                    ))}
+                                </div>
+                            </Fancybox>
                         </div>
                     </div>
                 </div>

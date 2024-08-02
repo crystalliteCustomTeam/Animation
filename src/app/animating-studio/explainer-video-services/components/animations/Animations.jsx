@@ -61,7 +61,7 @@ const Animations = () => {
 
     return (
         <>
-            <section className='py-[50px] lg:pb-[40px] lg:pt-[100px] relative bg-white' ref={sectionRef}>
+            <section className='py-[50px] lg:pt-[50px] xl:pb-[100px] relative bg-white' ref={sectionRef}>
                 <div className='lg:max-w-7xl mx-auto '>
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 md:mb-[40px]">
