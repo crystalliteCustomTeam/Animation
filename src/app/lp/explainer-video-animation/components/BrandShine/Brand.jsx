@@ -27,8 +27,8 @@ const Brand = ({ content }) => {
                                         <button onClick={popupHandle} class="text-[14px] lg:text-[12px] xl:text-[14px] font-bold text-black bg-white rounded-[5px] px-4 xl:px-10 max-width h-[40px] xl:h-[45px] poppins flex items-center justify-center">{btnTxt}</button>
                                     </div>
                                     <div className="btn w-max">
-                                        <a class="text-[14px] lg:text-[12px] xl:text-[14px] font-bold text-white bg-black rounded-[5px] px-4 xl:px-10 max-width h-[40px] xl:h-[45px] poppins flex items-center justify-center" href="javascript:$zopim.livechat.window.show();">
-                                            <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] xl:block hidden' />
+                                        <a class="text-[14px] lg:text-[12px] xl:text-[14px] font-bold text-white bg-black rounded-[5px] px-4 xl:px-10 max-width h-[40px] xl:h-[45px] poppins flex items-center justify-center gap-2" href="javascript:$zopim.livechat.window.show();">
+                                            <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100]' />
                                             <span>
                                                 {callTxt}
                                             </span>

@@ -24,7 +24,7 @@ import { AutoScroll } from '@/components/sliders';
 
 const AwardWinning = () => {
     return (
-        <section className='bg-[#cccccc] py-[30px]'>
+        <section className='bg-[#cccccc] pt-[30px] pb-[40px]'>
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12">
@@ -36,7 +36,7 @@ const AwardWinning = () => {
                             {
                                 [icon1, icon2, icon4, icon6, icon7, icon8, icon9, icon10, icon12, icon13, icon14, icon15, icon16, icon17, icon18, icon19].map((e, i) => (
                                     <div key={i} className="shrink-0 grow-0 basis-1/3 md:basis-1/4 lg:basis-1/5 mr-5">
-                                        <Image src={e} alt="logo" className='w-[60%]' />
+                                        <Image src={e} alt="logo" className='aspect-[15/10] object-contain w-[200px]' />
                                     </div>
                                 ))
                             }
