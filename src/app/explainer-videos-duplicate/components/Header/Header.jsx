@@ -110,7 +110,7 @@ const Header = () => {
     return (
         <header className={`w-full pt-5 relative z-10`}>
             <div className="px-5 lg:max-w-7xl mx-auto">
-                <Navbar className="max-w-none shadow-none px-0 py-2 rounded-none bg-transparent border-none">
+                <Navbar className="max-w-none backdrop-blur-none shadow-none px-0 py-2 rounded-none bg-transparent border-none">
                     <div className="flex items-center justify-between relative">
                         <Link href="javascript:;" className="logo lg:w-[25%]">
                             <Image src={logo} alt='logo' width={150} />

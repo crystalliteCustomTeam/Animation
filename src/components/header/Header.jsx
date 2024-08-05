@@ -5,7 +5,7 @@ import Image from "next/image";
 // Import Components
 import CTA from "@/components/cta/CTA";
 import {
-    Navbar, Collapse, Typography, List, ListItem, Menu, MenuHandler, MenuList, MenuItem,
+    Navbar, Collapse, Typography, List, Menu, MenuHandler, MenuList, MenuItem,
 } from "@material-tailwind/react";
 import {
     ChevronDownIcon, Bars3Icon, XMarkIcon, ChevronRightIcon,
@@ -200,15 +200,7 @@ function NavList() {
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
                 <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Pricing</span>
-            </Link>
-            {/* <Link
-                href="/blog"
-                variant="small"
-                color="white"
-                className="font-sans text-[14px] xl:text-[16px] font-normal"
-            >
-                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Blog</span>
-            </Link> */}
+            </Link> 
             <Link
                 href="/contact-us"
                 variant="small"
@@ -250,7 +242,7 @@ const Header = () => {
     return (
         <header className={`fixed left-0 top-0 w-full z-[999] rounded-none ${isScrolled ? 'bg-black/90 border-b border-[#ff2d4b]' : 'bg-transparent'}`}>
             <div className="container">
-                <Navbar className="max-w-none shadow-none px-0 py-2 rounded-none bg-transparent border-none">
+                <Navbar className="max-w-none backdrop-blur-none shadow-none px-0 py-2 rounded-none bg-transparent border-none">
                     <div className="flex items-center justify-between text-white relative">
                         <Typography
 

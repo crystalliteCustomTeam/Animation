@@ -454,8 +454,9 @@ div#ty7 {
 /*=============== service slider ===============*/
 
 .servicesConcept .slick-prev {
-  left: -22px;
-  top: 103%;
+  left: 25px;
+  top: 114%;
+  transform: rotate(-180deg);
 }
 
 .servicesConcept .slick-prev:before {
@@ -467,8 +468,8 @@ div#ty7 {
 }
 
 .servicesConcept .slick-next {
-  right: 115px;
-  top: 105%;
+  right: 97px;
+  top: 112%;
   bottom: inherit;
 }
 
@@ -684,6 +685,7 @@ div#ty7 {
   width: 40px;
   height: 40px;
   border-radius: 100%;
+  transform: rotate(-180deg);
 }
 
 .newvideoSlider.animiStudio .slick-list {
@@ -1037,13 +1039,13 @@ div.swiper-button-prev {
 
 .clientSlider .slick-prev {
   left: 46% !important;
-  bottom: -53% !important;
+  bottom: -43% !important;
   top: inherit !important;
 }
 
 .clientSlider .slick-next {
   left: 65% !important;
-  bottom: -53% !important;
+  bottom: -43% !important;
   top: inherit !important;
 }
 

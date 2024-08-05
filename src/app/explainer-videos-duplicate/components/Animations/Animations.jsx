@@ -22,8 +22,7 @@ const Animations = ({ content }) => {
             <div className="bg-[#00C6F9] pb-[70px]">
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
-                        <div className="col-span-12">
-                            {/* <Image src={AnimationVideo} quality={85} alt='Animating Studio' className='mt-4 md:w-5/12 mx-auto md:mt-[-50px] shadow-2xl' /> */}
+                        <div className="col-span-12"> 
                             <video src={AnimationVideo} autoPlay={true} loop={true} muted={true} className='mt-4 md:w-8/12 lg:w-5/12 mx-auto md:mt-[-50px] custom-shadow rounded-[15px]'></video>
                             <h3 className='text-[25px] sm:text-[40px] lg:text-[50px] leading-[25px] md:leading-[40px] lg:leading-[55px] font-bold font-sans mt-3 md:mt-8 mb-2 text-white text-center'>{subtitleOne}</h3>
                             <h5 className='text-center text-[25px] text-white leading-[30px] md:leading-[33px] font-bold font-sans mb-4 lg:mb-8'>{subtitleTwo}</h5>

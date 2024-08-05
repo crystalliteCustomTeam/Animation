@@ -90,7 +90,7 @@ const HeaderLP = () => {
                             <ul>
                                 <li className='flex items-center justify-end'>
                                     <a href="tel:833-666-6689" className='flex items-center gap-x-2 text-[13px] xl:text-[15px] text-black font-normal font-sans bg-[#f6c501] xl:ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:duration-700 hover:transition-all w-max'>
-                                        <Image src={telephone} loading="lazy" width="56" height="52" class="w-[15px] brightness-100 invert-[1]" alt='Infinity Animations' />
+                                        <Image src={telephone} loading="lazy" width="56" height="52" className="w-[15px] brightness-100 invert-[1]" alt='Infinity Animations' />
                                         1-833-666-6689
                                     </a>
                                 </li>
