@@ -65,27 +65,35 @@ body {
 }
 
 .bg-prime {
-  background: linear-gradient(90deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 100%
+  );
 }
 
 .bg-second {
-  background: linear-gradient(0deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 100%
+  );
 }
 
 .bg-third {
-  background: linear-gradient(0deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 40%);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 40%
+  );
 }
 
 .bg-secondary {
-  background: linear-gradient(90deg,
-      rgba(55, 178, 204, 1) 0%,
-      rgba(52, 209, 192) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(55, 178, 204, 1) 0%,
+    rgba(52, 209, 192) 100%
+  );
 }
 
 .testicard::before {
@@ -134,7 +142,6 @@ body {
 }
 
 @keyframes transform-scale-item {
-
   0%,
   100% {
     transform: scale(1);
@@ -261,11 +268,11 @@ div#ty7 {
   opacity: 0.3;
 }
 
-.newreactslide .slick-current+.slick-slide {
+.newreactslide .slick-current + .slick-slide {
   opacity: unset;
 }
 
-.newreactslide .slick-current+.slick-slide svg {
+.newreactslide .slick-current + .slick-slide svg {
   fill: #d50d12;
   opacity: unset;
   color: #d50d12;
@@ -294,7 +301,7 @@ div#ty7 {
   top: -40px;
 }
 
-.newreactslide .slick-current+.slick-slide::after {
+.newreactslide .slick-current + .slick-slide::after {
   position: absolute;
   content: "";
   width: 6.5%;
@@ -370,7 +377,7 @@ div#ty7 {
   background: rgb(203 203 203) !important;
 }
 
-#newslides .swiper-horizontal>.swiper-pagination-bullets,
+#newslides .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -380,14 +387,14 @@ div#ty7 {
   width: 100%;
 }
 
-#newslides .swiper-slide-active+swiper-slide {
+#newslides .swiper-slide-active + swiper-slide {
   padding-bottom: 150px;
   transform: translateY(42.8%) translateX(2%) scale(1.7);
   z-index: -1;
   position: relative;
 }
 
-#newslides .swiper-slide-active+swiper-slide+swiper-slide {
+#newslides .swiper-slide-active + swiper-slide + swiper-slide {
   padding-bottom: 247px;
   transform: translateY(37.8%) translateX(-65%) scale(1.6);
   z-index: -2;
@@ -408,9 +415,11 @@ div#ty7 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(0deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 100%
+  );
 }
 
 .packagesScroll::-webkit-scrollbar {
@@ -645,10 +654,12 @@ div#ty7 {
 .overlay-div-testi .overlay-testi {
   position: absolute;
   background: rgb(255, 255, 255);
-  background: linear-gradient(180deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0) 53%,
-      rgba(0, 0, 0, 1) 99%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 53%,
+    rgba(0, 0, 0, 1) 99%
+  );
 }
 
 .newvideoSlider .slick-next {
@@ -887,9 +898,11 @@ div#ty7 {
 }
 
 .videoSlide {
-  background: linear-gradient(180deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(38, 1, 1, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(38, 1, 1, 1) 100%
+  );
   position: relative;
 }
 
@@ -924,9 +937,11 @@ div#ty7 {
 
 #testimonialsCMP .swiper-slide-active {
   /* background-color: #fff; */
-  background: linear-gradient(180deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(38, 1, 1, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(38, 1, 1, 1) 100%
+  );
   box-shadow: 0 0 68.62px 4.38px rgba(0, 0, 0, 0.09);
   opacity: 1;
   border-radius: 8px;
@@ -1027,7 +1042,10 @@ div.swiper-button-prev {
   display: block;
 }
 
-.studioexplainSlider .slick-slide.slick-active.slick-current .card .nonActiveImg {
+.studioexplainSlider
+  .slick-slide.slick-active.slick-current
+  .card
+  .nonActiveImg {
   display: none;
 }
 
@@ -1140,6 +1158,11 @@ div.swiper-button-prev {
   top: inherit;
 }
 
+.videoLpSlider .slick-arrow.slick-next,
+.videoLpSlider .slick-arrow.slick-prev {
+  display: none !important;
+}
+
 /*=============== Media Query Start ===============*/
 
 @media only screen and (max-width: 1920px) {
@@ -1185,18 +1208,6 @@ div.swiper-button-prev {
     width: 60% !important;
     padding-left: 15px;
   }
-
-  /* .popupBg {
-    height: 100% !important;
-    top: 110px !important;
-  } */
-}
-
-@media only screen and (max-width: 1399px) {
-  /* .popupBg {
-    height: 100% !important;
-    top: 80px !important;
-  } */
 }
 
 @media only screen and (max-width: 1299px) {
@@ -1236,18 +1247,9 @@ div.swiper-button-prev {
     opacity: 1;
     color: #a70a0e;
   }
-
-  /* .popupBg {
-    height: 100% !important;
-    top: 120px !important;
-  } */
 }
 
 @media only screen and (max-width: 1099px) {
-  /* .popupBg {
-    top: 125px !important;
-  } */
-
   .readClientSlider .slick-prev {
     left: 40%;
   }
@@ -1274,13 +1276,6 @@ div.swiper-button-prev {
     -webkit-clip-path: polygon(6% 0, 100% 0%, 100% 100%, 16% 100%);
     clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%);
   }
-
-  /* .popupBg {
-    height: auto !important;
-    top: 350px !important;
-    transform: translateY(-130px);
-    padding-bottom: 25px;
-  } */
 
   .servicesConcept .slick-next {
     right: 50px;
@@ -1320,6 +1315,13 @@ div.swiper-button-prev {
   .explainerTypeSlider .slick-next {
     top: inherit !important;
     bottom: -65px !important;
+  }
+  .explainerTypeSlider .slick-prev {
+    left: 43%;
+  }
+
+  .explainerTypeSlider .slick-next {
+    right: 43%;
   }
 
   .streamedSlider .slick-dots,
@@ -1487,7 +1489,6 @@ div.swiper-button-prev {
 }
 
 @media only screen and (max-width: 768px) {
-
   .readClientSlider .slick-prev,
   .readClientSlider .slick-next {
     bottom: 2% !important;
@@ -1510,7 +1511,7 @@ div.swiper-button-prev {
   .explainerTypeSlider .slick-prev,
   .explainerTypeSlider .slick-next {
     top: inherit !important;
-    bottom: -45px !important;
+    bottom: -20px !important;
   }
 
   .explainerTypeSlider .slick-prev {
@@ -1521,14 +1522,12 @@ div.swiper-button-prev {
     right: 41%;
   }
 
-  /* .popupBg {
-    top: 225px !important;
-  } */
-
   .wantbg {
-    background: linear-gradient(0deg,
-        rgba(245, 9, 11, 1) 0%,
-        rgba(255, 45, 75, 1) 40%);
+    background: linear-gradient(
+      0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 40%
+    );
   }
 
   .blogsSlider .slick-next {

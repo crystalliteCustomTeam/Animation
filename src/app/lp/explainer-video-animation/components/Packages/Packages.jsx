@@ -41,7 +41,7 @@ const Packages = () => {
                                 <ul className='pb-4'>
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
-                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                        <span className='text-black text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>30 Seconds Duration</span>
                                     </li>
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' width={14} height={14} />
@@ -95,7 +95,7 @@ const Packages = () => {
                                 <ul className='pb-4'>
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
-                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>30 Seconds Duration</span>
                                     </li>
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
@@ -149,7 +149,7 @@ const Packages = () => {
                                 <ul className='pb-4'>
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />
-                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>60 Seconds Duration</span>
+                                        <span className='text-white text-[15px] xl:text-[18px] font-normal leading-[25px] xl:leading-[35px] poppins'>30 Seconds Duration</span>
                                     </li>
                                     <li className='flex items-center gap-2 mb-2'>
                                         <Image src={Tick} alt='Infinity Animation' className='invert-[1]' width={14} height={14} />

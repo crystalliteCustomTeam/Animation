@@ -4,6 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 // Images
 import Chat from "media/infinity-studio-lp-new/chat-icon.svg"
+import flag from "media/video-explainer/flag-icon.png"
 
 const Brand = ({ content }) => {
     const { popup, togglePopup } = usePopup();
@@ -21,15 +22,23 @@ const Brand = ({ content }) => {
                                 <h2 className='text-white poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[50px] mb-2'>{title}</h2>
                                 <h5 className='text-white font-bold poppins leading-[31px] text-[18px] md:text-[25px] lg:w-11/12 pb-[7px]'>{subtitle}</h5>
                                 <p className='text-white text-[13px] lg:text-[16px] poppins'>{desc}</p>
-                                <div className='flex items-center gap-4'>
-                                    <div className="btn mt-6 w-[250px]">
-                                        <a href='tel:833-666-6689' class="text-[13px] md:text-[16px] font-bold leading-[25px] text-black bg-white rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center">{btnTxt}</a>
+                                <div className='flex flex-col md:flex-row items-start md:items-center justify-start gap-4 mt-6'>
+                                    <div className="btn w-max">
+                                        <button onClick={popupHandle} class="text-[14px] lg:text-[12px] xl:text-[14px] font-bold text-black bg-white rounded-[5px] px-4 xl:px-10 max-width h-[40px] xl:h-[45px] poppins flex items-center justify-center">{btnTxt}</button>
                                     </div>
-                                    <div className="btn mt-6 w-[180px]">
-                                        <a class="text-[13px] md:text-[16px] font-bold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center" href="javascript:$zopim.livechat.window.show();">
-                                            <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] xl:block hidden' />
-                                            <span className='text-[14px] xl:text-[16px] text-white px-[8px] fontbold poppins'>
+                                    <div className="btn w-max">
+                                        <a class="text-[14px] lg:text-[12px] xl:text-[14px] font-bold text-white bg-black rounded-[5px] px-4 xl:px-10 max-width h-[40px] xl:h-[45px] poppins flex items-center justify-center gap-2" href="javascript:$zopim.livechat.window.show();">
+                                            <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100]' />
+                                            <span>
                                                 {callTxt}
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div className='btn w-max'>
+                                        <a href="tel:833-666-6689" className='flex items-center gap-2 max-width h-[40px] xl:h-[45px] text-[14px] lg:text-[12px] xl:text-[14px] poppins font-bold text-white'>
+                                            <Image src={flag} alt='UK' className='object-contain' />
+                                            <span>
+                                                Toll Free: 1-833-666-6689
                                             </span>
                                         </a>
                                     </div>
@@ -39,8 +48,18 @@ const Brand = ({ content }) => {
                                 <h2 className='text-white font-bold font-sans text-[25px] md:text-[35px] xl:text-[70px] leading-tight xl:leading-[70px] xl:mb-[20px]'>{title}</h2>
                                 <h5 className='text-white font-bold font-sans leading-[31px] text-[25px] lg:w-11/12 pb-[5px]'>{subtitle}</h5>
                                 <p className='text-[17px] text-white font-sans leading-[22px]'>{desc}</p>
-                                <div className="btn mt-6">
-                                    <a href='javascript:$zopim.livechat.window.show();' class="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-max px-4 h-[45px] poppins flex items-center justify-center">Let’s Animate Your Idea</a>
+                                <div className='flex flex-col md:flex-row items-start md:items-center justify-start gap-4 mt-6'>
+                                    <div className="btn w-max">
+                                        <a href='javascript:$zopim.livechat.window.show();' class="text-[14px] lg:text-[12px] xl:text-[14px] font-bold text-white bg-black rounded-[5px] px-4 xl:px-10 max-width h-[40px] xl:h-[45px] poppins flex items-center justify-center">Let’s Animate Your Idea</a>
+                                    </div>
+                                    <div className='btn w-max'>
+                                        <a href="tel:833-666-6689" className='flex items-center gap-2 max-width h-[40px] xl:h-[45px] text-[14px] lg:text-[12px] xl:text-[14px] poppins font-bold text-white'>
+                                            <Image src={flag} alt='UK' className='object-contain' />
+                                            <span>
+                                                Toll Free: 1-833-666-6689
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>}
                         {isBranImage ?

@@ -1,4 +1,3 @@
-"use client"
 import React from "react";
 import Image from "next/image";
 // Import Images
@@ -22,15 +21,15 @@ import icon19 from "media/icons/banner-logo-19.png";
 import { AutoScroll } from '@/components/sliders';
 
 
-const AwardWinning = () => {
+const BadgeSlider = () => {
     return (
         <section className='bg-[#cccccc] pt-[30px] pb-[40px]'>
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12">
                         <div className="mb-8">
-                            <h2 className='text-black poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] lg:leading-[60px] text-center mb-2'>An <span className='text-[#F5090B]'>Award-Winning</span> Video Animation Company</h2>
-                            <p className='text-[14px] md:text-[16px] poppins text-normal text-black text-center xl:w-7/12 mx-auto'>At Infinity Animations, we create powerful video animations that elevate your brand. Our dedication to excellence has earned us numerous awards and accolades, including:</p>
+                            <h2 className='text-[#000000] text-center font-[600] poppins text-[32px] md:text-[42px] lg:text-[48px]'>An <span className="text-[#A70A0E]">Award-Winning</span> Video Animation Company</h2>
+                            <p className='text-[#231F20] text-[16px] poppins font-[400] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-0 mt-4'>At Infinity Animations, we create powerful video animations that elevate your brand. Our dedication to <br className='hidden lg:block' /> excellence has earned us numerous awards and accolades, including: </p>
                         </div>
                         <AutoScroll wrapperClass="" options={{ loop: true, align: "start" }}>
                             {
@@ -48,4 +47,4 @@ const AwardWinning = () => {
     )
 }
 
-export default AwardWinning
+export default BadgeSlider

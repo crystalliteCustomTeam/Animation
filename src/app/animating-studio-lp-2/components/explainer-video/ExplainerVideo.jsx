@@ -26,12 +26,11 @@ const ExplainerVideo = () => {
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 md:col-span-6">
                             <div className="pt-[50px] pb-[25px] lg:py-[90px]">
-                                <h2 className='text-white poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] mb-3'>Professional Explainer <br />
-                                    Animated Videos</h2>
+                                <h2 className='text-white poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] mb-3'>Explain Better. Drive <br className='xl:block hidden' /> Engagement. Get More Sales.</h2>
                                 <h6 className='text-[15px] lg:text-[18px] text-white leading-[24px] lg:leading-[28px] font-semibold poppins mb-4 lg:pr-8'>
-                                    Simple Words Or Symbols Do Not Attract As Many People As Video Animation Does.
+                                Don't settle for ordinary—capture your audience’s attention with the irresistible allure of animated videos.
                                 </h6>
-                                <p className='text-white text-[13px] lg:text-[14px] xxl:text-[15px] pr-[10px] poppins mb-7 lg:pr-10'>Animated videos are a great way to fascinate your viewers with rich, intriguing, and playful scenes. It is evaluated according to a study that animations videos can boost your company sales up to around 49%. Infinity animations studio offers you the interactive, innovative approach to motion pictures creation in any format in tight deadline terms and affordable prices. We are proud to have served top-notch names in the industry with our service.</p>
+                                <p className='text-white text-[13px] lg:text-[14px] xxl:text-[15px] pr-[10px] poppins mb-7 lg:pr-10'>Our explainer videos simplify complex ideas and engage viewers like never before. Studies show that explainer videos can boost sales by up to 49%, so investing in our animations is a game-changer for your ROI. At Infinity Animations, we deliver innovative, high-quality videos on tight deadlines and at competitive prices. Join top industry leaders who have already reaped the rewards of our exceptional service. Elevate your business with the power of explainer videos today!</p>
                                 <div className="flex flex-col md:flex-row items-center justify-start gap-3">
                                     <div className='w-full md:w-max'>
                                         <a href="tel:833-666-6689" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-black font-semibold poppins h-[45px] w-full md:w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-white hover:duration-700 hover:transition-all'>
