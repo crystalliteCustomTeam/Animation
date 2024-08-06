@@ -15,6 +15,13 @@ const Creativity = () => {
     const popupHandle = () => {
         togglePopup(popup)
     }
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className="bg-[url('../../public/explainer-videos-new/creative-bg.png')] bg-no-repeat py-[50px] md:py-[100px] ">
@@ -31,7 +38,7 @@ const Creativity = () => {
                                     </button>
                                 </div>
                                 <div className="chat">
-                                    <a href="javascript:$zopim.livechat.window.show();" className='text-[#f36e16] font-[700] text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
+                                    <a href="#href" onClick={handleChatOpen} className='text-[#f36e16] font-[700] text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
                                         <span className='text-black block text-[13px]'>24/7 Available </span>
                                         Live Chat
                                     </a>

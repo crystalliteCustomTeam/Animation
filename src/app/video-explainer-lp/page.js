@@ -83,18 +83,22 @@ const Video = () => {
       question: 'What Is The Cost Of Tech Video Production?',
       answer: "For our customers, we create meaningful and entertaining videos at Explain Art Animation. The entire video content is produced and tailored to our client's requirements. Our team excels at creating high-quality videos, whether you need a corporate video to boost your brand awareness or a product demo to promote your services.Our process entails a series of meticulous animation and development steps, from brainstorming various concepts to the final delivery.",
       lists: lists,
+      items: []
     },
     {
       question: 'What Is The Infinity Animations Video Delivery Timeframe?',
       answer: "Step into a realm of immersive storytelling with our cutting-edge 3D animations. Elevate your visual narratives, whether for product showcases, virtual tours, or cinematic experiences.",
+      items: []
     },
     {
       question: 'How Do Explainer Videos Benefit My Business Beyond Just Explaining A Product?',
       answer: "Explainer videos not only demystify your product but also create a memorable brand narrative, increasing engagement, and fostering a stronger emotional connection with your audience.",
+      items: []
     },
     {
       question: 'Are Explainer Videos Suitable For All Industries, Or Are They More Effective For Certain Businesses?',
       answer: "Explainer videos are versatile and can benefit businesses across industries. From tech startups to healthcare services, adapting the content to suit your industry's specific needs to improve the effectiveness. ",
+      items: []
     }
   ];
   const faqs = {

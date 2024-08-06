@@ -181,7 +181,7 @@ const Footer = () => {
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-4">
                         <div className="col-span-12 lg:col-span-4">
-                            <Link href="javascript:;" className="lg:w-[25%]">
+                            <Link href="#href" className="lg:w-[25%]">
                                 <Image src={logo} width={150} height={54} className="pb-3" alt="Animation Studio" />
                             </Link>
                             <div className="col-span-12 lg:col-span-4">

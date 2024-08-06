@@ -146,8 +146,8 @@ const OurClient = () => {
                     <div className="col-span-12 ">
                         <Slider {...clientReadSlider} className='clientReadSliderlp w-full h-full absolute bottom-[-10px] lg:bottom-[-85px] pt-16'>
                             {testiContentNew2.map((testimonial, index) => (
-                                <div className="px-1 sm:px-4">
-                                    <Fancybox options={{ Carousel: { infinite: false } }} key={index}>
+                                <div className="px-1 sm:px-4" key={index}>
+                                    <Fancybox options={{ Carousel: { infinite: false } }} >
                                         <div className='grid grid-cols-12 gap-y-10 gap-x-1 md:gap-x-4 items-center lg:mb-[70px]' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                                             <div className="col-span-12 lg:col-span-5">
                                                 {testimonial.video ? (

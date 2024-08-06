@@ -25,6 +25,7 @@ import Slide5 from "media/explainer-videos/animate5.jpg"
 import Arrow from "media/explainer-videos/slide-arrow.png"
 import VideoIco from "media/explainer-videos/play.png"
 import { register } from "swiper/element/bundle";
+import usePopup from '@/app/configs/store/Popup';
 
 const Animation = () => {
     const swiperRef = useRef(null);
@@ -149,6 +150,11 @@ const Animation = () => {
 
         return <div ref={containerRef}>{props.children}</div>;
     }
+    // PopUp Code
+    const { popup, togglePopup } = usePopup();
+    const popupHandle = () => {
+        togglePopup(popup);
+    }
     return (
         <>
             <section className='pt-[40px] md:pt-[70px] pb-[30px] lg:pb-[175px] relative overflow-hidden'>
@@ -180,9 +186,9 @@ const Animation = () => {
                                             <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">3D Animation Services</h3>
                                             <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>Our 3D animation services are not just visuals; they're an immersive experience that propels your brand into the future. Our skilled team of 3D artists and visionaries transform concepts into living, breathing narratives that captivate audiences.</p>
 
-                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                            <button onClick={popupHandle} className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                            </Link>
+                                            </button>
                                             <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
                                         </div>
                                     </Link>
@@ -202,9 +208,9 @@ const Animation = () => {
                                             <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Cel Animation Services</h3>
                                             <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>With Cel Animation, we seamlessly merge traditional hand-drawn Cel animation techniques with cutting-edge digital elements. This dynamic fusion results in visuals that not only pay homage to the timeless charm of Cel animation but also push the boundaries of innovation.</p>
 
-                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                            <button onClick={popupHandle} className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                            </Link>
+                                            </button>
                                             <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
                                         </div>
                                     </Link>
@@ -224,9 +230,9 @@ const Animation = () => {
                                             <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Architectural Visualization Services</h3>
                                             <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>At the intersection of innovation and aesthetics, our Architectural Visualization Services go beyond rendering structures; they create visual stories that resonate. Whether it's a residential project, commercial space, or urban development.</p>
 
-                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                            <button onClick={popupHandle} className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                            </Link>
+                                            </button>
                                             <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
                                         </div>
                                     </Link>
@@ -247,9 +253,9 @@ const Animation = () => {
                                             <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Hybrid Animation Service</h3>
                                             <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>Our 3D animation services are not just visuals; they're an immersive experience that propels your brand into the future. Our skilled team of 3D artists and visionaries transform concepts into living, breathing narratives that captivate audiences.</p>
 
-                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                            <button onClick={popupHandle} className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                            </Link>
+                                            </button>
                                             <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
                                         </div>
                                     </Link>
@@ -269,9 +275,9 @@ const Animation = () => {
                                             <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">2D Animation Service</h3>
                                             <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>2D animation involves creating movement in a two-dimensional space, offering a timeless and versatile visual experience. Our service leverages the simplicity and charm of hand-drawn elements to craft engaging and visually stunning animations. This approach allows for clear and effective communication, perfect for explainer videos, marketing campaigns, and educational content. By focusing on high-quality, captivating animations, we ensure that your message resonates with your audience and leaves a lasting impression.</p>
 
-                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                            <button onClick={popupHandle} className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                            </Link>
+                                            </button>
                                             <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
                                         </div>
                                     </Link>

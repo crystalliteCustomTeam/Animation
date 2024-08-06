@@ -13,6 +13,13 @@ const Unmatched = () => {
     const popupHandle = () => {
         togglePopup(popup)
     }
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className="py-[80px] md:py-[100px] bg-[url('../../public/explainer-videos-new/unmatched-bg.png')] bg-cover bg-no-repeat">
@@ -80,7 +87,7 @@ const Unmatched = () => {
                                         </a>
                                     </div>
                                     <div className="LinkTwo">
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-white text-[16px] font-[600] poppins text-left'>
+                                        <a href="#href" onClick={handleChatOpen} className='text-white text-[16px] font-[600] poppins text-left'>
                                             <span className='text-[14px] font-[400] block'>
                                                 Want to discuss?
                                             </span>

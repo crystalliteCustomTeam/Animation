@@ -9,6 +9,7 @@ import arrow from "media/icons/arrow-red.png"
 import arrowB from "media/icons/arrow.png"
 import tickP from "media/icons/tick-p.png"
 import tickW from "media/icons/tick-w.png"
+import React from "react";
 
 const packages = [
     {
@@ -40,7 +41,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "javascript:$zopim.livechat.window.show();"
+                href: "#href"
             },
         ],
     },
@@ -74,7 +75,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "javascript:$zopim.livechat.window.show();"
+                href: "#href"
             },
         ],
     },
@@ -107,47 +108,10 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "javascript:$zopim.livechat.window.show();"
+                href: "#href"
             },
         ],
     },
-    // {
-    //     name: 'Platinum',
-    //     price: '$799',
-    //     backgroundColor: '#262626',
-    //     color: "text-white",
-    //     tickImage: tickW,
-    //     mblSpc: 'my-10 md:my-0',
-    //     ctaColor: "text-white",
-    //     titleColor: "text-white",
-    //     features: [
-    //         '20 Illustration Designs',
-    //         '6 Creative Designer',
-    //         '100% vector based work',
-    //         'Unlimited Revisions',
-    //         'FREE Color Options',
-    //         'File Format (JPEG, PNG, Ai, PSD, PDF)',
-    //         'Money Back Guarantee',
-    //         'Full Ownership',
-    //         'Dedicated Project Manager',
-    //         'Prioritized Support',
-    //     ],
-    //     buttons: [
-    //         {
-    //             text: '1-833-666-6689',
-    //             color: 'bg-white text-black font-semibold border-0',
-    //             image: arrowB,
-    //             href: "tel:833-666-6689",
-    //             imgColor: "bg-black w-[25px] h-[25px] xl:w-[28px] xl:h-[28px] rounded-full p-[8.5px] rotate-[90deg]"
-    //         },
-    //         {
-    //             text: 'Live Chat',
-    //             color: 'bg-black text-white border border-white',
-    //             image: chat,
-    //             href: "javascript:$zopim.livechat.window.show();"
-    //         },
-    //     ],
-    // },
 ];
 
 const Pricing = ({ content }) => {
@@ -157,7 +121,13 @@ const Pricing = ({ content }) => {
     const popupHandle = () => {
         togglePopup(popup)
     }
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className={`w-full flex items-center justify-start pt-16 pb-3`}>
@@ -208,7 +178,7 @@ const Pricing = ({ content }) => {
                                             </div>
                                             <div className="flex justify-between px-6 mt-5">
                                                 {pkg.buttons.map((button, i) => (
-                                                    <>
+                                                    <React.Fragment key={i}>
                                                         {button.text === "1-833-666-6689" ? (
                                                             <a href={button.href} key={i} className={`flex items-center justify-between font-sans ${button.color} w-max px-3 xl:px-5 gap-2 rounded-lg py-[7px]`}>
                                                                 <span className="text-[16px] xl:text-[18px] font-normal font-sans">{button.text}</span>
@@ -220,7 +190,7 @@ const Pricing = ({ content }) => {
                                                                 <Image src={button.image} className={`${button.imgColor} w-[30px]`} alt="Infinity Animation" />
                                                             </a>
                                                         )}
-                                                    </>
+                                                    </React.Fragment>
                                                 ))}
                                             </div>
                                         </div>

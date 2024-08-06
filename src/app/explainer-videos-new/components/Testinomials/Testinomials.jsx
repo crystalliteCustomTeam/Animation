@@ -11,7 +11,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 // Images 
 import Slide1 from "media/explainer-videos-new/testi1.png"
-import Slide2 from "media/explainer-videos-new/testi2.png" 
+import Slide2 from "media/explainer-videos-new/testi2.png"
 
 const Testinomials = () => {
 
@@ -35,7 +35,13 @@ const Testinomials = () => {
             }
         ]
     };
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className="py-[50px] lg:py-[100px] bg-[url('../../public/explainer-videos-new/testinomials-bg.png')] bg-cover bg-no-repeat">
@@ -56,7 +62,7 @@ const Testinomials = () => {
                                     </a>
                                 </div>
                                 <div className="chat">
-                                    <a href="javascript:$zopim.livechat.window.show();" className='text-[#261564] font-[700] text-[16px] md:text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
+                                    <a href="#href" onClick={handleChatOpen} className='text-[#261564] font-[700] text-[16px] md:text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
                                         <span className='block text-[13px]'>24/7 Available </span>
                                         Live Chat
                                     </a>

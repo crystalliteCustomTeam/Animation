@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React, { useState } from 'react'
+import Image from 'next/image';
+import usePopup from '@/app/configs/store/Popup';
 
 import { FaExternalLinkAlt } from "react-icons/fa";
 
@@ -10,6 +10,11 @@ const Startups = ({ content }) => {
     const handleTabClick = (index) => {
         setActiveTab(index);
     };
+    // PopUp Code
+    const { popup, togglePopup } = usePopup();
+    const popupHandle = () => {
+        togglePopup(popup);
+    }
     return (
         <>
             <section className='py-[30px] md:py-[60px]'>
@@ -36,10 +41,10 @@ const Startups = ({ content }) => {
                                             <h3 className='text-primary-100 lg:text-[37px] font-sans leading-[45px] font-[700] px-[15px] mb-[25px]'>{item.tabTxt}</h3>
                                             <p className='text-black text-[16px] px-[15px] leading-[20px] text-justify font-light poppins mb-[35px]'>{item.tabDesc}</p>
                                             <div className="btn group px-[15px]">
-                                                <Link href="javascript:;" className='text-[17px] font-bold poppins group-hover:text-white text-primary-100 border-[#f5090b] border-2 rounded-[5px] leading-[19px] mt-[20px] py-[10px] px-[35px] w-[50%] md:w-[70%] lg:w-[36%] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
+                                                <button onClick={popupHandle} className='text-[17px] font-bold poppins group-hover:text-white text-primary-100 border-[#f5090b] border-2 rounded-[5px] leading-[19px] mt-[20px] py-[10px] px-[35px] w-[50%] md:w-[70%] lg:w-[36%] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
                                                     <FaExternalLinkAlt className='absolute top-[50%] translate-y-[-50%] ml-[-110%] group-hover:ml-[-68%] duration-700 group-hover:duration-700 ease-in-out text-[17px] font-bold poppins group-hover:text-white' />
                                                     <span>Get A Quote</span>
-                                                </Link>
+                                                </button>
                                             </div>
                                         </div>
                                         <div>
@@ -59,10 +64,10 @@ const Startups = ({ content }) => {
                                             <h3 className='text-primary-100 text-[25px] lg:text-[37px] font-sans leading-[30px] font-[700] px-[15px] mb-[15px]'>{item.tabTxt}</h3>
                                             <p className='text-black text-[16px] px-[15px] leading-[20px] text-justify font-light poppins mb-[35px]'>{item.tabDesc}</p>
                                             <div className="btn group px-[15px]">
-                                                <Link href="javascript:;" className='text-[17px] font-bold poppins group-hover:text-white text-primary-100 border-[#f5090b] border-2 rounded-[5px] leading-[19px] mt-[20px] py-[10px] px-[35px] md:w-[50%] lg:w-[36%] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
+                                                <button onClick={popupHandle} className='text-[17px] font-bold poppins group-hover:text-white text-primary-100 border-[#f5090b] border-2 rounded-[5px] leading-[19px] mt-[20px] py-[10px] px-[35px] md:w-[50%] lg:w-[36%] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
                                                     <FaExternalLinkAlt className='absolute top-[50%] translate-y-[-50%] ml-[-110%] group-hover:ml-[-60%] duration-700 group-hover:duration-700 ease-in-out text-[17px] font-bold poppins group-hover:text-white' />
                                                     <span>Get A Quote</span>
-                                                </Link>
+                                                </button>
                                             </div>
                                         </div>
                                         <div>

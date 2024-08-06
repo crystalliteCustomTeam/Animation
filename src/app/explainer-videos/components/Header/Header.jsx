@@ -5,6 +5,7 @@ import { EnvelopeIcon } from '@heroicons/react/24/solid'
 //===== Images 
 import logo from "media/images/black-logo.gif";
 import Chat from "media/video-explainer/cht-icon.png"
+import Link from 'next/link';
 
 
 const Header = () => {
@@ -44,7 +45,13 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [lastScrollTop]);
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <header className={`fixed left-0 top-0 py-6 z-50 w-full ${isScrolled ? 'bg-[#36aac7db] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-6' : ''}`}>
@@ -65,12 +72,12 @@ const Header = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href='javascript:$zopim.livechat.window.show();' className='flex items-center text-[15px] text-white font-[700] font-sans bg-[#000000] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                        <Link href="#href" onClick={handleChatOpen} className='flex items-center text-[15px] text-white font-[700] font-sans bg-[#000000] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                             <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100]' />
                                             <span className='text-[15px] text-white px-[8px] font-[700] font-sans'>
                                                 Live Chat
                                             </span>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button onClick={popupHandle} className='flex items-center text-[15px] text-white font-[700] font-sans bg-[#000000] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>

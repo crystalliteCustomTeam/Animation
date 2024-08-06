@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
 import { FaPhoneAlt } from 'react-icons/fa'
@@ -6,7 +7,14 @@ import Chats from "media/infinity-studio-lp-new/chat-icon.svg";
 import Logos from "media/infinity-studio-lp-2/animations-logos.png"
 
 const ExplainerVideo = () => {
-    const animationVideo = "https://player.vimeo.com/progressive_redirect/playback/973456427/rendition/1080p/file.mp4?loc=external&signature=bec01dc8250d19fddde8de57be2a91813d578dfc4f31dbe5a25fa58857a4113e"
+    const animationVideo = "https://player.vimeo.com/progressive_redirect/playback/973456427/rendition/1080p/file.mp4?loc=external&signature=bec01dc8250d19fddde8de57be2a91813d578dfc4f31dbe5a25fa58857a4113e";
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className='bg-white pt-[50px] lg:pt-[90px] pb-[40px]'>
@@ -28,7 +36,7 @@ const ExplainerVideo = () => {
                             <div className="pt-[50px] pb-[25px] lg:py-[90px]">
                                 <h2 className='text-white poppins text-[25px] md:text-[30px] lg:text-[35px] font-semibold leading-[35px] md:leading-[45px] mb-3'>Explain Better. Drive <br className='xl:block hidden' /> Engagement. Get More Sales.</h2>
                                 <h6 className='text-[15px] lg:text-[18px] text-white leading-[24px] lg:leading-[28px] font-semibold poppins mb-4 lg:pr-8'>
-                                Don't settle for ordinary—capture your audience’s attention with the irresistible allure of animated videos.
+                                    Don't settle for ordinary—capture your audience’s attention with the irresistible allure of animated videos.
                                 </h6>
                                 <p className='text-white text-[13px] lg:text-[14px] xxl:text-[15px] pr-[10px] poppins mb-7 lg:pr-10'>Our explainer videos simplify complex ideas and engage viewers like never before. Studies show that explainer videos can boost sales by up to 49%, so investing in our animations is a game-changer for your ROI. At Infinity Animations, we deliver innovative, high-quality videos on tight deadlines and at competitive prices. Join top industry leaders who have already reaped the rewards of our exceptional service. Elevate your business with the power of explainer videos today!</p>
                                 <div className="flex flex-col md:flex-row items-center justify-start gap-3">
@@ -39,7 +47,7 @@ const ExplainerVideo = () => {
                                         </a>
                                     </div>
                                     <div className='w-full md:w-max'>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-full md:w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all'>
+                                        <a href="#href" onClick={handleChatOpen} className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-full md:w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all'>
                                             <Image src={Chats} alt='Infinity Animation' className='brightness-200 invert-0' />
                                             Live Chat
                                         </a>

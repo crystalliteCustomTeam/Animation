@@ -28,6 +28,13 @@ const Animations = ({ content }) => {
 
         return <div ref={containerRef}>{props.children}</div>;
     }
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <section className='pt-[50px] lg:pt-[70px] relative bg-white'>
             <Image src={AnimationBg} alt='Infinity Animation' fill={true} className='z-0 object-cover object-center' />
@@ -49,7 +56,7 @@ const Animations = ({ content }) => {
                                     <a href='tel:833-666-6689' className="text-[13px] md:text-[16px] font-bold leading-[25px] text-white bg-[#FF2D4B] rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center">Make an Animation</a>
                                 </div>
                                 <div className="btn mt-6 w-[180px]">
-                                    <a className="text-[13px] md:text-[16px] font-bold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center" href="javascript:$zopim.livechat.window.show();">
+                                    <a className="text-[13px] md:text-[16px] font-bold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center" href="#href" onClick={handleChatOpen}>
                                         <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] xl:block hidden' />
                                         <span className='text-[14px] xl:text-[16px] text-white px-[8px] fontbold poppins'>
                                             Live Chat

@@ -9,6 +9,13 @@ const SmallBanner = () => {
     const popupHandle = () => {
         togglePopup(popup);
     }
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className="md:mt-[70px] bg-[url('../../public/logo-animation-lp/small-banner.jpg')] bg-no-repeat bg-center bg-cover py-[60px]">
@@ -32,7 +39,7 @@ const SmallBanner = () => {
                                     color={`text-white`}
                                     border={`border-2 border-[#fff]`}
                                     hover="hover:bg-prime"
-                                    href="javascript:$zopim.livechat.window.show();"
+                                    href="#href" onClick={handleChatOpen}
                                 />
                             </div>
                         </div>

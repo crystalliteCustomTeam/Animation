@@ -7,8 +7,14 @@ import CTA from '../../cta/CTA'
 import Car from "media/images/talk-bg.gif"
 
 const Want = ({ content }) => {
-    const { title, wantDesc} = content;
-
+    const { title, wantDesc } = content;
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className={`my-8 md:mb-0 md:mt-20 wantbg md:bg-[url('../../public/images/talk-bg.png')] bg-no-repeat bg-[length:100%] md:h-[30vh] lg:h-[80vh] relative py-7 md:py-0`}>
@@ -26,7 +32,7 @@ const Want = ({ content }) => {
                             bg="bg-prime"
                             color={`text-white`}
                             border={`border-2 border-[#f5090b]`}
-                            hover="hover:bg-transparent" 
+                            hover="hover:bg-transparent"
                         />
                         <CTA
                             text="Live Chat"
@@ -36,7 +42,7 @@ const Want = ({ content }) => {
                             color={`text-white`}
                             border={`border-2 border-[#fff]`}
                             hover="hover:bg-prime"
-                            href="javascript:$zopim.livechat.window.show();"
+                            href="#href" onClick={handleChatOpen}
                         />
                     </div>
                 </div>

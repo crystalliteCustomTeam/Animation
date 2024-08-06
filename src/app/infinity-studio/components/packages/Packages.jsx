@@ -16,6 +16,13 @@ const Packages = () => {
     const popupHandle = () => {
         togglePopup(popup)
     }
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className='py-[50px] lg:py-[80px] packages'>
@@ -98,7 +105,7 @@ const Packages = () => {
                                             <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-white poppins flex flex-col justify-center font-[700] bg-[#A70A0E] w-max py-[12px] px-[20px] rounded-[5px]'>
                                                 <span className=' text-[16px] font-normal'>1-833-666-6689</span>
                                             </a>
-                                            <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-white poppins flex flex-col justify-center font-[700] bg-[#A70A0E] w-max py-[12px] px-[20px] rounded-[5px]'>
+                                            <a href="#href" onClick={handleChatOpen} className='text-left m-0 text-[14px] leading-[20px] text-white poppins flex flex-col justify-center font-[700] bg-[#A70A0E] w-max py-[12px] px-[20px] rounded-[5px]'>
                                                 <span className=' text-[16px] font-normal'>Live Chat Now</span>
                                             </a>
                                         </div>
@@ -186,7 +193,7 @@ const Packages = () => {
                                             <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-white poppins flex flex-col justify-center font-[700] bg-[#003262] w-max py-[12px] px-[20px] rounded-[5px]'>
                                                 <span className=' text-[16px] font-normal'>1-833-666-6689</span>
                                             </a>
-                                            <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-white poppins flex flex-col justify-center font-[700] bg-[#003262] w-max py-[12px] px-[20px] rounded-[5px]'>
+                                            <a href="#href" onClick={handleChatOpen} className='text-left m-0 text-[14px] leading-[20px] text-white poppins flex flex-col justify-center font-[700] bg-[#003262] w-max py-[12px] px-[20px] rounded-[5px]'>
                                                 <span className=' text-[16px] font-normal'>Live Chat Now</span>
                                             </a>
                                         </div>
@@ -274,7 +281,7 @@ const Packages = () => {
                                             <a href="tel:833-666-6689" className='text-left m-0 text-[14px] leading-[20px] text-white poppins flex flex-col justify-center font-[700] bg-[#FFCC00] w-max py-[12px] px-[20px] rounded-[5px]'>
                                                 <span className=' text-[16px] font-normal'>1-833-666-6689</span>
                                             </a>
-                                            <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 text-[14px] leading-[20px] text-white poppins flex flex-col justify-center font-[700] bg-[#FFCC00] w-max py-[12px] px-[20px] rounded-[5px]'>
+                                            <a href="#href" onClick={handleChatOpen} className='text-left m-0 text-[14px] leading-[20px] text-white poppins flex flex-col justify-center font-[700] bg-[#FFCC00] w-max py-[12px] px-[20px] rounded-[5px]'>
                                                 <span className=' text-[16px] font-normal'>Live Chat Now</span>
                                             </a>
                                         </div>

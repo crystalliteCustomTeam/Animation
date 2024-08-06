@@ -8,7 +8,13 @@ import CTA from "@/components/cta/CTA";
 const Looking = ({ content }) => {
     const { main, title, para: { paraArray }, isCTA, isBtns } = content;
 
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className={`w-full flex items-center justify-start py-6 md:pt-20 md:pb-12 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative `}>
@@ -52,7 +58,7 @@ const Looking = ({ content }) => {
                                             color={`text-white`}
                                             border={`border-2 border-[#fff]`}
                                             hover="hover:bg-prime"
-                                            href="javascript:$zopim.livechat.window.show();"
+                                            href="#href" onClick={handleChatOpen}
                                         /> : null}
                                 </div> :
                                 null

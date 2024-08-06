@@ -13,7 +13,13 @@ const Video = () => {
     const popupHandle = () => {
         togglePopup(popup)
     }
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className={`newcon  ${styles.display}`} id="header">
@@ -29,7 +35,7 @@ const Video = () => {
                             <Image src={lang} />   <a href="tel:833-666-6689">  833-666-6689</a>
                         </div>
                         <div className={styles.got}>
-                            <Image src={chat} />   <a href="javascript:$zopim.livechat.window.show();">Live Chat</a>
+                            <Image src={chat} />   <a href="#href" onClick={handleChatOpen}>Live Chat</a>
                         </div>
                         <div className={styles.got1}>
                             <button onClick={popupHandle}>Get Started</button>

@@ -66,14 +66,20 @@ const Video = () => {
         ],
 
     };
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className={`newcon ${styles.display}`}>
                 <div class={`container mx-auto`}>
                     <div class={`md:grid md:grid-cols-1`}>
                         <div className={styles.element}>
-                            <h3 className={`fontsfpro mb-0 ${styles.heading}`}>Our  <span class="colorred2">Packages </span>
+                            <h3 className={`fontsfpro mb-0 ${styles.heading}`}>Our  <span className="colorred2">Packages </span>
                             </h3>
                             <p className={styles.words}>
                                 Infinity Animations is a renowned name in the video animation industry. Our experts produce all types of animation videos with the usage of modern devices and techniques, some are discussed below:
@@ -87,7 +93,7 @@ const Video = () => {
                         <Slider {...awardslogo} className={` ${styles.startup1}  startposition mt-4`} >
                             <div className={styles.pkgcard}>
                                 <div className={styles.cardbef}>
-                                    <Image src={star} class=" " alt="Star" />
+                                    <Image src={star} className=" " alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Startup Package</h3>
                                 <h4 className={styles.price}>$499</h4>
@@ -102,17 +108,17 @@ const Video = () => {
                                 </ul>
                                 <div className={styles.pkgcta}>
                                     <div className={styles.speak}>
-                                        <p class="">Speak With Us</p>
-                                        <a class="" href="tel:833-666-6689">833-666-6689</a>
+                                        <p className="">Speak With Us</p>
+                                        <a className="" href="tel:833-666-6689">833-666-6689</a>
                                     </div>
                                     <div className={styles.speak}>
-                                        <p class="">Want To Discuss</p>
-                                        <a class="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
+                                        <p className="">Want To Discuss</p>
+                                        <a className="" href="#href" onClick={handleChatOpen}>Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
+                                    <a href="#href" onClick={handleChatOpen} className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat} alt="Live_Chat" />
                                     </a>
@@ -120,8 +126,8 @@ const Video = () => {
                             </div>
                             <div className={styles.pkgcard2}>
                                 <div className={styles.cardbef}>
-                                    <Image src={star} class=" " alt="Star" />
-                                    <Image src={star} class=" " alt="Star" />
+                                    <Image src={star} className=" " alt="Star" />
+                                    <Image src={star} className=" " alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Classic Package</h3>
                                 <h4 className={styles.price}>$799</h4>
@@ -136,17 +142,17 @@ const Video = () => {
                                 </ul>
                                 <div className={styles.pkgcta}>
                                     <div className={styles.speak}>
-                                        <p class="">Speak With Us</p>
-                                        <a class="" href="tel:833-666-6689">833-666-6689</a>
+                                        <p className="">Speak With Us</p>
+                                        <a className="" href="tel:833-666-6689">833-666-6689</a>
                                     </div>
                                     <div className={styles.speak}>
-                                        <p class="">Want To Discuss</p>
-                                        <a class="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
+                                        <p className="">Want To Discuss</p>
+                                        <a className="" href="#href" onClick={handleChatOpen}>Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
+                                    <a href="#href" onClick={handleChatOpen} className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat2} alt="Live_Chat" />
                                     </a>
@@ -154,9 +160,9 @@ const Video = () => {
                             </div>
                             <div className={styles.pkgcard}>
                                 <div className={styles.cardbef}>
-                                    <Image src={star} class=" " alt="Star" />
-                                    <Image src={star} class=" " alt="Star" />
-                                    <Image src={star} class=" " alt="Star" />
+                                    <Image src={star} className=" " alt="Star" />
+                                    <Image src={star} className=" " alt="Star" />
+                                    <Image src={star} className=" " alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Premium Package</h3>
                                 <h4 className={styles.price}>$999</h4>
@@ -171,17 +177,17 @@ const Video = () => {
                                 </ul>
                                 <div className={styles.pkgcta}>
                                     <div className={styles.speak}>
-                                        <p class="">Speak With Us</p>
-                                        <a class="" href="tel:833-666-6689">833-666-6689</a>
+                                        <p className="">Speak With Us</p>
+                                        <a className="" href="tel:833-666-6689">833-666-6689</a>
                                     </div>
                                     <div className={styles.speak}>
-                                        <p class="">Want To Discuss</p>
-                                        <a class="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
+                                        <p className="">Want To Discuss</p>
+                                        <a className="" href="#href" onClick={handleChatOpen}>Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
+                                    <a href="#href" onClick={handleChatOpen} className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat} alt="Live_Chat" />
                                     </a>
@@ -194,7 +200,7 @@ const Video = () => {
                         <div class={`md:grid md:grid-cols-3`}>
                             <div className={styles.pkgcard}>
                                 <div className={styles.cardbef}>
-                                    <Image src={star} class=" " alt="Star" />
+                                    <Image src={star} className=" " alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Startup Package</h3>
                                 <h4 className={styles.price}>$499</h4>
@@ -209,17 +215,17 @@ const Video = () => {
                                 </ul>
                                 <div className={styles.pkgcta}>
                                     <div className={styles.speak}>
-                                        <p class="">Speak With Us</p>
-                                        <a class="" href="tel:833-666-6689">833-666-6689</a>
+                                        <p className="">Speak With Us</p>
+                                        <a className="" href="tel:833-666-6689">833-666-6689</a>
                                     </div>
                                     <div className={styles.speak}>
-                                        <p class="">Want To Discuss</p>
-                                        <a class="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
+                                        <p className="">Want To Discuss</p>
+                                        <a className="" href="#href" onClick={handleChatOpen}>Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
+                                    <a href="#href" onClick={handleChatOpen} className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat} alt="Live_Chat" />
                                     </a>
@@ -227,8 +233,8 @@ const Video = () => {
                             </div>
                             <div className={styles.pkgcard2}>
                                 <div className={styles.cardbef}>
-                                    <Image src={star} class=" " alt="Star" />
-                                    <Image src={star} class=" " alt="Star" />
+                                    <Image src={star} className=" " alt="Star" />
+                                    <Image src={star} className=" " alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Classic Package</h3>
                                 <h4 className={styles.price}>$799</h4>
@@ -243,17 +249,17 @@ const Video = () => {
                                 </ul>
                                 <div className={styles.pkgcta}>
                                     <div className={styles.speak}>
-                                        <p class="">Speak With Us</p>
-                                        <a class="" href="tel:833-666-6689">833-666-6689</a>
+                                        <p className="">Speak With Us</p>
+                                        <a className="" href="tel:833-666-6689">833-666-6689</a>
                                     </div>
                                     <div className={styles.speak}>
-                                        <p class="">Want To Discuss</p>
-                                        <a class="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
+                                        <p className="">Want To Discuss</p>
+                                        <a className="" href="#href" onClick={handleChatOpen}>Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
+                                    <a href="#href" onClick={handleChatOpen} className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat2} alt="Live_Chat" />
                                     </a>
@@ -261,9 +267,9 @@ const Video = () => {
                             </div>
                             <div className={styles.pkgcard}>
                                 <div className={styles.cardbef}>
-                                    <Image src={star} class=" " alt="Star" />
-                                    <Image src={star} class=" " alt="Star" />
-                                    <Image src={star} class=" " alt="Star" />
+                                    <Image src={star} className=" " alt="Star" />
+                                    <Image src={star} className=" " alt="Star" />
+                                    <Image src={star} className=" " alt="Star" />
                                 </div>
                                 <h3 className={styles.startup}>Premium Package</h3>
                                 <h4 className={styles.price}>$999</h4>
@@ -278,17 +284,17 @@ const Video = () => {
                                 </ul>
                                 <div className={styles.pkgcta}>
                                     <div className={styles.speak}>
-                                        <p class="">Speak With Us</p>
-                                        <a class="" href="tel:833-666-6689">833-666-6689</a>
+                                        <p className="">Speak With Us</p>
+                                        <a className="" href="tel:833-666-6689">833-666-6689</a>
                                     </div>
                                     <div className={styles.speak}>
-                                        <p class="">Want To Discuss</p>
-                                        <a class="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
+                                        <p className="">Want To Discuss</p>
+                                        <a className="" href="#href" onClick={handleChatOpen}>Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
+                                    <a href="#href" onClick={handleChatOpen} className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat} alt="Live_Chat" />
                                     </a>

@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import { FaPhoneAlt } from 'react-icons/fa';
@@ -8,6 +9,13 @@ import Prtcle1 from "media/infinity-studio-lp-2/banner-prtcl1.png"
 import Prtcle2 from "media/infinity-studio-lp-2/banner-prtcl2.png"
 
 const SmallBanner = () => {
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <section className='pt-[50px] pb-[50px] lg:pt-[130px] lg:pb-[20px]  bg-[#EE8526] sm:bg-white'>
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
@@ -33,7 +41,7 @@ const SmallBanner = () => {
                                         </a>
                                     </div>
                                     <div className='w-full sm:w-auto'>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-full sm:w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all'>
+                                        <a href="#href" onClick={handleChatOpen} className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-full sm:w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all'>
                                             <Image src={Chats} alt='Infinity Animation' className='brightness-200 invert-0' />
                                             Live Chat
                                         </a>

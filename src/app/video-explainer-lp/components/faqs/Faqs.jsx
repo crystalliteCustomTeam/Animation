@@ -10,7 +10,7 @@ import styles from "./faqs.module.css"
 
 const Faqs = ({ content }) => {
 
-    const { accordionData, lists } = content;
+    const { accordionData } = content;
     // Accordions
     const [activeIndex, setActiveIndex] = useState(0);
     const handleClick = (index) => {
@@ -31,19 +31,20 @@ const Faqs = ({ content }) => {
                         <div className="col-span-12 lg:col-span-6">
                             {accordionData.map((item, index) => (
                                 <div key={index} className={`py-1 ${activeIndex === index ? 'border-white' : ' border-white'} border-b-2`}>
-                                    <div className={`flex space-x-3 items-center cursor-pointer p-[15px] rounded-[10px] h-[65px] ${activeIndex === index ? 'bg-[#003466] text-white' : 'text-black bg-[#e6e7e8]'}`}
-                                        onClick={() => handleClick(index)}>
-                                        <span>{activeIndex === index ? <HiChevronUp className='text-[20px] font-[900]' /> : <HiChevronDown className='text-[20px] font-[900]' />}</span>
+                                    <div className={`flex space-x-3 items-center cursor-pointer p-[15px] rounded-[10px] h-[65px] ${activeIndex === index ? 'bg-[#003466] text-white' : 'text-black bg-[#e6e7e8]'}`} onClick={() => handleClick(index)}>
+                                        <span>{activeIndex === index ?
+                                            <HiChevronUp className='text-[20px] font-[900]' /> :
+                                            <HiChevronDown className='text-[20px] font-[900]' />}
+                                        </span>
                                         <h3 className={`text-[12px] md:text-[16px] font-[500] capitalize montserrat`}>{item.question}</h3>
                                     </div>
                                     {activeIndex === index && (
                                         <div className='pt-5'>
                                             <div className={` text-[14px] sm:text-[16px] font-normal montserrat text-black pb-1 ${styles.ani}`}>{item.answer}</div>
-
                                             <ul>
-                                                {accordionData.map((index) => (
-                                                    <li key={index}>
-                                                        <div className={`block text-[14px] font-normal montserrat text-black pb-1`}>{item.item1}</div>
+                                                {item.items.map((subItem, subIndex) => (
+                                                    <li key={subIndex}>
+                                                        <div className={`block text-[14px] font-normal montserrat text-black pb-1`}>{subItem}</div>
                                                     </li>
                                                 ))}
                                             </ul>

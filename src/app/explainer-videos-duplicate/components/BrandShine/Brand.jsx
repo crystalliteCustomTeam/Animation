@@ -1,11 +1,14 @@
+import usePopup from '@/app/configs/store/Popup';
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-
-
 const Brand = ({ content }) => {
-
-    const { title, subtitle, desc, branImage, isBranImage, btnTxt, css, positionCss, callTxt } = content
+    const { title, subtitle, desc, branImage, isBranImage, btnTxt, css, positionCss, callTxt } = content;
+    // PopUp Code
+    const { popup, togglePopup } = usePopup();
+    const popupHandle = () => {
+        togglePopup(popup);
+    }
     return (
         <>
             <section className='py-[30px] md:py-[70px] lg:my-[90px]'>
@@ -17,11 +20,11 @@ const Brand = ({ content }) => {
                                 <h5 className='text-white font-bold font-sans leading-[31px] text-[18px] md:text-[25px] lg:w-11/12 pb-[7px]'>{subtitle}</h5>
                                 <p className='text-[16px] text-white font-sans leading-[23px]'>{desc}</p>
                                 <div className='flex items-center gap-4'>
-                                    <div className="btn mt-6 w-[250px]">
-                                        <Link class="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center" href="javascript:;">{btnTxt}</Link>
+                                    <div className="btn mt-6 w-auto">
+                                        <button className="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center" onClick={popupHandle}>{btnTxt}</button>
                                     </div>
                                     <div className="btn mt-6 w-[180px]">
-                                        <Link class="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center" href="tel:833-666-6689">{callTxt}</Link>
+                                        <Link className="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center" href="tel:833-666-6689">{callTxt}</Link>
                                     </div>
                                 </div>
                             </div> :
@@ -30,7 +33,7 @@ const Brand = ({ content }) => {
                                 <h5 className='text-white font-bold font-sans leading-[31px] text-[25px] lg:w-11/12 pb-[5px]'>{subtitle}</h5>
                                 <p className='text-[17px] text-white font-sans leading-[22px]'>{desc}</p>
                                 <div className="btn mt-6">
-                                    <Link class="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-full md:w-[410px] h-[44px] poppins flex items-center justify-center" href="javascript:;">Let's Begin Your Animated Journey Together!</Link>
+                                    <button className="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-full md:w-[410px] h-[44px] poppins flex items-center justify-center" onClick={popupHandle}>Let's Begin Your Animated Journey Together!</button>
                                 </div>
                             </div>}
 

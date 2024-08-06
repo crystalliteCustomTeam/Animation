@@ -12,6 +12,13 @@ const Video = () => {
     const popupHandle = () => {
         togglePopup(popup)
     }
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
 
     return (
         <>
@@ -27,7 +34,7 @@ const Video = () => {
                                     video services today!</p>
                                 <div className={styles.message}>
                                     <button onClick={popupHandle} className={styles.scale}>Get Started</button>
-                                    <a href="javascript:$zopim.livechat.window.show();"><button className={styles.sefve} >Live Chat</button></a>
+                                    <a href="#href" onClick={handleChatOpen}><button className={styles.sefve} >Live Chat</button></a>
                                     <div className={styles.pont}>
                                         <Image src={lang} alt="" />
                                         <a className={styles.newlong} href="tel:833-666-6689"> 833-666-6689</a>

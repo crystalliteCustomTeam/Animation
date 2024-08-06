@@ -97,24 +97,7 @@ const page = () => {
       window.removeEventListener("scroll", handleTouchOrScroll);
       window.removeEventListener("touchstart", handleTouchOrScroll);
     };
-  }, []);
-  //===== Banner Section====//
-  const lists = [
-    "- High Quality & Fast Video Animation Services",
-    "- Specialists in 2D & 3D Animation Services",
-    "- More than 1,500 satisfied clients",
-    "- Experience Fastest Turnaround Time",
-  ]
-
-  const banner = {
-    title: <>Story Telling With Our
-      Animated Explainer Videos</>,
-    para: <></>,
-    list: lists,
-    isList: true,
-    bannerImage: "https://player.vimeo.com/progressive_redirect/playback/916117283/rendition/1080p/file.mp4?loc=external&log_user=0&signature=0b2a1f2e5c0dccbe3884bea89915315936c24100893da2b2cba2ba4173fb63b0",
-  }
-
+  }, []); 
   //==== Animations Sections =====//
   const animations = {
     title: <>Best Explainer Video Creation Service</>,
@@ -356,8 +339,6 @@ const page = () => {
     desc: "",
     branImage: SaleShine,
   }
-
-
   return (
     <>
       <div className='bg-white'>

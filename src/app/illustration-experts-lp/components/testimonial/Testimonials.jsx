@@ -5,7 +5,7 @@ import TestiImg from 'media/illustration-experts/testi-img.png'
 
 const Testimonials = () => {
     return (
-        <section id="testimonialsCMP" className="bg-[#000]">
+        <section id="testimonialsCMP" className="bg-[#000] h-screen overflow-y-hidden illustrationTestimonials">
             <div>
                 <div className="container">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 items-center">

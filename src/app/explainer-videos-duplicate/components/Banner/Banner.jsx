@@ -1,13 +1,5 @@
 import React from 'react'
 import { Star } from 'heroicons-react'
-import Image from 'next/image';
-
-// ====== Images 
-import PartiOne from "media/explainer-videos/banner1.png"
-import PartiTwo from "media/explainer-videos/banner2.png"
-import PartiThree from "media/explainer-videos/banner-3.png"
-import PartiFour from "media/explainer-videos/banner-4.png"
-
 // ===== Video 
 const banVideo = [
     [
@@ -22,12 +14,12 @@ const Banner = () => {
                 <div className="bannervideo absolute top-[-100px] z-[0] left-0 right-0 w-full">
                     {banVideo.map((item, index) => (
                         <div key={index}>
-                            <video className={` w-full h-full`} loop={true} muted="muted" autoPlay={true} src={item}></video>
+                            <video className={` w-full h-full`} loop={true} muted={true} autoPlay={true} src={item}></video>
                         </div>
                     ))}
-                </div> 
+                </div>
                 <div className="px-5 lg:max-w-7xl mx-auto relative z-10 flex flex-col items-center mt-[100px] xl:mt-[30px] 2xl:mt-[70px] h-[100vh]">
-                    
+
                     <div className="flex items-center justify-center" data-aos="zoom-in" data-wow-duration="3s">
                         <div className="reviews flex items-center justify-center gap-x-1">
                             <Star className='text-[#FFD62B] text-[22px] w-[22px] h-[22px]' />
@@ -43,15 +35,7 @@ const Banner = () => {
                     <h1 className='text-[30px] sm:text-[35px] lg:text-[45px] font-bold text-white font-sans text-center leading-[35px] sm:leading-[45px] lg:leading-[55px] pt-2 md:pt-4 pb-2 md:pb-5' data-aos="fade-up" data-wow-duration="3s">Boost Sales with 3D Animation Services. <br className='md:block hidden' />
                         Instantaneously Forge Explainer Videos!</h1>
                     <p className='text-center text-[13px] sm:text-[16px] font-sans text-white leading-[19px] pb-6' data-aos="fade-up" data-wow-duration="3s">Our repertoire spans the spectrum from 2D animation services to 3D animation services, with the timeless allure<br /> of whiteboard animation bringing your visions to life.</p>
-                    {/* <div className="video w-full lg:w-6/12 mx-auto">
-                        {banVideo.map((item, index) => (
-                            <div key={index}>
-                                <video className={`rounded-2xl shadow-2xl w-full h-full`} loop={true} muted="muted" autoPlay={true} src={item}></video>
-                            </div>
-                        ))}
-                    </div> */}
                 </div>
-                {/* <Image src={PartiThree} alt='Particle' className='absolute left-0 bottom-[-28%] lg:bottom-[-11%] w-[7%] lg:block hidden z-10' /> */}
             </section>
         </>
     )

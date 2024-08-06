@@ -1,8 +1,6 @@
 "use client"
 import React, { useState } from 'react'
 import Image from 'next/image';
-import Link from 'next/link';
-
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -97,6 +95,13 @@ const VideoAnimation = () => {
         },
 
     ];
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className='pt-[50px] pb-[90px] md:py-[70px] relative'>
@@ -116,8 +121,8 @@ const VideoAnimation = () => {
                 <div className="px-5 lg:px-8 xl:px-0 max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
                         <div className="col-span-12">
-                            <h2 class="text-black font-[700] text-[30px] md:text-[40px] lg:text-[48px] capitalize mb-[8px] leading-[1.1] font-sans text-center">Choose Your Preferred Kind Of <span class="text-[#f36e16]"> Video Animation</span></h2>
-                            <p class="text-[#333] text-[16px] mb-0 poppins leading-[1.43] text-center">We make creative Video animations of all types Come to us and we will make amazing animated videos for you!</p>
+                            <h2 className="text-black font-[700] text-[30px] md:text-[40px] lg:text-[48px] capitalize mb-[8px] leading-[1.1] font-sans text-center">Choose Your Preferred Kind Of <span className="text-[#f36e16]"> Video Animation</span></h2>
+                            <p className="text-[#333] text-[16px] mb-0 poppins leading-[1.43] text-center">We make creative Video animations of all types Come to us and we will make amazing animated videos for you!</p>
                         </div>
                     </div>
                     <div className="grid grid-cols-12 gap-y-7 items-center md:mt-9 lg:mt-16">
@@ -136,7 +141,7 @@ const VideoAnimation = () => {
                                         </button>
                                     </div>
                                     <div className="btn1 group">
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-[14px] md:text-[18px] rounded-[30px] text-[#282828] font-[800] font-sans group-hover:bg-[#f36e16] group-hover:duration-700 duration-700 ease-in-out group-hover:text-white py-[14px] px-[35px] group-hover:px-[35px] flex items-center relative'>
+                                        <a href="#href" onClick={handleChatOpen} className='text-[14px] md:text-[18px] rounded-[30px] text-[#282828] font-[800] font-sans group-hover:bg-[#f36e16] group-hover:duration-700 duration-700 ease-in-out group-hover:text-white py-[14px] px-[35px] group-hover:px-[35px] flex items-center relative'>
                                             Live Chat
                                             <FaCaretRight className='text-[#f36e16] group-hover:text-white absolute right-0 top-[50%] translate-y-[-50%] text-[20px] duration-700 group-hover:right-[9px]' />
                                         </a>

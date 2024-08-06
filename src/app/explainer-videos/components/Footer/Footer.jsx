@@ -169,16 +169,15 @@ const Footer = () => {
             setIsDisabled(false);
         }
     };
-
     return (
         <>
             <footer className="bg-[#00C6F9] pt-[70px] pb-[70px] 3xl:mt-0 relative z-[999]">
                 <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-4">
                         <div className="col-span-12 lg:col-span-4">
-                            <Link href="javascript:;" className="lg:w-[25%]">
+                            <a href='/' className="lg:w-[25%]">
                                 <Image src={logo} width={150} height={54} className="pb-3" alt="Animation Studio" />
-                            </Link>
+                            </a>
                             <div className="col-span-12 lg:col-span-4">
                                 <div className="address_detail">
                                     <ul>

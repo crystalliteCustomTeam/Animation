@@ -130,7 +130,13 @@ const Banner = () => {
             setIsDisabled(false);
         }
     };
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className='pt-[120px] pb-[60px] md:pt-[160px] md:pb-[80px] lg:pt-[140px] lg:pb-[60px] relative h-full'>
@@ -156,7 +162,7 @@ const Banner = () => {
                                         </Link>
                                     </div>
                                     <div>
-                                        <Link href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-black font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-white hover:duration-700 hover:transition-all'>
+                                        <Link href="#href" onClick={handleChatOpen} className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-black font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-white hover:duration-700 hover:transition-all'>
                                             <Image src={Chats} alt='Infinity Animation' className='brightness-100 invert-[1]' />
                                             Live Chat
                                         </Link>

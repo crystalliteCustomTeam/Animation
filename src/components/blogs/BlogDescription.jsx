@@ -19,34 +19,40 @@ function BlogDescription({ content }) {
     const Divider = [
         {
             content: `Elevating Your Project's Visuals Partner With Houston Animation`,
-            href:'#content-1'
+            href: '#content-1'
         },
         {
             content: `Discover Unparalleled Creativity At Infinity Animations`,
-            href:'#content-2'
+            href: '#content-2'
         },
         {
             content: `Elevating Your Project's Visuals`,
-            href:'#content-3'
+            href: '#content-3'
         },
         {
             content: `Security Measurements`,
-            href:'#content-4'
+            href: '#content-4'
         },
         {
             content: `Discover Unparalleled Creativity At Infinity Animations, Your Gateway To Transformative Visual Storytelling.`,
-            href:'#content-5'
+            href: '#content-5'
         },
         {
             content: `Discover Unparalleled Creativity At Infinity Animations,`,
-            href:'#content-6'
+            href: '#content-6'
         },
         {
             content: `Elevating Your Project's Visuals`,
-            href:'#content-7'
+            href: '#content-7'
         },
     ];
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-12 bg-none  bg-no-repeat bg-center bg-cover relative `}>
             <div className="container">
@@ -88,16 +94,16 @@ function BlogDescription({ content }) {
                                             </p>
                                         </div>
                                         <div className={`col-span-12 xl:col-span-3 ${style.circle} flex flex-col justify-center items-end xl:items-start pe-[85px] xl:pe-0`}>
-                                                <CTA
-                                                    text="Hire Now"
-                                                    icon="/icons/arrow-red.png"
-                                                    iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2 drop-shadow-xl"
-                                                    bg="bg-prime"
-                                                    color={`text-white flex justify-between w-full px-[25px]`}
-                                                    border={`border-2 border-[#fff]`}
-                                                    hover="hover:bg-prime"
-                                                    href="javascript:$zopim.livechat.window.show();"
-                                                />
+                                            <CTA
+                                                text="Hire Now"
+                                                icon="/icons/arrow-red.png"
+                                                iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2 drop-shadow-xl"
+                                                bg="bg-prime"
+                                                color={`text-white flex justify-between w-full px-[25px]`}
+                                                border={`border-2 border-[#fff]`}
+                                                hover="hover:bg-prime"
+                                                href="#href" onClick={handleChatOpen}
+                                            />
                                         </div>
                                     </div>
                                 }
@@ -120,14 +126,14 @@ function BlogDescription({ content }) {
                                     Quick Links
                                 </h5>
 
-                                <div class="grid grid-cols-1 divide-y-2 divide-gray-500 pb-[10px] ">
-                                {Divider.map((items, index) => (
-                                    <div key={index} className={`${style.Diver} ${index === activeIndex ? style.DiverActive : style.DiverHover} `} onClick={() => handleCardHover(index)}>
-                                        <a className="text-[14px] sm:text-[16px] px-[25px] py-[12px] text-white text-opacity-90 font-[300] font-sans leading-[1.52857143] tracking-wider text-start " href={items.href}>
-                                            {items.content}
-                                        </a>
-                                    </div>
-                                     ))}
+                                <div className="grid grid-cols-1 divide-y-2 divide-gray-500 pb-[10px] ">
+                                    {Divider.map((items, index) => (
+                                        <div key={index} className={`${style.Diver} ${index === activeIndex ? style.DiverActive : style.DiverHover} `} onClick={() => handleCardHover(index)}>
+                                            <a className="text-[14px] sm:text-[16px] px-[25px] py-[12px] text-white text-opacity-90 font-[300] font-sans leading-[1.52857143] tracking-wider text-start " href={items.href}>
+                                                {items.content}
+                                            </a>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
 
@@ -137,7 +143,7 @@ function BlogDescription({ content }) {
                                 </h5>
                                 <div className="grid grid-cols-12 mb-5 py-1">
                                     <div className="col-span-3 ">
-                                        <Image src={BlogImg1} width={70} />
+                                        <Image src={BlogImg1} alt='Blog Image' width={70} />
                                     </div>
                                     <div className="col-span-9 flex flex-col justify-center md:justify-end text-start ps-2">
                                         <span className='text-white text-opacity-90 text-[17px] font-normal poppins '>Be the First to Hire Our <br /> Professional Animators</span>
@@ -145,7 +151,7 @@ function BlogDescription({ content }) {
                                 </div>
                                 <div className="grid grid-cols-12 mb-5 py-1">
                                     <div className="col-span-3 ">
-                                        <Image src={BlogImg2} width={70} />
+                                        <Image src={BlogImg2} alt='Blog Image' width={70} />
                                     </div>
                                     <div className="col-span-9 flex flex-col justify-center md:justify-end text-start ps-2">
                                         <span className='text-white text-opacity-90 text-[17px] font-normal poppins '>Be the First to Hire Our <br /> Professional Animators</span>
@@ -153,7 +159,7 @@ function BlogDescription({ content }) {
                                 </div>
                                 <div className="grid grid-cols-12 mb-5 py-1">
                                     <div className="col-span-3 ">
-                                        <Image src={BlogImg1} width={70} />
+                                        <Image src={BlogImg1} alt='Blog Image' width={70} />
                                     </div>
                                     <div className="col-span-9 flex flex-col justify-center md:justify-end text-start ps-2">
                                         <span className='text-white text-opacity-90 text-[17px] font-normal poppins '>Be the First to Hire Our <br /> Professional Animators</span>
@@ -161,7 +167,7 @@ function BlogDescription({ content }) {
                                 </div>
                                 <div className="grid grid-cols-12 mb-5 py-1">
                                     <div className="col-span-3 ">
-                                        <Image src={BlogImg2} width={70} />
+                                        <Image src={BlogImg2} alt='Blog Image' width={70} />
                                     </div>
                                     <div className="col-span-9 flex flex-col justify-center md:justify-end text-start ps-2 ">
                                         <span className='text-white text-opacity-90 text-[17px] font-normal poppins '>Be the First to Hire Our <br /> Professional Animators</span>
@@ -199,16 +205,16 @@ function BlogDescription({ content }) {
                                     <p className={`text-[20px] xl:text-[26px] font-normal font-sans leading-tight mb-4 capitalize text-center lg:w-[70%]`}>
                                         Hire A Animation Expert On This Topic.
                                     </p>
-                                        <CTA
-                                            text="Hire Now"
-                                            icon="/icons/arrow-red.png"
-                                            iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2 drop-shadow-xl"
-                                            bg="bg-[#fff]"
-                                            color={`text-black flex justify-center`}
-                                            border={`border-2 border-[#fff]`}
-                                            hover="hover:bg-prime"
-                                            href="javascript:$zopim.livechat.window.show();"
-                                        />
+                                    <CTA
+                                        text="Hire Now"
+                                        icon="/icons/arrow-red.png"
+                                        iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2 drop-shadow-xl"
+                                        bg="bg-[#fff]"
+                                        color={`text-black flex justify-center`}
+                                        border={`border-2 border-[#fff]`}
+                                        hover="hover:bg-prime"
+                                        href="#href" onClick={handleChatOpen}
+                                    />
                                 </div>
                             </div>
                         </div>

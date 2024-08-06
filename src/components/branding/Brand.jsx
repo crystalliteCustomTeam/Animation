@@ -30,6 +30,13 @@ const Testimonial = ({ content }) => {
             }
         ]
     };
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className="w-full flex py-8 md:py-12 lg:py-16">
@@ -64,7 +71,7 @@ const Testimonial = ({ content }) => {
                             color={`text-white`}
                             border={`border-2 border-[#fff]`}
                             hover="hover:bg-prime"
-                            href="javascript:$zopim.livechat.window.show();"
+                            href="#href" onClick={handleChatOpen}
                         />
                     </div>
                 </div>

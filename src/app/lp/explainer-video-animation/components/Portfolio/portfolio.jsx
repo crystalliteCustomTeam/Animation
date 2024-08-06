@@ -47,7 +47,13 @@ const Portfolio = ({ content }) => {
         const video = e.currentTarget.querySelector('video');
         video.pause();
     };
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className={`w-full flex items-center justify-start pb-12 pt-6 py-[50px] lg:py-[90px] bg-[#F3F3F3]`}>
@@ -91,9 +97,9 @@ const Portfolio = ({ content }) => {
                             )}
                         </div>
                         <div className="mt-10 w-max mx-auto">
-                            <a href='javascript:$zopim.livechat.window.show();' className='flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                            <button onClick={handleChatOpen} className='flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                 Make an Animation
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>

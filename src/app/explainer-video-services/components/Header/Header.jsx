@@ -6,6 +6,7 @@ import logo from "media/images/logo.gif";
 import Chat from "media/video-explainer/cht-icon.png"
 import email from "media/animating-studio/email.svg";
 import flag from "media/video-explainer/flag-icon.png"
+import Link from 'next/link';
 
 
 const HeaderLP = () => {
@@ -45,7 +46,13 @@ const HeaderLP = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [lastScrollTop]);
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <header className={`fixed left-0 top-0 py-5 z-50 w-full ${isScrolled ? 'bg-[#003465] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-3' : ''}`}>
@@ -66,12 +73,12 @@ const HeaderLP = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href='javascript:$zopim.livechat.window.show();' className='flex items-center text-white font-normal poppins border-2 xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px]'>
+                                        <Link href="#href" onClick={handleChatOpen} className='flex items-center text-white font-normal poppins border-2 xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px]'>
                                             <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] xl:block hidden' />
                                             <span className='text-[14px] lg:text-[13px] xl:text-[14px] text-white px-[4px] font-normal poppins'>
                                                 Live Chat
                                             </span>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button onClick={popupHandle} className='flex items-center text-[14px] lg:text-[13px] xl:text-[14px] text-white font-medium poppins xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px] bg-[#A70A0E]'>

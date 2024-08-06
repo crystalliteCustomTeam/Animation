@@ -9,7 +9,13 @@ import CTA from '../cta/CTA';
 
 const BuzzFlick = ({ content }) => {
     const { title, para, conceptContent, isBtn, isEducateBuzz, educateBuzz } = content;
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className='xl:pt-36 lg:pb-16 md:pb-12 pb-8 relative'>
@@ -80,7 +86,7 @@ const BuzzFlick = ({ content }) => {
                                 color={`text-white`}
                                 border={`border-2 border-[#f5090b]`}
                                 hover="hover:bg-transparent"
-                                href="javascript:$zopim.livechat.window.show();"
+                                href="#href" onClick={handleChatOpen}
                             />
                         </div> :
                         null

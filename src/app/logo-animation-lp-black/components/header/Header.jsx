@@ -40,6 +40,13 @@ const HeaderLP = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [lastScrollTop]);
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <header className={`fixed left-0 top-0 py-3 z-50 w-full ${isScrolled ? 'bg-white shadow-lg' : 'bg-white'} ${isScrollDown ? 'pt-4 md:pt-3' : ''}`}>
@@ -54,7 +61,7 @@ const HeaderLP = () => {
                             <div className="nav_lists">
                                 <ul className='flex items-center justify-end gap-x-4 xl:gap-x-7'>
                                     <li>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center'>
+                                        <a href="#href" onClick={handleChatOpen} className='flex items-center'>
                                             <Image src={Chat} alt='UK' className='object-contain brightness-[0]' />
                                             <span className='text-[13px] text-black py-[10px] px-[8px] font-[700] font-sans'>
                                                 Live Chat

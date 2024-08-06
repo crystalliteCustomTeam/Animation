@@ -10,6 +10,13 @@ const Banner = () => {
     const popupHandle = () => {
         togglePopup(popup);
     }
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className='relative pt-[140px] pb-[100px] lg:pb-[0] sm:pt-[200px] h-full lg:h-screen lg:max-h-[600px] overflow-hidden'>
@@ -39,7 +46,7 @@ const Banner = () => {
                                         color={`text-white`}
                                         border={`border-2 border-[#fff]`}
                                         hover="hover:bg-prime"
-                                        href="javascript:$zopim.livechat.window.show();"
+                                        href="#href" onClick={handleChatOpen}
                                     />
                                 </div>
                             </div>
@@ -47,7 +54,7 @@ const Banner = () => {
                         <div className='md:block hidden'>
                             <div className="pl-[150px]">
                                 <div className="group lpbannerBtn">
-                                    <Link href="javascript:;" className='w-[150px] lg:w-[200px] h-[150px] lg:h-[200px] border-[6px] border-white flex items-center justify-center relative bg-[#f5090b] rounded-[50%] '>
+                                    <Link href="#href" className='w-[150px] lg:w-[200px] h-[150px] lg:h-[200px] border-[6px] border-white flex items-center justify-center relative bg-[#f5090b] rounded-[50%] '>
                                         <FaPlay className='absolute group-hover:left-[50%] group-hover:top-[33%] w-[25%] h-[25%] text-[25px] lpHover' />
                                     </Link>
                                 </div>

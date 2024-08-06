@@ -45,7 +45,13 @@ const HeaderLP = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [lastScrollTop]);
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <header className={`fixed left-0 top-0 py-3 z-50 w-full ${isScrolled ? 'bg-[#542f30fa] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-3 md:pt-3' : ''}`}>
@@ -74,7 +80,7 @@ const HeaderLP = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center'>
+                                        <a href="#href" onClick={handleChatOpen} className='flex items-center'>
                                             <Image src={Chat} alt='UK' className='w-auto object-contain grayscale-[1] brightness-[100]' />
                                             <span className='text-[13px] text-white py-[10px] px-[8px] font-[700] font-sans'>
                                                 Live Chat
@@ -93,7 +99,7 @@ const HeaderLP = () => {
                             <ul>
                                 <li>
                                     <alert href="tel:833-666-6689;" className='flex items-center justify-end gap-x-3 text-white font-sans'>
-                                        <Image src={telephone} loading="lazy" width="56" height="52" class="w-[15px]" alt='Infinity Animations' />
+                                        <Image src={telephone} loading="lazy" width="56" height="52" className="w-[15px]" alt='Infinity Animations' />
                                         833-666-6689
                                     </alert>
                                 </li>

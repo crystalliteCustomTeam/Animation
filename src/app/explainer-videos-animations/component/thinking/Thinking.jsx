@@ -1,23 +1,18 @@
 "use client"
 import Image from "next/image";
-import { usePathname } from 'next/navigation';
 // Import Components
 import styles from '@/app/explainer-videos-animations/component/thinking/thinking.module.css';
 import slider1 from "media/banner/slider1.png"
 import slider2 from "media/banner/slider2.png"
 import slider3 from "media/banner/slider3.png"
 import starp from "media/banner/starp.png"
-import { useState, useEffect } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import prev from "media/banner/prev.png"
 import next from "media/banner/next.png"
 
-
 const Video = () => {
-
     const settings = {
         dots: true,
         arrow: true,
@@ -51,8 +46,8 @@ const Video = () => {
                 <div class={`container mx-auto ${styles.pointer} `}>
                     <div class={`md:grid md:grid-cols-1`}>
                         <div className={styles.element}>
-                            <h3 className={`fontsfpro mb-0 ${styles.heading}`}>How <span class="colorred2">Our </span>
-                                Clients Are <span class="colorred2">Thanking Us </span> </h3>
+                            <h3 className={`fontsfpro mb-0 ${styles.heading}`}>How <span className="colorred2">Our </span>
+                                Clients Are <span className="colorred2">Thanking Us </span> </h3>
                             <p className={styles.words}>
                                 Our experts leave no stone unturned in providing the desired outcome of our clients
                             </p>
@@ -160,20 +155,9 @@ const Video = () => {
                                     <p className={styles.start}>The whole team of Infinity Animations was extremely responsive and helpful. The videos were produced on time.  </p>
                                 </div>
                             </div>
-
-
-
-
-
-
-
-
                         </Slider>
-
-
                     </div>
                 </div>
-
             </section>
         </>
     )

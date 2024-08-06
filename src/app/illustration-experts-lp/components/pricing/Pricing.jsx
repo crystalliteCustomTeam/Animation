@@ -1,4 +1,5 @@
 "use client"
+import React from 'react'
 import Image from "next/image";
 import usePopup from "@/app/configs/store/Popup";
 import styles from "./packages.module.css";
@@ -40,7 +41,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "javascript:$zopim.livechat.window.show();"
+                href: "#href"
             },
         ],
     },
@@ -73,7 +74,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "javascript:$zopim.livechat.window.show();"
+                href: "#href"
             },
         ],
     },
@@ -108,7 +109,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "javascript:$zopim.livechat.window.show();"
+                href: "#href"
             },
         ],
     },
@@ -145,7 +146,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "javascript:$zopim.livechat.window.show();"
+                href: "#href"
             },
         ],
     },
@@ -158,7 +159,13 @@ const Pricing = ({ content }) => {
     const popupHandle = () => {
         togglePopup(popup)
     }
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className={`w-full flex items-center justify-start pt-16 pb-3`}>
@@ -174,7 +181,7 @@ const Pricing = ({ content }) => {
                             <div className={`${styles.cardsMainDiv}`}>
                                 {packages.map((pkg, index) => (
                                     <div key={index} className={`relative ${pkg.mblSpc} h-full ${styles.cards}`}>
-                                        <div key={index} className={`absolute top-[-7%] md:top-[-10%] lg:top-[-7%] xl:top-[-8%] left-[12%] h-[115px] w-[75%] -z-10 rounded-3xl flex items-start justify-center pt-4 gap-2 
+                                        <div className={`absolute top-[-7%] md:top-[-10%] lg:top-[-7%] xl:top-[-8%] left-[12%] h-[115px] w-[75%] -z-10 rounded-3xl flex items-start justify-center pt-4 gap-2 
                                             ${(index === 1 || index === 3) ? 'bg-[#262626]' : 'bg-third'}`}>
                                             {Array.from({ length: index + 1 }).map((_, i) => (
                                                 <Image key={i} src={star} className="w-[6%]" alt="Infinity Animation" />
@@ -209,12 +216,12 @@ const Pricing = ({ content }) => {
                                                 </div>
                                                 <div>
                                                     <p className="text-[15px] font-bold font-sans">Want To Discuss</p>
-                                                    <a href="javascript:$zopim.livechat.window.show();" className="font-sans text-[14px]">Live Chat Now</a>
+                                                    <a href="#href" onClick={handleChatOpen} className="font-sans text-[14px]">Live Chat Now</a>
                                                 </div>
                                             </div>
                                             <div className="flex justify-between px-6 mt-5">
                                                 {pkg.buttons.map((button, i) => (
-                                                    <>
+                                                    <React.Fragment key={i}>
                                                         {button.text === "Get Started" ? (
                                                             <button key={i} onClick={popupHandle} className={`flex items-center justify-between font-sans ${button.color} w-max px-3 xl:px-5 gap-2 rounded-lg py-[7px]`}>
                                                                 <span className="text-[16px] xl:text-[18px] font-normal font-sans">{button.text}</span>
@@ -226,7 +233,7 @@ const Pricing = ({ content }) => {
                                                                 <Image src={button.image} className={`${button.imgColor} w-[30px]`} alt="Infinity Animation" />
                                                             </a>
                                                         )}
-                                                    </>
+                                                    </React.Fragment>
                                                 ))}
                                             </div>
                                         </div>
@@ -241,4 +248,4 @@ const Pricing = ({ content }) => {
     )
 }
 
-export default Pricing
+export default Pricing 

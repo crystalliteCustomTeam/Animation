@@ -1,8 +1,14 @@
+import usePopup from '@/app/configs/store/Popup';
 import Link from 'next/link'
 import React from 'react'
 import { FaCheck } from 'react-icons/fa'
 
 const AnimatedLogo = () => {
+    // PopUp Code
+    const { popup, togglePopup } = usePopup();
+    const popupHandle = () => {
+        togglePopup(popup);
+    }
     return (
         <>
             <section className='pt-[60px] pb-[60px]'>
@@ -72,9 +78,9 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <Link href="javascript:;" className='bg-[#a06b43] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <button onClick={popupHandle} className='bg-[#a06b43] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
-                                    </Link>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -141,9 +147,9 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <Link href="javascript:;" className='bg-[#b6b8b9] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <button onClick={popupHandle} className='bg-[#b6b8b9] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
-                                    </Link>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -210,9 +216,9 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <Link href="javascript:;" className='bg-[#b9a77c] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <button onClick={popupHandle} className='bg-[#b9a77c] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
-                                    </Link>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -273,9 +279,9 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <Link href="javascript:;" className='bg-[#272727] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <button onClick={popupHandle} className='bg-[#272727] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
-                                    </Link>
+                                    </button>
                                 </div>
                             </div>
                         </div>

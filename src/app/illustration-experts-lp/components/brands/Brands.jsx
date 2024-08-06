@@ -13,10 +13,17 @@ const Brands = ({ content }) => {
     const popupHandle = () => {
         togglePopup(popup)
     }
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className={`py-[25px] lg:py-[50px] bg-cover bg-center bg-no-repeat ${backgroundImage} relative `}>
-            <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
+                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-1">
                         <div className="content text-center md:text-start">
                             <p className='text-[#ffffff] text-[20px] md:text-[15px] lg:text-[25px] montserrat font-light py-[20px] leading-[1.2] '>
@@ -29,7 +36,7 @@ const Brands = ({ content }) => {
 
                         </div>
                         <div className="btns flex-wrap flex items-center justify-center md:justify-start gap-y-3 gap-1 md:gap-5 mt-6">
-                        <div className="flex gap-6">
+                            <div className="flex gap-6">
                                 <CTA
                                     text="Get Started"
                                     icon="/icons/arrow-red.png"
@@ -47,7 +54,7 @@ const Brands = ({ content }) => {
                                     color={`text-white`}
                                     border={`border-2 border-[#fff]`}
                                     hover="hover:bg-prime"
-                                    href="javascript:$zopim.livechat.window.show();"
+                                    href="#href" onClick={handleChatOpen}
                                 />
                             </div>
                             {isBtn ? <div className="btn">

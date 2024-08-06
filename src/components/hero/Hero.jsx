@@ -122,7 +122,13 @@ const Hero = ({ content }) => {
         default:
             break;
     }
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className={`w-full h-[100vh] flex items-center justify-start sm:pb-5 bg-none bg-no-repeat relative overflow-hidden z-1 ${backgroundVideo} top-[97px] lg:top-auto`}>
@@ -180,7 +186,7 @@ const Hero = ({ content }) => {
                                     color={`text-white`}
                                     border={`border-2 border-[#fff]`}
                                     hover="hover:bg-prime"
-                                    href="javascript:$zopim.livechat.window.show();"
+                                    href="#href" onClick={handleChatOpen}
                                 />
                             </div>
                             <AutoScroll wrapperClass="mt-10 lg:mt-10 mb-10 lg:mb-0" options={{ loop: true, align: "start" }}>

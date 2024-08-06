@@ -15,7 +15,13 @@ const Brands = ({ content }) => {
     const popupHandle = () => {
         togglePopup(popup)
     }
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className='py-[50px] lg:py-[80px] bg-cover bg-center bg-no-repeat bg-[url("../../public/video-explainer2/brand-bg1.png")] relative'>
@@ -36,7 +42,7 @@ const Brands = ({ content }) => {
                                 </button>
                             </div>
                             <div className="btn">
-                                <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[16px] text-[#1c2a49] hover:text-white bg-white hover:bg-[#1c2a49] font-bold montserrat py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                <a href="#href" onClick={handleChatOpen} className='flex items-center text-[16px] text-[#1c2a49] hover:text-white bg-white hover:bg-[#1c2a49] font-bold montserrat py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                     Live Chat
                                 </a>
                             </div>

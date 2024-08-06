@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import { FaPhoneAlt } from 'react-icons/fa'
@@ -12,6 +13,13 @@ import Award5 from "media/infinity-studio-lp-2/world-5.png"
 import Chats from "media/infinity-studio-lp-new/chat-icon.svg"
 
 const WorldClass = () => {
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <section className='bg-white py-[50px] md:py-[90px]'>
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
@@ -45,7 +53,7 @@ const WorldClass = () => {
                     </a>
                 </div>
                 <div>
-                    <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all'>
+                    <a href="#href" onClick={handleChatOpen} className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all'>
                         <Image src={Chats} alt='Infinity Animation' />
                         Live Chat
                     </a>

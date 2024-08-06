@@ -49,7 +49,7 @@ const TestimonialSlider = () => {
         },
     ]
     return (
-        <swiper-container ref={swiperRef} init={false} class="md:h-[700px] h-[800px]">
+        <swiper-container ref={swiperRef} init={false}>
             {
                 testiCard && testiCard.map((e, i) => (
                     <swiper-slide key={i}>

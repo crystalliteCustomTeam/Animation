@@ -22,7 +22,13 @@ import { AutoScroll } from '@/components/sliders';
 
 const Hero = ({ content }) => {
     const { title, para, } = content;
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className={`w-full lg:h-[100vh] flex items-center justify-start mt-0 md:mt-10 lg:mt-0 mb-0 md:mb-16 lg:mb-5 bg-none bg-no-repeat relative overflow-hidden z-1 top-[97px] lg:top-auto`}>
@@ -53,7 +59,7 @@ const Hero = ({ content }) => {
                                     color={`text-white`}
                                     border={`border-2 border-[#fff]`}
                                     hover="hover:bg-prime"
-                                    href="javascript:$zopim.livechat.window.show();"
+                                    href="#href" onClick={handleChatOpen}
                                 />
                             </div>
                             <AutoScroll wrapperClass="mt-[40px] border-t-2 border-gray-500 pt-4" options={{ loop: true, align: "start" }}>
@@ -69,10 +75,10 @@ const Hero = ({ content }) => {
                         <div className={`${styles.bannerImg} relative col-span-12 lg:col-span-7`}>
                             <div className="flex justify-between relative">
                                 <div>
-                                    <Image src={topLeft} className={`${styles.topLeft}`} />
+                                    <Image src={topLeft} alt='Infinity Animation' className={`${styles.topLeft}`} />
                                 </div>
                                 <div>
-                                    <Image src={topRight} className={`${styles.topRight}`} />
+                                    <Image src={topRight} alt='Infinity Animation' className={`${styles.topRight}`} />
                                 </div>
 
                             </div>
@@ -80,7 +86,7 @@ const Hero = ({ content }) => {
                                 <Image src={BannerImg} alt="Infinity Animations" />
                             </div>
                             <div>
-                                <Image src={bottomRight} className={`${styles.bottomRight}`} />
+                                <Image src={bottomRight} alt='Infinity Animation' className={`${styles.bottomRight}`} />
                             </div>
                         </div>
                     </div>

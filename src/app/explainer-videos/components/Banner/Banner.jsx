@@ -33,6 +33,13 @@ const Banner = ({ content }) => {
 
         return <div ref={containerRef}>{props.children}</div>;
     }
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className='pt-[120px] md:pt-[150px] pb-[50px] md:pb-[100px] relative' id='banner'>
@@ -82,7 +89,7 @@ const Banner = ({ content }) => {
                                 Call Now
                             </a>
                         </div>
-                        <a href="javascript:$zopim.livechat.window.show();" className="chat flex items-center gap-2">
+                        <a href="#href" onClick={handleChatOpen} className="chat flex items-center gap-2">
                             <Image src={chatIcon} alt='chat-icon' className='w-[25px] ml-[10px]' />
                             <div className="text">
                                 <span className='block montserrat text-[14px] font-[600] text-[#FF2D4B] leading-[14px]'>Chat Now to Avail 50% OFF</span>

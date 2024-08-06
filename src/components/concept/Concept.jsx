@@ -11,6 +11,13 @@ import icon4 from "media/icons/concept-icon4.png"
 
 const Concept = ({ content }) => {
     const { title, para } = content;
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <><section className="pt-6 md:pt-20 mb-[40px] lg:mb-[-40px]">
             <div className='flex items-center justify-around'>
@@ -98,7 +105,7 @@ const Concept = ({ content }) => {
                                 color={`text-white`}
                                 border={`border-2 border-[#fff]`}
                                 hover="hover:bg-prime"
-                                href="javascript:$zopim.livechat.window.show();"
+                                href="#href" onClick={handleChatOpen}
                             />
                         </div>
                     </div>

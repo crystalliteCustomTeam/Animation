@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import CTA from "@/components/cta/CTA";
 
 const Boost = ({ content }) => {
-    const { title, para, btnBg, btnColor, btnBorder, btnHover, flodImg, boostContent } = content;
+    const { title, para, flodImg, boostContent } = content;
     // Set styling
     const router = usePathname();
     let padding;
@@ -16,6 +16,13 @@ const Boost = ({ content }) => {
         default:
             break;
     }
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className={`w-full flex py-6 md:py-8 lg:py-16`}>
@@ -56,7 +63,7 @@ const Boost = ({ content }) => {
                                     color={`text-white`}
                                     border={`border-2 border-[#fff]`}
                                     hover="hover:bg-prime"
-                                    href="javascript:$zopim.livechat.window.show();"
+                                    href="#href" onClick={handleChatOpen}
                                 />
                             </div>
                         </div>

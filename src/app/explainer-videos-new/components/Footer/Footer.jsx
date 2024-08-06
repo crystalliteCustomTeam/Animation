@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="px-5 lg:px-8 xl:px-0 max-w-7xl mx-auto">
                     <div className="flex md:flex-row flex-col gap-y-6 items-center justify-between lg:w-11/12 mx-auto">
                         <div className="links">
-                            <Link href="javascript:;" className='text-[14px] lg:text-[16px] text-white poppins'>Privacy and Policy</Link>
+                            <Link href="/privacy-policy" className='text-[14px] lg:text-[16px] text-white poppins'>Privacy and Policy</Link>
                         </div>
                         <div className="payment_methods">
                             <Image src={PaymentMethods} alt='Infinity Animations' />

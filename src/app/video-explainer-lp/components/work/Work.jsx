@@ -4,7 +4,6 @@ import React from 'react'
 // ==== Images 
 import InnerImage from "media/video-explainer/process-inner-bg.png"
 
-
 const Work = () => {
     return (
         <>

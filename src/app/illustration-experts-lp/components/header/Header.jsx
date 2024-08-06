@@ -64,7 +64,7 @@ const HeaderLP = () => {
                                             <span className='text-[13px] text-white py-[10px] px-[8px] font-[700] font-sans'>queries@infinityanimations.com</span>
                                         </a>
                                     </li>
-                                    
+
                                     <li>
                                         <button onClick={popupHandle} className='flex items-center text-[13px] text-white font-[700] font-sans bg-secondary ml-[10px] py-[10px] px-[32px] tracking-[.3px] rounded-full leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
                                             Get Started
@@ -78,7 +78,7 @@ const HeaderLP = () => {
                             <ul>
                                 <li>
                                     <a href="tel:833-666-6689" className='flex items-center justify-end gap-x-3 text-white font-sans'>
-                                        <Image src={telephone} loading="lazy" width="56" height="52" class="w-[15px]" alt='Infinity Animations' />
+                                        <Image src={telephone} loading="lazy" width="56" height="52" className="w-[15px]" alt='Infinity Animations' />
                                         833-666-6689
                                     </a>
                                 </li>

@@ -357,7 +357,13 @@ export default async function Post({ params, searchParams }) {
     //=============== Render ===============
 
     console.log(postData)
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
 
         <>
@@ -529,7 +535,7 @@ export default async function Post({ params, searchParams }) {
                                                         color={`text-black flex justify-center`}
                                                         border={`border-2 border-[#fff]`}
                                                         hover="hover:bg-prime"
-                                                        href="javascript:$zopim.livechat.window.show();"
+                                                        href="#href" onClick={handleChatOpen}
                                                     />
                                                 </div>
                                             </div>

@@ -16,6 +16,13 @@ const Startups = ({ content }) => {
     const handleTabClick = (index) => {
         setActiveTab(index);
     };
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className='py-[30px] md:py-[60px]'>
@@ -56,7 +63,7 @@ const Startups = ({ content }) => {
                                                     color={`text-white`}
                                                     border={`border-2 border-[#fff]`}
                                                     hover="hover:bg-prime"
-                                                    href="javascript:$zopim.livechat.window.show();"
+                                                    href="#href" onClick={handleChatOpen}
                                                 />
                                             </div>
                                         </div>
@@ -77,10 +84,10 @@ const Startups = ({ content }) => {
                                             <h3 className='text-primary-100 text-[25px] lg:text-[37px] font-sans leading-[30px] font-[700] px-[15px] mb-[15px]'>{item.tabTxt}</h3>
                                             <p className=' text-[16px] px-[15px] leading-[20px] text-justify font-light poppins mb-[35px]'>{item.tabDesc}</p>
                                             <div className="btn group px-[15px]">
-                                                <Link href="javascript:;" className='text-[17px] font-bold poppins group-hover:text-white text-primary-100 border-[#f5090b] border-2 rounded-[5px] leading-[19px] mt-[20px] py-[10px] px-[35px] md:w-[50%] lg:w-[36%] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
+                                                <button onClick={popupHandle} className='text-[17px] font-bold poppins group-hover:text-white text-primary-100 border-[#f5090b] border-2 rounded-[5px] leading-[19px] mt-[20px] py-[10px] px-[35px] md:w-[50%] lg:w-[36%] text-center duration-700 group-hover:duration-700 ease-in-out group-hover:bg-[#f5090b] flex items-center justify-center overflow-hidden relative'>
                                                     <FaExternalLinkAlt className='absolute top-[50%] translate-y-[-50%] ml-[-110%] group-hover:ml-[-60%] duration-700 group-hover:duration-700 ease-in-out text-[17px] font-bold poppins group-hover:text-white' />
                                                     <span>Get A Quote</span>
-                                                </Link>
+                                                </button>
                                             </div>
                                         </div>
                                         <div>

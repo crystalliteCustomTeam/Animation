@@ -47,7 +47,7 @@ const ClientThinking = () => {
                             <div className="col-span-12 lg:col-span-4 ">
                                 <div className='card rounded-[15px] shadow-lg relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.svg")] pt-[15px] px-[10px] w-[90%] h-[450px] mx-auto'>
                                     <div className='flex text-end justify-end px-3 py-1'>
-                                        <Image src={quote} className='w-[75px]' />
+                                        <Image src={quote} alt='Quote' className='w-[75px]' />
                                     </div>
                                     <div className='flex flex-col items-center text-center justify-center px-3 py-1 ' >
                                         <Image src={Testi1} alt='testi1' className='  w-[60px]' />
@@ -76,7 +76,7 @@ const ClientThinking = () => {
                             <div className="col-span-12 lg:col-span-4">
                                 <div className='card rounded-[15px] shadow-lg relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.svg")] pt-[15px] px-[10px] w-[85%] h-[425px] mx-auto'>
                                     <div className='flex text-end justify-end px-3 py-1'>
-                                        <Image src={quote} className='w-[75px]' />
+                                        <Image src={quote} alt='Quote' className='w-[75px]' />
                                     </div>
                                     <div className='flex flex-col items-center text-center justify-center px-3 py-1 ' >
                                         <Image src={Testi2} alt='testi2' className='  w-[60px]' />
@@ -105,7 +105,7 @@ const ClientThinking = () => {
                             <div className="col-span-12 lg:col-span-4">
                                 <div className='card rounded-[15px] shadow-lg relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.svg")] pt-[15px] px-[10px] w-[85%] h-[395px] mx-auto'>
                                     <div className='flex text-end justify-end px-3 py-1'>
-                                        <Image src={quote} className='w-[75px]' />
+                                    <Image src={quote} alt='Quote' className='w-[75px]' />
                                     </div>
                                     <div className='flex flex-col items-center text-center justify-center px-3 py-1 ' >
                                         <Image src={Testi3} alt='testi3' className='  w-[60px]' />
@@ -139,7 +139,7 @@ const ClientThinking = () => {
                             <div className='px-2'>
                                 <div className='card rounded-[15px] shadow-lg lg:mx-[12px] relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.svg")] pt-[15px] px-[10px] m-auto w-full h-full lg:h-[430px]'>
                                     <div className='flex text-end justify-end px-3 py-1'>
-                                        <Image src={quote} className='w-[75px]' />
+                                    <Image src={quote} alt='Quote' className='w-[75px]' />
                                     </div>
                                     <div className='flex flex-col items-center text-center justify-center px-3 py-1 ' >
                                         <Image src={Testi1} alt='testi1' className='  w-[60px]' />
@@ -168,7 +168,7 @@ const ClientThinking = () => {
                             <div className='px-2'>
                                 <div className='card rounded-[15px] shadow-lg lg:mx-[12px] relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.svg")] pt-[15px] px-[10px] m-auto w-full h-full lg:h-[400px]'>
                                     <div className='flex text-end justify-end px-3 py-1'>
-                                        <Image src={quote} className='w-[75px]' />
+                                    <Image src={quote} alt='Quote' className='w-[75px]' />
                                     </div>
                                     <div className='flex flex-col items-center text-center justify-center px-3 py-1 ' >
                                         <Image src={Testi2} alt='testi2' className='  w-[60px]' />
@@ -197,7 +197,7 @@ const ClientThinking = () => {
                             <div className='px-2'>
                                 <div className='card rounded-[15px] shadow-lg lg:mx-[12px] relative p-0 translate-y-0 lg:hover:translate-y-[-20px] duration-700 hover:duration-700 bg-cover bg-center bg-[url("../../public/infinity-studio/reviewBg.svg")] pt-[15px] px-[10px] m-auto w-full h-full lg:h-[370px]'>
                                     <div className='flex text-end justify-end px-3 py-1'>
-                                        <Image src={quote} className='w-[75px]' />
+                                    <Image src={quote} alt='Quote' className='w-[75px]' />
                                     </div>
                                     <div className='flex flex-col items-center text-center justify-center px-3 py-1 ' >
                                         <Image src={Testi3} alt='testi3' className='  w-[60px]' />

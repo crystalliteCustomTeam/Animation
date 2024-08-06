@@ -233,7 +233,7 @@ const Streamed = () => {
                                             onClick={() => handleTabClick(index)}>
                                             {tab.label}
                                         </li>
-                                    ))} 
+                                    ))}
                                 </ul>
                                 <div className="tabs-content pt-7 md:pt-12 hidden md:block">
                                     {tabContents[activeTab] && (
@@ -266,8 +266,8 @@ const Streamed = () => {
                                         }}>
                                             <Slider {...testiSlider} className="streamedSlider pt-3">
                                                 {tabContents[activeTab].map((item, index) => (
-                                                    <div className={`py-[25px] px-3 relative `} >
-                                                        <Link key={index} href={item.video} datafancybox="gallery" className={`${styles.shadow} w-full h-full group`}>
+                                                    <div className={`py-[25px] px-3 relative `} key={index}>
+                                                        <Link href={item.video} datafancybox="gallery" className={`${styles.shadow} w-full h-full group`}>
                                                             <div className="overlay relative overflow-hidden h-[263px] rounded-[20px]">
                                                                 <Image src={item.thumbnail} alt="Infinity Animations" height={263} className='min-h-[263px] w-full' />
                                                                 <div className="bg-slate-700/75 h-full w-full absolute left-[50%] top-[50%] translate-x-[-50%] group-hover:translate-y-[-50%] translate-y-[50%] flex items-center justify-center ">

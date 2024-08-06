@@ -31,6 +31,7 @@ import {
 // Import Images
 // import logo from "media/images/black-logo.gif";
 import logo from "media/images/logo.gif";
+import usePopup from "@/app/configs/store/Popup";
 
 const megaMenuItems = [
     {
@@ -61,12 +62,12 @@ const megaMenuItems = [
     {
         title: "Infographics Design",
         icon: PhoneIcon,
-        href: "javascript:;",
+        href: "#href",
     },
     {
         title: "Logo Animation",
         icon: NewspaperIcon,
-        href: "javascript:;",
+        href: "#href",
     },
 ];
 
@@ -87,7 +88,7 @@ function NavList() {
                 <span className="text-white lg:text-white poppins font-semibold text-[16px] hover:text-primary-100 hover:duration-700 duration-700 ease-in-out lg:p-3">
                     Portfolio
                 </span>
-            </Link> 
+            </Link>
             <Link href="#contact">
                 <span className="text-white lg:text-white poppins font-semibold text-[16px] hover:text-primary-100 hover:duration-700 duration-700 ease-in-out lg:p-3">
                     Contact Us
@@ -107,12 +108,18 @@ const Header = () => {
         );
     }, []);
 
+    // PopUp Code
+    const { popup, togglePopup } = usePopup();
+    const popupHandle = () => {
+        togglePopup(popup);
+    }
+
     return (
         <header className={`w-full pt-5 relative z-10`}>
             <div className="px-5 lg:max-w-7xl mx-auto">
                 <Navbar className="max-w-none backdrop-blur-none shadow-none px-0 py-2 rounded-none bg-transparent border-none">
                     <div className="flex items-center justify-between relative">
-                        <Link href="javascript:;" className="logo lg:w-[25%]">
+                        <Link href="#" className="logo lg:w-[25%]">
                             <Image src={logo} alt='logo' width={150} />
                         </Link>
                         <div className="hidden lg:block">
@@ -129,12 +136,12 @@ const Header = () => {
                                 </Link>
                             </div>
                             <div className="lg:block hidden">
-                                <Link
-                                    href="javascript:;"
+                                <button
+                                    onClick={popupHandle}
                                     className="text-[13px] sm:text-[15px] font-semibold leading-[25px] text-white bg-[#FF2D4B] dropShadow rounded-[5px] w-[135px] h-[42px] poppins flex items-center justify-center"
                                 >
                                     Get A Quote
-                                </Link>
+                                </button>
                             </div>
                         </div>
                         <div className="xl:hidden flex items-center gap-x-3">

@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import { FaPhoneAlt } from 'react-icons/fa'
@@ -53,6 +54,13 @@ const AnimationProcess = () => {
             desc: "We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach",
         },
     ]
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
 
     return (
         <section className='bg-black relative'>
@@ -107,7 +115,7 @@ const AnimationProcess = () => {
                                     ))}
                                 </ul>
                                 <div className="btn">
-                                    <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] lg:bg-black hover:duration-700 hover:transition-all'>
+                                    <a href="#href" onClick={handleChatOpen} className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] lg:bg-black hover:duration-700 hover:transition-all'>
                                         <Image src={Chats} alt='Infinity Animation' className='brightness-200 invert-0' />
                                         Live Chat
                                     </a>

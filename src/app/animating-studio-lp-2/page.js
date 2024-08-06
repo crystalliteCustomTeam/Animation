@@ -70,7 +70,7 @@ const page = () => {
             <ExplainerVideo />
             <Brand content={sales} />
             <AnimationProcess />
-            <WhyChoose />
+            <WhyChoose /> 
             <ClientReads />
             <Faqs content={faqs} />
             <Footer />

@@ -22,9 +22,7 @@ const TreeStep = () => {
                             <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                 <div className="pt-[25px] px-[20px] justify-center">
                                     <div className='flex justify-center '>
-                                        {/* <div className='px-2 py-5 bg-white rounded-[150px]'> */}
-                                            <Image src={Card1} height={100} alt='card-1' />
-                                        {/* </div> */}
+                                        <Image src={Card1} height={100} alt='card-1' />
                                     </div>
                                     <div className="content text-center">
                                         <h3 className='text-[#fff] text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] '>Sign Up</h3>
@@ -35,9 +33,7 @@ const TreeStep = () => {
                             <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                 <div className="pt-[25px] px-[20px] ">
                                     <div className='flex justify-center'>
-                                        {/* <div className='px-2 py-5 bg-white rounded-[150px]'> */}
-                                            <Image src={Card2} height={100} alt='card-1' />
-                                        {/* </div> */}
+                                        <Image src={Card2} height={100} alt='card-1' />
                                     </div>
                                     <div className="content text-center">
                                         <h3 className='text-[#fff] text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] '>Illustration Commences</h3>
@@ -48,9 +44,7 @@ const TreeStep = () => {
                             <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                 <div className="pt-[25px] px-[20px] justify-center">
                                     <div className='flex justify-center'>
-                                        {/* <div className='px-2 py-5 bg-white rounded-[150px]'> */}
-                                            <Image src={Card3} height={100} alt='card-1' />
-                                        {/* </div> */}
+                                        <Image src={Card3} height={100} alt='card-1' />
                                     </div>
                                     <div className="content text-center">
                                         <h3 className='text-[#fff] text-[20px] md:text-[25px] font-bold montserrat pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] '>Final Delivery</h3>

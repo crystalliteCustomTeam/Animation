@@ -132,7 +132,13 @@ const Banner = () => {
             setIsDisabled(false);
         }
     };
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className='bg-[#003465f0] lg:bg-[url("../../public/infinity-studio/banner.webp")] bg-[length:100%_100%] bg-center bg-no-repeat h-full 3xl:h-[100vh] pt-[115px] md:pt-[150px] 3xl:pt-[230px] pb-[60px] md:pb-[100px]'>
@@ -191,7 +197,7 @@ const Banner = () => {
                                         Call Now
                                     </a>
                                 </div>
-                                <a href="javascript:$zopim.livechat.window.show();" className="chat flex items-center gap-2">
+                                <a href="#href" onClick={handleChatOpen} className="chat flex items-center gap-2">
                                     <Image src={chatIcon} alt='chat-icon' className='w-[25px] ml-[10px]' />
                                     <div className="text">
                                         <span className='block montserrat text-[14px] font-[400] text-[#ffcb05] leading-[14px]'>Chat Now to Avail 50% OFF</span>
@@ -203,7 +209,7 @@ const Banner = () => {
                         <div className="col-span-12 lg:col-span-4">
                             <form className='bg-[#003465] relative border-[3.5px] rounded-xl border-white w-full mx-auto'>
                                 <div className=' w-[70%] top-0 mx-auto '>
-                                    <Image src={Discount} />
+                                    <Image src={Discount} alt='Infinity Animation' />
                                 </div>
                                 <h3 className='text-white text-[20px] md:text-[22px] leading-[30px] poppins font-[700] text-center pt-[20px] pb-[10px] px-[20px]'>Share Your <span className='text-[#f6c501] '> Animation Idea </span>
                                 </h3>

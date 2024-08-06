@@ -142,7 +142,13 @@ const Banner = ({ content }) => {
             setIsDisabled(false);
         }
     };
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     // Form Code End
     return (
         <>
@@ -181,7 +187,7 @@ const Banner = ({ content }) => {
                                     </button>
                                 </div>
                                 <div className="chat">
-                                    <a href="javascript:$zopim.livechat.window.show();" className='text-[#f36e16] font-[700] text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
+                                    <a href="#href" onClick={handleChatOpen} className='text-[#f36e16] font-[700] text-[20px] leading-[1.2] inline-block cursor-pointer poppins text-center'>
                                         <span className='text-white block text-[13px]'>24/7 Available </span>
                                         Live Chat
                                     </a>

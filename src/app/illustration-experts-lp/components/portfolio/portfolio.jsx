@@ -88,11 +88,17 @@ const Portfolio = () => {
         });
         return <div ref={containerRef}>{props.children}</div>;
     }
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className={` ${styles.portfolioSec} py-[50px] lg:pb-[60px] lg:pt-[100px] bg-[#000]`}>
-            <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
+                <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 justify-content-center ">
                             <h2 className='text-[#fff] text-center font-[700] montserrat text-[30px] lg:text-[35px] pb-3'>Our Portfolio</h2>
@@ -121,27 +127,27 @@ const Portfolio = () => {
                     </div>
 
                     <div className="flex gap-4 md:gap-8 justify-center py-0 lg:py-[35px]">
-                    <div className="flex gap-6">
-                                <CTA
-                                    text="Get Started"
-                                    icon="/icons/arrow-red.png"
-                                    iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2"
-                                    bg="bg-prime"
-                                    color={`text-white`}
-                                    border={`border-2 border-[#f5090b]`}
-                                    hover="hover:bg-transparent"
-                                />
-                                <CTA
-                                    text="Live Chat"
-                                    icon="/icons/chat.png"
-                                    iconCss="w-[40px]"
-                                    bg="bg-[#000]"
-                                    color={`text-white`}
-                                    border={`border-2 border-[#fff]`}
-                                    hover="hover:bg-prime"
-                                    href="javascript:$zopim.livechat.window.show();"
-                                />
-                            </div>
+                        <div className="flex gap-6">
+                            <CTA
+                                text="Get Started"
+                                icon="/icons/arrow-red.png"
+                                iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2"
+                                bg="bg-prime"
+                                color={`text-white`}
+                                border={`border-2 border-[#f5090b]`}
+                                hover="hover:bg-transparent"
+                            />
+                            <CTA
+                                text="Live Chat"
+                                icon="/icons/chat.png"
+                                iconCss="w-[40px]"
+                                bg="bg-[#000]"
+                                color={`text-white`}
+                                border={`border-2 border-[#fff]`}
+                                hover="hover:bg-prime"
+                                href="#href" onClick={handleChatOpen}
+                            />
+                        </div>
                     </div>
                 </div>
             </section>

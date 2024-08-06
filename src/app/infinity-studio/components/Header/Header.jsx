@@ -46,7 +46,13 @@ const HeaderLP = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [lastScrollTop]);
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <header className={`fixed left-0 top-0 py-5 z-50 w-full ${isScrolled ? 'bg-[#003465] shadow-lg' : 'bg-transparent'} ${isScrollDown ? 'pt-4 md:pt-3' : ''}`}>
@@ -67,12 +73,12 @@ const HeaderLP = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href='javascript:$zopim.livechat.window.show();' className='flex items-center text-[15px] text-white font-[700] font-sans bg-[#f6c501] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:duration-700 hover:transition-all'>
+                                        <button onClick={handleChatOpen} className='flex items-center text-[15px] text-white font-[700] font-sans bg-[#f6c501] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:duration-700 hover:transition-all'>
                                             <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100]' />
                                             <span className='text-[15px] text-black px-[8px] font-[700] font-sans'>
                                                 Live Chat
                                             </span>
-                                        </a>
+                                        </button>
                                     </li>
                                     <li>
                                         <button onClick={popupHandle} className='flex items-center text-[15px] text-black font-[700] font-sans bg-[#f6c501] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:duration-700 hover:transition-all'>
@@ -91,7 +97,7 @@ const HeaderLP = () => {
                             <ul>
                                 <li>
                                     <a href="tel:833-666-6689" className='flex items-center justify-end gap-x-3 text-white font-sans'>
-                                        <Image src={telephone} loading="lazy" width="56" height="52" class="w-[15px]" alt='Infinity Animations' />
+                                        <Image src={telephone} loading="lazy" width="56" height="52" className="w-[15px]" alt='Infinity Animations' />
                                         1-833-666-6689
                                     </a>
                                 </li>

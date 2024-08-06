@@ -11,10 +11,10 @@ const Video = () => {
     return (
         <>
             <section className={`newcon ${styles.touch}`}>
-                <div class={`container mx-auto ${styles.pointer} `}>
-                    <div class={`md:grid md:grid-cols-1 items-center ${styles.world}`}>
+                <div className={`container mx-auto ${styles.pointer} `}>
+                    <div className={`md:grid md:grid-cols-1 items-center ${styles.world}`}>
                         <div className={styles.element}>
-                            <h3 className={`fontsfpro mb-0 ${styles.heading}`}>Our  <span class="colorred2">Clients</span>
+                            <h3 className={`fontsfpro mb-0 ${styles.heading}`}>Our  <span className="colorred2">Clients</span>
                             </h3>
                             <Image src={log} className="d-block m-auto mt-5" />
                         </div>

@@ -4,7 +4,6 @@ import React from 'react'
 // ==== Images 
 import Particale from "media/video-explainer/statistic-side-img.png"
 
-
 const Animations = () => {
     return (
         <>

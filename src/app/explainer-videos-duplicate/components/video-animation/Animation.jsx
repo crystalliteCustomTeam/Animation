@@ -23,6 +23,7 @@ import Slide3 from "media/explainer-videos/animate3.png"
 import Arrow from "media/explainer-videos/slide-arrow.png"
 import VideoIco from "media/explainer-videos/play.png"
 import { register } from "swiper/element/bundle";
+import usePopup from '@/app/configs/store/Popup';
 
 const Animation = () => {
     const swiperRef = useRef(null);
@@ -148,6 +149,11 @@ const Animation = () => {
 
         return <div ref={containerRef}>{props.children}</div>;
     }
+    // PopUp Code
+    const { popup, togglePopup } = usePopup();
+    const popupHandle = () => {
+        togglePopup(popup);
+    }
     return (
         <>
             <section className='pt-[40px] md:pt-[70px] pb-[30px] lg:pb-[120px] relative'>
@@ -179,9 +185,9 @@ const Animation = () => {
                                             <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Video Animation Services</h3>
                                             <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We can add that vividness, vibrancy, and a strong taste of zestfulness to those mundane corporate videos, making your brand truly stand out.</p>
 
-                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                            <button onClick={popupHandle} className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                            </Link>
+                                            </button>
                                             <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
                                         </div>
                                     </Link>
@@ -201,9 +207,9 @@ const Animation = () => {
                                             <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Explainer Videos Services</h3>
                                             <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We like to explain things, but it’s not just that…we want your audience to enjoy the seeing and listening experience as well with our explainer videos.</p>
 
-                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                            <button onClick={popupHandle} className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                            </Link>
+                                            </button>
                                             <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
                                         </div>
                                     </Link>
@@ -222,9 +228,9 @@ const Animation = () => {
                                         <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
                                             <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Whiteboard Animation Services</h3>
                                             <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>A whiteboard is a wonderful blank space to start or unleash creativity. Well, truth be told, we don’t view a whiteboard as a whiteboard, we view it as a canvas that can be splendidly colored.</p>
-                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                            <button onClick={popupHandle} className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                            </Link>
+                                            </button>
                                             <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
                                         </div>
                                     </Link>
@@ -243,9 +249,9 @@ const Animation = () => {
                                         <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
                                             <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Video Animation Services</h3>
                                             <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We can add that vividness, vibrancy, and a strong taste of zestfulness to those mundane corporate videos, making your brand truly stand out.</p>
-                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                            <button onClick={popupHandle} className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                            </Link>
+                                            </button>
                                             <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
                                         </div>
                                     </Link>
@@ -264,9 +270,9 @@ const Animation = () => {
                                         <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
                                             <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Explainer Videos Services</h3>
                                             <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>We like to explain things, but it’s not just that…we want your audience to enjoy the seeing and listening experience as well with our explainer videos.</p>
-                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                            <button onClick={popupHandle} className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                            </Link>
+                                            </button>
                                             <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
                                         </div>
                                     </Link>
@@ -285,9 +291,9 @@ const Animation = () => {
                                         <div className="absolute bottom-[2px] left-0 w-full h-full flex items-start justify-end flex-col bg-black/40 rounded-[50px] px-[40px] pb-[40px]">
                                             <h3 className="text-white text-[18px] md:text-[24px] font-sans font-[400]">Whiteboard Animation Services</h3>
                                             <p className='text-white text-[11px] sm:text-[14px] font-sans leading-[16px] lg:w-9/12'>A whiteboard is a wonderful blank space to start or unleash creativity. Well, truth be told, we don’t view a whiteboard as a whiteboard, we view it as a canvas that can be splendidly colored.</p>
-                                            <Link href="javascript:;" className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
+                                            <button onClick={popupHandle} className='text-white font-[600] text-[13px] md:text-[16px] poppins pt-4 flex items-center gap-x-3'>Make an Animation
                                                 <Image src={Arrow} className='w-[10px] h-[10px] object-contain' alt='Arrow' width={8} height={9} />
-                                            </Link>
+                                            </button>
                                             <Image src={VideoIco} alt='video-icon' className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] md:block hidden' />
                                         </div>
                                     </Link>

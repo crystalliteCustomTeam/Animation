@@ -72,7 +72,7 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <Link href="javascript:;" className='bg-[#f5090b] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <Link href="#href" className='bg-[#f5090b] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
                                     </Link>
                                 </div>
@@ -141,7 +141,7 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <Link href="javascript:;" className='bg-white text-black py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <Link href="#href" className='bg-white text-black py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
                                     </Link>
                                 </div>
@@ -210,7 +210,7 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <Link href="javascript:;" className='bg-[#f5090b] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <Link href="#href" className='bg-[#f5090b] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
                                     </Link>
                                 </div>
@@ -273,7 +273,7 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <Link href="javascript:;" className='bg-white text-black py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <Link href="#href" className='bg-white text-black py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
                                     </Link>
                                 </div>

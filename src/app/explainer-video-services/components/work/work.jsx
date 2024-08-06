@@ -21,7 +21,13 @@ function Work({ content }) {
         setClickedItem(clickedItem === index ? null : index);
         setHoveredItem(null);
     };
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <section className="py-[50px] lg:py-[60px] bg-white">
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
@@ -31,7 +37,7 @@ function Work({ content }) {
                             How We Work
                         </h2>
                         <p className="text-[#231F20] text-[16px] poppins font-[400] py-[17px] lg:w-[90%] leading-[20px] md:leading-[22px] mb-0">
-                            We've simplified our video production process as much as possible thanks to our years of experience. <br className='lg:block hidden'/> We have got field experts in each process of video making.
+                            We've simplified our video production process as much as possible thanks to our years of experience. <br className='lg:block hidden' /> We have got field experts in each process of video making.
                         </p>
                     </div>
                     {workList?.map((item, index) => (
@@ -45,7 +51,7 @@ function Work({ content }) {
                             <h3 className={`${clickedItem === index || hoveredItem === index ? "text-[#A70A0E]" : "text-[#003262]"} font-[600] poppins text-[18px] md:text-[24px] lg:text-[28px]`}>
                                 {item.listTitle}
                             </h3>
-                            <a href="javascript:$zopim.livechat.window.show();">
+                            <a href="#href" onClick={handleChatOpen}>
                                 <Image
                                     src={clickedItem === index || hoveredItem === index ? ArrowFill : ArrowUnfill}
                                     alt="Arrow"

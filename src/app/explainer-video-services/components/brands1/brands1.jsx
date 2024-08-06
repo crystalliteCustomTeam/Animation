@@ -7,6 +7,13 @@ import flag from "media/video-explainer/flag-icon.png"
 
 const BrandOne = ({ content }) => {
     const { title, desc } = content;
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className='pb-[30px] pt-[50px] lg:pt-[100px] lg:relative px-4 xl:px-0 bg-white'>
@@ -33,10 +40,10 @@ const BrandOne = ({ content }) => {
                                             </a>
                                         </div>
                                         <div className="btn">
-                                            <a href='javascript:$zopim.livechat.window.show();' className='flex items-center justify-center gap-2 text-[15px] text-white font-[600] poppins bg-transparent h-[40px] xl:h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] border'>
+                                            <button onClick={handleChatOpen} className='flex items-center justify-center gap-2 text-[15px] text-white font-[600] poppins bg-transparent h-[40px] xl:h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] border'>
                                                 <Image src={BtnMsg} alt='Infinity Animations' />
                                                 <span>Live Chat</span>
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>

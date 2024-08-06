@@ -55,7 +55,7 @@ const Animations = ({ content }) => {
                                 <Image src={Logos} alt='Animating Studios' className='w-11/12 mx-auto' />
                             </div>
                             <div className="btn mt-8 lg:mt-12 flex items-center justify-center">
-                                <a href="tel:833-666-6689" class="text-[16px] font-semibold leading-[25px] text-white bg-[#FF2D4B] dropShadow rounded-[5px] w-full sm:w-3/12 mx-auto h-[44px] poppins flex items-center justify-center" >Make an Animation</a>
+                                <a href="tel:833-666-6689" className="text-[16px] font-semibold leading-[25px] text-white bg-[#FF2D4B] dropShadow rounded-[5px] w-full sm:w-3/12 mx-auto h-[44px] poppins flex items-center justify-center" >Make an Animation</a>
                             </div>
                         </div>
                     </div>

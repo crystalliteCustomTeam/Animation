@@ -103,7 +103,7 @@ const BlogPost = () => {
                                                     <h5 className="text-[12px] xl:text-[14px] text-white font-normal font-sans mb-0">Animation Manager</h5>
                                                 </div>
                                             </div>
-                                            <Link href="javascript:;" className={`${styles.readMore} flex flex-row items-center justify-end gap-3 pb-2`}>
+                                            <Link href="#href" className={`${styles.readMore} flex flex-row items-center justify-end gap-3 pb-2`}>
                                                 <div className="flex items-center justify-between border-b-2 border-white-500 w-[100px]">
                                                     <p className="text-[14px] xl:text-[16px] font-sans font-light leading-[1.52857143] text-start text-white text-opacity-80">
                                                         Read More
@@ -113,47 +113,6 @@ const BlogPost = () => {
                                             </Link>
                                         </div>
                                     </div>
-                                    {/* <div className="card rounded-[20px] shadow-2xl h-full bg-[#262626] ">
-                                        <div onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause} className='border rounded-[20px]'>
-                                            <video loading="lazy" muted loop preload="auto" autoPlay={false} className="w-full h-full object-cover rounded-[20px]" >
-                                                <source src={items.image} type="video/mp4" />
-                                            </video>
-                                        </div>
-                                        <div className="content px-[25px] py-[25px]">
-                                            <h5 className='text-[#FF2D4A] text-opacity-90 text-[14px] sm:text-[16px] w-full font-light font-sans leading-[20px] tracking-wider text-start pt-[10px] pb-[15px]'>
-                                                {items.subTitle}
-                                            </h5>
-                                            <h3 className={`text-white text-[20px] md:text-[25px] poppins font-normal font-sans leading-[23px] md:leading-[33px] text-start`}>
-                                                {items.title}
-                                            </h3>
-                                            <p className="text-[14px] xl:text-[16px] font-sans text-white text-opacity-80 font-light leading-[1.52857143] text-start py-[15px]">
-                                                {items.para}
-                                            </p>
-
-                                            <div className="grid grid-cols-6">
-                                                <div className='col-span-4 text-center flex items-start'>
-                                                    <div className="grid grid-cols-12  pt-2">
-                                                        <div className="col-span-3">
-                                                            <Image src={Profile} />
-                                                        </div>
-                                                        <div className="col-span-9 flex flex-col  text-start ps-3 pe-[35px]">
-                                                            <span className='text-[16px] font-normal poppins text-white text-opacity-80'>James D. Surratt</span>
-                                                            <span className='text-[13px] font-normal poppins text-white text-opacity-80'>Animation Manager</span>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <div className=' py-[15px] col-span-2 flex items-start justify-end'>
-                                                    <div className="flex items-center justify-between border-b-2 border-white-500 w-[100px]">
-                                                        <p className="text-[14px] xl:text-[16px] font-sans font-light leading-[1.52857143] text-start text-white text-opacity-80">
-                                                            Read More
-                                                        </p>
-                                                        <FaArrowRightLong />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> */}
                                 </div>
                             ))}
                         </div>
@@ -183,7 +142,7 @@ const BlogPost = () => {
                                                         <h5 className="text-[12px] xl:text-[14px] text-white font-normal font-sans mb-0">Animation Manager</h5>
                                                     </div>
                                                 </div>
-                                                <Link href="javascript:;" className={`${styles.readMore} flex flex-row items-center justify-end gap-3 pb-2`}>
+                                                <Link href="#href" className={`${styles.readMore} flex flex-row items-center justify-end gap-3 pb-2`}>
                                                     <div className="flex items-center justify-between border-b-2 border-white-500 w-[100px]">
                                                         <p className="text-[14px] xl:text-[16px] font-sans font-light leading-[1.52857143] text-start text-white text-opacity-80">
                                                             Read More
@@ -194,17 +153,6 @@ const BlogPost = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* <div className="card rounded-[10px] bg-black shadow-2xl pt-[25px] px-[20px] pb-[35px] h-[375px]">
-                                        <div onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
-                                            <video loading="lazy" muted loop preload="auto" autoPlay={false} className="w-full h-full object-cover rounded-lg" >
-                                                <source src={items.image} type="video/mp4" />
-                                            </video>
-                                        </div>
-                                        <div className="content">
-                                            <h3 className='text-[#fff] text-[20px] md:text-[25px] font-bold font-sans py-[20px] leading-[23px] md:leading-[33px] text-center hover:text-[#FF2D4A]'>{items.title}</h3>
-                                            <p className='text-[14px] xl:text-[16px] font-sans text-[#fff] font-normal leading-[1.52857143] md:px-[10px] text-center '>{items.para}</p>
-                                        </div>
-                                    </div> */}
                                 </div>
                             ))}
                         </Slider>

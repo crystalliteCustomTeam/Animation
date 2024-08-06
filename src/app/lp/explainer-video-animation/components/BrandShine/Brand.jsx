@@ -11,7 +11,14 @@ const Brand = ({ content }) => {
     const popupHandle = () => {
         togglePopup(popup);
     }
-    const { title, subtitle, desc, branImage, isBranImage, btnTxt, css, positionCss, callTxt, isColor } = content
+    const { title, subtitle, desc, branImage, isBranImage, btnTxt, css, positionCss, callTxt, isColor } = content;
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className='py-[30px] md:py-[70px] lg:pt-[60px] bg-white relative'>
@@ -24,10 +31,10 @@ const Brand = ({ content }) => {
                                 <p className='text-white text-[13px] lg:text-[16px] poppins'>{desc}</p>
                                 <div className='flex flex-col md:flex-row items-start md:items-center justify-start gap-4 mt-6'>
                                     <div className="btn w-max">
-                                        <button onClick={popupHandle} class="text-[14px] lg:text-[12px] xl:text-[14px] font-bold text-black bg-white rounded-[5px] px-4 xl:px-10 max-width h-[40px] xl:h-[45px] poppins flex items-center justify-center">{btnTxt}</button>
+                                        <button onClick={popupHandle} className="text-[14px] lg:text-[12px] xl:text-[14px] font-bold text-black bg-white rounded-[5px] px-4 xl:px-10 max-width h-[40px] xl:h-[45px] poppins flex items-center justify-center">{btnTxt}</button>
                                     </div>
                                     <div className="btn w-max">
-                                        <a class="text-[14px] lg:text-[12px] xl:text-[14px] font-bold text-white bg-black rounded-[5px] px-4 xl:px-10 max-width h-[40px] xl:h-[45px] poppins flex items-center justify-center gap-2" href="javascript:$zopim.livechat.window.show();">
+                                        <a className="text-[14px] lg:text-[12px] xl:text-[14px] font-bold text-white bg-black rounded-[5px] px-4 xl:px-10 max-width h-[40px] xl:h-[45px] poppins flex items-center justify-center gap-2" href="#href" onClick={handleChatOpen}>
                                             <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100]' />
                                             <span>
                                                 {callTxt}
@@ -50,7 +57,7 @@ const Brand = ({ content }) => {
                                 <p className='text-[17px] text-white font-sans leading-[22px]'>{desc}</p>
                                 <div className='flex flex-col md:flex-row items-start md:items-center justify-start gap-4 mt-6'>
                                     <div className="btn w-max">
-                                        <a href='javascript:$zopim.livechat.window.show();' class="text-[14px] lg:text-[12px] xl:text-[14px] font-bold text-white bg-black rounded-[5px] px-4 xl:px-10 max-width h-[40px] xl:h-[45px] poppins flex items-center justify-center">Let’s Animate Your Idea</a>
+                                        <button onClick={handleChatOpen} className="text-[14px] lg:text-[12px] xl:text-[14px] font-bold text-white bg-black rounded-[5px] px-4 xl:px-10 max-width h-[40px] xl:h-[45px] poppins flex items-center justify-center">Let’s Animate Your Idea</button>
                                     </div>
                                     <div className='btn w-max'>
                                         <a href="tel:833-666-6689" className='flex items-center gap-2 max-width h-[40px] xl:h-[45px] text-[14px] lg:text-[12px] xl:text-[14px] poppins font-bold text-white'>

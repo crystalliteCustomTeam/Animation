@@ -133,7 +133,13 @@ const Banner = () => {
             setIsDisabled(false);
         }
     };
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <>
             <section className='bg-cover bg-right-top bg-[#003465f0] lg:bg-[url("../../public/video-explainer/banner.jpg")] h-[100%] pt-[180px] lg:pt-[265px] pb-[60px] md:pb-[100px] mt-[-85px]'>
@@ -186,7 +192,7 @@ const Banner = () => {
                                         Call Now
                                     </a>
                                 </div>
-                                <a href="javascript:$zopim.livechat.window.show();" className="chat flex items-center gap-2">
+                                <a href="#href" onClick={handleChatOpen} className="chat flex items-center gap-2">
                                     <Image src={chatIcon} alt='chat-icon' className='w-[25px] ml-[10px]' />
                                     <div className="text">
                                         <span className='block montserrat text-[14px] font-[400] text-[#ffcb05] leading-[14px]'>Chat Now to Avail 50% OFF</span>

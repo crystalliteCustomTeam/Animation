@@ -8,122 +8,123 @@ import facebook from "media/explainer-videos/fb.png";
 import twitter from "media/explainer-videos/twitter.png";
 import instagram from "media/explainer-videos/insta.png";
 import linkedin from "media/explainer-videos/linkedin.png";
+import usePopup from "@/app/configs/store/Popup";
 
 const Footer = () => {
     const quickLinks = [
         {
             text: "Home",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Why Us",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Portfolio",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Process",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Career",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Pricing",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Case Studies",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Contact Us",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Get Quote",
-            link: "javascript:;"
+            link: "#href"
         }
     ];
     const servicesLinks = [
         {
             text: "3D Animation",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "2D Animation",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Whiteboard",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Motion Graphics",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Video Editing",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Logo Animation",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Architectural ",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Visualization",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "CGI-VFX",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Infographics",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Hybrid & Cel",
-            link: "javascript:;"
+            link: "#href"
         },
     ];
     const resourceLinks = [
         {
             text: "Hire 2D Animator",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Hire 3D Animator",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Hire Animator",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Hire Game Designer",
-            link: "javascript:;"
+            link: "#href"
         },
         {
             text: "Hire UI/UX Designer",
-            link: "javascript:;"
+            link: "#href"
         }
     ];
     const otherLinks = [
         {
             text: "Terms of Services",
-            link: "javascript:;",
+            link: "#href",
         },
         {
             text: "Privacy Policy",
-            link: "javascript:;",
+            link: "#href",
         },
     ];
     const socialLinks = [
@@ -144,15 +145,19 @@ const Footer = () => {
             link: "https://www.linkedin.com/"
         },
     ]
-
+    // PopUp Code
+    const { popup, togglePopup } = usePopup();
+    const popupHandle = () => {
+        togglePopup(popup);
+    }
     return (
         <footer className="bg-[#F3F3F3] pt-[70px] 3xl:mt-0 relative z-[999]">
             <div className="px-5 lg:max-w-7xl mx-auto">
                 <div className="flex gap-x-5 pb-8 flex-wrap lg:flex-nowrap justify-between gap-y-5 lg:gap-y-0">
                     <div className="basis-full sm:basis-[55%] md:pr-[55px] lg:basis-[30%]">
-                        <Link href="javascript:;" className="lg:w-[25%]">
+                        <button onClick={popupHandle} className="lg:w-[25%]">
                             <Image src={logo} width={150} height={54} className="pb-3" alt="Animation Studio" />
-                        </Link>
+                        </button>
                         <p className="text-[16px] poppins text-justify text-black mt-3 md:pr-5 pb-10">Animating Studio is a visionary kingdom where creativity knows no bounds. With masterful strokes of artistry, they breathe life into ideas, forging appealing animations that dance with imagination.</p>
 
                         <hr className="border-black " />

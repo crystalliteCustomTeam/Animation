@@ -130,7 +130,13 @@ const Banner = () => {
             setIsDisabled(false);
         }
     };
-
+    // Chat Code
+    const handleChatOpen = (e) => {
+        e.preventDefault();
+        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
+            $zopim.livechat.window.show();
+        }
+    };
     return (
         <section className='pt-[120px] pb-[60px] md:pt-[160px] md:pb-[80px] lg:pt-[130px] lg:pb-[60px] flex items-center justify-center relative'>
             <div className="video-div w-full h-[480px] md:h-full absolute top-0 z-[-1] before:content-[''] before:bg-[#000] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[90] before:opacity-[0.7]">
@@ -149,7 +155,7 @@ const Banner = () => {
                                         Call Now
                                     </a>
                                 </div>
-                                <a href='javascript:$zopim.livechat.window.show();' className='flex items-center gap-2'>
+                                <button onClick={handleChatOpen} className='flex items-center gap-2'>
                                     <Image src={Chats} alt='Infinity Animation' />
                                     <div>
                                         <p className='text-[15px] leading-tight text-white poppins font-normal '>Chat Now to Avail 50% OFF</p>
@@ -157,7 +163,7 @@ const Banner = () => {
                                             Live Chat
                                         </span>
                                     </div>
-                                </a>
+                                </button>
                             </div>
                             <div className='flex items-center gap-7 my-5 md:my-0 md:pt-9'>
                                 <Image src={BannerLogos} alt='Infinity Animation' className='w-6/12' />

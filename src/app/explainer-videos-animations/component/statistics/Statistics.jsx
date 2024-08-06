@@ -1,6 +1,5 @@
 "use client"
-import Image from "next/image";
-import { usePathname } from 'next/navigation';
+import Image from "next/image"; 
 // Import Components
 import styles from '@/app/explainer-videos-animations/component/statistics/statistics.module.css';
 import proven from "media/banner/proven.png"
@@ -10,8 +9,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
 
 const Video = () => {
-
-
   // ===================================
   const [isSliderActive, setIsSliderActive] = useState(true);
   useEffect(() => {
@@ -54,22 +51,17 @@ const Video = () => {
   return (
     <>
       <section className={`newcon ${styles.display}`}>
-        <div class={`container mx-auto ${styles.pointer} `}>
-          <div class={`md:grid md:grid-cols-1`}>
+        <div className={`container mx-auto ${styles.pointer} `}>
+          <div className={`md:grid md:grid-cols-1`}>
             <div className={styles.element}>
-              <h3 className={`fontsfpro mb-0 ${styles.heading}`}>Types Of <span class="colorred2">Explainer </span>
+              <h3 className={`fontsfpro mb-0 ${styles.heading}`}>Types Of <span className="colorred2">Explainer </span>
                 Videos</h3>
               <p className={styles.words}>
                 Infinity Animations is a renowned name in the video animation industry. Our experts produce all types of animation videos with the usage of modern devices and techniques, some are discussed below:
               </p>
             </div>
-
-
             {isSliderActive ?
-
               <Slider {...awardslogo} className={` ${styles.startup1}  startposition mt-4`} >
-
-
                 <div className={styles.soul}>
                   <h3>4+</h3>
                   <p>Years Of <br></br>
@@ -80,8 +72,6 @@ const Video = () => {
                   <p>Million <br></br>
                     Views</p>
                 </div>
-
-
                 <div className={styles.soul2}>
                   <h3>1600+</h3>
                   <p>Videos <br></br>
@@ -92,14 +82,9 @@ const Video = () => {
                   <p> Clients <br></br>
                     Across The World </p>
                 </div>
-
-
-
-
               </Slider>
-
               :
-              <div class={styles.provenbg}>
+              <div className={styles.provenbg}>
                 <div className={styles.process}>
                   <div className={styles.video}>
                     <div className={styles.soul}>
@@ -130,12 +115,9 @@ const Video = () => {
                   <Image src={proven} className={styles.newtoen} alt="" />
                 </div>
               </div>
-
             }
-
           </div>
         </div>
-
       </section>
     </>
   )
