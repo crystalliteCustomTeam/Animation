@@ -114,7 +114,7 @@ const Services = () => {
                                     <h3 className="text-[#FFCC00] text-[42px] lg:text-[62px] leading-[52px] lg:leading-[72px] font-semibold poppins mb-4 lg:mb-6">Today!</h3>
                                     <p className="text-white text-[13px] lg:text-[14px] poppins mb-4 lg:mb-6">We are a leading video animation company <br className="xl:block hidden" /> in the USA that has helped thousands of</p>
                                     <div>
-                                        <a href="#href" onClick={handleChatOpen} className="bg-white h-[65px] w-max px-4 rounded-[6px] flex items-center gap-x-4">
+                                        <a href="javascript:$zopim.livechat.window.show();" className="bg-white h-[65px] w-max px-4 rounded-[6px] flex items-center gap-x-4">
                                             <Image src={chatIcon} alt="Infinity Animation" />
                                             <div>
                                                 <span className="text-black text-[10px] poppins font-semibold block">Chat Now to Avail 50% OFF</span>
@@ -150,7 +150,7 @@ const Services = () => {
                                         <span className="text-[#F5090B]">{card.title}</span>
                                     </h3>
                                     <p className="text-white text-[13px] lg:text-[15px] poppins mb-8">{card.description}</p>
-                                    <a href="#href" onClick={handleChatOpen} className="flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all">
+                                    <a href="javascript:$zopim.livechat.window.show();" className="flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all">
                                         Make an Animation
                                         <Image src={RightArrow} alt="Infinity Animation" className="w-[8%]" />
                                     </a>

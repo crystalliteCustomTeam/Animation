@@ -80,7 +80,7 @@ const HeaderLP = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#href" onClick={handleChatOpen} className='flex items-center'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center'>
                                             <Image src={Chat} alt='UK' className='w-auto object-contain grayscale-[1] brightness-[100]' />
                                             <span className='text-[13px] text-white py-[10px] px-[8px] font-[700] font-sans'>
                                                 Live Chat

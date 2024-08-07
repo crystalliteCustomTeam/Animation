@@ -216,7 +216,7 @@ const Pricing = ({ content }) => {
                                                 </div>
                                                 <div>
                                                     <p className="text-[15px] font-bold font-sans">Want To Discuss</p>
-                                                    <a href="#href" onClick={handleChatOpen} className="font-sans text-[14px]">Live Chat Now</a>
+                                                    <a href="javascript:$zopim.livechat.window.show();" className="font-sans text-[14px]">Live Chat Now</a>
                                                 </div>
                                             </div>
                                             <div className="flex justify-between px-6 mt-5">

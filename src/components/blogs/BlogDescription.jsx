@@ -102,7 +102,7 @@ function BlogDescription({ content }) {
                                                 color={`text-white flex justify-between w-full px-[25px]`}
                                                 border={`border-2 border-[#fff]`}
                                                 hover="hover:bg-prime"
-                                                href="#href" onClick={handleChatOpen}
+                                                href="javascript:$zopim.livechat.window.show();"
                                             />
                                         </div>
                                     </div>
@@ -213,7 +213,7 @@ function BlogDescription({ content }) {
                                         color={`text-black flex justify-center`}
                                         border={`border-2 border-[#fff]`}
                                         hover="hover:bg-prime"
-                                        href="#href" onClick={handleChatOpen}
+                                        href="javascript:$zopim.livechat.window.show();"
                                     />
                                 </div>
                             </div>

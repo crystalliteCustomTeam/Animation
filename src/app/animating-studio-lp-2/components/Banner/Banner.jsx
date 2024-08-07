@@ -162,7 +162,7 @@ const Banner = () => {
                                         </Link>
                                     </div>
                                     <div>
-                                        <Link href="#href" onClick={handleChatOpen} className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-black font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-white hover:duration-700 hover:transition-all'>
+                                        <Link href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-black font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-white hover:duration-700 hover:transition-all'>
                                             <Image src={Chats} alt='Infinity Animation' className='brightness-100 invert-[1]' />
                                             Live Chat
                                         </Link>

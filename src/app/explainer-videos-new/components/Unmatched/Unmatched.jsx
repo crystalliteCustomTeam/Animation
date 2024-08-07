@@ -87,7 +87,7 @@ const Unmatched = () => {
                                         </a>
                                     </div>
                                     <div className="LinkTwo">
-                                        <a href="#href" onClick={handleChatOpen} className='text-white text-[16px] font-[600] poppins text-left'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='text-white text-[16px] font-[600] poppins text-left'>
                                             <span className='text-[14px] font-[400] block'>
                                                 Want to discuss?
                                             </span>
