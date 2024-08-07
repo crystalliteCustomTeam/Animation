@@ -74,7 +74,7 @@ const Portfolio = ({ content }) => {
                         <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-5 lg:w-11/12 mx-auto">
                             {tabInfo.map((tab, index) => (
                                 <li key={index}
-                                    className={`inline-block w-[155px] md:w-[180px] xl:w-[220px] py-3 text-[16px] font-normal font-sans text-white border rounded-[27px] cursor-pointer hover:border-primary-100 ${activeTab === index ? 'border-primary-100' : 'border-[#646464]'}`}
+                                    className={`inline-block w-[155px] md:w-[180px] xl:w-[220px] py-3 text-[16px] xl:text-[20px] font-normal font-sans text-white border rounded-[27px] cursor-pointer hover:border-primary-100 ${activeTab === index ? 'border-primary-100' : 'border-[#646464]'}`}
                                     onClick={() => handleTabClick(index)}>
                                     {tab.label}
                                 </li>
