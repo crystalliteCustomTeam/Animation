@@ -185,7 +185,7 @@ const Pricing = ({ content }) => {
                                                                 <Image className={`${button.imgColor}`} src={button.image} alt="Infinity Animations " />
                                                             </a>
                                                         ) : (
-                                                            <button key={i} href={button.href} className={`flex items-center justify-between font-sans ${button.color} w-max py-2 px-3 xl:px-5 gap-2 rounded-lg`}>
+                                                            <button key={i} onClick={handleChatOpen} href={button.href} className={`flex items-center justify-between font-sans ${button.color} w-max py-2 px-3 xl:px-5 gap-2 rounded-lg`}>
                                                                 <span className="text-[14px] xl:text-[16px]">{button.text}</span>
                                                                 <Image src={button.image} className={`${button.imgColor} w-[30px]`} alt="Infinity Animation" />
                                                             </button>
