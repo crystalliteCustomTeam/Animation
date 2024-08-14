@@ -59,7 +59,7 @@ const Hero = ({ content }) => {
                                     color={`text-white`}
                                     border={`border-2 border-[#fff]`}
                                     hover="hover:bg-prime"
-                                    href="#href" onClick={handleChatOpen}
+                                    href="javascript:$zopim.livechat.window.show();"
                                 />
                             </div>
                             <AutoScroll wrapperClass="mt-[40px] border-t-2 border-gray-500 pt-4" options={{ loop: true, align: "start" }}>

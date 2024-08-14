@@ -192,7 +192,7 @@ const Banner = () => {
                                         Call Now
                                     </a>
                                 </div>
-                                <a href="#href" onClick={handleChatOpen} className="chat flex items-center gap-2">
+                                <a href="javascript:$zopim.livechat.window.show();" className="chat flex items-center gap-2">
                                     <Image src={chatIcon} alt='chat-icon' className='w-[25px] ml-[10px]' />
                                     <div className="text">
                                         <span className='block montserrat text-[14px] font-[400] text-white leading-[14px]'>

@@ -216,7 +216,7 @@ const Pricing = ({ content }) => {
                                                 </div>
                                                 <div>
                                                     <p className="text-[15px] font-bold font-sans">Want To Discuss</p>
-                                                    <a href="#href" onClick={handleChatOpen} className="font-sans text-[14px]">Live Chat Now</a>
+                                                    <a href="javascript:$zopim.livechat.window.show();" className="font-sans text-[14px]">Live Chat Now</a>
                                                 </div>
                                             </div>
                                             <div className="flex justify-between px-6 mt-5">
@@ -228,7 +228,7 @@ const Pricing = ({ content }) => {
                                                                 <Image className={`${button.imgColor}`} src={button.image} alt="Infinity Animations " />
                                                             </button>
                                                         ) : (
-                                                            <a key={i} href={button.href} className={`flex items-center justify-between font-sans ${button.color} w-max py-2 px-3 xl:px-5 gap-2 rounded-lg`}>
+                                                            <a key={i} onClick={handleChatOpen} href={button.href} className={`flex items-center justify-between font-sans ${button.color} w-max py-2 px-3 xl:px-5 gap-2 rounded-lg`}>
                                                                 <span className="text-[14px] xl:text-[16px]">{button.text}</span>
                                                                 <Image src={button.image} className={`${button.imgColor} w-[30px]`} alt="Infinity Animation" />
                                                             </a>

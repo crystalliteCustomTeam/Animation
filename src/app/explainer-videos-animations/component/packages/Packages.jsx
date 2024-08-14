@@ -113,12 +113,12 @@ const Video = () => {
                                     </div>
                                     <div className={styles.speak}>
                                         <p className="">Want To Discuss</p>
-                                        <a className="" href="#href" onClick={handleChatOpen}>Live Chat Now</a>
+                                        <a className="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="#href" onClick={handleChatOpen} className={styles.chat} >
+                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat} alt="Live_Chat" />
                                     </a>
@@ -147,12 +147,12 @@ const Video = () => {
                                     </div>
                                     <div className={styles.speak}>
                                         <p className="">Want To Discuss</p>
-                                        <a className="" href="#href" onClick={handleChatOpen}>Live Chat Now</a>
+                                        <a className="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="#href" onClick={handleChatOpen} className={styles.chat} >
+                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat2} alt="Live_Chat" />
                                     </a>
@@ -182,12 +182,12 @@ const Video = () => {
                                     </div>
                                     <div className={styles.speak}>
                                         <p className="">Want To Discuss</p>
-                                        <a className="" href="#href" onClick={handleChatOpen}>Live Chat Now</a>
+                                        <a className="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="#href" onClick={handleChatOpen} className={styles.chat} >
+                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat} alt="Live_Chat" />
                                     </a>
@@ -220,12 +220,12 @@ const Video = () => {
                                     </div>
                                     <div className={styles.speak}>
                                         <p className="">Want To Discuss</p>
-                                        <a className="" href="#href" onClick={handleChatOpen}>Live Chat Now</a>
+                                        <a className="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="#href" onClick={handleChatOpen} className={styles.chat} >
+                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat} alt="Live_Chat" />
                                     </a>
@@ -254,12 +254,12 @@ const Video = () => {
                                     </div>
                                     <div className={styles.speak}>
                                         <p className="">Want To Discuss</p>
-                                        <a className="" href="#href" onClick={handleChatOpen}>Live Chat Now</a>
+                                        <a className="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="#href" onClick={handleChatOpen} className={styles.chat} >
+                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat2} alt="Live_Chat" />
                                     </a>
@@ -289,12 +289,12 @@ const Video = () => {
                                     </div>
                                     <div className={styles.speak}>
                                         <p className="">Want To Discuss</p>
-                                        <a className="" href="#href" onClick={handleChatOpen}>Live Chat Now</a>
+                                        <a className="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="#href" onClick={handleChatOpen} className={styles.chat} >
+                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
                                         <span>Live Chat</span>
                                         <Image src={livechat} alt="Live_Chat" />
                                     </a>
