@@ -234,7 +234,7 @@ const Contact = () => {
                                         </a>
                                     </li>
                                     <li className='py-[10px]'>
-                                        <a href="#href" className='text-[15px] md:text-[20px] text-white montserrat flex gap-2'>
+                                        <a href="https://maps.app.goo.gl/ar4aVhbkzv9r9rjd7" target='_blank' className='text-[15px] md:text-[20px] text-white montserrat flex gap-2'>
                                             <HiMapPin className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[32px] h-[25px]' /> 229 Yonge St Suite 400, Toronto, ON M5B 1N9, Canada
                                         </a>
                                     </li>

@@ -89,9 +89,9 @@ const Footer = () => {
         },
         {
             text: "229 Yonge St Suite 400, Toronto, ON M5B 1N9, Canada",
-            link: "#href",
+            link: "https://maps.app.goo.gl/ar4aVhbkzv9r9rjd7",
             icon: mapmarker,
-            // target: "_blank"
+            target: "_blank"
         },
     ];
     const otherLinks = [
