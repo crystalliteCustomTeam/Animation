@@ -114,7 +114,7 @@ const Studio = () => {
         desc: (<>Spread profound message and scale up your business <br className='hidden lg:block' /> with our animated video services today!</>),
         isBtn: false
     }
-   
+
     const brandsFour = {
         title: (<>
             Transform Your Ideas into <br className='hidden xl:block' />  <span className="text-[#FFCC00]"> Engaging Animations!</span>
