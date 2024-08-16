@@ -37,7 +37,7 @@ const ConditionalLayout = ({ children }) => {
                     pathname !== "/logo-animation-lp" &&
                     pathname !== "/lp/explainer-video-animation" &&
                     pathname !== "/explainer-video-services" &&
-                    pathname !== "/explainer-video-services-1" &&
+                    pathname !== "/explainer-video-services-global" &&
                     pathname !== "/animating-studio-lp-2" &&
                     pathname !== "/infinity-studio" && (
                         <Header />
@@ -59,7 +59,7 @@ const ConditionalLayout = ({ children }) => {
                     pathname !== "/logo-animation-lp-black" &&
                     pathname !== "/lp/explainer-video-animation" &&
                     pathname !== "/explainer-video-services" &&
-                    pathname !== "/explainer-video-services-1" &&
+                    pathname !== "/explainer-video-services-global" &&
                     pathname !== "/animating-studio-lp-2" &&
                     pathname !== "/infinity-studio" && (
                         <Footer />

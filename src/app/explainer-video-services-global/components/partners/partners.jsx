@@ -57,65 +57,65 @@ const partners = () => {
 
     return (
         <>
-            <section className='bg-[#bfbfbf] relative partners'>
+            <section className='bg-[#bfbfbf] relative partners md:z-auto z-[9] '>
                 <div className="px-2 mx-auto ">
                     <Slider {...testiSlider} className="partnerSlider">
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners1} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                            <Image src={Partners1} alt='Partners' className='w-[100%] md:w-[80%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners1a} alt='Partners' className='  w-[75%] md:w-[50%] mx-auto px-5' />
+                            <Image src={Partners1a} alt='Partners' className='w-[75%] md:w-[50%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners2} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                            <Image src={Partners2} alt='Partners' className='w-[100%] md:w-[80%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners2a} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                            <Image src={Partners2a} alt='Partners' className='w-[100%] md:w-[80%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners3} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                            <Image src={Partners3} alt='Partners' className='w-[100%] md:w-[80%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners3a} alt='Partners' className='  w-[80%] md:w-[60%] mx-auto px-5' />
+                            <Image src={Partners3a} alt='Partners' className='w-[80%] md:w-[60%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners4} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                            <Image src={Partners4} alt='Partners' className='w-[100%] md:w-[80%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners4a} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                            <Image src={Partners4a} alt='Partners' className='w-[100%] md:w-[80%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners5} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                            <Image src={Partners5} alt='Partners' className='w-[100%] md:w-[80%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners5a} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                            <Image src={Partners5a} alt='Partners' className='w-[100%] md:w-[80%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners6} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                            <Image src={Partners6} alt='Partners' className='w-[100%] md:w-[80%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners6a} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                            <Image src={Partners6a} alt='Partners' className='w-[100%] md:w-[80%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners7} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                            <Image src={Partners7} alt='Partners' className='w-[100%] md:w-[80%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners7a} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                            <Image src={Partners7a} alt='Partners' className='w-[100%] md:w-[80%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners8} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                            <Image src={Partners8} alt='Partners' className='w-[100%] md:w-[80%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners8a} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                            <Image src={Partners8a} alt='Partners' className='w-[100%] md:w-[80%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners9} alt='Partners' className='  w-[80%] md:w-[60%] mx-auto px-5' />
+                            <Image src={Partners9} alt='Partners' className='w-[80%] md:w-[60%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners9a} alt='Partners' className='  w-[80%] md:w-[50%] mx-auto px-5' />
+                            <Image src={Partners9a} alt='Partners' className='w-[80%] md:w-[50%] mx-auto px-5' />
                         </div>
                         <div className='mx-[45px] px-[15px]'>
-                            <Image src={Partners10} alt='Partners' className='  w-[100%] md:w-[80%] mx-auto px-5' />
+                            <Image src={Partners10} alt='Partners' className='w-[100%] md:w-[80%] mx-auto px-5' />
                         </div>
                     </Slider>
                 </div>

@@ -109,6 +109,8 @@ const OurClient = () => {
         }, [props.delegate, props.options]);
         return <div ref={containerRef}>{props.children}</div>;
     }
+
+
     // video code start
     const handleVideoPlay = (e) => {
         const video = e.currentTarget.querySelector('video');
