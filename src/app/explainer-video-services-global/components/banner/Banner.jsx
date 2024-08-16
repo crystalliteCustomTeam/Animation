@@ -190,7 +190,7 @@ const Banner = () => {
     return (
         <>
             <section className='pt-[120px] pb-[60px] md:pt-[160px] md:pb-[80px] lg:pt-[130px] lg:pb-[60px] flex items-center justify-center relative md:z-auto md:bg-transparent z-[9] bg-black '>
-                <div className="video-div w-full h-[480px] md:h-full absolute top-0 z-[-1] before:content-[''] before:bg-[#000] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[90] before:opacity-[0.7]">
+                <div className="video-div w-full h-[480px] md:h-full absolute top-0 z-[-1] before:content-[''] before:bg-[#000] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[90] before:opacity-[0.7] hidden md:block">
                     <video id="background-video" src={backgroundVideo} autoPlay loop muted className='relative h-full xl:left-0 w-full object-cover'>
                     </video>
                 </div>
