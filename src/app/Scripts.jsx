@@ -61,7 +61,7 @@ const Scripts = () => {
             document.head.appendChild(gtmScript2);
             //======== Google Tag Manager2 ========//
             const gtmConfigScript2 = document.createElement("script");
-            gtmConfigScript2.id = "google-tag-manager-one";
+            gtmConfigScript2.id = "google-tag-manager-two";
             gtmConfigScript2.text = `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
@@ -69,7 +69,7 @@ const Scripts = () => {
                 gtag('config', 'G-NTFT6HEZCW');
             `;
             document.head.appendChild(gtmConfigScript2);
-            //======== Google Tag Manager ========//
+            //======== hotjar ========//
             const hotjar = document.createElement("script");
             hotjar.id = "hotjar";
             hotjar.text = `
