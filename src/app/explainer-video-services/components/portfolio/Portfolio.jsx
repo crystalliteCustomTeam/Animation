@@ -33,6 +33,7 @@ const Portfolio = ({ content }) => {
     }
 
 
+
     return (
         <>
             <section className={`w-full flex items-center justify-start pt-[40px] pb-0 md:py-[40px] lg:py-[60px] ${bg}`} id='portfolio'>
@@ -56,6 +57,7 @@ const Portfolio = ({ content }) => {
                                             key={index}
                                             href={item.video}
                                             passHref
+                                            datafancybox="gallery"
                                             className={`${styles.shadow} w-full h-full group`}
                                         >
                                             <div className="overlay relative">
