@@ -24,7 +24,7 @@ import { AutoScroll } from '@/components/sliders';
 
 const AwardWinning = () => {
     return (
-        <section className='bg-[#cccccc] pt-[30px] pb-[40px]'>
+        <section className='bg-[#cccccc] pt-[30px] pb-[40px] '>
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12">

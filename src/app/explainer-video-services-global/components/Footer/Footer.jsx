@@ -6,7 +6,7 @@ import Axios from "axios";
 import { usePathname } from "next/navigation"
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
-import { HiMapPin } from 'react-icons/hi2';
+import logo from "media/images/logo.gif";
 // ==== Images 
 import UpArrow from "media/video-explainer2/up-arrow.png"
 import Payment from "media/video-explainer2/payment-img.png"
@@ -163,6 +163,7 @@ const Contact = () => {
             setFormStatus("Failed...");
             setIsDisabled(false);
         }
+
     };
 
     return (
@@ -173,11 +174,16 @@ const Contact = () => {
                         <div className="col-span-12 lg:col-span-4 my-auto">
                             <div className="address_detail ">
                                 <ul>
-                                    <li className='py-[10px]'>
+                                    <li className='mb-[20px]'>
+                                        <div className="logo">
+                                            <Image priority src={logo} alt='logo' width={150} className='w-[90%] md:w-[50%]' />
+                                        </div>
+                                    </li>
+                                    {/* <li className='py-[10px]'>
                                         <a href="tel:833-666-6689" className='text-[16px] text-white montserrat flex items-center gap-2'>
                                             <Phone className='bg-[#fff] text-[#000] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> 1-833-666-6689
                                         </a>
-                                    </li>
+                                    </li> */}
                                     <li className='py-[10px]'>
                                         <a href="mailto:queries@infinityanimations.com" className='text-[16px] text-white montserrat flex items-center gap-2'>
                                             <EnvelopeIcon className='bg-[#fff] text-[#000] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> queries@infinityanimations.com
@@ -188,11 +194,11 @@ const Contact = () => {
                                             <Globe className='bg-[#fff] text-[#000] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimations.com
                                         </a>
                                     </li>
-                                    <li className='py-[10px]'>
+                                    {/* <li className='py-[10px]'>
                                         <a href="https://maps.app.goo.gl/BFBsCwAX1znom3LE6" target='_blank' className='text-[16px] text-white montserrat flex gap-2'>
                                             <HiMapPin className='bg-[#ffffff] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[25px] lg:w-[40px] h-[25px]' /> One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007
                                         </a>
-                                    </li>
+                                    </li> */}
                                 </ul>
                                 <Image src={Payment} alt='Payment-Methods' className='w-5/12 lg:w-full my-3 object-contain' />
                                 <div>

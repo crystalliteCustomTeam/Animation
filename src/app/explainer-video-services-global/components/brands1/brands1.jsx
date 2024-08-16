@@ -3,9 +3,13 @@ import Image from 'next/image'
 // ==== Images 
 import ctaImg from "media/animating-studio/ctaImg1.svg"
 import BtnMsg from "media/animating-studio/btn-message.svg"
-import flag from "media/video-explainer/flag-icon.png"
+import usePopup from '@/app/configs/store/Popup'
 
 const BrandOne = ({ content }) => {
+    const { popup, togglePopup } = usePopup();
+    const popupHandle = () => {
+        togglePopup(popup);
+    }
     const { title, desc } = content;
     // Chat Code
     const handleChatOpen = (e) => {
@@ -32,12 +36,9 @@ const BrandOne = ({ content }) => {
                                     </div>
                                     <div className="flex flex-col-reverse md:flex-row items-start md:items-center justify-start gap-5 my-2 sm:mt-0">
                                         <div className="btn">
-                                            <a href="tel:833-666-6689" className='flex items-center justify-center gap-2 text-[15px] text-[#003262] font-[600] poppins bg-[#FFCC00] h-[40px] xl:h-[45px] w-max px-5 tracking-[.3px] rounded-[5px]'>
-                                                <Image src={flag} alt='Infinity Animations' className='object-contain' />
-                                                <span className='w-max'>
-                                                    Call Now : 1-833-666-6689
-                                                </span>
-                                            </a>
+                                            <button onClick={popupHandle} className='flex items-center text-[14px] lg:text-[13px] xl:text-[14px] text-white font-medium poppins xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px] bg-[#A70A0E]'>
+                                                Get A Quote
+                                            </button>
                                         </div>
                                         <div className="btn">
                                             <button onClick={handleChatOpen} className='flex items-center justify-center gap-2 text-[15px] text-white font-[600] poppins bg-transparent h-[40px] xl:h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] border'>

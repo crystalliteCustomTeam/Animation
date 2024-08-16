@@ -57,7 +57,7 @@ const partners = () => {
 
     return (
         <>
-            <section className='bg-[#bfbfbf] relative partners'>
+            <section className='bg-[#bfbfbf] relative partners md:z-auto z-[9]'>
                 <div className="px-2 mx-auto ">
                     <Slider {...testiSlider} className="partnerSlider">
                         <div className='mx-[45px] px-[15px]'>

@@ -7,7 +7,7 @@ import Image from 'next/image';
 // Images
 import arrowRed from "media/icons/arrow-red.png"
 import closeBtn from 'media/video-explainer/close-btn.svg'
-
+import { Phone } from 'heroicons-react'
 const SidebarCTA = () => {
     // Active 
     const [isActive, setIsActive] = useState(false);
@@ -144,14 +144,19 @@ const SidebarCTA = () => {
         <>
             <div
                 className={`font-sans ${styles.sidebarSec} ${isActive ? styles.hidden : ''}`}
-                onClick={toggleActiveState}
+
             >
-                <button className='bg-prime text text-[10px]-xl:white border-0 h-[40px] xl:h-[50px] px-5 2xl:px-6 rounded-md flex items-center gap-x-2 '>
+                <div className={styles.getFrom} onClick={toggleActiveState}>
                     <span className="text-[13px] font-normal font-sans">
                         Get A Quote
                     </span>
-                    <Image className="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-2 object-contain formbutton" src={arrowRed} alt="Infinity Animations " />
-                </button>
+                    <Image src={arrowRed} alt="Infinity Animations " />
+                </div>
+                <div className={styles.phoneNumber} >
+                    <a href='tel:833-666-6689'>
+                        <Phone />
+                    </a>
+                </div>
 
             </div >
             <div className={`${styles.sidebarFrom} ${isActive ? styles.active : ''} font-sans bg-[url('../../public/video-explainer/popupnew-bg.png')] bg-[length:100%_100%] bg-center bg-no-repeat relative w-full`}>

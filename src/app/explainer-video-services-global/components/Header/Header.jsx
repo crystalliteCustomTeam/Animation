@@ -85,26 +85,31 @@ const HeaderLP = () => {
                                             Get A Quote
                                         </button>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <a href='tel:833-666-6689' className='flex items-center gap-2 text-[14px] lg:text-[13px] xl:text-[14px] text-black font-semibold poppins xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px] bg-[#f6c501]'>
                                             <Image src={flag} alt='CA' className='object-contain' />
                                             <span className='w-max'>
                                                 Call Now : 1-833-666-6689
                                             </span>
                                         </a>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
                         </div>
                         <div className="col-span-8 lg:hidden block">
-                            <ul>
-                                <li className='flex items-center justify-end'>
-                                    <a href='tel:833-666-6689' className='flex items-center gap-2 text-[13px] md:text-[16px] text-black font-semibold font-sans xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px] bg-[#f6c501]'>
-                                        <Image src={flag} alt='CA' className='object-contain' />
-                                        <span className='w-max'>
-                                            Call Now : 1-833-666-6689
+                            <ul className="flex items-center justify-end gap-x-2 xl:gap-x-4">
+                                <li>
+                                    <Link href="javascript:$zopim.livechat.window.show();" className='flex items-center text-white font-normal poppins border-2 xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px]' onClick={handleChatOpen}>
+                                        <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] xl:block hidden' />
+                                        <span className='text-[14px] lg:text-[13px] xl:text-[14px] text-white px-[4px] font-normal poppins'>
+                                            Live Chat
                                         </span>
-                                    </a>
+                                    </Link>
+                                </li>
+                                <li className='flex items-center justify-end'>
+                                    <button onClick={popupHandle} className='flex items-center text-[14px] lg:text-[13px] xl:text-[14px] text-white font-medium poppins xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px] bg-[#A70A0E]'>
+                                        Get A Quote
+                                    </button>
                                 </li>
                             </ul>
                         </div>

@@ -13,6 +13,7 @@ import Remarkable from './components/Remarkable/Remarkable'
 import OurClient from './components/ourClient/OurClient'
 import Faqs from './components/faqs/Faqs'
 import Footer from './components/Footer/Footer'
+import SidebarCTA from './components/sidebarcat/SidebarCta'
 // Images
 import BranShine from "media/infinity-studio-lp-new/brandshine.png"
 import SaleShine from "media/explainer-videos/salesimage.png"
@@ -346,6 +347,7 @@ const page = () => {
             <Brand content={sales} />
             <OurClient />
             <Faqs content={faqs} />
+            <SidebarCTA />
             <Footer />
         </>
     )

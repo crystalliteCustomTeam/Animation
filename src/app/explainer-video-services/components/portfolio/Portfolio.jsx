@@ -69,7 +69,7 @@ const Portfolio = ({ content }) => {
                                                     height={263}
                                                 />
                                                 <div
-                                                    className="bg-slate-700/75 h-full w-full absolute left-[50%] top-[50%] lg:top-[132px] translate-x-[-50%] group-hover:translate-y-[-132px] translate-y-[132px] flex items-center justify-center"
+                                                    className="bg-slate-700/75 h-full w-full absolute left-[0%] top-[0%] flex items-center justify-center"
                                                 >
                                                     <Image
                                                         src={PlayIcon}

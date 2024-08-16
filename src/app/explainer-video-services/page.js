@@ -15,6 +15,7 @@ const Animations = React.lazy(() => import('./components/animations/Animations')
 const Testimonial = React.lazy(() => import('./components/testimonial/Testimonial'));
 const Faqs = React.lazy(() => import('./components/faqs/Faqs'));
 const Footer = React.lazy(() => import('./components/Footer/Footer'));
+const SidebarCTA = React.lazy(() => import('./components/sidebarcat/SidebarCta'));
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.png"
 import Thumnail2 from "media/thumbnails/2d-animation/2.png"
@@ -321,6 +322,7 @@ const Studio = () => {
                             <BrandsTwo content={brandsTwo} />
                             <Testimonial />
                             <Faqs content={faqs} />
+                            <SidebarCTA />
                             <Footer />
                         </>
                     )
