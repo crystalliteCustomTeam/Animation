@@ -11,6 +11,7 @@ const Scripts = () => {
             zenDesk.async = true;
             zenDesk.defer = true;
             document.body.appendChild(zenDesk);
+
             //======== GATG ========//
             const gtmScript = document.createElement("script");
             gtmScript.id = "google-tag-manager";
@@ -18,6 +19,7 @@ const Scripts = () => {
             gtmScript.async = true;
             gtmScript.defer = true;
             document.head.appendChild(gtmScript);
+
             //======== Google Tag Manager ========//
             const gtmConfigScript = document.createElement("script");
             gtmConfigScript.id = "google-tag-manager-one";
@@ -28,14 +30,16 @@ const Scripts = () => {
                 gtag('config', 'AW-11475040852');
             `;
             document.head.appendChild(gtmConfigScript);
-            //======== Number Convertion  ========//
-            const numberConverstionCode = document.createElement("script");
-            numberConverstionCode.id = "phone_conversion_number"
-            numberConverstionCode.text = `
+
+            //======== Number Conversion  ========//
+            const numberConversionCode = document.createElement("script");
+            numberConversionCode.id = "phone_conversion_number";
+            numberConversionCode.text = `
                 gtag('config', 'AW-11475040852/d8ZeCOHomaoZENT03N8q', 
                 {'phone_conversion_number': '(833) 666-6689'});
-              `
-            document.head.appendChild(numberConverstionCode);
+              `;
+            document.head.appendChild(numberConversionCode);
+
             //======== Meta Pixel Code ========//
             const MetaPixelCode = document.createElement("script");
             MetaPixelCode.id = "meta-pixel";
@@ -52,6 +56,7 @@ const Scripts = () => {
                 fbq('track', 'PageView');
             `;
             document.head.appendChild(MetaPixelCode);
+
             //======== GATG2 ========//
             const gtmScript2 = document.createElement("script");
             gtmScript2.id = "google-tag-manager";
@@ -59,6 +64,7 @@ const Scripts = () => {
             gtmScript2.async = true;
             gtmScript2.defer = true;
             document.head.appendChild(gtmScript2);
+
             //======== Google Tag Manager2 ========//
             const gtmConfigScript2 = document.createElement("script");
             gtmConfigScript2.id = "google-tag-manager-two";
@@ -69,6 +75,7 @@ const Scripts = () => {
                 gtag('config', 'G-NTFT6HEZCW');
             `;
             document.head.appendChild(gtmConfigScript2);
+
             //======== hotjar ========//
             const hotjar = document.createElement("script");
             hotjar.id = "hotjar";
@@ -83,6 +90,18 @@ const Scripts = () => {
                 })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
             `;
             document.head.appendChild(hotjar);
+
+            //======== Google Tag Manager ========//
+            const gtmInlineScript = document.createElement("script");
+            gtmInlineScript.text = `
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-WLXQ99F9');
+            `;
+            document.head.appendChild(gtmInlineScript);
+
         }, 5000);
 
         return () => clearTimeout(timer);
@@ -91,4 +110,4 @@ const Scripts = () => {
     return null;
 }
 
-export default Scripts
+export default Scripts;
