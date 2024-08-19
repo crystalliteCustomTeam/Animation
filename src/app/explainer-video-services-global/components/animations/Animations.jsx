@@ -66,7 +66,7 @@ const Animations = () => {
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 md:mb-[40px]">
                             <h2 className='text-[#000000] text-center font-[600] poppins text-[32px] md:text-[42px] lg:text-[48px]'>Proven  <span className="text-[#A70A0E]"> Statistics</span> of Infinity Animations</h2>
-                            <p className='text-[#231F20] text-[16px] poppins font-[400] py-[17px] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-0'>Our habit of delivering quality explainer videos has cemented our position as one of the top  <br className='lg:block hidden' />video animation companies in the US. </p>
+                            <p className='text-[#231F20] text-[16px] poppins font-[400] py-[17px] text-center lg:w-[90%] mx-auto leading-[20px] md:leading-[22px] mb-0'>Our habit of delivering quality explainer videos has cemented our position as one of the top  <br className='lg:block hidden' />video animation companies globally. </p>
                         </div>
                     </div>
                     <div className='px-[20px] rounded-[10px] relative'>
