@@ -290,7 +290,7 @@ const Video = () => {
             <section className={styles.longton}>
                 <div className={`container mx-auto `}>
                     <div className={`md:grid md:grid-cols-1 items-center ${styles.world1}`}>
-                        <p>© 2024 - <Link target="_blank" className="no-underline" href="https://bhaooinc.com/">Bhaoo Inc</Link></p>
+                        <p>© 2024 - Dreamweave Media Inc</p>
                     </div>
                 </div>
             </section>

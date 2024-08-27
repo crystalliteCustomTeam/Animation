@@ -315,7 +315,7 @@ const Contact = () => {
             </section>
             <div className="copyright py-[20px]">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto relative">
-                    <p className='text-[14px] pb-[12px] text-[#333] montserrat text-center'>© 2024 <span className='text-[14px] text-[#333] montserrat text-center inline'> - All Rights Reserved By</span> <Link target="_blank" className="no-underline" href="https://bhaooinc.com/">Bhaoo Inc</Link></p>
+                    <p className='text-[14px] pb-[12px] text-[#333] montserrat text-center'>© 2024 <span className='text-[14px] text-[#333] montserrat text-center inline'> - All Rights Reserved By</span> Dreamweave Media Inc</p>
                     <div className="top-icon absolute right-0 top-[-40px]">
                         <Link href="#" className='bg-[#18d689] w-[80px] h-[80px] text-center text-[#333] font-[500] uppercase rounded-[60%] align-middle border-[5px] border-white absolute right-0 lg:flex flex-col justify-center items-center md:block hidden'>
                             <Image src={UpArrow} alt='upArrow' className='mx-auto' />

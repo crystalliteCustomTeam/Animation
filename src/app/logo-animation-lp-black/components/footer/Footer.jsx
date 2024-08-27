@@ -47,7 +47,7 @@ const Footer = () => {
             </section>
             <div className="footer_bottom bg-black text-center">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto border-t border-white py-[10px]">
-                    <span className='text-[14px] pb-[12px] text-white montserrat text-center '>© 2024 - <p className='text-[14px] lg:text-[16px] poppins text-center inline'> - All Rights Reserved By<Link href="https://bhaooinc.com/">Bhaoo Inc</Link></p></span>
+                    <span className='text-[14px] pb-[12px] text-white montserrat text-center '>© 2024 - <p className='text-[14px] lg:text-[16px] poppins text-center inline'> - All Rights Reserved By Dreamweave Media Inc </p></span>
                 </div>
             </div>
         </>
