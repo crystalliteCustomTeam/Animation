@@ -73,9 +73,7 @@ const ClientThinking = () => {
                                     <span className='text-[#222] text-[50px] md:text-[75px] relative left-[18px] top-[20px]'>
                                         <FaQuoteLeft />
                                     </span>
-                                    <p className='mb-[20px] p-[20px] text-[15px] text-[#333] montserrat lg:w-11/12 mt-[13px]'>The story of the business relationship started with a 30 second video in 2019,
-                                        now Infinity Animations team has produced 27 videos for our multiple brands for
-                                        us. Glad to get a reliable company in the US</p>
+                                    <p className='mb-[20px] p-[20px] text-[15px] text-[#333] montserrat lg:w-11/12 mt-[13px]'>The story of the business relationship started with a 30 second video in 2019, now Infinity Animations team has produced 27 videos for our multiple brands for us. Glad to get a reliable video company in the US.</p>
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">
                                         <div className="img">
@@ -157,9 +155,7 @@ const ClientThinking = () => {
                                         <span className='text-[#222] text-[50px] md:text-[75px] relative left-[18px] top-[20px]'>
                                             <FaQuoteLeft />
                                         </span>
-                                        <p className='mb-[20px] p-[20px] text-[15px] text-[#333] montserrat lg:w-11/12 mt-[13px]'>The story of the business relationship started with a 30 second video in 2019,
-                                            now Infinity Animations team has produced 27 videos for our multiple brands for
-                                            us. Glad to get a reliable company in the US</p>
+                                        <p className='mb-[20px] p-[20px] text-[15px] text-[#333] montserrat lg:w-11/12 mt-[13px]'>The story of the business relationship started with a 30 second video in 2019, now Infinity Animations team has produced 27 videos for our multiple brands for us. Glad to get a reliable video company in the US.</p>
                                     </div>
 
                                     <div className="card-bottom flex items-center p-[20px] bg-[#f1f0f0]">

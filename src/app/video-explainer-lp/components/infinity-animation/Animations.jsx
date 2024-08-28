@@ -19,22 +19,22 @@ const Animations = () => {
                     <div className='bg-cover bg-center bg-[url("../../public/video-explainer/statics-inner-bg.jpg")] py-[50px] px-[20px] rounded-[10px] relative'>
                         <div className="grid grid-cols-12 gap-6">
                             <div className="col-span-12 sm:col-span-6 lg:col-span-3">
-                                <h2 className='text-[#231f20] leading-[70px] text-[35px] md:text-[50px] lg:text-[70px] font-[700] montserrat text-center relative'>4 <sup className='text-[25px] font-[400] top-[35px] absolute'>+</sup></h2>
+                                <h2 className='text-[#231f20] leading-[70px] text-[35px] md:text-[50px] lg:text-[70px] font-[700] montserrat text-center relative'>8 <sup className='text-[25px] font-[400] top-[35px] absolute'>+</sup></h2>
                                 <p className='text-[#231f20] text-center font-[700] montserrat text- text-[18px] leading-[25px]'>Years Of <br />
                                     Experience</p>
                             </div>
                             <div className="col-span-12 sm:col-span-6 lg:col-span-3">
-                                <h2 className='text-[#231f20] leading-[70px] text-[35px] md:text-[50px] lg:text-[70px] font-[700] montserrat text-center relative'>1600 <sup className='text-[25px] font-[400] top-[35px] absolute'>+</sup></h2>
+                                <h2 className='text-[#231f20] leading-[70px] text-[35px] md:text-[50px] lg:text-[70px] font-[700] montserrat text-center relative'>3300 <sup className='text-[25px] font-[400] top-[35px] absolute'>+</sup></h2>
                                 <p className='text-[#231f20] text-center font-[700] montserrat text- text-[18px] leading-[25px]'>Videos <br />
                                     Delivered</p>
                             </div>
                             <div className="col-span-12 sm:col-span-6 lg:col-span-3">
-                                <h2 className='text-[#231f20] leading-[70px] text-[35px] md:text-[50px] lg:text-[70px] font-[700] montserrat text-center relative'>1200 <sup className='text-[25px] font-[400] top-[35px] absolute'>+</sup></h2>
+                                <h2 className='text-[#231f20] leading-[70px] text-[35px] md:text-[50px] lg:text-[70px] font-[700] montserrat text-center relative'>2500 <sup className='text-[25px] font-[400] top-[35px] absolute'>+</sup></h2>
                                 <p className='text-[#231f20] text-center font-[700] montserrat text- text-[18px] leading-[25px]'>Clients <br />
                                     Across The World</p>
                             </div>
                             <div className="col-span-12 sm:col-span-6 lg:col-span-3">
-                                <h2 className='text-[#231f20] leading-[70px] text-[35px] md:text-[50px] lg:text-[70px] font-[700] montserrat text-center relative'>15 <sup className='text-[25px] font-[400] top-[35px] absolute'>+</sup></h2>
+                                <h2 className='text-[#231f20] leading-[70px] text-[35px] md:text-[50px] lg:text-[70px] font-[700] montserrat text-center relative'>250 <sup className='text-[25px] font-[400] top-[35px] absolute'>+</sup></h2>
                                 <p className='text-[#231f20] text-center font-[700] montserrat text- text-[18px] leading-[25px]'>Million Views</p>
                             </div>
                         </div>

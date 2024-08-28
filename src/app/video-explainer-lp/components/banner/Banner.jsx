@@ -22,7 +22,7 @@ const Banner = () => {
     const [ip, setIP] = useState('');
     const [pagenewurl, setPagenewurl] = useState('');
     const [errors, setErrors] = useState({});
-    const [formStatus, setFormStatus] = useState('Get A Quote');
+    const [formStatus, setFormStatus] = useState('GET A FREE QUOTE NOW!');
     const [isDisabled, setIsDisabled] = useState(false);
     const [data, setData] = useState({
         name: "",
@@ -199,29 +199,31 @@ const Banner = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-y-12 items-center">
                         <div className="col-span-12 lg:col-span-6">
-                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[30px] font-[700] uppercase montserrat lg:w-10/12 md:leading-[35px] '>Hire US #1 Animation Studio, Engaging Animated Explainer Videos</h1>
+                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[30px] font-[700] uppercase montserrat lg:w-10/12 md:leading-[35px] '>HIRE US #1 VIDEO ANIMATION COMPANY,
+                                ENGAGING ANIMATED EXPLAINER VIDEOS
+                            </h1>
                             <p className='text-white text-[18px] font-[400] montserrat lg:w-11/12 leading-[25px] py-[25px]'>
-                                Transform Your Ideas into Visually Engaging Animated Stories, Tailored to Resonate with Your Audience & Elevate your Brand.</p>
+                                Transform Your Ideas into Visually Engaging Animated Explainer Videos with Our Expert Video Animation Services, Tailored to Resonate with Your Audience and Elevate Your Product and Brand. </p>
                             <ul>
                                 <li className='flex items-start gap-x-2'>
                                     <CheckCircle className='text-white' />
-                                    <span className='text-white font-[400] pb-[10px] montserrat'> Demo/Tutorial Videos</span>
+                                    <span className='text-white font-[400] pb-[10px] montserrat'>2D/3D Video Animation</span>
                                 </li>
                                 <li className='flex items-start gap-x-2'>
                                     <CheckCircle className='text-white' />
-                                    <span className='text-white font-[400] pb-[10px] montserrat'>Training Videos</span>
+                                    <span className='text-white font-[400] pb-[10px] montserrat'>Motion Graphics Animations</span>
                                 </li>
                                 <li className='flex items-start gap-x-2'>
                                     <CheckCircle className='text-white' />
-                                    <span className='text-white font-[400] pb-[10px] montserrat'>Animated commercial Videos</span>
+                                    <span className='text-white font-[400] pb-[10px] montserrat'>Whiteboard Video Animation</span>
                                 </li>
                                 <li className='flex items-start gap-x-2'>
                                     <CheckCircle className='text-white' />
-                                    <span className='text-white font-[400] pb-[10px] montserrat'>Promotional Videos</span>
+                                    <span className='text-white font-[400] pb-[10px] montserrat'>Hybrid Video Animation</span>
                                 </li>
                                 <li className='flex items-start gap-x-2'>
                                     <CheckCircle className='text-white' />
-                                    <span className='text-white font-[400] pb-[10px] montserrat'>Marketing Videos</span>
+                                    <span className='text-white font-[400] pb-[10px] montserrat'>Traditional/Cel Animation</span>
                                 </li>
                             </ul>
                             <div className='flex flex-wrap items-center justify-center md:justify-start gap-5 mt-4 mb-6'>
@@ -256,7 +258,7 @@ const Banner = () => {
                         </div>
                         <div className="col-span-12 lg:col-span-6">
                             <form className='bg-[#003465] pt-[20px] md:mr-[98px] md:ml-auto relative border-[6px] border-white lg:w-8/12'>
-                                <h3 className='text-white text-[20px] md:text-[25px] leading-[30px] montserrat font-[700] text-left py-[10px] px-[20px]'>Share Your <br className='block' />
+                                <h3 className='text-white text-[20px] md:text-[25px] leading-[30px] montserrat font-[700] text-left py-[10px] px-[20px]'>Share Your Video <br className='block' />
                                     <strong className='text-[30px] text-[#f6c501] md:ml-[2rem] font-extrabold '>
                                         Animation Idea
                                     </strong>

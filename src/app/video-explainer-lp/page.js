@@ -61,9 +61,9 @@ const Video = () => {
   }, []);
   // ===== Brands Content ===== //
   const brands = {
-    title: <>Explain Your Complex Product with Amazing <br className='xl:hidden lg:block hidden' /> Animated Videos</>,
+    title: <>Our Video Animation Company Creates Complex <br className='xl:hidden lg:block hidden' /> Product Animated Video</>,
     subTitle: "",
-    desc: "Spread profound message and scale up your business with our animated video services today!",
+    desc: "Spread your message effectively and scale up your business with our top-notch Video Animation Services.",
     isBtn: true,
   }
   //===== FAQS =====//
@@ -106,9 +106,9 @@ const Video = () => {
   }
   // ===== Brands Content ===== //
   const brandsTwo = {
-    title: <>Animated Video Content That Boosts Your Brand,<br className='lg:block hidden' />  Maximizes Prospect Engagement and Drives ROI</>,
+    title: <>Video Animation Services That Boosts Your Brand,<br className='lg:block hidden' />  Maximizes Prospect, Engagement and Drives ROI.</>,
     subTitle: "",
-    desc: "Spread profound message and scale up your business with our animated video services today!",
+    desc: "Scale up your business with our Animated Explainer Video Services today! Reviews:",
     isBtn: true,
   }
   return (

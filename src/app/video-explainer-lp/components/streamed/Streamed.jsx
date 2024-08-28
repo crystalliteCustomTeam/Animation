@@ -222,8 +222,8 @@ const Streamed = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
-                            <h2 className='text-[#231f20] text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Our Animated Videos that Deliver Results</h2>
-                            <p className='text-[#231f20] text-[16px] md:text-[18px] montserrat font-[400] py-[17px] text-center lg:w-10/12 mx-auto leading-[20px] md:leading-[22px]'>Checkout Our Recent Work </p>
+                            <h2 className='text-[#231f20] text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Our Animated Videos That Deliver Results</h2>
+                            <p className='text-[#231f20] text-[16px] md:text-[18px] montserrat font-[400] py-[17px] text-center lg:w-10/12 mx-auto leading-[20px] md:leading-[22px]'>Check Our Video Animation Portfolio </p>
                             <div className={`mt-8 md:mt-12`}>
                                 <ul className="flex flex-wrap justify-center xl:justify-between text-sm font-medium text-center gap-3 md:gap-5 lg:w-11/12 mx-auto">
                                     {tabInfo.map((tab, index) => (
