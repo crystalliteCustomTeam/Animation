@@ -1,5 +1,4 @@
 "use client"
-import { useEffect, useState } from 'react';
 import Image from "next/image";
 // Import CSS
 import styles from "./hero.module.css"
@@ -22,55 +21,7 @@ import { AutoScroll } from '@/components/sliders';
 
 const Hero = ({ content }) => {
     const { title, para, } = content;
-    // Chat Code
-    const handleChatOpen = (e) => {
-        e.preventDefault();
-        if (typeof $zopim !== 'undefined' && $zopim.livechat && $zopim.livechat.window) {
-            $zopim.livechat.window.show();
-        }
-    };
-    // =====================
-    const [showDesktopComponents, setShowDesktopComponents] = useState(true);
-    const [showMobileComponents, setShowMobileComponents] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
 
-    useEffect(() => {
-        const checkMobile = () => {
-            setIsMobile(window.innerWidth <= 768);
-        };
-
-        checkMobile();
-        window.addEventListener("resize", checkMobile);
-
-        // Show desktop components after 1 second
-        const desktopTimer = setTimeout(() => {
-            setShowDesktopComponents(true);
-        }, 500);
-
-        return () => {
-            window.removeEventListener("resize", checkMobile);
-            clearTimeout(desktopTimer);
-        };
-    }, []);
-
-    useEffect(() => {
-        const handleTouchOrScroll = () => {
-            setShowMobileComponents(true);
-            // Remove event listeners after mobile components are shown
-            window.removeEventListener("scroll", handleTouchOrScroll);
-            window.removeEventListener("touchstart", handleTouchOrScroll);
-        };
-
-        // Add event listeners for touch and scroll events
-        window.addEventListener("scroll", handleTouchOrScroll);
-        window.addEventListener("touchstart", handleTouchOrScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleTouchOrScroll);
-            window.removeEventListener("touchstart", handleTouchOrScroll);
-        };
-    }, []);
-    // =====================
     return (
         <>
             <section className={`w-full h-[100vh] flex items-center justify-start mt-0 md:mt-10 lg:mt-0 mb-0 md:mb-16 lg:mb-5 bg-none bg-no-repeat relative overflow-hidden z-1 top-[97px] lg:top-auto`}>
@@ -80,7 +31,7 @@ const Hero = ({ content }) => {
                             <h1 className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-5 mt-4 lg:mt-32`}>
                                 {title}
                             </h1>
-                            <p className="text-[15px] lg:text-[16px] font-light font-sans leading-normal tracking-wider mb-5">
+                            <p className="text-[15px] lg:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify mb-5">
                                 {para}
                             </p>
                             <div className="flex gap-6">
@@ -104,33 +55,15 @@ const Hero = ({ content }) => {
                                     href="javascript:$zopim.livechat.window.show();"
                                 />
                             </div>
-                            {
-                                isMobile ? (
-                                    showMobileComponents && (
-                                        <AutoScroll wrapperClass="mt-[40px] border-t-2 border-gray-500 pt-4" options={{ loop: true, align: "start" }}>
-                                            {
-                                                [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon1, icon2, icon3, icon4, icon5, icon6, icon7].map((e, i) => (
-                                                    <div key={i} className="shrink-0 grow-0 basis-1/4 mr-5">
-                                                        <Image src={e} alt="logo" className='w-[70%]' />
-                                                    </div>
-                                                ))
-                                            }
-                                        </AutoScroll>
-                                    )
-                                ) : (
-                                    showDesktopComponents && (
-                                        <AutoScroll wrapperClass="mt-[40px] border-t-2 border-gray-500 pt-4" options={{ loop: true, align: "start" }}>
-                                            {
-                                                [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon1, icon2, icon3, icon4, icon5, icon6, icon7].map((e, i) => (
-                                                    <div key={i} className="shrink-0 grow-0 basis-1/4 mr-5">
-                                                        <Image src={e} alt="logo" className='w-[70%]' />
-                                                    </div>
-                                                ))
-                                            }
-                                        </AutoScroll>
-                                    )
-                                )
-                            }
+                            <AutoScroll wrapperClass="mt-[40px] border-t-2 border-gray-500 pt-4" options={{ loop: true, align: "start" }}>
+                                {
+                                    [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon1, icon2, icon3, icon4, icon5, icon6, icon7].map((e, i) => (
+                                        <div key={i} className="shrink-0 grow-0 basis-1/4 mr-5">
+                                            <Image src={e} alt="logo" className='w-[70%]' />
+                                        </div>
+                                    ))
+                                }
+                            </AutoScroll>
                         </div>
                         <div className={`${styles.bannerImg} relative col-span-12 lg:col-span-7`}>
                             <div className="flex justify-between relative">
