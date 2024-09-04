@@ -1,7 +1,6 @@
 //===== Import Fonts =====
 import { primary } from "./configs/fonts";
 //===== Import Components =====
-import Scripts from "./Scripts";
 import ConditionalLayout from "./ConditionalLayout";
 //===== Import Css =====
 import "./global.css";
@@ -52,7 +51,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Scripts />
       <body className={`${primary.variable}`}>
         <ConditionalLayout>
           <main>{children}</main>

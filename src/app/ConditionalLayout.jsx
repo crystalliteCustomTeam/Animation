@@ -6,30 +6,10 @@ import { PopupProvider } from "./configs/store/Popup"
 import Footer from "@/components/footer/Footer"
 import Header from "@/components/header/Header"
 import Popup from "@/components/popup/Popup"
+import Scripts from "./Scripts"
 
 const ConditionalLayout = ({ children }) => {
-    const [showDesktopComponents, setShowDesktopComponents] = useState(true);
     const [showMobileComponents, setShowMobileComponents] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const checkMobile = () => {
-            setIsMobile(window.innerWidth <= 768);
-        };
-
-        checkMobile();
-        window.addEventListener("resize", checkMobile);
-
-        // Show desktop components after 1 second
-        const desktopTimer = setTimeout(() => {
-            setShowDesktopComponents(true);
-        }, 500);
-
-        return () => {
-            window.removeEventListener("resize", checkMobile);
-            clearTimeout(desktopTimer);
-        };
-    }, []);
 
     useEffect(() => {
         const handleTouchOrScroll = () => {
@@ -62,21 +42,12 @@ const ConditionalLayout = ({ children }) => {
     }
     return (
         <PopupProvider value={{ popup, togglePopup }}>
-            {
-                isMobile ? (
-                    showMobileComponents && (
-                        <>
-                            <Popup />
-                        </>
-                    )
-                ) : (
-                    showDesktopComponents && (
-                        <>
-                            <Popup />
-                        </>
-                    )
-                )
-            }
+            {showMobileComponents && (
+                <>
+                    <Popup />
+                    <Scripts />
+                </>
+            )}
             <>
                 {
                     pathname !== "/video-explainer-lp" &&
