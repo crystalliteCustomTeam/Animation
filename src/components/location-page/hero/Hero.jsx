@@ -31,7 +31,7 @@ const Hero = ({ content }) => {
     };
     return (
         <>
-            <section className={`w-full lg:h-[100vh] flex items-center justify-start mt-0 md:mt-10 lg:mt-0 mb-0 md:mb-16 lg:mb-5 bg-none bg-no-repeat relative overflow-hidden z-1 top-[97px] lg:top-auto`}>
+            <section className={`w-full h-[100dvh] flex items-center justify-start mt-0 md:mt-10 lg:mt-0 mb-0 md:mb-16 lg:mb-5 bg-none bg-no-repeat relative overflow-hidden z-1 top-[97px] lg:top-auto`}>
                 <div className="container">
                     <div className='grid grid-cols-12'>
                         <div className='col-span-12 lg:col-span-5'>
