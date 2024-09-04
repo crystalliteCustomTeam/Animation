@@ -6,6 +6,7 @@ import Axios from "axios";
 import { usePathname } from "next/navigation"
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
+import { HiMapPin } from 'react-icons/hi2';
 // ==== Images 
 import Payment from "media/video-explainer/payment-img.png"
 import UpArrow from "media/video-explainer/up-arrow.png"
@@ -283,6 +284,16 @@ const Contact = () => {
                                     <li className='py-[10px]'>
                                         <a href="https://infinityanimations.com" className='text-[15px] md:text-[20px] text-white montserrat flex items-center gap-2'>
                                             <Globe className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimations.com
+                                        </a>
+                                    </li>
+                                    <li className='py-[10px]'>
+                                        <a href="https://maps.app.goo.gl/BFBsCwAX1znom3LE6" target='_blank' className='text-[15px] md:text-[20px] text-white montserrat flex gap-2'>
+                                            <HiMapPin className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[40px] md:w-[45px] h-[25px]' /> One World Trade Center, Suite 8500, New York, New York, 10007, United States
+                                        </a>
+                                    </li>
+                                    <li className='py-[10px]'>
+                                        <a href="https://maps.app.goo.gl/QYDv6abiPbW5rRoK6" target='_blank' className='text-[15px] md:text-[20px] text-white montserrat flex gap-2'>
+                                            <HiMapPin className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[25px] h-[25px]' /> 1024 Iron Point Rd, Folsom, CA 95630
                                         </a>
                                     </li>
                                 </ul>
