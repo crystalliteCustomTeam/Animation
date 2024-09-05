@@ -86,9 +86,9 @@ function TestimonialNew({ content }) {
                             {testiContentNew2.map((testimonial, index) => (
                                 <Fancybox options={{ Carousel: { infinite: false } }} key={index}>
                                     <div className=" h-full group mb-8 mx-2">
-                                        <div className='flex bg-[#D60925]  rounded-[25px] mx-4 ps-[15px] pe-[10px] pt-[15px] md:px-[25px] md:py-[35px]' onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
+                                        <div className='flex bg-[#D60925]  rounded-[25px] mx-4 ps-[15px] pe-[10px] pt-[15px] md:px-[25px] md:py-[35px]'>
                                             {testimonial.video ? (
-                                                <Link href={testimonial.video} datafancybox="gallery">
+                                                <Link href={testimonial.video} datafancybox="gallery" onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
                                                     <div className='w-[100px] sm:w-[155px] h-[155px] md:w-[180px] md:h-[184px] box-testi '>
                                                         <div className='w-[100px] sm:w-[145px] h-[150px] md:w-[175px] md:h-[180px]  flex justify-center items-center  overlay-div-testi '>
                                                             <video loading="lazy" muted loop preload="auto" autoPlay={false} className="rounded-[12px] w-[150px] h-full object-cover " >
