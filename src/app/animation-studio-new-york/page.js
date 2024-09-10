@@ -22,6 +22,10 @@ import David from "media/thumbnails/david.jpg";
 import Emma from "media/thumbnails/emma.jpg";
 import Michael from "media/thumbnails/michael.jpg";
 import Sarah from "media/thumbnails/sarah.png";
+//================
+import body1 from "media/location-page/thumbnils/body1.jpg"
+import body2 from "media/location-page/thumbnils/body2.jpg"
+import body3 from "media/location-page/thumbnils/thumbnail6.jpg"
 
 const LocationPage = () => {
 
@@ -72,17 +76,25 @@ const LocationPage = () => {
         btnBg: "bg-prime",
     };
 
+    //=====Services Fold=====//
+    const services = {
+        subtitle: "Partner with NYC's Leading Animation Experts",
+        title: "Our Services",
+    };
+
     //=====Description Fold=====//
     const Desc1 = {
         title: (<>NYC Animation Studio <br /> <span className='text-[#FF2D4A]'> With Expert Animation and Visual Effects</span></>),
         para: "Our Animators specialize in creating vibrant and captivating animations and visual effects that bring characters and stories to life. Whether it’s for commercials, explainer videos, or entertainment, our animations are designed to engage and inspire your audience. With Infinity Animations, you get top-notch quality and creativity that stands out in the competitive landscape of animation studios in NYC.",
         bannerRight: "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
+        thumbnail: body1,
         downArrow: 'start'
     };
     const Desc2 = {
         title: (<>New York City Animation Studio <br /> <span className='text-[#FF2D4A]'> With Professional Animation Production </span></>),
         para: "Take your visuals to the next level with our Professional Animation Production. Our team is skilled in creating lifelike animations that provide a dynamic and immersive experience. From character modeling to full-scale animated features, our professional animator are perfect for making a lasting impression. Trust Infinity Animations, a leading NYC animation studio, to deliver stunning video production services.",
         bannerLeft: "https://player.vimeo.com/progressive_redirect/playback/950015817/rendition/720p/file.mp4?loc=external&log_user=0&signature=c60df41646f601d81fa4c987188c8e103f416d393f8ec1f9270e7114e4f0b3ed",
+        thumbnail: body2,
         downArrow: 'end'
     };
     const Desc3 = {
@@ -90,8 +102,14 @@ const LocationPage = () => {
             <br /><span className='text-[#FF2D4A]'> With Custom Animation Services</span></>),
         para: "Simplify complex concepts with our engaging and custom animation services. Ideal for educational content or corporate presentations, our custom animations make information easy to understand and remember. Our creative approach ensures that your message is delivered clearly and effectively. Choose Infinity Animations, one of the top animation companies in NYC, for your custom animation needs.",
         bannerRight: "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
+        thumbnail: body3,
     };
 
+    //=====Portfolio Fold=====//
+    const portfolio = {
+        title: "Our Exceptional Portfolio Of Video Animations",
+        para: "Why we are a Top Animation studio in NYC, we take pride in creating stunning 2D Animations, 3D Animations, Whiteboard Animations, Motion Graphics Animations, Hybrid Animations, and more videos for our Valued Clientele.",
+    };
 
     // banner Ribon
     const paraArrayBanner = [
@@ -267,9 +285,9 @@ const LocationPage = () => {
                         showMobileComponents && (
                             <>
                                 <BannerContact content={bannerContact} />
-                                <Services />
+                                <Services content={services} />
                                 <Description content={Desc1} />
-                                <Portfolio />
+                                <Portfolio content={portfolio} />
                                 <Description content={Desc2} />
                                 <Description content={Desc3} />
                                 <Want content={want} />
@@ -283,9 +301,9 @@ const LocationPage = () => {
                         showDesktopComponents && (
                             <>
                                 <BannerContact content={bannerContact} />
-                                <Services />
+                                <Services content={services} />
                                 <Description content={Desc1} />
-                                <Portfolio />
+                                <Portfolio content={portfolio} />
                                 <Description content={Desc2} />
                                 <Description content={Desc3} />
                                 <Want content={want} />

@@ -1,30 +1,59 @@
+import React, { useEffect, useRef } from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 // Import Images
 import DescDot from "media/location-page/desc-dot.png"
+import PlayIcon from "media/icons/play.png"
+//
+import { Fancybox as NativeFancybox } from "@fancyapps/ui"
+import "@fancyapps/ui/dist/fancybox/fancybox.css"
+
 
 function Description({ content }) {
-    const { title, para, bannerLeft, bannerRight, downArrow } = content;
+    const { title, para, bannerLeft, bannerRight, thumbnail, downArrow } = content;
 
-    // video code start
-    const handleVideoPlay = (e) => {
-        const video = e.currentTarget.querySelector('video');
-        video.play();
-    };
-    const handleVideoPause = (e) => {
-        const video = e.currentTarget.querySelector('video');
-        video.pause();
-    };
+    //========= fancy box =========
+    function Fancybox(props) {
+        const containerRef = useRef(null);
+
+        useEffect(() => {
+            const container = containerRef.current;
+
+            const delegate = props.delegate || "[datafancybox]";
+            const options = props.options || {};
+
+            NativeFancybox.bind(container, delegate, options);
+
+            return () => {
+                NativeFancybox.unbind(container);
+                NativeFancybox.close();
+            };
+        });
+
+        return <div ref={containerRef}>{props.children}</div>;
+    }
 
     return (
         <section className={`w-full flex items-center justify-start py-6 md:py-12 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative `}>
             <div className="container">
                 <div className='grid grid-cols-12 w-full'>
                     {bannerLeft && <div className={`order-last lg:order-first mt-[25px] lg:mt-0  col-span-12 lg:col-span-6 lg:w-[80%]`} >
-                        <div className="w-full h-full" onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
-                            <video loading="lazy" muted loop preload="auto" autoPlay={false} className="w-full h-full object-cover rounded-lg">
-                                <source src={bannerLeft} type="video/mp4" />
-                            </video>
-                        </div>
+                        <Fancybox options={{
+                            Carousel: {
+                                infinite: false,
+                            },
+                        }}>
+                            <Link className="w-full h-full" href={bannerLeft} datafancybox="gallery">
+                                <div className={`w-full h-full overlay relative group overflow-hidden rounded-lg`}>
+                                    <div className='w-full h-full flex justify-center items-center  overlay-div-testi '>
+                                        <Image src={thumbnail} alt="Infinity Animations" width={468} height={263} className='h-full w-full' />
+                                        <div className=" bg-secondary-100/70 h-full w-full absolute left-[50%] top-[100%] translate-x-[-50%] group-hover:top-[0%] flex items-center justify-cente">
+                                            <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0 mx-auto' />
+                                        </div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </Fancybox>
                     </div>
                     }
 
@@ -42,14 +71,24 @@ function Description({ content }) {
                         }
                     </div>
                     {bannerRight && <div className={`col-span-12 lg:col-span-6 lg:ms-auto my-auto mt-[25px] lg:mt-0 lg:w-[80%]`}>
-                        <div className="w-full h-full" onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
-                            <video loading="lazy" muted loop preload="auto" autoPlay={false} className="w-full h-full object-cover rounded-lg" >
-                                <source src={bannerRight} type="video/mp4" />
-                            </video>
-                        </div>
+                        <Fancybox options={{
+                            Carousel: {
+                                infinite: false,
+                            },
+                        }}>
+                            <Link className="w-full h-full" href={bannerRight} datafancybox="gallery">
+                                <div className={`w-full h-full overlay relative group overflow-hidden rounded-lg`}>
+                                    <div className='w-full h-full flex justify-center items-center  overlay-div-testi '>
+                                        <Image src={thumbnail} alt="Infinity Animations" width={468} height={263} className='h-full w-full' />
+                                        <div className=" bg-secondary-100/70 h-full w-full absolute left-[50%] top-[100%] translate-x-[-50%] group-hover:top-[0%] flex items-center justify-cente">
+                                            <Image src={PlayIcon} alt='Play-icon' className='brightness-200 invert-0 mx-auto' />
+                                        </div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </Fancybox>
                     </div>
                     }
-
                 </div>
             </div>
         </section>
