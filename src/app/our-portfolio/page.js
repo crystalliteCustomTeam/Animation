@@ -33,103 +33,128 @@ export default function Page() {
     const portfolioContent = [
         {
             title: "UI/ UX Design",
-            image: Portfolio1
+            image: Portfolio1,
+            href: "/ui-ux-design/"
         },
         {
             title: "3D LOGO",
-            image: Portfolio2
+            image: Portfolio2,
+            href: "/3d-logo/"
         },
         {
             title: "App Banner design",
-            image: Portfolio3
+            image: Portfolio3,
+            href: "/app-banner-design/"
         },
         {
             title: "Banner design",
-            image: Portfolio4
+            image: Portfolio4,
+            href: "/banner-design/"
         },
         {
             title: "book Cover",
-            image: Portfolio5
+            image: Portfolio5,
+            href: "/book-cover-design/"
         },
         {
             title: "Book illustrations",
-            image: Portfolio6
+            image: Portfolio6,
+            href: "/book-illustrations/"
         },
         {
             title: "Brochure Design",
-            image: Portfolio7
+            image: Portfolio7,
+            href: "/borchire-design/"
         },
         {
             title: "Business Card",
-            image: Portfolio8
+            image: Portfolio8,
+            href: "/business-card/"
         },
         {
             title: "Icons Design",
-            image: Portfolio9
+            image: Portfolio9,
+            href: "/icons-design/"
         },
         {
             title: "Label design",
-            image: Portfolio10
+            image: Portfolio10,
+            href: "/label-design/"
         },
         {
             title: "Logo Design",
-            image: Portfolio11
+            image: Portfolio11,
+            href: "/logo-design/"
         },
         {
             title: "2d logo",
-            image: Portfolio12
+            image: Portfolio12,
+            href: "/2d-logo-design/"
         },
         {
             title: "Mascot Design",
-            image: Portfolio13
+            image: Portfolio13,
+            href: "/mascot-design/"
         },
         {
             title: "Package design",
-            image: Portfolio14
+            image: Portfolio14,
+            href: "/package-design/"
         },
         {
             title: "Pop Art",
-            image: Portfolio15
+            image: Portfolio15,
+            href: "/popart/"
         },
         {
             title: "Poster Design",
-            image: Portfolio16
+            image: Portfolio16,
+            href: "/poster-design/"
         },
         {
             title: "Social Media Post",
-            image: Portfolio17
+            image: Portfolio17,
+            href: "/social-media-post/"
         },
         {
             title: "Sticker Design",
-            image: Portfolio18
+            image: Portfolio18,
+            href: "/sticker-design/"
         },
         {
             title: "T-shirt Design",
-            image: Portfolio19
+            image: Portfolio19,
+            href: "/t-shirt-design/"
         },
         {
             title: "vector Illustrations",
-            image: Portfolio20
+            image: Portfolio20,
+            href: "/vector-illustrations/"
         },
         {
             title: "Magazine Design",
-            image: Portfolio21
+            image: Portfolio21,
+            href: "/magazine-design/"
         },
         {
             title: "Isometric Illustration",
-            image: Portfolio22
+            image: Portfolio22,
+            href: "/isometric-illustration/"
         },
         {
             title: "Photo Editing",
-            image: Portfolio23
+            image: Portfolio23,
+            href: "/photo-editing/"
         },
         {
             title: "catalogue Design",
-            image: Portfolio24
+            image: Portfolio24,
+            href: "/catalogue-design/"
         },
         {
             title: "Flyer Design",
-            image: Portfolio25
+            image: Portfolio25,
+            href: "/flyer-design/"
         },
     ]
 
