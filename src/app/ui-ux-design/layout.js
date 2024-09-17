@@ -1,19 +1,19 @@
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
-  title: "Our Portfolio",
-  description: "Our Portfolio",
+  title: "UI/UX Design",
+  description: "UI/UX Design",
   //===== OG Tags =====
   openGraph: {
-    title: 'Our Portfolio',
-    description: 'Our Portfolio',
-    url: '/our-portfolio',
+    title: 'UI/UX Design',
+    description: 'UI/UX Design',
+    url: '/ui-ux-design',
     siteName: 'Infinity Animations',
     locale: 'en_US',
     type: 'website',
   },
   //===== Canonical =====
-  alternates: { canonical: '/our-portfolio' },
+  alternates: { canonical: '/ui-ux-design' },
   //===== GEO Tags =====
   robots: "noindex, nofollow",
   other: {},

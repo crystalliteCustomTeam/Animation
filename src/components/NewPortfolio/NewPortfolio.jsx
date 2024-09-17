@@ -29,7 +29,7 @@ const NewPortfolio = ({ content }) => {
                                         {portfolioData.title}
                                     </h3>
                                     <div className="btn opacity-0 scale-y-0 group-hover:scale-y-[1] group-hover:opacity-[1] origin-bottom group-hover:max-h-full">
-                                        <Link href={portfolioData.href} className='border font-sans text-[13px] xl:text-[16px] font-semibold w-full py-[8px] block text-center leading-[20px] xl:leading-[25px] tracking-wider hover:bg-black hover:duration-700 duration-700 ease-in-out lg:w-10/12 mx-auto'>
+                                        <Link href={portfolioData.href} target='_blank' className='border font-sans text-[13px] xl:text-[16px] font-semibold w-full py-[8px] block text-center leading-[20px] xl:leading-[25px] tracking-wider hover:bg-black hover:duration-700 duration-700 ease-in-out lg:w-10/12 mx-auto'>
                                             View More
                                         </Link>
                                     </div>
