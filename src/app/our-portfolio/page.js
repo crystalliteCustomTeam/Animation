@@ -64,7 +64,7 @@ export default function Page() {
         {
             title: "Brochure Design",
             image: Portfolio7,
-            href: "/borchire-design/"
+            href: "/brochure-design/"
         },
         {
             title: "Business Card",

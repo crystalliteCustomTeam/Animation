@@ -129,13 +129,6 @@ const PortfolioInner = () => {
                         <div className='group'>
                             <div className="card relative h-full overflow-hidden before:content-[''] before:absolute before:left-0 before:right-0 before:top-0 before:h-full before:w-full before:bg-[#0000004b] before:duration-700 before:opacity-0 group-hover:before:opacity-[1] ease-in-out group-hover:duration-700">
                                 <div className="image">
-                                    <Image src={Portfolio22} alt='Portfolio' className='h-full object-cover w-full' />
-                                </div>
-                            </div>
-                        </div>
-                        <div className='group'>
-                            <div className="card relative h-full overflow-hidden before:content-[''] before:absolute before:left-0 before:right-0 before:top-0 before:h-full before:w-full before:bg-[#0000004b] before:duration-700 before:opacity-0 group-hover:before:opacity-[1] ease-in-out group-hover:duration-700">
-                                <div className="image">
                                     <Image src={Portfolio12} alt='Portfolio' className='h-full object-cover w-full' />
                                 </div>
                             </div>
@@ -158,6 +151,13 @@ const PortfolioInner = () => {
                             <div className="card relative h-full overflow-hidden before:content-[''] before:absolute before:left-0 before:right-0 before:top-0 before:h-full before:w-full before:bg-[#0000004b] before:duration-700 before:opacity-0 group-hover:before:opacity-[1] ease-in-out group-hover:duration-700">
                                 <div className="image">
                                     <Image src={Portfolio15} alt='Portfolio' className='h-full object-cover w-full' />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='group'>
+                            <div className="card relative h-full overflow-hidden before:content-[''] before:absolute before:left-0 before:right-0 before:top-0 before:h-full before:w-full before:bg-[#0000004b] before:duration-700 before:opacity-0 group-hover:before:opacity-[1] ease-in-out group-hover:duration-700">
+                                <div className="image">
+                                    <Image src={Portfolio21} alt='Portfolio' className='h-full object-cover w-full' />
                                 </div>
                             </div>
                         </div>
