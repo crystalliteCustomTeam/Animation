@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from "react";
 import Script from 'next/script';
+import ComplexIdeas from "./components/complexIdeas/complexIdeas";
 // Import Components
 const HeaderLP = React.lazy(() => import('./components/Header/Header'));
 const Banner = React.lazy(() => import('./components/banner/Banner'));
@@ -111,6 +112,62 @@ const Video = () => {
     desc: "Scale up your business with our Animated Explainer Video Services today! Reviews:",
     isBtn: true,
   }
+  // Complex Idea Start
+
+  const menus = [
+    { label: "Struggling to Simplify Complex Ideas? We’ve Got You Covered!", index: 0 },
+    { label: "Struggling to Simplify Complex Ideas? We’ve Got You Covered!", index: 1 },
+    { label: "Struggling to Simplify Complex Ideas? We’ve Got You Covered!", index: 2 },
+    { label: "Struggling to Simplify Complex Ideas? We’ve Got You Covered!", index: 3 },
+    { label: "Struggling to Simplify Complex Ideas? We’ve Got You Covered!", index: 4 },
+  ];
+  const sections = [
+    [
+      {
+        title: <>Struggling to Simplify Complex Ideas? <br className="xl:block hidden" /> We’ve Got You Covered</>,
+        content: `<p class='montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] mb-[20px]'>Struggling to communicate complex ideas clearly? At Infinity Animations, we transform complicated concepts into simple, engaging explainer videos. Our videos break down difficult topics, ensuring your audience understands your message, increasing engagement, and driving conversions. Let us simplify your communication for maximum impact.</p>
+        <p class='montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] mb-[20px]'>
+        Communicating complex concepts can be challenging, but we make it easy. At Infinity Animations, we specialize in creating explainer videos that turn intricate ideas into clear, engaging stories. Our videos simplify your message, helping your audience understand and connect with your brand effortlessly, driving better engagement, higher conversions, and lasting results.</p>`,
+      },
+    ],
+    [
+      {
+        title: <>Struggling to Simplify Complex Ideas? <br className="xl:block hidden" /> We’ve Got You Covered</>,
+        content: `<p class='montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] mb-[20px]'>Struggling to communicate complex ideas clearly? At Infinity Animations, we transform complicated concepts into simple, engaging explainer videos. Our videos break down difficult topics, ensuring your audience understands your message with ease, increasing engagement, and driving conversions. Let us simplify your communication for maximum impact.</p>
+        <p class='montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] mb-[20px]'>
+        Communicating complex concepts can be challenging, but we make it easy. At Infinity Animations, we specialize in creating explainer videos that turn intricate ideas into clear, engaging stories. Our videos simplify your message, helping your audience understand and connect with your brand effortlessly, driving better engagement, higher conversions.</p>`,
+      },
+    ],
+    [
+      {
+        title: <>Struggling to Simplify Complex Ideas? <br className="xl:block hidden" /> We’ve Got You Covered</>,
+        content: `<p class='montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] mb-[20px]'>Communicate complex ideas clearly? At Infinity Animations, we transform complicated concepts into simple, engaging explainer videos. Our videos break down difficult topics, ensuring your audience understands your message with ease, increasing engagement, and driving conversions. Let us simplify your communication for maximum impact.</p>
+        <p class='montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] mb-[20px]'>
+        Communicating complex concepts can be challenging, but we make it easy. At Infinity Animations, we specialize in creating explainer videos that turn intricate ideas into clear, engaging stories. Our videos simplify your message, helping your audience understand and connect with your brand effortlessly, driving better engagement, higher conversions, and lasting results.</p>`,
+      },
+    ],
+    [
+      {
+        title: <>Struggling to Simplify Complex Ideas? <br className="xl:block hidden" /> We’ve Got You Covered</>,
+        content: `<p class='montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] mb-[20px]'>Struggling to communicate complex ideas clearly? At Infinity Animations, we transform complicated concepts into simple, engaging explainer videos. Our videos break down difficult topics, ensuring your audience understands your message with ease, increasing engagement, and driving conversions. Let us simplify your communication for maximum impact.</p>
+        <p class='montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] mb-[20px]'>
+        Communicating complex concepts can be challenging, but we make it easy. At Infinity Animations, we specialize in creating explainer videos that turn intricate ideas into clear, engaging stories. Our videos simplify your message, helping your audience understand and connect with your brand effortlessly, driving better, higher conversions, and lasting results.</p>`,
+      },
+    ],
+    [
+      {
+        title: <>Struggling to Simplify Complex Ideas? <br className="xl:block hidden" /> We’ve Got You Covered</>,
+        content: `<p class='montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] mb-[20px]'>Struggling to communicate complex ideas clearly? At Infinity Animations, we transform complicated concepts into simple, engaging explainer videos. Our videos break down difficult topics, ensuring your audience understands your message with ease, increasing engagement, and driving conversions. Let us simplify your communication for maximum impact.</p>
+        <p class='montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] mb-[20px]'>
+        Communicating complex concepts can be challenging, but we make it easy. At Infinity Animations, we specialize in creating explainer videos that turn intricate ideas into clear, engaging stories. Our videos simplify your message, helping your audience understand and your brand effortlessly, driving better engagement, higher conversions, and lasting results.</p>`,
+      },
+    ],
+  ];
+  const complexContent = {
+    menus: menus,
+    sections: sections,
+  };
+  // Complex Idea Edn
   return (
     <>
       <div className='bg-white'>
@@ -127,6 +184,7 @@ const Video = () => {
                 <Brands content={brands} />
                 <ExplainerType />
                 <Packages />
+                <ComplexIdeas content={complexContent} />
                 <Animations />
                 <Work />
                 <Faqs content={faqs} />
@@ -146,6 +204,7 @@ const Video = () => {
                 <Brands content={brands} />
                 <ExplainerType />
                 <Packages />
+                <ComplexIdeas content={complexContent} />
                 <Animations />
                 <Work />
                 <Faqs content={faqs} />
