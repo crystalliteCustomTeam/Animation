@@ -128,29 +128,35 @@ const Video = () => {
     [
       {
         title: <>Struggling to Simplify Complex Ideas? <br className="xl:block hidden" /> We’ve Got You Covered</>,
-        content: `<p class='montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] mb-[20px]'>Having trouble explaining what your business does in a way your audience really gets? Is your message coming across as too complex, leaving potential customers confused or disengaged? You’re not alone – plenty of businesses struggle to simplify their ideas or products for their audience.</p>`,
+        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] h-[177px] overflow-y-auto">
+        <p class='mb-[20px]'>Having trouble explaining what your business does in a way your audience really gets? Is your message coming across as too complex, leaving potential customers confused or disengaged? You’re not alone – plenty of businesses struggle to simplify their ideas or products for their audience.</p>
+        </div>`,
       },
     ],
     [
       {
         title: <>Animated Explainer Videos That Help <br className="xl:block hidden" /> Your Brand Grow and Succeed</>,
-        content: `<p class='montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] mb-[20px]'>Struggling to communicate complex ideas clearly? At infinity animations, We transform complicated concepts into simple, engaging animated explainer videos services, Our videos breakdown difficult topics, ensuring your audience understands your message with ease, increasing engagement, and driving conversions. Let us simplify your communication for maximum impact.</p>
-        <p class='montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] mb-[20px]'>
-        Communicating complex concepts can be challenging, but we make it easy. At infinity animations, we specialize in creating explainer videos services that turn intricate ideas into clear, engaging stories. Our Videos services simplify your message, helping your audience understand and connect with your brand effortlessly, driving better engagement, higher conversions, and lasting results.  </p>`,
+        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] h-[177px] overflow-y-auto">
+        <p class='mb-[20px]'>Struggling to communicate complex ideas clearly? At infinity animations, We transform complicated concepts into simple, engaging animated explainer videos services, Our videos breakdown difficult topics, ensuring your audience understands your message with ease, increasing engagement, and driving conversions. Let us simplify your communication for maximum impact.</p>
+        <p class='mb-[20px]'>
+        Communicating complex concepts can be challenging, but we make it easy. At infinity animations, we specialize in creating explainer videos services that turn intricate ideas into clear, engaging stories. Our Videos services simplify your message, helping your audience understand and connect with your brand effortlessly, driving better engagement, higher conversions, and lasting results.  </p>
+        </div>`,
       },
     ],
     [
       {
         title: <>Animated Videos Services  <br className="xl:block hidden" /> That Increase Your Revenue</>,
-        content: `<p class='montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] mb-[20px]'>At Infinity Animations, we turn intricate concepts into captivating, easy-to-understand animated explainer videos. Our expert team specializes in breaking down complex topics, making them accessible and engaging for your audience.</p>
-        <p class='montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] mb-[20px]'>
-        With our custom video services, you'll enhance clarity, boost engagement, and drive higher conversions. Simplify your message and amplify your impact with videos that resonate and connect. Let Infinity Animations be your partner in transforming complex ideas into compelling stories that deliver results. Ready to elevate your communication? Contact us today and experience the power of animated explainer videos.</p>`,
+        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] h-[177px] overflow-y-auto">
+        <p class='mb-[20px]'>At Infinity Animations, we turn intricate concepts into captivating, easy-to-understand animated explainer videos. Our expert team specializes in breaking down complex topics, making them accessible and engaging for your audience.</p>
+        <p class='mb-[20px]'>
+        With our custom video services, you'll enhance clarity, boost engagement, and drive higher conversions. Simplify your message and amplify your impact with videos that resonate and connect. Let Infinity Animations be your partner in transforming complex ideas into compelling stories that deliver results. Ready to elevate your communication? Contact us today and experience the power of animated explainer videos.</p>
+        </div>`,
       },
     ],
     [
       {
         title: <>Struggling to Simplify Complex Ideas? <br className="xl:block hidden" /> We’ve Got You Covered</>,
-        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]"><p class='mb-[20px]'>Navigating the challenge of conveying complex ideas can be daunting, but with Infinity Animations, it's a breeze. We specialize in transforming intricate concepts into clear, compelling animated explainer videos that capture attention and drive results.</p>
+        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] h-[177px] overflow-y-auto"><p class='mb-[20px]'>Navigating the challenge of conveying complex ideas can be daunting, but with Infinity Animations, it's a breeze. We specialize in transforming intricate concepts into clear, compelling animated explainer videos that capture attention and drive results.</p>
         <p class='mb-[20px]'>
         Why choose us? Our expertise lies in breaking down difficult topics into simple, engaging visuals that make your message resonate with your audience. By partnering with us, you'll benefit from:</p>
         <ul class="list-disc ml-[20px] mb-[20px]">
@@ -167,7 +173,7 @@ const Video = () => {
     [
       {
         title: <>Video Animation Company  <br className="xl:block hidden" /> That Delivers Results</>,
-        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]">
+        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] h-[177px] overflow-y-auto">
         <p class='mb-[20px]'>At Infinity Animations, we understand that effective communication is crucial for success. Our video animation services are designed to deliver tangible results by turning complex ideas into impactful, easy-to-understand visuals.</p>
         <ul class="list-disc ml-[20px] mb-[20px]">
         <li><strong>Proven Impact:</strong> Our animations are crafted to not only simplify your message but also enhance audience engagement and drive action.</li>
@@ -183,7 +189,7 @@ const Video = () => {
     [
       {
         title: <>Your Go-To Video Animation Company   <br className="xl:block hidden" /> for High-Converting Content</>,
-        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]">
+        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px] h-[177px] overflow-y-auto">
         <p class='mb-[20px]'>Looking for video content that drives results? At Infinity Animations, we specialize in creating high-converting animated videos that captivate your audience and boost your business performance.</p>
         <ul class="list-disc ml-[20px] mb-[20px]">
         <li><strong>High-Impact Visuals:</strong> Our animations are designed to capture attention and convey your message clearly, making a lasting impression on your audience.</li>
@@ -193,7 +199,9 @@ const Video = () => {
         <p class="mb-[20px]">
         Choose Infinity Animations for video content that not only looks great but also performs exceptionally. Let us help you transform your vision into high-converting animations that deliver real business results.
         </p>
-        </div>`,
+        </
+        </div>
+        </div>div>`,
       },
     ],
   ];
