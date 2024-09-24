@@ -78,7 +78,7 @@ const LocationPage = () => {
 
     //=====Services Fold=====//
     const services = {
-        subtitle: "Partner with NYC's Leading Animation Experts",
+        subtitle: "Partner with Atlanta's Leading Animation Experts",
         title: "Our Services",
     };
 
@@ -108,7 +108,7 @@ const LocationPage = () => {
     //=====Portfolio Fold=====//
     const portfolio = {
         title: "Our Exceptional Portfolio Of Video Animations",
-        para: "Why we are a Top Animation studio in NYC, we take pride in creating stunning 2D Animations, 3D Animations, Whiteboard Animations, Motion Graphics Animations, Hybrid Animations, and more videos for our Valued Clientele.",
+        para: "Why we are a Top Animation studio in Atlanta, we take pride in creating stunning 2D Animations, 3D Animations, Whiteboard Animations, Motion Graphics Animations, Hybrid Animations, and more videos for our Valued Clientele.",
     };
 
     // banner Ribon
@@ -145,7 +145,7 @@ const LocationPage = () => {
     //=====Concept Fold=====//
     const concept = {
         title: (<> Design Process at Infinity Animations </>),
-        para: (<>  At Infinity Animations, we follow a comprehensive and detailed process to ensure the highest quality of work. Here’s how we bring your ideas to life as one of the leading animation studios in NYC. </>),
+        para: (<>  At Infinity Animations, we follow a comprehensive and detailed process to ensure the highest quality of work. Here’s how we bring your ideas to life as one of the leading animation studios in Atlanta. </>),
         btnBg: "bg-prime",
     };
 
@@ -244,14 +244,14 @@ const LocationPage = () => {
             stars: icon2,
             name: 'Emma R.',
             company: "Social Media Manager",
-            para: "Our experience with Infinity Animations for our motion graphics project was nothing short of amazing. We needed high-quality promotional videos for our social media campaigns, and their team delivered spectacular results. The animations were visually striking and perfectly aligned with our brand's messaging. Their innovative techniques and creativity made our content stand out, significantly boosting our online engagement. Choosing Infinity Animations, a leading NYC animation studio, was one of the best decisions for our marketing efforts. Their professionalism and dedication are truly commendable.",
+            para: "Our experience with Infinity Animations for our motion graphics project was nothing short of amazing. We needed high-quality promotional videos for our social media campaigns, and their team delivered spectacular results. The animations were visually striking and perfectly aligned with our brand's messaging. Their innovative techniques and creativity made our content stand out, significantly boosting our online engagement. Choosing Infinity Animations, a leading Atlanta animation studio, was one of the best decisions for our marketing efforts. Their professionalism and dedication are truly commendable.",
             thumbnail: Emma,
         },
         {
             stars: icon2,
             name: 'David H.',
             company: "Educational Coordinator",
-            para: "Our experience with Infinity Animations for our motion graphics project was nothing short of amazing. We needed high-quality promotional videos for our social media campaigns, and their team delivered spectacular results. The animations were visually striking and perfectly aligned with our brand's messaging. Their innovative techniques and creativity made our content stand out, significantly boosting our online engagement. Choosing Infinity Animations, a leading NYC animation studio, was one of the best decisions for our marketing efforts. Their professionalism and dedication are truly commendable.",
+            para: "Our experience with Infinity Animations for our motion graphics project was nothing short of amazing. We needed high-quality promotional videos for our social media campaigns, and their team delivered spectacular results. The animations were visually striking and perfectly aligned with our brand's messaging. Their innovative techniques and creativity made our content stand out, significantly boosting our online engagement. Choosing Infinity Animations, a leading Atlanta animation studio, was one of the best decisions for our marketing efforts. Their professionalism and dedication are truly commendable.",
             thumbnail: David,
         },
         {
