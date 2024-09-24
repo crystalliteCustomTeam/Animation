@@ -199,9 +199,7 @@ const Video = () => {
         <p class="mb-[20px]">
         Choose Infinity Animations for video content that not only looks great but also performs exceptionally. Let us help you transform your vision into high-converting animations that deliver real business results.
         </p>
-        </
-        </div>
-        </div>div>`,
+        </div>`,
       },
     ],
   ];
