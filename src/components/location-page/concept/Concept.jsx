@@ -59,7 +59,7 @@ const Concept = ({ content }) => {
                                 </div>
                                 <div>
                                     <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Storyboarding </h3>
-                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Next, we create storyboards that visually map out your video, displaying the sequence of animation events. This step is crucial for planning and visualizing the project before moving into production. Our meticulous storyboarding process ensures that every detail is considered, showcasing why we are a top choice among NYC animation studios.</p>
+                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Next, we create storyboards that visually map out your video, displaying the sequence of animation events. This step is crucial for planning and visualizing the project before moving into production. Our meticulous storyboarding process ensures that every detail is considered, showcasing why we are a top choice among Atlanta animation studios.</p>
                                 </div>
                             </div>
                             <div className="sm:p-4">
@@ -71,7 +71,7 @@ const Concept = ({ content }) => {
                                 </div>
                                 <div>
                                     <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Creation </h3>
-                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Using the storyboard as our guide, our animators bring your story to life with engaging visuals. Whether it’s 2D Animation, 3D Animation, or Motion Graphics, our creative team employs the latest techniques and tools to produce stunning animations. Our expertise in various animation styles makes us one of the best animation companies in NYC.</p>
+                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Using the storyboard as our guide, our animators bring your story to life with engaging visuals. Whether it’s 2D Animation, 3D Animation, or Motion Graphics, our creative team employs the latest techniques and tools to produce stunning animations. Our expertise in various animation styles makes us one of the best animation companies in Atlanta.</p>
                                 </div>
                             </div>
                             <div className="sm:p-4">
@@ -83,7 +83,7 @@ const Concept = ({ content }) => {
                                 </div>
                                 <div>
                                     <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Delivery </h3>
-                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Lastly, we perfect and polish the animation through editing and deliver you the best result on time. Our commitment to quality and punctuality has earned us a reputation as one of the most reliable animation studios in NYC and Brooklyn. We ensure that your project not only meets but exceeds your expectations.</p>
+                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Lastly, we perfect and polish the animation through editing and deliver you the best result on time. Our commitment to quality and punctuality has earned us a reputation as one of the most reliable animation studios in Atlanta and Brooklyn. We ensure that your project not only meets but exceeds your expectations.</p>
                                 </div>
                             </div>
                         </div>
