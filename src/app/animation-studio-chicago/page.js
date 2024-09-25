@@ -14,7 +14,7 @@ import Contact from '@/components/location-page/contact/Contact';
 //==== Hero Images
 import BannerImg from "media/location-page/florida.png"
 //==== Looking Images
-import LookingFlodImg from "media/home/looking-img.png";
+import LookingFlodImg from "media/home/looking-img.png"; 
 //================
 import body1 from "media/location-page/thumbnils/body1.jpg"
 import body2 from "media/location-page/thumbnils/body2.jpg"
