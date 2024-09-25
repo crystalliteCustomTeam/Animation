@@ -35,7 +35,7 @@ const ComplexIdeas = ({ content }) => {
                         </div>
                         <div className="col-span-12 lg:col-span-6">
                             {sections[activeTab] && (
-                                <div className='bg-[#FFD100] rounded-[20px] py-[30px] md:py-[60px] px-[25px] mr-auto'>
+                                <div className='bg-[#FFD100] rounded-[20px] py-[30px] md:py-[30px] px-[25px] mr-auto h-full'>
                                     {sections[activeTab].map((item, index) => (
                                         <div key={index}>
                                             <h2 className='text-[#231f20] font-bold montserrat text-[18px] xl:text-[25px] mb-[20px]'>
