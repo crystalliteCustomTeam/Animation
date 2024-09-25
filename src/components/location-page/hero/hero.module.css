@@ -22,7 +22,7 @@
 
 .topRight {
   position: absolute;
-  top: 180px;
+  top: 200px;
   right: 15%;
   width: 60px;
 }
@@ -55,7 +55,7 @@
   }
 
   .topRight {
-    top: 190px;
+    top: 210px;
     right: 15%;
   }
 
@@ -79,8 +79,6 @@
   }
 
   .topRight {
-    top: 190px;
-    right: 15%;
     width: 50px;
   }
 
@@ -104,19 +102,18 @@
     width: 85px;
   }
 
-  .topRight {
-    width: 50px;
-    top: 195px;
-    right: 15%;
-  }
-
   .bottomRight {
     bottom: 90px;
+  }
+
+  .bannerImg2 img {
+    width: 75%;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .bannerImg {
+  .bannerImg,
+  .bannerImg2 {
     display: none;
   }
 }

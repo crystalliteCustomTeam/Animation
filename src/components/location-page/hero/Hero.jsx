@@ -5,10 +5,6 @@ import styles from "./hero.module.css"
 // Import Components
 import CTA from "@/components/cta/CTA";
 // Import Images
-import topLeft from "media/location-page/top-left.png"
-import topRight from "media/location-page/top-right.png"
-import bottomRight from "media/location-page/bottom-right.png"
-import BannerImg from "media/location-page/banner-img.png"
 import icon1 from "media/icons/banner-logo-1.png";
 import icon2 from "media/icons/banner-logo-2.png";
 import icon3 from "media/icons/banner-logo-3.png";
@@ -20,7 +16,7 @@ import icon7 from "media/icons/banner-logo-7.png";
 import { AutoScroll } from '@/components/sliders';
 
 const Hero = ({ content }) => {
-    const { title, para, } = content;
+    const { title, para, banImg, BannerImg, topLeft, topRight, bottomRight } = content;
 
     return (
         <>
@@ -65,23 +61,30 @@ const Hero = ({ content }) => {
                                 }
                             </AutoScroll>
                         </div>
-                        <div className={`${styles.bannerImg} relative col-span-12 lg:col-span-7`}>
-                            <div className="flex justify-between relative">
-                                <div>
-                                    <Image src={topLeft} alt='Infinity Animation' className={`${styles.topLeft}`} />
+                        {banImg ? (
+                            <div className={`${styles.bannerImg} relative col-span-12 lg:col-span-7`}>
+                                <div className="flex justify-between relative">
+                                    <div>
+                                        <Image src={topLeft} alt='Infinity Animation' className={`${styles.topLeft}`} />
+                                    </div>
+                                    <div>
+                                        <Image src={topRight} alt='Infinity Animation' className={`${styles.topRight}`} />
+                                    </div>
+                                </div>
+                                <div className={styles.mainImg}>
+                                    <Image src={BannerImg} alt="Infinity Animations" />
                                 </div>
                                 <div>
-                                    <Image src={topRight} alt='Infinity Animation' className={`${styles.topRight}`} />
+                                    <Image src={bottomRight} alt='Infinity Animation' className={`${styles.bottomRight}`} />
                                 </div>
-
                             </div>
-                            <div className={styles.mainImg}>
-                                <Image src={BannerImg} alt="Infinity Animations" />
+                        ) : (
+                            <div className={`${styles.bannerImg2} col-span-12 lg:col-span-7`}>
+                                <div className="w-full h-full flex items-end justify-end">
+                                    <Image src={BannerImg} alt="Infinity Animations" />
+                                </div>
                             </div>
-                            <div>
-                                <Image src={bottomRight} alt='Infinity Animation' className={`${styles.bottomRight}`} />
-                            </div>
-                        </div>
+                        )}
                     </div>
                 </div>
             </section>
