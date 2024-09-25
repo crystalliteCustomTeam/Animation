@@ -24,9 +24,9 @@ const ComplexIdeas = ({ content }) => {
                 <div className="group bg-[#F2F5FA] rounded-[20px] py-[15px] px-[10px]">
                     <div className="grid grid-cols-12 gap-3">
                         <div className="col-span-12 lg:col-span-6">
-                            <ul className='cus-tab py-[10px] px-[25px] flex flex-row lg:flex-col overflow-x-scroll lg:overflow-x-hidden text-nowrap flex-nowrap h-full'>
+                            <ul className='cus-tab py-[10px] px-[5px] flex flex-row lg:flex-col overflow-x-scroll lg:overflow-x-hidden text-nowrap flex-nowrap h-full'>
                                 {menus.map((tab, index) => (
-                                    <li key={index} className={`text-[#231f20] text-[12px] xl:text-[15px] montserrat font-bold leading-[22px] pb-[17px] border-b  flex items-center justify-between mx-[20px] px-[20px] pl-[10px] relative before:content-[''] before:absolute before:left-[-8px] before:top-[48%] before:w-[9px] before:h-[9px] before:rounded-full pt-[25px] ${activeTab === index ? 'opacity-100 border-b-[#707070] before:bg-[#134478]' : 'opacity-30 border-b-[#707070] before:bg-transparent before:border-[1px] before:border-black'}`} onMouseEnter={() => handleTabClick(index)}>
+                                    <li key={index} className={`text-[#231f20] text-[12px] xl:text-[14px] montserrat font-bold leading-[22px] pb-[17px] border-b  flex items-center justify-between mx-[20px] px-[20px] pl-[10px] relative before:content-[''] before:absolute before:left-[-8px] before:top-[48%] before:w-[9px] before:h-[9px] before:rounded-full pt-[25px] ${activeTab === index ? 'opacity-100 border-b-[#707070] before:bg-[#134478]' : 'opacity-30 border-b-[#707070] before:bg-transparent before:border-[1px] before:border-black'}`} onMouseEnter={() => handleTabClick(index)}>
                                         {tab.label}
                                         <Image src={Arrow} alt='Infinity Animation' width={20} className={`${activeTab === index ? 'block' : 'hidden'} ml-3`} />
                                     </li>
