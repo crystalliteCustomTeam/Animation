@@ -17,8 +17,8 @@ const ComplexIdeas = ({ content }) => {
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12">
-                        <h2 className='text-[#231f20] text-center font-[700] montserrat text-[18px] md:text-[25px] lg:text-[30px]'>Struggling to Simplify Complex Ideas? We’ve Got You Covered!</h2>
-                        <p className='text-[#231f20] text-[16px] montserrat font-[400] py-[17px] text-center mx-auto leading-[22px] pb-[30px] md:pb-[60px]'>Are you finding it hard to explain what your business does in a way that your audience truly understands? Does your message feel too complicated, leaving potential customers confused or uninterested? You're not alone—many businesses face the same challenge when trying to communicate complex ideas or products.</p>
+                        <h2 className='text-[#231f20] text-center font-[700] montserrat text-[18px] md:text-[25px] lg:text-[30px]'>Struggling to Simplify Ideas? Boost Business with Explainer Videos</h2>
+                        <p className='text-[#231f20] text-[16px] montserrat font-[400] py-[17px] text-center mx-auto leading-[22px] pb-[30px] md:pb-[60px]'>Having trouble explaining what your business does in a way your audience really gets? Is your message coming across as too complex, leaving potential customers confused or disengaged? You’re not alone – plenty of businesses struggle to simplify their ideas or products for their audience.</p>
                     </div>
                 </div>
                 <div className="group bg-[#F2F5FA] rounded-[20px] py-[15px] px-[10px]">

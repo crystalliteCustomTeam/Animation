@@ -115,9 +115,6 @@ const Video = () => {
   // Complex Idea Start
 
   const menus = [
-    {
-      label: "Struggling to Simplify Ideas? Boost Business with Explainer Videos", index: 0
-    },
     { label: "Turn Complexity into Clarity with Animated Explainer Videos", index: 1 },
     { label: "Animated Explainer Videos That Help Your Brand Grow and Succeed", index: 2 },
     { label: "Animated Videos Services That Increase Your Revenue", index: 3 },
@@ -126,14 +123,6 @@ const Video = () => {
     { label: "Your Go-To Video Animation Company for High-Converting Content", index: 6 },
   ];
   const sections = [
-    [
-      {
-        title: <>Struggling to Simplify Ideas? <br className="xl:block hidden" />Boost Business with Explainer Videos</>,
-        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]">
-        <p class='mb-[20px]'>Having trouble explaining what your business does in a way your audience really gets? Is your message coming across as too complex, leaving potential customers confused or disengaged? You’re not alone – plenty of businesses struggle to simplify their ideas or products for their audience.</p>
-        </div>`,
-      },
-    ],
     [
       {
         title: <>Turn Complexity into Clarity with <br className="xl:block hidden" /> Animated Explainer Videos</>,
