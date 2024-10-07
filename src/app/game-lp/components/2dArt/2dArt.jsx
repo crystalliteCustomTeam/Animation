@@ -10,7 +10,7 @@ import Images2 from "media/game-lp/2d2.png"
 import Images3 from "media/game-lp/2d3.png"
 import Images4 from "media/game-lp/2d4.png"
 import Images5 from "media/game-lp/2d5.png"
-import Images6 from "media/game-lp/2d6.PNG"
+import Images6 from "media/game-lp/2d6.png"
 import BtnBg from "media/game-lp/btn-bg1.png"
 
 const TwoDArt = () => {
