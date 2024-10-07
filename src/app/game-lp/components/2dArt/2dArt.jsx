@@ -5,12 +5,12 @@ import Image from 'next/image'
 import TwoDImage from "media/game-lp/2dArt.png"
 import BgImage from "media/game-lp/2dImagebg.png"
 import ImageParticle1 from "media/game-lp/2dparticle.png"
-import Images1 from "media/game-lp/2d1.PNG"
-import Images2 from "media/game-lp/2d2.PNG"
-import Images3 from "media/game-lp/2d3.PNG"
-import Images4 from "media/game-lp/2d4.PNG"
-import Images5 from "media/game-lp/2d5.PNG"
-import Images6 from "media/game-lp/2d6.PNG"
+import Images1 from "media/game-lp/2d1.png"
+import Images2 from "media/game-lp/2d2.png"
+import Images3 from "media/game-lp/2d3.png"
+import Images4 from "media/game-lp/2d4.png"
+import Images5 from "media/game-lp/2d5.png"
+import Images6 from "media/game-lp/2d6.png"
 import BtnBg from "media/game-lp/btn-bg1.png"
 
 const TwoDArt = () => {
