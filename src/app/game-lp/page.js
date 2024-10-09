@@ -1,5 +1,5 @@
 import React from "react";
-import { Banner, Clients, Header, OurProcess, Portfolio, SmallBanner, ThreeDArt, TwoDArt, VFX, WhyChoose } from "./components";
+import { Banner, Clients, Discuss, Header, OurProcess, Platform, Portfolio, SmallBanner, TechStack, Testimonials, ThreeDArt, TwoDArt, VFX, WhyChoose } from "./components";
 
 export default function Page() {
     return (
@@ -14,6 +14,10 @@ export default function Page() {
             <SmallBanner />
             <WhyChoose />
             <OurProcess />
+            <Discuss />
+            <TechStack />
+            <Platform />
+            {/* <Testimonials /> */}
         </>
     )
 }

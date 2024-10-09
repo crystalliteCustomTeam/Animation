@@ -10,8 +10,10 @@ const Portfolio = dynamic(() => import("./Portfolio/Portfolio"));
 const SmallBanner = dynamic(() => import("./SmallBanner/SmallBanner"));
 const WhyChoose = dynamic(() => import("./WhyChoose/WhyChoose"));
 const OurProcess = dynamic(() => import("./OurProcess/OurProcess"));
-
-
+const Discuss = dynamic(() => import("./Discusss/Discusss"));
+const TechStack = dynamic(() => import("./TechStack/TechStack"));
+const Platform = dynamic(() => import("./Platform/Platform"));
+const Testimonials = dynamic(() => import("./Testimonials/Testimonials"));
 
 export {
     Header,
@@ -23,5 +25,9 @@ export {
     Portfolio,
     SmallBanner,
     WhyChoose,
-    OurProcess
+    OurProcess,
+    Discuss,
+    TechStack,
+    Platform,
+    Testimonials,
 }
