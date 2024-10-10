@@ -66,6 +66,7 @@ const ConditionalLayout = ({ children }) => {
                     pathname !== "/explainer-video-services-global" &&
                     pathname !== "/animating-studio-lp-2" &&
                     pathname !== "/video-explainer-lp4" &&
+                    pathname !== "/animated-healthcare-lp" &&
                     pathname !== "/infinity-studio" && (
                         <Header />
                     )
@@ -90,6 +91,7 @@ const ConditionalLayout = ({ children }) => {
                     pathname !== "/explainer-video-services-global" &&
                     pathname !== "/animating-studio-lp-2" &&
                     pathname !== "/video-explainer-lp4" &&
+                    pathname !== "/animated-healthcare-lp" &&
                     pathname !== "/infinity-studio" && (
                         <Footer />
                     )
