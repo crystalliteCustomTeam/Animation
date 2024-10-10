@@ -60,6 +60,7 @@ const ConditionalLayout = ({ children }) => {
                     pathname !== "/explainer-videos-duplicate" &&
                     pathname !== "/explainer-videos-animations" &&
                     pathname !== "/logo-animation-lp" &&
+                    pathname !== "/game-lp" &&
                     pathname !== "/lp/explainer-video-animation" &&
                     pathname !== "/explainer-video-services" &&
                     pathname !== "/explainer-video-services-global" &&
@@ -81,6 +82,7 @@ const ConditionalLayout = ({ children }) => {
                     pathname !== "/explainer-videos-duplicate" &&
                     pathname !== "/explainer-videos-animations" &&
                     pathname !== "/logo-animation-lp" &&
+                    pathname !== "/game-lp" &&
                     pathname !== "/logo-animation-lp-copy" &&
                     pathname !== "/logo-animation-lp-black" &&
                     pathname !== "/lp/explainer-video-animation" &&
