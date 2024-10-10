@@ -38,9 +38,9 @@ const WhyChoose = () => {
             <div className="max-w-7xl mx-auto px-4 md:px-8 xl:px-0">
                 <div className="grid-cols-12">
                     <div className="txt text-center">
-                        <h2 className='text-[30px] sm:text-[50px] lg:text-[60px] leading-[70px] sm:leading-[80px] lg:leading-[90px] font-semibold text-white poppins md:mb-3 relative w-full md:w-10/12 lg:w-7/12 xl:w-6/12 mx-auto mb-4 lg:mb-10'>
+                        <h2 className='text-[30px] sm:text-[50px] lg:text-[60px] leading-[70px] sm:leading-[80px] lg:leading-[90px] font-semibold text-white poppins md:mb-3 relative w-full md:w-10/12 lg:w-7/12 mx-auto mb-4 lg:mb-10'>
                             <Image src={HeadingParticle} alt='Heading' className='sm:block hidden absolute left-[25px] top-[50%] translate-y-[-50%]' />
-                            Our Portfolio
+                            Why Choose Us
                             <Image src={HeadingParticle} alt='Heading' className='sm:block hidden absolute right-[25px] top-[50%] translate-y-[-50%] rotate-180' />
                         </h2>
                     </div>

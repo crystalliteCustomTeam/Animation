@@ -107,10 +107,10 @@ const Portfolio = () => {
             <div className="grid grid-cols-12">
                 <div className="col-span-12">
                     <div className="content text-center px-4 md:px-0">
-                        <h2 className='text-[30px] sm:text-[50px] lg:text-[60px] leading-[70px] sm:leading-[80px] lg:leading-[90px] font-semibold text-white poppins md:mb-3 relative w-full md:w-8/12 lg:w-7/12 xl:w-6/12 mx-auto'>
-                            <Image src={HeadingParticle} alt='Heading' className='sm:block hidden absolute left-[25px] top-[50%] translate-y-[-50%]' />
+                        <h2 className='text-[30px] sm:text-[50px] lg:text-[60px] leading-[70px] sm:leading-[80px] lg:leading-[90px] font-semibold text-white poppins md:mb-3 relative w-full md:w-8/12 lg:w-7/12 xl:w-5/12 mx-auto'>
+                            <Image src={HeadingParticle} alt='Heading' className='sm:block hidden absolute left-[20px] top-[50%] translate-y-[-50%]' />
                             Our Portfolio
-                            <Image src={HeadingParticle} alt='Heading' className='sm:block hidden absolute right-[25px] top-[50%] translate-y-[-50%] rotate-180' />
+                            <Image src={HeadingParticle} alt='Heading' className='sm:block hidden absolute right-[20px] top-[50%] translate-y-[-50%] rotate-180' />
                         </h2>
                         <p className='text-[13px] sm:text-[15px] xl:text-[18px] leading-[25px] sm:leading-[30px] xl:leading-[33px] text-white poppins md:w-9/12 mx-auto xl:px-4 mb-7 md:mb-10'>At the heart of every great game lies captivating art that immerses players in unique, vibrant worlds. We craft visuals that not only enhance gameplay but also evoke emotion,</p>
                     </div>
