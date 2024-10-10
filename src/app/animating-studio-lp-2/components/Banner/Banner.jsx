@@ -210,16 +210,16 @@ const Banner = () => {
                                 </p>
                                 <div className="flex items-center gap-4 lg:gap-8 pt-5 lg:pt-9">
                                     <div>
-                                        <Link href="tel:833-666-6689" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                        <a href="tel:833-666-6689" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                             <FaPhoneAlt />
                                             Call Now
-                                        </Link>
+                                        </a>
                                     </div>
                                     <div>
-                                        <Link href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-black font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-white hover:duration-700 hover:transition-all'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-black font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-white hover:duration-700 hover:transition-all'>
                                             <Image src={Chats} alt='Infinity Animation' className='brightness-100 invert-[1]' />
                                             Live Chat
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className='flex items-center gap-7 pt-7 mb-6 lg:mb-0 md:pt-9'>
