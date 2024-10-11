@@ -38,7 +38,7 @@ const SmallBanner = () => {
                     </div>
                     <div className="col-span-12 lg:col-span-6">
                         <div className="image relative lg:block hidden">
-                            <Image src={BannerImage} alt='Small Banner Image' className='absolute top-[-100px] lg:top-[-220px] right-0 group-hover:top-[-70px] lg:group-hover:top-[-200px] xl:group-hover:top-[-140px] duration-700 ease-in-out group-hover:duration-700' />
+                            <Image src={BannerImage} alt='Small Banner Image' className='absolute top-[-100px] lg:top-[-110px] 5xl:top-[-220px] right-0 group-hover:top-[-70px] lg:group-hover:top-[-140px] 5xl:group-hover:top-[-200px] xl:group-hover:top-[-140px] duration-700 ease-in-out group-hover:duration-700' />
                         </div>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ import BtnBg from "media/game-lp/btn-bg1.png"
 const ThreeDArt = () => {
     return (
         <>
-            <section className='pb-[30px] lg:pb-[50px] lg:pt-[30px] relative overflow-hidden'>
+            <section className='pb-[30px] lg:pb-[50px] md:pt-[30px] relative overflow-hidden'>
                 <div className="bgTxt absolute right-[-275px] top-[50%] translate-y-[-50%] z-[-1] -rotate-90">
                     <h6 className='text-[195px] leading-[290px] font-semibold poppins text-[#1A1A1A]'>3D Art</h6>
                 </div>
@@ -26,16 +26,16 @@ const ThreeDArt = () => {
                         </div>
                         <div className="col-span-12 lg:col-span-6 order-1 lg:order-2">
                             <div className="text-center lg:text-left">
-                                <h2 className='text-[30px] md:text-[40px] lg:text-[60px] font-semibold leading-[50px] lg:leading-[90px] poppins text-white sm:mb-3'><span className='text-[#FB1E30]'>3D </span>Art</h2>
-                                <p className='text-[13px] sm:text-[15px] xl:text-[17px] leading-[25px] sm:leading-[30px] xl:leading-[33px] text-white poppins mb-7 lg:mb-9'>Our team develops compelling 3D characters and mesmerizing environments for video games. Infinity Animation Games can accelerate your production by creating 3D models of creatures, vehicles, weapons, and hard-surface objects in broad styles — from high-fidelity photorealistic art to stylized, retro & cartoony.</p>
+                                <h2 className='text-[30px] md:text-[40px] lg:text-[50px] 5xl:text-[60px] font-semibold leading-[50px] lg:leading-[60px] 5xl:leading-[90px] poppins text-white sm:mb-3'><span className='text-[#FB1E30]'>3D </span>Art</h2>
+                                <p className='text-[13px] sm:text-[15px] xl:text-[17px] leading-[25px] sm:leading-[30px] xl:leading-[33px] text-white poppins mb-7 lg:mb-8'>Our team develops compelling 3D characters and mesmerizing environments for video games. Infinity Animation Games can accelerate your production by creating 3D models of creatures, vehicles, weapons, and hard-surface objects in broad styles — from high-fidelity photorealistic art to stylized, retro & cartoony.</p>
                                 <ul className='pl-5 pb-3'>
-                                    <li className="text-[13px] sm:text-[15px] xl:text-[16px] leading-[25px] sm:leading-[30px] text-white poppins mb-4 xl:w-10/12 relative before:content-[''] before:absolute before:top-[8px] before:left-[-20px] before:w-[9px] before:h-[9px] before:bg-[#FB1E30] before:rounded-full">
+                                    <li className="text-[13px] sm:text-[15px] xl:text-[16px] leading-[25px] sm:leading-[30px] text-white poppins mb-4 xl:w-11/12 relative before:content-[''] before:absolute before:top-[8px] before:left-[-20px] before:w-[9px] before:h-[9px] before:bg-[#FB1E30] before:rounded-full">
                                         1000+ 3D models created for games, including legendary titles like World of Tanks, Sniper: Ghost Warrior Contracts 2, VRChat, and others.
                                     </li>
-                                    <li className="text-[13px] sm:text-[15px] xl:text-[16px] leading-[25px] sm:leading-[30px] text-white poppins mb-4 xl:w-10/12 relative before:content-[''] before:absolute before:top-[8px] before:left-[-20px] before:w-[9px] before:h-[9px] before:bg-[#FB1E30] before:rounded-full">
+                                    <li className="text-[13px] sm:text-[15px] xl:text-[16px] leading-[25px] sm:leading-[30px] text-white poppins mb-4 xl:w-11/12 relative before:content-[''] before:absolute before:top-[8px] before:left-[-20px] before:w-[9px] before:h-[9px] before:bg-[#FB1E30] before:rounded-full">
                                         3D art production for different platforms — from mobile to desktop and high-end consoles.
                                     </li>
-                                    <li className="text-[13px] sm:text-[15px] xl:text-[16px] leading-[25px] sm:leading-[30px] text-white poppins mb-4 xl:w-10/12 relative before:content-[''] before:absolute before:top-[8px] before:left-[-20px] before:w-[9px] before:h-[9px] before:bg-[#FB1E30] before:rounded-full">
+                                    <li className="text-[13px] sm:text-[15px] xl:text-[16px] leading-[25px] sm:leading-[30px] text-white poppins mb-4 xl:w-11/12 relative before:content-[''] before:absolute before:top-[8px] before:left-[-20px] before:w-[9px] before:h-[9px] before:bg-[#FB1E30] before:rounded-full">
                                         A robust pipeline & versatility. We can create 3D game assets from scratch starting from concepts or precisely work using your specifications.
                                     </li>
                                 </ul>
@@ -49,7 +49,7 @@ const ThreeDArt = () => {
                         </div>
                     </div>
                 </div>
-                <div className="imageParticle absolute right-0 bottom-[-57%] translate-y-[-55%] lg:block hidden">
+                <div className="imageParticle absolute right-0 bottom-[-58%] 5xl:bottom-[-60%] xl:bottom-[-57%] translate-y-[-55%] lg:block hidden">
                     <Image src={ImageParticle1} alt='Image Particle' />
                 </div>
             </section>

@@ -16,7 +16,7 @@ import BtnBg from "media/game-lp/btn-bg1.png"
 const TwoDArt = () => {
     return (
         <>
-            <section className='pb-[30px] lg:pb-[50px] relative'>
+            <section className='pt-[50px] lg:pt-0 pb-[30px] lg:pb-[50px] relative'>
                 <Image src={BgImage} alt='Background Image' fill={true} className='z-[-1] object-contain object-right opacity-65' />
                 <div className="bgTxt absolute left-[-300px] top-[50%] translate-y-[-50%] z-[-1] -rotate-90">
                     <h6 className='text-[195px] leading-[290px] font-semibold poppins text-[#1A1A1A]'>2D Art</h6>
@@ -25,7 +25,7 @@ const TwoDArt = () => {
                     <div className="grid grid-cols-12 items-center">
                         <div className="col-span-12 lg:col-span-6">
                             <div className="text-center lg:text-left">
-                                <h2 className='text-[30px] md:text-[40px] lg:text-[60px] font-semibold leading-[50px] lg:leading-[90px] poppins text-white sm:mb-3'><span className='text-[#FB1E30]'>2D </span>Art</h2>
+                                <h2 className='text-[30px] md:text-[40px] lg:text-[50px] 5xl:text-[60px] font-semibold leading-[50px] lg:leading-[60px] 5xl:leading-[90px] poppins text-white sm:mb-3'><span className='text-[#FB1E30]'>2D </span>Art</h2>
                                 <p className='text-[13px] sm:text-[15px] xl:text-[17px] leading-[25px] sm:leading-[30px] xl:leading-[33px] text-white poppins mb-7 lg:mb-9'>Infinity Animation Games team has strong expertise in creating 2D art for world-leading video game companies such as Paradox Interactive, Wargaming, and others. We partnered with our clients on a long-term basis, ensuring top-quality game art outsourcing services, massive scaling opportunities, and dedicated teams that fit your particular project.</p>
                                 <ul className='pl-5 pb-3'>
                                     <li className="text-[13px] sm:text-[15px] xl:text-[16px] leading-[25px] sm:leading-[30px] text-white poppins mb-4 xl:w-10/12 relative before:content-[''] before:absolute before:top-[8px] before:left-[-20px] before:w-[9px] before:h-[9px] before:bg-[#FB1E30] before:rounded-full">
@@ -49,7 +49,7 @@ const TwoDArt = () => {
                         </div>
                     </div>
                 </div>
-                <div className="imageParticle absolute right-0 bottom-[-49.5%] translate-y-[-45%] lg:block hidden">
+                <div className="imageParticle absolute right-0 bottom-[-52%] 5xl:bottom-[-49.5%] translate-y-[-45%] lg:block hidden">
                     <Image src={ImageParticle1} alt='Image Particle' />
                 </div>
             </section >

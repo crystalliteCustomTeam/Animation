@@ -14,14 +14,14 @@ const Contact = () => {
         <>
             <section className='py-[50px] lg:py-[90px] bg-[#1C1C1C]'>
                 <div className="max-w-7xl mx-auto px-4 md:px-8 xl:px-0">
-                    <div className="grid grid-cols-12 items-center gap-y-8">
+                    <div className="grid grid-cols-12 items-center gap-x-6 5xl:gap-x-0 gap-y-8">
                         <div className="col-span-12 lg:col-span-7">
                             <div className="txt">
-                                <h2 className='text-[30px] sm:text-[50px] lg:text-[60px] leading-[50px] sm:leading-[80px] lg:leading-[90px] font-semibold text-white poppins mb-3'>Let’s Create Your Next
+                                <h2 className='text-[30px] sm:text-[40px] lg:text-[50px] 5xl:text-[60px] leading-[50px] sm:leading-[50px] lg:leading-[60px] 5xl:leading-[90px] font-semibold text-white poppins mb-3'>Let’s Create Your Next
                                     Hit Game Together</h2>
                                 <p className='text-[13px] sm:text-[15px] xl:text-[18px] leading-[25px] sm:leading-[30px] xl:leading-[33px] text-white poppins mb-7 lg:mb-10 lg:w-11/12 xl:pr-5'>Our mobile games deliver immersive experiences with intuitive controls and engaging gameplay. Designed for all devices, they offer seamless performance and stunning visuals.</p>
                                 <div className="details">
-                                    <div className="flex flex-wrap items-center justify-between pr-14 xl:w-[75%]">
+                                    <div className="flex flex-wrap items-center justify-between pr-14 5xl:w-[75%]">
                                         <Link href="tel:;" className="flex items-center justify-center gap-4  mb-4 lg:mb-8">
                                             <Image src={Teliphone} alt='Number' />
                                             <span className='text-[14px] xl:text-[17px] leading-[24px] xl:leading-[27px] font-normal poppins'>833-666-6689</span>

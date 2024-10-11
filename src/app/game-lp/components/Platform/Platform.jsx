@@ -52,15 +52,15 @@ const Platform = () => {
         setActiveTab(index);
     };
     return (
-        <section className='pb-[50px] xl:py-[90px]'>
+        <section className='pb-[50px] pt-[30px] lg:py-[60px] xl:py-[90px]'>
             <div className="max-w-7xl mx-auto px-4 md:px-8 xl:px-0">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12">
                         <div className="txt text-center">
-                            <h2 className='text-[30px] sm:text-[50px] lg:text-[60px] leading-[70px] sm:leading-[80px] lg:leading-[90px] font-semibold text-white poppins md:mb-3 relative w-full md:w-9/12 lg:w-8/12 xl:w-6/12 mx-auto'>
-                                <Image src={HeadingParticle} alt='Heading' className='sm:block hidden absolute left-[25px] top-[50%] translate-y-[-50%]' />
-                                Tech Stack
-                                <Image src={HeadingParticle} alt='Heading' className='sm:block hidden absolute right-[25px] top-[50%] translate-y-[-50%] rotate-180' />
+                            <h2 className='text-[30px] sm:text-[40px] lg:text-[50px] 5xl:text-[60px] leading-[50px] sm:leading-[50px] lg:leading-[60px] 5xl:leading-[90px] font-semibold text-white poppins md:mb-3 relative w-full md:w-6/12 lg:w-6/12 5xl:w-5/12 mx-auto'>
+                                <Image src={HeadingParticle} alt='Heading' className='sm:block hidden absolute left-[20px] lg:left-0 top-[50%] translate-y-[-50%]' />
+                                Platforms
+                                <Image src={HeadingParticle} alt='Heading' className='sm:block hidden absolute right-[20px] lg:right-0 top-[50%] translate-y-[-50%] rotate-180' />
                             </h2>
                             <p className='text-[13px] sm:text-[15px] xl:text-[18px] leading-[25px] sm:leading-[30px] xl:leading-[33px] text-white poppins md:w-9/12 mx-auto xl:px-4 mb-7 xl:mb-10'>At the heart of every great game lies captivating art that immerses players in unique, vibrant worlds. We craft visuals that not only enhance gameplay but also evoke emotion,</p>
                         </div>

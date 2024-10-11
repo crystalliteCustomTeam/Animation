@@ -70,15 +70,15 @@ const Clients = () => {
         Client31
     ]
     return (
-        <section className='py-[50px] lg:py-[90px]'>
+        <section className='py-[50px] 5xl:py-[90px]'>
             <div className="lg:max-w-7xl mx-auto px-4 md:px-8">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12">
                         <div className="content text-center">
-                            <h2 className='text-[30px] sm:text-[50px] lg:text-[60px] leading-[70px] sm:leading-[80px] lg:leading-[90px] font-semibold text-white poppins md:mb-3 relative w-full md:w-10/12 lg:w-7/12 xl:w-6/12 mx-auto'>
-                                <Image src={HeadingParticle} alt='Heading' className='sm:block hidden absolute left-[30px] top-[50%] translate-y-[-50%]' />
+                            <h2 className='text-[30px] sm:text-[40px] lg:text-[50px] 5xl:text-[60px] leading-[50px] sm:leading-[50px] lg:leading-[60px] 5xl:leading-[90px] font-semibold text-white poppins md:mb-3 relative w-full md:w-10/12 5xl:w-7/12 xl:w-6/12 mx-auto'>
+                                <Image src={HeadingParticle} alt='Heading' className='sm:block hidden absolute left-[140px] 5xl:left-[60px] xl:left-[30px] top-[50%] translate-y-[-50%]' />
                                 Our Clients
-                                <Image src={HeadingParticle} alt='Heading' className='sm:block hidden absolute right-[30px] top-[50%] translate-y-[-50%] rotate-180' />
+                                <Image src={HeadingParticle} alt='Heading' className='sm:block hidden absolute right-[140px] 5xl:right-[60px] xl:right-[30px] top-[50%] translate-y-[-50%] rotate-180' />
                             </h2>
                             <p className='text-[13px] sm:text-[15px] xl:text-[18px] leading-[25px] sm:leading-[30px] xl:leading-[33px] text-white poppins lg:w-9/12 mx-auto xl:px-4 mb-7 md:mb-10'>At the heart of every great game lies captivating art that immerses players in unique, vibrant worlds. We craft visuals that not only enhance gameplay but also evoke emotion,</p>
                         </div>

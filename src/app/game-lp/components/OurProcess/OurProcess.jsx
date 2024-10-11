@@ -38,18 +38,18 @@ const OurProcess = () => {
     ]
 
     return (
-        <section className='pt-[50px] pb-0 lg:py-[90px] relative'>
-            <div className="particle1">
-                <Image src={Particle1} alt='Particle' className='absolute right-0 top-0 z-[-1]' />
+        <section className='pt-[50px] pb-0 lg:pb-[90px] relative'>
+            <div className="particle1 absolute right-0 top-0 xl:top-[-182px] z-[-1]">
+                <Image src={Particle1} alt='Particle' />
             </div>
-            <div className="particle2">
-                <Image src={Particle2} alt='Particle' className='absolute left-0 bottom-[-80px] z-[-1]' />
+            <div className="particle2 absolute left-0 bottom-[-80px] z-[-1]">
+                <Image src={Particle2} alt='Particle' />
             </div>
             <div className="max-w-7xl mx-auto px-4 md:px-8 xl:px-0">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12">
                         <div className="txt">
-                            <h2 className='text-[30px] sm:text-[50px] lg:text-[60px] leading-[40px] sm:leading-[60px] lg:leading-[70px] font-semibold text-white poppins mb-2'>
+                            <h2 className='text-[30px] sm:text-[50px] lg:text-[50px] 5xl:text-[60px] leading-[40px] sm:leading-[60px] lg:leading-[60px] 5xl:leading-[70px] font-semibold text-white poppins mb-2'>
                                 Our Process
                             </h2>
                             <p className='text-[17px] leading-[33px] font-normal poppins lg:w-10/12 xl:w-8/12 pr-2 mb-3 md:mb-8'>At the heart of every great game lies captivating art that immerses players in unique, vibrant worlds. We craft visuals that not only enhance gameplay but also evoke emotion,</p>
