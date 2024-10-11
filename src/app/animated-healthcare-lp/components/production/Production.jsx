@@ -12,7 +12,7 @@ const Production = () => {
                             <h2 className='text-[25px] lg:text-[30px] xl:text-[40px] leading-[35px] lg:leading-[40px] xl:leading-[50px] font-extrabold poppins mb-4 text-black text-center 5xl:text-left'>Animated <span className='text-[#F5090B]'>Healthcare</span> Video <br /> Production Company</h2>
                             <p className='text-[16px] poppins leading-relaxed font-normal text-black text-center 5xl:text-left w-full 5xl:w-11/12'>We specialize in creating high-quality animated healthcare videos that enhance patient education and engagement. Our expert team delivers compelling visuals to make complex medical information easily understandable.</p>
                         </div>
-                        <div className='grid grid-cols-1 sm:grid-cols-2 gap-y-8 ml-[50px] sm:ml-[40px] md:ml-[110px] 5xl:ml-0'>
+                        <div className='grid grid-cols-1 sm:grid-cols-2 gap-y-8 ml-[20px] sm:ml-[40px] md:ml-[50px] lg:ml-[110px] 5xl:ml-0'>
                             <div className="flex items-center gap-4">
                                 <div className="flex items-center justify-center border border-[#F5090B] rounded-full p-1">
                                     <span className="bg-[#F5090B] rounded-full p-[6px]"></span>

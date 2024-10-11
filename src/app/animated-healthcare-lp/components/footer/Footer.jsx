@@ -16,7 +16,7 @@ const Contact = () => {
             <section className='py-[50px] lg:py-[90px]'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-y-10 md:gap-y-20">
-                        <div className="col-span-12 lg:col-span-6">
+                        <div className="col-span-12 5xl:col-span-6">
                             <div className="address_detail">
                                 <div className="mb-5">
                                     <h2 className='text-[25px] lg:text-[30px] xl:text-[40px] leading-[35px] lg:leading-[40px] xl:leading-[50px] font-extrabold poppins mb-4 text-white'>Get In <span className='text-[#F5090B]'>Touch</span> Now!</h2>
