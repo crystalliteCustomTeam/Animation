@@ -93,7 +93,7 @@ const Portfolio = () => {
                             <p className='text-[16px] poppins leading-normal font-normal text-black text-center w-full lg:w-8/12 mx-auto'>We specialize in creating high-quality animated healthcare videos that enhance patient education and engagement. Our expert team delivers compelling visuals to make complex medical</p>
                         </div>
                     </div>
-                    <div className="mt-14">
+                    <div className="mt-8 lg:mt-14">
                         <Fancybox options={{
                             Carousel: {
                                 infinite: false,
