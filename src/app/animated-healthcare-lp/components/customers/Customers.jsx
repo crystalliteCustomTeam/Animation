@@ -45,7 +45,7 @@ const Customers = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-span-12 md:col-span-4 overlay relative">
+                                <div className="col-span-12 md:col-span-4 overlay relative cursor-pointer">
                                     <Image src={client} alt="Infinity Animations" />
                                     <div className="h-full w-full absolute left-[50%] top-[50%] lg:top-[132px] translate-x-[-50%] translate-y-[-250px] md:translate-y-[-140px] lg:translate-y-[-132px] flex items-center justify-center ">
                                         <Image src={PlayIcon} alt='Play-icon' className={`${styles.animi} w-[50px]`} />
@@ -74,7 +74,7 @@ const Customers = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-span-12 md:col-span-4 overlay relative">
+                                <div className="col-span-12 md:col-span-4 overlay relative cursor-pointer">
                                     <Image src={client} alt="Infinity Animations" />
                                     <div className="h-full w-full absolute left-[50%] top-[50%] lg:top-[132px] translate-x-[-50%] translate-y-[-250px] md:translate-y-[-140px] lg:translate-y-[-132px] flex items-center justify-center ">
                                         <Image src={PlayIcon} alt='Play-icon' className={`${styles.animi} w-[50px]`} />

@@ -36,14 +36,14 @@ const OurConcepts = () => {
                                 />
                             </div>
                         </div>
-                        <div className="overlay relative">
+                        <div className="overlay relative cursor-pointer">
                             <Image src={concept1} alt="Infinity Animations" />
                             <div className="h-full w-full absolute left-[50%] top-[50%] lg:top-[132px] translate-x-[-50%] translate-y-[-115px] md:translate-y-[-105px] lg:translate-y-[-132px] flex items-center justify-center ">
                                 <Image src={PlayIcon} alt='Play-icon' className={`${styles.animi} w-[65px]`} />
                             </div>
                         </div>
                         
-                        <div className="overlay relative">
+                        <div className="overlay relative cursor-pointer">
                             <Image src={concept2} alt="Infinity Animations" />
                             <div className="h-full w-full absolute left-[50%] top-[50%] lg:top-[132px] translate-x-[-50%] translate-y-[-115px] md:translate-y-[-105px] lg:translate-y-[-132px] flex items-center justify-center ">
                                 <Image src={PlayIcon} alt='Play-icon' className={`${styles.animi} w-[65px]`} />

@@ -25,7 +25,7 @@ const Casestudies = () => {
                     <AutoPlay arrowPosition="">
                         <div className="grow-0 shrink-0 basis-[100%] lg:basis-6/12 pl-4">
                             <div className="flex flex-col bg-white">
-                                <div className="overlay relative">
+                                <div className="overlay relative cursor-pointer">
                                     <Image src={casestudy1} alt="Infinity Animations" />
                                     <div className="h-full w-full absolute left-[50%] top-[50%] lg:top-[132px] translate-x-[-50%] translate-y-[-80px] md:translate-y-[-140px] lg:translate-y-[-132px] flex items-center justify-center ">
                                         <Image src={PlayIcon} alt='Play-icon' className={`${styles.animi} w-[65px]`} />
@@ -49,7 +49,7 @@ const Casestudies = () => {
                         </div>
                         <div className="grow-0 shrink-0 basis-[100%] lg:basis-6/12 pl-4">
                             <div className="flex flex-col bg-white">
-                                <div className="overlay relative">
+                                <div className="overlay relative cursor-pointer">
                                     <Image src={casestudy2} alt="Infinity Animations" />
                                     <div className="h-full w-full absolute left-[50%] top-[50%] lg:top-[132px] translate-x-[-50%] translate-y-[-80px] md:translate-y-[-140px] lg:translate-y-[-132px] flex items-center justify-center ">
                                         <Image src={PlayIcon} alt='Play-icon' className={`${styles.animi} w-[65px]`} />
