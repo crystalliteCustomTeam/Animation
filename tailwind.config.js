@@ -39,6 +39,7 @@ export default {
       boxShadow: {
         'sm': '0px 0px 6px 0px #00000082;',
         '3xl': '0px 0px 11px 1px #FF2D4B',
+        'custom': '0px 0px 10px 1px #9e9e9e33;',
       },
     },
   },

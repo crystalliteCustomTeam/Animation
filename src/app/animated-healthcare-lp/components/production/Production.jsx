@@ -4,7 +4,7 @@ import Form from '../form/Form'
 
 const Production = () => {
     return (
-        <section className={`py-20 bg-white`}>
+       <section className="py-10 lg:py-16 bg-white">
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="grid grid-cols-12 items-center gap-y-10 sm:gap-y-16">
                     <div className='col-span-12 5xl:col-span-7'>
