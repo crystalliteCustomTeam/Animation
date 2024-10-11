@@ -3,17 +3,16 @@ import Image from "next/image";
 //========== Import Components
 import CTA from "../cta/CTA";
 //========== Import Images
-import FolgBg from 'media/healthcare/teamBg.png'
+import FolgBg from 'media/healthcare/touchBg.png'
 
-const Team = () => {
+const Touch = () => {
     return (
-       <section className="py-10 lg:py-16 flex items-center lg:h-screen relative z-10 overflow-hidden">
+        <section className="py-10 lg:py-20 flex items-center relative z-10 overflow-hidden">
             <Image src={FolgBg} alt="Infinity Animations" fill={true} className="-z-10 object-cover object-center" />
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
-                <div className='5xl:w-9/12 mx-auto'>
+                <div className='5xl:w-8/12 mx-auto'>
                     <h2 className='text-[25px] lg:text-[30px] xl:text-[40px] leading-[35px] lg:leading-[40px] xl:leading-[50px] font-extrabold poppins text-white text-center'>Get In <span className='text-[#F5090B]'>Touch</span> With Our <span className='text-[#F5090B]'>Animation</span> Team</h2>
-                    <p className='text-[16px] poppins leading-relaxed font-normal text-white text-center my-5'>Connect with our expert animation team to bring your creative ideas to life! Whether it's for healthcare, explainer videos, or game art, we're here to turn your vision into engaging, high-quality animations.</p>
-                    <p className='text-[16px] poppins leading-relaxed font-normal text-white text-center'>Have a question or need guidance on your next project? Get in touch today, and let's collaborate to make your project stand out with stunning visuals and captivating storytelling.</p>
+                    <p className='text-[16px] poppins leading-relaxed font-normal text-white text-center mt-5'>Get In Touch With Our Healthcare Animation Team To Discuss Your Project Needs. We're Here To Bring Your Vision To Life With Impactful, Engaging Animations.</p>
                     <div className="flex items-center justify-center gap-4 lg:gap-8 pt-6 lg:pt-8">
                         <CTA
                             text="Contact Us"
@@ -36,4 +35,4 @@ const Team = () => {
     )
 }
 
-export default Team
+export default Touch

@@ -14,7 +14,7 @@ import icon8 from "media/infinity-studio/partner7.png";
 
 const AwardWinning = () => {
     return (
-        <section className={`py-20 bg-white`}>
+        <section className="pt-10 lg:pt-16 pb-5 lg:pb-10 bg-white">
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12">
