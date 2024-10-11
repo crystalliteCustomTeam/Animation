@@ -14,6 +14,7 @@ const Discuss = dynamic(() => import("./Discusss/Discusss"));
 const TechStack = dynamic(() => import("./TechStack/TechStack"));
 const Platform = dynamic(() => import("./Platform/Platform"));
 const Testimonials = dynamic(() => import("./Testimonials/Testimonials"));
+const Contact = dynamic(() => import("./Contact/Contact"));
 
 export {
     Header,
@@ -30,4 +31,5 @@ export {
     TechStack,
     Platform,
     Testimonials,
+    Contact,
 }
