@@ -2,10 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from "@/styles/blogNew/BlogContent.module.css"
+import styles from "../../../styles/blogNew/BlogContent.module.css"
 //===== Components
-import { getPostList } from "@/lib/posts";
-import FeaturedImage from "@/src/components/blogs-new/FeaturedImage";
+import { getPostList } from "../../../lib/posts";
+import FeaturedImage from "@/components/blogs-new/FeaturedImage";
 //===== Images
 import verifies from "media/blogs/verified.png"
 import profile from "media/blogs/author.png"
