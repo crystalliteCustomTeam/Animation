@@ -63,29 +63,11 @@ const BlogList = () => {
 
     return (
         <>
-            <section className={`!pt-0 ${styles.blogcontent}`}>
+            <section className={` ${styles.blogcontent}`}>
                 <div className='container'>
                     <div className='grid grid-cols-12'>
                         <div className='col-span-12'>
-                            <div className={`flex items-center justify-center ${styles.form} mb-4 lg:mb-16`}>
-                                <form>
-                                    <select className={styles.search}>
-                                        <option defaultValue="All">All</option>
-                                        <option value="Blockchain" className='font-sans'>Blockchain</option>
-                                        <option value="eCommerce" className='font-sans'>eCommerce</option>
-                                        <option value="General" className='font-sans'>General</option>
-                                        <option value="Mobile Application" className='font-sans'>Mobile Application</option>
-                                        <option value="News" className='font-sans'>News</option>
-                                    </select>
-                                    <input type="text" />
-                                    <button type='button' className='font-sans'>Search</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='grid grid-cols-12'>
-                        <div className='col-span-12'>
-                            <div className={`mb-5 lg:mb-10 ${styles.tabs}`}>
+                            <div className={`mb-5 lg:mb-10 lg:w-8/12 mx-auto bg-[#4A4A4A] rounded-[10px] ${styles.tabs}`}>
                                 <ul className='pt-5'>
                                     <li className={`${styles.active} font-sans`}>
                                         All
@@ -108,7 +90,6 @@ const BlogList = () => {
                                 </ul>
                             </div>
                         </div>
-
                         <div className='mt-md-4 col-span-12'>
                             <div className='grid grid-cols-12 gy-3'>
                                 {(loading && initialLoad) && (
@@ -137,35 +118,37 @@ const BlogList = () => {
                                                     <div>
                                                         {
                                                             post.categories.nodes.map((category) => (
-                                                                <p className={`block text-[#F32F53] font-semibold mr-md:text-base text-sm leading-normal capitalize font-sans pt-4 mb-1`} key={category.slug}>
+                                                                <p className={`block text-[#F32F53] font-semibold mr-md:text-base text-sm leading-normal capitalize font-sans pt-5 mb-2`} key={category.slug}>
                                                                     {category.name}
                                                                 </p>
                                                             ))
                                                         }
                                                         <Link href={`/blog/${post.slug}`}>
-                                                            <h5 className='md:text-[20px] text-base leading-normal font-normal text-[#000] font-sans'>{post.title}</h5>
+                                                            <h5 className='md:text-[20px] text-base leading-normal font-normal text-white fontsfprosemi'>{post.title}</h5>
                                                         </Link>
                                                     </div>
                                                     <div dangerouslySetInnerHTML={{ __html: post.excerpt }} className={styles.blogDesciption}>
                                                     </div>
-                                                    <div className={styles.btn}>
-                                                        <Link href={`/blog/${post.slug}`} className='text-black font-sans flex items-center gap-3'>
+                                                </div>
+                                                <div className={styles.cardBottom}>
+                                                    <div className='flex items-center w-[50%]'>
+                                                        <div className='w-[32%]'>
+                                                            <Image src={profile} width={50} height={50} alt='Bitswits' className='img-fluid w-100' />
+                                                        </div>
+                                                        <div className={styles.cardbottomContent}>
+                                                            <div className='flex items-center gap-2 pb-1'>
+                                                                <h3 className='font-sans text-white'> {post.author.node.name}
+                                                                </h3>
+                                                                <Image src={verifies} alt='bitswits' width={13} height={13} />
+                                                            </div>
+                                                            {/* <p className='font-sans text-black'>{post.author.node.description}</p> */}
+                                                        </div>
+                                                    </div>
+                                                    <div className={`border-b-2 pb-1 ${styles.btn}`}>
+                                                        <Link href={`/blog/${post.slug}`} className='text-white font-sans flex items-center gap-3'>
                                                             Read More
                                                             <FaArrowRightLong />
                                                         </Link>
-                                                    </div>
-                                                </div>
-                                                <div className={styles.cardBottom}>
-                                                    <div className='w-[32%]'>
-                                                        <Image src={profile} width={50} height={50} alt='Bitswits' className='img-fluid w-100' />
-                                                    </div>
-                                                    <div className={styles.cardbottomContent}>
-                                                        <div className='flex items-center gap-2 pb-1'>
-                                                            <h3 className='font-sans text-black'> {post.author.node.name}
-                                                            </h3>
-                                                            <Image src={verifies} alt='bitswits' width={13} height={13} />
-                                                        </div>
-                                                        <p className='font-sans text-black'>{post.author.node.description}</p>
                                                     </div>
                                                 </div>
                                             </div>

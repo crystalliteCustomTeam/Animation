@@ -21,7 +21,6 @@
 .blogTopDes {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .innerBannerSec p:first-of-type {
@@ -238,7 +237,6 @@
 
 .articleSec ul {
   padding-left: 30px;
-  margin-top: 10px;
 }
 
 .articleSec ul li {
@@ -275,24 +273,18 @@
 /*============ Faqs Section ============*/
 
 .heading {
-  border-image: linear-gradient(90deg, #f32fc261, #4a78ef) 10;
-  border-width: 4px;
-  border-style: solid;
+  border: 3px solid #FF2D4B;
   padding: 10px 20px;
   margin-top: 1%;
   cursor: pointer;
-  padding-bottom: unset;
-  background-color: #fff;
-  padding-bottom: 10px;
   border-radius: 10px;
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  background-color: #262626;
 }
 
 .faqs h3 {
   font-size: 17px;
   font-weight: 600;
-  color: #000;
-  font-family: "Montserrat", sans-serif;
+  color: white;
   text-align: left;
   background: unset;
   display: flex;
@@ -302,19 +294,16 @@
 }
 
 .faqs p {
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 25px;
   font-weight: 400;
-  color: #000;
-  font-family: "Montserrat", sans-serif;
+  padding-top: 15px;
+  color: white;
   text-align: justify;
 }
 
 .plus {
   font-size: 30px;
-}
-
-.plus img {
-  filter: invert(1);
 }
 
 .faqs ul {

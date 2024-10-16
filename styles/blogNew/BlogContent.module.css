@@ -1,5 +1,5 @@
 .blogcontent {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .blogcontent .form {
@@ -65,7 +65,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 25px 0px;
   padding: 0;
 }
@@ -75,11 +75,13 @@
 }
 
 .blogcontent .active {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 600;
-  border-bottom: 3px solid #f32f53;
-  padding: 0 10px 10px;
+  border-radius: 10px;
+  background: #FC2237;
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all ease-in-out 0.4s;
 }
 
@@ -88,8 +90,12 @@
   line-height: 20px;
   font-weight: 400;
   color: #bfbfbf;
-  padding: 0 10px 10px;
+  height: 60px;
+  padding: 0 20px;
   transition: all ease-in-out 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .blogcontent .heading {
@@ -102,19 +108,18 @@
 }
 
 .blogcontent .card {
-  background-color: #f3f3f3;
+  background-color: #262626;
   border-radius: 10px;
   border: 0;
   height: 100%;
 }
 
 .blogcontent .cardContent {
-  padding: 0 25px 25px;
-  border-bottom: 1px solid #d4d4d4;
+  padding: 0 20px 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 285px;
+  height: 235px;
 }
 
 .blogcontent .cardContent .categoriesPara {
@@ -139,7 +144,7 @@
   line-height: 25px;
   padding-right: 10px;
   margin-bottom: 0;
-  color: #000;
+  color: #fff;
   font-family: "SF-Pro-Display-Regular", sans-serif;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -154,14 +159,15 @@
 
 .blogcontent .cardContent .btn a {
   margin-left: auto;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   padding-bottom: 2px;
 }
 
 .blogcontent .cardBottom {
-  padding: 25px 25px 15px;
+  padding: 0 25px 25px 25px;
   display: flex;
-  align-items: start;
+  align-items: center;
+  justify-content: space-between;
   gap: 10px;
 }
 

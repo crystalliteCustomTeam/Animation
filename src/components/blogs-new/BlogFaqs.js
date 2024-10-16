@@ -23,7 +23,7 @@ const BlogFaqs = ({ faqData }) => {
                 <div key={index} className={styles.faqs}>
                     <div className={`${faqStates[index] ? 'touchFaq' : ''}`}>
                         <div onClick={() => toggleFaq(index)} className={styles.heading}>
-                            <h3>
+                            <h3 className='fontsfprosemi'>
                                 {questions}
                                 <span className={styles.plus}>
                                     <Image
@@ -35,8 +35,8 @@ const BlogFaqs = ({ faqData }) => {
                                 </span>
                             </h3>
                         </div>
-                        <div className={faqStates[index] ? 'd-block' : 'd-none'}>
-                            <p dangerouslySetInnerHTML={{ __html: answers }}></p>
+                        <div className={faqStates[index] ? 'block' : 'hidden'}>
+                            <p dangerouslySetInnerHTML={{ __html: answers }} className='fontsfprosemi'></p>
                         </div>
                     </div>
                 </div>

@@ -48,8 +48,8 @@ const BlogNavigation = ({ postData }) => {
             <div className={styles.sidebar}>
                 <div className={styles.navigations}>
                     <div className={styles.mainHeading} onClick={toggleNavVisibility}>
-                        <h3 className='poppins flex items-center justify-center'>
-                            Navigation
+                        <h3 className='fontsfprosemi flex items-center justify-center'>
+                        Quick Links
                             <FaAngleDown className='ms-3' />
                         </h3>
                     </div>
@@ -59,7 +59,7 @@ const BlogNavigation = ({ postData }) => {
                                 <li key={index}>
                                     <a
                                         href={`#${'heading' + (index + 1)}`}
-                                        className={`font-sans ${activeHeading === `#heading${index + 1}` ? styles.active : 'text-black'}`}
+                                        className={`font-sans ${activeHeading === `#heading${index + 1}` ? styles.active : 'text-white'}`}
                                         onClick={() => handleHeadingClick(`#heading${index + 1}`)}
                                     >
                                         {text}

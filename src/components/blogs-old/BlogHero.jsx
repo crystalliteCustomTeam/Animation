@@ -68,7 +68,7 @@ const BlogHero = ({ content }) => {
                             <h1 className={`text-white text-[28px] lg:text-[35px] xl:text-[50px] font-[600] poppins font-sans md:leading-[60px] text-start  ${margin}`}>
                                 {title}
                             </h1>
-                            <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify pt-3 pb-1 text-white text-opacity-90 text-[15px] sm:text-[17px] border-b-2 border-gray-500">
+                            <p className="text-[14px] sm:text-[17px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify pt-3 pb-4 text-white text-opacity-90 border-b-2 border-gray-500">
                                 {para}
                             </p>
 
@@ -86,15 +86,15 @@ const BlogHero = ({ content }) => {
 
                                 </div>
                                 <div className='pb-[15px] md:py-[15px] col-span-12 md:col-span-4 text-center  flex items-start '>
-                                    <div className="flex items-center justify-between">
-                                        <Image src={WhiteDot} width={10} className="hidden md:block"/>
-                                        <span className='text-white text-opacity-90 text-[16px] font-normal poppins md:ps-[35px] pe-1'>Verified In Animation</span>
-                                        <Image src={BlueCheck} />
+                                    <div className="flex items-center justify-between gap-3">
+                                        <Image src={WhiteDot} className="hidden md:block"/>
+                                        <span className='text-white text-opacity-90 text-[16px] font-normal poppins pe-1'>Verified In Animation</span>
+                                        <Image src={BlueCheck} alt="verified Image" />
                                     </div>
 
                                 </div>
                                 <div className=' md:py-[15px] col-span-12 md:col-span-3 text-center '>
-                                    <div className="flex items-center justify-start md:justify-between md:ps-[25px]">
+                                    <div className="flex items-center justify-start md:ps-[45px]">
                                         <Image src={Star} width={20} className="" />
                                         <span className='text-white text-opacity-90 text-[16px] font-normal poppins ps-[10px]'>3 Yrs Exp</span>
                                     </div>
