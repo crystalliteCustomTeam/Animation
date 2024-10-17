@@ -28,7 +28,7 @@ const BlogFaqs = ({ faqData }) => {
                                 <span className={styles.plus}>
                                     <Image
                                         quality={75}
-                                        alt='BitsWits'
+                                        alt='Infinity Animations'
                                         src={faqStates[index] ? open : close}
                                         className='img-fluid'
                                     />

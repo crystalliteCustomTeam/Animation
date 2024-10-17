@@ -76,7 +76,7 @@
 
 .blogcontent .active {
   border-radius: 10px;
-  background: #FC2237;
+  background: #fc2237;
   padding: 0 20px;
   height: 60px;
   display: flex;
@@ -99,8 +99,8 @@
 }
 
 .blogcontent .heading {
-  font-size: 26px;
-  line-height: 40px;
+  font-size: 40px;
+  line-height: 50px;
   font-weight: 600;
   letter-spacing: 1px;
   text-align: center;

@@ -161,6 +161,10 @@
     padding-top: 50px;
   }
 
+  .relevent {
+    padding-top: 0;
+  }
+
   .services ul {
     display: flex;
     flex-wrap: wrap;

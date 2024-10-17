@@ -133,13 +133,13 @@ const BlogList = () => {
                                                 <div className={styles.cardBottom}>
                                                     <div className='flex items-center w-[50%]'>
                                                         <div className='w-[32%]'>
-                                                            <Image src={profile} width={50} height={50} alt='Bitswits' className='img-fluid w-100' />
+                                                            <Image src={profile} width={50} height={50} alt='Infinity Animations' className='img-fluid w-100' />
                                                         </div>
                                                         <div className={styles.cardbottomContent}>
                                                             <div className='flex items-center gap-2 pb-1'>
                                                                 <h3 className='font-sans text-white'> {post.author.node.name}
                                                                 </h3>
-                                                                <Image src={verifies} alt='bitswits' width={13} height={13} />
+                                                                <Image src={verifies} alt='Infinity Animations' width={13} height={13} />
                                                             </div>
                                                             {/* <p className='font-sans text-black'>{post.author.node.description}</p> */}
                                                         </div>

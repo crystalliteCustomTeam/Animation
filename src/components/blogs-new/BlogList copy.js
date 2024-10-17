@@ -150,19 +150,19 @@ const BlogList = () => {
                                                     <div className={styles.btn}>
                                                         <Link href={`/blog/${post.slug}`} className='text-black'>
                                                             Read More
-                                                            <Image src={Arrow} alt='Bitswits' className='ms-2' />
+                                                            <Image src={Arrow} alt='Infinity Animations' className='ms-2' />
                                                         </Link>
                                                     </div>
                                                 </div>
                                                 <div className={styles.cardBottom}>
                                                     <div className={styles.cardBottomImg}>
-                                                        <Image src={profile} width={50} height={50} alt='Bitswits' className='img-fluid' />
+                                                        <Image src={profile} width={50} height={50} alt='Infinity Animations' className='img-fluid' />
                                                     </div>
                                                     <div className={styles.cardbottomContent}>
                                                         <div className='d-flex align-items-center gap-2 pb-1'>
                                                             <h3 className='fontsfregular text-black'> {post.author.node.name}
                                                             </h3>
-                                                            <Image src={verifies} alt='bitswits' width={13} height={13} />
+                                                            <Image src={verifies} alt='Infinity Animations' width={13} height={13} />
                                                         </div>
                                                         <p className='fontsfregular text-black'>{post.author.node.description}</p>
                                                     </div>

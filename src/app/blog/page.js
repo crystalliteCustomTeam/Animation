@@ -1,6 +1,5 @@
 import React from 'react'
-// import BlogBanner from '@/src/components/BlogBanner'
-// import BlogHero from '@/components/blogs-old/BlogHero'
+//============
 import BlogList from '@/components/blogs-new/BlogList'
 import BlogHero from '@/components/blogs-old/BlogHero';
 

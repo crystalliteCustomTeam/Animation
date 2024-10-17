@@ -11,20 +11,20 @@ export default async function BlogsRelevant() {
     const posts = await getPostList(); 
 
     return (
-        <div className={styles.sidebar}>
+        <div className={`${styles.sidebar} ${styles.relevent}`}>
             <div className={styles.articles}>
                 <h3 className='fontsfprosemi'>Relevant Articles</h3>
                 {
                     posts.nodes.map((post, index) => (
                         <ul key={index} className={`${styles.noList} mt-4`}>
-                            <li className='flex items-center pb-3'>
-                                <div className='image w-[35%]'>
+                            <li className='flex items-center pb-3 gap-3'>
+                                <div className='image'>
                                     {post.featuredImage ? (
                                         <Image
                                             quality={75}
                                             src={`https://inhouse.cryscampus.com/wordpress/animation/wp-content/uploads/${post.featuredImage.node.mediaDetails.file}`}
                                             alt="Infinity Animation"
-                                            width={85}
+                                            width={135}
                                             height={67}
                                             className="rounded-[5px]"
                                         />

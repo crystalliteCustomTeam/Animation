@@ -1,12 +1,16 @@
 import Head from "next/head";
 import Image from "next/image";
-// import { Container, Row, Col } from 'react-bootstrap'
 // ===== CSS
 import styles from "/styles/blogNew/InnerBanner.module.css"
 // ===== Components
 import { getSinglePost } from "../../../../lib/posts";
 import BlogNavigation from "@/components/blogs-new/BlogNavigation";
 import BlogsRelevant from "@/components/blogs-new/BlogsRelevant";
+import BlogFaqs from "@/components/blogs-new/BlogFaqs";
+import BlogArticle from "@/components/blogs-new/BlogArticle";
+import Portfolio from "@/components/portfolio/Portfolio";
+import Testimonial from '@/components/testimonialNew/Testimonial';
+import Looking from '@/components/location-page/looking/Looking';
 // ===== Images
 import Client from "media/blogs/innerclient.png"
 import verified from "media/blogs/verified.png"
@@ -15,9 +19,6 @@ import WhiteDot from "media/inner-blogs/white-dot.svg"
 import BlueCheck from "media/inner-blogs/blue-check.svg"
 import Star from "media/inner-blogs/rating-star.svg"
 import experience from "media/blogs/experience.png"
-import BlogFaqs from "@/components/blogs-new/BlogFaqs";
-import BlogArticle from "@/components/blogs-new/BlogArticle";
-import Portfolio from "@/components/portfolio/Portfolio";
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.png";
 import Thumnail2 from "media/thumbnails/2d-animation/2.png";
@@ -49,7 +50,6 @@ import Thumnail27 from "media/thumbnails/hybrid/3.png";
 import Thumnail28 from "media/thumbnails/hybrid/4.png";
 import Thumnail29 from "media/thumbnails/hybrid/5.png";
 import Thumnail30 from "media/thumbnails/hybrid/6.png";
-import Testimonial from '@/components/testimonialNew/Testimonial';
 //==== Testimonial Images
 import icon2 from "media/icons/stars.png";
 import Grace from "media/thumbnails/grace.png";
@@ -59,6 +59,9 @@ import David from "media/thumbnails/david.jpg";
 import Emma from "media/thumbnails/emma.jpg";
 import Michael from "media/thumbnails/michael.jpg";
 import Sarah from "media/thumbnails/sarah.png";
+//==== Looking Images
+import LookingFlodImg from "media/home/looking-img.png";
+
 
 export async function generateMetadata({ params, searchParams }, parent) {
     // read route params
@@ -86,7 +89,7 @@ export default async function Post({ params, searchParams }) {
     let featuredImageUrl = "https://inhouse.cryscampus.com/wordpress/animation/wp-admin/uploads/2023/08/moz-brand-authority-768x439-1.png";
 
     const postData = await getSinglePost(params.postslug);
-    //=============== Render ===============
+
     //=====Portfilio Fold=====// 
     const tabInfo = [
         { label: "Motion Graphics", index: 0 },
@@ -353,6 +356,23 @@ export default async function Post({ params, searchParams }) {
         para: (<> If you can’t trust us, try trusting them.</>),
         testiContentNew2: testiContentNew2
     };
+    //=============== Why Choose ===============
+    const paraArray = [
+        `Infinity Animations creates videos that bring your brand’s vision to life through research, strategy, copywriting, and custom visuals.`,
+        `Our personalized and collaborative approach ensures that your video is truly one of a kind.
+            As an end-to-end service solution, we’ll guide you through every step – from our streamlined discovery process, through key points in production, to final delivery.
+            `,
+        `As a leading animation studio, we pride ourselves on delivering high-quality, innovative animations that exceed our clients' expectations, making us the go-to choice for businesses seeking top-notch animation companies.`,
+    ];
+    const looking = {
+        main: (<> Why <span className='text-[#FF2D4A]'>Choose </span> <br /> Infinity Animations  </>),
+        title: (<> Our Mission is to help our clients uncover the essence of their brand story to drive sales, influence decisions and promote understanding.  </>),
+        para: { paraArray },
+        isCTA: true,
+        isBtns: true,
+        flodImg: LookingFlodImg
+    };
+
     return (
         <>
             {postData && (
@@ -372,10 +392,10 @@ export default async function Post({ params, searchParams }) {
                             <div dangerouslySetInnerHTML={{ __html: postData.blogDescription.schema }}></div>
                         </>
                     )}
-                    <section className={`w-full flex items-center justify-start lg:pb-[110px] bg-none bg-no-repeat relative overflow-hidden z-1 top-[97px] pt-[35px] lg:pt-[85px]`}>
+                    <section className={`w-full flex items-center justify-start pt-[35px] lg:pt-[75px] lg:pb-[120px] bg-none bg-no-repeat relative overflow-hidden z-1 top-[100px]`}>
                         <div className="container">
-                            <div className="grid grid-cols-12 content-center lg:gap-16 items-center">
-                                <div className='col-span-12 lg:col-span-6 flex flex-col items-start py-[35px]'>
+                            <div className="grid grid-cols-12 content-center items-center gap-5 lg:gap-16">
+                                <div className='col-span-12 lg:col-span-6 flex flex-col items-start'>
                                     <div className={styles.blogTopDes}>
                                         <p className="text-[#FF2D4A] text-[16px] md:text-[20px] w-full font-light fontsfprosemi leading-[30px] tracking-wider text-start mt-3 mb-1">{postData.categories.nodes[0].name}</p>
                                         <h1 className='text-white text-[28px] lg:text-[35px] xl:text-[45px] font-[600] poppins font-sans md:leading-[54px] text-start mb-3'>{postData.title}</h1>
@@ -413,12 +433,12 @@ export default async function Post({ params, searchParams }) {
                                             </div>
                                         </div>
                                     </div>
-                                    <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify pt-3 pb-4 text-white text-opacity-90 sm:text-[17px]">{postData.author.node.description}</p>
+                                    <p className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify pt-3 text-white text-opacity-90 sm:text-[17px]">{postData.author.node.description}</p>
                                 </div>
-                                <div className="col-span-12 lg:col-span-6">
+                                <div className="col-span-12 lg:col-span-6 h-full">
                                     {postData.featuredImage ?
                                         (
-                                            <Image quality={75} src={`https://inhouse.cryscampus.com/wordpress/animation/wp-content/uploads/${postData.featuredImage.node.mediaDetails.file}`} alt="Infinity Animation" width={736} height={450} className=" rounded-[20px]" />
+                                            <Image quality={75} src={`https://inhouse.cryscampus.com/wordpress/animation/wp-content/uploads/${postData.featuredImage.node.mediaDetails.file}`} alt="Infinity Animation" width={736} height={450} className="h-full rounded-[20px]" />
                                         )
                                         :
                                         (
@@ -434,7 +454,7 @@ export default async function Post({ params, searchParams }) {
                             <div className="lg:grid lg:grid-cols-12 flex flex-col-reverse flex-wrap lg:gap-5 gap-10">
                                 <div className="lg:col-span-8">
                                     <div dangerouslySetInnerHTML={{ __html: postData.content }} className="font-sans"></div>
-                                    <BlogFaqs faqData={postData.blogDescription.faq} />
+                                    {/* <BlogFaqs faqData={postData.blogDescription.faq} /> */}
                                 </div>
                                 <div className="lg:col-span-4">
                                     <div className={styles.sidebar}>
@@ -447,6 +467,7 @@ export default async function Post({ params, searchParams }) {
                     </section>
                     <Portfolio content={portfolio} />
                     <Testimonial content={testimonialNew} />
+                    <Looking content={looking} />
                     <BlogArticle />
                 </>
             )}

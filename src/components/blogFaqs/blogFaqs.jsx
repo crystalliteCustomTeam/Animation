@@ -27,7 +27,7 @@ const BlogFaqs = ({ faqData }) => {
                                     <span>
                                         <Image
                                             quality={75}
-                                            alt='BitsWits'
+                                            alt='Infinity Animations'
                                             src={faqStates[index] ? arrowDown : arrowUp}
                                             className=' '
                                         />
