@@ -12,7 +12,7 @@ import TestimonialNew from '@/components/location-page/testimonialNew/Testimonia
 import Looking from '@/components/location-page/looking/Looking';
 import Contact from '@/components/location-page/contact/Contact';
 //==== Hero Images
-import BannerImg from "media/location-page/florida.png"
+import BannerImg from "media/location-page/atlanta.png"
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
 //================
