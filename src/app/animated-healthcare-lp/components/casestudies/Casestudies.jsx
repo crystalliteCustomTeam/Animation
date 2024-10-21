@@ -65,7 +65,7 @@ const Casestudies = () => {
                     </div>
                     <AutoPlay arrowPosition="">
                         {caseStudies.map((item, index) => (
-                            <div key={index} className="grow-0 shrink-0 basis-[100%] lg:basis-6/12 pl-4">
+                            <div key={index} className="grow-0 shrink-0 basis-[100%] lg:basis-6/12 pl-5">
                                 <div className="flex flex-col bg-white">
                                     <Fancybox options={{
                                         Carousel: {

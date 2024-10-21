@@ -46,7 +46,7 @@ const TestimonialsSlider = () => {
         <section>
             <AutoPlay arrowPosition="invert">
                 {sliderData.map((e, i) => (
-                    <div className={`grow-0 shrink-0 basis-[85%] md:basis-[55%] lg:basis-[35%] xl:basis-[25%] min-w-0 pl-4`} key={i}>
+                    <div className={`grow-0 shrink-0 basis-[85%] md:basis-[55%] lg:basis-[35%] xl:basis-[25%] min-w-0 pl-5`} key={i}>
                         <div className={`slide bg-white px-4 lg:px-7 py-6 sm:py-9 rounded-0 h-full`}>
                             <div className="review flex items-center gap-x-2 mb-5">
                                 <Image src={review} alt='Review' />
