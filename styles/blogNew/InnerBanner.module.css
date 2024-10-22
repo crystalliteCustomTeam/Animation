@@ -1,3 +1,7 @@
+.topDescLink a:not(:last-child) {
+  text-decoration: underline;
+}
+
 .innerBannerSec {
   padding: 80px 0;
 }

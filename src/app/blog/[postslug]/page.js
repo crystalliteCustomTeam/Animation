@@ -6,19 +6,15 @@ import styles from "/styles/blogNew/InnerBanner.module.css"
 import { getSinglePost } from "../../../../lib/posts";
 import BlogNavigation from "@/components/blogs-new/BlogNavigation";
 import BlogsRelevant from "@/components/blogs-new/BlogsRelevant";
-import BlogFaqs from "@/components/blogs-new/BlogFaqs";
 import BlogArticle from "@/components/blogs-new/BlogArticle";
 import Portfolio from "@/components/portfolio/Portfolio";
 import Testimonial from '@/components/testimonialNew/Testimonial';
 import Looking from '@/components/location-page/looking/Looking';
-// ===== Images
-import Client from "media/blogs/innerclient.png"
-import verified from "media/blogs/verified.png"
+// ===== Image
 import Profile from "media/inner-blogs/profile-hero.svg"
 import WhiteDot from "media/inner-blogs/white-dot.svg"
 import BlueCheck from "media/inner-blogs/blue-check.svg"
 import Star from "media/inner-blogs/rating-star.svg"
-import experience from "media/blogs/experience.png"
 // ==== Thumnail Image
 import Thumnail1 from "media/thumbnails/2d-animation/1.png";
 import Thumnail2 from "media/thumbnails/2d-animation/2.png";
@@ -392,7 +388,7 @@ export default async function Post({ params, searchParams }) {
                             <div dangerouslySetInnerHTML={{ __html: postData.blogDescription.schema }}></div>
                         </>
                     )}
-                    <section className={`w-full flex items-center justify-start pt-[35px] lg:pt-[75px] lg:pb-[120px] bg-none bg-no-repeat relative overflow-hidden z-1 top-[100px]`}>
+                    <section className={`w-full flex items-center justify-start pt-[35px] lg:pt-[75px] lg:pb-[120px] bg-none bg-no-repeat relative overflow-hidden z-1 top-[100px] ${styles.innerBanner}`}>
                         <div className="container">
                             <div className="grid grid-cols-12 content-center items-center gap-5 lg:gap-16">
                                 <div className='col-span-12 lg:col-span-6 flex flex-col items-start'>
@@ -401,7 +397,7 @@ export default async function Post({ params, searchParams }) {
                                         <h1 className='text-white text-[28px] lg:text-[35px] xl:text-[45px] font-[600] poppins font-sans md:leading-[54px] text-start mb-3'>{postData.title}</h1>
                                         {postData.blogDescription.topDescription && (
                                             <>
-                                                <div dangerouslySetInnerHTML={{ __html: postData.blogDescription.topDescription }} className="text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify pt-3 pb-4 text-white text-opacity-90 sm:text-[17px] border-b-2 border-gray-500" />
+                                                <div dangerouslySetInnerHTML={{ __html: postData.blogDescription.topDescription }} className={`text-[14px] xl:text-[16px] font-normal font-sans leading-normal tracking-wider text-justify pt-3 pb-4 text-white text-opacity-90 sm:text-[17px] border-b-2 border-gray-500 ${styles.topDescLink}`} />
                                             </>
                                         )}
                                     </div>
