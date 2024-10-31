@@ -78,7 +78,7 @@ const HeaderLP = () => {
                                             <span className='text-[15px] text-black px-[8px] font-[700] font-sans'>
                                                 Live Chat
                                             </span>
-                                        </button>
+                                        </a>
                                     </li>
                                     <li>
                                         <button onClick={popupHandle} className='flex items-center text-[15px] text-black font-[700] font-sans bg-[#f6c501] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:duration-700 hover:transition-all'>
