@@ -42,7 +42,7 @@ const Brands = ({ content }) => {
                                 </button>
                             </div>
                             <div className="btn">
-                                <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[16px] text-white font-[600] montserrat bg-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
+                                <a href="javascript:void(Tawk_API.toggle())" className='flex items-center text-[16px] text-white font-[600] montserrat bg-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                     Live Chat
                                 </a>
                             </div>

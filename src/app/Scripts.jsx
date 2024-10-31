@@ -4,13 +4,24 @@ import { useEffect } from 'react';
 const Scripts = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
+            //======== TawkTo ========//
+            var Tawk_API = Tawk_API || {},
+                Tawk_LoadStart = new Date();
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/66d1ff6150c10f7a00a22440/1i6i4r5nd';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+
             //======== ZenDesk ========//
-            const zenDesk = document.createElement("script");
-            zenDesk.id = "ze-snippet";
-            zenDesk.src = "https://static.zdassets.com/ekr/snippet.js?key=a3b9dc66-9fe2-4cb3-87a3-1e7c830425af";
-            zenDesk.async = true;
-            zenDesk.defer = true;
-            document.body.appendChild(zenDesk);
+            // const zenDesk = document.createElement("script");
+            // zenDesk.id = "ze-snippet";
+            // zenDesk.src = "https://static.zdassets.com/ekr/snippet.js?key=a3b9dc66-9fe2-4cb3-87a3-1e7c830425af";
+            // zenDesk.async = true;
+            // zenDesk.defer = true;
+            // document.body.appendChild(zenDesk);
 
             //======== Google Tag Manager ========//
             const gtmScript = document.createElement("script");

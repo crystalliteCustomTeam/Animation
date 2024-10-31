@@ -210,7 +210,7 @@ const Banner = () => {
                                         Call Now
                                     </a>
                                 </div>
-                                <button onClick={handleChatOpen} className='flex items-center gap-2'>
+                                <a href="javascript:void(Tawk_API.toggle())" className='flex items-center gap-2'>
                                     <Image src={Chats} alt='Infinity Animation' />
                                     <div>
                                         <p className='text-[15px] leading-tight text-white poppins font-normal '>Chat Now to Avail 50% OFF</p>
@@ -218,7 +218,7 @@ const Banner = () => {
                                             Live Chat
                                         </span>
                                     </div>
-                                </button>
+                                </a>
                             </div>
                             <div className='flex items-center gap-7 my-5 md:my-0 md:pt-9'>
                                 <Image src={BannerLogos} alt='Infinity Animation' className='w-6/12' />

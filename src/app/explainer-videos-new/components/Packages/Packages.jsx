@@ -81,7 +81,7 @@ const Packages = () => {
                                         </button>
                                     </div>
                                     <div className="livechat">
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
                                             <span className='text-[#1c214e] group-hover:text-white duration-700 ease-in-out group-hover:duration-700 text-[12px] md:text-[14px] font-[300] font-sans flex items-center'>
                                                 Click here to
                                                 <FaRegCommentDots className='text-[#009245] ml-[5px]' />
@@ -153,7 +153,7 @@ const Packages = () => {
                                         </button>
                                     </div>
                                     <div className="livechat">
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
                                             <span className='text-[#1c214e] group-hover:text-white duration-700 ease-in-out group-hover:duration-700 text-[12px] md:text-[14px] font-[300] font-sans flex items-center'>
                                                 Click here to
                                                 <FaRegCommentDots className='text-[#009245] ml-[5px]' />
@@ -225,7 +225,7 @@ const Packages = () => {
                                         </button>
                                     </div>
                                     <div className="livechat">
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='text-[16px] md:text-[20px] text-[#333] group-hover:text-white duration-700 ease-in-out group-hover:duration-700  leading-[1.2] font-[700] poppins'>
                                             <span className='text-[#1c214e] group-hover:text-white duration-700 ease-in-out group-hover:duration-700 text-[12px] md:text-[14px] font-[300] font-sans flex items-center'>
                                                 Click here to
                                                 <FaRegCommentDots className='text-[#009245] ml-[5px]' />

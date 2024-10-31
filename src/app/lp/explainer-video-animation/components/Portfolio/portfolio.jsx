@@ -100,9 +100,9 @@ const Portfolio = ({ content }) => {
                             )}
                         </div>
                         <div className="mt-10 w-max mx-auto">
-                            <button onClick={handleChatOpen} className='flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                            <a href="javascript:void(Tawk_API.toggle())" className='flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                 Make an Animation
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
