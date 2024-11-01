@@ -41,7 +41,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "#href"
+                href: "javascript:void(Tawk_API.toggle())"
             },
         ],
     },
@@ -75,7 +75,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "#href"
+                href: "javascript:void(Tawk_API.toggle())"
             },
         ],
     },
@@ -108,7 +108,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "#href"
+                href: "javascript:void(Tawk_API.toggle())"
             },
         ],
     },
@@ -185,10 +185,10 @@ const Pricing = ({ content }) => {
                                                                 <Image className={`${button.imgColor}`} src={button.image} alt="Infinity Animations " />
                                                             </a>
                                                         ) : (
-                                                            <button key={i} onClick={handleChatOpen} href={button.href} className={`flex items-center justify-between font-sans ${button.color} w-max py-2 px-3 xl:px-5 gap-2 rounded-lg`}>
+                                                            <a key={i} href={button.href} className={`flex items-center justify-between font-sans ${button.color} w-max py-2 px-3 xl:px-5 gap-2 rounded-lg`}>
                                                                 <span className="text-[14px] xl:text-[16px]">{button.text}</span>
                                                                 <Image src={button.image} className={`${button.imgColor} w-[30px]`} alt="Infinity Animation" />
-                                                            </button>
+                                                            </a>
                                                         )}
                                                     </React.Fragment>
                                                 ))}
