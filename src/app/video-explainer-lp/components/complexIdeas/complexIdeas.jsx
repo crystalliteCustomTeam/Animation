@@ -42,7 +42,7 @@ const ComplexIdeas = ({ content }) => {
                                                 {item.title}
                                             </h3>
                                             <div dangerouslySetInnerHTML={{ __html: item.content }} />
-                                            <Link href="tel:;" className='bg-black text-white text-[13px] md:text-[17px] leading-[25px] montserrat rounded-[7px] block sm:w-max py-[10px] px-[35px]'>Get A Call For Free Consultation</Link>
+                                            <Link href="tel:833-666-6689" className='bg-black text-white text-[13px] md:text-[17px] leading-[25px] montserrat rounded-[7px] block sm:w-max py-[10px] px-[35px]'>Get A Call For Free Consultation</Link>
                                         </div>
                                     ))}
                                 </div>
