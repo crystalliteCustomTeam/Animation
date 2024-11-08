@@ -63,7 +63,7 @@ const Boost = ({ content }) => {
                                     color={`text-white`}
                                     border={`border-2 border-[#fff]`}
                                     hover="hover:bg-prime"
-                                    href="javascript:void(Tawk_API.toggle())"
+                                    href="javascript:$zopim.livechat.window.show();"
                                 />
                             </div>
                         </div>

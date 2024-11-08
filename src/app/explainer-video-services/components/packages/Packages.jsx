@@ -82,7 +82,7 @@ const Packages = () => {
                                             1-833-666-6689
                                         </span>
                                     </a>
-                                    <a href="javascript:void(Tawk_API.toggle())" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-normal'>
+                                    <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-normal'>
                                         <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
                                     </a>
                                 </div>
@@ -140,7 +140,7 @@ const Packages = () => {
                                             1-833-666-6689
                                         </span>
                                     </a>
-                                    <a href="javascript:void(Tawk_API.toggle())" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-normal'>
+                                    <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-normal'>
                                         <span className='text-white text-[16px] pt-2'>Live Chat Now</span>
                                     </a>
                                 </div>
@@ -198,7 +198,7 @@ const Packages = () => {
                                             1-833-666-6689
                                         </span>
                                     </a>
-                                    <a href="javascript:void(Tawk_API.toggle())" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-normal'>
+                                    <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-normal'>
                                         <span className='text-white text-[16px] pt-2'>Live Chat Now</span>
                                     </a>
                                 </div>

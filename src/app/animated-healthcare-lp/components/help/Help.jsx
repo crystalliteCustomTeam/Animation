@@ -103,7 +103,7 @@ const Help = () => {
                                 text="Get A Quote"
                                 bg="bg-white"
                                 color={`text-black`}
-                                href="javascript:void(Tawk_API.toggle())"
+                                href="javascript:$zopim.livechat.window.show();"
                             />
                         </div>
                     </div>

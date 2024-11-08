@@ -292,7 +292,7 @@ const Banner = () => {
                 <div className={styles.pot}>
                   <Image src={icon2} className={styles.ntoen} alt="Infinity Animations" />
                   <div>
-                    <a href="javascript:void(Tawk_API.toggle())">  <p className={styles.talktoour}>Talk to our Expert</p>
+                    <a href="javascript:$zopim.livechat.window.show();">  <p className={styles.talktoour}>Talk to our Expert</p>
                       <h3 className={styles.livechat}>Live Chat</h3> </a>
                   </div>
                 </div>

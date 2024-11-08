@@ -40,7 +40,7 @@ const BrandOne = ({ content }) => {
                                             </a>
                                         </div>
                                         <div className="btn">
-                                            <a href="javascript:void(Tawk_API.toggle())" className='flex items-center justify-center gap-2 text-[15px] text-white font-[600] poppins bg-transparent h-[40px] xl:h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] border'>
+                                            <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-2 text-[15px] text-white font-[600] poppins bg-transparent h-[40px] xl:h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] border'>
                                                 <Image src={BtnMsg} alt='Infinity Animations' />
                                                 <span>Live Chat</span>
                                             </a>

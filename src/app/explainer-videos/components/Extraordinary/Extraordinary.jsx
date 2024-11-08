@@ -31,7 +31,7 @@ const Extraordinary = () => {
                                     <a href='tel:833-666-6689' className="text-[16px] font-semibold leading-[25px] text-white bg-[#FF2D4B] dropShadow rounded-[5px] w-[318px] h-[44px] poppins flex items-center justify-center">Make an Animation</a>
                                 </div>
                                 <div className="btns">
-                                    <a className="text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-[318px] md:w-[214px] h-[44px] shadow-2xl poppins flex items-center justify-center" href="javascript:void(Tawk_API.toggle())">Live Chat</a>
+                                    <a className="text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-[318px] md:w-[214px] h-[44px] shadow-2xl poppins flex items-center justify-center" href="javascript:$zopim.livechat.window.show();">Live Chat</a>
                                 </div>
                                 <div className="flex items-center justify-between gap-x-4 mt-[48px] lg:mt-0">
                                     <Image src={AnimationOne} alt='Animating Studio' width={550} height={550} className='w-5/12 lg:w-5/12' />

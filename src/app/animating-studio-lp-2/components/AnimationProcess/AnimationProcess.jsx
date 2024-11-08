@@ -115,7 +115,7 @@ const AnimationProcess = () => {
                                     ))}
                                 </ul>
                                 <div className="btn">
-                                    <a href="javascript:void(Tawk_API.toggle())" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] lg:bg-black hover:duration-700 hover:transition-all'>
+                                    <a href="javascript:$zopim.livechat.window.show();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] lg:bg-black hover:duration-700 hover:transition-all'>
                                         <Image src={Chats} alt='Infinity Animation' className='brightness-200 invert-0' />
                                         Live Chat
                                     </a>

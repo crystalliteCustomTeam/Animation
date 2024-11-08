@@ -4,17 +4,25 @@ import { useEffect } from 'react';
 const Scripts = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
-            //======== TawkTo ========//
-            var Tawk_API = Tawk_API || {},
-                Tawk_LoadStart = new Date();
-            var s1 = document.createElement("script"),
-                s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/66d1ff6150c10f7a00a22440/1i6i4r5nd';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-
+            // //======== LiveChat ========//
+            window.__lc = window.__lc || {};
+            window.__lc.license = 18818250;
+            window.__lc.integration_name = "manual_onboarding";
+            window.__lc.product_name = "livechat";
+            const livechat = document.createElement("script");
+            livechat.async = true;
+            livechat.src = "https://cdn.livechatinc.com/tracking.js";
+            document.body.appendChild(livechat);
+            // //======== TawkTo ========//
+            // var Tawk_API = Tawk_API || {},
+            //     Tawk_LoadStart = new Date();
+            // var s1 = document.createElement("script"),
+            //     s0 = document.getElementsByTagName("script")[0];
+            // s1.async = true;
+            // s1.src = 'https://embed.tawk.to/66d1ff6150c10f7a00a22440/1i6i4r5nd';
+            // s1.charset = 'UTF-8';
+            // s1.setAttribute('crossorigin', '*');
+            // s0.parentNode.insertBefore(s1, s0);
             //======== ZenDesk ========//
             // const zenDesk = document.createElement("script");
             // zenDesk.id = "ze-snippet";
@@ -119,6 +127,23 @@ const Scripts = () => {
         }, 5000);
 
         return () => clearTimeout(timer);
+    }, []);
+
+    useEffect(() => {
+        const handleClick = (event) => {
+            const target = event.target;
+            if (target.href === 'javascript:$zopim.livechat.window.show();') {
+                event.preventDefault(); // Default action se roknay kay liye
+                // Yahan aap apni live chat kholne wali function call kar sakte hain
+                parent.LC_API.open_chat_window(); return false;
+            }
+        };
+        // Event listener add karen
+        document.addEventListener('click', handleClick);
+        // Cleanup function
+        return () => {
+            document.removeEventListener('click', handleClick);
+        };
     }, []);
 
     return null;

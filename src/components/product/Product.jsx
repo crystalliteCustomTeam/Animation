@@ -50,7 +50,7 @@ const Product = ({ content }) => {
                                     color={`text-white`}
                                     border={`border-2 border-[#f5090b]`}
                                     hover="hover:bg-transparent"
-                                    href="javascript:void(Tawk_API.toggle())"
+                                    href="javascript:$zopim.livechat.window.show();"
                                 />
                             </div>
                         </div>

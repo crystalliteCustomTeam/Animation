@@ -73,7 +73,7 @@ const HeaderLP = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(Tawk_API.toggle())" className='flex items-center text-[15px] text-white font-[700] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[15px] text-white font-[700] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>
                                             <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100]' />
                                             <span className='text-[15px] text-white px-[8px] font-[700] font-sans'>
                                                 Live Chat

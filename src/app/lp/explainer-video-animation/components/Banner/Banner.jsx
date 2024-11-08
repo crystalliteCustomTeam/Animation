@@ -210,7 +210,7 @@ const Banner = () => {
                                         Call Now
                                     </a>
                                 </div>
-                                <a href="javascript:void(Tawk_API.toggle())" className='flex items-center gap-2'>
+                                <a href="javascript:$zopim.livechat.window.show();" className='flex items-center gap-2'>
                                     <Image src={Chats} alt='Infinity Animation' />
                                     <div>
                                         <p className='text-[15px] leading-tight text-white poppins font-normal '>Chat Now to Avail 50% OFF</p>
