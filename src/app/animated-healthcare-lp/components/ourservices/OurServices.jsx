@@ -67,9 +67,9 @@ const OurServices = () => {
                     <div className="mt-8 lg:mt-14">
                         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
                             {services.map((item, index) => (
-                                <div key={index} className="relative group overflow-hidden">
+                                <div key={index} className="relative group overflow-hidden transition-all duration-300">
                                     <Image src={item.image} alt="Infinity Animations" />
-                                    <div className="h-full w-full absolute left-[50%] top-[50%] lg:top-[110px] 5xl:top-[132px] translate-x-[-50%] translate-y-[0px] group-hover:translate-y-[-75px] flex flex-col gap-5 items-center justify-center">
+                                    <div className="h-full w-full absolute left-[50%] top-[50%] lg:top-[110px] 5xl:top-[132px] translate-x-[-50%] translate-y-[0px] group-hover:translate-y-[-75px] transition-all duration-300 flex flex-col gap-5 items-center justify-center">
                                         <p className='text-[16px] 5xl:text-[20px] tracking-wide poppins font-bold text-white text-center opacity-1 group-hover:opacity-0'>
                                             {item.title}
                                         </p>

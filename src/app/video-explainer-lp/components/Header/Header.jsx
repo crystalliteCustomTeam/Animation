@@ -74,10 +74,8 @@ const HeaderLP = () => {
                                     </li>
                                     <li>
                                         <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[15px] text-white font-[600] font-sans bg-black ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all w-max z-[2]'>
-                                            <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] z-[1]' />
-                                            <span className='text-[15px] text-white px-[8px] font-[600] font-sans z-[1]'>
-                                                Live Chat
-                                            </span>
+                                            <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] mr-2' />
+                                            Live Chat
                                         </a>
                                     </li>
                                     <li>

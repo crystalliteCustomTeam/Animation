@@ -247,11 +247,11 @@ const Banner = () => {
                                         Call Now
                                     </a>
                                 </div>
-                                <a href="javascript:$zopim.livechat.window.show();" className="chat flex items-center gap-2 z-[2]">
+                                <a href="javascript:$zopim.livechat.window.show();" className="chat flex items-center gap-2 text-white text-[16px] montserrat font-[700]">
                                     <Image src={chatIcon} alt='chat-icon' className='w-[25px] ml-[10px] z-[1]' />
                                     <div className="text z-[1]">
                                         <span className='block montserrat text-[14px] font-[400] text-[#ffcb05] leading-[14px]'>Chat Now to Avail 50% OFF</span>
-                                        <span className='text-white text-[16px] montserrat font-[700]'>Live Chat</span>
+                                        Live Chat
                                     </div>
                                 </a>
                             </div>
