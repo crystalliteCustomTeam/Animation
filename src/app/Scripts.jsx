@@ -4,16 +4,25 @@ import { useEffect } from 'react';
 const Scripts = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
-            // //======== LiveChat ========//
+            //======== LiveChat ========//
             window.__lc = window.__lc || {};
             window.__lc.license = 18818250;
             window.__lc.integration_name = "manual_onboarding";
             window.__lc.product_name = "livechat";
+            
             const livechat = document.createElement("script");
             livechat.async = true;
             livechat.src = "https://cdn.livechatinc.com/tracking.js";
+            livechat.onload = () => {
+                console.log("LiveChat script loaded successfully.");
+                // Now you can safely access the $zopim or LC_API objects
+            };
+            livechat.onerror = () => {
+                console.error("Error loading LiveChat script.");
+            };
             document.body.appendChild(livechat);
-            // //======== TawkTo ========//
+
+            //======== TawkTo ========//
             // var Tawk_API = Tawk_API || {},
             //     Tawk_LoadStart = new Date();
             // var s1 = document.createElement("script"),
@@ -23,6 +32,7 @@ const Scripts = () => {
             // s1.charset = 'UTF-8';
             // s1.setAttribute('crossorigin', '*');
             // s0.parentNode.insertBefore(s1, s0);
+
             //======== ZenDesk ========//
             // const zenDesk = document.createElement("script");
             // zenDesk.id = "ze-snippet";
@@ -134,12 +144,19 @@ const Scripts = () => {
             const target = event.target;
             if (target.href === 'javascript:$zopim.livechat.window.show();') {
                 event.preventDefault(); // Default action se roknay kay liye
-                // Yahan aap apni live chat kholne wali function call kar sakte hain
-                parent.LC_API.open_chat_window(); return false;
+                // Wait for the LiveChat API to be available
+                if (window.LC_API) {
+                    window.LC_API.open_chat_window();
+                } else {
+                    console.error("LiveChat API is not ready yet.");
+                }
+                return false;
             }
         };
+        
         // Event listener add karen
         document.addEventListener('click', handleClick);
+        
         // Cleanup function
         return () => {
             document.removeEventListener('click', handleClick);
@@ -147,6 +164,6 @@ const Scripts = () => {
     }, []);
 
     return null;
-}
+};
 
 export default Scripts;
