@@ -54,7 +54,7 @@
 }
 .sefve {
   background-color: white;
-  width: 151px;
+  width: max-content;
   height: 40px;
   border: unset;
   border-radius: 10px;
@@ -62,6 +62,10 @@
   font-weight: 600;
   color: black;
   font-size: 14px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .message {
   display: flex;

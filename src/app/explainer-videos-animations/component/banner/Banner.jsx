@@ -292,8 +292,10 @@ const Banner = () => {
                 <div className={styles.pot}>
                   <Image src={icon2} className={styles.ntoen} alt="Infinity Animations" />
                   <div>
-                    <a href="javascript:$zopim.livechat.window.show();">  <p className={styles.talktoour}>Talk to our Expert</p>
-                      <h3 className={styles.livechat}>Live Chat</h3> </a>
+                    <h3>
+                      <p className={styles.talktoour}>Talk to our Expert</p>
+                      <a href="javascript:$zopim.livechat.window.show();" className={styles.livechat}>Live Chat</a>
+                    </h3>
                   </div>
                 </div>
                 <Image src={icon3} className={styles.newtoen} alt="Infinity Animations" />

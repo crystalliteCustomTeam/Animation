@@ -210,15 +210,15 @@ const Banner = () => {
                                         Call Now
                                     </a>
                                 </div>
-                                <a href="javascript:$zopim.livechat.window.show();" className='flex items-center gap-2'>
+                                <div className='flex items-center gap-2'>
                                     <Image src={Chats} alt='Infinity Animation' />
                                     <div>
                                         <p className='text-[15px] leading-tight text-white poppins font-normal '>Chat Now to Avail 50% OFF</p>
-                                        <span className='text-[#0DEB48] poppins text-[17px] font-semibold'>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='text-[#0DEB48] poppins text-[17px] font-semibold'>
                                             Live Chat
-                                        </span>
+                                        </a>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             <div className='flex items-center gap-7 my-5 md:my-0 md:pt-9'>
                                 <Image src={BannerLogos} alt='Infinity Animation' className='w-6/12' />

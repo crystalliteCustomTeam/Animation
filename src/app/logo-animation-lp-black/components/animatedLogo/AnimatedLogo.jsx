@@ -72,9 +72,9 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <Link href="#href" className='bg-[#f5090b] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <a href="javascript:$zopim.livechat.window.show();" className='bg-[#f5090b] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -141,9 +141,9 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <Link href="#href" className='bg-white text-black py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <a href="javascript:$zopim.livechat.window.show();" className='bg-white text-black py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -210,9 +210,9 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <Link href="#href" className='bg-[#f5090b] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <a href="javascript:$zopim.livechat.window.show();" className='bg-[#f5090b] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -273,9 +273,9 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <Link href="#href" className='bg-white text-black py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <a href="javascript:$zopim.livechat.window.show();" className='bg-white text-black py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>

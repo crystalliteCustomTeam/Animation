@@ -1,7 +1,7 @@
 const OurPackages = () => {
     return (
         <>
-           <section className="py-10 lg:py-16 bg-white">
+           <section className="py-10 lg:py-16 bg-white" id="Pricing">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className='flex items-center justify-around'>
                         <div className='w-full text-center'>

@@ -114,13 +114,13 @@ const Services = () => {
                                     <h3 className="text-[#FFCC00] text-[42px] lg:text-[62px] leading-[52px] lg:leading-[72px] font-semibold poppins mb-4 lg:mb-6">Today!</h3>
                                     <p className="text-white text-[13px] lg:text-[14px] poppins mb-4 lg:mb-6">We are a leading video animation company <br className="xl:block hidden" /> in the USA that has helped thousands of</p>
                                     <div>
-                                        <a href="javascript:$zopim.livechat.window.show();" className="bg-white h-[65px] w-max px-4 rounded-[6px] flex items-center gap-x-4">
+                                        <div className="bg-white h-[65px] w-max px-4 rounded-[6px] flex items-center gap-x-4">
                                             <Image src={chatIcon} alt="Infinity Animation" />
                                             <div>
                                                 <span className="text-black text-[10px] poppins font-semibold block">Chat Now to Avail 50% OFF</span>
-                                                <span className="text-black text-[20px] leading-[30px] font-semibold poppins block text-center">Live Chat</span>
+                                                <a href="javascript:$zopim.livechat.window.show();" className="text-black text-[20px] leading-[30px] font-semibold poppins block text-center">Live Chat</a>
                                             </div>
-                                        </a>
+                                        </div>
                                     </div>
                                     <div className="xl:block hidden absolute right-[-35px] top-[-35px]">
                                         <Image src={MeetingImage} alt="Infinity Animation" className="max-h-[380px]" />

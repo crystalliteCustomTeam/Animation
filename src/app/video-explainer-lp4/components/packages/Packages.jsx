@@ -71,9 +71,9 @@ const Packages = () => {
                                                 1-833-666-6689
                                             </span>
                                         </a>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700]'>
-                                            <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
-                                        </a>
+                                        <div className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700]'>
+                                            <a href="javascript:$zopim.livechat.window.show();" className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -124,9 +124,9 @@ const Packages = () => {
                                                 1-833-666-6689
                                             </span>
                                         </a>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700]'>
-                                            <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
-                                        </a>
+                                        <div className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700]'>
+                                            <a href="javascript:$zopim.livechat.window.show();" className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -177,9 +177,9 @@ const Packages = () => {
                                                 1-833-666-6689
                                             </span>
                                         </a>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700]'>
-                                            <span className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</span>
-                                        </a>
+                                        <div className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700]'>
+                                            <a href="javascript:$zopim.livechat.window.show();" className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

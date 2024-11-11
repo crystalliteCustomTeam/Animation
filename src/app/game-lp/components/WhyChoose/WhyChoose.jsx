@@ -34,7 +34,7 @@ const WhyChoose = () => {
         },
     ]
     return (
-        <section className='pt-[50px] md:pt-0 pb-[50px] lg:pb-[90px]'>
+        <section className='pt-[50px] md:pt-0 pb-[50px] lg:pb-[90px]' id='whyUs'>
             <div className="max-w-7xl mx-auto px-4 md:px-8 xl:px-0">
                 <div className="grid-cols-12">
                     <div className="txt text-center">
@@ -52,11 +52,11 @@ const WhyChoose = () => {
                                 <h3 className='text-[20px] leading-[30px] poppins font-semibold group-hover:text-black group-hover:duration-1000 ease-in-out duration-1000'>{content.title}</h3>
                                 <p className='text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] font-normal text-white group-hover:text-black group-hover:duration-1000 ease-in-out duration-1000 poppins 5xl:pr-4 pt-2 md:pt-3 pb-4 md:pb-6'>{content.desc}</p>
                                 <div className="btn">
-                                    <Link href="#href" className='text-white text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
+                                    <a href="javascript:$zopim.livechat.window.show();" className='text-white text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
                                         <Image src={BtnBg1} alt='Btn Background' fill={true} className='object-cover object-center z-[-1] group-hover:opacity-0 opacity-100 group-hover:duration-1000 ease-in-out duration-1000' />
                                         <Image src={BtnBg2} alt='Btn Background' fill={true} className='object-cover object-center z-[-1] group-hover:opacity-100 opacity-0 group-hover:duration-1000 ease-in-out duration-1000' />
                                         Contact Us Now
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>

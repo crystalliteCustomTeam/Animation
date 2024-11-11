@@ -119,7 +119,7 @@ const Portfolio = () => {
         },
     ];
     return (
-        <section className='pt-[0px] pb-[50px] lg:pt-[30px] lg:pb-[90px]'>
+        <section className='pt-[0px] pb-[50px] lg:pt-[30px] lg:pb-[90px]' id='Portfolio'>
             <div className="grid grid-cols-12">
                 <div className="col-span-12">
                     <div className="content text-center px-4 md:px-0">

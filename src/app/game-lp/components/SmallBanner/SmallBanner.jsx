@@ -22,16 +22,16 @@ const SmallBanner = () => {
                             <p className='text-[13px] sm:text-[15px] xl:text-[16px] leading-[25px] sm:leading-[30px] xl:leading-[33px] text-white poppins mb-7 lg:mb-9'>At the heart of every great game lies captivating art that immerses players in unique, vibrant worlds. We craft visuals that not only enhance gameplay </p>
                             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
                                 <div className="btn">
-                                    <Link href="javascript:;" className=' text-white text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
+                                    <a href="tel:833-666-6689" className=' text-white text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
                                         <Image src={BtnBg1} alt='Btn Background' fill={true} className='z-[-1] object-cover object-center' />
                                         Contact Us Now
-                                    </Link>
+                                    </a>
                                 </div>
                                 <div className="btn">
-                                    <Link href="javascript:;" className=' text-black text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
+                                    <a href="javascript:$zopim.livechat.window.show();" className=' text-black text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
                                         <Image src={BtnBg2} alt='Btn Background' fill={true} className='z-[-1] object-cover object-center' />
                                         Get A Quote
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>

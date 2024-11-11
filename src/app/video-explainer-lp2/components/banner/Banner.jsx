@@ -240,13 +240,13 @@ const Banner = () => {
                                         Get Started
                                     </button>
                                 </div>
-                                <a href="javascript:$zopim.livechat.window.show();" className="chat flex items-center gap-2">
+                                <div className="chat flex items-center gap-2">
                                     <Image src={chatIcon} alt='chat-icon' className='w-[25px] ml-[10px]' />
                                     <div className="text">
                                         <span className='block montserrat text-[14px] font-[400] text-[#ffcb05] leading-[14px]'>Talk to our Expert</span>
-                                        <span className='text-white text-[16px] montserrat font-[700]'>Live Chat</span>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='text-white text-[16px] montserrat font-[700]'>Live Chat</a>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div className="col-span-12 lg:col-span-6">

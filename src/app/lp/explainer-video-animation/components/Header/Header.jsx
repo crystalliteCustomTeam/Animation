@@ -72,11 +72,9 @@ const Header = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-white font-normal poppins bg-[#ff2d4c2f] border-2 xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
-                                            <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] xl:block hidden' />
-                                            <span className='text-[14px] lg:text-[13px] xl:text-[14px] text-white px-[4px] font-normal poppins'>
-                                                Live Chat
-                                            </span>
+                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-white font-normal poppins bg-[#ff2d4c2f] border-2 xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all text-[14px] lg:text-[13px] xl:text-[14px]'>
+                                            <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] xl:block hidden mr-1' />
+                                            Live Chat
                                         </a>
                                     </li>
                                     <li>

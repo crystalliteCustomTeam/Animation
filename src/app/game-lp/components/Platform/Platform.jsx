@@ -82,16 +82,16 @@ const Platform = () => {
                                             <p className='text-[15px] xl:text-[17px] leading-[29px] xl:leading-[33px] font-normal poppins mb-5 lg:mb-8 xl:pr-4 lg:text-left text-center'>{tabContents[activeTab].desc}</p>
                                             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
                                                 <div className="btn">
-                                                    <Link href="javascript:;" className=' text-white text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
+                                                    <a href="tel:833-666-6689" className=' text-white text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
                                                         <Image src={BtnBg1} alt='Btn Background' fill={true} className='z-[-1] object-cover object-center' />
                                                         Contact Us Now
-                                                    </Link>
+                                                    </a>
                                                 </div>
                                                 <div className="btn">
-                                                    <Link href="javascript:;" className=' text-black text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
+                                                    <a href="javascript:$zopim.livechat.window.show();" className=' text-black text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
                                                         <Image src={BtnBg2} alt='Btn Background' fill={true} className='z-[-1] object-cover object-center' />
                                                         Get A Quote
-                                                    </Link>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
