@@ -293,7 +293,7 @@ const Contact = () => {
                 <div className="max-w-7xl mx-auto px-4 md:px-8 xl:px-0">
                     <div className="flex flex-col lg:flex-row items-center justify-between">
                         <div>
-                            <p className='text-[15px] font-normal leading-[22px] md:leading-[33px] poppins text-white text-center md:text-left'>© Infinity Animations 2024. - All Rights Reserved By Dreamweave Media Inc</p>
+                            <p className='text-[15px] font-normal leading-[22px] md:leading-[33px] poppins text-white text-center md:text-left'>© Infinity Animations 2024. - All Rights Reserved </p>
                         </div>
                         <div className="flex items-center gap-4 lg:mr-[120px] xl:mr-[80px]">
                             <Link href="javascript:;" className='text-[15px] font-normal leading-[33px] poppins text-white'>
