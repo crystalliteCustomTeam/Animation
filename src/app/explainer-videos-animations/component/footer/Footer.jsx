@@ -10,7 +10,7 @@ import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaGlobe } from "react-icons/fa";
 // ==== Images 
-import payment from "media/banner/payment.png"
+import payment from "media/payment.webp"
 import top from "media/banner/top.png"
 import facebook from "media/icons/fb.png";
 import twitter from "media/icons/x.png";

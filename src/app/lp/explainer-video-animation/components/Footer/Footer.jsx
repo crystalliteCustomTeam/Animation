@@ -9,7 +9,7 @@ import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
 import { HiMapPin } from 'react-icons/hi2';
 // Import Images
 import logo from "media/images/black-logo.gif";
-import Payment from "media/video-explainer/payment-img.png"
+import Payment from "media/payment.webp"
 import facebook from "media/icons/fb.png";
 import twitter from "media/icons/x.png";
 import youtube from "media/icons/youtube.png";
@@ -258,7 +258,7 @@ const Footer = () => {
                                             </a>
                                         </li>
                                         <li className='py-[10px]'>
-                                            <a href="https://maps.app.goo.gl/BFBsCwAX1znom3LE6" target='_blank' className='text-[15px] md:text-[20px] text-white montserrat flex gap-2'>
+                                            <a href="https://maps.app.goo.gl/T6kgqa3TAScTnfys8" target='_blank' className='text-[15px] md:text-[20px] text-white montserrat flex gap-2'>
                                                 <HiMapPin className='bg-[#ffffff] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[25px] lg:w-[45px] h-[25px]' /> One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007
                                             </a>
                                         </li>

@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation"
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
 // ==== Images 
-import Payment from "media/video-explainer/payment-img.png"
+import Payment from "media/payment.webp"
 import UpArrow from "media/video-explainer/up-arrow.png"
 
 const Contact = () => {

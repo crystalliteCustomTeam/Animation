@@ -27,7 +27,7 @@ const PortfolioInner = () => {
                 <div className="flex flex-col-reverse md:flex-row items-center justify-between">
                     <div>
                         <p className='text-[15px] font-normal text-center md:text-left font-sans'>
-                            One World Trade Center, Suite 8500, New York, New York, 10007, United States
+                            2211 PRICE DR KILLEEN, TX 76542
                         </p>
                     </div>
                     <div>

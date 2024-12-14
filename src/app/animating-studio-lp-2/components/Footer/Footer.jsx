@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation"
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
 // ==== Images 
-import Payment from "media/video-explainer2/payment-img.png"
+import Payment from "media/payment.webp"
 import UpArrow from "media/video-explainer2/up-arrow.png"
 import FooterBg from "media/infinity-studio-lp-2/footer-bg.png"
 

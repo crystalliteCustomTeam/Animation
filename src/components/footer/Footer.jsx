@@ -14,6 +14,7 @@ import instagram from "media/icons/insta.png";
 import linkedin from "media/icons/linkedin.png";
 import vimeo from "media/icons/vemio.png";
 import dmca from "media/icons/dmca.png";
+import Payment from "media/payment.webp";
 
 const Footer = () => {
     const quickLinks = [
@@ -76,8 +77,8 @@ const Footer = () => {
             icon: envelope
         },
         {
-            text: "One World Trade Center, Suite 8500, New York, New York, 10007, United States",
-            link: "https://maps.app.goo.gl/BFBsCwAX1znom3LE6",
+            text: "2211 PRICE DR KILLEEN, TX 76542",
+            link: "https://maps.app.goo.gl/T6kgqa3TAScTnfys8",
             icon: mapmarker,
             target: "_blank"
         },
@@ -143,6 +144,7 @@ const Footer = () => {
                             <p className="text-sm xl:text-base font-normal font-sans text-justify text-white mt-3 pr-5">Infinity Animations is a visionary kingdom where creativity knows no bounds. With masterful strokes of artistry, they breathe life into ideas, forging appealing animations that dance with imagination. Each frame tells a story, each visual a masterpiece. From 2D wonders to CGI-VFX magic, they conjure dimensions where dreams come to life.</p>
                             <div className="mt-4 md:mt-6 mb-4 lg:mb-0">
                                 <Image src={dmca} alt="Infinity Animation" />
+                                <Image src={Payment} alt="Infinity Animation" width={250} height={250} className="mt-2" />
                             </div>
                         </div>
                         <div className="basis-full sm:basis-[48%] lg:basis-[20%]">

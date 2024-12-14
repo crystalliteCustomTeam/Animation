@@ -8,7 +8,7 @@ import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
 import { HiMapPin } from 'react-icons/hi2';
 // ==== Images 
-import Payment from "media/video-explainer/payment-img.png"
+import Payment from "media/payment.webp"
 import UpArrow from "media/video-explainer/up-arrow.png"
 import facebook from "media/icons/fb.png";
 import twitter from "media/icons/x.png";
@@ -287,8 +287,8 @@ const Contact = () => {
                                         </a>
                                     </li>
                                     <li className='py-[10px]'>
-                                        <a href="https://maps.app.goo.gl/BFBsCwAX1znom3LE6" target='_blank' className='text-[15px] md:text-[20px] text-white montserrat flex gap-2'>
-                                            <HiMapPin className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[40px] md:w-[45px] h-[25px]' /> One World Trade Center, Suite 8500, New York, New York, 10007, United States
+                                        <a href="https://maps.app.goo.gl/T6kgqa3TAScTnfys8" target='_blank' className='text-[15px] md:text-[20px] text-white montserrat flex gap-2'>
+                                            <HiMapPin className='bg-[#fc0] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[40px] md:w-[45px] h-[25px]' /> 2211 PRICE DR KILLEEN, TX 76542
                                         </a>
                                     </li>
                                     <li className='py-[10px]'>
