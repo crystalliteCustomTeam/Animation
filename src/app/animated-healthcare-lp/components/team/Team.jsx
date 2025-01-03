@@ -27,7 +27,7 @@ const Team = () => {
                             text="Get A Quote"
                             bg="bg-white"
                             color={`text-black`}
-                            href="javascript:$zopim.livechat.window.show();"
+                            href="javascript:void(Tawk_API.toggle())"
                         />
                     </div>
                 </div>

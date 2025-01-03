@@ -72,7 +72,7 @@ const Packages = () => {
                                             </span>
                                         </a>
                                         <div className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700]'>
-                                            <a href="javascript:$zopim.livechat.window.show();" className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</a>
+                                            <a href="javascript:void(Tawk_API.toggle())" className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@ const Packages = () => {
                                             </span>
                                         </a>
                                         <div className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700]'>
-                                            <a href="javascript:$zopim.livechat.window.show();" className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</a>
+                                            <a href="javascript:void(Tawk_API.toggle())" className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -178,7 +178,7 @@ const Packages = () => {
                                             </span>
                                         </a>
                                         <div className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700]'>
-                                            <a href="javascript:$zopim.livechat.window.show();" className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</a>
+                                            <a href="javascript:void(Tawk_API.toggle())" className='text-[#231f20] text-[16px] pt-2'>Live Chat Now</a>
                                         </div>
                                     </div>
                                 </div>

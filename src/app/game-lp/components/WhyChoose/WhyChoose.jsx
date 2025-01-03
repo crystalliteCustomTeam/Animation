@@ -52,7 +52,7 @@ const WhyChoose = () => {
                                 <h3 className='text-[20px] leading-[30px] poppins font-semibold group-hover:text-black group-hover:duration-1000 ease-in-out duration-1000'>{content.title}</h3>
                                 <p className='text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] font-normal text-white group-hover:text-black group-hover:duration-1000 ease-in-out duration-1000 poppins 5xl:pr-4 pt-2 md:pt-3 pb-4 md:pb-6'>{content.desc}</p>
                                 <div className="btn">
-                                    <a href="javascript:$zopim.livechat.window.show();" className='text-white text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
+                                    <a href="javascript:void(Tawk_API.toggle())" className='text-white text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
                                         <Image src={BtnBg1} alt='Btn Background' fill={true} className='object-cover object-center z-[-1] group-hover:opacity-0 opacity-100 group-hover:duration-1000 ease-in-out duration-1000' />
                                         <Image src={BtnBg2} alt='Btn Background' fill={true} className='object-cover object-center z-[-1] group-hover:opacity-100 opacity-0 group-hover:duration-1000 ease-in-out duration-1000' />
                                         Contact Us Now

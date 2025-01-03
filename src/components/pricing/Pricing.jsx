@@ -41,7 +41,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "javascript:$zopim.livechat.window.show();"
+                href: "javascript:void(Tawk_API.toggle())"
             },
         ],
     },
@@ -75,7 +75,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "javascript:$zopim.livechat.window.show();"
+                href: "javascript:void(Tawk_API.toggle())"
             },
         ],
     },
@@ -108,7 +108,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "javascript:$zopim.livechat.window.show();"
+                href: "javascript:void(Tawk_API.toggle())"
             },
         ],
     },

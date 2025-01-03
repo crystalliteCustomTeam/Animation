@@ -214,7 +214,7 @@ const Banner = () => {
                                     <Image src={Chats} alt='Infinity Animation' />
                                     <div>
                                         <p className='text-[15px] leading-tight text-white poppins font-normal '>Chat Now to Avail 50% OFF</p>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-[#0DEB48] poppins text-[17px] font-semibold'>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='text-[#0DEB48] poppins text-[17px] font-semibold'>
                                             Live Chat
                                         </a>
                                     </div>

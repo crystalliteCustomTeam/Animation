@@ -41,7 +41,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "javascript:$zopim.livechat.window.show();"
+                href: "javascript:void(Tawk_API.toggle())"
             },
         ],
     },
@@ -74,7 +74,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "javascript:$zopim.livechat.window.show();"
+                href: "javascript:void(Tawk_API.toggle())"
             },
         ],
     },
@@ -109,7 +109,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "javascript:$zopim.livechat.window.show();"
+                href: "javascript:void(Tawk_API.toggle())"
             },
         ],
     },
@@ -146,7 +146,7 @@ const packages = [
                 text: 'Live Chat',
                 color: 'bg-black text-white border border-white',
                 image: chat,
-                href: "javascript:$zopim.livechat.window.show();"
+                href: "javascript:void(Tawk_API.toggle())"
             },
         ],
     },
@@ -216,7 +216,7 @@ const Pricing = ({ content }) => {
                                                 </div>
                                                 <div>
                                                     <p className="text-[15px] font-bold font-sans">Want To Discuss</p>
-                                                    <a href="javascript:$zopim.livechat.window.show();" className="font-sans text-[14px]">Live Chat Now</a>
+                                                    <a href="javascript:void(Tawk_API.toggle())" className="font-sans text-[14px]">Live Chat Now</a>
                                                 </div>
                                             </div>
                                             <div className="flex justify-between px-6 mt-5">

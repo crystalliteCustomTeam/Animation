@@ -22,7 +22,7 @@ const Brand = ({ content }) => {
                                 <p className='text-[16px] text-white font-sans leading-[23px]'>{desc}</p>
                                 <div className='flex items-center gap-4'>
                                     <div className="btn mt-6 w-auto">
-                                        <a href="javascript:$zopim.livechat.window.show();" className="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center">{btnTxt}</a>
+                                        <a href="javascript:void(Tawk_API.toggle())" className="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center">{btnTxt}</a>
                                     </div>
                                     <div className="btn mt-6 w-auto">
                                         <a className="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] max-width h-[44px] px-[10px] md:px-[20px] poppins flex items-center justify-center" href="tel:833-666-6689">{callTxt}</a>
@@ -34,7 +34,7 @@ const Brand = ({ content }) => {
                                 <h5 className='text-white font-bold font-sans leading-[31px] text-[25px] lg:w-11/12 pb-[5px]'>{subtitle}</h5>
                                 <p className='text-[17px] text-white font-sans leading-[22px]'>{desc}</p>
                                 <div className="btn mt-6">
-                                    <a href="javascript:$zopim.livechat.window.show();" className="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-full md:w-[410px] h-[44px] poppins flex items-center justify-center">Let's Begin Your Animated Journey Together!</a>
+                                    <a href="javascript:void(Tawk_API.toggle())" className="text-[13px] md:text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-full md:w-[410px] h-[44px] poppins flex items-center justify-center">Let's Begin Your Animated Journey Together!</a>
                                 </div>
                             </div>}
                         {isBranImage ?

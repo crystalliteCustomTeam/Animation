@@ -83,7 +83,7 @@ const ExplainerType = () => {
                                     <h3 className='text-black text-[18px] xl:text-[22px] border-b-[1px] border-[#000] font-bold poppins pt-[10px] mb-[10px] md:pt-[30px] lg:pt-[20px] leading-[23px] md:leading-[33px] '><span className='text-[#A70A0E]'>Whiteboard Animation </span> Video</h3>
                                     <p className='text-[14px] sm:text-[15px] poppins text-[#000] leading-[1.42857143] pr-[10px] explainerType-location  mt-[20px] mb-[30px]'>Whiteboard videos entail simulating black-line graphics on a white background while guiding viewers through the entire concept or idea.</p>
                                     <div className='flex justify-end w-full mt-3 mb-2 sm:mb-0'>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[15px] font-[500] poppins py-[6px] px-[15px] rounded-[8px] bg-[#A70A0E] text-[#fff] tracking-[.3px] leading-[20px] duration-700 transition-all '>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='flex items-center text-[15px] font-[500] poppins py-[6px] px-[15px] rounded-[8px] bg-[#A70A0E] text-[#fff] tracking-[.3px] leading-[20px] duration-700 transition-all '>
                                             Lets Talk <span className='ps-2'><HiOutlineArrowLongRight size={28} /></span>
                                         </a>
                                     </div>
@@ -97,7 +97,7 @@ const ExplainerType = () => {
                                     <h3 className='text-[#fff] text-[18px] xl:text-[22px] border-b-[1px] border-[#fff] font-bold poppins pt-[10px] md:pt-[30px] lg:pt-[20px] mb-[10px] leading-[23px] md:leading-[33px] '> <span className='text-[#FFCC00]'>Motion </span> Graphics</h3>
                                     <p className='text-[14px] sm:text-[15px] poppins text-[#fff] leading-[1.42857143] md:pr-[17px] explainerType-location mt-[20px] mb-[30px]'>Again, motion graphics animation videos are known for being simple and engaging. It's the perfect animation style for businesses looking to show off a wide variety of goods or services.</p>
                                     <div className='flex justify-end w-full mt-3 mb-2 sm:mb-0'>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[15px] font-[500] poppins py-[6px] px-[15px] rounded-[8px] bg-[#FFCC00] text-black tracking-[.3px] leading-[20px] duration-700 transition-all '>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='flex items-center text-[15px] font-[500] poppins py-[6px] px-[15px] rounded-[8px] bg-[#FFCC00] text-black tracking-[.3px] leading-[20px] duration-700 transition-all '>
                                             Lets Talk <span className='ps-2'><HiOutlineArrowLongRight size={28} /></span>
                                         </a>
                                     </div>
@@ -111,7 +111,7 @@ const ExplainerType = () => {
                                     <h3 className='text-[#fff] text-[18px] xl:text-[22px] border-b-[1px] border-[#fff] font-bold poppins pt-[10px] md:pt-[30px] lg:pt-[20px] mb-[10px] leading-[23px] md:leading-[33px] '><span className='text-[#FFCC00]'>2D Character</span> Animation Videos</h3>
                                     <p className='text-[14px] sm:text-[15px] poppins text-[#fff] leading-[1.42857143] md:pr-[17px] explainerType-location mt-[20px] mb-[30px]'>2D animation is one of the most widely used and common animation forms today. Because of its versatility, 2D animation allows for a lot of artistic freedom when it comes to adding the next stage of customization.</p>
                                     <div className='flex justify-end w-full mt-3 mb-2 sm:mb-0'>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[15px] font-[500] poppins py-[6px] px-[15px] rounded-[8px] bg-[#FFCC00] text-[#000] tracking-[.3px] leading-[20px] duration-700 transition-all '>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='flex items-center text-[15px] font-[500] poppins py-[6px] px-[15px] rounded-[8px] bg-[#FFCC00] text-[#000] tracking-[.3px] leading-[20px] duration-700 transition-all '>
                                             Lets Talk <span className='ps-2'><HiOutlineArrowLongRight size={28} /></span>
                                         </a>
                                     </div>
@@ -125,7 +125,7 @@ const ExplainerType = () => {
                                     <h3 className='text-black text-[18px] xl:text-[22px] border-b-[1px] border-[#000] font-bold poppins pt-[10px] mb-[10px] md:pt-[30px] lg:pt-[20px] leading-[23px] md:leading-[33px] '><span className='text-[#A70A0E]'>3D Animation</span> Video</h3>
                                     <p className='text-[14px] sm:text-[15px] poppins text-[#000] leading-[1.42857143] pr-[10px] explainerType-location mt-[20px] mb-[30px]'>Because of its high-end and high-quality finish, 3D animation has carved out a niche for itself. With a narrative focus on the action, the distinctive aesthetics of 3D animation make it easier for viewers to interact with what is being seen in the video.</p>
                                     <div className='flex justify-end w-full mt-3 mb-2 sm:mb-0'>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[15px] font-[500] poppins py-[6px] px-[15px] rounded-[8px] bg-[#A70A0E] text-[#fff] tracking-[.3px] leading-[20px] duration-700 transition-all '>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='flex items-center text-[15px] font-[500] poppins py-[6px] px-[15px] rounded-[8px] bg-[#A70A0E] text-[#fff] tracking-[.3px] leading-[20px] duration-700 transition-all '>
                                             Lets Talk <span className='ps-2'><HiOutlineArrowLongRight size={28} /></span>
                                         </a>
                                     </div>
@@ -139,7 +139,7 @@ const ExplainerType = () => {
                                     <h3 className='text-[#fff] text-[18px] xl:text-[22px] border-b-[1px] border-[#fff] font-bold poppins pt-[10px] md:pt-[30px] lg:pt-[20px] mb-[10px] leading-[23px] md:leading-[33px] '><span className='text-[#FFCC00]'>Screencast</span> Videos</h3>
                                     <p className='text-[14px] sm:text-[15px] poppins text-[#fff] leading-[1.42857143] md:pr-[17px] explainerType-location mt-[20px] mb-[30px]'>It is a popular tool for startups in the technology world. It's a fantastic way to explain a procedure or film a demo video.</p>
                                     <div className='flex justify-end w-full mt-3 mb-2 sm:mb-0'>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[15px] font-[500] poppins py-[6px] px-[15px] rounded-[8px] bg-[#FFCC00] text-black tracking-[.3px] leading-[20px] duration-700 transition-all '>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='flex items-center text-[15px] font-[500] poppins py-[6px] px-[15px] rounded-[8px] bg-[#FFCC00] text-black tracking-[.3px] leading-[20px] duration-700 transition-all '>
                                             Lets Talk <span className='ps-2'><HiOutlineArrowLongRight size={28} /></span>
                                         </a>
                                     </div>
@@ -153,7 +153,7 @@ const ExplainerType = () => {
                                     <h3 className='text-[#fff] text-[18px] xl:text-[22px] border-b-[1px] border-[#fff] font-bold poppins pt-[10px] md:pt-[30px] lg:pt-[20px] mb-[10px] leading-[23px] md:leading-[33px] '><span className='text-[#FFCC00]'>Typography</span> Videos</h3>
                                     <p className='text-[14px] sm:text-[15px] poppins text-[#fff] leading-[1.42857143] md:pr-[17px] explainerType-location mt-[20px] mb-[30px]'>Typography animation can render a video by effectively underlining and memorably reinforcing the message with the use of clever fonts and animation.</p>
                                     <div className='flex justify-end w-full mt-3 mb-2 sm:mb-0'>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[15px] font-[500] poppins py-[6px] px-[15px] rounded-[8px] bg-[#FFCC00] text-[#000] tracking-[.3px] leading-[20px] duration-700 transition-all '>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='flex items-center text-[15px] font-[500] poppins py-[6px] px-[15px] rounded-[8px] bg-[#FFCC00] text-[#000] tracking-[.3px] leading-[20px] duration-700 transition-all '>
                                             Lets Talk <span className='ps-2'><HiOutlineArrowLongRight size={28} /></span>
                                         </a>
                                     </div>

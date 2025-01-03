@@ -82,7 +82,7 @@ const HeaderLP = () => {
                                     <li>
                                         <div className='flex items-center'>
                                             <Image src={Chat} alt='UK' className='w-auto object-contain grayscale-[1] brightness-[100]' />
-                                            <a href="javascript:$zopim.livechat.window.show();" className='text-[13px] text-white py-[10px] px-[8px] font-[700] font-sans'>
+                                            <a href="javascript:void(Tawk_API.toggle())" className='text-[13px] text-white py-[10px] px-[8px] font-[700] font-sans'>
                                                 Live Chat
                                             </a>
                                         </div>

@@ -251,7 +251,7 @@ const Banner = () => {
                                         <span className='block montserrat text-[14px] font-[400] text-white leading-[14px]'>
                                             Chat Now to Avail 50% OFF
                                         </span>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-white text-[16px] montserrat font-[700]'>Live Chat</a>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='text-white text-[16px] montserrat font-[700]'>Live Chat</a>
                                     </div>
                                 </div>
                             </div>

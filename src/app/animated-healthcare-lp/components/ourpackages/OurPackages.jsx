@@ -64,7 +64,7 @@ const OurPackages = () => {
                                         </li>
                                     </ul>
                                     <div className="flex items-center justify-between gap-6 mt-10">
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-white bg-prime h-[40px] xl:h-[50px] w-full rounded-md text-[16px] xl:text-[18px] tracking-wider font-normal font-sans flex items-center justify-center px-2'>Subscribe</a>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='text-white bg-prime h-[40px] xl:h-[50px] w-full rounded-md text-[16px] xl:text-[18px] tracking-wider font-normal font-sans flex items-center justify-center px-2'>Subscribe</a>
                                         <a href="tel:833-666-6689" className='text-black bg-transparent border-2 border-[#000000] h-[40px] xl:h-[50px] w-full rounded-md text-[16px] xl:text-[18px] tracking-wider font-normal font-sans flex items-center justify-center px-2'>Book A Call</a>
                                     </div>
                                 </div>
@@ -122,7 +122,7 @@ const OurPackages = () => {
                                         </li>
                                     </ul>
                                     <div className="flex items-center justify-between gap-6 mt-10">
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-white bg-prime h-[40px] xl:h-[50px] w-full rounded-md text-[16px] xl:text-[18px] tracking-wider font-normal font-sans flex items-center justify-center px-2'>Subscribe</a>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='text-white bg-prime h-[40px] xl:h-[50px] w-full rounded-md text-[16px] xl:text-[18px] tracking-wider font-normal font-sans flex items-center justify-center px-2'>Subscribe</a>
                                         <a href="tel:833-666-6689" className='text-black bg-transparent border-2 border-[#000000] h-[40px] xl:h-[50px] w-full rounded-md text-[16px] xl:text-[18px] tracking-wider font-normal font-sans flex items-center justify-center px-2'>Book A Call</a>
                                     </div>
                                 </div>
@@ -180,7 +180,7 @@ const OurPackages = () => {
                                         </li>
                                     </ul>
                                     <div className="flex items-center justify-between gap-6 mt-10">
-                                        <a href="javascript:$zopim.livechat.window.show();" className='text-white bg-prime h-[40px] xl:h-[50px] w-full rounded-md text-[16px] xl:text-[18px] tracking-wider font-normal font-sans flex items-center justify-center px-2'>Subscribe</a>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='text-white bg-prime h-[40px] xl:h-[50px] w-full rounded-md text-[16px] xl:text-[18px] tracking-wider font-normal font-sans flex items-center justify-center px-2'>Subscribe</a>
                                         <a href="tel:833-666-6689" className='text-black bg-transparent border-2 border-[#000000] h-[40px] xl:h-[50px] w-full rounded-md text-[16px] xl:text-[18px] tracking-wider font-normal font-sans flex items-center justify-center px-2'>Book A Call</a>
                                     </div>
                                 </div>

@@ -72,7 +72,7 @@ const Header = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <Link href="javascript:$zopim.livechat.window.show();" className='flex items-center text-[15px] text-white font-[700] font-sans bg-[#000000] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                        <Link href="javascript:void(Tawk_API.toggle())" className='flex items-center text-[15px] text-white font-[700] font-sans bg-[#000000] ml-[10px] py-[10px] px-[15px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
                                             <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] mr-2' />
                                             Live Chat
                                         </Link>
