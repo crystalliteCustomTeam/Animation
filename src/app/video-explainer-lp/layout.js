@@ -1,5 +1,3 @@
-import ZendeskWidget from "@/components/zendesk/ZendeskWidget"
-
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
@@ -41,10 +39,5 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  return (
-    <>
-      <ZendeskWidget />
-      {children}
-    </>
-  )
+  return children
 }

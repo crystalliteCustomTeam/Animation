@@ -140,29 +140,29 @@ const Scripts = () => {
     return () => clearTimeout(timer)
   }, [])
 
-  useEffect(() => {
-    const handleClick = (event) => {
-      const target = event.target
-      if (target.href === "javascript:void(Tawk_API.toggle())") {
-        event.preventDefault() // Default action se roknay kay liye
-        // Wait for the LiveChat API to be available
-        if (window.LC_API) {
-          window.LC_API.open_chat_window()
-        } else {
-          console.error("LiveChat API is not ready yet.")
-        }
-        return false
-      }
-    }
+  // useEffect(() => {
+  //   const handleClick = (event) => {
+  //     const target = event.target
+  //     if (target.href === "javascript:void(Tawk_API.toggle())") {
+  //       event.preventDefault() // Default action se roknay kay liye
+  //       // Wait for the LiveChat API to be available
+  //       if (window.LC_API) {
+  //         window.LC_API.open_chat_window()
+  //       } else {
+  //         console.error("LiveChat API is not ready yet.")
+  //       }
+  //       return false
+  //     }
+  //   }
 
-    // Event listener add karen
-    document.addEventListener("click", handleClick)
+  //   // Event listener add karen
+  //   document.addEventListener("click", handleClick)
 
-    // Cleanup function
-    return () => {
-      document.removeEventListener("click", handleClick)
-    }
-  }, [])
+  //   // Cleanup function
+  //   return () => {
+  //     document.removeEventListener("click", handleClick)
+  //   }
+  // }, [])
 
   return null
 }

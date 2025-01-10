@@ -251,7 +251,7 @@ const Banner = () => {
                                     <Image src={chatIcon} alt='chat-icon' className='w-[25px] ml-[10px]' />
                                     <div className="text">
                                         <span className='block montserrat text-[14px] font-[400] text-[#ffcb05] leading-[14px]'>Chat Now to Avail 50% OFF</span>
-                                        <a href="javascript:$zopim.livechat.window.show();" className="chat text-white text-[16px] montserrat font-[700]">
+                                        <a href="javascript:void(Tawk_API.toggle())" className="chat text-white text-[16px] montserrat font-[700]">
                                             Live Chat
                                         </a>
                                     </div>

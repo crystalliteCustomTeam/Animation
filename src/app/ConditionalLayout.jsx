@@ -38,14 +38,12 @@ const ConditionalLayout = ({ children }) => {
     setPopup(!e)
   }
 
-  const shouldShowScripts = !(pathname === "/video-explainer-lp")
-
   return (
     <PopupProvider value={{ popup, togglePopup }}>
       {showMobileComponents && (
         <>
           <Popup />
-          {shouldShowScripts && <Scripts />}
+          <Scripts />
         </>
       )}
       <>
