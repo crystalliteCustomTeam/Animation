@@ -77,8 +77,8 @@ const Footer = () => {
             icon: envelope
         },
         {
-            text: "2211 PRICE DR KILLEEN, TX 76542",
-            link: "https://maps.app.goo.gl/T6kgqa3TAScTnfys8",
+            text: "One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007",
+            link: "https://maps.app.goo.gl/AwwYDXugaL6BLCJK6",
             icon: mapmarker,
             target: "_blank"
         },

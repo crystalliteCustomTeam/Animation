@@ -258,7 +258,7 @@ const Footer = () => {
                                             </a>
                                         </li>
                                         <li className='py-[10px]'>
-                                            <a href="https://maps.app.goo.gl/T6kgqa3TAScTnfys8" target='_blank' className='text-[15px] md:text-[20px] text-white montserrat flex gap-2'>
+                                            <a href="https://maps.app.goo.gl/AwwYDXugaL6BLCJK6" target='_blank' className='text-[15px] md:text-[20px] text-white montserrat flex gap-2'>
                                                 <HiMapPin className='bg-[#ffffff] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[25px] lg:w-[45px] h-[25px]' /> One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007
                                             </a>
                                         </li>

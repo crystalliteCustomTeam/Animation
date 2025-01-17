@@ -10,7 +10,7 @@ const NewPortfolio = ({ content }) => {
                 <div className="flex flex-col-reverse md:flex-row items-center justify-between">
                     <div>
                         <p className='text-[15px] font-normal text-center md:text-left font-sans'>
-                            2211 PRICE DR KILLEEN, TX 76542
+                            One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007
                         </p>
                     </div>
                     <div>

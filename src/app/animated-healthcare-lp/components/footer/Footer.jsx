@@ -36,9 +36,9 @@ const Contact = () => {
                                         </a>
                                     </li>
                                     <li className='py-[12px]'>
-                                        <a href="https://maps.app.goo.gl/T6kgqa3TAScTnfys8" target='_blank' className='text-[16px] leading-[24px] lg:leading-[26px] text-white poppins flex items-center gap-4'>
+                                        <a href="https://maps.app.goo.gl/AwwYDXugaL6BLCJK6" target='_blank' className='text-[16px] leading-[24px] lg:leading-[26px] text-white poppins flex items-center gap-4'>
                                             <Image src={map} alt='Infinity Animations' className='w-[18px] h-[25px]' />
-                                            <span className='w-full 5xl:w-8/12'>2211 PRICE DR KILLEEN, TX 76542</span>
+                                            <span className='w-full 5xl:w-8/12'>One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007</span>
                                         </a>
                                     </li>
                                     <li className='py-[12px]'>
