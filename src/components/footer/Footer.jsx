@@ -76,12 +76,7 @@ const Footer = () => {
             link: "mailto:queries@infinityanimations.com",
             icon: envelope
         },
-        {
-            text: "One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007",
-            link: "https://maps.app.goo.gl/AwwYDXugaL6BLCJK6",
-            icon: mapmarker,
-            target: "_blank"
-        },
+       
         {
             text: "1024 Iron Point Rd, Folsom, CA 95630",
             link: "https://maps.app.goo.gl/QYDv6abiPbW5rRoK6",
