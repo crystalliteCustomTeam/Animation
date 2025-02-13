@@ -1,5 +1,5 @@
 //===== Import Fonts =====
-import { primary } from "./configs/fonts";
+import { primary ,FontMono} from "./configs/fonts";
 //===== Import Components =====
 import ConditionalLayout from "./ConditionalLayout";
 //===== Import Css =====
@@ -51,7 +51,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${primary.variable}`}>
+      <body className={`${primary.variable} ${FontMono.variable}`}>
         <ConditionalLayout>
           <main>{children}</main>
         </ConditionalLayout>

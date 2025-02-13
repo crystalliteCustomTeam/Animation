@@ -39,13 +39,13 @@ const ConditionalLayout = ({ children }) => {
   }
 
   return (
-    <PopupProvider value={{ popup, togglePopup }}>
-      {showMobileComponents && (
-        <>
-          <Popup />
-          <Scripts />
-        </>
-      )}
+    // <PopupProvider value={{ popup, togglePopup }}>
+      // {showMobileComponents && (
+      //   <>
+      //     <Popup />
+      //     <Scripts />
+      //   </>
+      // )}
       <>
         {pathname !== "/video-explainer-lp" &&
           pathname !== "/video-explainer-lp2" &&
@@ -64,6 +64,7 @@ const ConditionalLayout = ({ children }) => {
           pathname !== "/animating-studio-lp-2" &&
           pathname !== "/video-explainer-lp4" &&
           pathname !== "/animated-healthcare-lp" &&
+          pathname !== "/lp/animated-explainer-video-agency" &&
           pathname !== "/infinity-studio" && <Header />}
         {children}
         {pathname !== "/video-explainer-lp" &&
@@ -85,9 +86,10 @@ const ConditionalLayout = ({ children }) => {
           pathname !== "/animating-studio-lp-2" &&
           pathname !== "/video-explainer-lp4" &&
           pathname !== "/animated-healthcare-lp" &&
+          pathname !== "/lp/animated-explainer-video-agency" &&
           pathname !== "/infinity-studio" && <Footer />}
       </>
-    </PopupProvider>
+    // </PopupProvider>
   )
 }
 
