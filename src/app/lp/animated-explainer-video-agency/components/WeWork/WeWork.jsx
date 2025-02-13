@@ -52,7 +52,7 @@ const WeWork = () => {
                 How We Work
               </span>
               <h2 className="xl:text-[48px] lg:text-[40px] md:text-[38px] text-[24px] leading-tight font-semibold lg:mb-[25px] mb-[15px]">
-                Hear from our clients why Explainly is the right video partner
+                Hear from our clients why Infinity Animations is the right video partner
                 for you.
               </h2>
             </div>

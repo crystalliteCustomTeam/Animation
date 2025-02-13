@@ -53,11 +53,11 @@ const Faqs = () => {
               {[
                 [
                   "What’s your process?",
-                  "Our process at Explainly is a meticulously designed journey that starts with understanding your unique needs and vision. We begin with a comprehensive discovery phase, followed by ideation and scriptwriting, where your story begins to take shape. Next, we move into the creation of custom visuals and animation, bringing your narrative to life. Throughout the process, we maintain open communication and collaboration, ensuring that the final product not only meets but exceeds your expectations.",
+                  "Our process at Infinity Animations is a meticulously designed journey that starts with understanding your unique needs and vision. We begin with a comprehensive discovery phase, followed by ideation and scriptwriting, where your story begins to take shape. Next, we move into the creation of custom visuals and animation, bringing your narrative to life. Throughout the process, we maintain open communication and collaboration, ensuring that the final product not only meets but exceeds your expectations.",
                 ],
                 [
                   "How much will my video cost?",
-                  "The cost of your video at Explainly is determined by various factors, including the length of the video, complexity of the visuals, and the specific requirements of your project. We believe in transparent pricing and will work with you to understand your budget and provide a detailed quote that aligns with your needs and expectations. Rest assured, our goal is to deliver exceptional value and quality, making your investment worthwhile.",
+                  "The cost of your video at Infinity Animations is determined by various factors, including the length of the video, complexity of the visuals, and the specific requirements of your project. We believe in transparent pricing and will work with you to understand your budget and provide a detailed quote that aligns with your needs and expectations. Rest assured, our goal is to deliver exceptional value and quality, making your investment worthwhile.",
                 ],
                 [
                   "How long will my video take?",
@@ -94,13 +94,22 @@ const Faqs = () => {
                     Schedule a call so we can confirm the details and provide
                     you with a custom quote.
                   </p>
-                  <a
-                    href="#"
-                    className="relative z-10 overflow-hidden group border border-[#ffaf00] text-[#1c1b18] xl:text-base text-xs leading-tight font-bold tracking-[0.1em] uppercase inline-flex items-center justify-center sm:px-[23px] px-[18px] h-[60px] text-center w-max mx-auto rounded-[60px] duration-700 transition-all bg-[#ffaf00] hover:duration-700 hover:transition-all"
+                  <div className="flex items-center gap-x-3 mt-5">
+                <a
+                    href="javascript:void(Tawk_API.toggle())"
+                    className="relative z-10 overflow-hidden group border border-[#ffaf00] text-[#1c1b18] xl:text-sm text-xs leading-tight font-bold tracking-[0.1em] uppercase inline-flex items-center justify-center sm:px-[23px] px-[18px] h-[60px] text-center w-full mx-auto rounded-[60px] duration-700 transition-all bg-[#ffaf00] hover:duration-700 hover:transition-all"
                   >
                     <span className="absolute inset-0 w-full h-full bg-white border border-white -z-10 rounded-[9999px] transition-all ease-in-out duration-300 group-hover:translate-y-0 translate-y-full"></span>
                     Get Started
                   </a>
+                <a
+                  href="tel:833-666-6689"
+                  className="relative z-10 overflow-hidden group border border-white text-white xl:text-sm text-xs leading-tight font-bold tracking-[0.1em] uppercase inline-flex items-center justify-center sm:px-[23px] px-[18px] h-[60px] text-center w-full mx-auto rounded-[60px] duration-700 transition-all bg-transparent hover:duration-700 hover:transition-all"
+                  >
+                    <span className="absolute inset-0 w-full h-full bg-[#ffaf00] border border-[#ffaf00] -z-10 rounded-[9999px] transition-all ease-in-out duration-300 group-hover:translate-y-0 translate-y-full"></span>
+                    Book A Call
+                  </a>
+              </div>
                 </div>
               </div>
             </div>

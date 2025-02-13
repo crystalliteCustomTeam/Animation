@@ -236,7 +236,7 @@ const Experience = () => {
                 Our Experience
               </span>
               <h2 className="lg:text-[48px] md:text-[38px] text-[24px] leading-tight font-semibold lg:mb-[25px] mb-[15px]">
-                Explainly works with all types of companies.
+                Infinity Animations works with all types of companies.
               </h2>
               <p className="text-[rgb(189,_189,_189)] md:text-[16px] text-[14px] font-normal leading-normal ">
                 From startups and non-profits to industry leaders like Uber,

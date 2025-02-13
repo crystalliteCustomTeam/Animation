@@ -23,6 +23,20 @@ const MakeVideos = () => {
                   <p className="text-[rgb(189,_189,_189)] md:text-base text-sm leading-normal font-normal mb-5">
                   We will always search for the best way to give our clients a great experience. We will continue to learn about every industry, in order to offer innovative, high quality products with premium value.
                   </p>
+                  <div className="flex items-center gap-x-3 mt-5">
+                <a
+                  href="javascript:void(Tawk_API.toggle())"
+                  className="border border-white text-white xl:text-base text-xs leading-tight font-bold tracking-[0.1em] uppercase inline-flex items-center justify-center sm:px-[23px] px-[15px] h-[60px] text-center w-full rounded-[60px] duration-700 transition-all bg-transparent hover:duration-700 hover:transition-all"
+                >
+                  Get Started
+                </a>
+                <a
+                  href="tel:833-666-6689"
+                  className="border border-[#ffaf00] text-[#1c1b18] xl:text-base text-xs leading-tight font-bold tracking-[0.1em] uppercase inline-flex items-center justify-center sm:px-[23px] px-[15px] h-[60px] text-center w-full rounded-[60px] duration-700 transition-all bg-[#ffaf00] hover:duration-700 hover:transition-all"
+                >
+                  Book a call
+                </a>
+              </div>
                 </div>
               </div>
             </div>

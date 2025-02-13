@@ -176,7 +176,7 @@ const Banner = () => {
   }
   return (
     <section>
-      <div className="font-mono relative z-10 xl:pt-[150px] sm:pt-[180px] pt-[150px] pb-[60px] xl:h-screen flex items-center justify-center">
+      <div className="font-mono relative z-10 sm:pt-[180px] pt-[150px] pb-[60px] xl:h-screen flex items-center justify-center">
         <video
           autoPlay
           muted
@@ -196,8 +196,22 @@ const Banner = () => {
               </h1>
               <p className="xl:text-lg md:text-base text-sm font-normal leading-normal max-w-[500px]">
                 Looking for a video agency to create an animated explainer video
-                for your company? Explainly has you covered.
+                for your company? Infinity Animationshas you covered.
               </p>
+              <div className="flex items-center gap-x-3 mt-5">
+                <a
+                  href="javascript:void(Tawk_API.toggle())"
+                  className="border border-white text-white xl:text-base text-xs leading-tight font-bold tracking-[0.1em] uppercase inline-flex items-center justify-center sm:px-[23px] px-[15px] h-[60px] text-center w-full rounded-[60px] duration-700 transition-all bg-transparent hover:duration-700 hover:transition-all"
+                >
+                  Get Started
+                </a>
+                <a
+                  href="tel:833-666-6689"
+                  className="border border-[#ffaf00] text-[#1c1b18] xl:text-base text-xs leading-tight font-bold tracking-[0.1em] uppercase inline-flex items-center justify-center sm:px-[23px] px-[15px] h-[60px] text-center w-full rounded-[60px] duration-700 transition-all bg-[#ffaf00] hover:duration-700 hover:transition-all"
+                >
+                  Book a call
+                </a>
+              </div>
             </div>
             <div className="xl:p-[20px_40px_40px_40px] p-[20px_25px_40px_25px] rounded-[25px] backdrop-blur-[10px] bg-[rgba(0,0,0,0.5)] text-white max-w-[500px] mx-auto">
               <h2 className="md:text-[40px] text-[30px] font-semibold leading-tight">
@@ -210,7 +224,7 @@ const Banner = () => {
                       type="text"
                       name="name"
                       placeholder="Full Name"
-                      className="text-[14px] bg-transparent md:text-[16px] font-normal leading-[25px] w-full text-white py-[10px] px-[8px] rounded-[5px] focus:outline-2 focus:outline-white"
+                      className="text-[14px] border-b border-white bg-transparent md:text-[16px] font-normal leading-[25px] w-full text-white py-[10px] px-[8px] focus:outline-2 focus:outline-white"
                       onChange={handleDataChange}
                       required
                     />
@@ -225,7 +239,7 @@ const Banner = () => {
                       type="email"
                       name="email"
                       placeholder="Company Email Address"
-                      className="text-[14px] bg-transparent md:text-[16px] font-normal leading-[25px] w-full text-white py-[10px] px-[8px] rounded-[5px] focus:outline-2 focus:outline-white"
+                      className="text-[14px] border-b border-white bg-transparent md:text-[16px] font-normal leading-[25px] w-full text-white py-[10px] px-[8px] focus:outline-2 focus:outline-white"
                       onChange={handleDataChange}
                       required
                     />
@@ -242,7 +256,7 @@ const Banner = () => {
                       maxLength="13"
                       pattern="[0-9]*"
                       placeholder="Mobile Number"
-                      className="text-[14px] bg-transparent md:text-[16px] font-normal leading-[25px] w-full text-white py-[10px] px-[8px] rounded-[5px] focus:outline-2 focus:outline-white"
+                      className="text-[14px] border-b border-white bg-transparent md:text-[16px] font-normal leading-[25px] w-full text-white py-[10px] px-[8px] focus:outline-2 focus:outline-white"
                       onChange={handleDataChange}
                       required
                     />
@@ -267,12 +281,6 @@ const Banner = () => {
                     >
                       {formStatus}
                     </button>
-                    <a
-                      href="tel:833-666-6689"
-                      className="border border-[#ffaf00] text-[#ffaf00] xl:text-base text-xs leading-tight font-bold tracking-[0.1em] uppercase inline-flex items-center justify-center sm:px-[23px] px-[15px] h-[60px] text-center w-full rounded-[60px] duration-700 transition-all bg-transparent hover:duration-700 hover:transition-all"
-                    >
-                      Book a call
-                    </a>
                   </div>
                 </div>
               </form>

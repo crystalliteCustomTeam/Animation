@@ -97,12 +97,18 @@ const Portfolio = ({ content }) => {
                 )}
               </Fancybox>
             </div>
-            <div className="mt-10 w-max mx-auto">
+            <div className="mt-10 flex items-center justify-center gap-x-3">
               <a
                 href="javascript:void(Tawk_API.toggle())"
-                className="flex items-center text-[14px] xl:text-[16px] text-white font-semibold poppins ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#ffaf00] hover:duration-700 hover:transition-all"
+                className="flex text-center items-center text-[14px] xl:text-[16px] text-white font-semibold font-mono border border-[#ffaf00] ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#ffaf00] hover:duration-700 hover:transition-all"
               >
                 Make an Animation
+              </a>
+              <a
+                href="tel:8336666689"
+                className="flex text-center items-center text-[14px] xl:text-[16px] text-white font-semibold font-mono border border-white ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-transparent hover:duration-700 hover:transition-all"
+              >
+                Book A Call
               </a>
             </div>
           </div>
