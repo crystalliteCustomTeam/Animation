@@ -11,12 +11,12 @@ import styles from "./SliderDots.module.css"
 
 export default function AutoPlaySlider({
   wrapperClasses = "",
-  emblaWrapper = "flex [margin-left:calc(1rem_*_-1)]",
+  emblaWrapper = "flex",
   options,
   align = "start",
   children,
   arrows = true,
-  dots = true,
+  dots = false,
   arrowsCss = "",
   dotsCss = "",
 }) {

@@ -1,6 +1,7 @@
 import Image from "next/image"
 import SideImage from "media/animated-explainer-video-agency/explainy.png"
 import Arrow from "media/animated-explainer-video-agency/icons/right_arrow.svg"
+import LottieAnimation from "../LottieAnimation"
 const OurMission = () => {
   return (
     <section>
@@ -14,6 +15,7 @@ const OurMission = () => {
                 draggable={false}
                 className="mx-auto"
               />
+              <LottieAnimation animationPath="/animated-explainer-video-agency/SQCj2aiIZi.json" />
             </div>
             <div className="xl:col-span-6 col-span-12">
               <span className="block lg:text-lg md:text-[16px] text-[14px] pb-[15px] text-[#01e3b2] sm:tracking-[13px] tracking-[5px] font-semibold leading-tight uppercase ">
