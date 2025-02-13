@@ -21,42 +21,42 @@ const Footer = () => {
           <div className="container">
             <div className="max-w-[1240px] mx-auto grid grid-cols-12 gap-x-5 sm:gap-y-0 gap-y-10">
               <div className="col-span-12 grid grid-cols-1">
-                <div className="text-white flex items-center justify-center gap-x-1 border-t border-[#888888] pt-[30px]">
+                <div className="text-white flex items-center justify-center gap-x-2 border-t border-[#888888] pt-[30px]">
                   <Link
                     href="https://www.facebook.com/infinityanimationsofficial"
                     className="facebook bg-[#676767] rounded-[50px] text-white h-[45px]  w-[45px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#ffaf00] flex items-center justify-center"
                   >
-                    <FaFacebookF className="text-[23px] sm:text-[32px]" />
+                    <FaFacebookF className="text-[23px]" />
                   </Link>
                   <Link
                     href="https://twitter.com/infinityan_/"
                     className="twitter bg-[#676767] rounded-[50px] text-white h-[45px]  w-[45px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#ffaf00] flex items-center justify-center"
                   >
-                    <FaTwitter className="text-[23px] sm:text-[32px]" />
+                    <FaTwitter className="text-[23px]" />
                   </Link>
                   <Link
                     href="https://www.linkedin.com/company/infinity-animations/"
                     className="google bg-[#676767] rounded-[50px] text-white h-[45px]  w-[45px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#ffaf00] flex items-center justify-center "
                   >
-                    <FaLinkedinIn className="text-[23px] sm:text-[32px]" />
+                    <FaLinkedinIn className="text-[23px]" />
                   </Link>
                   <Link
                     href="https://www.youtube.com/@Infinity-Animations"
                     className="youtube bg-[#676767] rounded-[50px] text-white h-[45px]  w-[45px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#ffaf00] flex items-center justify-center"
                   >
-                    <FaYoutube className="text-[23px] sm:text-[32px]" />
+                    <FaYoutube className="text-[23px]" />
                   </Link>
                   <Link
                     href="https://www.vimeo.com/infinityanimations"
                     className="printerest bg-[#676767] rounded-[50px] text-white h-[45px]  w-[45px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#ffaf00] flex items-center justify-center"
                   >
-                    <FaVimeoV className="text-[23px] sm:text-[32px]" />
+                    <FaVimeoV className="text-[23px]" />
                   </Link>
                   <Link
                     href="https://www.instagram.com/infinityanimationsofficials"
                     className="instagram bg-[#676767] rounded-[50px] text-white h-[45px]  w-[45px] text-center duration-700 ease-in-out hover:duration-700 hover:bg-[#ffaf00] flex items-center justify-center"
                   >
-                    <FaInstagram className="text-[23px] sm:text-[32px]" />
+                    <FaInstagram className="text-[23px]" />
                   </Link>
                 </div>
                 <div className="flex flex-wrap items-center justify-center sm:justify-between gap-2 sm:gap-5 lg:w-9/12 mx-auto pt-5">

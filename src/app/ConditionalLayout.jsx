@@ -39,13 +39,13 @@ const ConditionalLayout = ({ children }) => {
   }
 
   return (
-    // <PopupProvider value={{ popup, togglePopup }}>
-      // {showMobileComponents && (
-      //   <>
-      //     <Popup />
-      //     <Scripts />
-      //   </>
-      // )}
+    <PopupProvider value={{ popup, togglePopup }}>
+      {showMobileComponents && (
+        <>
+          <Popup />
+          <Scripts />
+        </>
+      )}
       <>
         {pathname !== "/video-explainer-lp" &&
           pathname !== "/video-explainer-lp2" &&
@@ -89,7 +89,7 @@ const ConditionalLayout = ({ children }) => {
           pathname !== "/lp/animated-explainer-video-agency" &&
           pathname !== "/infinity-studio" && <Footer />}
       </>
-    // </PopupProvider>
+    </PopupProvider>
   )
 }
 
