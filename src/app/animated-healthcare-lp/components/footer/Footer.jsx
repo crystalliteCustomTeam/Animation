@@ -35,12 +35,7 @@ const Contact = () => {
                                             <span>1024 Iron Point Rd, Folsom, CA 95630</span>
                                         </a>
                                     </li>
-                                    <li className='py-[12px]'>
-                                        <a href="https://maps.app.goo.gl/T6kgqa3TAScTnfys8" target='_blank' className='text-[16px] leading-[24px] lg:leading-[26px] text-white poppins flex items-center gap-4'>
-                                            <Image src={map} alt='Infinity Animations' className='w-[18px] h-[25px]' />
-                                            <span className='w-full 5xl:w-8/12'>2211 PRICE DR KILLEEN, TX 76542</span>
-                                        </a>
-                                    </li>
+                                    
                                     <li className='py-[12px]'>
                                         <a href="tel:833-666-6689" className='text-[16px] leading-[24px] lg:leading-[26px] text-white poppins flex items-center gap-4'>
                                             <Image src={phone} alt='Infinity Animations' className='w-[20px] h-[25px]' />

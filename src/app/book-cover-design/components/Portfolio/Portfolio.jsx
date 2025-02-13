@@ -19,16 +19,7 @@ const PortfolioInner = () => {
     return (
         <section className='pb-[50px] lg:pb-[90px]  pt-[150px]'>
             <div className="container">
-                <div className="flex flex-col-reverse md:flex-row items-center justify-between">
-                    <div>
-                        <p className='text-[15px] font-normal text-center md:text-left font-sans'>
-                            2211 PRICE DR KILLEEN, TX 76542
-                        </p>
-                    </div>
-                    <div>
-                        <h2 className='text-[35px] lg:text-[50px] font-sans font-bold tracking-wider text-[#ff2d4b]'>PORTFOLIO</h2>
-                    </div>
-                </div>
+                
                 <div className="txt">
                     <h3 className='text-[25px] lg:text-[45px] font-sans font-bold tracking-wider capitalize text-white text-center mt-4 lg:mt-14'>
                         book Cover design

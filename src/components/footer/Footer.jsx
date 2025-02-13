@@ -76,12 +76,7 @@ const Footer = () => {
             link: "mailto:queries@infinityanimations.com",
             icon: envelope
         },
-        {
-            text: "2211 PRICE DR KILLEEN, TX 76542",
-            link: "https://maps.app.goo.gl/T6kgqa3TAScTnfys8",
-            icon: mapmarker,
-            target: "_blank"
-        },
+       
         {
             text: "1024 Iron Point Rd, Folsom, CA 95630",
             link: "https://maps.app.goo.gl/QYDv6abiPbW5rRoK6",
