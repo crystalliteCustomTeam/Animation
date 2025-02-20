@@ -184,7 +184,7 @@ const Banner = () => {
           loop
           className="absolute -z-10 w-full h-full object-cover object-center inset-0 bg-[#161513]"
         >
-          <source src="https://player.vimeo.com/progressive_redirect/playback/1055661036/rendition/1080p/file.mp4?loc=external&log_user=0&signature=63710a8a984918e8c908a7863d10d4b7c4810f14a146d19354917f057e55d09f" />
+          <source src="https://player.vimeo.com/progressive_redirect/playback/1025440805/rendition/1080p/file.mp4?loc=external&signature=81f489c58586ce519b6331e8b84a07d83c4257a29cf6c856a79e666faad9e958" />
           <p>Your Browser Did Not Support Video</p>
         </video>
         <span className="absolute bg-[#16151380] -z-10 w-full h-full inset-0"></span>
