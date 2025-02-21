@@ -3,15 +3,26 @@ import React, { useState, useEffect } from "react"
 // Import Components
 import Hero from "@/components/location-page/hero/Hero"
 import BannerContact from "@/components/location-page/contact-banner/bannercontact"
+import HeroBottom from "@/components/location-page/hero-bottom/herobottom"
+import Speedometer from "@/components/location-page/speedometer/speedometer"
+import Counter from "@/components/location-page/counter/counter"
+import Why from "@/components/location-page/why/why"
+import Process from "@/components/location-page/process/process"
 import Services from "@/components/location-page/services/services"
+import Pricing from "@/components/pricing/Pricing"
 import Description from "@/components/location-page/description/description"
+import Portfolio from "@/components/portfolio/Portfolio"
 import Want from "@/components/location-page/want/Want"
+import FullContent1 from "@/components/location-page/fullcontent1/fullcontent1"
 import Concept from "@/components/location-page/concept/Concept"
 import TestimonialNew from "@/components/location-page/testimonialNew/Testimonial"
 import Looking from "@/components/location-page/looking/Looking"
 import Contact from "@/components/location-page/contact/Contact"
 //==== Hero Images
-import BannerImg from "media/location-page/chicago.png"
+import BannerImg from "media/location-page/newyork.png"
+import topLeft from "media/location-page/top-left.png"
+import topRight from "media/location-page/top-right.png"
+import bottomRight from "media/location-page/bottom-right.png"
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png"
 //================
@@ -60,14 +71,6 @@ import Thumnail27 from "media/thumbnails/hybrid/3.png"
 import Thumnail28 from "media/thumbnails/hybrid/4.png"
 import Thumnail29 from "media/thumbnails/hybrid/5.png"
 import Thumnail30 from "media/thumbnails/hybrid/6.png"
-import HeroBottom from "@/components/location-page/hero-bottom/herobottom"
-import Speedometer from "@/components/location-page/speedometer/speedometer"
-import Counter from "@/components/location-page/counter/counter"
-import Why from "@/components/location-page/why/why"
-import Process from "@/components/location-page/process/process"
-import Pricing from "@/components/pricing/Pricing"
-import FullContent1 from "@/components/location-page/fullcontent1/fullcontent1"
-import Portfolio from "@/components/portfolio/Portfolio"
 
 const LocationPage = () => {
   const [showDesktopComponents, setShowDesktopComponents] = useState(true)
@@ -119,23 +122,16 @@ const LocationPage = () => {
         <span className="text-primary-100">
           Animation <br /> Studio{" "}
         </span>{" "}
-        in Chicago{" "}
+        in Maryland{" "}
       </>
     ),
-    para: (
-      <>
-        Finding the perfect animation studios in Chicago to bring your vision to
-        life is no small feat. The industry is bustling with options, but few
-        truly understand your unique needs. Our studio stands out for its blend
-        of cutting-edge technology and storytelling expertise. Whether you're
-        searching for 2D animation in Chicago to create engaging characters or
-        3D animation in Chicago to deliver cinematic-quality visuals, we craft
-        experiences that captivate and inspire. From idea to final render, we're
-        your partner in creating content that resonates.
-      </>
-    ),
+    para: "Welcome to our Animation Studio in Maryland, where creativity meets innovation. We specialize in delivering top-tier animation services designed to meet your unique needs. Whether you're looking for 2D animation, 3D animation, or captivating explainer videos, our team of experts ensures your brand's story is told with clarity and impact. From animation studios in Maryland to creative animation agencies, we are here to bring your vision to life.",
     btnBg: "bg-prime",
+    banImg: true,
     BannerImg: BannerImg,
+    topLeft: topLeft,
+    topRight: topRight,
+    bottomRight: bottomRight,
   }
 
   //=====Services Fold=====//
@@ -148,14 +144,14 @@ const LocationPage = () => {
   const Desc1 = {
     title: (
       <>
-        Chicago Animation Studio <br />{" "}
+        Maryland Animation Studio <br />{" "}
         <span className="text-[#FF2D4A]">
           {" "}
           With Expert Animation and Visual Effects
         </span>
       </>
     ),
-    para: "Every Chicago animation project we undertake is guided by three core principles: creativity, precision, and collaboration. Creativity fuels our designs, precision ensures every frame is perfect, and collaboration guarantees your vision is at the heart of every project. We don't just create animations; we create experiences that stick with your audience long after the screen fades to black. When you choose us, you’re not just hiring an animation company in Chicago; you’re gaining a partner invested in your success.",
+    para: "Your brand deserves visuals that stand out. Our award-winning team of animators and designers delivers creative excellence with bespoke animations tailored to your vision. Using cutting-edge tools, we ensure seamless production for impactful results. With a customer-centric approach, your satisfaction is always our top priority.",
     bannerRight:
       "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
     thumbnail: body1,
@@ -165,10 +161,25 @@ const LocationPage = () => {
     title: (
       <>
         The Power of Animation in <br />{" "}
-        <span className="text-[#FF2D4A]"> Chicago's Competitive Market</span>
+        <span className="text-[#FF2D4A]"> Maryland's Competitive Market</span>
       </>
     ),
-    para: "Behind every successful project is a team of dedicated professionals. Our artists, animators, and storytellers bring years of experience and a passion for innovation. Together, we’ve completed countless projects for clients across industries, earning accolades and trust as one of the leading animation studios in Chicago.",
+    para: (
+      <>
+        In Maryland's dynamic business environment, capturing your audience's
+        attention is crucial. Animated product explainer videos are an effective
+        tool to achieve this. They simplify complex ideas, highlight your
+        product's value, and keep viewers engaged, delivering your message with
+        clarity and impact. This approach creates a memorable experience that
+        resonates with your audience and drives action.
+        <br />
+        <br />
+        By partnering with Infinity Animation, you can create a tailored,
+        high-quality explainer video that not only stands out but also convinces
+        users why your product is the right choice. Ready to make an
+        unforgettable impact?
+      </>
+    ),
     bannerRight:
       "https://player.vimeo.com/progressive_redirect/playback/950015817/rendition/720p/file.mp4?loc=external&log_user=0&signature=c60df41646f601d81fa4c987188c8e103f416d393f8ec1f9270e7114e4f0b3ed",
     thumbnail: body2,
@@ -179,11 +190,11 @@ const LocationPage = () => {
       <>
         Boom Your Brand With Leading{" "}
         <span className="text-primary-100">
-          Video Production Company Chicago
+          Video Production Company Maryland
         </span>
       </>
     ),
-    para: "We understand the importance of reducing our environmental impact. That’s why we incorporate sustainable practices in our operations. From using energy-efficient equipment to minimizing waste in production, we strive to be a responsible member of the Chicago animation community. By choosing us, you’re not only investing in exceptional animation but also supporting a greener future.",
+    para: "Animation is the key to making your social media content stand out in a crowded digital space. Whether it's a short-form animated ad or a dynamic motion graphic for Instagram or Facebook, we specialize in creating animations optimized for social platforms that drive engagement and increase your reach. Get noticed, get shared, and enhance your brand online with New York based animation studios.",
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
     thumbnail: body3,
@@ -192,11 +203,11 @@ const LocationPage = () => {
   const Desc4 = {
     title: (
       <>
-        Chicago’s Premier Animation Studio
+        Maryland’s Premier Animation Studio{" "}
         <span className="text-primary-100">With Custom Animation Services</span>
       </>
     ),
-    para: "Our Chicago animation studio excels at transforming your creative concepts into powerful visuals that captivate and inspire. We begin by immersing ourselves in your ideas, collaborating closely to develop a compelling narrative that aligns seamlessly with your business goals. Utilizing cutting-edge techniques and a touch of Chicago's artistic spirit, we transform these ideas into animations that resonate with your target audience. Whether it's a corporate video for a Loop headquarters, educational content for a local institution, or a promotional ad targeting Chicago consumers, our animations bridge the gap between creativity and communication, ensuring your message reaches the right audience effectively within the city and beyond.",
+    para: "Animation is one of the most effective ways to communicate complex ideas simply and engagingly. It allows you to capture attention, explain your message clearly, and leave a lasting impression—all in a matter of seconds. if it’s a 30-second explainer video or a detailed 3D animation, visuals speak louder than words. As businesses look for innovative ways to connect with their audience, animation has become a powerful tool for driving engagement, conversions, and brand recognition.",
     bannerRight:
       "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
     thumbnail: body4,
@@ -204,13 +215,13 @@ const LocationPage = () => {
   const Desc5 = {
     title: (
       <>
-        Chicago Animation Studio
+        Maryland Animation Studio{" "}
         <span className="text-primary-100">
           With Professional Animation Production
         </span>
       </>
     ),
-    para: "Our Chicago animation studio transforms your creative concepts into compelling visual experiences. We collaborate closely with you to develop a story that aligns with your specific goals. Using the latest techniques and a creative approach, we craft animations that captivate your audience. Whether it's a corporate video, educational content, or a promotional campaign, our animations bridge the gap between creativity and communication, delivering your message effectively.",
+    para: "No matter the industry, Infinity Animation brings a unique, creative approach to meet your specific needs. Our team of experts understands the nuances of each market and tailors animations that resonate with your target audience. From simplifying complex ideas to telling compelling stories, we ensure your animation perfectly complements your brand and objectives.",
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
     thumbnail: body3,
@@ -222,7 +233,7 @@ const LocationPage = () => {
         <span className="text-primary-100">and why use them?</span>
       </>
     ),
-    para: "Animation videos are captivating visual creations made by sequencing a series of illustrated, designed, or digitally modeled images to produce the illusion of movement. These videos range from straightforward 2D designs to intricate 3D animations, often enhanced with sound, music, and narration to craft an engaging and compelling narrative. Widely utilized in entertainment, education, marketing, and communication, animation videos excel at transforming abstract ideas, concepts, or processes into visually striking and easily understandable formats. Their adaptability makes them ideal for storytelling, explaining complex topics, and fostering meaningful connections with audiences",
+    para: "Animation videos are captivating visual creations made by sequencing a series of illustrated, designed, or digitally modeled images to produce the illusion of movement. These videos range from straightforward 2D designs to intricate 3D animations, often enhanced with sound, music, and narration to craft an engaging and compelling narrative. Widely utilized in entertainment, education, marketing, and communication, animation videos excel at transforming abstract ideas, concepts, or processes into visually striking and easily understandable formats. Their adaptability makes them ideal for storytelling, explaining complex topics, and fostering meaningful connections with audiences.",
     para2:
       "Animation videos offer numerous benefits. They stand out in a crowded media environment by grabbing attention more effectively than static visuals or text, making them a powerful tool for message delivery. The medium unlocks boundless creative potential, enabling creators to visualize ideas and concepts that may be challenging or impractical to capture with live-action footage. Moreover, animation simplifies complex subjects, breaking them into manageable parts, making it especially valuable for education and training purposes. These videos are highly shareable, making them perfect for boosting brand visibility and engagement through social media campaigns. With their unique ability to evoke emotion while conveying information, animation videos are a versatile and impactful medium for storytelling and communication.",
   }
@@ -239,11 +250,11 @@ const LocationPage = () => {
   const why2 = {
     title:
       "Let’s Create Out-of-This-World Animations with <span class='text-primary-100'>Infinity Animation</span>",
-    para: "<p>Innovation drives our success. We use state-of-the-art software and equipment to deliver top-notch animations that stand out in a competitive market. From 3D modeling to real-time rendering, our technological prowess ensures every project is a masterpiece. This commitment to quality is what makes us a trusted name among animation companies in Chicago.</p><p>This advanced technology translates directly into tangible benefits for our clients. By utilizing efficient workflows and powerful rendering capabilities, we can deliver high-quality animations within competitive timelines and budgets. Furthermore, our expertise with these tools allows us to offer a wider range of creative possibilities, from stylized 2D animation to complex 3D simulations. </p>",
+    para: "<p>At Infinity Animation, we understand that effective project management is crucial to delivering high-quality animation that aligns with your vision. Our local presence in Maryland enables us to offer agile project management, ensuring that your project progresses smoothly and efficiently.</p><p>Being situated in Maryland allows us to collaborate closely with our clients. This close proximity facilitates face-to-face meetings, fostering clear and open communication. Whether you need to discuss a new idea or implement a quick change, our team is readily available to accommodate your schedule. This accessibility ensures that your project stays on track and any adjustments are made promptly</p><p>Choosing Infinity Animation means partnering with a team dedicated not only to your project's success but also to the prosperity of our local Maryland community. We take pride in contributing to the local economy and fostering creative growth within the region.</p><p>By collaborating with us, you're investing in a partnership that values quality, efficiency, and community. Let's bring your vision to life, right here in Maryland</p>",
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
     thumbnail: why2NY,
-    isCTA: true,
+    isCTA: false,
   }
   //=====Portfolio Fold=====//
   const tabInfo = [
@@ -420,10 +431,9 @@ const LocationPage = () => {
     title: <> Our Exceptional Portfolio of Video Animation </>,
     para: (
       <>
-        Our portfolio showcases diverse projects that highlight our expertise in
-        Chicago animation. Each piece reflects a blend of storytelling and
-        technical excellence, proving why we’re a top choice among animation
-        studios in Chicago.
+        Explore our portfolio of animation projects across industries. From
+        corporate explainer videos to cinematic 3D designs, our work has been
+        recognized for its innovation and impact.
       </>
     ),
     tabContents: tabContents,
@@ -450,7 +460,7 @@ const LocationPage = () => {
 
   //=====Looking Fold=====//
   const paraArray = [
-    `Choosing the right animation studio is a crucial decision, and at Infinity Animations, we understand the importance of finding a partner you can trust. What sets us apart is a combination of factors that contribute to a uniquely positive and productive client experience. Our proven track record speaks for itself, with a portfolio of successful projects across diverse industries showcasing our expertise and creative capabilities. We prioritize a client-centric approach, meaning we listen carefully to your needs, collaborate closely throughout the process, and tailor our solutions to meet your specific objectives. This collaborative spirit ensures that your vision is not only understood but also brought to life with precision and artistry. Furthermore, our dedication to excellence permeates every aspect of our work, from initial concept development to final delivery. `,
+    `When it comes to animation, New York demands creativity, innovation, and impact. At Infinity Animations, we understand the unique needs of NYC-based businesses and are dedicated to providing solutions that resonate with your local audience. From the fast-paced digital landscape to the diverse industries driving the city, we create animations that make a lasting impression and elevate your brand in a competitive market`,
   ]
 
   const looking = {
@@ -472,8 +482,9 @@ const LocationPage = () => {
     title: (
       <>
         {" "}
-        <span className="text-primary-100">Our Seamless</span> Video Animation{" "}
-        <br /> & Production Process{" "}
+        <span className="text-primary-100">Our Seamless</span> Video Animation &{" "}
+        <br />
+        Production Process{" "}
       </>
     ),
     para: <></>,
@@ -490,9 +501,9 @@ const LocationPage = () => {
 
   //=====Want Fold=====//
   const want = {
-    title: "Ready to Elevate Your Brand with Animation?",
+    title: "Let’s Collaborate",
     wantDesc:
-      "Your search for the perfect animation studio in Houston ends here. We’re dedicated to turning your ideas into dynamic, impactful visuals that inspire and engage.",
+      "Your search for the perfect animation studio ends here, we’re here to make it all happen.",
     bgPrime: true,
   }
 
@@ -574,10 +585,11 @@ const LocationPage = () => {
         {isMobile
           ? showMobileComponents && (
               <>
+                {/* <BannerContact content={bannerContact} /> */}
                 <HeroBottom />
                 <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Chicago <br /> </span>  With Diverse Services'
-                  desc="Chicago is a city known for its creativity and energy, and we mirror that spirit in everything we do. Our team—comprising some of the best talents in the Chicago animation studio space—is dedicated to crafting animations that align with your goals. we offer:"
+                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Maryland   <br /> </span>  With Diverse Services'
+                  desc="Our animation studio offers a wide range of services to cater to diverse industries. From creating stunning character animations to producing informative explainer videos, we leverage cutting-edge tools and techniques to ensure the highest quality. Partner with us to transform your ideas into dynamic visual stories."
                 />
                 <Counter />
                 <Description content={Desc1} />
@@ -601,10 +613,11 @@ const LocationPage = () => {
             )
           : showDesktopComponents && (
               <>
+                {/* <BannerContact content={bannerContact} /> */}
                 <HeroBottom />
                 <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Chicago <br /> </span>  With Diverse Services'
-                  desc="Chicago is a city known for its creativity and energy, and we mirror that spirit in everything we do. Our team—comprising some of the best talents in the Chicago animation studio space—is dedicated to crafting animations that align with your goals. we offer:"
+                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Maryland   <br /> </span>  With Diverse Services'
+                  desc="Our animation studio offers a wide range of services to cater to diverse industries. From creating stunning character animations to producing informative explainer videos, we leverage cutting-edge tools and techniques to ensure the highest quality. Partner with us to transform your ideas into dynamic visual stories."
                 />
                 <Counter />
                 <Description content={Desc1} />

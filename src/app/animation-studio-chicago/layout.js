@@ -2,11 +2,11 @@
 export const metadata = {
     //===== Meta Tags =====
     title: "Top Animation Studio in Chicago - Infinity Animations",
-    description: "Infinity Animations is an animation studio in Chicago specializing in all types of animation services. We create explainer videos, demo videos, and all other types of videos. Contact us today.",
+    description: "Leading Chicago animation studio offering 2D, 3D animation, explainer videos, motion graphics & more. Elevate your brand with captivating visuals. Get a free quote.",
     //===== OG Tags =====
     openGraph: {
         title: 'Top Animation Studio in Chicago - Infinity Animations',
-        description: 'Infinity Animations is an animation studio in Chicago specializing in all types of animation services. We create explainer videos, demo videos, and all other types of videos. Contact us today.',
+        description: 'Leading Chicago animation studio offering 2D, 3D animation, explainer videos, motion graphics & more. Elevate your brand with captivating visuals. Get a free quote.',
         url: '/animation-studio-chicago',
         siteName: 'Infinity Animations',
         locale: 'en_US',

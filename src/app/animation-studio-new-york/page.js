@@ -598,7 +598,7 @@ const LocationPage = () => {
                 <Description content={Desc5} />
                 <TestimonialNew content={testimonialNew} />
                 <Looking content={looking} />
-                {/* <Contact /> */}
+                <Contact />
               </>
             )
           : showDesktopComponents && (
@@ -623,7 +623,7 @@ const LocationPage = () => {
                 <Description content={Desc5} />
                 <TestimonialNew content={testimonialNew} />
                 <Looking content={looking} />
-                {/* <Contact /> */}
+                <Contact />
               </>
             )}
       </div>

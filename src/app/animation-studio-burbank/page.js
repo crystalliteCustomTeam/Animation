@@ -3,15 +3,26 @@ import React, { useState, useEffect } from "react"
 // Import Components
 import Hero from "@/components/location-page/hero/Hero"
 import BannerContact from "@/components/location-page/contact-banner/bannercontact"
+import HeroBottom from "@/components/location-page/hero-bottom/herobottom"
+import Speedometer from "@/components/location-page/speedometer/speedometer"
+import Counter from "@/components/location-page/counter/counter"
+import Why from "@/components/location-page/why/why"
+import Process from "@/components/location-page/process/process"
 import Services from "@/components/location-page/services/services"
+import Pricing from "@/components/pricing/Pricing"
 import Description from "@/components/location-page/description/description"
+import Portfolio from "@/components/portfolio/Portfolio"
 import Want from "@/components/location-page/want/Want"
+import FullContent1 from "@/components/location-page/fullcontent1/fullcontent1"
 import Concept from "@/components/location-page/concept/Concept"
 import TestimonialNew from "@/components/location-page/testimonialNew/Testimonial"
 import Looking from "@/components/location-page/looking/Looking"
 import Contact from "@/components/location-page/contact/Contact"
 //==== Hero Images
-import BannerImg from "media/location-page/chicago.png"
+import BannerImg from "media/location-page/newyork.png"
+import topLeft from "media/location-page/top-left.png"
+import topRight from "media/location-page/top-right.png"
+import bottomRight from "media/location-page/bottom-right.png"
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png"
 //================
@@ -60,14 +71,6 @@ import Thumnail27 from "media/thumbnails/hybrid/3.png"
 import Thumnail28 from "media/thumbnails/hybrid/4.png"
 import Thumnail29 from "media/thumbnails/hybrid/5.png"
 import Thumnail30 from "media/thumbnails/hybrid/6.png"
-import HeroBottom from "@/components/location-page/hero-bottom/herobottom"
-import Speedometer from "@/components/location-page/speedometer/speedometer"
-import Counter from "@/components/location-page/counter/counter"
-import Why from "@/components/location-page/why/why"
-import Process from "@/components/location-page/process/process"
-import Pricing from "@/components/pricing/Pricing"
-import FullContent1 from "@/components/location-page/fullcontent1/fullcontent1"
-import Portfolio from "@/components/portfolio/Portfolio"
 
 const LocationPage = () => {
   const [showDesktopComponents, setShowDesktopComponents] = useState(true)
@@ -119,23 +122,16 @@ const LocationPage = () => {
         <span className="text-primary-100">
           Animation <br /> Studio{" "}
         </span>{" "}
-        in Chicago{" "}
+        in Burbank{" "}
       </>
     ),
-    para: (
-      <>
-        Finding the perfect animation studios in Chicago to bring your vision to
-        life is no small feat. The industry is bustling with options, but few
-        truly understand your unique needs. Our studio stands out for its blend
-        of cutting-edge technology and storytelling expertise. Whether you're
-        searching for 2D animation in Chicago to create engaging characters or
-        3D animation in Chicago to deliver cinematic-quality visuals, we craft
-        experiences that captivate and inspire. From idea to final render, we're
-        your partner in creating content that resonates.
-      </>
-    ),
+    para: "Burbank isn’t just a place—it’s a vibrant hub where creativity takes shape and stories come to life. At our animation studio in Burbank, we specialize in creating visually stunning and emotionally resonant animations for businesses, filmmakers, and creators. Whether you're envisioning a commercial masterpiece, an animated series, or a feature film, we have the talent, technology, and passion to bring your ideas to reality. Let’s transform your vision into a visual experience that captivates and connects.",
     btnBg: "bg-prime",
+    banImg: true,
     BannerImg: BannerImg,
+    topLeft: topLeft,
+    topRight: topRight,
+    bottomRight: bottomRight,
   }
 
   //=====Services Fold=====//
@@ -148,14 +144,14 @@ const LocationPage = () => {
   const Desc1 = {
     title: (
       <>
-        Chicago Animation Studio <br />{" "}
+        Burbank Animation Studio <br />{" "}
         <span className="text-[#FF2D4A]">
           {" "}
           With Expert Animation and Visual Effects
         </span>
       </>
     ),
-    para: "Every Chicago animation project we undertake is guided by three core principles: creativity, precision, and collaboration. Creativity fuels our designs, precision ensures every frame is perfect, and collaboration guarantees your vision is at the heart of every project. We don't just create animations; we create experiences that stick with your audience long after the screen fades to black. When you choose us, you’re not just hiring an animation company in Chicago; you’re gaining a partner invested in your success.",
+    para: "Great animation goes beyond aesthetics—it tells a story that lingers in the minds of your audience. Our Burbank animation studios excel at creating compelling narratives paired with world-class visuals. Whether it’s a heartwarming character journey, an educational piece, or an advertisement, our team ensures every detail is meticulously crafted to enhance your message.",
     bannerRight:
       "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
     thumbnail: body1,
@@ -165,10 +161,28 @@ const LocationPage = () => {
     title: (
       <>
         The Power of Animation in <br />{" "}
-        <span className="text-[#FF2D4A]"> Chicago's Competitive Market</span>
+        <span className="text-[#FF2D4A]"> Burbank's Competitive Market</span>
       </>
     ),
-    para: "Behind every successful project is a team of dedicated professionals. Our artists, animators, and storytellers bring years of experience and a passion for innovation. Together, we’ve completed countless projects for clients across industries, earning accolades and trust as one of the leading animation studios in Chicago.",
+    para: (
+      <>
+        In Burbank, where creativity thrives, animation is a must-have tool for
+        businesses across industries. From entertainment to education, animation
+        helps brands stand out by simplifying messages, boosting engagement, and
+        increasing conversions.
+        <br />
+        <br />
+        Did you know that businesses using animation experience higher customer
+        retention rates and brand recall? Whether you’re part of the
+        entertainment capital or a growing startup, animation elevates your
+        brand’s visibility and impact.
+        <br />
+        <br />
+        Our animation studio in Burbank understands the unique challenges and
+        opportunities of this dynamic market. Partner with us to create visuals
+        that leave an unforgettable impression.
+      </>
+    ),
     bannerRight:
       "https://player.vimeo.com/progressive_redirect/playback/950015817/rendition/720p/file.mp4?loc=external&log_user=0&signature=c60df41646f601d81fa4c987188c8e103f416d393f8ec1f9270e7114e4f0b3ed",
     thumbnail: body2,
@@ -179,11 +193,27 @@ const LocationPage = () => {
       <>
         Boom Your Brand With Leading{" "}
         <span className="text-primary-100">
-          Video Production Company Chicago
+          Video Production Company Burbank
         </span>
       </>
     ),
-    para: "We understand the importance of reducing our environmental impact. That’s why we incorporate sustainable practices in our operations. From using energy-efficient equipment to minimizing waste in production, we strive to be a responsible member of the Chicago animation community. By choosing us, you’re not only investing in exceptional animation but also supporting a greener future.",
+    para: (
+      <>
+        Social media is where brands make their mark—and animation is your
+        secret weapon. From dynamic motion graphics to short-form videos, we
+        create content optimized for platforms like Instagram, Facebook, and
+        YouTube.
+        <br />
+        <br />
+        Why animation? It captures attention faster, encourages shares, and
+        improves engagement rates. Businesses using animated videos for social
+        media report 27% higher interaction rates compared to static content.
+        <br />
+        <br />
+        Partner with our Burbank animation studio to amplify your social
+        presence and connect with your audience like never before.
+      </>
+    ),
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
     thumbnail: body3,
@@ -192,11 +222,29 @@ const LocationPage = () => {
   const Desc4 = {
     title: (
       <>
-        Chicago’s Premier Animation Studio
+        Burbank’s Premier Animation Studio{" "}
         <span className="text-primary-100">With Custom Animation Services</span>
       </>
     ),
-    para: "Our Chicago animation studio excels at transforming your creative concepts into powerful visuals that captivate and inspire. We begin by immersing ourselves in your ideas, collaborating closely to develop a compelling narrative that aligns seamlessly with your business goals. Utilizing cutting-edge techniques and a touch of Chicago's artistic spirit, we transform these ideas into animations that resonate with your target audience. Whether it's a corporate video for a Loop headquarters, educational content for a local institution, or a promotional ad targeting Chicago consumers, our animations bridge the gap between creativity and communication, ensuring your message reaches the right audience effectively within the city and beyond.",
+    para: (
+      <>
+        Animation isn’t just a trend—it’s a communication revolution. Whether
+        you’re explaining a complex product, pitching a groundbreaking idea, or
+        building a brand identity, animation is the most effective way to convey
+        your message.
+        <br />
+        <br />
+        Why? Because it simplifies, captivates, and sticks. Audiences retain
+        information better when it’s presented visually, and animation does this
+        with creativity and precision. As businesses evolve, the demand for
+        innovative and engaging content grows—and animation is at the forefront
+        of that change.
+        <br />
+        <br />
+        Let us help you harness the power of animation to stay ahead in a
+        competitive market.
+      </>
+    ),
     bannerRight:
       "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
     thumbnail: body4,
@@ -204,13 +252,13 @@ const LocationPage = () => {
   const Desc5 = {
     title: (
       <>
-        Chicago Animation Studio
+        Burbank Animation Studio{" "}
         <span className="text-primary-100">
           With Professional Animation Production
         </span>
       </>
     ),
-    para: "Our Chicago animation studio transforms your creative concepts into compelling visual experiences. We collaborate closely with you to develop a story that aligns with your specific goals. Using the latest techniques and a creative approach, we craft animations that captivate your audience. Whether it's a corporate video, educational content, or a promotional campaign, our animations bridge the gap between creativity and communication, delivering your message effectively.",
+    para: "Animation's power lies in its ability to connect with audiences on an emotional level. By combining compelling narratives with engaging visuals, animation evokes emotions, builds empathy, and fosters lasting connections. This approach translates to increased engagement, stronger brand loyalty, and highly shareable content. Let us help you create animations that not only inform but also inspire and connect with your audience on a personal level.",
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
     thumbnail: body3,
@@ -222,7 +270,7 @@ const LocationPage = () => {
         <span className="text-primary-100">and why use them?</span>
       </>
     ),
-    para: "Animation videos are captivating visual creations made by sequencing a series of illustrated, designed, or digitally modeled images to produce the illusion of movement. These videos range from straightforward 2D designs to intricate 3D animations, often enhanced with sound, music, and narration to craft an engaging and compelling narrative. Widely utilized in entertainment, education, marketing, and communication, animation videos excel at transforming abstract ideas, concepts, or processes into visually striking and easily understandable formats. Their adaptability makes them ideal for storytelling, explaining complex topics, and fostering meaningful connections with audiences",
+    para: "Animation videos are captivating visual creations made by sequencing a series of illustrated, designed, or digitally modeled images to produce the illusion of movement. These videos range from straightforward 2D designs to intricate 3D animations, often enhanced with sound, music, and narration to craft an engaging and compelling narrative. Widely utilized in entertainment, education, marketing, and communication, animation videos excel at transforming abstract ideas, concepts, or processes into visually striking and easily understandable formats. Their adaptability makes them ideal for storytelling, explaining complex topics, and fostering meaningful connections with audiences.",
     para2:
       "Animation videos offer numerous benefits. They stand out in a crowded media environment by grabbing attention more effectively than static visuals or text, making them a powerful tool for message delivery. The medium unlocks boundless creative potential, enabling creators to visualize ideas and concepts that may be challenging or impractical to capture with live-action footage. Moreover, animation simplifies complex subjects, breaking them into manageable parts, making it especially valuable for education and training purposes. These videos are highly shareable, making them perfect for boosting brand visibility and engagement through social media campaigns. With their unique ability to evoke emotion while conveying information, animation videos are a versatile and impactful medium for storytelling and communication.",
   }
@@ -239,11 +287,11 @@ const LocationPage = () => {
   const why2 = {
     title:
       "Let’s Create Out-of-This-World Animations with <span class='text-primary-100'>Infinity Animation</span>",
-    para: "<p>Innovation drives our success. We use state-of-the-art software and equipment to deliver top-notch animations that stand out in a competitive market. From 3D modeling to real-time rendering, our technological prowess ensures every project is a masterpiece. This commitment to quality is what makes us a trusted name among animation companies in Chicago.</p><p>This advanced technology translates directly into tangible benefits for our clients. By utilizing efficient workflows and powerful rendering capabilities, we can deliver high-quality animations within competitive timelines and budgets. Furthermore, our expertise with these tools allows us to offer a wider range of creative possibilities, from stylized 2D animation to complex 3D simulations. </p>",
+    para: "<p>Our studio leverages state-of-the-art technology to produce animations that are not just visually stunning but also strategically impactful. From advanced 3D modeling to seamless motion graphics, we’re at the forefront of innovation.</p><p>When you search for 'animation studios near Burbank,' you want a partner who understands the blend of creativity and technology. With us, you get animations that deliver more than aesthetics—they drive results.</p><p>Let us help your brand stand out in a saturated market with visuals that resonate.</p>",
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
     thumbnail: why2NY,
-    isCTA: true,
+    isCTA: false,
   }
   //=====Portfolio Fold=====//
   const tabInfo = [
@@ -420,10 +468,8 @@ const LocationPage = () => {
     title: <> Our Exceptional Portfolio of Video Animation </>,
     para: (
       <>
-        Our portfolio showcases diverse projects that highlight our expertise in
-        Chicago animation. Each piece reflects a blend of storytelling and
-        technical excellence, proving why we’re a top choice among animation
-        studios in Chicago.
+        Explore our work to see how we’ve helped clients turn concepts into
+        dynamic animated realities at our animation studio near Burbank.
       </>
     ),
     tabContents: tabContents,
@@ -450,7 +496,25 @@ const LocationPage = () => {
 
   //=====Looking Fold=====//
   const paraArray = [
-    `Choosing the right animation studio is a crucial decision, and at Infinity Animations, we understand the importance of finding a partner you can trust. What sets us apart is a combination of factors that contribute to a uniquely positive and productive client experience. Our proven track record speaks for itself, with a portfolio of successful projects across diverse industries showcasing our expertise and creative capabilities. We prioritize a client-centric approach, meaning we listen carefully to your needs, collaborate closely throughout the process, and tailor our solutions to meet your specific objectives. This collaborative spirit ensures that your vision is not only understood but also brought to life with precision and artistry. Furthermore, our dedication to excellence permeates every aspect of our work, from initial concept development to final delivery. `,
+    <>
+      Selecting the right animation partner is crucial to achieving your
+      creative and business goals. At our Burbank animation studio, we pride
+      ourselves on delivering not just high-quality visuals but also a seamless
+      and collaborative experience. What sets us apart?
+      <br />
+      <br />
+      Being located in the heart of Burbank, we’re deeply connected to the
+      area’s vibrant creative community and bring that energy into every
+      animation we produce. From cutting-edge technology to unmatched
+      creativity, we offer the tools and expertise to make your vision a
+      reality.
+      <br />
+      <br />
+      When you choose us, you’re not just hiring an animation studio—you’re
+      gaining a partner dedicated to your success. Let us help you craft
+      animations that captivate your audience, elevate your brand, and drive
+      tangible results.
+    </>,
   ]
 
   const looking = {
@@ -472,8 +536,9 @@ const LocationPage = () => {
     title: (
       <>
         {" "}
-        <span className="text-primary-100">Our Seamless</span> Video Animation{" "}
-        <br /> & Production Process{" "}
+        <span className="text-primary-100">Our Seamless</span> Video Animation &{" "}
+        <br />
+        Production Process{" "}
       </>
     ),
     para: <></>,
@@ -574,10 +639,11 @@ const LocationPage = () => {
         {isMobile
           ? showMobileComponents && (
               <>
+                {/* <BannerContact content={bannerContact} /> */}
                 <HeroBottom />
                 <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Chicago <br /> </span>  With Diverse Services'
-                  desc="Chicago is a city known for its creativity and energy, and we mirror that spirit in everything we do. Our team—comprising some of the best talents in the Chicago animation studio space—is dedicated to crafting animations that align with your goals. we offer:"
+                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Burbank <br /> </span>  With Diverse Services'
+                  desc="Our animation studio in Burbank offers a diverse range of services to bring your creative ideas to life. Whether you’re building brand awareness, telling a story, or enhancing user experiences, we provide:"
                 />
                 <Counter />
                 <Description content={Desc1} />
@@ -601,10 +667,11 @@ const LocationPage = () => {
             )
           : showDesktopComponents && (
               <>
+                {/* <BannerContact content={bannerContact} /> */}
                 <HeroBottom />
                 <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Chicago <br /> </span>  With Diverse Services'
-                  desc="Chicago is a city known for its creativity and energy, and we mirror that spirit in everything we do. Our team—comprising some of the best talents in the Chicago animation studio space—is dedicated to crafting animations that align with your goals. we offer:"
+                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Burbank <br /> </span>  With Diverse Services'
+                  desc="Our animation studio in Burbank offers a diverse range of services to bring your creative ideas to life. Whether you’re building brand awareness, telling a story, or enhancing user experiences, we provide:"
                 />
                 <Counter />
                 <Description content={Desc1} />
