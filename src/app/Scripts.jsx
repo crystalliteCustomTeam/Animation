@@ -135,7 +135,7 @@ const Scripts = () => {
       robotsMeta.name = "robots"
       robotsMeta.content = "index, follow"
       document.head.appendChild(robotsMeta)
-    }, 3000)
+    }, 1000)
 
     return () => clearTimeout(timer)
   }, [])

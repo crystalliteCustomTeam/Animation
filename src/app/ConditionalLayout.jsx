@@ -31,7 +31,7 @@ const ConditionalLayout = ({ children }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setPopup(true)
-    }, 2000)
+    }, 1000)
     return () => clearTimeout(timer)
   }, [])
   const togglePopup = (e) => {
