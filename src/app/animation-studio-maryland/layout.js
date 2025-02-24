@@ -9,13 +9,13 @@ export const metadata = {
     title: "Best Animation Studio in Maryland - Infinity Animations",
     description:
       "Explore premier animation services in Maryland. From 2D and 3D animation to explainer videos, we bring your vision to life with creativity and precision.",
-    url: "/animation-studio-new-york",
+    url: "/animation-studio-maryland",
     siteName: "Infinity Animations",
     locale: "en_US",
     type: "website",
   },
   //===== Canonical =====
-  alternates: { canonical: "/animation-studio-new-york" },
+  alternates: { canonical: "/animation-studio-maryland" },
   //===== GEO Tags =====
   other: {},
 }

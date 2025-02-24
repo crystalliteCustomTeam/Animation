@@ -30,8 +30,8 @@ import body1 from "media/location-page/thumbnils/body1.jpg"
 import body2 from "media/location-page/thumbnils/body2new.png"
 import body3 from "media/location-page/thumbnils/body3new.png"
 import body4 from "media/location-page/thumbnils/body4new.png"
-import why1NY from "media/location-page/why1-ny.png"
-import why2NY from "media/location-page/why2-ny.png"
+import why1NY from "media/location-page/why3-ny.jpg"
+import why2NY from "media/location-page/why4-ny.jpg"
 import process1 from "media/location-page/new-york/process/1.png"
 import process2 from "media/location-page/new-york/process/2.png"
 import process3 from "media/location-page/new-york/process/3.png"
@@ -228,7 +228,7 @@ const LocationPage = () => {
     title: "Why Animated Videos Are the Future of Marketing?",
     para: "<p class='font-semibold text-[18px]'>According to research  <span class='text-[50px] text-primary-100'>96%</span>  buyers watch animated explainer videos to get the details of a product they want to buy.</p><p>People love watching videos online and animated videos especially explainers are ideal to tell your brand as well as product’s story in a creative way.</p><p>Watch Randy Biddle as he dissects how exactly an explainer video production company can help you achieve that.</p>",
     bannerLeft:
-      "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
+      "https://player.vimeo.com/progressive_redirect/playback/1059809262/rendition/720p/file.mp4?loc=external&log_user=0&signature=016810458c9de0e7ccaf44d254900d7c4a14883c6e461b7ae9c4d02031ebda85&user_id=157924231",
     thumbnail: why1NY,
     isCTA: true,
   }
@@ -237,7 +237,7 @@ const LocationPage = () => {
       "Let’s Create Out-of-This-World Animations with <span class='text-primary-100'>Infinity Animation</span>",
     para: "<p>Innovation is the backbone of our work. By using the latest in animation technology, we ensure that every project is visually stunning and technically flawless. From high-fidelity 3D rendering to seamless motion graphics, our technical expertise sets us apart from other animation studios in California. We consistently push the boundaries of what’s possible, blending cutting-edge techniques with a deep understanding of storytelling to create content that resonates, inspires, and delivers measurable results for every client.</p><p>Animation is not just about aesthetics; it’s about creating meaningful connections. By combining artistry with advanced technology, we craft animations that evoke emotion and drive engagement. </p>",
     bannerLeft:
-      "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
+      "https://player.vimeo.com/progressive_redirect/playback/1059809262/rendition/720p/file.mp4?loc=external&log_user=0&signature=016810458c9de0e7ccaf44d254900d7c4a14883c6e461b7ae9c4d02031ebda85&user_id=157924231",
     thumbnail: why2NY,
     isCTA: false,
   }

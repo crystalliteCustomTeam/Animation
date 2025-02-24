@@ -9,13 +9,13 @@ export const metadata = {
     title: "Best Animation Studio in BurBank - Infinity Animations",
     description:
       "Discover one of the best animation studios in Burbank. Offering 2D, 3D, motion graphics, and more. Enhance your brand with creative visuals today.",
-    url: "/animation-studio-new-york",
+    url: "/animation-studio-burbank",
     siteName: "Infinity Animations",
     locale: "en_US",
     type: "website",
   },
   //===== Canonical =====
-  alternates: { canonical: "/animation-studio-new-york" },
+  alternates: { canonical: "/animation-studio-burbank" },
   //===== GEO Tags =====
   other: {},
 }
