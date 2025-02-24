@@ -585,24 +585,13 @@ const LocationPage = () => {
         {isMobile
           ? showMobileComponents && (
               <>
-                {/* <BannerContact content={bannerContact} /> */}
-                <HeroBottom />
-                <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Maryland   <br /> </span>  With Diverse Services'
-                  desc="Our animation studio offers a wide range of services to cater to diverse industries. From creating stunning character animations to producing informative explainer videos, we leverage cutting-edge tools and techniques to ensure the highest quality. Partner with us to transform your ideas into dynamic visual stories."
-                />
-                <Counter />
                 <Description content={Desc1} />
                 <Portfolio content={portfolio} />
-                <Why content={why1} />
                 <Process content={processContent} />
                 <Why content={why2} />
-                <Services content={services} />
                 <Pricing content={pricing} />
                 <Description content={Desc2} />
-                <Want content={want} />
                 <Concept content={concept} />
-                <FullContent1 content={Desc6} />
                 <Description content={Desc3} />
                 <Description content={Desc4} />
                 <Description content={Desc5} />

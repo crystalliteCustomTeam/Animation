@@ -617,24 +617,13 @@ Explore our work and see the difference professional animation makes.
         {isMobile
           ? showMobileComponents && (
               <>
-                {/* <BannerContact content={bannerContact} /> */}
-                <HeroBottom />
-                <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Orlando <br /> </span>  With Diverse Services'
-                  desc="As one of the top animation companies in Orlando, FL, we provide a diverse range of animation services tailored to meet your specific needs. Our animations elevate brands, enhance storytelling, and simplify complex concepts. Partner with us and experience high-quality production that aligns perfectly with your vision."
-                />
-                <Counter />
                 <Description content={Desc1} />
                 <Portfolio content={portfolio} />
-                <Why content={why1} />
                 <Process content={processContent} />
                 <Why content={why2} />
-                <Services content={services} />
                 <Pricing content={pricing} />
                 <Description content={Desc2} />
-                <Want content={want} />
                 <Concept content={concept} />
-                <FullContent1 content={Desc6} />
                 <Description content={Desc3} />
                 <Description content={Desc4} />
                 <Description content={Desc5} />

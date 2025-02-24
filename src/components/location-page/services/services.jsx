@@ -126,7 +126,10 @@ const Services = ({ content }) => {
           <div className="lg:block hidden">
             <div className="grid grid-cols-12 gap-6">
               {tabInfo.map((items, i) => (
-                <div className="col-span-12 md:col-span-6 lg:col-span-4">
+                <div
+                  key={i}
+                  className="col-span-12 md:col-span-6 lg:col-span-4"
+                >
                   <div className="card rounded-[10px] bg-black shadow-2xl pt-[5px] px-[20px] pb-[35px] h-full">
                     <Fancybox
                       options={{
@@ -190,7 +193,7 @@ const Services = ({ content }) => {
           <div className="lg:hidden block">
             <Slider {...testiSlider} className="typeSlider servicSlider">
               {tabInfo.map((items, i) => (
-                <div className="p-3">
+                <div key={i} className="p-3">
                   <div className="card rounded-[10px] bg-black shadow-2xl pt-4 h-[375px]">
                     <Fancybox
                       options={{

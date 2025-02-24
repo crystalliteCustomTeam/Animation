@@ -569,24 +569,13 @@ const LocationPage = () => {
         {isMobile
           ? showMobileComponents && (
               <>
-                {/* <BannerContact content={bannerContact} /> */}
-                <HeroBottom />
-                <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in California  <br /> </span>  With Diverse Services'
-                  desc="At our California animation studio, we understand the power of storytelling.As a top animation company in California,Our mission is to bridge creativity and innovation, transforming your concepts into visually stunning animations that resonate with your audience. What  we offer:"
-                />
-                <Counter />
                 <Description content={Desc1} />
                 <Portfolio content={portfolio} />
-                <Why content={why1} />
                 <Process content={processContent} />
                 <Why content={why2} />
-                <Services content={services} />
                 <Pricing content={pricing} />
                 <Description content={Desc2} />
-                <Want content={want} />
                 <Concept content={concept} />
-                <FullContent1 content={Desc6} />
                 <Description content={Desc3} />
                 <Description content={Desc4} />
                 <Description content={Desc5} />

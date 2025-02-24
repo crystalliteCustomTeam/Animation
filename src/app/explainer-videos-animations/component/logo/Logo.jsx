@@ -12,7 +12,7 @@ const Banner = () => {
             <section className={`newcon ${styles.logo}`}>
                 <div class={`container mx-auto ${styles.pointer} `}>
                     <div class={`md:grid md:grid-cols-1 ${styles.animate}`}>
-                        <Image src={icon1} className={styles.newtoen} alt="" />
+                        <Image src={icon1} className={styles.newtoen} alt="Infinity Animations" />
                     </div>
                 </div>
             </section>

@@ -643,24 +643,13 @@ const LocationPage = () => {
         {isMobile
           ? showMobileComponents && (
               <>
-                {/* <BannerContact content={bannerContact} /> */}
-                <HeroBottom />
-                <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Vancouver <br /> </span>  With Diverse Services'
-                  desc="We offer a diverse range of services to meet the unique demands of our clients:"
-                />
-                <Counter />
                 <Description content={Desc1} />
                 <Portfolio content={portfolio} />
-                <Why content={why1} />
                 <Process content={processContent} />
                 <Why content={why2} />
-                <Services content={services} />
                 <Pricing content={pricing} />
                 <Description content={Desc2} />
-                <Want content={want} />
                 <Concept content={concept} />
-                <FullContent1 content={Desc6} />
                 <Description content={Desc3} />
                 <Description content={Desc4} />
                 <Description content={Desc5} />

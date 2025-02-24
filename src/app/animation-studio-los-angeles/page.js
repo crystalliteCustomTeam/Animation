@@ -639,23 +639,13 @@ const LocationPage = () => {
         {isMobile
           ? showMobileComponents && (
               <>
-                <HeroBottom />
-                <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Los Angeles <br /> </span>  With Diverse Services'
-                  desc="Are you leveraging the full potential of animation in your marketing strategy? Our Los Angeles animation studio offers a diverse range of services tailored to meet the unique needs of our clients:"
-                />
-                <Counter />
                 <Description content={Desc1} />
                 <Portfolio content={portfolio} />
-                <Why content={why1} />
                 <Process content={processContent} />
                 <Why content={why2} />
-                <Services content={services} />
                 <Pricing content={pricing} />
                 <Description content={Desc2} />
-                <Want content={want} />
                 <Concept content={concept} />
-                <FullContent1 content={Desc6} />
                 <Description content={Desc3} />
                 <Description content={Desc4} />
                 <Description content={Desc5} />

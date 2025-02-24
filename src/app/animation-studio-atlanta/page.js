@@ -615,23 +615,13 @@ const LocationPage = () => {
         {isMobile
           ? showMobileComponents && (
               <>
-                <HeroBottom />
-                <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Atlanta <br /> </span>  With Diverse Services'
-                  desc="Our Atlanta-based studio offers a wide array of animation services designed to meet the diverse needs of our clients. Our offerings include:"
-                />
-                <Counter />
                 <Description content={Desc1} />
                 <Portfolio content={portfolio} />
-                <Why content={why1} />
                 <Process content={processContent} />
                 <Why content={why2} />
-                <Services content={services} />
                 <Pricing content={pricing} />
                 <Description content={Desc2} />
-                <Want content={want} />
                 <Concept content={concept} />
-                <FullContent1 content={Desc6} />
                 <Description content={Desc3} />
                 <Description content={Desc4} />
                 <Description content={Desc5} />

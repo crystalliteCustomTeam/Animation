@@ -636,24 +636,13 @@ const LocationPage = () => {
         {isMobile
           ? showMobileComponents && (
               <>
-                {/* <BannerContact content={bannerContact} /> */}
-                <HeroBottom />
-                <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Las Vegas <br /> </span>  With Diverse Services'
-                  desc="Our Las Vegas animation studios specialize in a wide range of animation services tailored to meet the unique needs of your business. Don’t miss out on the opportunity to elevate your brand with cutting-edge visual solution"
-                />
-                <Counter />
-                <Description content={Desc1} />
+               <Description content={Desc1} />
                 <Portfolio content={portfolio} />
-                <Why content={why1} />
                 <Process content={processContent} />
                 <Why content={why2} />
-                <Services content={services} />
                 <Pricing content={pricing} />
                 <Description content={Desc2} />
-                <Want content={want} />
                 <Concept content={concept} />
-                <FullContent1 content={Desc6} />
                 <Description content={Desc3} />
                 <Description content={Desc4} />
                 <Description content={Desc5} />

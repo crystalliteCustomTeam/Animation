@@ -243,7 +243,7 @@ const Popup = ({ }) => {
                             </div>
                             <div className="col-span-12 lg:col-span-6 lg:block hidden">
                                 <div className="max-h-[400px] 2xl:max-h-full mt-[-55px] xl:mt-0">
-                                    <Image src={popUpImage} alt="Infinity Animation" className="h-full m-auto w-[90%]" />
+                                    <Image src={popUpImage} alt="Infinity Animation" priority className="h-full m-auto w-[90%]" />
                                 </div>
                             </div>
                         </div>

@@ -434,16 +434,6 @@ const LocationPage = () => {
     "Infinity Animations stands out among the top animation companies in NYC, offering a seamless blend of technical expertise and imaginative flair. Our commitment to excellence ensures that your project receives the attention and detail it deserves. Partnering with Infinity Animations means choosing quality, reliability, and creativity.",
   ]
 
-  const bannerContact = {
-    title: (
-      <>
-        Best Animation Company
-        <br /> In New York with Diverse Services
-      </>
-    ),
-    para: { paraArrayBanner },
-  }
-
   //=====Looking Fold=====//
   const paraArray = [
     `When it comes to animation, New York demands creativity, innovation, and impact. At Infinity Animations, we understand the unique needs of NYC-based businesses and are dedicated to providing solutions that resonate with your local audience. From the fast-paced digital landscape to the diverse industries driving the city, we create animations that make a lasting impression and elevate your brand in a competitive market.`,
@@ -578,21 +568,13 @@ const LocationPage = () => {
         {isMobile
           ? showMobileComponents && (
               <>
-                {/* <BannerContact content={bannerContact} /> */}
-                <HeroBottom />
-                <Speedometer />
-                <Counter />
                 <Description content={Desc1} />
                 <Portfolio content={portfolio} />
-                <Why content={why1} />
                 <Process content={processContent} />
                 <Why content={why2} />
-                <Services content={services} />
                 <Pricing content={pricing} />
                 <Description content={Desc2} />
-                <Want content={want} />
                 <Concept content={concept} />
-                <FullContent1 content={Desc6} />
                 <Description content={Desc3} />
                 <Description content={Desc4} />
                 <Description content={Desc5} />
@@ -603,7 +585,6 @@ const LocationPage = () => {
             )
           : showDesktopComponents && (
               <>
-                {/* <BannerContact content={bannerContact} /> */}
                 <HeroBottom />
                 <Speedometer />
                 <Counter />

@@ -588,24 +588,13 @@ Your online presence deserves visuals that stand out. Let’s make it happen.
         {isMobile
           ? showMobileComponents && (
               <>
-                {/* <BannerContact content={bannerContact} /> */}
-                <HeroBottom />
-                <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Charlotte <br /> </span>  With Diverse Services'
-                  desc="Are you overlooking the potential of professional animation? At our Charlotte-based animation studio, we offer a range of specialized services designed to meet your unique needs. From corporate explainer videos to immersive 3D designs, our expertise spans across multiple industries to ensure your project achieves maximum impact."
-                />
-                <Counter />
                 <Description content={Desc1} />
                 <Portfolio content={portfolio} />
-                <Why content={why1} />
                 <Process content={processContent} />
                 <Why content={why2} />
-                <Services content={services} />
                 <Pricing content={pricing} />
                 <Description content={Desc2} />
-                <Want content={want} />
                 <Concept content={concept} />
-                <FullContent1 content={Desc6} />
                 <Description content={Desc3} />
                 <Description content={Desc4} />
                 <Description content={Desc5} />

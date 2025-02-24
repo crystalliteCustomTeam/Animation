@@ -66,7 +66,7 @@ function Description({ content }) {
                         </p>
                         {downArrow &&
                             <div className={`flex items-center w-[98%] md:w-full h-[70px] mt-[35px] ${downArrow === 'start' && 'justify-start border-l-2 '} ${downArrow === 'end' && 'justify-end border-r-2'}  border-gray-500`}>
-                                <Image src={DescDot} width='25px' height='25px' className={`${downArrow === 'start' && 'ms-[-18px]'} ${downArrow === 'end' && 'me-[-18px]'}`} />
+                                <Image src={DescDot} alt="Infinity Animations" width='25px' height='25px' className={`${downArrow === 'start' && 'ms-[-18px]'} ${downArrow === 'end' && 'me-[-18px]'}`} />
                             </div>
                         }
                     </div>

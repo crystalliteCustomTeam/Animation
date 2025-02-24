@@ -635,23 +635,13 @@ const LocationPage = () => {
         {isMobile
           ? showMobileComponents && (
               <>
-                <HeroBottom />
-                <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Houston  <br /> </span>  With Diverse Services'
-                  desc="At our animation studio Houston, we provide a diverse range of services to support businesses across industries. From brand storytelling to immersive virtual experiences, we turn ideas into powerful visuals that resonate with audiences."
-                />
-                <Counter />
                 <Description content={Desc1} />
                 <Portfolio content={portfolio} />
-                <Why content={why1} />
                 <Process content={processContent} />
                 <Why content={why2} />
-                <Services content={services} />
                 <Pricing content={pricing} />
                 <Description content={Desc2} />
-                <Want content={want} />
                 <Concept content={concept} />
-                <FullContent1 content={Desc6} />
                 <Description content={Desc3} />
                 <Description content={Desc4} />
                 <Description content={Desc5} />

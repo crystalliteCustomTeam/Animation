@@ -574,23 +574,13 @@ const LocationPage = () => {
         {isMobile
           ? showMobileComponents && (
               <>
-                <HeroBottom />
-                <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Chicago <br /> </span>  With Diverse Services'
-                  desc="Chicago is a city known for its creativity and energy, and we mirror that spirit in everything we do. Our team—comprising some of the best talents in the Chicago animation studio space—is dedicated to crafting animations that align with your goals. we offer:"
-                />
-                <Counter />
                 <Description content={Desc1} />
                 <Portfolio content={portfolio} />
-                <Why content={why1} />
                 <Process content={processContent} />
                 <Why content={why2} />
-                <Services content={services} />
                 <Pricing content={pricing} />
                 <Description content={Desc2} />
-                <Want content={want} />
                 <Concept content={concept} />
-                <FullContent1 content={Desc6} />
                 <Description content={Desc3} />
                 <Description content={Desc4} />
                 <Description content={Desc5} />
