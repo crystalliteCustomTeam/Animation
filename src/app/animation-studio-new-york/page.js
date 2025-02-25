@@ -153,7 +153,7 @@ const LocationPage = () => {
     ),
     para: "In a city that never sleeps, your brand deserves visuals that stand the test of time. Our award-winning team of  NYC animation designers deliver creative excellence with bespoke animations tailored to your vision. Using cutting-edge tools, we ensure seamless production for impactful results. With a customer-centric approach, your satisfaction is always our top priority.",
     bannerRight:
-      "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
+      "https://player.vimeo.com/progressive_redirect/playback/947422905/rendition/1080p/file.mp4?loc=external&signature=5c27dbb6f888f0c94df31c794a5a2c96bcac64552c393b29b37198d5da826b1c&user_id=214166356",
     thumbnail: body1,
     downArrow: "start",
   }
@@ -166,7 +166,7 @@ const LocationPage = () => {
     ),
     para: "Capture your audience's attention and turn curiosity into conversions with the power of animated product explainer videos. These videos simplify complex ideas, showcase your product’s value, and keep viewers hooked, all while delivering your message with clarity and impact. Animation creates a memorable experience that resonates with your audience and drives action. Partner with us to create a tailored, high-quality explainer video that not only stands out but also convinces users why your product is the right choice. Ready to make an unforgettable impact? ",
     bannerRight:
-      "https://player.vimeo.com/progressive_redirect/playback/950015817/rendition/720p/file.mp4?loc=external&log_user=0&signature=c60df41646f601d81fa4c987188c8e103f416d393f8ec1f9270e7114e4f0b3ed",
+      "https://player.vimeo.com/progressive_redirect/playback/907825425/rendition/1080p/file.mp4?loc=external&signature=d5c539f4ba9416fdbe24bb4389c7380e9a5cb4e30ea3c8ce7d3520b69ccb7f25&user_id=214166356",
     thumbnail: body2,
     downArrow: "start",
   }
@@ -181,7 +181,7 @@ const LocationPage = () => {
     ),
     para: "Animation is the key to making your social media content stand out in a crowded digital space. Whether it's a short-form animated ad or a dynamic motion graphic for Instagram or Facebook, we specialize in creating animations optimized for social platforms that drive engagement and increase your reach. Get noticed, get shared, and enhance your brand online with New York based animation studios.",
     bannerLeft:
-      "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
+      "https://player.vimeo.com/progressive_redirect/playback/906229355/rendition/1080p/file.mp4?loc=external&signature=8af579ca2eae6ba8c0e08217cd6bd78828f596d70e3bd6624936fd07ff35854e&user_id=214166356",
     thumbnail: body3,
     downArrow: "end",
   }
@@ -194,7 +194,7 @@ const LocationPage = () => {
     ),
     para: "Animation is one of the most effective ways to communicate complex ideas simply and engagingly. It allows you to capture attention, explain your message clearly, and leave a lasting impression—all in a matter of seconds. if it’s a 30-second explainer video or a detailed 3D animation, visuals speak louder than words. As businesses look for innovative ways to connect with their audience, animation has become a powerful tool for driving engagement, conversions, and brand recognition.",
     bannerRight:
-      "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
+      "https://player.vimeo.com/progressive_redirect/playback/911729442/rendition/1080p/file.mp4?loc=external&signature=83cd56e58fbcc848feafd727d790b3bf4593c20467d0e7276efbf5ee0892a680&user_id=214166356",
     thumbnail: body4,
   }
   const Desc5 = {
@@ -237,7 +237,7 @@ const LocationPage = () => {
       "Let’s Create Out-of-This-World Animations with <span class='text-primary-100'>Infinity Animation</span>",
     para: "<p>We’re not just another animation studio – we’re among NYC top animation studios, proving that simplicity and creativity can make the biggest impact. You don’t need overly complicated visuals to captivate an audience. A well-crafted, engaging animation with a creative touch is all it takes to spark interest and drive results.</p><p>If you're searching for 'Animation Studio Near Me,' you’ve found the right place. Let’s make a difference and elevate your brand with animation that speaks louder than words.</p>",
     bannerLeft:
-      "https://player.vimeo.com/progressive_redirect/playback/1059809262/rendition/720p/file.mp4?loc=external&log_user=0&signature=016810458c9de0e7ccaf44d254900d7c4a14883c6e461b7ae9c4d02031ebda85&user_id=157924231",
+      "https://player.vimeo.com/progressive_redirect/playback/957421481/rendition/1080p/file.mp4?loc=external&signature=86ac3cb322c1e2b1362be1142336b0c0c934d1bd690878be22291aedce926ea4&user_id=214166356",
     thumbnail: why2NY,
     isCTA: false,
   }

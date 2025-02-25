@@ -156,8 +156,7 @@ const LocationPage = () => {
       </>
     ),
     para: "Every Chicago animation project we undertake is guided by three core principles: creativity, precision, and collaboration. Creativity fuels our designs, precision ensures every frame is perfect, and collaboration guarantees your vision is at the heart of every project. We don't just create animations; we create experiences that stick with your audience long after the screen fades to black. When you choose us, you’re not just hiring an animation company in Chicago; you’re gaining a partner invested in your success.",
-    bannerRight:
-      "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
+   bannerRight:"https://player.vimeo.com/progressive_redirect/playback/947422905/rendition/1080p/file.mp4?loc=external&signature=5c27dbb6f888f0c94df31c794a5a2c96bcac64552c393b29b37198d5da826b1c&user_id=214166356",
     thumbnail: body1,
     downArrow: "start",
   }
@@ -170,7 +169,7 @@ const LocationPage = () => {
     ),
     para: "Behind every successful project is a team of dedicated professionals. Our artists, animators, and storytellers bring years of experience and a passion for innovation. Together, we’ve completed countless projects for clients across industries, earning accolades and trust as one of the leading animation studios in Chicago.",
     bannerRight:
-      "https://player.vimeo.com/progressive_redirect/playback/950015817/rendition/720p/file.mp4?loc=external&log_user=0&signature=c60df41646f601d81fa4c987188c8e103f416d393f8ec1f9270e7114e4f0b3ed",
+      "https://player.vimeo.com/progressive_redirect/playback/907825425/rendition/1080p/file.mp4?loc=external&signature=d5c539f4ba9416fdbe24bb4389c7380e9a5cb4e30ea3c8ce7d3520b69ccb7f25&user_id=214166356",
     thumbnail: body2,
     downArrow: "start",
   }
@@ -185,7 +184,7 @@ const LocationPage = () => {
     ),
     para: "We understand the importance of reducing our environmental impact. That’s why we incorporate sustainable practices in our operations. From using energy-efficient equipment to minimizing waste in production, we strive to be a responsible member of the Chicago animation community. By choosing us, you’re not only investing in exceptional animation but also supporting a greener future.",
     bannerLeft:
-      "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
+      "https://player.vimeo.com/progressive_redirect/playback/906229355/rendition/1080p/file.mp4?loc=external&signature=8af579ca2eae6ba8c0e08217cd6bd78828f596d70e3bd6624936fd07ff35854e&user_id=214166356",
     thumbnail: body3,
     downArrow: "end",
   }
@@ -198,7 +197,7 @@ const LocationPage = () => {
     ),
     para: "Our Chicago animation studio excels at transforming your creative concepts into powerful visuals that captivate and inspire. We begin by immersing ourselves in your ideas, collaborating closely to develop a compelling narrative that aligns seamlessly with your business goals. Utilizing cutting-edge techniques and a touch of Chicago's artistic spirit, we transform these ideas into animations that resonate with your target audience. Whether it's a corporate video for a Loop headquarters, educational content for a local institution, or a promotional ad targeting Chicago consumers, our animations bridge the gap between creativity and communication, ensuring your message reaches the right audience effectively within the city and beyond.",
     bannerRight:
-      "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
+      "https://player.vimeo.com/progressive_redirect/playback/911729442/rendition/1080p/file.mp4?loc=external&signature=83cd56e58fbcc848feafd727d790b3bf4593c20467d0e7276efbf5ee0892a680&user_id=214166356",
     thumbnail: body4,
   }
   const Desc5 = {
@@ -241,7 +240,7 @@ const LocationPage = () => {
       "Let’s Create Out-of-This-World Animations with <span class='text-primary-100'>Infinity Animation</span>",
     para: "<p>Innovation drives our success. We use state-of-the-art software and equipment to deliver top-notch animations that stand out in a competitive market. From 3D modeling to real-time rendering, our technological prowess ensures every project is a masterpiece. This commitment to quality is what makes us a trusted name among animation companies in Chicago.</p><p>This advanced technology translates directly into tangible benefits for our clients. By utilizing efficient workflows and powerful rendering capabilities, we can deliver high-quality animations within competitive timelines and budgets. Furthermore, our expertise with these tools allows us to offer a wider range of creative possibilities, from stylized 2D animation to complex 3D simulations. </p>",
     bannerLeft:
-      "https://player.vimeo.com/progressive_redirect/playback/1059809262/rendition/720p/file.mp4?loc=external&log_user=0&signature=016810458c9de0e7ccaf44d254900d7c4a14883c6e461b7ae9c4d02031ebda85&user_id=157924231",
+      "https://player.vimeo.com/progressive_redirect/playback/957421481/rendition/1080p/file.mp4?loc=external&signature=86ac3cb322c1e2b1362be1142336b0c0c934d1bd690878be22291aedce926ea4&user_id=214166356",
     thumbnail: why2NY,
     isCTA: true,
   }

@@ -164,8 +164,7 @@ const LocationPage = () => {
         Partner with us and see the difference an innovative approach can make.
       </>
     ),
-    bannerRight:
-      "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
+   bannerRight:"https://player.vimeo.com/progressive_redirect/playback/947422905/rendition/1080p/file.mp4?loc=external&signature=5c27dbb6f888f0c94df31c794a5a2c96bcac64552c393b29b37198d5da826b1c&user_id=214166356",
     thumbnail: body1,
     downArrow: "start",
   }
@@ -191,7 +190,7 @@ const LocationPage = () => {
       </>
     ),
     bannerRight:
-      "https://player.vimeo.com/progressive_redirect/playback/950015817/rendition/720p/file.mp4?loc=external&log_user=0&signature=c60df41646f601d81fa4c987188c8e103f416d393f8ec1f9270e7114e4f0b3ed",
+      "https://player.vimeo.com/progressive_redirect/playback/907825425/rendition/1080p/file.mp4?loc=external&signature=d5c539f4ba9416fdbe24bb4389c7380e9a5cb4e30ea3c8ce7d3520b69ccb7f25&user_id=214166356",
     thumbnail: body2,
     downArrow: "start",
   }
@@ -206,7 +205,7 @@ const LocationPage = () => {
     ),
     para: "We’re not just an animation studio; we’re your creative partners. Our dedication to quality and innovation ensures that every animation project exceeds expectations.. With a steadfast dedication to quality and innovation, we ensure that every animation project exceeds expectations. What sets us apart is our customer-centric approach, where your vision always takes priority. We pride ourselves on timely delivery, adhering to deadlines without ever compromising on quality. Backed by award-winning expertise, our team brings years of experience and creativity to every project. When you choose our animation studio in Houston, you are selecting a partner that is deeply committed to your success.",
     bannerLeft:
-      "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
+      "https://player.vimeo.com/progressive_redirect/playback/906229355/rendition/1080p/file.mp4?loc=external&signature=8af579ca2eae6ba8c0e08217cd6bd78828f596d70e3bd6624936fd07ff35854e&user_id=214166356",
     thumbnail: body3,
     downArrow: "end",
   }
@@ -233,7 +232,7 @@ const LocationPage = () => {
       </>
     ),
     bannerRight:
-      "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
+      "https://player.vimeo.com/progressive_redirect/playback/911729442/rendition/1080p/file.mp4?loc=external&signature=83cd56e58fbcc848feafd727d790b3bf4593c20467d0e7276efbf5ee0892a680&user_id=214166356",
     thumbnail: body4,
   }
   const Desc5 = {
@@ -289,7 +288,7 @@ const LocationPage = () => {
       "Let’s Create Out-of-This-World Animations with <span class='text-primary-100'>Infinity Animation</span>",
     para: "<p>Our award-winning animation company Houston has partnered with a diverse range of industries, Transforming healthcare, education, real estate, entertainment, corporate, and more. We understand that each project is unique, and we tailor our approach to align perfectly with your brand's voice and objectives. From patient education videos and interactive e-learning modules to stunning virtual tours, game animations, and engaging explainer videos, we have industry experts to work with you side by side on your project exclusively.</p>",
     bannerLeft:
-      "https://player.vimeo.com/progressive_redirect/playback/1059809262/rendition/720p/file.mp4?loc=external&log_user=0&signature=016810458c9de0e7ccaf44d254900d7c4a14883c6e461b7ae9c4d02031ebda85&user_id=157924231",
+      "https://player.vimeo.com/progressive_redirect/playback/957421481/rendition/1080p/file.mp4?loc=external&signature=86ac3cb322c1e2b1362be1142336b0c0c934d1bd690878be22291aedce926ea4&user_id=214166356",
     thumbnail: why2NY,
     isCTA: true,
   }

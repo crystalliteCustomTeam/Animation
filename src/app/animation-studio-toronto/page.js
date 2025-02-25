@@ -153,8 +153,7 @@ const LocationPage = () => {
       </>
     ),
     para: "Our studio’s reputation among Toronto Animation Companies isn’t just built on technical expertise. It’s our commitment to understanding your needs and crafting animations that speak directly to your audience. We bring together state-of-the-art technology, an experienced team, and a collaborative process to ensure every project exceeds expectations. Choosing our Toronto animation studio means choosing a partner dedicated to your success.",
-    bannerRight:
-      "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
+   bannerRight:"https://player.vimeo.com/progressive_redirect/playback/947422905/rendition/1080p/file.mp4?loc=external&signature=5c27dbb6f888f0c94df31c794a5a2c96bcac64552c393b29b37198d5da826b1c&user_id=214166356",
     thumbnail: body1,
     downArrow: "start",
   }
@@ -167,7 +166,7 @@ const LocationPage = () => {
     ),
     para: "At the heart of our success is a team of talented professionals. Each member of our studio brings years of experience, creativity, and passion to every project. Whether it’s designing intricate 2D animations or crafting realistic 3D environments, our team’s dedication shines through. Together, we have earned our place as one of the most respected animation studios in Toronto.",
     bannerRight:
-      "https://player.vimeo.com/progressive_redirect/playback/950015817/rendition/720p/file.mp4?loc=external&log_user=0&signature=c60df41646f601d81fa4c987188c8e103f416d393f8ec1f9270e7114e4f0b3ed",
+      "https://player.vimeo.com/progressive_redirect/playback/907825425/rendition/1080p/file.mp4?loc=external&signature=d5c539f4ba9416fdbe24bb4389c7380e9a5cb4e30ea3c8ce7d3520b69ccb7f25&user_id=214166356",
     thumbnail: body2,
     downArrow: "start",
   }
@@ -182,7 +181,7 @@ const LocationPage = () => {
     ),
     para: "Sustainability matters. Our studio takes conscious steps to minimize our environmental impact, from using energy-efficient tools to reducing waste in production. We believe that creativity and responsibility go hand in hand, ensuring that our contributions to Toronto animation studios are not only innovative but also eco-friendly.",
     bannerLeft:
-      "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
+      "https://player.vimeo.com/progressive_redirect/playback/906229355/rendition/1080p/file.mp4?loc=external&signature=8af579ca2eae6ba8c0e08217cd6bd78828f596d70e3bd6624936fd07ff35854e&user_id=214166356",
     thumbnail: body3,
     downArrow: "end",
   }
@@ -195,7 +194,7 @@ const LocationPage = () => {
     ),
     para: "Animation is more than a tool—it’s a bridge between imagination and reality. Whether it’s a 2D character conveying emotion or a 3D world immersing viewers, animation captures what words alone cannot. This transformative medium has become essential for storytelling, branding, and education, making it a cornerstone of modern communication.",
     bannerRight:
-      "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
+      "https://player.vimeo.com/progressive_redirect/playback/911729442/rendition/1080p/file.mp4?loc=external&signature=83cd56e58fbcc848feafd727d790b3bf4593c20467d0e7276efbf5ee0892a680&user_id=214166356",
     thumbnail: body4,
   }
   const Desc5 = {
@@ -238,7 +237,7 @@ const LocationPage = () => {
       "Let’s Create Out-of-This-World Animations with <span class='text-primary-100'>Infinity Animation</span>",
     para: "<p>Staying ahead in the competitive world of animation requires innovation. Our studio uses the latest tools and software to ensure every project is executed flawlessly. From advanced rendering techniques to real-time editing capabilities, we leverage technology to create animations that stand out among Toronto Animation Companies. This commitment to innovation enables us to produce results that are both visually stunning and strategically impactful.</p><p>Our investment in emerging technologies, such as AI-driven rendering and immersive VR tools, ensures that your animations are future-proof and cutting-edge. By staying at the forefront of the industry, we provide you with solutions that not only meet today’s standards but set benchmarks for tomorrow.</p>",
     bannerLeft:
-      "https://player.vimeo.com/progressive_redirect/playback/1059809262/rendition/720p/file.mp4?loc=external&log_user=0&signature=016810458c9de0e7ccaf44d254900d7c4a14883c6e461b7ae9c4d02031ebda85&user_id=157924231",
+      "https://player.vimeo.com/progressive_redirect/playback/957421481/rendition/1080p/file.mp4?loc=external&signature=86ac3cb322c1e2b1362be1142336b0c0c934d1bd690878be22291aedce926ea4&user_id=214166356",
     thumbnail: why2NY,
     isCTA: true,
   }

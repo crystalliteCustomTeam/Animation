@@ -159,8 +159,7 @@ const LocationPage = () => {
         content that resonates with diverse audiences
       </>
     ),
-    bannerRight:
-      "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
+   bannerRight:"https://player.vimeo.com/progressive_redirect/playback/947422905/rendition/1080p/file.mp4?loc=external&signature=5c27dbb6f888f0c94df31c794a5a2c96bcac64552c393b29b37198d5da826b1c&user_id=214166356",
     thumbnail: body1,
     downArrow: "start",
   }
@@ -173,7 +172,7 @@ const LocationPage = () => {
     ),
     para: "Every business faces its own set of challenges when it comes to engaging their audience and conveying their message effectively. Our Atlanta-based animation studio specializes in creating customized animation solutions designed to meet your specific needs. Whether you're struggling to explain a complex product, looking to enhance your social media presence, or aiming to improve internal training materials, we have the expertise to develop content that addresses these issues head-on. By taking the time to understand your business and its unique challenges, we can create animations that not only capture attention but also drive meaningful results.",
     bannerRight:
-      "https://player.vimeo.com/progressive_redirect/playback/950015817/rendition/720p/file.mp4?loc=external&log_user=0&signature=c60df41646f601d81fa4c987188c8e103f416d393f8ec1f9270e7114e4f0b3ed",
+      "https://player.vimeo.com/progressive_redirect/playback/907825425/rendition/1080p/file.mp4?loc=external&signature=d5c539f4ba9416fdbe24bb4389c7380e9a5cb4e30ea3c8ce7d3520b69ccb7f25&user_id=214166356",
     thumbnail: body2,
     downArrow: "start",
   }
@@ -188,7 +187,7 @@ const LocationPage = () => {
     ),
     para: "High-quality animation is essential for capturing audience attention and effectively conveying messages. Studies have shown that viewers retain 95% of a message when delivered through video, compared to just 10% when reading text. This underscores the power of animation in enhancing communication and engagement. By investing in professional animation services, businesses can improve brand recognition, increase customer engagement, and drive conversions.",
     bannerLeft:
-      "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
+      "https://player.vimeo.com/progressive_redirect/playback/906229355/rendition/1080p/file.mp4?loc=external&signature=8af579ca2eae6ba8c0e08217cd6bd78828f596d70e3bd6624936fd07ff35854e&user_id=214166356",
     thumbnail: body3,
     downArrow: "end",
   }
@@ -220,7 +219,7 @@ const LocationPage = () => {
       </>
     ),
     bannerRight:
-      "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
+      "https://player.vimeo.com/progressive_redirect/playback/911729442/rendition/1080p/file.mp4?loc=external&signature=83cd56e58fbcc848feafd727d790b3bf4593c20467d0e7276efbf5ee0892a680&user_id=214166356",
     thumbnail: body4,
   }
   const Desc5 = {
@@ -278,7 +277,7 @@ const LocationPage = () => {
       "Let’s Create Out-of-This-World Animations with <span class='text-primary-100'>Infinity Animation</span>",
     para: "<p>At our Atlanta animation studio, we understand that efficient project management is crucial to delivering high-quality animations on time and within budget. Our team employs a structured approach that begins with a thorough understanding of your objectives and target audience. We then develop a detailed project timeline, outlining each phase from concept development to final delivery. Regular check-ins and updates ensure that you are kept informed of our progress, and any necessary adjustments can be made promptly. This collaborative process not only keeps the project on track but also ensures that the final product aligns with your vision and goals. By prioritizing clear communication and meticulous planning, we aim to make the animation production process as seamless and stress-free as possible for our clients</p>",
     bannerLeft:
-      "https://player.vimeo.com/progressive_redirect/playback/1059809262/rendition/720p/file.mp4?loc=external&log_user=0&signature=016810458c9de0e7ccaf44d254900d7c4a14883c6e461b7ae9c4d02031ebda85&user_id=157924231",
+      "https://player.vimeo.com/progressive_redirect/playback/957421481/rendition/1080p/file.mp4?loc=external&signature=86ac3cb322c1e2b1362be1142336b0c0c934d1bd690878be22291aedce926ea4&user_id=214166356",
     thumbnail: why2NY,
     isCTA: true,
   }
