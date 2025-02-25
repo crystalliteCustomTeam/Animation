@@ -24,42 +24,48 @@ const Services = ({ content }) => {
     {
       video:
         "https://player.vimeo.com/progressive_redirect/playback/950010334/rendition/720p/file.mp4?loc=external&log_user=0&signature=a761e4cb6edbbad24b418c5e42ebcc25598aa36503bb5e3f218b69efbb9a666b",
-      thumbnail: thumbnail1,
+      link:"/2d-animation",
+        thumbnail: thumbnail1,
       title: "2D Animation",
       para: `Infinity Animation brings ideas to life with stunning 2D animations. From engaging characters to seamless storytelling, we deliver dynamic visuals that captivate audiences, enhance brand messaging, and make your stories unforgettable in New York’s competitive market.`,
     },
     {
       video:
         "https://player.vimeo.com/progressive_redirect/playback/950011852/rendition/720p/file.mp4?loc=external&log_user=0&signature=15e9c340553571fedce72842f58c3e0af4fcafb7bbda0938d479a2246d9f7e06",
-      thumbnail: thumbnail2,
+      link:"/3d-animation",
+        thumbnail: thumbnail2,
       title: "3D Animation",
       para: `Experience immersive 3D animations with Infinity Animation. We craft visually striking designs that add depth, realism, and innovation to your projects, perfect for captivating your audience and elevating your brand in New York’s dynamic landscape.`,
     },
     {
       video:
         "https://player.vimeo.com/progressive_redirect/playback/950016751/rendition/720p/file.mp4?loc=external&log_user=0&signature=029bced4bb0cb9e41cb9accc4e9c35fc8abd08ce894378fd6764f648b8a20a72",
-      thumbnail: thumbnail3,
+      link:"/architectural-visualization",
+        thumbnail: thumbnail3,
       title: "Architectural Animation",
       para: `Showcase architectural designs with Infinity Animation’s cutting-edge 3D animations. From realistic walkthroughs to intricate models, we transform your concepts into captivating visual experiences that impress clients and stakeholders in New York’s thriving industry.`,
     },
     {
       video:
         "https://player.vimeo.com/progressive_redirect/playback/950015871/rendition/720p/file.mp4?loc=external&log_user=0&signature=c5d9400c52dea49465f643fde173da06371fde9a7a0b971d4d549c53d301beba",
-      thumbnail: thumbnail4,
+      link:"/motion-graphics",
+        thumbnail: thumbnail4,
       title: "Motion Graphics",
       para: `Infinity Animation delivers dynamic motion graphics that blend creativity and innovation. Perfect for marketing, branding, or storytelling, our animations captivate audiences, making your content stand out in New York’s highly competitive market.`,
     },
     {
       video:
         "https://player.vimeo.com/progressive_redirect/playback/950013729/rendition/720p/file.mp4?loc=external&log_user=0&signature=dc0b60052c9254433445dab7bbd7e44d7df58cb701acbc8dd39dcb6d2c87e915",
-      thumbnail: thumbnail5,
+      link:"/cgi-and-vfx-services",
+        thumbnail: thumbnail5,
       title: "CGI-VFX",
       para: `Elevate your projects with Infinity Animation’s exceptional CGI and VFX services. We integrate realism and creativity, producing visually stunning effects that bring your vision to life and leave a lasting impression in New York’s vibrant market.`,
     },
     {
       video:
         "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
-      thumbnail: thumbnail6,
+      link:"/infographics-design",
+        thumbnail: thumbnail6,
       title: "Infographics",
       para: `Simplify complex data with Infinity Animation’s vibrant animated infographics. Our visually compelling designs communicate information clearly and creatively, ensuring your message resonates with audiences in New York’s fast-paced business environment.`,
     },
@@ -166,9 +172,9 @@ const Services = ({ content }) => {
                       </Link>
                     </Fancybox>
                     <div className="content">
-                      <h3 className="text-[#fff] text-[20px] md:text-[25px] font-bold font-sans pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] text-center hover:text-[#FF2D4A]">
+                      <Link href={items.link} target="_blank" className="block text-[#fff] text-[20px] md:text-[25px] font-bold font-sans pt-[20px] pb-[10px] leading-[23px] md:leading-[33px] text-center hover:text-[#FF2D4A]">
                         {items.title}
-                      </h3>
+                      </Link>
                       <p className="text-[15px] lg:text-[16px] font-sans text-[#fff] font-normal leading-[1.52857143] md:px-[10px] text-center ">
                         {items.para}
                       </p>

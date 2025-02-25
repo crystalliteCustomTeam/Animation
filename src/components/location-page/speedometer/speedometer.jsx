@@ -17,7 +17,7 @@ const Speedometer = ({
         <div className="container">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-6 ms-auto pe-0 md:pe-5 flex flex-col justify-center relative">
-              <h1
+              <h2
                 className={`text-[30px] md:text-[50px] xl:text-[46px] 2xl:text-[60px] font-semibold font-sans leading-tight mb-5`}
                 dangerouslySetInnerHTML={{ __html: title }}
               />

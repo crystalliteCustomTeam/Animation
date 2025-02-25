@@ -440,55 +440,55 @@ const LocationPage = () => {
   }
   const processContent = {
     title: "Our <span class='text-primary-100'>Process</span>",
-    para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et maximus nunc. Etiam facilisis augue ligula, feugiat pellentesque nibh consectetur at. Maecenas sed justo lorem. Fusce urna mi, vehicula ultrices quam a, commodo viverra nulla.",
+    
     conceptContent: [
       {
         ImageOne: process1,
-        slideTitle: "Researching",
+        slideTitle: "Briefing",
         sliderDesc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et maximus nunc. Etiam facilisis augue ligula, feugiat pellentesque nibh consectetur at. Maecenas sed justo lorem.",
+          "We start off by creating an outline of requirements. Next, we discuss the animation style, mission, and length of your explainer video. We work from ground zero to drive home your animated video’s message.",
       },
       {
         ImageOne: process2,
-        slideTitle: "Defining the Project's Scope",
+        slideTitle: "Scriptwriting",
         sliderDesc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et maximus nunc. Etiam facilisis augue ligula, feugiat pellentesque nibh consectetur at. Maecenas sed justo lorem.",
+          "After creating a concrete brief, we kick off the pre-production process and create a compelling script for your animated video. We ensure to tell an engaging story in the most comprehensive way to your targeted audience.",
       },
       {
         ImageOne: process3,
-        slideTitle: "Brainstorming and Script Writing",
+        slideTitle: "Storyboarding",
         sliderDesc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et maximus nunc. Etiam facilisis augue ligula, feugiat pellentesque nibh consectetur at. Maecenas sed justo lorem.",
+          "In this phase of explainer video production, our creative digital artists will create a simplified yet vibrant visual representation of how your animated video will unfold at the end of the process.",
       },
       {
         ImageOne: process4,
-        slideTitle: "Voiceover Recording",
+        slideTitle: "Illustrations",
         sliderDesc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et maximus nunc. Etiam facilisis augue ligula, feugiat pellentesque nibh consectetur at. Maecenas sed justo lorem.",
+          "Our competent illustrators will take the storyboard and turn it into a stunning and vibrant set of illustrations to make your animated video look more refined and engaging.",
       },
       {
         ImageOne: process5,
-        slideTitle: "Storyboarding",
+        slideTitle: "Voice Over",
         sliderDesc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et maximus nunc. Etiam facilisis augue ligula, feugiat pellentesque nibh consectetur at. Maecenas sed justo lorem.",
+          "Talented voice-over artists add more sparkles to your video through their powerful voices. Our explainer video agency has voice-over artists who can speak in different accents and languages. You can choose any voice you like.",
       },
       {
         ImageOne: process6,
-        slideTitle: "Illustration",
+        slideTitle: "Animation",
         sliderDesc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et maximus nunc. Etiam facilisis augue ligula, feugiat pellentesque nibh consectetur at. Maecenas sed justo lorem.",
+          "At this stage, our innovative animators breathe life into your static illustrations. We bring together all the produced assets, including script, voice-over, and illustrations, to the table and convert them into a powerful, emotionally invoking animated story.",
       },
       {
         ImageOne: process7,
-        slideTitle: "Animation",
+        slideTitle: "Post-production",
         sliderDesc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et maximus nunc. Etiam facilisis augue ligula, feugiat pellentesque nibh consectetur at. Maecenas sed justo lorem.",
+          "Once your animated video is ready, it goes through the post-production phase. At this stage, we do some final-touch up and hand it over to the quality assurance team to ensure that everything is created with utmost perfection.",
       },
       {
         ImageOne: process8,
         slideTitle: "Sound Design",
         sliderDesc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et maximus nunc. Etiam facilisis augue ligula, feugiat pellentesque nibh consectetur at. Maecenas sed justo lorem.",
+          "To complement the voiceover, music is added to entice the audience even more. We add music to convey the emotional part of your message. Along with music, effects also elevate the overall viewer experience.",
       },
     ],
   }
