@@ -22,7 +22,7 @@ const Hero = ({ content }) => {
   return (
     <>
       <section
-        className={`w-full md:h-[100vh] flex items-center justify-start mt-0 md:mt-10 lg:mt-0  bg-none bg-no-repeat relative overflow-hidden z-1 top-[97px] lg:top-auto mb-10 xl:mb-0`}
+        className={`w-full md:h-[100vh] md:pb-0 pb-[100px] flex items-center justify-start mt-0 md:mt-10 lg:mt-0  bg-none bg-no-repeat relative overflow-hidden z-1 top-[97px] lg:top-auto mb-10 xl:mb-0`}
       >
         <div className="container">
           <div className="grid grid-cols-12">
@@ -56,38 +56,38 @@ const Hero = ({ content }) => {
                   href="javascript:void(Tawk_API.toggle())"
                 />
               </div>
-              <AutoScroll
-                wrapperClass="mt-[40px] border-t-2 border-gray-500 pt-4"
-                options={{ loop: true, align: "start" }}
-              >
-                {[
-                  icon1,
-                  icon2,
-                  icon3,
-                  icon4,
-                  icon5,
-                  icon6,
-                  icon7,
-                  icon1,
-                  icon2,
-                  icon3,
-                  icon4,
-                  icon5,
-                  icon6,
-                  icon7,
-                  icon1,
-                  icon2,
-                  icon3,
-                  icon4,
-                  icon5,
-                  icon6,
-                  icon7,
-                ].map((e, i) => (
-                  <div key={i} className="shrink-0 grow-0 basis-1/4 mr-5">
-                    <Image src={e} alt="logo" className="w-[70%]" priority />
-                  </div>
-                ))}
-              </AutoScroll>
+                <AutoScroll
+                  wrapperClass="mt-[40px] border-t-2 border-gray-500 pt-4 md:block hidden"
+                  options={{ loop: true, align: "start" }}
+                >
+                  {[
+                    icon1,
+                    icon2,
+                    icon3,
+                    icon4,
+                    icon5,
+                    icon6,
+                    icon7,
+                    icon1,
+                    icon2,
+                    icon3,
+                    icon4,
+                    icon5,
+                    icon6,
+                    icon7,
+                    icon1,
+                    icon2,
+                    icon3,
+                    icon4,
+                    icon5,
+                    icon6,
+                    icon7,
+                  ].map((e, i) => (
+                    <div key={i} className="shrink-0 grow-0 basis-1/4 mr-5">
+                      <Image src={e} alt="logo" className="w-[70%]" priority />
+                    </div>
+                  ))}
+                </AutoScroll>
             </div>
             {banImg ? (
               <div
