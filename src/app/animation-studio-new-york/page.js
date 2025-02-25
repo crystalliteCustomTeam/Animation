@@ -503,7 +503,7 @@ const LocationPage = () => {
 
   const processContent = {
     title: "Our <span class='text-primary-100'>Process</span>",
-    
+
     conceptContent: [
       {
         ImageOne: process1,
