@@ -16,7 +16,7 @@ import BannerImg from "media/location-page/austin.png"
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
 //================
-import body1 from "media/location-page/thumbnils/body1.jpg"
+import body1 from "media/location-page/new-thumbnails/1.jpg"
 import body2 from "media/location-page/thumbnils/body2.jpg"
 import body3 from "media/location-page/thumbnils/thumbnail6.jpg"
 

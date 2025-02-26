@@ -10,12 +10,12 @@ import { Fancybox as NativeFancybox } from "@fancyapps/ui"
 import "@fancyapps/ui/dist/fancybox/fancybox.css"
 // Import Images
 import PlayIcon from "media/icons/play.png"
-import thumbnail1 from "media/location-page/thumbnils/thumbnail1.jpg"
-import thumbnail2 from "media/location-page/thumbnils/thumbnail2.jpg"
-import thumbnail3 from "media/location-page/thumbnils/thumbnail3.jpg"
-import thumbnail4 from "media/location-page/thumbnils/thumbnail4.jpg"
-import thumbnail5 from "media/location-page/thumbnils/thumbnail5.jpg"
-import thumbnail6 from "media/location-page/thumbnils/thumbnail6.jpg"
+import thumbnail1 from "media/location-page/new-thumbnails/3.jpg"
+import thumbnail2 from "media/location-page/new-thumbnails/4.jpg"
+import thumbnail3 from "media/location-page/new-thumbnails/5.jpg"
+import thumbnail4 from "media/location-page/new-thumbnails/6.jpg"
+import thumbnail5 from "media/location-page/new-thumbnails/7.jpg"
+import thumbnail6 from "media/location-page/new-thumbnails/8.jpg"
 import CTA from "@/components/cta/CTA"
 
 const Services = ({ content }) => {

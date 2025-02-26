@@ -15,11 +15,12 @@ import BannerImg from "media/location-page/toronto.png"
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png"
 import body1 from "media/location-page/thumbnils/body1.jpg"
-import body2 from "media/location-page/thumbnils/body2new.png"
-import body3 from "media/location-page/thumbnils/body3new.png"
-import body4 from "media/location-page/thumbnils/body4new.png"
+import body2 from "media/location-page/new-thumbnails/11.jpg"
+import body3 from "media/location-page/new-thumbnails/10.jpg"
+import body4 from "media/location-page/new-thumbnails/12.jpg"
+import body5 from "media/location-page/new-thumbnails/13.jpg"
 import why1NY from "media/location-page/why3-ny.jpg"
-import why2NY from "media/location-page/why4-ny.jpg"
+import why2NY from "media/location-page/new-thumbnails/2.jpg"
 import process1 from "media/location-page/new-york/process/1.png"
 import process2 from "media/location-page/new-york/process/2.png"
 import process3 from "media/location-page/new-york/process/3.png"
@@ -209,7 +210,7 @@ const LocationPage = () => {
     para: "As technology evolves, animation continues to push the boundaries of creativity and innovation. Emerging trends like augmented reality (AR), virtual reality (VR), and AI-powered tools are revolutionizing the field, enabling studios to create immersive experiences that captivate audiences in new and exciting ways. At our studio, we embrace these advancements, ensuring your projects are not only cutting-edge but also aligned with the future of digital storytelling",
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
-    thumbnail: body3,
+    thumbnail: body5,
   }
   const Desc6 = {
     title: (

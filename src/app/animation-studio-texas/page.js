@@ -16,10 +16,11 @@ import BannerImg from "media/location-page/texas.png"
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png"
 //================
-import body1 from "media/location-page/thumbnils/body1.jpg"
-import body2 from "media/location-page/thumbnils/body2new.png"
-import body3 from "media/location-page/thumbnils/body3new.png"
-import body4 from "media/location-page/thumbnils/body4new.png"
+import body1 from "media/location-page/new-thumbnails/1.jpg"
+import body2 from "media/location-page/new-thumbnails/11.jpg"
+import body3 from "media/location-page/new-thumbnails/10.jpg"
+import body4 from "media/location-page/new-thumbnails/12.jpg"
+import body5 from "media/location-page/new-thumbnails/13.jpg"
 import Counter from "@/components/location-page/counter/counter"
 import Speedometer from "@/components/location-page/speedometer/speedometer"
 
@@ -54,7 +55,7 @@ import Thumnail28 from "media/thumbnails/hybrid/4.png"
 import Thumnail29 from "media/thumbnails/hybrid/5.png"
 import Thumnail30 from "media/thumbnails/hybrid/6.png"
 import why1NY from "media/location-page/why3-ny.jpg"
-import why2NY from "media/location-page/why4-ny.jpg"
+import why2NY from "media/location-page/new-thumbnails/2.jpg"
 import process1 from "media/location-page/new-york/process/1.png"
 import process2 from "media/location-page/new-york/process/2.png"
 import process3 from "media/location-page/new-york/process/3.png"
@@ -219,7 +220,7 @@ const LocationPage = () => {
     para: "In the rapidly evolving world of animation, staying ahead of industry trends is crucial. Our Texas-based studio embraces the latest advancements to deliver innovative and engaging content. From hyper-realistic 3D animations that captivate viewers with lifelike detail to AI-assisted techniques that enhance efficiency and creativity, we ensure your projects are at the forefront of technology. By integrating these trends, we create compelling narratives that resonate with modern audiences, setting your brand apart in a competitive market.",
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/950014379/rendition/720p/file.mp4?loc=external&log_user=0&signature=e8531345e63363850629261ac3d75f8bd50a9f7f735af57b7fa62aeaa973e202",
-    thumbnail: body3,
+    thumbnail: body5,
   }
   const Desc6 = {
     title: (
