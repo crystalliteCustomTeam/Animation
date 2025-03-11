@@ -53,8 +53,11 @@ const Form = () => {
     };
 
     useEffect(() => {
-        getIPData();
-        setPagenewurl(window.location.href);
+        const fetchData = async () => {
+            await getIPData();
+            setPagenewurl(window.location.href);
+        };
+        fetchData();
     }, []);
 
     const router = usePathname();
