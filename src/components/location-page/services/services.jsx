@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from "react"
+"use client"
+import { useEffect, useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
 // Import Slick Slider

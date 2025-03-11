@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from "react"
+"use client"
+import { useEffect, useRef } from "react"
 import Image from "next/image"
 import Link from "next/link"
 // Import Images
