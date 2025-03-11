@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default async function BlogsRelevant() {
     // =============== Post Data ===============
-    let featuredImageUrl = "https://inhouse.cryscampus.com/wordpress/animation/wp-admin/uploads/2023/08/moz-brand-authority-768x439-1.png";
+    let featuredImageUrl = "https://inhouse.pulse-force.com/wordpress/animation/wp-admin/uploads/2023/08/moz-brand-authority-768x439-1.png";
 
     const posts = await getPostList(); 
 
@@ -22,7 +22,7 @@ export default async function BlogsRelevant() {
                                     {post.featuredImage ? (
                                         <Image
                                             quality={75}
-                                            src={`https://inhouse.cryscampus.com/wordpress/animation/wp-content/uploads/${post.featuredImage.node.mediaDetails.file}`}
+                                            src={`https://inhouse.pulse-force.com/wordpress/animation/wp-content/uploads/${post.featuredImage.node.mediaDetails.file}`}
                                             alt="Infinity Animation"
                                             width={135}
                                             height={67}

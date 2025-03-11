@@ -3,7 +3,7 @@ import Image from "next/image";
 // ===== CSS
 import styles from "/styles/blogNew/InnerBanner.module.css"
 // ===== Components
-import { getSinglePost } from "../../../../lib/posts";
+import { getSinglePost } from "../../lib/posts";
 import BlogNavigation from "@/components/blogs-new/BlogNavigation";
 import BlogsRelevant from "@/components/blogs-new/BlogsRelevant";
 import BlogArticle from "@/components/blogs-new/BlogArticle";
@@ -82,7 +82,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
 
 export default async function Post({ params, searchParams }) {
     // =============== Post Data ===============
-    let featuredImageUrl = "https://inhouse.cryscampus.com/wordpress/animation/wp-admin/uploads/2023/08/moz-brand-authority-768x439-1.png";
+    let featuredImageUrl = "https://inhouse.pulse-force.com/wordpress/animation/wp-admin/uploads/2023/08/moz-brand-authority-768x439-1.png";
 
     const postData = await getSinglePost(params.postslug);
 
@@ -434,7 +434,7 @@ export default async function Post({ params, searchParams }) {
                                 <div className="col-span-12 lg:col-span-6 h-full">
                                     {postData.featuredImage ?
                                         (
-                                            <Image quality={75} src={`https://inhouse.cryscampus.com/wordpress/animation/wp-content/uploads/${postData.featuredImage.node.mediaDetails.file}`} alt="Infinity Animation" width={736} height={450} className="h-full rounded-[20px]" />
+                                            <Image quality={75} src={`https://inhouse.pulse-force.com/wordpress/animation/wp-content/uploads/${postData.featuredImage.node.mediaDetails.file}`} alt="Infinity Animation" width={736} height={450} className="h-full rounded-[20px]" />
                                         )
                                         :
                                         (
