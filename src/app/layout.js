@@ -52,9 +52,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${primary.variable} ${FontMono.variable}`}>
-        {/* <ConditionalLayout> */}
+        <ConditionalLayout>
           <main>{children}</main>
-        {/* </ConditionalLayout> */}
+        </ConditionalLayout>
       </body>
     </html>
   );
