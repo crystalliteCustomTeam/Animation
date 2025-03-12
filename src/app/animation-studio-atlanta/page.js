@@ -7,7 +7,7 @@ import Services from "@/components/location-page/services/services"
 import Description from "@/components/location-page/description/description"
 import Want from "@/components/location-page/want/Want"
 import Concept from "@/components/location-page/concept/Concept"
-import TestimonialNew from "@/components/location-page/testimonialNew/Testimonial"
+import TestimonialNew from "@/components/location-page/testimonial-new/testimonial-new"
 import Looking from "@/components/location-page/looking/Looking"
 import Contact from "@/components/location-page/contact/Contact"
 //==== Hero Images

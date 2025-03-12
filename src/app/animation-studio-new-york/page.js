@@ -15,7 +15,7 @@ import Portfolio from "@/components/portfolio/Portfolio"
 import Want from "@/components/location-page/want/Want"
 import FullContent1 from "@/components/location-page/fullcontent1/fullcontent1"
 import Concept from "@/components/location-page/concept/Concept"
-import TestimonialNew from "@/components/location-page/testimonialNew/Testimonial"
+import TestimonialNew from "@/components/location-page/testimonial-new/testimonial-new"
 import Looking from "@/components/location-page/looking/Looking"
 import Contact from "@/components/location-page/contact/Contact"
 //==== Hero Images
