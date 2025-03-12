@@ -99,7 +99,7 @@ const Hero = ({ content }) => {
                       src={topLeft}
                       priority
                       alt="Infinity Animation"
-                      className={`${styles.topLeft}`}
+                      className={`transition-all ease-in-out duration-500 ${styles.topLeft}`}
                     />
                   </div>
                   <div>
@@ -107,7 +107,7 @@ const Hero = ({ content }) => {
                       src={topRight}
                       priority
                       alt="Infinity Animation"
-                      className={`${styles.topRight}`}
+                      className={`transition-all ease-in-out duration-500 ${styles.topRight}`}
                     />
                   </div>
                 </div>
@@ -119,7 +119,7 @@ const Hero = ({ content }) => {
                     src={bottomRight}
                     priority
                     alt="Infinity Animation"
-                    className={`${styles.bottomRight}`}
+                    className={`transition-all ease-in-out duration-500 ${styles.bottomRight}`}
                   />
                 </div>
               </div>
