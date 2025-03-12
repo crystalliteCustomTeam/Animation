@@ -600,8 +600,8 @@ const LocationPage = () => {
       <div className="bg-black">
         <Hero content={hero} />
         <Description content={Desc1} />
-        {/* <Portfolio content={portfolio} />
-        <Process content={processContent} />
+        <Portfolio content={portfolio} />
+         {/* <Process content={processContent} />
         <Why content={why2} />
         <Pricing content={pricing} />
         <Description content={Desc2} />
