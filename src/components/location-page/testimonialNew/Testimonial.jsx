@@ -177,16 +177,6 @@ function TestimonialNew({ content }) {
         return <div ref={containerRef}>{props.children}</div>;
     }
 
-    // video code start
-    const handleVideoPlay = (e) => {
-        const video = e.currentTarget.querySelector('video');
-        video.play();
-    };
-    const handleVideoPause = (e) => {
-        const video = e.currentTarget.querySelector('video');
-        video.pause();
-    };
-
     return (
         <section className="w-full mb-10 md:mb-0 py-6 md:py-12 lg:py-16 justify-center relative">
             <div className="container">
@@ -209,7 +199,7 @@ function TestimonialNew({ content }) {
                                     <div className=" h-full group mb-8 mx-2">
                                         <div className='flex bg-[#D60925]  rounded-[25px] mx-4 ps-[15px] pe-[10px] pt-[15px] md:px-[25px] md:py-[35px]'>
                                             {testimonial.video ? (
-                                                <Link href={testimonial.video} datafancybox="gallery" onMouseEnter={handleVideoPlay} onMouseLeave={handleVideoPause}>
+                                                <Link href={testimonial.video} datafancybox="gallery">
                                                     <div className='w-[100px] sm:w-[155px] h-[155px] md:w-[180px] md:h-[184px] box-testi '>
                                                         <div className='w-[100px] sm:w-[145px] h-[150px] md:w-[175px] md:h-[180px]  flex justify-center items-center  overlay-div-testi '>
                                                             <video loading="lazy" muted loop preload="auto" autoPlay={false} className="rounded-[12px] w-[150px] h-full object-cover " >
