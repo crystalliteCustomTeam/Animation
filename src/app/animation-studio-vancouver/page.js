@@ -610,8 +610,8 @@ const LocationPage = () => {
         <Description content={Desc4} />
         <Description content={Desc5} />
         <TestimonialNew content={testimonialNew} />
-        <Looking content={looking} />
-        <Contact /> */}
+        <Looking content={looking} />*/}
+        <Contact /> 
       </div>
     </>
   )
