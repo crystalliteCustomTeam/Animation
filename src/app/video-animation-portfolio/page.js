@@ -6,7 +6,7 @@ import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
 import Portfolio from '@/components/portfolio/Portfolio';
 import Want from '@/components/want/Want';
-import TestimonialNew from '@/components/testimonialNew/Testimonial';
+import TestimonialNew from '@/components/location-page/testimonial-new/testimonial-new';
 import Contact from '@/components/contact/Contact';
 //==== Testimonial Images
 import icon2 from "media/icons/stars.png";

@@ -8,7 +8,7 @@ import BlogNavigation from "@/components/blogs-new/BlogNavigation";
 import BlogsRelevant from "@/components/blogs-new/BlogsRelevant";
 import BlogArticle from "@/components/blogs-new/BlogArticle";
 import Portfolio from "@/components/portfolio/Portfolio";
-import Testimonial from '@/components/testimonialNew/Testimonial';
+import Testimonial from '@/components/location-page/testimonial-new/testimonial-new';
 import Looking from '@/components/location-page/looking/Looking';
 // ===== Image
 import Profile from "media/inner-blogs/profile-hero.svg"

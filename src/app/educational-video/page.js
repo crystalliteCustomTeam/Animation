@@ -9,7 +9,7 @@ import Company from '@/components/company/Company';
 import Portfolio from '@/components/portfolio/Portfolio';
 import BuzzFlick from "@/components/buzzflick/Buzzflick";
 import Production from "@/components/productionprocess/Production";
-import TestimonialNew from '@/components/testimonialNew/Testimonial';
+import TestimonialNew from '@/components/location-page/testimonial-new/testimonial-new';
 import Faqs from "@/components/faqs/Faqs";
 import Contact from '@/components/contact/Contact';
 // Import Images
