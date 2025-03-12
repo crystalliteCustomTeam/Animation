@@ -601,7 +601,7 @@ const LocationPage = () => {
         <Hero content={hero} />
         <Description content={Desc1} />
         <Portfolio content={portfolio} />
-         {/* <Process content={processContent} />
+         <Process content={processContent} />
         <Why content={why2} />
         <Pricing content={pricing} />
         <Description content={Desc2} />
@@ -610,7 +610,7 @@ const LocationPage = () => {
         <Description content={Desc4} />
         <Description content={Desc5} />
         <TestimonialNew content={testimonialNew} />
-        <Looking content={looking} />*/}
+        <Looking content={looking} />
         <Contact /> 
       </div>
     </>
