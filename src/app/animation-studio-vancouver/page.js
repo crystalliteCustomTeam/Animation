@@ -70,6 +70,7 @@ import Thumnail27 from "media/thumbnails/hybrid/3.png"
 import Thumnail28 from "media/thumbnails/hybrid/4.png"
 import Thumnail29 from "media/thumbnails/hybrid/5.png"
 import Thumnail30 from "media/thumbnails/hybrid/6.png"
+import TestimonialNew2 from "@/components/location-page/testimonial-new/testimonial-new"
 
 const LocationPage = () => {
   //=====Banner Fold=====//
@@ -609,7 +610,8 @@ const LocationPage = () => {
         <Description content={Desc3} />
         <Description content={Desc4} />
         <Description content={Desc5} />
-        <TestimonialNew content={testimonialNew} />
+        <TestimonialNew2/>
+        {/* <TestimonialNew content={testimonialNew} /> */}
         <Looking content={looking} />
         <Contact /> 
       </div>
