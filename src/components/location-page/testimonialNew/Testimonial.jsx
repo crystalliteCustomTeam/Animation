@@ -152,33 +152,33 @@ const testiContentNew2 = [
 
 function TestimonialNew({ content }) {
   const { title, para } = content
-  const testiSlider = {
-    dots: false,
-    arrows: true,
-    infinite: false,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    speed: 3000,
-    slidesToShow: 2,
-    rows: 1,
-    slidesPerRow: 2,
-    adaptiveHeight: true,
-    responsive: [
-      {
-        breakpoint: 1600,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesPerRow: 1,
-        },
-      },
-    ],
-  }
+//   const testiSlider = {
+//     dots: false,
+//     arrows: true,
+//     infinite: false,
+//     autoplay: false,
+//     autoplaySpeed: 2000,
+//     speed: 3000,
+//     slidesToShow: 2,
+//     rows: 1,
+//     slidesPerRow: 2,
+//     adaptiveHeight: true,
+//     responsive: [
+//       {
+//         breakpoint: 1600,
+//         settings: {
+//           slidesToShow: 2,
+//         },
+//       },
+//       {
+//         breakpoint: 1024,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesPerRow: 1,
+//         },
+//       },
+//     ],
+//   }
 
   // ======== FancyBox
   function Fancybox(props) {
@@ -214,7 +214,8 @@ function TestimonialNew({ content }) {
           </div>
 
           <div className="mt-[25px] md:mx-[25px]">
-            <Slider {...testiSlider} className="newvideoSlider">
+            {/* <Slider {...testiSlider} className="newvideoSlider"> */}
+            <div className="grid grid-cols-2 overflow-x-auto">
               {testiContentNew2.map((testimonial, index) => (
                 <Fancybox
                   options={{ Carousel: { infinite: false } }}
@@ -286,7 +287,8 @@ function TestimonialNew({ content }) {
                   </div>
                 </Fancybox>
               ))}
-            </Slider>
+              </div>
+            {/* </Slider> */}
           </div>
         </div>
       </div>
