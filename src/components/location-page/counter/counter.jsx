@@ -6,7 +6,7 @@ export default function Counter() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-5 md:grid-cols-4 font-sans md:divide-x-2 text-center xl:text-left">
             {[
               ["200+", "Animators and Game <br/> Development Artists"],
-              ["6", "Yeare of <br> Experience"],
+              ["6", "Years of <br> Experience"],
               ["16", "Month Average <br> Partnerships"],
               ["72%", "Repeat <br> Clientele"],
             ].map(([num, txt], i) => (

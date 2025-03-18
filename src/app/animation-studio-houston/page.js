@@ -115,10 +115,7 @@ const LocationPage = () => {
   const hero = {
     title: (
       <>
-        Top Animation Studio
-        <span className="text-primary-100">
-          Animation <br /> Studio{" "}
-        </span>
+        Top  <span className="text-primary-100"> Animation <br /> Studio</span>
         In Houston
       </>
     ),
