@@ -10,6 +10,23 @@ import Link from "next/link"
 const Speedometer = ({
   title = `<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in New York <br /> </span>  With Diverse Services`,
   desc = "Our NYC animation studio offers a wide range of services to cater to diverse industries. From creating stunning character animations to producing informative explainer videos, we leverage cutting-edge tools and techniques to ensure the highest quality. Partner with us to transform your ideas into dynamic visual stories.",
+  list1 = [
+    ["2D Animation Services"],
+    ["3D Animation Services"],
+    ["Motion Graphics Services"],
+    ["Training Video Production"],
+    ["Professional Video Editing Services"],
+    ["Educational Video"],
+  ],
+  list2 = [
+    ["Custom-Made Graphics & illustrations"],
+    ["Explainer Videos"],
+    ["Video Marketing"],
+    ["Video Editing Services"],
+    ["Promotional Video Production"],
+    ["Corporate Video Production"],
+  ],
+  extra_para = null
 }) => {
   return (
     <>
@@ -21,10 +38,13 @@ const Speedometer = ({
                 className={`text-[30px] md:text-[50px] xl:text-[46px] 2xl:text-[60px] font-semibold font-sans leading-tight mb-5`}
                 dangerouslySetInnerHTML={{ __html: title }}
               />
-              <p className="text-[15px] lg:text-[16px] font-normal font-sans leading-normal tracking-wider mb-5">
+              <p className="text-[15px] lg:text-[16px] font-normal font-sans leading-normal tracking-wider">
                 {desc}
               </p>
-              <div className="flex gap-6">
+              {extra_para && <p className="text-[15px] lg:text-[16px] font-normal font-sans leading-normal tracking-wider mt-3">
+                {extra_para}
+              </p>}
+              <div className="flex gap-6 mt-5">
                 <CTA
                   text="Get Started"
                   icon="/icons/arrow-red.png"
@@ -46,43 +66,29 @@ const Speedometer = ({
                 />
               </div>
             </div>
-            <div className="col-span-12 lg:col-span-6 max-w-[600px] mx-auto mt-10 lg:mt-0 grid grid-cols-2 font-sans">
-              <ul className="">
-                {[
-                  ["2D Animation Services"],
-                  ["3D Animation Services"],
-                  ["Motion Graphics Services"],
-                  ["Training Video Production"],
-                  ["Professional Video Editing Services"],
-                  ["Educational Video"],
-                ].map(([text], i) => (
-                  <li
+            <div className="col-span-12 lg:col-span-6 max-w-[600px] mx-auto mt-10 lg:mt-0 grid grid-cols-2 font-sans gap-x-3">
+              <div className="">
+                {list1.map(([text], i) => (
+                  <div
                     key={i}
                     className="flex items-start mb-5 transaction-all ease-in-out duration-300 hover:text-primary-100 gap-x-2 text-[15px] lg:text-[16px] leading-tight"
                   >
                     <Image src={Icon} alt="icon" className="shrink-0" />
-                    <span>{text}</span>
-                  </li>
+                    <h3>{text}</h3>
+                  </div>
                 ))}
-              </ul>
-              <ul className="">
-                {[
-                  ["Custom-Made Graphics & illustrations"],
-                  ["Explainer Videos"],
-                  ["Video Marketing"],
-                  ["Video Editing Services"],
-                  ["Promotional Video Production"],
-                  ["Corporate Video Production"],
-                ].map(([text], i) => (
-                  <li
+              </div>
+              <div className="">
+                {list2.map(([text], i) => (
+                  <div
                     key={i}
                     className="flex items-start mb-5 transaction-all ease-in-out duration-300 hover:text-primary-100 gap-x-2 text-[15px] lg:text-[16px] leading-tight"
                   >
                     <Image src={Icon} alt="icon" className="shrink-0" />
-                    <span>{text}</span>
-                  </li>
+                    <h3>{text}</h3>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
         </div>

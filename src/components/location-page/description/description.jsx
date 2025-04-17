@@ -88,25 +88,20 @@ function Description({ content }) {
             >
               {title}
             </h2>
-            <p className="text-[15px] lg:text-[16px] text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-start ">
-              {para}
-            </p>
+            <p className="text-[15px] lg:text-[16px] text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-start " dangerouslySetInnerHTML={{ __html: para }} />
             {downArrow && (
               <div
-                className={`flex items-center w-[98%] md:w-full h-[70px] mt-[35px] ${
-                  downArrow === "start" && "justify-start border-l-2 "
-                } ${
-                  downArrow === "end" && "justify-end border-r-2"
-                }  border-gray-500`}
+                className={`flex items-center w-[98%] md:w-full h-[70px] mt-[35px] ${downArrow === "start" && "justify-start border-l-2 "
+                  } ${downArrow === "end" && "justify-end border-r-2"
+                  }  border-gray-500`}
               >
                 <Image
                   src={DescDot}
                   alt="Infinity Animations"
                   width="25px"
                   height="25px"
-                  className={`${downArrow === "start" && "ms-[-18px]"} ${
-                    downArrow === "end" && "me-[-18px]"
-                  }`}
+                  className={`${downArrow === "start" && "ms-[-18px]"} ${downArrow === "end" && "me-[-18px]"
+                    }`}
                 />
               </div>
             )}

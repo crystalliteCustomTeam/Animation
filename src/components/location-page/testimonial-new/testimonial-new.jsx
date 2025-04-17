@@ -21,7 +21,7 @@ import Thumbnail7 from "media/location-page/thumbnils/thumbnail13.png"
 import Thumbnail8 from "media/location-page/thumbnils/thumbnail14.png"
 import Thumbnail9 from "media/location-page/thumbnils/thumbnail15.png"
 import PlayIcon from "media/play_icon.png"
-const TestimonialNew2 = () => {
+const TestimonialNew2 = ({title = "Client Testimonials: Our Work Speaks for Itself", para = "Achieved 1000+ Impactful Results That Speak our Credibility"}) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true })
 
   const {
@@ -137,12 +137,12 @@ const TestimonialNew2 = () => {
     <section>
       <div className="py-[50px]">
         <div className="container">
-          <div className="text-center max-w-[650px] mx-auto md:pb-[80px] pb-[50px]">
+          <div className="text-center max-w-[700px] mx-auto md:pb-[80px] pb-[50px]">
             <h2 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5 capitalize">
-              Client Testimonials: Our Work Speaks for Itself
+              {title}
             </h2>
             <p className="text-[15px] lg:text-[16px] font-sans font-normal tracking-wider mb-0">
-              Achieved 1000+ Impactful Results That Speak our Credibility
+              {para}
             </p>
           </div>
           <div className={styles.embla}>

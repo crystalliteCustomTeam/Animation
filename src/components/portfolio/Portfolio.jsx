@@ -14,7 +14,7 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css"
 import PlayIcon from "media/icons/play.png"
 
 const Portfolio = ({ content }) => {
-    const { title, subtitle, para, tabInfo, tabContents } = content;
+    const { title, subtitle, tabInfo, tabContents } = content;
     //Tabs
     const [activeTab, setActiveTab] = useState(0);
     const handleTabClick = (index) => {
@@ -65,9 +65,9 @@ const Portfolio = ({ content }) => {
                             <h2 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight my-2">
                                 {title}
                             </h2>
-                            <p className="w-full md:w-[80%] mx-auto text-[14px] sm:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
-                                {para}
-                            </p>
+                            {content.para && <p className="w-full md:w-[80%] mx-auto text-[14px] sm:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
+                                {content.para}
+                            </p>}
                         </div>
                     </div>
                     <div className={`"mt-8 md:mt-12`}>
