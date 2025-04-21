@@ -230,7 +230,7 @@ const LocationPage = () => {
   //=====Description Fold=====//
   const why1 = {
     title: "Why Animated Videos Are the Future of Marketing?",
-    para: "<p class='font-semibold text-[18px]'>According to research  <span class='text-[50px] text-primary-100'>96%</span>  buyers watch animated explainer videos to get the details of a product they want to buy.</p><p>People love watching videos online and animated videos especially explainers are ideal to tell your brand as well as product’s story in a creative way.</p><p>Watch Randy Biddle as he dissects how exactly an explainer video production company can help you achieve that.</p>",
+    para: "<p className='font-semibold text-[18px]'>According to research  <span className='text-[50px] text-primary-100'>96%</span>  buyers watch animated explainer videos to get the details of a product they want to buy.</p><p>People love watching videos online and animated videos especially explainers are ideal to tell your brand as well as product’s story in a creative way.</p><p>Watch Randy Biddle as he dissects how exactly an explainer video production company can help you achieve that.</p>",
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/1059809262/rendition/720p/file.mp4?loc=external&log_user=0&signature=016810458c9de0e7ccaf44d254900d7c4a14883c6e461b7ae9c4d02031ebda85&user_id=157924231",
     thumbnail: why1NY,
@@ -238,7 +238,7 @@ const LocationPage = () => {
   }
   const why2 = {
     title:
-      "Let’s Create Out-of-This-World Animations with <span class='text-primary-100'>Infinity Animation</span>",
+      "Let’s Create Out-of-This-World Animations with <span className='text-primary-100'>Infinity Animation</span>",
     para: "<p>Innovation drives our success. We use state-of-the-art software and equipment to deliver top-notch animations that stand out in a competitive market. From 3D modeling to real-time rendering, our technological prowess ensures every project is a masterpiece. This commitment to quality is what makes us a trusted name among animation companies in Chicago.</p><p>This advanced technology translates directly into tangible benefits for our clients. By utilizing efficient workflows and powerful rendering capabilities, we can deliver high-quality animations within competitive timelines and budgets. Furthermore, our expertise with these tools allows us to offer a wider range of creative possibilities, from stylized 2D animation to complex 3D simulations. </p>",
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/957421481/rendition/1080p/file.mp4?loc=external&signature=86ac3cb322c1e2b1362be1142336b0c0c934d1bd690878be22291aedce926ea4&user_id=214166356",
@@ -508,7 +508,7 @@ const LocationPage = () => {
   }
 
   const processContent = {
-    title: "Our <span class='text-primary-100'>Process</span>",
+    title: "Our <span className='text-primary-100'>Process</span>",
     
     conceptContent: [
       {
@@ -593,7 +593,7 @@ const LocationPage = () => {
               <>
                 <HeroBottom />
                 <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Chicago <br /> </span>  With Diverse Services'
+                  title='<span className="text-primary-100">Best</span> Video Animation <br /> Company <span className="text-primary-100"> in Chicago <br /> </span>  With Diverse Services'
                   desc="Chicago is a city known for its creativity and energy, and we mirror that spirit in everything we do. Our team—comprising some of the best talents in the Chicago animation studio space—is dedicated to crafting animations that align with your goals. we offer:"
                 />
                 <Counter />

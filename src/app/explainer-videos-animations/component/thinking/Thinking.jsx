@@ -43,8 +43,8 @@ const Video = () => {
     return (
         <>
             <section className={`newcon newreactslide ${styles.display}`}>
-                <div class={`container mx-auto ${styles.pointer} `}>
-                    <div class={`md:grid md:grid-cols-1`}>
+                <div className={`container mx-auto ${styles.pointer} `}>
+                    <div className={`md:grid md:grid-cols-1`}>
                         <div className={styles.element}>
                             <h3 className={`fontsfpro mb-0 ${styles.heading}`}>How <span className="colorred2">Our </span>
                                 Clients Are <span className="colorred2">Thanking Us </span> </h3>

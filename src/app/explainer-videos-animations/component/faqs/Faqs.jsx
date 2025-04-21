@@ -28,8 +28,8 @@ const Video = ({ content }) => {
     return (
         <>
             <section className={`newcon ${styles.display}`}>
-                <div class={`container mx-auto ${styles.pointer} `}>
-                    <div class={`md:grid md:grid-cols-1`}>
+                <div className={`container mx-auto ${styles.pointer} `}>
+                    <div className={`md:grid md:grid-cols-1`}>
                         <div className={styles.element}>
                             <h3 className={`fontsfpro mb-0 ${styles.heading}`}>FAQS</h3>
                             <p className={styles.wordsmost4}> For our customers, we
@@ -41,8 +41,8 @@ const Video = ({ content }) => {
                         </div>
                     </div>
                 </div>
-                <div class={`container mx-auto ${styles.pointer} `}>
-                    <div class={`md:grid md:grid-cols-2 gap-5`}>
+                <div className={`container mx-auto ${styles.pointer} `}>
+                    <div className={`md:grid md:grid-cols-2 gap-5`}>
                         <div>
                             {accordionData1.map((item, index) => (
                                 <div key={index} className={`py-1 ${activeIndex1 === index ? 'border-white' : ' border-white'} border-b-2`}>

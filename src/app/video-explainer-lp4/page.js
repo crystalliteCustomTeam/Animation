@@ -126,25 +126,25 @@ const Video = () => {
     [
       {
         title: <>Turn Complexity into Clarity with <br className="xl:block hidden" /> Animated Explainer Videos</>,
-        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]">
-        <p class='mb-[20px]'>Our animated explainer videos make even the most complex ideas easy to understand. We help your audience grasp your message quickly, boosting engagement and conversion. With visually appealing and concise storytelling, your business can stand out, leaving a lasting impression. Get your message across effectively with a professional explainer video.</p>
+        content: `<div className="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]">
+        <p className='mb-[20px]'>Our animated explainer videos make even the most complex ideas easy to understand. We help your audience grasp your message quickly, boosting engagement and conversion. With visually appealing and concise storytelling, your business can stand out, leaving a lasting impression. Get your message across effectively with a professional explainer video.</p>
         </div>`,
       },
     ],
     [
       {
         title: <>Animated Explainer Videos<br className="xl:block hidden" /> That Help Your Brand Grow and Succeed</>,
-        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]">
-        <p class='mb-[20px]'>Struggling to communicate complex ideas clearly? At infinity animations, We transform complicated concepts into simple, engaging animated explainer videos services, Our videos breakdown difficult topics, ensuring your audience understands your message with ease, increasing engagement, and driving conversions. Let us simplify your communication for maximum impact.</p>
+        content: `<div className="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]">
+        <p className='mb-[20px]'>Struggling to communicate complex ideas clearly? At infinity animations, We transform complicated concepts into simple, engaging animated explainer videos services, Our videos breakdown difficult topics, ensuring your audience understands your message with ease, increasing engagement, and driving conversions. Let us simplify your communication for maximum impact.</p>
        </div>`,
       },
     ],
     [
       {
         title: <>Animated Videos Services<br className="xl:block hidden" />That Increase Your Revenue</>,
-        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]">
-        <p class='mb-[20px]'>Navigating the challenge of conveying complex ideas can be daunting, but with Infinity Animations, it's a breeze. We specialize in transforming intricate concepts into clear, compelling animated explainer videos that capture attention and drive results.</p>
-        <ul class="list-disc ml-[20px] mb-[20px]">
+        content: `<div className="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]">
+        <p className='mb-[20px]'>Navigating the challenge of conveying complex ideas can be daunting, but with Infinity Animations, it's a breeze. We specialize in transforming intricate concepts into clear, compelling animated explainer videos that capture attention and drive results.</p>
+        <ul className="list-disc ml-[20px] mb-[20px]">
         <li><strong>Clear Communication:</strong> We simplify your message, ensuring your audience grasps your ideas effortlessly.</li>
         <li><strong>Enhanced Engagement:</strong> Our videos are designed to captivate and maintain viewer interest.</li>
         <li><strong>Increased Conversions:</strong> Effective storytelling leads to higher engagement and better conversion rates.</li>
@@ -155,9 +155,9 @@ const Video = () => {
     [
       {
         title: <>Partner with a Trusted<br className="xl:block hidden" />Video Animation Company</>,
-        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]">
-        <p class='mb-[20px]'>At Infinity Animations, we understand that effective communication is crucial for success. Our video animation services are designed to deliver tangible results by turning complex ideas into impactful, easy-to-understand visuals.</p>
-        <ul class="list-disc ml-[20px] mb-[20px]">
+        content: `<div className="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]">
+        <p className='mb-[20px]'>At Infinity Animations, we understand that effective communication is crucial for success. Our video animation services are designed to deliver tangible results by turning complex ideas into impactful, easy-to-understand visuals.</p>
+        <ul className="list-disc ml-[20px] mb-[20px]">
         <li><strong>Proven Impact:</strong> Our animations are crafted to not only simplify your message but also enhance audience engagement and drive action.</li>
         <li><strong>Custom Solutions:</strong> We customize each project to meet your specific needs, ensuring that your unique message is communicated effectively.</li>
         <li><strong>Measurable Outcomes:</strong> Our focus is on results. From increased viewer retention to higher conversion rates, our videos are designed to achieve your business goals.</li>
@@ -168,9 +168,9 @@ const Video = () => {
     [
       {
         title: <>Video Animation Company<br className="xl:block hidden" /> That Delivers Results</>,
-        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]">
-        <p class='mb-[20px]'>At Infinity Animations, we understand that effective communication is crucial for success. Our video animation services are designed to deliver tangible results by turning complex ideas into impactful, easy-to-understand visuals.</p>
-        <ul class="list-disc ml-[20px] mb-[20px]">
+        content: `<div className="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]">
+        <p className='mb-[20px]'>At Infinity Animations, we understand that effective communication is crucial for success. Our video animation services are designed to deliver tangible results by turning complex ideas into impactful, easy-to-understand visuals.</p>
+        <ul className="list-disc ml-[20px] mb-[20px]">
         <li><strong>Proven Impact:</strong>Our animations are crafted to not only simplify your message but also enhance audience engagement and drive action.</li>
         <li><strong>Custom Solutions:</strong>We customize each project to meet your specific needs, ensuring that your unique message is communicated effectively.</li>
         <li><strong>Measurable Outcomes:</strong>Our focus is on results. From increased viewer retention to higher conversion rates, our videos are designed to achieve your business goals.</li>
@@ -181,9 +181,9 @@ const Video = () => {
     [
       {
         title: <>Your Go-To Video Animation Company <br className="xl:block hidden" /> for High-Converting Content</>,
-        content: `<div class="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]">
-        <p class='mb-[20px]'>Looking for video content that drives results? At Infinity Animations, we specialize in creating high-converting animated videos that captivate your audience and boost your business performance.</p>
-        <ul class="list-disc ml-[20px] mb-[20px]">
+        content: `<div className="montserrat text-[12px] xl:text-[14px] text-justify md:text-left font-normal text-black leading-[25px]">
+        <p className='mb-[20px]'>Looking for video content that drives results? At Infinity Animations, we specialize in creating high-converting animated videos that captivate your audience and boost your business performance.</p>
+        <ul className="list-disc ml-[20px] mb-[20px]">
         <li><strong>High-Impact Visuals:</strong>Our animations are designed to capture attention and convey your message clearly, making a lasting impression on your audience.</li>
         <li><strong>Conversion-Focused:</strong>We craft each video with a strategic focus on driving conversions, ensuring that your content not only engages but also motivates action.</li>
         <li><strong>Expert Craftsmanship:</strong>With our experienced team and innovative techniques, we turn complex.</li>

@@ -270,7 +270,7 @@ const LocationPage = () => {
   //=====Description Fold=====//
   const why1 = {
     title: "Why Animated Videos Are the Future of Marketing?",
-    para: "<p class='font-semibold text-[18px]'>According to research  <span class='text-[50px] text-primary-100'>96%</span>  buyers watch animated explainer videos to get the details of a product they want to buy.</p><p>People love watching videos online and animated videos especially explainers are ideal to tell your brand as well as product’s story in a creative way.</p><p>Watch Randy Biddle as he dissects how exactly an explainer video production company can help you achieve that.</p>",
+    para: "<p className='font-semibold text-[18px]'>According to research  <span className='text-[50px] text-primary-100'>96%</span>  buyers watch animated explainer videos to get the details of a product they want to buy.</p><p>People love watching videos online and animated videos especially explainers are ideal to tell your brand as well as product’s story in a creative way.</p><p>Watch Randy Biddle as he dissects how exactly an explainer video production company can help you achieve that.</p>",
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/1059809262/rendition/720p/file.mp4?loc=external&log_user=0&signature=016810458c9de0e7ccaf44d254900d7c4a14883c6e461b7ae9c4d02031ebda85&user_id=157924231",
     thumbnail: why1NY,
@@ -278,7 +278,7 @@ const LocationPage = () => {
   }
   const why2 = {
     title:
-      "Let’s Create Out-of-This-World Animations with <span class='text-primary-100'>Infinity Animation</span>",
+      "Let’s Create Out-of-This-World Animations with <span className='text-primary-100'>Infinity Animation</span>",
     para: "<p>At our Orlando animation studios, we understand the importance of efficiency and transparency in animation production. Our local presence in Orlando allows us to offer seamless communication and fast turnaround times.</p><p>Whether you're launching a new marketing campaign, producing an animated explainer video, or developing an educational series, we ensure every step of the process aligns with your expectations. With a client-first approach, we guarantee smooth collaboration, timely updates, and revisions based on your feedback.</p><p>By choosing us, you’re partnering with a team committed to delivering animation that not only meets but exceeds your expectations.</p>",
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/957421481/rendition/1080p/file.mp4?loc=external&signature=86ac3cb322c1e2b1362be1142336b0c0c934d1bd690878be22291aedce926ea4&user_id=214166356",
@@ -551,7 +551,7 @@ Explore our work and see the difference professional animation makes.
   }
 
   const processContent = {
-    title: "Our <span class='text-primary-100'>Process</span>",
+    title: "Our <span className='text-primary-100'>Process</span>",
     
     conceptContent: [
       {
@@ -637,7 +637,7 @@ Explore our work and see the difference professional animation makes.
                 {/* <BannerContact content={bannerContact} /> */}
                 <HeroBottom />
                 <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Orlando <br /> </span>  With Diverse Services'
+                  title='<span className="text-primary-100">Best</span> Video Animation <br /> Company <span className="text-primary-100"> in Orlando <br /> </span>  With Diverse Services'
                   desc="As one of the top animation companies in Orlando, FL, we provide a diverse range of animation services tailored to meet your specific needs. Our animations elevate brands, enhance storytelling, and simplify complex concepts. Partner with us and experience high-quality production that aligns perfectly with your vision."
                 />
                 <Counter />

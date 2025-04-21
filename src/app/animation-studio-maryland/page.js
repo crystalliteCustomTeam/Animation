@@ -241,7 +241,7 @@ const LocationPage = () => {
   //=====Description Fold=====//
   const why1 = {
     title: "Why Animated Videos Are the Future of Marketing?",
-    para: "<p class='font-semibold text-[18px]'>According to research  <span class='text-[50px] text-primary-100'>96%</span>  buyers watch animated explainer videos to get the details of a product they want to buy.</p><p>People love watching videos online and animated videos especially explainers are ideal to tell your brand as well as product’s story in a creative way.</p><p>Watch Randy Biddle as he dissects how exactly an explainer video production company can help you achieve that.</p>",
+    para: "<p className='font-semibold text-[18px]'>According to research  <span className='text-[50px] text-primary-100'>96%</span>  buyers watch animated explainer videos to get the details of a product they want to buy.</p><p>People love watching videos online and animated videos especially explainers are ideal to tell your brand as well as product’s story in a creative way.</p><p>Watch Randy Biddle as he dissects how exactly an explainer video production company can help you achieve that.</p>",
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/1059809262/rendition/720p/file.mp4?loc=external&log_user=0&signature=016810458c9de0e7ccaf44d254900d7c4a14883c6e461b7ae9c4d02031ebda85&user_id=157924231",
     thumbnail: why1NY,
@@ -249,7 +249,7 @@ const LocationPage = () => {
   }
   const why2 = {
     title:
-      "Let’s Create Out-of-This-World Animations with <span class='text-primary-100'>Infinity Animation</span>",
+      "Let’s Create Out-of-This-World Animations with <span className='text-primary-100'>Infinity Animation</span>",
     para: "<p>At Infinity Animation, we understand that effective project management is crucial to delivering high-quality animation that aligns with your vision. Our local presence in Maryland enables us to offer agile project management, ensuring that your project progresses smoothly and efficiently.</p><p>Being situated in Maryland allows us to collaborate closely with our clients. This close proximity facilitates face-to-face meetings, fostering clear and open communication. Whether you need to discuss a new idea or implement a quick change, our team is readily available to accommodate your schedule. This accessibility ensures that your project stays on track and any adjustments are made promptly</p><p>Choosing Infinity Animation means partnering with a team dedicated not only to your project's success but also to the prosperity of our local Maryland community. We take pride in contributing to the local economy and fostering creative growth within the region.</p><p>By collaborating with us, you're investing in a partnership that values quality, efficiency, and community. Let's bring your vision to life, right here in Maryland</p>",
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/957421481/rendition/1080p/file.mp4?loc=external&signature=86ac3cb322c1e2b1362be1142336b0c0c934d1bd690878be22291aedce926ea4&user_id=214166356",
@@ -519,7 +519,7 @@ const LocationPage = () => {
   }
 
   const processContent = {
-    title: "Our <span class='text-primary-100'>Process</span>",
+    title: "Our <span className='text-primary-100'>Process</span>",
     
     conceptContent: [
       {
@@ -605,7 +605,7 @@ const LocationPage = () => {
                 {/* <BannerContact content={bannerContact} /> */}
                 <HeroBottom />
                 <Speedometer
-                  title='<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in Maryland   <br /> </span>  With Diverse Services'
+                  title='<span className="text-primary-100">Best</span> Video Animation <br /> Company <span className="text-primary-100"> in Maryland   <br /> </span>  With Diverse Services'
                   desc="Our animation studio offers a wide range of services to cater to diverse industries. From creating stunning character animations to producing informative explainer videos, we leverage cutting-edge tools and techniques to ensure the highest quality. Partner with us to transform your ideas into dynamic visual stories."
                 />
                 <Counter />

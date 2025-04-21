@@ -8,7 +8,7 @@ import Icon from "media/icons/check-img.png"
 import Link from "next/link"
 
 const Speedometer = ({
-  title = `<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in New York <br /> </span>  With Diverse Services`,
+  title = `<span className="text-primary-100">Best</span> Video Animation <br /> Company <span className="text-primary-100"> in New York <br /> </span>  With Diverse Services`,
   desc = "Our NYC animation studio offers a wide range of services to cater to diverse industries. From creating stunning character animations to producing informative explainer videos, we leverage cutting-edge tools and techniques to ensure the highest quality. Partner with us to transform your ideas into dynamic visual stories.",
   list1 = [
     ["2D Animation Services"],

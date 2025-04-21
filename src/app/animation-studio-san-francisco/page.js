@@ -249,7 +249,7 @@ const LocationPage = () => {
   //=====Description Fold=====//
   const why1 = {
     title: "Why Animated Videos Are the Future of Marketing?",
-    para: "<p class='font-semibold text-[18px]'>According to research  <span class='text-[50px] text-primary-100'>96%</span>  buyers watch animated explainer videos to get the details of a product they want to buy.</p><p>People love watching videos online and animated videos especially explainers are ideal to tell your brand as well as product’s story in a creative way.</p><p>Watch Randy Biddle as he dissects how exactly an explainer video production company can help you achieve that.</p>",
+    para: "<p className='font-semibold text-[18px]'>According to research  <span className='text-[50px] text-primary-100'>96%</span>  buyers watch animated explainer videos to get the details of a product they want to buy.</p><p>People love watching videos online and animated videos especially explainers are ideal to tell your brand as well as product’s story in a creative way.</p><p>Watch Randy Biddle as he dissects how exactly an explainer video production company can help you achieve that.</p>",
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/1059809262/rendition/720p/file.mp4?loc=external&log_user=0&signature=016810458c9de0e7ccaf44d254900d7c4a14883c6e461b7ae9c4d02031ebda85&user_id=157924231",
     thumbnail: why1NY,
@@ -257,7 +257,7 @@ const LocationPage = () => {
   }
   const why2 = {
     title:
-      "Let’s Create Out-of-This-World Animations with <span class='text-primary-100'>Infinity Animation</span>",
+      "Let’s Create Out-of-This-World Animations with <span className='text-primary-100'>Infinity Animation</span>",
     para: "<p>San Francisco has quickly emerged as a creative hub for digital media, with a thriving demand for video content across industries. Businesses here are recognizing the power of storytelling through animation—from tech startups to healthcare organizations, animated content is being used to educate, promote, and inspire.</p><p>What makes San Francisco animation studios stand out is the blend of creative talent and technical expertise. As remote work expands and the digital marketplace grows, working with a local video animation San Francisco team ensures better communication, cultural alignment, and faster turnaround times.</p><p>Whether you're a local company or national brand targeting a Colorado audience, working with a San Francisco animation studio ensures your message resonates with regional authenticity while delivering professional-grade visuals.</p>",
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/957421481/rendition/1080p/file.mp4?loc=external&signature=86ac3cb322c1e2b1362be1142336b0c0c934d1bd690878be22291aedce926ea4&user_id=214166356",
@@ -530,7 +530,7 @@ const LocationPage = () => {
   }
 
   const processContent = {
-    title: "Our <span class='text-primary-100'>Process</span>",
+    title: "Our <span className='text-primary-100'>Process</span>",
 
     conceptContent: [
       {
@@ -615,7 +615,7 @@ const LocationPage = () => {
               <>
                 <HeroBottom />
                 <Speedometer
-                  title={`<span class="text-primary-100">Best</span> Video Animation <br /> Company <span class="text-primary-100"> in San Francisco <br /> </span>  With Diverse Services`}
+                  title={`<span className="text-primary-100">Best</span> Video Animation <br /> Company <span className="text-primary-100"> in San Francisco <br /> </span>  With Diverse Services`}
                   desc="As one of the leading animation studios in San Francisco, we offer a full spectrum of animation services tailored to your brand and business goals. Our team blends artistic creativity with technical excellence to deliver animations that connect with your audience on every level."
                 />
                 <Counter />

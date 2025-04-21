@@ -54,7 +54,7 @@ const BlogNavigation = ({ postData }) => {
                     />
                 </h5>
                 {isNavVisible && (
-                    <div class="grid grid-cols-1 divide-y-2 divide-gray-500 pb-[10px] ">
+                    <div className="grid grid-cols-1 divide-y-2 divide-gray-500 pb-[10px] ">
                         {h2Tags.map((item, index) => (
                             <div key={index}
                                 className={`${styles.Diver} ${activeHeading === `#heading${index + 1}` ? styles.DiverActive : styles.DiverHover}`}

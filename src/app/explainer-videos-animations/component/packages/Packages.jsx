@@ -76,8 +76,8 @@ const Video = () => {
     return (
         <>
             <section className={`newcon ${styles.display}`}>
-                <div class={`container mx-auto`}>
-                    <div class={`md:grid md:grid-cols-1`}>
+                <div className={`container mx-auto`}>
+                    <div className={`md:grid md:grid-cols-1`}>
                         <div className={styles.element}>
                             <h3 className={`fontsfpro mb-0 ${styles.heading}`}>Our  <span className="colorred2">Packages </span>
                             </h3>
@@ -87,7 +87,7 @@ const Video = () => {
                         </div>
                     </div>
                 </div>
-                <div class={`container mx-auto ${styles.pointer} `}>
+                <div className={`container mx-auto ${styles.pointer} `}>
 
                     {isSliderActive ?
                         <Slider {...awardslogo} className={` ${styles.startup1}  startposition mt-4`} >
@@ -197,7 +197,7 @@ const Video = () => {
 
                         </Slider>
                         :
-                        <div class={`md:grid md:grid-cols-3`}>
+                        <div className={`md:grid md:grid-cols-3`}>
                             <div className={styles.pkgcard}>
                                 <div className={styles.cardbef}>
                                     <Image src={star} className=" " alt="Star" />

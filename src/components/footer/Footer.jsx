@@ -99,6 +99,10 @@ const Footer = () => {
             text: "Privacy Policy",
             link: "/privacy-policy",
         },
+        {
+            text: "Refund Form",
+            link: "/refund-form",
+        },
     ];
     const socialLinks = [
         {

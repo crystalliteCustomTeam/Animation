@@ -23,10 +23,10 @@ const Video = () => {
     return (
         <>
             <section className={`newcon ${styles.display}`}>
-                <div class={`container mx-auto ${styles.pointer} `}>
-                    <div class={`md:grid md:grid-cols-1`}>
+                <div className={`container mx-auto ${styles.pointer} `}>
+                    <div className={`md:grid md:grid-cols-1`}>
                         <div className={styles.newscool}>
-                            <Image src={icon1} class={`  mostimg ${styles.newyork}`} alt="Infinity Animations" />
+                            <Image src={icon1} className={`  mostimg ${styles.newyork}`} alt="Infinity Animations" />
                             <div className={styles.today}>
                                 <h3>Start Displaying Your Brand With <br></br> Amazing Animated Videos
                                 </h3>
