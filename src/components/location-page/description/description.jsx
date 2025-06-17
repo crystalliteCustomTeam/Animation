@@ -88,7 +88,13 @@ function Description({ content }) {
             >
               {title}
             </h2>
-            <p className="text-[15px] lg:text-[16px] text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-start " dangerouslySetInnerHTML={{ __html: para }} />
+            <p
+  className="text-[15px] lg:text-[16px] text-[#fff] font-[300] font-sans leading-[1.52857143] tracking-wider text-start"
+  
+>{para }</p>
+
+{/* */}
+          {/* { console.log(JSON.stringify(para)) } */}
             {downArrow && (
               <div
                 className={`flex items-center w-[98%] md:w-full h-[70px] mt-[35px] ${downArrow === "start" && "justify-start border-l-2 "

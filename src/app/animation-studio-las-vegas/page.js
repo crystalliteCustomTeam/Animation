@@ -197,7 +197,7 @@ const LocationPage = () => {
       </>
     ),
     para: (
-      <>
+      `
         At the heart of our success is our state-of-the-art animation studio in
         Las Vegas. We use the latest technologies and tools to create animations
         that are not only visually stunning but also strategically impactful.
@@ -209,7 +209,7 @@ const LocationPage = () => {
         attention to detail, making your brand stand out in a crowded
         marketplace. Whether you need a short explainer video or a full-fledged
         animated campaign, our studio delivers results that resonate.
-      </>
+      `
     ),
     bannerLeft:
       "https://player.vimeo.com/progressive_redirect/playback/906229355/rendition/1080p/file.mp4?loc=external&signature=8af579ca2eae6ba8c0e08217cd6bd78828f596d70e3bd6624936fd07ff35854e&user_id=214166356",
