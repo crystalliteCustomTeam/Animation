@@ -44,7 +44,7 @@ const Location = () => {
                                                             Folsom
                                                         </h5>
                                                         <Link className='text-[16px] font-sans' target='_blank' href='https://maps.app.goo.gl/cPupbW9ydYCBdZNs5'>
-                                                            1024 Iron Point Rd, Folsom, CA 95630, United States
+                                                            One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007 , United States
                                                         </Link>
                                                         <Link className="text-[14px] font-sans font-bold" href="tel:8336666689">
                                                             +1 833-666-6689
@@ -200,7 +200,7 @@ const Location = () => {
                                                 Folsom
                                             </h5>
                                             <Link className='text-[16px] font-sans text-center' target='_blank' href='https://maps.app.goo.gl/cPupbW9ydYCBdZNs5'>
-                                                1024 Iron Point Rd, Folsom, CA 95630, United States
+                                                One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007 , United States
                                             </Link>
                                             <Link className="text-[14px] font-sans font-bold text-center" href="tel:8336666689">
                                                 +1 833-666-6689

@@ -30,9 +30,9 @@ const Contact = () => {
                                         </a>
                                     </li>
                                     <li className='py-[12px]'>
-                                        <a href="https://maps.app.goo.gl/QYDv6abiPbW5rRoK6" target='_blank' className='text-[16px] leading-[24px] lg:leading-[26px] text-white poppins flex items-center gap-4'>
+                                        <a href="https://maps.app.goo.gl/fag623sTsawk6s576" target='_blank' className='text-[16px] leading-[24px] lg:leading-[26px] text-white poppins flex items-center gap-4'>
                                             <Image src={map} alt='Infinity Animations' className='w-[18px] h-[25px]' />
-                                            <span>1024 Iron Point Rd, Folsom, CA 95630</span>
+                                            <span>One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007 </span>
                                         </a>
                                     </li>
                                     
