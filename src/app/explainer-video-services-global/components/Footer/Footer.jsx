@@ -322,7 +322,7 @@ const Contact = () => {
             </section>
             <div className="copyright py-[20px] bg-[#000] border-t-[0.5px] border-[#fff]">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto relative">
-                    <p className='text-[14px] text-[#fff] montserrat text-center'>Copyright © 2024,  <Link target="_blank" className="no-underline" href="https://bhaooinc.com/">Infinity Animations All Rights Reserved</Link></p>
+                    <p className='text-[14px] text-[#fff] montserrat text-center'>Copyright © 2025,  <Link target="_blank" className="no-underline" href="https://bhaooinc.com/">Infinity Animations All Rights Reserved</Link></p>
                     <div className="top-icon absolute right-0 top-[-60px]">
                         <Link href="#" className='bg-black w-[80px] h-[80px] text-center text-white font-[500] uppercase rounded-[60%] align-middle border-[5px] border-[#FFCC00] absolute right-0 lg:flex flex-col justify-center items-center md:block hidden'>
                             <Image src={UpArrow} alt='upArrow' className='mx-auto' />

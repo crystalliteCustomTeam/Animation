@@ -35,6 +35,12 @@ const Contact = () => {
                                             <span>One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007 </span>
                                         </a>
                                     </li>
+                                    <li className='py-[12px]'>
+                                        <a href="https://maps.app.goo.gl/QYDv6abiPbW5rRoK6" target='_blank' className='text-[16px] leading-[24px] lg:leading-[26px] text-white poppins flex items-center gap-4'>
+                                            <Image src={map} alt='Infinity Animations' className='w-[18px] h-[25px]' />
+                                            <span>1024 Iron Point Rd, Folsom, CA 95630</span>
+                                        </a>
+                                    </li>
                                     
                                     <li className='py-[12px]'>
                                         <a href="tel:833-666-6689" className='text-[16px] leading-[24px] lg:leading-[26px] text-white poppins flex items-center gap-4'>
@@ -72,7 +78,7 @@ const Contact = () => {
             </section>
             <div className="copyright py-[20px] bg-[#292929] ">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
-                    <p className='text-[14px] text-[#fff] px-5 font-normal poppins text-center'>Copyright © 2024,  <Link target="_blank" className="no-underline" href="https://bhaooinc.com/">Infinity Animations All Rights Reserved</Link></p>
+                    <p className='text-[14px] text-[#fff] px-5 font-normal poppins text-center'>Copyright © 2025,  <Link target="_blank" className="no-underline" href="https://bhaooinc.com/">Infinity Animations All Rights Reserved</Link></p>
                 </div>
             </div>
         </>

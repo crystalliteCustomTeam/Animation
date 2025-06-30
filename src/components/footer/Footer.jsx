@@ -84,6 +84,12 @@ const Footer = () => {
             target: "_blank"
         },
         {
+            text: "1024 Iron Point Rd, Folsom, CA 95630",
+            link: "https://maps.app.goo.gl/QYDv6abiPbW5rRoK6",
+            icon: mapmarker,
+            target: "_blank"
+        },
+        {
             text: "229 Yonge St Suite 400, Toronto, ON M5B 1N9, Canada",
             link: "https://maps.app.goo.gl/ar4aVhbkzv9r9rjd7",
             icon: mapmarker,

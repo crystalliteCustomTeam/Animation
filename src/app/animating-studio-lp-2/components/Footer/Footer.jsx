@@ -260,7 +260,7 @@ const Contact = () => {
             </section>
             <div className="copyright py-[20px] bg-[#292929] ">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto relative">
-                    <p className='text-[14px] text-[#fff] px-5 font-normal poppins text-center'>Copyright © 2024,  <Link target="_blank" className="no-underline" href="https://bhaooinc.com/">Infinity Animations All Rights Reserved</Link></p>
+                    <p className='text-[14px] text-[#fff] px-5 font-normal poppins text-center'>Copyright © 2025,  <Link target="_blank" className="no-underline" href="https://bhaooinc.com/">Infinity Animations All Rights Reserved</Link></p>
                     <div className="sm:block hidden top-icon absolute right-0 top-[-60px]">
                         <Link href="#" className='bg-black w-[80px] h-[80px] text-center text-white uppercase rounded-[60%] align-middle border-[5px] border-[#FFCC00] absolute right-[10px] xl:right-0 md:flex flex-col justify-center items-center hidden z-10'>
                             <Image src={UpArrow} alt='upArrow' className='mx-auto' />

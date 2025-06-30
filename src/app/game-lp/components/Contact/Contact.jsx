@@ -209,7 +209,7 @@ const Contact = () => {
                                     </Link>
                                     <Link href="mailto:queries@infinityanimations.com" className="flex items-center gap-4 mb-4 lg:mb-7">
                                         <Image src={Location} alt='Location' />
-                                        <span className='text-[14px] xl:text-[17px] leading-[24px] xl:leading-[27px] font-normal poppins'>One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007 s</span>
+                                        <span className='text-[14px] xl:text-[17px] leading-[24px] xl:leading-[27px] font-normal poppins'>1024 Iron Point Rd, Folsom, CA 95630</span>
                                     </Link>
                                     <Link href="mailto:queries@infinityanimations.com" className="flex items-center gap-4 mb-4 lg:mb-7">
                                         <Image src={Location} alt='Location' />
