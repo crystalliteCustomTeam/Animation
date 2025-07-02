@@ -91,7 +91,7 @@ const Footer = () => {
 
         ];
     }
-    if(pathname == "/animation-studio-toronto" || pathname == "/animation-studio-vancouver") {
+    else if(pathname == "/animation-studio-toronto" || pathname == "/animation-studio-vancouver") {
         contactLinks = [
             {
                 text: "833-666-6689",
@@ -113,7 +113,7 @@ const Footer = () => {
 
         ];
     }
-    if(pathname == "/animation-studio-new-york") {
+    else if(pathname == "/animation-studio-new-york") {
         contactLinks = [
             {
                 text: "833-666-6689",
@@ -135,7 +135,7 @@ const Footer = () => {
 
         ];
     }
-    if(pathname == "/animation-studio-san-diego") {
+    else if(pathname == "/animation-studio-san-diego") {
         contactLinks = [
             {
                 text: "833-666-6689",
