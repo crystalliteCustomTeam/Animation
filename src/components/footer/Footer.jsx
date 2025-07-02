@@ -2,6 +2,7 @@
 // Imports Components
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation"
 // Import Images
 import logo from "media/images/logo.gif";
 import mapmarker from "media/icons/map.png";
@@ -65,37 +66,131 @@ const Footer = () => {
             link: "/"
         },
     ];
-    const contactLinks = [
-        {
-            text: "833-666-6689",
-            link: "tel:833-666-6689",
-            icon: telephone
-        },
-        {
-            text: "queries@infinityanimations.com",
-            link: "mailto:queries@infinityanimations.com",
-            icon: envelope
-        },
-       
-        {
-            text: "One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007 ",
-            link: "https://maps.app.goo.gl/fag623sTsawk6s576",
-            icon: mapmarker,
-            target: "_blank"
-        },
-        {
-            text: "1024 Iron Point Rd, Folsom, CA 95630",
-            link: "https://maps.app.goo.gl/QYDv6abiPbW5rRoK6",
-            icon: mapmarker,
-            target: "_blank"
-        },
-        {
-            text: "229 Yonge St Suite 400, Toronto, ON M5B 1N9, Canada",
-            link: "https://maps.app.goo.gl/ar4aVhbkzv9r9rjd7",
-            icon: mapmarker,
-            target: "_blank"
-        },
-    ];
+
+    const pathname = usePathname();
+    let contactLinks;
+    if (pathname == "/animation-studio-houston") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "4300 Main St, Houston, TX 77002",
+                link: "https://maps.app.goo.gl/9FJJRBDxLsp2eyWDA",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    if(pathname == "/animation-studio-toronto" || pathname == "/animation-studio-vancouver") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "229 Yonge St Suite 400, Toronto, ON M5B 1N9, Canada",
+                link: "https://maps.app.goo.gl/Xh8kPcVvmARoxeCYA",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    if(pathname == "/animation-studio-new-york") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007",
+                link: "https://maps.app.goo.gl/JabzLbc5iEbFfwyaA",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    if(pathname == "/animation-studio-san-diego") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "402 W Broadway Suite 400, San Diego, CA 92101, United States",
+                link: "https://maps.app.goo.gl/s3DCxnETMGyDR4ZZ7",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    else {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007 ",
+                link: "https://maps.app.goo.gl/fag623sTsawk6s576",
+                icon: mapmarker,
+                target: "_blank"
+            },
+            {
+                text: "1024 Iron Point Rd, Folsom, CA 95630",
+                link: "https://maps.app.goo.gl/QYDv6abiPbW5rRoK6",
+                icon: mapmarker,
+                target: "_blank"
+            },
+            {
+                text: "229 Yonge St Suite 400, Toronto, ON M5B 1N9, Canada",
+                link: "https://maps.app.goo.gl/ar4aVhbkzv9r9rjd7",
+                icon: mapmarker,
+                target: "_blank"
+            },
+        ];
+    }
+
     const otherLinks = [
         {
             text: "Terms of Services",
