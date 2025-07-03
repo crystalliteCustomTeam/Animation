@@ -157,6 +157,72 @@ const Footer = () => {
 
         ];
     }
+    else if(pathname == "/animation-studio-texas") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "1341 W Mockingbird Ln, Dallas, TX 75247, United States",
+                link: "https://maps.app.goo.gl/WxwsWRHtkwg2LD727",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    else if(pathname == "/animation-studio-dallas") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "1341 W Mockingbird Ln, Dallas, TX 75247, United States",
+                link: "https://maps.app.goo.gl/WxwsWRHtkwg2LD727",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    else if(pathname == "/animation-studio-los-angeles") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "222 S Figueroa St, Los Angeles, CA 90012, United States",
+                link: "https://maps.app.goo.gl/QxVqkf2efvSPVHe48",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
     else {
         contactLinks = [
             {
