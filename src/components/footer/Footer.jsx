@@ -201,6 +201,28 @@ const Footer = () => {
 
         ];
     }
+    else if(pathname == "/animation-studio-maryland") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "200 E Pratt St, Baltimore, MD 21202, United States",
+                link: "https://maps.app.goo.gl/61f2WmMGEEYPmBDN6",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
     else if(pathname == "/animation-studio-los-angeles") {
         contactLinks = [
             {
