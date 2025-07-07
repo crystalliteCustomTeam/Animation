@@ -16,7 +16,7 @@ export async function POST(request) {
         })
         const mailOptions = {
             from: "leads@infinityanimations.com",
-            to: ['queries@infinityanimations.com', 'info@infinityanimations.com', 'ppc@infinityanimations.com', 'rafael@infinityanimations.com', 'travis.king@infinityanimations.com', 'chris@infinityanimations.com', 'nick@infinityanimations.com'],
+            to: ['queries@infinityanimations.com', 'info@infinityanimations.com', 'ppc@infinityanimations.com', 'adil@infinityanimations.com','developer@infinitimediainc.com'],
             subject: `Refund Request Submitted - Infinity Animations`,
             html: `<div style="width:100%;height:100%;padding:1rem;background-color: #efefef;">
                 <div style="display:flex; align-items: center;">

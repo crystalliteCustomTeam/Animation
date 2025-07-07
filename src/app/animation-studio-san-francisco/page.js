@@ -126,7 +126,7 @@ const LocationPage = () => {
         in San Francisco
       </>
     ),
-    para: "As one of the leading animation studios in San Francisco, we offer a full spectrum of animation services tailored to your brand and business goals. Our team blends artistic creativity with technical excellence to deliver animations that connect with your audience on every level.",
+    para: "Looking for top-rated animation studios in San Francisco? Our animation company specializes in delivering high-quality, custom video content designed to engage, educate, and inspire. Whether you're a startup in Silicon Valley, a marketing agency, or a global brand, our San Francisco animation studio helps bring your ideas to life with stunning animations.",
     btnBg: "bg-prime",
     banImg: true,
     BannerImg: BannerImg,

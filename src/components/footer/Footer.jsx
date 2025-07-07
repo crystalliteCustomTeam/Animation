@@ -201,6 +201,29 @@ const Footer = () => {
 
         ];
     }
+    else if(pathname == "/animation-studio-orlando") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "111 N Orange Ave Suit 800, Orlando, FL 32801, United States",
+                link: "https://maps.app.goo.gl/Sx9k1xGvrkGPqqwo7",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    
     else if(pathname == "/animation-studio-maryland") {
         contactLinks = [
             {
