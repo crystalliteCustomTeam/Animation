@@ -1,10 +1,4 @@
-//===== Import Fonts =====
-<<<<<<< HEAD
-import { primary } from "./configs/fonts";
-
-=======
-import { primary ,FontMono} from "./configs/fonts";
->>>>>>> d50fe11559a22497dbf20694b6bb5cbffce9736d
+import { primary, FontMono } from "./configs/fonts";
 //===== Import Components =====
 import ConditionalLayout from "./ConditionalLayout";
 //===== Import Css =====

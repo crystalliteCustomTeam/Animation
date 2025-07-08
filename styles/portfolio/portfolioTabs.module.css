@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 .portfolioSection .tabHeaders li.active {
-  background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
+  background: linear-gradient(106.24deg, #f5090b 25.96%, #ff2d4b 140.6%);
   color: #fff;
 }
 .portfolioSection .portfolio {
