@@ -1,0 +1,1109 @@
+.portfolioSection {
+  background: #000;
+}
+.portfolioSection .videoLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 500px;
+}
+.portfolioSection .tabHeaders {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolioSection .tabHeaders li {
+  height: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 70px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  padding: 0px 30px;
+  cursor: pointer;
+}
+.portfolioSection .tabHeaders li.active {
+  background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
+  color: #fff;
+}
+.portfolioSection .portfolio {
+  display: block;
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.portfolioSection .portfolio .image1 {
+  grid-area: a;
+  height: 480px;
+}
+.portfolioSection .portfolio .image2 {
+  grid-area: b;
+  height: 480px;
+}
+.portfolioSection .portfolio .image3 {
+  grid-area: c;
+  height: 350px;
+}
+.portfolioSection .portfolio .image4 {
+  grid-area: d;
+  height: 350px;
+}
+.portfolioSection .portfolio .image5 {
+  grid-area: e;
+  height: 700px;
+}
+.portfolioSection .portfolio .image6 {
+  grid-area: f;
+  height: 480px;
+}
+.portfolioSection .portfolio .image7 {
+  grid-area: g;
+  height: 480px;
+}
+.portfolioSection .portfolio .image8 {
+  grid-area: h;
+  height: 610px;
+}
+.portfolioSection .portfolio .image9 {
+  grid-area: i;
+  height: 700px;
+}
+.portfolioSection .portfolio .image10 {
+  grid-area: j;
+  height: 350px;
+}
+.portfolioSection .portfolio .image11 {
+  grid-area: k;
+  height: 350px;
+}
+.portfolioSection .portfolio .image12 {
+  grid-area: l;
+  height: 480px;
+}
+.portfolioSection .portfolio .image13 {
+  grid-area: m;
+  height: 480px;
+}
+.portfolioSection .portfolio .image14 {
+  grid-area: n;
+  height: 610px;
+}
+.portfolioSection .portfolio .image15 {
+  grid-area: o;
+  height: 350px;
+}
+.portfolioSection .portfolio .image16 {
+  grid-area: p;
+  height: 350px;
+}
+.portfolioSection .portfolio .image17 {
+  grid-area: q;
+  height: 700px;
+}
+.portfolioSection .portfolio .image18 {
+  grid-area: r;
+  height: 480px;
+}
+.portfolioSection .portfolio .image19 {
+  grid-area: s;
+  height: 480px;
+}
+.portfolioSection .portfolio .gridContainer {
+  display: grid;
+  grid-template-areas: "a a a b b b" "c c e e e e" "d d e e e e" "f f f g g g" "h h h h h h" "i i i i j j" "i i i i k k" "l l l m m m" "n n n n n n" "o o q q q q" "p p q q q q" "r r r s s s";
+}
+.portfolioSection .portfolio .gridContainer .imageBox {
+  position: relative;
+}
+.portfolioSection .portfolio .gridContainer .imageBox img {
+  object-fit: cover;
+}
+.portfolioSection .portfolio .gridContainer .imageBox:hover .bannerContentBox {
+  display: flex;
+}
+.portfolioSection .portfolio .gridContainer .imageBox .bannerContentBox {
+  background: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  padding: 25px;
+  left: 0px;
+}
+.portfolioSection
+  .portfolio
+  .gridContainer
+  .imageBox
+  .bannerContentBox
+  .bannerHeading {
+  flex: 0 0 80%;
+}
+.portfolioSection
+  .portfolio
+  .gridContainer
+  .imageBox
+  .bannerContentBox
+  .bannerHeading
+  .title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.portfolioSection
+  .portfolio
+  .gridContainer
+  .imageBox
+  .bannerContentBox
+  .bannerHeading
+  p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 0px;
+}
+.portfolioSection
+  .portfolio
+  .gridContainer
+  .imageBox
+  .bannerContentBox
+  .bannerButton {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+.portfolioSection
+  .portfolio
+  .gridContainer
+  .imageBox
+  .bannerContentBox
+  .bannerButton
+  .buttonSmall {
+  width: 80px;
+  height: 80px;
+}
+.portfolioSection
+  .portfolio
+  .gridContainer
+  .imageBox
+  .bannerContentBox
+  .bannerButton
+  .buttonSmall
+  a,
+.portfolioSection
+  .portfolio
+  .gridContainer
+  .imageBox
+  .bannerContentBox
+  .bannerButton
+  .buttonSmall
+  div {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+.portfolioSection
+  .portfolio
+  .gridContainer
+  .imageBox
+  .bannerContentBox
+  .bannerButton
+  .buttonSmall
+  a
+  svg,
+.portfolioSection
+  .portfolio
+  .gridContainer
+  .imageBox
+  .bannerContentBox
+  .bannerButton
+  .buttonSmall
+  div
+  svg {
+  width: 80px;
+  height: 80px;
+}
+.portfolioSection
+  .portfolio
+  .gridContainer
+  .imageBox
+  .bannerContentBox
+  .bannerButton
+  .buttonSmall
+  a
+  svg
+  path,
+.portfolioSection
+  .portfolio
+  .gridContainer
+  .imageBox
+  .bannerContentBox
+  .bannerButton
+  .buttonSmall
+  div
+  svg
+  path {
+  fill: #ff2d4b;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .portfolioSection .tabHeaders {
+    margin-bottom: 50px;
+  }
+  .portfolioSection .tabHeaders li {
+    height: 55px;
+    font-size: 16px;
+    line-height: 55px;
+    padding: 0px 30px;
+  }
+  .portfolioSection .portfolio .image1 {
+    height: 420px;
+  }
+  .portfolioSection .portfolio .image2 {
+    height: 420px;
+  }
+  .portfolioSection .portfolio .image3 {
+    height: 320px;
+  }
+  .portfolioSection .portfolio .image4 {
+    height: 320px;
+  }
+  .portfolioSection .portfolio .image5 {
+    height: 640px;
+  }
+  .portfolioSection .portfolio .image6 {
+    height: 420px;
+  }
+  .portfolioSection .portfolio .image7 {
+    height: 420px;
+  }
+  .portfolioSection .portfolio .image8 {
+    height: 550px;
+  }
+  .portfolioSection .portfolio .image9 {
+    height: 640px;
+  }
+  .portfolioSection .portfolio .image10 {
+    height: 320px;
+  }
+  .portfolioSection .portfolio .image11 {
+    height: 320px;
+  }
+  .portfolioSection .portfolio .image12 {
+    height: 420px;
+  }
+  .portfolioSection .portfolio .image13 {
+    height: 420px;
+  }
+  .portfolioSection .portfolio .image14 {
+    height: 550px;
+  }
+  .portfolioSection .portfolio .image15 {
+    height: 320px;
+  }
+  .portfolioSection .portfolio .image16 {
+    height: 320px;
+  }
+  .portfolioSection .portfolio .image17 {
+    height: 640px;
+  }
+  .portfolioSection .portfolio .image18 {
+    height: 420px;
+  }
+  .portfolioSection .portfolio .image19 {
+    height: 420px;
+  }
+  .portfolioSection .portfolio .gridContainer .imageBox .bannerContentBox {
+    padding: 25px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerHeading
+    .title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerHeading
+    p {
+    font-size: 13px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall {
+    width: 60px;
+    height: 60px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    a,
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    div {
+    width: 60px;
+    height: 60px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    a
+    svg,
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    div
+    svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .portfolioSection .tabHeaders {
+    margin-bottom: 50px;
+  }
+  .portfolioSection .tabHeaders li {
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0px 25px;
+  }
+  .portfolioSection .portfolio .image1 {
+    height: 400px;
+  }
+  .portfolioSection .portfolio .image2 {
+    height: 400px;
+  }
+  .portfolioSection .portfolio .image3 {
+    height: 300px;
+  }
+  .portfolioSection .portfolio .image4 {
+    height: 300px;
+  }
+  .portfolioSection .portfolio .image5 {
+    height: 600px;
+  }
+  .portfolioSection .portfolio .image6 {
+    height: 400px;
+  }
+  .portfolioSection .portfolio .image7 {
+    height: 400px;
+  }
+  .portfolioSection .portfolio .image8 {
+    height: 510px;
+  }
+  .portfolioSection .portfolio .image9 {
+    height: 600px;
+  }
+  .portfolioSection .portfolio .image10 {
+    height: 300px;
+  }
+  .portfolioSection .portfolio .image11 {
+    height: 300px;
+  }
+  .portfolioSection .portfolio .image12 {
+    height: 400px;
+  }
+  .portfolioSection .portfolio .image13 {
+    height: 400px;
+  }
+  .portfolioSection .portfolio .image14 {
+    height: 510px;
+  }
+  .portfolioSection .portfolio .image15 {
+    height: 300px;
+  }
+  .portfolioSection .portfolio .image16 {
+    height: 300px;
+  }
+  .portfolioSection .portfolio .image17 {
+    height: 600px;
+  }
+  .portfolioSection .portfolio .image18 {
+    height: 400px;
+  }
+  .portfolioSection .portfolio .image19 {
+    height: 400px;
+  }
+  .portfolioSection .portfolio .gridContainer .imageBox .bannerContentBox {
+    padding: 25px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerHeading
+    .title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerHeading
+    p {
+    font-size: 13px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall {
+    width: 60px;
+    height: 60px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    a,
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    div {
+    width: 60px;
+    height: 60px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    a
+    svg,
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    div
+    svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .portfolioSection .tabHeaders {
+    margin-bottom: 50px;
+  }
+  .portfolioSection .tabHeaders li {
+    height: 45px;
+    font-size: 13px;
+    line-height: 45px;
+    padding: 0px 25px;
+  }
+  .portfolioSection .portfolio .image1 {
+    height: 370px;
+  }
+  .portfolioSection .portfolio .image2 {
+    height: 370px;
+  }
+  .portfolioSection .portfolio .image3 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image4 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image5 {
+    height: 560px;
+  }
+  .portfolioSection .portfolio .image6 {
+    height: 370px;
+  }
+  .portfolioSection .portfolio .image7 {
+    height: 370px;
+  }
+  .portfolioSection .portfolio .image8 {
+    height: 480px;
+  }
+  .portfolioSection .portfolio .image9 {
+    height: 560px;
+  }
+  .portfolioSection .portfolio .image10 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image11 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image12 {
+    height: 370px;
+  }
+  .portfolioSection .portfolio .image13 {
+    height: 370px;
+  }
+  .portfolioSection .portfolio .image14 {
+    height: 480px;
+  }
+  .portfolioSection .portfolio .image15 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image16 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image17 {
+    height: 560px;
+  }
+  .portfolioSection .portfolio .image18 {
+    height: 370px;
+  }
+  .portfolioSection .portfolio .image19 {
+    height: 370px;
+  }
+  .portfolioSection .portfolio .gridContainer .imageBox .bannerContentBox {
+    padding: 20px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerHeading
+    .title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerHeading
+    p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall {
+    width: 60px;
+    height: 60px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    a,
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    div {
+    width: 60px;
+    height: 60px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    a
+    svg,
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    div
+    svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .portfolioSection .tabHeaders {
+    margin-bottom: 50px;
+  }
+  .portfolioSection .tabHeaders li {
+    height: 45px;
+    font-size: 12px;
+    line-height: 45px;
+    padding: 0px 25px;
+  }
+  .portfolioSection .portfolio .image1 {
+    height: 340px;
+  }
+  .portfolioSection .portfolio .image2 {
+    height: 340px;
+  }
+  .portfolioSection .portfolio .image3 {
+    height: 240px;
+  }
+  .portfolioSection .portfolio .image4 {
+    height: 240px;
+  }
+  .portfolioSection .portfolio .image5 {
+    height: 480px;
+  }
+  .portfolioSection .portfolio .image6 {
+    height: 340px;
+  }
+  .portfolioSection .portfolio .image7 {
+    height: 340px;
+  }
+  .portfolioSection .portfolio .image8 {
+    height: 450px;
+  }
+  .portfolioSection .portfolio .image9 {
+    height: 480px;
+  }
+  .portfolioSection .portfolio .image10 {
+    height: 240px;
+  }
+  .portfolioSection .portfolio .image11 {
+    height: 240px;
+  }
+  .portfolioSection .portfolio .image12 {
+    height: 340px;
+  }
+  .portfolioSection .portfolio .image13 {
+    height: 340px;
+  }
+  .portfolioSection .portfolio .image14 {
+    height: 450px;
+  }
+  .portfolioSection .portfolio .image15 {
+    height: 240px;
+  }
+  .portfolioSection .portfolio .image16 {
+    height: 240px;
+  }
+  .portfolioSection .portfolio .image17 {
+    height: 480px;
+  }
+  .portfolioSection .portfolio .image18 {
+    height: 340px;
+  }
+  .portfolioSection .portfolio .image19 {
+    height: 340px;
+  }
+  .portfolioSection .portfolio .gridContainer .imageBox .bannerContentBox {
+    padding: 20px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerHeading
+    .title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerHeading
+    p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall {
+    width: 50px;
+    height: 50px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    a,
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    div {
+    width: 50px;
+    height: 50px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    a
+    svg,
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    div
+    svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .portfolioSection .tabHeaders {
+    margin-bottom: 50px;
+  }
+  .portfolioSection .tabHeaders li {
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0px 15px;
+  }
+  .portfolioSection .portfolio .image1 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image2 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image3 {
+    height: 200px;
+  }
+  .portfolioSection .portfolio .image4 {
+    height: 200px;
+  }
+  .portfolioSection .portfolio .image5 {
+    height: 400px;
+  }
+  .portfolioSection .portfolio .image6 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image7 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image8 {
+    height: 350px;
+  }
+  .portfolioSection .portfolio .image9 {
+    height: 400px;
+  }
+  .portfolioSection .portfolio .image10 {
+    height: 200px;
+  }
+  .portfolioSection .portfolio .image11 {
+    height: 200px;
+  }
+  .portfolioSection .portfolio .image12 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image13 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image14 {
+    height: 350px;
+  }
+  .portfolioSection .portfolio .image15 {
+    height: 200px;
+  }
+  .portfolioSection .portfolio .image16 {
+    height: 200px;
+  }
+  .portfolioSection .portfolio .image17 {
+    height: 400px;
+  }
+  .portfolioSection .portfolio .image18 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image19 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .gridContainer .imageBox .bannerContentBox {
+    padding: 20px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerHeading
+    .title {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerHeading
+    p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall {
+    width: 50px;
+    height: 50px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    a,
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    div {
+    width: 50px;
+    height: 50px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    a
+    svg,
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    div
+    svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  .portfolioSection .tabHeaders {
+    margin-bottom: 30px;
+  }
+  .portfolioSection .tabHeaders li {
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0px 15px;
+  }
+  .portfolioSection .portfolio .image1 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image2 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image3 {
+    height: 200px;
+  }
+  .portfolioSection .portfolio .image4 {
+    height: 200px;
+  }
+  .portfolioSection .portfolio .image5 {
+    height: 400px;
+  }
+  .portfolioSection .portfolio .image6 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image7 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image8 {
+    height: 350px;
+  }
+  .portfolioSection .portfolio .image9 {
+    height: 400px;
+  }
+  .portfolioSection .portfolio .image10 {
+    height: 200px;
+  }
+  .portfolioSection .portfolio .image11 {
+    height: 200px;
+  }
+  .portfolioSection .portfolio .image12 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image13 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image14 {
+    height: 350px;
+  }
+  .portfolioSection .portfolio .image15 {
+    height: 200px;
+  }
+  .portfolioSection .portfolio .image16 {
+    height: 200px;
+  }
+  .portfolioSection .portfolio .image17 {
+    height: 400px;
+  }
+  .portfolioSection .portfolio .image18 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .image19 {
+    height: 280px;
+  }
+  .portfolioSection .portfolio .gridContainer {
+    display: grid;
+    grid-template-areas: "a a a a a a" "b b b b b b" "c c c c c c" "d d d d d d" "e e e e e e" "f f f f f f" "g g g g g g" "h h h h h h" "i i i i i i" "j j j j j j" "k k k k k k" "l l l l l l" "m m m m m m" "n n n n n n" "o o o o o o" "p p p p p p" "q q q q q q" "r r r r r r" "s s s s s s";
+  }
+  .portfolioSection .portfolio .gridContainer .imageBox .bannerContentBox {
+    padding: 20px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerHeading
+    .title {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerHeading
+    p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall {
+    width: 50px;
+    height: 50px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    a,
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    div {
+    width: 50px;
+    height: 50px;
+  }
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    a
+    svg,
+  .portfolioSection
+    .portfolio
+    .gridContainer
+    .imageBox
+    .bannerContentBox
+    .bannerButton
+    .buttonSmall
+    div
+    svg {
+    width: 50px;
+    height: 50px;
+  }
+}

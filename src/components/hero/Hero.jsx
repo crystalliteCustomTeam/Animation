@@ -71,6 +71,9 @@ const Hero = ({ content }) => {
         case '/video-animation-portfolio':
             backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/portfolio/banner-bg.png")]'
             break;
+        case '/video-animation-portfolio2':
+            backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/portfolio/banner-bg.png")]'
+            break;
         case '/video-animation-process':
             backgroundVideo = 'bg-cover bg-center lg:bg-[url("../../public/process/banner-bg.gif")]'
             break;

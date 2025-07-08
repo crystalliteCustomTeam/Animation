@@ -1,0 +1,177 @@
+.iframePopup {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iframePopup video {
+  height: 570px;
+  width: 1020px;
+  object-fit: cover;
+  position: relative;
+}
+.iframePopup .videoBox {
+  height: 570px;
+  width: 1020px;
+  position: relative;
+  margin: auto;
+}
+.iframePopup .videoBox .closedBtn {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  cursor: pointer;
+}
+.iframePopup .videoBox .closedBtn svg circle {
+  fill: #fff;
+}
+.iframePopup .videoBox .closedBtn svg path {
+  fill: #000;
+}
+.popupContact {
+  padding: 50px;
+  border-radius: 6px;
+  background: #000;
+  position: relative;
+}
+.popupContact .closedBtn {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  cursor: pointer;
+}
+.popupContact .closedBtn svg circle {
+  fill: #fff;
+}
+.popupContact .closedBtn svg path {
+  fill: #000;
+}
+.popupContact .popupImg video {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .iframePopup video {
+    height: 500px;
+    width: 900px;
+  }
+  .iframePopup .videoBox {
+    height: 500px;
+    width: 900px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .iframePopup video {
+    height: 500px;
+    width: 900px;
+  }
+  .iframePopup .videoBox {
+    height: 500px;
+    width: 900px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+  .iframePopup video {
+    height: 500px;
+    width: 900px;
+  }
+  .iframePopup .videoBox {
+    height: 500px;
+    width: 900px;
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1199px) {
+  .popupContact {
+    padding: 28px;
+  }
+  .iframePopup video {
+    height: 500px;
+    width: 900px;
+  }
+  .iframePopup .videoBox {
+    height: 500px;
+    width: 900px;
+  }
+  .iframePopup .videoBox .closedBtn {
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+  }
+  .iframePopup .videoBox .closedBtn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .popupContact {
+    padding: 25px;
+  }
+  .iframePopup video {
+    height: 450px;
+    width: 800px;
+  }
+  .iframePopup .videoBox {
+    height: 450px;
+    width: 800px;
+  }
+  .iframePopup .videoBox .closedBtn {
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+  }
+  .iframePopup .videoBox .closedBtn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .popupContact {
+    padding: 15px;
+  }
+  .iframePopup video {
+    height: 380px;
+    width: 600px;
+  }
+  .iframePopup .videoBox {
+    height: 380px;
+    width: 600px;
+  }
+  .closedBtn {
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+  }
+  .closedBtn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  .iframePopup {
+    padding: 15px;
+  }
+  .iframePopup video {
+    height: auto;
+    width: auto;
+  }
+  .iframePopup .videoBox {
+    height: auto;
+    width: auto;
+  }
+  .contactPopup {
+    padding: 20px;
+  }
+  .contactPopup .animationClass {
+    display: none;
+  }
+  .closedBtn {
+    top: -10px;
+    right: -5px;
+    cursor: pointer;
+  }
+  .closedBtn svg {
+    width: 18px;
+    height: 18px;
+  }
+}

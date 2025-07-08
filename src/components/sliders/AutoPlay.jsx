@@ -2,6 +2,7 @@
 // Embla
 import useEmblaCarousel from "embla-carousel-react"
 import Autoplay from "embla-carousel-autoplay"
+
 // Components
 import { PrevButton, NextButton, usePrevNextButtons } from "./SliderArrows"
 
