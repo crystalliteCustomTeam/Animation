@@ -40,10 +40,10 @@ const ThreeDArt = () => {
                                     </li>
                                 </ul>
                                 <div className="btn w-full sm:block hidden mb-[30px] lg:mb-0">
-                                    <Link href="javascript:;" className=' text-white text-[16px] font-light poppins w-[190px] h-[50px] flex items-center justify-center relative z-10 mx-auto lg:ml-0'>
+                                    <a href="tel:833-666-6689" className=' text-white text-[16px] font-light poppins w-[190px] h-[50px] flex items-center justify-center relative z-10 mx-auto lg:ml-0'>
                                         <Image src={BtnBg} alt='Btn Background' fill={true} className='z-[-1] object-cover object-center' />
                                         Contact Us Now
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>

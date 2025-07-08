@@ -2,6 +2,7 @@
 // Imports Components
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation"
 // Import Images
 import logo from "media/images/logo.gif";
 import mapmarker from "media/icons/map.png";
@@ -14,6 +15,7 @@ import instagram from "media/icons/insta.png";
 import linkedin from "media/icons/linkedin.png";
 import vimeo from "media/icons/vemio.png";
 import dmca from "media/icons/dmca.png";
+import Payment from "media/payment.webp";
 
 const Footer = () => {
     const quickLinks = [
@@ -64,36 +66,242 @@ const Footer = () => {
             link: "/"
         },
     ];
-    const contactLinks = [
-        {
-            text: "833-666-6689",
-            link: "tel:833-666-6689",
-            icon: telephone
-        },
-        {
-            text: "queries@infinityanimations.com",
-            link: "mailto:queries@infinityanimations.com",
-            icon: envelope
-        },
-        {
-            text: "One World Trade Center, Suite 8500, New York, New York, 10007, United States",
-            link: "https://maps.app.goo.gl/BFBsCwAX1znom3LE6",
-            icon: mapmarker,
-            target: "_blank"
-        },
-        {
-            text: "1024 Iron Point Rd, Folsom, CA 95630",
-            link: "https://maps.app.goo.gl/QYDv6abiPbW5rRoK6",
-            icon: mapmarker,
-            target: "_blank"
-        },
-        {
-            text: "229 Yonge St Suite 400, Toronto, ON M5B 1N9, Canada",
-            link: "https://maps.app.goo.gl/ar4aVhbkzv9r9rjd7",
-            icon: mapmarker,
-            target: "_blank"
-        },
-    ];
+
+    const pathname = usePathname();
+    let contactLinks;
+    if (pathname == "/animation-studio-houston") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "4300 Main St, Houston, TX 77002",
+                link: "https://maps.app.goo.gl/9FJJRBDxLsp2eyWDA",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    else if(pathname == "/animation-studio-toronto" || pathname == "/animation-studio-vancouver") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "229 Yonge St Suite 400, Toronto, ON M5B 1N9, Canada",
+                link: "https://maps.app.goo.gl/Xh8kPcVvmARoxeCYA",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    else if(pathname == "/animation-studio-new-york") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007",
+                link: "https://maps.app.goo.gl/JabzLbc5iEbFfwyaA",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    else if(pathname == "/animation-studio-san-diego") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "402 W Broadway Suite 400, San Diego, CA 92101, United States",
+                link: "https://maps.app.goo.gl/s3DCxnETMGyDR4ZZ7",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    else if(pathname == "/animation-studio-texas") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "1341 W Mockingbird Ln, Dallas, TX 75247, United States",
+                link: "https://maps.app.goo.gl/WxwsWRHtkwg2LD727",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    else if(pathname == "/animation-studio-dallas") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "1341 W Mockingbird Ln, Dallas, TX 75247, United States",
+                link: "https://maps.app.goo.gl/WxwsWRHtkwg2LD727",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    else if(pathname == "/animation-studio-orlando") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "111 N Orange Ave Suit 800, Orlando, FL 32801, United States",
+                link: "https://maps.app.goo.gl/Sx9k1xGvrkGPqqwo7",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    
+    else if(pathname == "/animation-studio-maryland") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "200 E Pratt St, Baltimore, MD 21202, United States",
+                link: "https://maps.app.goo.gl/61f2WmMGEEYPmBDN6",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    else if(pathname == "/animation-studio-los-angeles") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "222 S Figueroa St, Los Angeles, CA 90012, United States",
+                link: "https://maps.app.goo.gl/QxVqkf2efvSPVHe48",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    else {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+
+            {
+                text: "One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007 ",
+                link: "https://maps.app.goo.gl/fag623sTsawk6s576",
+                icon: mapmarker,
+                target: "_blank"
+            },
+            {
+                text: "1024 Iron Point Rd, Folsom, CA 95630",
+                link: "https://maps.app.goo.gl/QYDv6abiPbW5rRoK6",
+                icon: mapmarker,
+                target: "_blank"
+            },
+            {
+                text: "229 Yonge St Suite 400, Toronto, ON M5B 1N9, Canada",
+                link: "https://maps.app.goo.gl/ar4aVhbkzv9r9rjd7",
+                icon: mapmarker,
+                target: "_blank"
+            },
+        ];
+    }
+
     const otherLinks = [
         {
             text: "Terms of Services",
@@ -102,6 +310,10 @@ const Footer = () => {
         {
             text: "Privacy Policy",
             link: "/privacy-policy",
+        },
+        {
+            text: "Refund Form",
+            link: "/refund-form",
         },
     ];
     const socialLinks = [
@@ -143,6 +355,7 @@ const Footer = () => {
                             <p className="text-sm xl:text-base font-normal font-sans text-justify text-white mt-3 pr-5">Infinity Animations is a visionary kingdom where creativity knows no bounds. With masterful strokes of artistry, they breathe life into ideas, forging appealing animations that dance with imagination. Each frame tells a story, each visual a masterpiece. From 2D wonders to CGI-VFX magic, they conjure dimensions where dreams come to life.</p>
                             <div className="mt-4 md:mt-6 mb-4 lg:mb-0">
                                 <Image src={dmca} alt="Infinity Animation" />
+                                <Image src={Payment} alt="Infinity Animation" width={250} height={250} className="mt-2" />
                             </div>
                         </div>
                         <div className="basis-full sm:basis-[48%] lg:basis-[20%]">
@@ -215,7 +428,7 @@ const Footer = () => {
                     <div className="flex gap-x-5 py-5 flex-wrap sm:flex-nowrap gap-y-2 sm:gap-y-0 items-center border-b-[1px] border-[#707070]">
                         <div className="basis-full sm:basis-1/2">
                             <p className="text-sm font-sans text-white leading-6 text-center sm:text-left">
-                                © Infinity Animations 2024. <span className='text-[13px] poppins text-center inline'> - All Rights Reserved By Dreamweave Media Inc </span>
+                                © Infinity Animations 2024. <span className='text-[13px] poppins text-center inline'> - All Rights Reserved  </span>
                             </p>
                         </div>
                         <div className="basis-full sm:basis-1/2">

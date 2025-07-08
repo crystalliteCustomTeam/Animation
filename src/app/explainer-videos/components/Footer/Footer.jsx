@@ -8,7 +8,7 @@ import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
 // Import Images
 import logo from "media/images/black-logo.gif";
-import Payment from "media/video-explainer/payment-img.png"
+import Payment from "media/payment.webp"
 import facebook from "media/icons/fb.png";
 import twitter from "media/icons/x.png";
 import youtube from "media/icons/youtube.png";

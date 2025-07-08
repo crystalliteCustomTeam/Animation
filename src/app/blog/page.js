@@ -1,6 +1,6 @@
 import React from 'react'
 //============
-import BlogList from '@/components/blogs-new/BlogList'
+// import BlogList from '@/components/blogs-new/BlogList'
 import BlogHero from '@/components/blogs-old/BlogHero';
 
 const page = () => {
@@ -15,7 +15,7 @@ const page = () => {
     return (
         <>
             <BlogHero content={hero} />
-            <BlogList />
+            {/* <BlogList /> */}
         </>
     )
 }

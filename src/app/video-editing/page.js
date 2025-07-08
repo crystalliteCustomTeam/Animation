@@ -10,7 +10,7 @@ import Boost from '@/components/boost/Boost';
 import Servicesconcept from '@/components/servicesconcept/Servicesconcept';
 import Pricing from "@/components/pricing/Pricing";
 import Want from '@/components/want/Want';
-import TestimonialNew from '@/components/testimonialNew/Testimonial';
+import TestimonialNew from '@/components/location-page/testimonial-new/testimonial-new';
 import Contact from '@/components/contact/Contact';
 // Import Images
 import LookingFlodImg from "media/video-editing/looking-img.gif";

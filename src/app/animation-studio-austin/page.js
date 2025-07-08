@@ -8,7 +8,7 @@ import Description from '@/components/location-page/description/description';
 import Portfolio from '@/components/location-page/new-portfilio/portfolio';
 import Want from '@/components/location-page/want/Want';
 import Concept from '@/components/location-page/concept/Concept';
-import TestimonialNew from '@/components/location-page/testimonialNew/Testimonial';
+import TestimonialNew from '@/components/location-page/testimonial-new/testimonial-new';
 import Looking from '@/components/location-page/looking/Looking';
 import Contact from '@/components/location-page/contact/Contact';
 //==== Hero Images
@@ -16,7 +16,7 @@ import BannerImg from "media/location-page/austin.png"
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
 //================
-import body1 from "media/location-page/thumbnils/body1.jpg"
+import body1 from "media/location-page/new-thumbnails/1.jpg"
 import body2 from "media/location-page/thumbnils/body2.jpg"
 import body3 from "media/location-page/thumbnils/thumbnail6.jpg"
 
@@ -92,7 +92,7 @@ const LocationPage = () => {
     const Desc1 = {
         title: (<>Animation Studio In Austin Offering <br /> <span className='text-[#FF2D4A]'> Advance Animation and Visual Effects</span></>),
         para: "When you choose our animation services Austin, you are partnering with an Austin animation studio that will help you in crafting an unforgettable presence in your customer’s minds. Unlike all animation studios in Austin, we focus on pushing the limits of visual experience to create masterpieces that are universally attractive and loved by all audiences; Share your vision and leave the rest to us.",
-        bannerRight: "https://player.vimeo.com/progressive_redirect/playback/950045792/rendition/720p/file.mp4?loc=external&log_user=0&signature=90534b4f57b71c13daff5f699a603dc446447c8fb24cf92bcb089adaedf0ad88",
+        bannerRight: "https://player.vimeo.com/progressive_redirect/playback/947422905/rendition/1080p/file.mp4?loc=external&signature=5c27dbb6f888f0c94df31c794a5a2c96bcac64552c393b29b37198d5da826b1c&user_id=214166356",
         thumbnail: body1,
         downArrow: 'start'
     };

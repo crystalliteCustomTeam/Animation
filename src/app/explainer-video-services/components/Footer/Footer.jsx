@@ -9,7 +9,7 @@ import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
 import { HiMapPin } from 'react-icons/hi2';
 // ==== Images 
 import UpArrow from "media/video-explainer2/up-arrow.png"
-import Payment from "media/video-explainer2/payment-img.png"
+import Payment from "media/payment.webp"
 import facebook from "media/icons/fb.png";
 import twitter from "media/icons/x.png";
 import youtube from "media/icons/youtube.png";
@@ -242,11 +242,7 @@ const Contact = () => {
                                             <Globe className='bg-[#fff] text-[#000] rounded-[60%] p-[4px] text-[15px] w-[26px] h-[26px]' /> www.infinityanimations.com
                                         </a>
                                     </li>
-                                    <li className='py-[10px]'>
-                                        <a href="https://maps.app.goo.gl/BFBsCwAX1znom3LE6" target='_blank' className='text-[16px] text-white montserrat flex gap-2'>
-                                            <HiMapPin className='bg-[#ffffff] text-[#222] rounded-[60%] p-[4px] text-[15px] w-[25px] lg:w-[40px] h-[25px]' /> One World Trade Center, 285 Fulton St 85th floor suite 8500, New York, NY 10007
-                                        </a>
-                                    </li>
+                                  
                                 </ul>
                                 <Image src={Payment} alt='Payment-Methods' className='w-5/12 lg:w-full my-3 object-contain' />
                                 <div>
@@ -321,7 +317,7 @@ const Contact = () => {
             </section>
             <div className="copyright py-[20px] bg-[#000] border-t-[0.5px] border-[#fff]">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto relative">
-                    <p className='text-[14px] text-[#fff] montserrat text-center'>Copyright © 2024,  <Link target="_blank" className="no-underline" href="https://bhaooinc.com/">Infinity Animations All Rights Reserved</Link></p>
+                    <p className='text-[14px] text-[#fff] montserrat text-center'>Copyright © 2025,  <Link target="_blank" className="no-underline" href="https://bhaooinc.com/">Infinity Animations All Rights Reserved</Link></p>
                     <div className="top-icon absolute right-0 top-[-60px]">
                         <Link href="#" className='bg-black w-[80px] h-[80px] text-center text-white font-[500] uppercase rounded-[60%] align-middle border-[5px] border-[#FFCC00] absolute right-0 lg:flex flex-col justify-center items-center md:block hidden'>
                             <Image src={UpArrow} alt='upArrow' className='mx-auto' />

@@ -91,7 +91,7 @@ const Casestudies = () => {
                                                 text="View Casestudy"
                                                 bg="bg-prime"
                                                 color={`text-white`}
-                                                href="javascript:$zopim.livechat.window.show();"
+                                                href="javascript:void(Tawk_API.toggle())"
                                             />
                                         </div>
                                     </div>

@@ -11,7 +11,7 @@ import choose3 from "media/healthcare/icons/choose3.png";
 const Choose = () => {
     return (
         <>
-            <section className="py-10 lg:py-16 bg-white">
+            <section className="py-10 lg:py-16 bg-white" id='WhyUs'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className='flex items-center justify-around mb-8 lg:mb-14'>
                         <div className='w-full text-center'>
@@ -56,7 +56,7 @@ const Choose = () => {
                             bg="bg-transparent"
                             color={`text-black`}
                             border={`border-2 border-[#000000]`}
-                            href="javascript:$zopim.livechat.window.show();"
+                            href="javascript:void(Tawk_API.toggle())"
                         />
                     </div>
                 </div>

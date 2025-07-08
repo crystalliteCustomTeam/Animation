@@ -35,34 +35,34 @@ const Header = () => {
         <header className={`w-full py-4 z-[999] rounded-none bg-transparent fixed top-0 left-0 ${isFixed ? 'bg-white shadow-md duration-1000 ease-in-out' : 'duration-1000 ease-in-out shadow-md lg:shadow-none'}`}>
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className="flex items-center justify-between">
-                    <Link href="/" className="h-full flex items-center cursor-pointer w-[120px] lg:w-[140px]">
+                    <Link href="javascript:;" className="h-full flex items-center cursor-pointer w-[120px] lg:w-[140px]">
                         <Image src={logo} alt="Infinity Animation" />
                     </Link>
                     <div className={`w-[80%] md:w-[50%] lg:w-auto h-[100vh] lg:h-full flex items-center fixed top-0 z-50 lg:static bg-[#484848] lg:bg-transparent ${isMenuOpen ? 'left-0 duration-700 ease-in-out' : 'left-[-100%] duration-700 ease-in-out'}`} id="navbar-default">
                         <ul className="w-full h-full flex lg:items-center flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-12 rtl:space-x-reverse p-5 lg:p-0 relative">
                             <li className="lg:h-full block lg:hidden">
-                                <Link href="/" className="h-full flex items-center cursor-pointer w-[150px]">
+                                <Link href="javascript:;" className="h-full flex items-center cursor-pointer w-[150px]">
                                     <Image src={logo2} alt="Infinity Animation" />
                                 </Link>
                             </li>
                             <li className="lg:h-full flex lg:items-center">
-                                <Link href="/" className="lg:h-full flex lg:items-center text-[20px] lg:text-[16px] font-medium poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>Home</Link>
+                                <Link href="#Home" className="lg:h-full flex lg:items-center text-[20px] lg:text-[16px] font-medium poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>Home</Link>
                             </li>
                             <li className="lg:h-full flex lg:items-center">
-                                <Link href="#" className="lg:h-full flex items-center gap-[2px] text-[20px] lg:text-[16px] font-medium poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>
+                                <Link href="#WhyUs" className="lg:h-full flex items-center gap-[2px] text-[20px] lg:text-[16px] font-medium poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>
                                     <span>Why Us</span>
                                 </Link>
                             </li>
                             <li className="lg:h-full flex lg:items-center">
-                                <Link href="#" className="lg:h-full flex items-center gap-[2px] text-[20px] lg:text-[16px] font-medium poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>
+                                <Link href="#Services" className="lg:h-full flex items-center gap-[2px] text-[20px] lg:text-[16px] font-medium poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>
                                     <span>Video Animation</span>
                                 </Link>
                             </li>
                             <li className="lg:h-full flex lg:items-center">
-                                <Link href="#about-us" className="lg:h-full flex lg:items-center text-[20px] lg:text-[16px] font-medium poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>Portfolio</Link>
+                                <Link href="#Portfolio" className="lg:h-full flex lg:items-center text-[20px] lg:text-[16px] font-medium poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>Portfolio</Link>
                             </li>
                             <li className="lg:h-full flex lg:items-center">
-                                <Link href="#contact-us" className="lg:h-full flex lg:items-center text-[20px] lg:text-[16px] font-medium poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>Pricing</Link>
+                                <Link href="#Pricing" className="lg:h-full flex lg:items-center text-[20px] lg:text-[16px] font-medium poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>Pricing</Link>
                             </li>
                             <li className="w-max block lg:hidden">
                                 <CTA

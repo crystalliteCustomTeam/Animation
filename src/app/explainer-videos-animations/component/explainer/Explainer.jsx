@@ -22,11 +22,11 @@ const Video = () => {
     return (
         <>
             <section className={`newcon ${styles.display}`}>
-                <div class={`container mx-auto ${styles.pointer} `}>
+                <div className={`container mx-auto ${styles.pointer} `}>
 
-                    <div class={`md:grid md:grid-cols-1`}>
+                    <div className={`md:grid md:grid-cols-1`}>
                         <div className={styles.newscool}>
-                            <Image src={icon1} class={`  mostimg ${styles.newyork}`} alt="" />
+                            <Image src={icon1} className={`  mostimg ${styles.newyork}`} alt="Infinity Animations" />
 
                             <div className={styles.today}>
                                 <h3>Start Displaying Your Brand With <br></br> Amazing Animated Videos
@@ -35,9 +35,9 @@ const Video = () => {
                                     video services today!</p>
                                 <div className={styles.message}>
                                     <button onClick={popupHandle} className={styles.scale}>Get Started</button>
-                                    <a href="javascript:$zopim.livechat.window.show();"> <button className={styles.sefve} >Live Chat</button> </a>
+                                    <a href="javascript:void(Tawk_API.toggle())" className={styles.sefve}>Live Chat</a>
                                     <div className={styles.pont}>
-                                        <Image src={lang} alt="" />
+                                        <Image src={lang} alt="Infinity Animations" />
                                         <a className={styles.newlong} href="tel:833-666-6689"> 833-666-6689</a>
 
                                     </div>

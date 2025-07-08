@@ -6,7 +6,7 @@ import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
 import StoryLine from '@/components/storyline/StoryLine';
 import Want from '@/components/want/Want';
-import TestimonialNew from '@/components/testimonialNew/Testimonial';
+import TestimonialNew from '@/components/location-page/testimonial-new/testimonial-new';
 import Contact from '@/components/contact/Contact';
 //==== StoryLine Images
 import StoryLine1 from "media/storyline/storyLine11.png";

@@ -10,7 +10,7 @@ import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaGlobe } from "react-icons/fa";
 // ==== Images 
-import payment from "media/banner/payment.png"
+import payment from "media/payment.webp"
 import top from "media/banner/top.png"
 import facebook from "media/icons/fb.png";
 import twitter from "media/icons/x.png";
@@ -264,7 +264,7 @@ const Video = () => {
                                 <li className="fontmontserratregular text-white pb-3"><IoCall /><a className="text-white" href="tel:833-666-6689">  833-666-6689</a></li>
                                 <li className="fontmontserratregular text-white pb-3"><MdEmail /><a className="text-white" href="mailto:queries@infinityanimations.com">  queries@infinityanimations.com</a></li>
                                 <li className="fontmontserratregular text-white pb-3"><FaGlobe /><a className="text-white" href="https://infinityanimations.com/">  www.infinityanimations.com</a></li>
-                                <li><Image src={payment} className=" " alt="" /></li>
+                                <li><Image src={payment} className=" " alt="Infinity Animations" /></li>
                                 <ul className="flex items-center gap-4 mt-4 md:mt-6">
                                     {
                                         socialLinks.map((e, i) => {
@@ -284,7 +284,7 @@ const Video = () => {
                 </div>
 
                 <a className={styles.animatio} href="#header">
-                    <Image src={top} alt="" />
+                    <Image src={top} alt="Infinity Animations" />
                 </a>
             </section>
             <section className={styles.longton}>

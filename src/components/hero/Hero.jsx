@@ -188,7 +188,7 @@ const Hero = ({ content }) => {
                                     bg="bg-[#000]"
                                     color={`text-white`}
                                     border={`border-2 border-[#fff]`}
-                                    hover="hover:bg-prime" href="javascript:$zopim.livechat.window.show();"
+                                    hover="hover:bg-prime" href="javascript:void(Tawk_API.toggle())"
                                 />
                             </div>
                             <AutoScroll wrapperClass="mt-10 lg:mt-10 mb-10 lg:mb-0" options={{ loop: true, align: "start" }}>

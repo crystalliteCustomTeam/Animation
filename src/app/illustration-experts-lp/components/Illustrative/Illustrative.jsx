@@ -291,7 +291,7 @@ const Illustrative = () => {
                                                             color={`text-white`}
                                                             border={`border-2 border-[#fff]`}
                                                             hover="hover:bg-prime"
-                                                            href="javascript:$zopim.livechat.window.show();"
+                                                            href="javascript:void(Tawk_API.toggle())"
                                                         />
                                                     </div>
                                                 </div>

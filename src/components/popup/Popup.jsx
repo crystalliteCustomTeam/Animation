@@ -194,7 +194,7 @@ const Popup = ({ }) => {
         <>
             <Dialog open={popup} handler={popupHandle} className='popup h-full w-full' style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(8px)' }}>
                 <section className='h-screen lg:w-full py-7 2xl:py-12 px-4 md:px-6 flex items-center justify-center'>
-                    <div className="popupBg bg-[url('../../public/video-explainer/popupnew-bg.png')] bg-[length:100%_100%] bg-center bg-no-repeat pt-8 pb-8 xl:pt-9 px-4 sm:px-6 lg:px-10 relative w-full lg:w-[850px] xl:w-[900px] h-auto rounded-xl">
+                    <div className="popupBg bg-black bg-[url('../../public/video-explainer/popupnew-bg.png')] bg-[length:100%_100%] bg-center bg-no-repeat pt-8 pb-8 xl:pt-9 px-4 sm:px-6 lg:px-10 relative w-full lg:w-[850px] xl:w-[900px] h-auto rounded-xl">
                         <div className='w-[40px] xl:w-[60px] h-[40px] xl:h-[60px] absolute top-[1%] right-[1%] flex items-center justify-center text-center rounded-[50%] border-0 cursor-pointer'>
                             <Image onClick={popupHandle} src={closeBtn} className="w-full" alt='Infinity Animations' />
                         </div>
@@ -243,7 +243,7 @@ const Popup = ({ }) => {
                             </div>
                             <div className="col-span-12 lg:col-span-6 lg:block hidden">
                                 <div className="max-h-[400px] 2xl:max-h-full mt-[-55px] xl:mt-0">
-                                    <Image src={popUpImage} alt="Infinity Animation" className="h-full m-auto w-[90%]" />
+                                    <Image src={popUpImage} alt="Infinity Animation" priority className="h-full m-auto w-[90%]" />
                                 </div>
                             </div>
                         </div>

@@ -6,7 +6,7 @@ import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
 import Looking from '@/components/looking/Looking';
 import Want from '@/components/want/Want';
-import TestimonialNew from '@/components/testimonialNew/Testimonial';
+import TestimonialNew from '@/components/location-page/testimonial-new/testimonial-new';
 import Contact from '@/components/contact/Contact';
 import Features from "@/components/features/Features";
 import Partners from "@/components/partners/Partners";

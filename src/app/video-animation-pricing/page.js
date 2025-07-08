@@ -7,7 +7,7 @@ import Review from "@/components/review/Review";
 import Pricing from "@/components/pricing/Pricing";
 import Concept from '@/components/concept/Concept';
 import Want from '@/components/want/Want';
-import TestimonialNew from '@/components/testimonialNew/Testimonial';
+import TestimonialNew from '@/components/location-page/testimonial-new/testimonial-new';
 import Contact from '@/components/contact/Contact';
 //==== Testimonial Images
 import icon2 from "media/icons/stars.png";

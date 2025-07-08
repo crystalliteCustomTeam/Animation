@@ -76,8 +76,8 @@ const Video = () => {
     return (
         <>
             <section className={`newcon ${styles.display}`}>
-                <div class={`container mx-auto`}>
-                    <div class={`md:grid md:grid-cols-1`}>
+                <div className={`container mx-auto`}>
+                    <div className={`md:grid md:grid-cols-1`}>
                         <div className={styles.element}>
                             <h3 className={`fontsfpro mb-0 ${styles.heading}`}>Our  <span className="colorred2">Packages </span>
                             </h3>
@@ -87,7 +87,7 @@ const Video = () => {
                         </div>
                     </div>
                 </div>
-                <div class={`container mx-auto ${styles.pointer} `}>
+                <div className={`container mx-auto ${styles.pointer} `}>
 
                     {isSliderActive ?
                         <Slider {...awardslogo} className={` ${styles.startup1}  startposition mt-4`} >
@@ -113,13 +113,13 @@ const Video = () => {
                                     </div>
                                     <div className={styles.speak}>
                                         <p className="">Want To Discuss</p>
-                                        <a className="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
+                                        <a className="" href="javascript:void(Tawk_API.toggle())">Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
-                                        <span>Live Chat</span>
+                                    <a href="javascript:void(Tawk_API.toggle())" className={styles.chat} >
+                                        Live Chat
                                         <Image src={livechat} alt="Live_Chat" />
                                     </a>
                                 </div>
@@ -147,13 +147,13 @@ const Video = () => {
                                     </div>
                                     <div className={styles.speak}>
                                         <p className="">Want To Discuss</p>
-                                        <a className="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
+                                        <a className="" href="javascript:void(Tawk_API.toggle())">Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
-                                        <span>Live Chat</span>
+                                    <a href="javascript:void(Tawk_API.toggle())" className={styles.chat} >
+                                        Live Chat
                                         <Image src={livechat2} alt="Live_Chat" />
                                     </a>
                                 </div>
@@ -182,13 +182,13 @@ const Video = () => {
                                     </div>
                                     <div className={styles.speak}>
                                         <p className="">Want To Discuss</p>
-                                        <a className="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
+                                        <a className="" href="javascript:void(Tawk_API.toggle())">Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
-                                        <span>Live Chat</span>
+                                    <a href="javascript:void(Tawk_API.toggle())" className={styles.chat} >
+                                        Live Chat
                                         <Image src={livechat} alt="Live_Chat" />
                                     </a>
                                 </div>
@@ -197,7 +197,7 @@ const Video = () => {
 
                         </Slider>
                         :
-                        <div class={`md:grid md:grid-cols-3`}>
+                        <div className={`md:grid md:grid-cols-3`}>
                             <div className={styles.pkgcard}>
                                 <div className={styles.cardbef}>
                                     <Image src={star} className=" " alt="Star" />
@@ -220,13 +220,13 @@ const Video = () => {
                                     </div>
                                     <div className={styles.speak}>
                                         <p className="">Want To Discuss</p>
-                                        <a className="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
+                                        <a className="" href="javascript:void(Tawk_API.toggle())">Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
-                                        <span>Live Chat</span>
+                                    <a href="javascript:void(Tawk_API.toggle())" className={styles.chat} >
+                                        Live Chat
                                         <Image src={livechat} alt="Live_Chat" />
                                     </a>
                                 </div>
@@ -254,13 +254,13 @@ const Video = () => {
                                     </div>
                                     <div className={styles.speak}>
                                         <p className="">Want To Discuss</p>
-                                        <a className="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
+                                        <a className="" href="javascript:void(Tawk_API.toggle())">Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
-                                        <span>Live Chat</span>
+                                    <a href="javascript:void(Tawk_API.toggle())" className={styles.chat} >
+                                        Live Chat
                                         <Image src={livechat2} alt="Live_Chat" />
                                     </a>
                                 </div>
@@ -289,13 +289,13 @@ const Video = () => {
                                     </div>
                                     <div className={styles.speak}>
                                         <p className="">Want To Discuss</p>
-                                        <a className="" href="javascript:$zopim.livechat.window.show();">Live Chat Now</a>
+                                        <a className="" href="javascript:void(Tawk_API.toggle())">Live Chat Now</a>
                                     </div>
                                 </div>
                                 <div className={styles.pkgcta}>
                                     <button onClick={popupHandle} href="tel:833-666-6689" className={styles.popup}>Get Started</button>
-                                    <a href="javascript:$zopim.livechat.window.show();" className={styles.chat} >
-                                        <span>Live Chat</span>
+                                    <a href="javascript:void(Tawk_API.toggle())" className={styles.chat} >
+                                        Live Chat
                                         <Image src={livechat} alt="Live_Chat" />
                                     </a>
                                 </div>

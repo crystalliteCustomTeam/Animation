@@ -4,7 +4,7 @@ import React from 'react';
 import BlogHero from '@/components/blogs/BlogHero';
 import BlogDescription from '@/components/blogs/BlogDescription';
 import Portfolio from '@/components/portfolio/Portfolio';
-import TestimonialNew from '@/components/testimonialNew/Testimonial';
+import TestimonialNew from '@/components/location-page/testimonial-new/testimonial-new';
 import Looking from '@/components/location-page/looking/Looking';
 import BlogPost from '@/components/blogs/BlogPost';
 // ==== Thumnail Image

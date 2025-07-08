@@ -12,7 +12,7 @@ import BannerLogos from 'media/healthcare/icons/bannerLogos.png'
 
 const Banner = () => {
     return (
-        <section className="bg-white md:bg-none flex items-center h-screen lg:h-auto pt-12 pb-0 lg:pt-44 lg:pb-28 relative z-10 overflow-hidden">
+        <section className="bg-white md:bg-none flex items-center h-screen lg:h-auto pt-12 pb-0 lg:pt-44 lg:pb-28 relative z-10 overflow-hidden" id="Home">
             <Image src={BanImg} alt="Infinity Animations" fill={true} className="hidden md:block -z-10 object-cover object-center" />
             <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                 <div className='flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-0'>
@@ -68,7 +68,7 @@ const Banner = () => {
                             bg="bg-transparent"
                             color={`text-black`}
                             border={`border-2 border-[#000000]`}
-                            href="javascript:$zopim.livechat.window.show();"
+                            href="javascript:void(Tawk_API.toggle())"
                         />
                     </div>
                     <div className='mt-10'>

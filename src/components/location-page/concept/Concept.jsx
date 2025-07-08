@@ -10,7 +10,7 @@ import icon4 from "media/icons/concept-icon4.png"
 
 
 const Concept = ({ content }) => {
-    const { title, para, text1, text2, text3, text4 } = content;
+    const { title, text1, text2, text3, text4 } = content;
     // Chat Code
     const handleChatOpen = (e) => {
         e.preventDefault();
@@ -26,9 +26,9 @@ const Concept = ({ content }) => {
                         <h2 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5 capitalize`}>
                             {title}
                         </h2>
-                        <p className="w-full md:w-[70%] lg:w-[60%] mx-auto text-[15px] lg:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
-                            {para}
-                        </p>
+                        {content.para && <p className="w-full md:w-[70%] lg:w-[60%] mx-auto text-[15px] lg:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
+                            {content.para}
+                        </p>}
                     </div>
                 </div>
             </section>
@@ -106,7 +106,7 @@ const Concept = ({ content }) => {
                                 color={`text-white`}
                                 border={`border-2 border-[#fff]`}
                                 hover="hover:bg-prime"
-                                href="javascript:$zopim.livechat.window.show();"
+                                href="javascript:void(Tawk_API.toggle())"
                             />
                         </div>
                     </div>

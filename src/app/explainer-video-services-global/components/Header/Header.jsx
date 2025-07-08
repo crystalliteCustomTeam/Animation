@@ -73,12 +73,10 @@ const HeaderLP = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <Link href="javascript:$zopim.livechat.window.show();" className='flex items-center text-white font-normal poppins border-2 xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px]' onClick={handleChatOpen}>
-                                            <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] xl:block hidden' />
-                                            <span className='text-[14px] lg:text-[13px] xl:text-[14px] text-white px-[4px] font-normal poppins'>
-                                                Live Chat
-                                            </span>
-                                        </Link>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='flex items-center text-white font-normal poppins border-2 xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px] text-[14px] lg:text-[13px] xl:text-[14px]'>
+                                            <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] xl:block hidden mr-2' />
+                                            Live Chat
+                                        </a>
                                     </li>
                                     <li>
                                         <button onClick={popupHandle} className='flex items-center text-[14px] lg:text-[13px] xl:text-[14px] text-white font-medium poppins xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px] bg-[#A70A0E]'>
@@ -99,12 +97,12 @@ const HeaderLP = () => {
                         <div className="col-span-8 lg:hidden block">
                             <ul className="flex items-center justify-end gap-x-2 xl:gap-x-4">
                                 <li>
-                                    <Link href="javascript:$zopim.livechat.window.show();" className='flex items-center text-white font-normal poppins border-2 xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px]' onClick={handleChatOpen}>
+                                    <a href="javascript:void(Tawk_API.toggle())" className='flex items-center text-white font-normal poppins border-2 xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px]'>
                                         <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] xl:block hidden' />
                                         <span className='text-[14px] lg:text-[13px] xl:text-[14px] text-white px-[4px] font-normal poppins'>
                                             Live Chat
                                         </span>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li className='flex items-center justify-end'>
                                     <button onClick={popupHandle} className='flex items-center text-[14px] lg:text-[13px] xl:text-[14px] text-white font-medium poppins xl:ml-[10px] h-[40px] xl:h-[45px] px-[8px] xl:px-[12px] tracking-[.3px] rounded-[5px] bg-[#A70A0E]'>

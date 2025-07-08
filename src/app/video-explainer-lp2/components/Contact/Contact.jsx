@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation"
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { ChatAlt2, Globe, Phone, User } from 'heroicons-react'
 // ==== Images 
-import Payment from "media/video-explainer/payment-img.png"
+import Payment from "media/payment.webp"
 import UpArrow from "media/video-explainer/up-arrow.png"
 import facebook from "media/icons/fb.png";
 import twitter from "media/icons/x.png";
@@ -305,7 +305,7 @@ const Contact = () => {
             </section>
             <div className="copyright py-[20px]">
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto relative">
-                    <p className='text-[14px] pb-[12px] text-[#333] montserrat text-center'>© 2024 - <span className='text-[14px] lg:text-[16px] text-white poppins text-center inline'> - All Rights Reserved By Dreamweave Media Inc </span> </p>
+                    <p className='text-[14px] pb-[12px] text-[#333] montserrat text-center'>© 2024 - <span className='text-[14px] lg:text-[16px] text-white poppins text-center inline'> - All Rights Reserved  </span> </p>
                     <div className="top-icon absolute right-0 top-[-40px]">
                         <Link href="#" className='bg-[#18d689] w-[80px] h-[80px] text-center text-white font-[500] uppercase rounded-[60%] align-middle border-[5px] border-white absolute right-0 lg:flex flex-col justify-center items-center md:block hidden'>
                             <Image src={UpArrow} alt='upArrow' className='mx-auto' />

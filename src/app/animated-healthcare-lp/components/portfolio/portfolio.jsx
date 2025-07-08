@@ -85,7 +85,7 @@ const Portfolio = () => {
 
     return (
         <>
-           <section className="py-10 lg:py-16 bg-white w-full flex items-center justify-start">
+           <section className="py-10 lg:py-16 bg-white w-full flex items-center justify-start" id='Portfolio'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className='flex items-center justify-around'>
                         <div className='w-full text-center'>
@@ -127,7 +127,7 @@ const Portfolio = () => {
                             bg="bg-transparent"
                             color={`text-black`}
                             border={`border-2 border-[#000000]`}
-                            href="javascript:$zopim.livechat.window.show();"
+                            href="javascript:void(Tawk_API.toggle())"
                         />
                     </div>
                 </div>

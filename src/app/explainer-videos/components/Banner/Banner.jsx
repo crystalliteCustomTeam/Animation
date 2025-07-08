@@ -89,13 +89,13 @@ const Banner = ({ content }) => {
                                 Call Now
                             </a>
                         </div>
-                        <a href="javascript:$zopim.livechat.window.show();" className="chat flex items-center gap-2">
+                        <div className="chat flex items-center gap-2">
                             <Image src={chatIcon} alt='chat-icon' className='w-[25px] ml-[10px]' />
                             <div className="text">
                                 <span className='block montserrat text-[14px] font-[600] text-[#FF2D4B] leading-[14px]'>Chat Now to Avail 50% OFF</span>
-                                <span className='text-black text-[16px] montserrat font-[600]'>Live Chat</span>
+                                <a href="javascript:void(Tawk_API.toggle())" className='text-black text-[16px] montserrat font-[600]'>Live Chat</a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </section>

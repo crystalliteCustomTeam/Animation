@@ -8,7 +8,7 @@ import Description from '@/components/location-page/description/description';
 import Portfolio from '@/components/location-page/new-portfilio/portfolio';
 import Want from '@/components/location-page/want/Want';
 import Concept from '@/components/location-page/concept/Concept';
-import TestimonialNew from '@/components/location-page/testimonialNew/Testimonial';
+import TestimonialNew from '@/components/location-page/testimonial-new/testimonial-new';
 import Looking from '@/components/location-page/looking/Looking';
 import Contact from '@/components/location-page/contact/Contact';
 //==== Hero Images
@@ -16,7 +16,7 @@ import BannerImg from "media/location-page/florida.png"
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
 //================
-import body1 from "media/location-page/thumbnils/body1.jpg"
+import body1 from "media/location-page/new-thumbnails/1.jpg"
 import body2 from "media/location-page/thumbnils/body2.jpg"
 import body3 from "media/location-page/thumbnils/thumbnail6.jpg"
 

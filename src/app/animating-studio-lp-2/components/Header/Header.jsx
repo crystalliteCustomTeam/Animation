@@ -71,12 +71,10 @@ const Header = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <button onClick={handleChatOpen} className='flex items-center text-[14px] xl:text-[16px] text-white font-normal poppins bg-[#ff2d4c2f] border-2 xl:ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
-                                            <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] xl:block hidden' />
-                                            <span className='text-[14px] xl:text-[16px] text-white px-[8px] font-normal poppins'>
-                                                Live Chat
-                                            </span>
-                                        </button>
+                                        <a href="javascript:void(Tawk_API.toggle())" className='flex items-center text-[14px] xl:text-[16px] text-white font-normal poppins bg-[#ff2d4c2f] border-2 xl:ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#FF2D4B] hover:duration-700 hover:transition-all'>
+                                            <Image src={Chat} alt='UK' className='object-contain grayscale-[1] brightness-[100] xl:block hidden mr-2' />
+                                            Live Chat
+                                        </a>
                                     </li>
                                     <li>
                                         <button onClick={popupHandle} className='flex items-center text-[14px] xl:text-[16px] text-white font-medium poppins xl:ml-[10px] py-[12px] px-[10px] xl:px-[20px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-3xl duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all'>

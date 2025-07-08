@@ -112,7 +112,7 @@ const Video = () => {
                   </div>
                 </div>
                 <div className={styles.pricing}>
-                  <Image src={proven} className={styles.newtoen} alt="" />
+                  <Image src={proven} className={styles.newtoen} alt="Infinity Animations" />
                 </div>
               </div>
             }

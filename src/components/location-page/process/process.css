@@ -1,0 +1,19 @@
+.location_process .slick-next {
+    right: 0 !important;
+    top: -50px !important;
+    bottom: inherit !important;
+    display: block !important;
+    width: max-content !important;
+    height: max-content !important;
+    transform: inherit !important;
+}
+
+.location_process .slick-prev {
+    right: 50px !important;
+    left: inherit !important;
+    top: -50px !important;
+    bottom: inherit !important;
+    display: block !important;
+    width: max-content !important;
+    height: max-content !important;
+}

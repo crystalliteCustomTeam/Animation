@@ -16,7 +16,7 @@ import BtnBg from "media/game-lp/btn-bg1.png"
 const TwoDArt = () => {
     return (
         <>
-            <section className='pt-[50px] lg:pt-0 pb-[30px] lg:pb-[50px] relative'>
+            <section className='pt-[50px] lg:pt-0 pb-[30px] lg:pb-[50px] relative' id='Services'>
                 <Image src={BgImage} alt='Background Image' fill={true} className='z-[-1] object-contain object-right opacity-65' />
                 <div className="bgTxt absolute left-[-300px] top-[50%] translate-y-[-50%] z-[-1] -rotate-90">
                     <h6 className='text-[195px] leading-[290px] font-semibold poppins text-[#1A1A1A]'>2D Art</h6>
@@ -38,10 +38,10 @@ const TwoDArt = () => {
                                         Experience delivering 100+ successful 2D art projects in the last 8 years, including Paradox’s Crusader Kings III & Stellaris and award-winning Arcanium.
                                     </li>
                                 </ul>
-                                <Link href="javascript:;" className=' text-white text-[16px] font-light poppins w-[190px] h-[50px] flex items-center justify-center relative z-10 mx-auto lg:ml-0'>
+                                <a href="tel:833-666-6689" className=' text-white text-[16px] font-light poppins w-[190px] h-[50px] flex items-center justify-center relative z-10 mx-auto lg:ml-0'>
                                     <Image src={BtnBg} alt='Btn Background' fill={true} className='z-[-1] object-cover object-center' />
                                     Contact Us Now
-                                </Link>
+                                </a>
                             </div>
                         </div>
                         <div className="col-span-12 lg:col-span-6">
@@ -52,7 +52,7 @@ const TwoDArt = () => {
                 <div className="imageParticle absolute right-0 bottom-[-52%] 5xl:bottom-[-49.5%] translate-y-[-45%] lg:block hidden">
                     <Image src={ImageParticle1} alt='Image Particle' />
                 </div>
-            </section >
+            </section>
             <section className='z-10 relative pb-[50px] lg:pb-[90px]'>
                 <div className="px-4 md:px-8 lg:max-w-7xl mx-auto xl:px-0">
                     <div className="grid grid-cols-12 gap-y-5 md:gap-x-10 pb-0 md:pb-[30px] md:border-b border-b-[#B9B9B9]">

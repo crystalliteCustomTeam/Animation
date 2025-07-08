@@ -80,12 +80,12 @@ const HeaderLP = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:$zopim.livechat.window.show();" className='flex items-center'>
+                                        <div className='flex items-center'>
                                             <Image src={Chat} alt='UK' className='w-auto object-contain grayscale-[1] brightness-[100]' />
-                                            <span className='text-[13px] text-white py-[10px] px-[8px] font-[700] font-sans'>
+                                            <a href="javascript:void(Tawk_API.toggle())" className='text-[13px] text-white py-[10px] px-[8px] font-[700] font-sans'>
                                                 Live Chat
-                                            </span>
-                                        </a>
+                                            </a>
+                                        </div>
                                     </li>
                                     <li>
                                         <button onClick={popupHandle} className='flex items-center text-[13px] text-white font-[700] font-sans bg-black ml-[10px] py-[10px] px-[12px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-xl duration-700 transition-all hover:bg-[#fb0d1c] hover:duration-700 hover:transition-all'>

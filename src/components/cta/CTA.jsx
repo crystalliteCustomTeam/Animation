@@ -12,9 +12,9 @@ const CTA = ({ text, icon, bg, color, border, hover, href, iconCss }) => {
     return (
         <>
             {href ? <div dangerouslySetInnerHTML={{
-                __html: `<a href=${href} class="h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans flex items-center gap-x-2 ${color} ${bg} ${hover} ${border}"> 
-                <span class="text-[12px] md:text-[16px] xl:text-[18px] font-normal">${text}</span>
-                <img src=${icon} alt="Icons" class="object-contain ${iconCss}" />
+                __html: `<a href=${href} class="h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans flex items-center gap-x-2 ${color} ${bg} ${hover} ${border} z-[2]"> 
+                ${text}
+                <img src=${icon} alt="Icons" class="object-contain z-[1] ${iconCss}" />
                 </a>`
             }} /> : <a href="tel:833-666-6689" className='bg-prime text-white border-0 h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
                 <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">{text}</span>
