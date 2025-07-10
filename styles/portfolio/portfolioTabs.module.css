@@ -125,7 +125,7 @@
 }
 .portfolioSection .portfolio .gridContainer .imageBox img {
   object-fit: cover;
-  object-position: bottom;
+  object-position: left bottom;
 }
 .portfolioSection .portfolio .gridContainer .imageBox:hover .bannerContentBox {
   display: flex;
