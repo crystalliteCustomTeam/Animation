@@ -65,9 +65,8 @@ const Services = ({ content, tabInfo = [
       "https://player.vimeo.com/progressive_redirect/playback/911728847/rendition/1080p/file.mp4?loc=external&signature=1482a94d7754841ac5145cd68b3867833125d483ceaa8ecd716987422de069bd&user_id=214166356",
     link: "/infographics-design",
     thumbnail: thumbnail6,
-    title: "Isometric Animation",
-    para: `At Infinity Animation, we craft eye-catching isometric animations that make your brand stand out. Whether it's for marketing, branding, or storytelling, our unique visuals add depth and clarity, helping you connect with your audience in New York’s competitive market.`,
-  },
+    title: "Infographics",
+    para: `Simplify complex ideas with Infinity Animation’s animated infographics. Tailored for Folsom  Animation Studios dynamic industries, our designs deliver impactful messages that resonate with your audience.`  },
 ] }) => {
   const { subtitle, title } = content
 

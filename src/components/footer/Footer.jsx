@@ -246,6 +246,48 @@ const Footer = () => {
 
         ];
     }
+    else if(pathname == "/animation-studio-folsom") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+            {
+                text: "1024 Iron Point Rd, Folsom, CA 95630",
+                link: "https://maps.app.goo.gl/49PgvHfQVhSW774D6",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
+    else if(pathname == "/animation-studio-richmond-virginia") {
+        contactLinks = [
+            {
+                text: "833-666-6689",
+                link: "tel:833-666-6689",
+                icon: telephone
+            },
+            {
+                text: "queries@infinityanimations.com",
+                link: "mailto:queries@infinityanimations.com",
+                icon: envelope
+            },
+            {
+                text: "1518 Willow Lawn Dr #300, Richmond, VA 23230, United States",
+                link: "https://maps.app.goo.gl/cK7n8d1bgsQSPWjr9",
+                icon: mapmarker,
+                target: "_blank"
+            },
+
+        ];
+    }
     else if(pathname == "/animation-studio-los-angeles") {
         contactLinks = [
             {
