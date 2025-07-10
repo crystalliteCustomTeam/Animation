@@ -124,6 +124,7 @@
   position: relative;
 }
 .portfolioSection .portfolio .gridContainer .imageBox img {
+  object-position: bottom;
   object-fit: cover;
 }
 .portfolioSection .portfolio .gridContainer .imageBox:hover .bannerContentBox {
