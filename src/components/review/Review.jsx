@@ -30,8 +30,8 @@ const Review = () => {
                 <AutoScroll wrapperClass=" mb-5 lg:mb-0" options={{ loop: true, align: "start" }}>
                     {
                         [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8,icon9,icon10,icon11,icon12,icon13,icon14,icon15,icon16 ].map((e, i) => (
-                            <div key={i} className="shrink-0 grow-0 basis-1/3 md:basis-1/6 mr-2">
-                                <Image src={e} alt="logo" className='w-[90%] sm:w-[80%]' />
+                            <div key={i} className="shrink-0 grow-0 basis-1/3 md:basis-1/6 ">
+                                <Image src={e} alt="logo" className='w-[90%]' />
                             </div>
                         ))
                     }
