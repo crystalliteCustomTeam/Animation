@@ -191,7 +191,7 @@ const Hero = ({ content }) => {
                                     hover="hover:bg-prime" href="javascript:void(Tawk_API.toggle())"
                                 />
                             </div>
-                            <AutoScroll wrapperClass="mt-10 lg:mt-10 mb-10 lg:mb-0" options={{ loop: true, align: "start" }}>
+                            <AutoScroll wrapperClass="hidden sm:block mt-10 lg:mt-10 mb-10 lg:mb-0" options={{ loop: true, align: "start" }}>
                                 {
                                     [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon1, icon2, icon3, icon4, icon5, icon6, icon7].map((e, i) => (
                                         <div key={i} className="shrink-0 grow-0 basis-1/4 mr-5">
