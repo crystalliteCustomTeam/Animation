@@ -57,7 +57,7 @@ const Hero = ({ content }) => {
                 />
               </div>
                 <AutoScroll
-                  wrapperClass="mt-[40px] border-t-2 border-gray-500 pt-4 md:block hidden"
+                  wrapperClass="hidden sm:block mt-[40px] border-t-2 border-gray-500 pt-4 md:block hidden"
                   options={{ loop: true, align: "start" }}
                 >
                   {[
