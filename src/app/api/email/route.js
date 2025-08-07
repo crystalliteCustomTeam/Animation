@@ -12,13 +12,13 @@ export async function POST(req, res) {
       port: 465,
       secure: true,
       auth: {
-        user: "leads@infinityanimations.com",
-        pass: "3%yKAgBEbR436eM",
+        user: "developer@infinitimediainc.com",
+        pass: "ajnekhphvmhqnrts ",
       },
     })
     const mailOptions = {
-      from: "leads@infinityanimations.com",
-      to: ['queries@infinityanimations.com', 'info@infinityanimations.com', 'ppc@infinityanimations.com', 'adil@infinityanimations.com','developer@infinitimediainc.com'],
+      from: "developer@infinitimediainc.com",
+      to: ['queries@infinityanimations.com', 'adil@infinityanimations.com ', 'ppc@infinityanimations.com', 'adil@infinityanimations.com', 'developer@infinitimediainc.com'],
       subject: `Infinity Animations Lead`,
       html: `<table>
                     <tr>
@@ -55,12 +55,16 @@ export async function POST(req, res) {
                     </tr>
             </table>`,
     }
-    await transporter.sendMail(mailOptions)
+    const finalData = await transporter.sendMail(mailOptions)
+    console.log(finalData);
     return NextResponse.json({
       mesaage: "Email sent successfully",
       status: 200,
     })
   } catch (error) {
-    return NextResponse.json({ mesaage: "Failed to sent Email", status: 500 })
+    return NextResponse.json({
+      message: error.message || "Unknown error",
+      status: 500,
+    })
   }
 }

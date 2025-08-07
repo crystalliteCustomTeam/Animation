@@ -88,7 +88,7 @@ const Popup = ({ }) => {
 
             try {
                 //========== First API call to your server
-                await fetch('/api/email/', {
+                const finalData = await fetch('/api/email/', {
                     method: 'POST',
                     headers: {
                         'Accept': 'application/json, text/plain, */*',
@@ -96,7 +96,7 @@ const Popup = ({ }) => {
                     },
                     body: JSONdata
                 });
-
+                console.log(finalData);
                 //========== Second API call to SheetDB
                 let headersList = {
                     "Accept": "*/*",
