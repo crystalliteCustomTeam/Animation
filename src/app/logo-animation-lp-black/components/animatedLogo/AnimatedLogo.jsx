@@ -72,7 +72,7 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <a href="javascript:void(Tawk_API.toggle())" className='bg-[#f5090b] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <a href="javascript:parent.LC_API.open_chat_window();" className='bg-[#f5090b] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
                                     </a>
                                 </div>
@@ -141,7 +141,7 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <a href="javascript:void(Tawk_API.toggle())" className='bg-white text-black py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <a href="javascript:parent.LC_API.open_chat_window();" className='bg-white text-black py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
                                     </a>
                                 </div>
@@ -210,7 +210,7 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <a href="javascript:void(Tawk_API.toggle())" className='bg-[#f5090b] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <a href="javascript:parent.LC_API.open_chat_window();" className='bg-[#f5090b] text-white py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
                                     </a>
                                 </div>
@@ -273,7 +273,7 @@ const AnimatedLogo = () => {
                                     </ul>
                                 </div>
                                 <div className="btn mt-[15%] lg:mt-[25%]">
-                                    <a href="javascript:void(Tawk_API.toggle())" className='bg-white text-black py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
+                                    <a href="javascript:parent.LC_API.open_chat_window();" className='bg-white text-black py-[9px] px-[29px] text-[17px] font-[300] font-sans flex items-center justify-center w-9/12 mx-auto'>
                                         ORDER NOW
                                     </a>
                                 </div>

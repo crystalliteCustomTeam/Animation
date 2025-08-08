@@ -27,7 +27,7 @@ const WhyChoose = () => {
                             <h3 className='text-center text-[17px] xl:text-[20px] leading-[22px] xl:leading-[30px] font-semibold poppins mb-4'>State-Of-The-Art <br /> Technology</h3>
                             <p className='text-[12px] xl:text-[14px] poppins text-normal text-white text-center mb-3 lg:mb-6'>At Infinity Animation Company, our team consists of highly skilled animators and creative professionals who bring your vision to life.</p>
                             <div className="btn">
-                                <a href="javascript:void(Tawk_API.toggle())" className='flex items-center justify-center gap-x-2 text-[14px] lg:text-[14px] text-white font-semibold poppins h-[45px] w-max px-2 lg:px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all mx-auto'>
+                                <a href="javascript:parent.LC_API.open_chat_window();" className='flex items-center justify-center gap-x-2 text-[14px] lg:text-[14px] text-white font-semibold poppins h-[45px] w-max px-2 lg:px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all mx-auto'>
                                     Make an Animation
                                     <Image src={RightArrow} alt='Infinity Animation' className='w-[7%]' />
                                 </a>
@@ -43,7 +43,7 @@ const WhyChoose = () => {
                                 At Infinity Animation Company, our team consists of highly skilled animators and creative professionals who bring your vision to life.
                             </p>
                             <div className="btn">
-                                <a href="javascript:void(Tawk_API.toggle())" className='flex items-center justify-center gap-x-2 text-[14px] lg:text-[14px] text-white font-semibold poppins h-[45px] w-max px-2 lg:px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all mx-auto'>
+                                <a href="javascript:parent.LC_API.open_chat_window();" className='flex items-center justify-center gap-x-2 text-[14px] lg:text-[14px] text-white font-semibold poppins h-[45px] w-max px-2 lg:px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all mx-auto'>
                                     Make an Animation
                                     <Image src={RightArrow} alt='Infinity Animation' className='w-[8%]' />
                                 </a>
@@ -57,7 +57,7 @@ const WhyChoose = () => {
                                 At Infinity Animation Company, our team consists of highly skilled animators and creative professionals who bring your vision to life.
                             </p>
                             <div className="btn">
-                                <a href="javascript:void(Tawk_API.toggle())" className='flex items-center justify-center gap-x-2 text-[14px] lg:text-[14px] text-white font-semibold poppins h-[45px] w-max px-2 lg:px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all mx-auto'>
+                                <a href="javascript:parent.LC_API.open_chat_window();" className='flex items-center justify-center gap-x-2 text-[14px] lg:text-[14px] text-white font-semibold poppins h-[45px] w-max px-2 lg:px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all mx-auto'>
                                     Make an Animation
                                     <Image src={RightArrow} alt='Infinity Animation' className='w-[8%]' />
                                 </a>

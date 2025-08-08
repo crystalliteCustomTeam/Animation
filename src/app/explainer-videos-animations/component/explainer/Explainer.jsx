@@ -35,7 +35,7 @@ const Video = () => {
                                     video services today!</p>
                                 <div className={styles.message}>
                                     <button onClick={popupHandle} className={styles.scale}>Get Started</button>
-                                    <a href="javascript:void(Tawk_API.toggle())" className={styles.sefve}>Live Chat</a>
+                                    <a href="javascript:parent.LC_API.open_chat_window();" className={styles.sefve}>Live Chat</a>
                                     <div className={styles.pont}>
                                         <Image src={lang} alt="Infinity Animations" />
                                         <a className={styles.newlong} href="tel:833-666-6689"> 833-666-6689</a>

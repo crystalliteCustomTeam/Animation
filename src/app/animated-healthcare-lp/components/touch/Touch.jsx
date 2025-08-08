@@ -26,7 +26,7 @@ const Touch = () => {
                             text="Get A Quote"
                             bg="bg-white"
                             color={`text-black`}
-                            href="javascript:void(Tawk_API.toggle())"
+                            href="javascript:parent.LC_API.open_chat_window();"
                         />
                     </div>
                 </div>

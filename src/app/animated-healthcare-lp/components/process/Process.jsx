@@ -34,7 +34,7 @@ const Process = () => {
                                     bg="bg-transparent"
                                     color={`text-black`}
                                     border={`border-2 border-[#000000]`}
-                                    href="javascript:void(Tawk_API.toggle())"
+                                    href="javascript:parent.LC_API.open_chat_window();"
                                 />
                             </div>
                         </div>

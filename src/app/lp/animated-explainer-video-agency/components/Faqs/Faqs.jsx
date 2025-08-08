@@ -96,7 +96,7 @@ const Faqs = () => {
                   </p>
                   <div className="flex items-center gap-x-3 mt-5">
                 <a
-                    href="javascript:void(Tawk_API.toggle())"
+                    href="javascript:parent.LC_API.open_chat_window();"
                     className="relative z-10 overflow-hidden group border border-[#ffaf00] text-[#1c1b18] xl:text-sm text-xs leading-tight font-bold tracking-[0.1em] uppercase inline-flex items-center justify-center sm:px-[23px] px-[18px] h-[60px] text-center w-full mx-auto rounded-[60px] duration-700 transition-all bg-[#ffaf00] hover:duration-700 hover:transition-all"
                   >
                     <span className="absolute inset-0 w-full h-full bg-white border border-white -z-10 rounded-[9999px] transition-all ease-in-out duration-300 group-hover:translate-y-0 translate-y-full"></span>

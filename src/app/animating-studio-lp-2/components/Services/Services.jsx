@@ -118,7 +118,7 @@ const Services = () => {
                                             <Image src={chatIcon} alt="Infinity Animation" />
                                             <div>
                                                 <span className="text-black text-[10px] poppins font-semibold block">Chat Now to Avail 50% OFF</span>
-                                                <a href="javascript:void(Tawk_API.toggle())" className="text-black text-[20px] leading-[30px] font-semibold poppins block text-center">Live Chat</a>
+                                                <a href="javascript:parent.LC_API.open_chat_window();" className="text-black text-[20px] leading-[30px] font-semibold poppins block text-center">Live Chat</a>
                                             </div>
                                         </div>
                                     </div>
@@ -150,7 +150,7 @@ const Services = () => {
                                         <span className="text-[#F5090B]">{card.title}</span>
                                     </h3>
                                     <p className="text-white text-[13px] lg:text-[15px] poppins mb-8">{card.description}</p>
-                                    <a href="javascript:void(Tawk_API.toggle())" className="flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all">
+                                    <a href="javascript:parent.LC_API.open_chat_window();" className="flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-max px-5 tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-[#FF2D4B] hover:duration-700 hover:transition-all">
                                         Make an Animation
                                         <Image src={RightArrow} alt="Infinity Animation" className="w-[8%]" />
                                     </a>

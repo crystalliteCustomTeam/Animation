@@ -5,15 +5,7 @@ const Scripts = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       //======== TawkTo ========//
-      var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date()
-      var s1 = document.createElement("script"),
-        s0 = document.getElementsByTagName("script")[0]
-      s1.async = true
-      s1.src = "https://embed.tawk.to/67786dab49e2fd8dfe023130/1ign6oqf5"
-      s1.charset = "UTF-8"
-      s1.setAttribute("crossorigin", "*")
-      s0.parentNode.insertBefore(s1, s0)
+     
 
       //======== Google Tag Manager ========//
       const gtmScript = document.createElement("script")

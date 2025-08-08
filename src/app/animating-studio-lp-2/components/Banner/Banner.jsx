@@ -216,7 +216,7 @@ const Banner = () => {
                                         </a>
                                     </div>
                                     <div>
-                                        <a href="javascript:void(Tawk_API.toggle())" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-black font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-white hover:duration-700 hover:transition-all'>
+                                        <a href="javascript:parent.LC_API.open_chat_window();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-black font-semibold poppins h-[45px] w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-white hover:duration-700 hover:transition-all'>
                                             <Image src={Chats} alt='Infinity Animation' className='brightness-100 invert-[1]' />
                                             Live Chat
                                         </a>

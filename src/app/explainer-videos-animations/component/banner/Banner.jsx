@@ -294,7 +294,7 @@ const Banner = () => {
                   <div>
                     <h3>
                       <p className={styles.talktoour}>Talk to our Expert</p>
-                      <a href="javascript:void(Tawk_API.toggle())" className={styles.livechat}>Live Chat</a>
+                      <a href="javascript:parent.LC_API.open_chat_window();" className={styles.livechat}>Live Chat</a>
                     </h3>
                   </div>
                 </div>

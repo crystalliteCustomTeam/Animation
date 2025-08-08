@@ -88,7 +88,7 @@ const Platform = () => {
                                                     </a>
                                                 </div>
                                                 <div className="btn">
-                                                    <a href="javascript:void(Tawk_API.toggle())" className=' text-black text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
+                                                    <a href="javascript:parent.LC_API.open_chat_window();" className=' text-black text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
                                                         <Image src={BtnBg2} alt='Btn Background' fill={true} className='z-[-1] object-cover object-center' />
                                                         Get A Quote
                                                     </a>

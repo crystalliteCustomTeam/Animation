@@ -71,7 +71,7 @@ const Packages = () => {
                                                 1-833-666-6689
                                             </span>
                                         </a>
-                                        <a href="javascript:void(Tawk_API.toggle())" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700] text-[#231f20] text-[16px] pt-2'>
+                                        <a href="javascript:parent.LC_API.open_chat_window();" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700] text-[#231f20] text-[16px] pt-2'>
                                             Live Chat Now
                                         </a>
                                     </div>
@@ -124,7 +124,7 @@ const Packages = () => {
                                                 1-833-666-6689
                                             </span>
                                         </a>
-                                        <a href="javascript:void(Tawk_API.toggle())" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700] text-[#231f20] text-[16px] pt-2'>
+                                        <a href="javascript:parent.LC_API.open_chat_window();" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700] text-[#231f20] text-[16px] pt-2'>
                                             Live Chat Now
                                         </a>
                                     </div>
@@ -177,7 +177,7 @@ const Packages = () => {
                                                 1-833-666-6689
                                             </span>
                                         </a>
-                                        <a href="javascript:void(Tawk_API.toggle())" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700] text-[#231f20] text-[16px] pt-2'>
+                                        <a href="javascript:parent.LC_API.open_chat_window();" className='text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700] text-[#231f20] text-[16px] pt-2'>
                                             Live Chat Now
                                         </a>
                                     </div>

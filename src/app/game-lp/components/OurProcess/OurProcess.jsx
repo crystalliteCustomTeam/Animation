@@ -68,7 +68,7 @@ const OurProcess = () => {
                                         <p className='text-[13px] xl:text-[15px] leading-[22px] xl:leading-[25px] font-normal poppins lg:w-10/12 text-center sm:text-start'>{content.desc}</p>
                                     </div>
                                     <div className="btn translate-y-[20px] opacity-0 group-hover:opacity-100 group-hover:translate-y-[0px] group-hover:duration-1000 ease-in-out duration-1000">
-                                        <a href="javascript:void(Tawk_API.toggle())" className=' text-black text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
+                                        <a href="javascript:parent.LC_API.open_chat_window();" className=' text-black text-[16px] font-medium poppins w-[190px] h-[50px] flex items-center justify-center relative z-10'>
                                             <Image src={BtnBg2} alt='Btn Background' fill={true} className='z-[-1] object-cover object-center' />
                                             Get A Quote
                                         </a>

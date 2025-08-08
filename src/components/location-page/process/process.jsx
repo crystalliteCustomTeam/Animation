@@ -91,7 +91,7 @@ const Process = ({ content }) => {
               color={`text-white`}
               border={`border-2 border-[#f5090b]`}
               hover="hover:bg-transparent w-max "
-              href="javascript:void(Tawk_API.toggle())"
+              href="javascript:parent.LC_API.open_chat_window();"
             />
           </div>
         </div>

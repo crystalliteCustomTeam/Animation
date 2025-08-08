@@ -42,7 +42,7 @@ const Brands = ({ content }) => {
                                 </button>
                             </div>
                             <div className="btn w-full md:w-auto flex items-center justify-center">
-                                <a href="javascript:void(Tawk_API.toggle())" className='text-[16px] text-white font-[600] montserrat bg-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full md:w-auto flex items-center justify-center'>
+                                <a href="javascript:parent.LC_API.open_chat_window();" className='text-[16px] text-white font-[600] montserrat bg-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl w-full md:w-auto flex items-center justify-center'>
                                     Live Chat
                                 </a>
                             </div>

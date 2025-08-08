@@ -25,7 +25,7 @@ const MakeVideos = () => {
                   </p>
                   <div className="flex items-center gap-x-3 mt-5">
                 <a
-                  href="javascript:void(Tawk_API.toggle())"
+                  href="javascript:parent.LC_API.open_chat_window();"
                   className="border border-white text-white xl:text-base text-xs leading-tight font-bold tracking-[0.1em] uppercase inline-flex items-center justify-center sm:px-[23px] px-[15px] h-[60px] text-center w-full rounded-[60px] duration-700 transition-all bg-transparent hover:duration-700 hover:transition-all"
                 >
                   Get Started

@@ -57,7 +57,7 @@ const OurConcepts = () => {
                                     text="Get A Quote"
                                     bg="bg-prime"
                                     color={`text-white`}
-                                    href="javascript:void(Tawk_API.toggle())"
+                                    href="javascript:parent.LC_API.open_chat_window();"
                                 />
                             </div>
                         </div>
@@ -100,7 +100,7 @@ const OurConcepts = () => {
                                     text="Get A Quote"
                                     bg="bg-prime"
                                     color={`text-white`}
-                                    href="javascript:void(Tawk_API.toggle())"
+                                    href="javascript:parent.LC_API.open_chat_window();"
                                 />
                             </div>
                         </div>

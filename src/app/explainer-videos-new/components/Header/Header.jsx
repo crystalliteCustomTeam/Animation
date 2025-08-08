@@ -29,7 +29,7 @@ const Header = () => {
                         </div>
                         <div className='flex items-center gap-x-4 2xl:gap-x-8'>
                             <div className="livechat lg:block hidden">
-                                <a href="javascript:void(Tawk_API.toggle())" className='relative text-[#282828] text-[18px] 2xl:text-[20px] font-[700] pl-[17px] font-sans'>
+                                <a href="javascript:parent.LC_API.open_chat_window();" className='relative text-[#282828] text-[18px] 2xl:text-[20px] font-[700] pl-[17px] font-sans'>
                                     <span className='bg-[#f36e16] w-[8px] h-[8px] absolute left-0 top-0 bottom-0 m-auto rounded-[30px] scale-100 transform_scale'></span>
                                     Live Chat
                                 </a>

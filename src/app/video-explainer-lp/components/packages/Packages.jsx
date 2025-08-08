@@ -97,7 +97,7 @@ const Packages = () => {
                       </span>
                     </a>
                     <a
-                      href="javascript:void(Tawk_API.toggle())"
+                      href="javascript:parent.LC_API.open_chat_window();"
                       className="text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700] text-[#231f20] text-[16px] pt-2"
                     >
                       Live Chat Now
@@ -169,7 +169,7 @@ const Packages = () => {
                       </span>
                     </a>
                     <a
-                      href="javascript:void(Tawk_API.toggle())"
+                      href="javascript:parent.LC_API.open_chat_window();"
                       className="text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700] text-[#231f20] text-[16px] pt-2"
                     >
                       Live Chat Now
@@ -241,7 +241,7 @@ const Packages = () => {
                       </span>
                     </a>
                     <a
-                      href="javascript:void(Tawk_API.toggle())"
+                      href="javascript:parent.LC_API.open_chat_window();"
                       className="text-left m-0 leading-[20px] montserrat flex flex-col justify-center font-[700] text-[#231f20] text-[16px] pt-2"
                     >
                       Live Chat Now

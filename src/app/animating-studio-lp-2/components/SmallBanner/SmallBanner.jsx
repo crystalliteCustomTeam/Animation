@@ -41,7 +41,7 @@ const SmallBanner = () => {
                                         </a>
                                     </div>
                                     <div className='w-full sm:w-auto'>
-                                        <a href="javascript:void(Tawk_API.toggle())" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-full sm:w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all'>
+                                        <a href="javascript:parent.LC_API.open_chat_window();" className='flex items-center justify-center gap-x-2 text-[14px] xl:text-[14px] md:text-[16px] text-white font-semibold poppins h-[45px] w-full sm:w-[165px] tracking-[.3px] rounded-[5px] leading-[20px] duration-700 transition-all bg-black hover:duration-700 hover:transition-all'>
                                             <Image src={Chats} alt='Infinity Animation' className='brightness-200 invert-0' />
                                             Live Chat
                                         </a>

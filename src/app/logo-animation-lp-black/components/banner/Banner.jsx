@@ -46,7 +46,7 @@ const Banner = () => {
                                         color={`text-white`}
                                         border={`border-2 border-[#fff]`}
                                         hover="hover:bg-prime"
-                                        href="javascript:void(Tawk_API.toggle())"
+                                        href="javascript:parent.LC_API.open_chat_window();"
                                     />
                                 </div>
                             </div>

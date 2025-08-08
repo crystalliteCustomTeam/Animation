@@ -51,7 +51,7 @@ function Work({ content }) {
                             <h3 className={`${clickedItem === index || hoveredItem === index ? "text-[#A70A0E]" : "text-[#003262]"} font-[600] poppins text-[18px] md:text-[24px] lg:text-[28px]`}>
                                 {item.listTitle}
                             </h3>
-                            <a href="javascript:void(Tawk_API.toggle())">
+                            <a href="javascript:parent.LC_API.open_chat_window();">
                                 <Image
                                     src={clickedItem === index || hoveredItem === index ? ArrowFill : ArrowUnfill}
                                     alt="Arrow"
