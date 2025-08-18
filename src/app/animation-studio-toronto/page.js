@@ -190,7 +190,7 @@ const LocationPage = () => {
     title: (
       <>
         Toronto’s Premier Animation Studio
-        <span className="text-primary-100">With Custom Animation Services</span>
+        <span className="text-primary-100"> With Custom Animation Services</span>
       </>
     ),
     para: "Animation is more than a tool—it’s a bridge between imagination and reality. Whether it’s a 2D character conveying emotion or a 3D world immersing viewers, animation captures what words alone cannot. This transformative medium has become essential for storytelling, branding, and education, making it a cornerstone of modern communication.",

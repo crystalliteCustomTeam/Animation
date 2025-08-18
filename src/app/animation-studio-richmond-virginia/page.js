@@ -194,7 +194,7 @@ const LocationPage = () => {
     title: (
       <>
         Richmond Virginia's Premier Animation Studio{" "}
-        <span className="text-primary-100">With Custom Animation Services</span>
+        <span className="text-primary-100"> With Custom Animation Services</span>
       </>
     ),
     para: "Richmond businesses aren’t just following trends, they’re setting them. At Infinity Animations, we help local brands lead with immersive animation built for today’s most exciting platforms. From augmented reality (AR) product demos to virtual reality (VR) brand experiences, we craft animations that are more than visual they’re unforgettable. Whether you’re launching a product, telling your company story, or building an interactive pitch, we turn ideas into animated experiences that keep people watching and coming back for more.",

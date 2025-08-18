@@ -209,7 +209,7 @@ Your online presence deserves visuals that stand out. Let’s make it happen.
     title: (
       <>
         Charlotte’s Premier Animation Studio{" "}
-        <span className="text-primary-100">With Custom Animation Services</span>
+        <span className="text-primary-100"> With Custom Animation Services</span>
       </>
     ),
     para: "In an age where attention spans are shrinking, animation provides a unique way to convey your message clearly and memorably. From explainer videos to detailed 3D presentations, animation allows you to simplify complex ideas, engage your audience, and leave a lasting impression. As a leading animation company Charlotte, we’re here to help you harness the power of visuals.",

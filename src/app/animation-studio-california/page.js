@@ -189,7 +189,7 @@ const LocationPage = () => {
     title: (
       <>
         California’s Premier Animation Studio{" "}
-        <span className="text-primary-100">With Custom Animation Services</span>
+        <span className="text-primary-100"> With Custom Animation Services</span>
       </>
     ),
     para: "Animation is more than just a tool; it’s a medium that connects brands to audiences in unique and memorable ways. Whether you need a captivating 3D animation for your product or an engaging ad campaign to expand your reach, animation is the key to unlocking new possibilities. With its ability to simplify complex ideas and evoke emotions, animation has become an essential part of modern communication and marketing strategies",

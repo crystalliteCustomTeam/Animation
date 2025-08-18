@@ -202,7 +202,7 @@ const LocationPage = () => {
     title: (
       <>
         Folsom’s Premier Animation Studio{" "}
-        <span className="text-primary-100">With Custom Animation Services</span>
+        <span className="text-primary-100"> With Custom Animation Services</span>
       </>
     ),
     para: (

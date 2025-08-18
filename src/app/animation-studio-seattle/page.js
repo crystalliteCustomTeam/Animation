@@ -190,7 +190,7 @@ const LocationPage = () => {
     title: (
       <>
         Seattle Premier Animation Studio{" "}
-        <span className="text-primary-100">With Custom Animation Services</span>
+        <span className="text-primary-100"> With Custom Animation Services</span>
       </>
     ),
     para: "The future of animation lies in creating immersive experiences. Our studio specializes in developing content for augmented reality (AR) and virtual reality (VR), providing your audience with interactive narratives that engage on a deeper level. Whether it's a virtual tour of your facilities or an AR-enhanced product demonstration, we have the expertise to bring these innovative experiences to life.",

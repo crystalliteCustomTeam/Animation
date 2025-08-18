@@ -190,7 +190,7 @@ const LocationPage = () => {
     title: (
       <>
         NYC’s Premier Animation Studio{" "}
-        <span className="text-primary-100">With Custom Animation Services</span>
+        <span className="text-primary-100"> With Custom Animation Services</span>
       </>
     ),
     para: "Animation is one of the most effective ways to communicate complex ideas simply and engagingly. It allows you to capture attention, explain your message clearly, and leave a lasting impression—all in a matter of seconds. if it’s a 30-second explainer video or a detailed 3D animation, visuals speak louder than words. As businesses look for innovative ways to connect with their audience, animation has become a powerful tool for driving engagement, conversions, and brand recognition.",

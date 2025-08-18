@@ -193,7 +193,7 @@ const LocationPage = () => {
     title: (
       <>
         Chicago’s Premier Animation Studio
-        <span className="text-primary-100">With Custom Animation Services</span>
+        <span className="text-primary-100"> With Custom Animation Services</span>
       </>
     ),
     para: "Our Chicago animation studio excels at transforming your creative concepts into powerful visuals that captivate and inspire. We begin by immersing ourselves in your ideas, collaborating closely to develop a compelling narrative that aligns seamlessly with your business goals. Utilizing cutting-edge techniques and a touch of Chicago's artistic spirit, we transform these ideas into animations that resonate with your target audience. Whether it's a corporate video for a Loop headquarters, educational content for a local institution, or a promotional ad targeting Chicago consumers, our animations bridge the gap between creativity and communication, ensuring your message reaches the right audience effectively within the city and beyond.",

@@ -209,7 +209,7 @@ const LocationPage = () => {
     title: (
       <>
         Denver's Premier Animation Studio{" "}
-        <span className="text-primary-100">With Custom Animation Services</span>
+        <span className="text-primary-100"> With Custom Animation Services</span>
       </>
     ),
     para: "Animated videos are a powerful tool for businesses, offering a unique way to convey messages and engage audiences. They can simplify complex concepts, making them easier for viewers to understand and retain. Additionally, animated videos are versatile and can be used across various platforms, from websites to social media, enhancing your brand's visibility and reach. Investing in animated content can lead to increased engagement, higher conversion rates, and a stronger connection with your audience.",

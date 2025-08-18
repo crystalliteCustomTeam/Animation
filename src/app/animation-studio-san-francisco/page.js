@@ -212,7 +212,7 @@ const LocationPage = () => {
     title: (
       <>
         San Francisco Premier Animation Studio{" "}
-        <span className="text-primary-100">With Custom Animation Services</span>
+        <span className="text-primary-100"> With Custom Animation Services</span>
       </>
     ),
     para: "At our San Francisco studio, we specialize in various Custom Animation Services, including claymation, object-based animation, and cut-out animation. These techniques are ideal for brands seeking a nostalgic or artisanal visual identity that connects emotionally with their audiences. We’ve helped clients tell their stories through beautifully crafted animations that merge traditional artistry with modern branding.",
