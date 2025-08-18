@@ -6,7 +6,7 @@ module.exports = {
     exclude: ['/server-sitemap.xml'], // example exclude
     robotsTxtOptions: {
       additionalSitemaps: [
-        'https://https://infinityanimations.com/sitemap.xml',
+        'https://infinityanimations.com/sitemap.xml',
       ],
     },
   }
