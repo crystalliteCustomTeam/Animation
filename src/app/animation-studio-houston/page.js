@@ -170,7 +170,7 @@ const LocationPage = () => {
     title: (
       <>
         The Power of Animation in <br />{" "}
-        <span className="text-[#FF2D4A]"> Chicago's Competitive Market</span>
+        <span className="text-[#FF2D4A]"> Huston's Competitive Market</span>
       </>
     ),
     para: (
