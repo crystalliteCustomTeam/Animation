@@ -15,6 +15,7 @@ import bottomRight from "media/location-page/bottom-right.png"
 
 import Image from "next/image"
 import CTA from "@/components/cta/CTA"
+import Satellight from "@/components/satelliteoffice/satelliteoffice"
 
 const LocationPage = () => {
 
@@ -184,7 +185,56 @@ const LocationPage = () => {
             </div>
           </div>
         </section>
-
+        <section>
+          <div className="py-[50px]">
+            <div className="container">
+              <div className="grid grid-cols-3 gap-5">
+                <Satellight
+                  text={"Texas"}
+                  address={"1341 W Mockingbird Ln, Dallas, TX 75247, United States"}
+                  map={"https://maps.app.goo.gl/r4ST9n4Xf3M5obFN9"}
+                  page={"https://infinityanimations.com/animation-studio-texas"}
+                  number={"214-740-6171"}
+                />
+                <Satellight
+                  text={"Maryland"}
+                  address={"200 E Pratt St, Baltimore, MD 21202, United States"}
+                  map={"https://maps.app.goo.gl/zcr6mTzMprUNKsox9"}
+                  page={"https://infinityanimations.com/animation-studio-texas"}
+                  number={"833-666-6689"}
+                />
+                <Satellight
+                  text={"Philadelphia"}
+                  address={"325 Chestnut St Unit 800, Philadelphia, PA 19106, United States"}
+                  map={"https://maps.app.goo.gl/UP9ETwHxYHujgBTu6"}
+                  page={"https://infinityanimations.com/animation-studio-maryland"}
+                  number={"833-666-6689"}
+                />
+                <Satellight
+                  text={"Houston"}
+                  address={"4300 Main St, Houston, TX 77002, United States"}
+                  map={"https://maps.app.goo.gl/zpXa5KsEYWuMgSEUA"}
+                  page={"https://infinityanimations.com/animation-studio-houston"}
+                  number={"346-815-2723"}
+                />
+                <Satellight
+                  text={"Orlando"}
+                  address={"111 N Orange Ave Suit 800, Orlando, FL 32801, United States"}
+                  map={"https://maps.app.goo.gl/GwznMowUApJf9gqU8"}
+                  page={"https://infinityanimations.com/animation-studio-orlando"}
+                  number={"407-326-0828"}
+                />
+                 <Satellight
+                  text={"Orlando"}
+                  address={"111 N Orange Ave Suit 800, Orlando, FL 32801, United States"}
+                  map={"https://maps.app.goo.gl/GwznMowUApJf9gqU8"}
+                  page={"https://infinityanimations.com/animation-studio-orlando"}
+                  number={"407-326-0828"}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
 
       </div>
     </>
