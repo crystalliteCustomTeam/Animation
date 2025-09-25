@@ -224,12 +224,26 @@ const LocationPage = () => {
                   page={"https://infinityanimations.com/animation-studio-orlando"}
                   number={"407-326-0828"}
                 />
-                 <Satellight
-                  text={"Orlando"}
-                  address={"111 N Orange Ave Suit 800, Orlando, FL 32801, United States"}
-                  map={"https://maps.app.goo.gl/GwznMowUApJf9gqU8"}
-                  page={"https://infinityanimations.com/animation-studio-orlando"}
-                  number={"407-326-0828"}
+                <Satellight
+                  text={"Toronto"}
+                  address={"229 Yonge St Suite 400, Toronto, ON M5B 1N9, Canada"}
+                  map={"https://maps.app.goo.gl/RAM4eVHtZSZNRSAy7"}
+                  page={"https://infinityanimations.com/animation-studio-toronto"}
+                  number={"(647) 933-5352"}
+                />
+                <Satellight
+                  text={"Richmond"}
+                  address={"1518 Willow Lawn Dr #300, Richmond, VA 23230, United States"}
+                  map={"https://maps.app.goo.gl/rnZG46gC8QWACDxE7"}
+                  page={"https://infinityanimations.com/animation-studio-richmond-virginia"}
+                  number={"804-207-5212"}
+                />
+                <Satellight
+                  text={"San Diego"}
+                  address={"402 W Broadway Suite 400, San Diego, CA 92101, United States"}
+                  map={"https://maps.app.goo.gl/y5H5QDbdZgyndaXcA"}
+                  page={"https://infinityanimations.com/animation-studio-san-diego"}
+                  number={"833-666-6689"}
                 />
               </div>
             </div>
