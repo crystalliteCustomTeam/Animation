@@ -66,13 +66,13 @@ const LocationPage = () => {
                     </div>
                     
                     <div className="flex flex-row gap-3 mt-2">
-                      <a href="javascript:parent.LC_API.open_chat_window();" className='bg-prime text-white border-0 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
+                      <a href="https://www.google.com/maps/place/Infinity+Animations+-+Animation+Studio+In+New+York/@40.7130082,-74.0131689,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25ba68db6e3e5:0x6e999c4a119d4f79!8m2!3d40.7130082!4d-74.0131689!16s%2Fg%2F11vzxy9gc5?entry=ttu&g_ep=EgoyMDI1MDkyMi4wIKXMDSoASAFQAw%3D%3D" className='bg-prime text-white border-0 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
                         <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">View Office</span>
                       </a>
                       <a href="https://www.google.com/maps/place/Infinity+Animations+-+Animation+Studio+In+New+York/@40.7130082,-74.0131689,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25ba68db6e3e5:0x6e999c4a119d4f79!8m2!3d40.7130082!4d-74.0131689!16s%2Fg%2F11vzxy9gc5?entry=ttu&g_ep=EgoyMDI1MDkyMi4wIKXMDSoASAFQAw%3D%3D" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
                         <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">Get Directions</span>
                       </a>
-                      <a href="javascript:parent.LC_API.open_chat_window();" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
+                      <a href="https://infinityanimations.com/animation-studio-new-york" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
                         <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">View Services</span>
                       </a>
                     </div>
@@ -150,13 +150,13 @@ const LocationPage = () => {
                           <h2 className="text-white-100 font-semibold font-sans text-[20px]">M-F: 9:00am - 5:00pm</h2>
                         </div>
                         <div className="flex flex-row gap-3 mt-2">
-                          <a href="javascript:parent.LC_API.open_chat_window();" className='bg-prime text-white border-0 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
+                          <a href="https://www.google.com/maps/place/Infinity+Animations+-+Animation+Studio+In+New+York/@40.7130082,-74.0131689,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25ba68db6e3e5:0x6e999c4a119d4f79!8m2!3d40.7130082!4d-74.0131689!16s%2Fg%2F11vzxy9gc5?entry=ttu&g_ep=EgoyMDI1MDkyMi4wIKXMDSoASAFQAw%3D%3D" className='bg-prime text-white border-0 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
                             <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">View Office</span>
                           </a>
                           <a href="https://www.google.com/maps/place/Infinity+Animations+-+Animation+Studio+In+New+York/@40.7130082,-74.0131689,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25ba68db6e3e5:0x6e999c4a119d4f79!8m2!3d40.7130082!4d-74.0131689!16s%2Fg%2F11vzxy9gc5?entry=ttu&g_ep=EgoyMDI1MDkyMi4wIKXMDSoASAFQAw%3D%3D" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
                             <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">Get Directions</span>
                           </a>
-                          <a href="javascript:parent.LC_API.open_chat_window();" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
+                          <a href="https://infinityanimations.com/animation-studio-new-york" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
                             <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">View Services</span>
                           </a>
                         </div>
