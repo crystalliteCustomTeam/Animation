@@ -6,48 +6,116 @@ import locationPin from "media/locations/location_pin.svg"
 import phone from "media/locations/phone.svg"
 import clock from "media/locations/clock.svg"
 //==== Hero Images
-import BannerImg from "media/location-page/california.png"
+import BannerImg from "media/locations/newyork.png"
 import topLeft from "media/location-page/top-left.png"
 import topRight from "media/location-page/top-right.png"
 import bottomRight from "media/location-page/bottom-right.png"
+
+import icon1 from "media/icons/banner-logo-1.png"
+import icon2 from "media/icons/banner-logo-2.png"
+import icon3 from "media/icons/banner-logo-3.png"
+import icon4 from "media/icons/banner-logo-4.png"
+import icon5 from "media/icons/banner-logo-5.png"
+import icon6 from "media/icons/banner-logo-6.png"
+import icon7 from "media/icons/banner-logo-7.png"
 
 //==== Looking Images
 
 import Image from "next/image"
 import CTA from "@/components/cta/CTA"
 import Satellight from "@/components/satelliteoffice/satelliteoffice"
+import AutoScroll from "@/components/sliders/AutoScroll"
 
 const LocationPage = () => {
 
 
 
-  //=====Banner Fold=====//
-  const hero = {
-    title: (
-      <>
-        {" "}
-        Top{" "}
-        <span className="text-primary-100">
-          Animation <br /> Studio{" "}
-        </span>{" "}
-        in California{" "}
-      </>
-    ),
-    para: "Finding the right animation studios in California to realize your creative vision can be overwhelming. Whether you’re looking for cutting-edge 3D animation studios in California or innovative advertising solutions, the options can feel endless. That’s why our studio stands out as a trusted leader among California animation companies. With a focus on your unique needs, we specialize in creating high-quality animations that not only captivate but also convert. From intricate 3D animation designs to full-fledged advertising campaigns, we bring your ideas to life with precision and passion.",
-    btnBg: "bg-prime",
-    banImg: true,
-    BannerImg: BannerImg,
-    topLeft: topLeft,
-    topRight: topRight,
-    bottomRight: bottomRight,
-  }
+
 
 
 
   return (
     <>
       <div className="bg-black">
-        <Hero content={hero} />
+
+        <section
+          className={`w-full md:h-[100vh] md:pb-0 pb-[100px] flex items-center justify-start mt-0 md:mt-10 lg:mt-0  bg-none bg-no-repeat relative overflow-hidden z-1 top-[97px] lg:top-auto mb-10 xl:mb-0`}
+        >
+          <div className="container">
+            <div className="grid grid-cols-12">
+              <div className="col-span-12 lg:col-span-5 flex flex-col gap-5">
+                <h1
+                  className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-5 mt-4 lg:mt-32`}
+                >
+                  Location
+                </h1>
+                <div className="flex flex-col gap-5 justify-center ">
+                  <div className="border-2 border-primary-100 py-2 flex w-[250px] rounded-full justify-center gap-5">
+                    <Image src={locationPin} />
+                    <h5 className="font-sans font-semibold text-[20px]"> Regional Hub</h5>
+                  </div>
+                  <div className="border-l-2 border-white flex flex-col gap-3 pl-5">
+                    <h2 className="text-white font-semibold font-sans text-[30px]">New York</h2>
+                    <h3 className="text-white font-light font-sans">
+                      One World Trade Center, 285 Fulton St 85th floor suite 8500, New York,<br /> NY 10007, United States
+                    </h3>
+                    <div className="flex flex-row gap-3">
+                      <Image src={phone} />
+                      <h2 className="text-primary-100 font-semibold font-sans text-[20px]">+1 (833) 666-6689</h2>
+                    </div>
+                    
+                    <div className="flex flex-row gap-3 mt-2">
+                      <a href="javascript:parent.LC_API.open_chat_window();" className='bg-prime text-white border-0 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
+                        <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">View Office</span>
+                      </a>
+                      <a href="https://www.google.com/maps/place/Infinity+Animations+-+Animation+Studio+In+New+York/@40.7130082,-74.0131689,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25ba68db6e3e5:0x6e999c4a119d4f79!8m2!3d40.7130082!4d-74.0131689!16s%2Fg%2F11vzxy9gc5?entry=ttu&g_ep=EgoyMDI1MDkyMi4wIKXMDSoASAFQAw%3D%3D" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
+                        <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">Get Directions</span>
+                      </a>
+                      <a href="javascript:parent.LC_API.open_chat_window();" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
+                        <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">View Services</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <AutoScroll
+                  wrapperClass="hidden sm:block mt-[40px] border-t-2 border-gray-500 pt-4 md:block hidden"
+                  options={{ loop: true, align: "start" }}
+                >
+                  {[
+                    icon1,
+                    icon2,
+                    icon3,
+                    icon4,
+                    icon5,
+                    icon6,
+                    icon7,
+                    icon1,
+                    icon2,
+                    icon3,
+                    icon4,
+                    icon5,
+                    icon6,
+                    icon7,
+                    icon1,
+                    icon2,
+                    icon3,
+                    icon4,
+                    icon5,
+                    icon6,
+                    icon7,
+                  ].map((e, i) => (
+                    <div key={i} className="shrink-0 grow-0 basis-1/4 mr-5">
+                      <Image src={e} alt="logo" className="w-[70%]" priority />
+                    </div>
+                  ))}
+                </AutoScroll>
+              </div>
+            </div>
+          </div>
+          <Image src={BannerImg} className="absolute bottom-0 right-0"/>
+        </section>
+
         <section className="flex flex-col gap-5">
           <div>
             <div>
