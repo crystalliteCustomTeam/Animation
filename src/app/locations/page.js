@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react"
 // Import Components
 import Hero from "@/components/location-page/hero/Hero"
 import locationPin from "media/locations/location_pin.svg"
+import brands from "media/locations/brands.png"
 import phone from "media/locations/phone.svg"
 import clock from "media/locations/clock.svg"
 //==== Hero Images
@@ -54,7 +55,7 @@ const LocationPage = () => {
                     <Image src={locationPin} />
                     <h5 className="font-sans font-semibold text-[20px]"> Regional Hub</h5>
                   </div>
-                  <div className="border-l-2 border-white flex flex-col gap-3 pl-5">
+                  <div className=" flex flex-col gap-3 ">
                     <h2 className="text-white font-semibold font-sans text-[30px]">New York</h2>
                     <h3 className="text-white font-light font-sans">
                       One World Trade Center, 285 Fulton St 85th floor suite 8500, New York,<br /> NY 10007, United States
@@ -115,7 +116,11 @@ const LocationPage = () => {
           </div>
           <Image src={BannerImg} className="absolute bottom-0 right-0"/>
         </section>
-
+        <section>
+          <div className="container py-20 flex flex-row items-center justify-center">
+            <Image src={brands} className="w-[80%]"/>
+          </div>
+        </section>
         <section className="flex flex-col gap-5">
           <div>
             <div>
