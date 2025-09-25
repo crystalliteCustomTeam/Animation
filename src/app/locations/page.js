@@ -70,7 +70,7 @@ const LocationPage = () => {
                         </h3>
                         <div className="flex flex-row gap-3">
                           <Image src={phone} />
-                          <h2 className="text-primary-100 font-semibold font-sans text-[20px]">888-601-5359</h2>
+                          <h2 className="text-primary-100 font-semibold font-sans text-[20px]">+1 (833) 666-6689</h2>
                         </div>
                         <div className="flex flex-row gap-3">
                           <Image src={clock} />
@@ -80,7 +80,7 @@ const LocationPage = () => {
                           <a href="javascript:parent.LC_API.open_chat_window();" className='bg-prime text-white border-0 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
                             <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">View Office</span>
                           </a>
-                          <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2274942417575!2d-74.0131689!3d40.7130082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ba68db6e3e5%3A0x6e999c4a119d4f79!2sInfinity%20Animations%20-%20Animation%20Studio%20In%20New%20York!5e0!3m2!1sen!2s!4v1758663573656!5m2!1sen!2s" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
+                          <a href="https://www.google.com/maps/place/Infinity+Animations+-+Animation+Studio+In+New+York/@40.7130082,-74.0131689,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25ba68db6e3e5:0x6e999c4a119d4f79!8m2!3d40.7130082!4d-74.0131689!16s%2Fg%2F11vzxy9gc5?entry=ttu&g_ep=EgoyMDI1MDkyMi4wIKXMDSoASAFQAw%3D%3D" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
                             <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">Get Directions</span>
                           </a>
                           <a href="javascript:parent.LC_API.open_chat_window();" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
@@ -115,7 +115,7 @@ const LocationPage = () => {
                         </h3>
                         <div className="flex flex-row gap-3">
                           <Image src={phone} />
-                          <h2 className="text-primary-100 font-semibold font-sans text-[20px]">239-920-8063</h2>
+                          <h2 className="text-primary-100 font-semibold font-sans text-[20px]">+1 (302) 217-6570</h2>
                         </div>
                         <div className="flex flex-row gap-3">
                           <Image src={clock} />
@@ -125,7 +125,7 @@ const LocationPage = () => {
                           <a href="javascript:parent.LC_API.open_chat_window();" className='bg-prime text-white border-0 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
                             <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">View Office</span>
                           </a>
-                          <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.527554960004!2d-118.253244!3d34.0559882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7c712851ee7%3A0x7697892d194c07c6!2sInfinity%20Animations%20-%20Animation%20Studio%20Los%20Angeles!5e0!3m2!1sen!2s!4v1758663705222!5m2!1sen!2s" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
+                          <a href="https://www.google.com/maps/place/Infinity+Animations+-+Animation+Studio+Los+Angeles/@34.0559882,-118.253244,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2c7c712851ee7:0x7697892d194c07c6!8m2!3d34.0559882!4d-118.253244!16s%2Fg%2F11xl3xb36b?entry=ttu&g_ep=EgoyMDI1MDkyMi4wIKXMDSoASAFQAw%3D%3D" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
                             <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">Get Directions</span>
                           </a>
                           <a href="https://infinityanimations.com/animation-studio-los-angeles" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
@@ -160,7 +160,7 @@ const LocationPage = () => {
                         </h3>
                         <div className="flex flex-row gap-3">
                           <Image src={phone} />
-                          <h2 className="text-primary-100 font-semibold font-sans text-[20px]">734-821-3765</h2>
+                          <h2 className="text-primary-100 font-semibold font-sans text-[20px]">+1 (833) 666-6689</h2>
                         </div>
                         <div className="flex flex-row gap-3">
                           <Image src={clock} />
@@ -170,7 +170,7 @@ const LocationPage = () => {
                           <a href="javascript:parent.LC_API.open_chat_window();" className='bg-prime text-white border-0 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
                             <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">View Office</span>
                           </a>
-                          <a href="https://www.google.com/maps/place/Infinity+Animations+-+Animation+Studio+In+Folsom/@38.6434316,-121.1799218,17z/data=!3m1!4b1!4m6!3m5!1s0x809ae713264957ef:0x5ee470653bc16102!8m2!3d38.6434316!4d-121.1799218!16s%2Fg%2F11lgd50j89?entry=ttu&g_ep=EgoyMDI1MDkyMS4wIKXMDSoASAFQAw%3D%3D" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
+                          <a href="https://www.google.com/maps/place/Infinity+Animations+-+Animation+Studio+In+Folsom/@38.6415828,-121.1742303,18.46z/data=!4m6!3m5!1s0x809ae713264957ef:0x5ee470653bc16102!8m2!3d38.6434316!4d-121.1799218!16s%2Fg%2F11lgd50j89?entry=ttu&g_ep=EgoyMDI1MDkyMi4wIKXMDSoASAFQAw%3D%3D" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
                             <span className="text-[12px] md:text-[16px] xl:text-[18px] font-normal font-sans">Get Directions</span>
                           </a>
                           <a href="https://infinityanimations.com/animation-studio-folsom" className='bg-black text-white border-2 border-white h-[40px] xl:h-[50px] px-3 2xl:px-6 rounded-md flex items-center gap-x-2'>
